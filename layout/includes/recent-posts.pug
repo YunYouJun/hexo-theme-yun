@@ -1,0 +1,9 @@
+
+if page.posts.length > 0
+  #recent-posts
+    h1 Recent Posts
+    each post in page.posts.sort('date', -1).limit(10).toArray()
+      .recent-post-item
+        a(href=url_for(post.path))= post.title
+        if post.date
+          time(datetime=post.date.toJSON())= date(post.date, date_format)

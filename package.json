@@ -1,0 +1,13 @@
+{
+  "name": "hexo-theme-starry",
+  "version": "0.0.1",
+  "description": "A starry sky theme for hexo.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-theme-starry.git"
+  },
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "MIT",
+  "homepage": "https://starry.yunyoujun.cn"
+}

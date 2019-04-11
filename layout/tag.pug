@@ -1,0 +1,11 @@
+extends includes/layout.pug
+
+block content
+  div#tag
+    h1= 'Tag: ' + page.tag
+    - page.posts.each(function(article){
+      a(href=url_for(article.path))= article.title
+      time(datetime=date_xml(article.date))= date(article.date)
+      br.clear
+    - })
+  #paginator!= paginator()
