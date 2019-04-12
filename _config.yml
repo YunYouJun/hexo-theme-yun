@@ -5,6 +5,8 @@ menu:
   About: /about
   Contact: /contact
   Archives: /archives
+  Tags: /tags
+  Categories: /categories
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -13,3 +15,58 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-starry.js
+
+# starry
+
+# cdn for third-party library
+cdn:
+  css:
+    fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    # fontawesomeV5: https://use.fontawesome.com/releases/v5.3.1/css/all.css
+  js:
+    # anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+    # jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+    # velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
+    # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+
+# Footer Settings
+# ---------------
+footer:
+  since: 2018
+
+  # Icon between year and copyright info.
+  icon:
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
+    # `heart` is recommended with animation in red (#ff0000).
+    name: cloud
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: '#0078E7'
+
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
+  
+  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+  # http://www.beian.miit.gov.cn
+  beian:
+    enable: false
+    # icp: 苏ICP备xxxxxxxx号
+  
+  # Any custom text can be defined here.
+  # custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+
+# Show Views / Visitors of the website / page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi
+busuanzi:
+  enable: true
+  site_uv: true
+  site_uv_icon: user
+  site_pv: true
+  site_pv_icon: eye
+  page_pv: true
+  post_pv_icon: eye

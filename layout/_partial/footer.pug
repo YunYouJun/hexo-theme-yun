@@ -1,0 +1,29 @@
+    
+#footer.layout
+  - var nowYear = date(Date.now(), "YYYY")
+  if theme.footer.beian.enable
+    .beian
+      a(href='http://www.beian.miit.gov.cn', target='_blank') #{theme.footer.beian.icp}
+
+  .copyright
+    span
+      | &copy; 
+      if theme.footer.since && theme.footer.since != nowYear
+        | #{theme.footer.since} – 
+      | #{nowYear} 
+    span#animate.with-love
+      i(class="fa fa-" + theme.footer.icon.name)
+    span.author  #{config.author}
+
+  div
+    span!= __('footer.powered', '<a href="https://hexo.io" target="_blank">Hexo</a>')
+    span.footer-separator |
+    span= __('footer.theme') + ' - '
+    a(href='https://github.com/YunYouJun/hexo-theme-starry', target='_blank')
+      span Starry
+
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
+
+  if theme.busuanzi.enable
+    include ../_third-party/analytics/busuanzi.pug

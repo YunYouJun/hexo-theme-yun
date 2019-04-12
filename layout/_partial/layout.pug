@@ -1,0 +1,51 @@
+
+- var pageTitle = page.title || config.subtitle || ''
+- if (is_archive()) pageTitle = __('Archives')
+- if (is_tag()) pageTitle = __('Tag') + ': ' + page.tag
+- if (is_category()) pageTitle = 'Category: ' + page.category
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+- if (is_year()) pageTitle += ': ' + page.year
+- pageTitle += ' [ ' + config.title + ' ]'
+
+- var pageDescription = page.description || page.title || config.description || ''
+- var pageKeywords = (config.keywords || []).join(',')
+- if (page.tags && page.tags.data) pageKeywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
+- var pageAuthor = config.email ? config.author + ',' + config.email : config.author
+- var pageCopyright = config.copyright || config.author
+- var test = 'testtxt'
+
+doctype html
+html(lang=config.language)
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(name="description" content=pageDescription)
+    meta(name="keywords" content=pageKeywords)
+    meta(name="author" content=pageAuthor)
+    meta(name="copyright" content=pageCopyright)
+    title= pageTitle
+    !=favicon_tag(config.favicon || theme.favicon || '/favicon.ico')
+    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+      each url in theme.stylesheets
+        link(rel='stylesheet', href=url_for(url) + '?version=' + version())
+    each item in theme.cdn.css
+      if item !== undefined
+        link(rel='stylesheet', href=item + '?version=' + version())
+  body
+    #menu-outer
+      nav#menu-inner
+        each url, label in theme.menu
+          a(href=url)= label
+    #content-outer
+      #content-inner
+        if body
+          div!= body
+        else
+          block content
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from config.yml
+      each url in theme.scripts
+        script(src=url)
+    footer
+      include footer.pug

@@ -5,7 +5,7 @@ Starry sky.
 ## Install
 
 ```sh
-git clone -b master https://github.com/Molunerfinn/hexo-theme-melody themes/melody
+git clone -b master https://github.com/YunYouJun/hexo-theme-starry themes/starry
 ```
 
 ## About
