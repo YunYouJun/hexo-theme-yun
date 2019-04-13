@@ -1,0 +1,19 @@
+// layout
+.layout
+  margin: 0 auto
+  width: $content-width
+  opacity: 0
+
+.post-header
+  font-size: 2rem
+  text-align: center
+
+// media
+@media screen and (max-width: $sm)
+  .layout
+    margin: 0 30px
+    width: auto
+
+@media screen and (min-width: $md)
+  .layout
+    width: $content-large-width

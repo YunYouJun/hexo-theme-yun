@@ -1,7 +1,7 @@
-# title:
-#   archive: Archive
-#   category: Category
-#   tag: Tag
+title:
+  archive: Archive
+  category: Category
+  tag: Tag
 #   schedule: Schedule
 
 menu:
@@ -53,21 +53,19 @@ footer:
 #   total_views: Total Views
 #   total_visitors: Total Visitors
 
-# counter:
-#   tag_cloud:
-#     zero: No tags
-#     one: 1 tag in total
-#     other: "%d tags in total"
-
-#   categories:
-#     zero: No categories
-#     one: 1 category in total
-#     other: "%d categories in total"
-
-#   archive_posts:
-#     zero: No posts.
-#     one: 1 post.
-#     other: "%d posts in total."
+counter:
+  tag_cloud:
+    zero: No tags
+    one: 1 tag in total
+    other: "%d tags in total"
+  categories:
+    zero: No categories
+    one: 1 category in total
+    other: "%d categories in total"
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "%d posts in total."
 
 # state:
 #   posts: posts

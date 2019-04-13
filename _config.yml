@@ -1,12 +1,24 @@
+# Theme color for customize
+# Notice: color value must in double quotes like "#000" or may cause error!
+# ---------------
+theme_color:
+#   enable: true
+#   main: "#49B1F5"
+#   paginator: "#00C4B6"
+#   button_hover: "#FF7242"
+#   text_selection: "#00C4B6"
+#   link_color: "#858585"
+#   hr_color: "#A4D8FA"
+  tag_start_color: "#A4D8FA"
+  tag_end_color: "#1B9EF3"
 
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  Contact: /contact
   Archives: /archives
   Tags: /tags
   Categories: /categories
+  About: /about
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -15,6 +27,7 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-starry.js
+- /js/transition.js
 
 # starry
 
@@ -22,13 +35,15 @@ scripts:
 cdn:
   css:
     fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
+    # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # fontawesomeV5: https://use.fontawesome.com/releases/v5.3.1/css/all.css
   js:
-    # anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-    # jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+    jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-    # velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
-    # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+    velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
+    velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
 
 # Footer Settings
 # ---------------

@@ -1,6 +1,9 @@
 
 extends _partial/layout.pug
 
+prepend title
+  | #{__('title.archive')} | 
+
 block content
   - var categoriesList = list_categories({ show_count: false })
   - var tagsList = list_tags({ show_count: false })

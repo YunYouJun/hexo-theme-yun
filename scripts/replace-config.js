@@ -9,10 +9,10 @@ hexo.extend.helper.register('version', function () {
 })
 
 hexo.on('generateBefore', function () {
-  const rootConfig = hexo.config
+  // const rootConfig = hexo.config
   if (hexo.locals.get) {
     const data = hexo.locals.get('data')
     data && data.starry && (hexo.theme.config = data.starry)
   }
-  hexo.theme.config.rootConfig = rootConfig
+  // hexo.theme.config.rootConfig = rootConfig
 })

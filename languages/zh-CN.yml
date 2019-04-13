@@ -1,8 +1,9 @@
-# title:
-#   archive: 归档
-#   category: 分类
-#   tag: 标签
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
 #   schedule: 日程表
+
 menu:
   home: 首页
   archives: 归档
@@ -47,19 +48,21 @@ footer:
   theme: 主题
 #   total_views: 总访问量
 #   total_visitors: 总访客量
-# counter:
-#   tag_cloud:
-#     zero: 暂无标签
-#     one: 目前共计 1 个标签
-#     other: "目前共计 %d 个标签"
-#   categories:
-#     zero: 暂无分类
-#     one: 目前共计 1 个分类
-#     other: "目前共计 %d 个分类"
-#   archive_posts:
-#     zero: 暂无日志。
-#     one: 目前共计 1 篇日志。
-#     other: "目前共计 %d 篇日志。"
+
+counter:
+  tag_cloud:
+    zero: 暂无标签
+    one: 目前共计 1 个标签
+    other: "目前共计 %d 个标签"
+  categories:
+    zero: 暂无分类
+    one: 目前共计 1 个分类
+    other: "目前共计 %d 个分类"
+  archive_posts:
+    zero: 暂无日志。
+    one: 目前共计 1 篇日志。
+    other: "目前共计 %d 篇日志。"
+
 # state:
 #   posts: 日志
 #   pages: 页面

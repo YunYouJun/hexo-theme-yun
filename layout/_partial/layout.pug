@@ -1,6 +1,4 @@
 
-- var pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = __('Archives')
 - if (is_tag()) pageTitle = __('Tag') + ': ' + page.tag
 - if (is_category()) pageTitle = 'Category: ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
@@ -14,6 +12,8 @@
 - var pageCopyright = config.copyright || config.author
 - var test = 'testtxt'
 
+- title = __('title') !== 'title' && __('title') || config.title
+
 doctype html
 html(lang=config.language)
   head
@@ -24,7 +24,9 @@ html(lang=config.language)
     meta(name="keywords" content=pageKeywords)
     meta(name="author" content=pageAuthor)
     meta(name="copyright" content=pageCopyright)
-    title= pageTitle
+    title
+      block title
+        | #{title}
     !=favicon_tag(config.favicon || theme.favicon || '/favicon.ico')
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       each url in theme.stylesheets
@@ -38,11 +40,14 @@ html(lang=config.language)
         each url, label in theme.menu
           a(href=url)= label
     #content-outer
-      #content-inner
+      #content-inner.layout
         if body
           div!= body
         else
           block content
+    each item in theme.cdn.js
+      if item !== undefined
+        script(src=url_for(item))
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
