@@ -30,15 +30,12 @@ html(lang=config.language)
     !=favicon_tag(config.favicon || theme.favicon || '/favicon.ico')
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       each url in theme.stylesheets
-        link(rel='stylesheet', href=url_for(url) + '?version=' + version())
+        link(rel='stylesheet', href=url_for(url))
     each item in theme.cdn.css
       if item !== undefined
-        link(rel='stylesheet', href=item + '?version=' + version())
+        link(rel='stylesheet', href=item)
   body
-    #menu-outer
-      nav#menu-inner
-        each url, label in theme.menu
-          a(href=url)= label
+    include nav.pug
     #content-outer
       #content-inner.layout
         if body

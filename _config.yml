@@ -35,6 +35,7 @@ scripts:
 cdn:
   css:
     fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    font: https://fonts.googleapis.com/css?family=Montserrat
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # fontawesomeV5: https://use.fontawesome.com/releases/v5.3.1/css/all.css
