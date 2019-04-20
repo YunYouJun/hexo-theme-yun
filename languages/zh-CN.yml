@@ -17,29 +17,31 @@ menu:
 # sidebar:
 #   overview: 站点概览
 #   toc: 文章目录
-# post:
-#   posted: 发表于
-#   edited: 更新于
-#   created: 创建时间
-#   modified: 修改时间
-#   edit: 编辑
-#   in: 分类于
-#   more: 更多
-#   read_more: 阅读全文
-#   untitled: 未命名
-#   sticky: 置顶
-#   toc_empty: 此文章未包含目录
-#   views: 阅读次数
-#   comments_count: 评论数
-#   related_posts: 相关文章
-#   copy_button: 复制
-#   copy_success: 复制成功
-#   copy_failure: 复制失败
-#   copyright:
-#     author: 本文作者
-#     link: 本文链接
-#     license_title: 版权声明
-#     license_content: "本博客所有文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"
+
+post:
+  posted: 发表于
+  edited: 更新于
+  created: 创建时间
+  modified: 修改时间
+  edit: 编辑
+  in: 分类于
+  more: 更多
+  read_more: 阅读全文
+  untitled: 未命名
+  sticky: 置顶
+  toc_empty: 此文章未包含目录
+  views: 阅读次数
+  comments_count: 评论数
+  related_posts: 相关文章
+  copy_button: 复制
+  copy_success: 复制成功
+  copy_failure: 复制失败
+  copyright:
+    author: 本文作者
+    link: 本文链接
+    license_title: 版权声明
+    license_content: "本博客所有文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"
+
 # page:
 #   totally: 共有
 #   tags: 标签
@@ -78,10 +80,12 @@ counter:
 #   great: 非常好
 #   excellent: 太棒了
 # keep_on: 继续努力。
-# symbol:
-#   comma: "，"
-#   period: "。"
-#   colon: "："
+
+symbol:
+  comma: "，"
+  period: "。"
+  colon: "："
+
 # reward:
 #   donate: 打赏
 #   wechatpay: 微信支付

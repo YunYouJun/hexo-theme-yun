@@ -5,31 +5,18 @@
     if(theme.busuanzi.site_uv)
       span#busuanzi_container_site_uv!= theme.busuanzi.site_uv_header
         span
-          i(class='fa fa-' + theme.busuanzi.site_uv_icon)
+          i(class=theme.busuanzi.site_uv_icon)
         span#busuanzi_value_site_uv
     if(theme.busuanzi.site_pv)
       if(theme.busuanzi.site_pv)
         span.footer-separator |
       span#busuanzi_container_site_pv!= theme.busuanzi.site_pv_header
         span
-          i(class='fa fa-' + theme.busuanzi.site_pv_icon)
+          i(class=theme.busuanzi.site_pv_icon)
         span#busuanzi_value_site_pv
   else
     if(theme.busuanzi.page_pv)
       span#busuanzi_container_page_pv!= theme.busuanzi.page_pv_header
         span
-          i(class='fa fa-' + theme.busuanzi.page_pv_icon)
+          i(class=theme.busuanzi.page_pv_icon)
         span#busuanzi_value_page_pv
-    else
-      if(theme.busuanzi.site_uv)
-        span#busuanzi_container_site_uv!= theme.busuanzi.site_uv_header
-          span
-            i(class='fa fa-' + theme.busuanzi.site_uv_icon)
-          span#busuanzi_value_site_uv
-      if(theme.busuanzi.site_pv)
-        if(theme.busuanzi.site_pv)
-          span.footer-separator |
-        span#busuanzi_container_site_pv!= theme.busuanzi.site_pv_header
-          span
-            i(class='fa fa-' + theme.busuanzi.site_pv_icon)
-          span#busuanzi_value_site_pv

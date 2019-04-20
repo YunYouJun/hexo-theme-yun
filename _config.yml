@@ -27,18 +27,16 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-starry.js
-- /js/transition.js
 
 # starry
 
 # cdn for third-party library
 cdn:
   css:
-    fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     font: https://fonts.googleapis.com/css?family=Montserrat
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
-    # fontawesomeV5: https://use.fontawesome.com/releases/v5.3.1/css/all.css
   js:
     anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -81,8 +79,15 @@ footer:
 busuanzi:
   enable: true
   site_uv: true
-  site_uv_icon: user
+  site_uv_icon: far fa-user
   site_pv: true
-  site_pv_icon: eye
+  site_pv_icon: far fa-eye
   page_pv: true
-  post_pv_icon: eye
+  post_pv_icon: far fa-eye
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
