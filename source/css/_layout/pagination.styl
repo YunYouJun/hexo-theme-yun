@@ -1,0 +1,28 @@
+.page-number-basic
+  display: inline-block
+  min-width: 1rem
+  padding: 0 10px
+  margin: 0
+  height: 2rem
+  border-bottom: 1px solid $light-grey
+
+.pagination
+  margin-top: 2rem;
+  text-align: center
+
+  .space
+    @extend .page-number-basic
+
+  .prev, .next, .page-number
+    @extend .page-number-basic
+    cursor: pointer
+    color: $dark
+    text-decoration: none
+
+    &:hover
+      border-bottom-color: $grey
+
+    &.current
+      background: $light-grey
+      color: $white
+      cursor: default
