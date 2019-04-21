@@ -1,3 +1,13 @@
+// media
+@media screen and (max-width: $sm)
+  .layout
+    margin: 0 30px
+    width: auto
+
+@media screen and (min-width: $md)
+  .layout
+    width: $content-large-width
+
 // layout
 .layout
   margin: 0 auto
@@ -8,12 +18,21 @@
   font-size: 2rem
   text-align: center
 
-// media
-@media screen and (max-width: $sm)
-  .layout
-    margin: 0 30px
-    width: auto
+.post-meta
+  font-size: 14px
+  color: $grey
 
-@media screen and (min-width: $md)
-  .layout
-    width: $content-large-width
+.post-meta-divider
+  height: 25px
+  color: $grey
+  margin: 0 0.5rem
+
+.post-button
+  margin: 20px
+
+.post-eof
+  margin: 50px auto
+  width: 50%
+  height: 1px
+  background: $blue
+  opacity: 0.1

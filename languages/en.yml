@@ -25,7 +25,6 @@ post:
   created: Created
   modified: Modified
   edit: Edit this post
-  in: In
   more: more
   read_more: Read more
   untitled: Untitled
@@ -104,9 +103,9 @@ symbol:
 #   prev_page: Previous page
 #   next_page: Next page
 
-# symbols_count_time:
-#   count: Symbols count in article
-#   count_total: Symbols count total
-#   time: Reading time
-#   time_total: Reading time total
-#   time_minutes: mins.
+symbols_count_time:
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.

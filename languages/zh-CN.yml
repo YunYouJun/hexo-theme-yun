@@ -24,7 +24,6 @@ post:
   created: 创建时间
   modified: 修改时间
   edit: 编辑
-  in: 分类于
   more: 更多
   read_more: 阅读全文
   untitled: 未命名
@@ -96,9 +95,10 @@ symbol:
 #   nav_toggle: 切换导航栏
 #   prev_page: 上一页
 #   next_page: 下一页
-# symbols_count_time:
-#   count: 本文字数
-#   count_total: 站点总字数
-#   time: 阅读时长
-#   time_total: 站点阅读时长
-#   time_minutes: 分钟
+
+symbols_count_time:
+  count: 本文字数
+  count_total: 站点总字数
+  time: 阅读时长
+  time_total: 站点阅读时长
+  time_minutes: 分钟

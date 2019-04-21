@@ -1,4 +1,4 @@
-mixin post_item(post)
+mixin post_item(post, is_index)
   article(itemscope, itemtype='http://schema.org/Article')
     .post-block
       link(itemprop='mainEntityOfPage', href=config.url + url_for(post.path))
@@ -14,7 +14,7 @@ mixin post_item(post)
             span.post-sticky-flag(title=__('post.sticky') + '：' + post.sticky)
               i(class='fas fa-paperclip')
               |  
-          - var postTitleIcon = '<i class="fa fa-external-link"></i>'
+          - var postTitleIcon = '<i class="fas fa-external-link-alt"></i>'
           - postText = post.title || post.link
           a.post-title-link(itemprop='url', href=post.path)=post.title
         .post-meta
@@ -29,12 +29,93 @@ mixin post_item(post)
               if theme.post_meta.item_text
                 span.post-meta-icon-text=__('post.posted')
                 |  
-              if !date_diff && time_diff && theme.post_meta.updated_at
-                - var create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(post.updated)
-              else
-                - var create_title = __('post.created') + __('symbol.colon') + full_date(post.date)
+              - var create_title = __('post.created') + __('symbol.colon') + full_date(post.date)
+              time(title=create_title, itemprop='dateCreated datePublished', datetime=moment(post.date).format())=date(post.date)
 
-              time(title=create_title, itemprop='datedCreated datePublished', datetime=moment(post.date).format())=date(post.date)
+            if theme.post_meta.updated_at && datetime_diff
+              - var display_updated = date_diff
+              if display_updated
+                if theme.post_meta.created_at && theme.post_meta.updated_at
+                  span.post-meta-divider='|'
+                  span.post-meta-item-icon
+                    i(class='far fa-calendar-check')
+                    |  
+                  if theme.post_meta.item_text
+                    span.post-meta-icon-text=__('post.edited')
+                    |  
+                  - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
+                  time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
 
+          if post.categories && post.categories.length && theme.post_meta.categories
+            span.post-category
+            if theme.post_meta.created_at || theme.post_meta.updated_at
+              span.post-meta-divider='|'
+              span.post-meta-item-icon
+                i(class='far fa-folder')
+                |  
+              for category, index in post.categories.data
+                span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
+                  a(href=url_for(category.path), itemprop='url', rel='index')
+                    span(itemprop='text')=category.name
+
+                - var category_length = post.categories.length
+                if category_length > 1 && index != category_length - 1
+                  |  > 
+
+          if post.tags && post.tags.length && theme.post_meta.tags
+            span.post-tag
+            if theme.post_meta.created_at || theme.post_meta.updated_at
+              span.post-meta-divider='|'
+              for tag in post.tags.data
+                span.post-meta-item-icon
+                  i(class='fas fa-hashtag')
+                  |  
+                a(href=url_for(tag.path, rel='tag'))=tag.name + ' '
+
+          if !is_index && theme.busuanzi.enable && theme.busuanzi.page_pv
+            span.post-busuanzi
+            if theme.post_meta.created_at || theme.post_meta.updated_at
+              span.post-meta-divider='|'
+              span.post-meta-item-icon(title=__('post.views'))
+                i(class='far fa-eye')
+                |  
+                if theme.post_meta.item_text
+                  | #{__('post.views') + __('symbol.colon')}
+                span#busuanzi_value_page_pv
+          
+          if config.symbols_count_time.symbols || config.symbols_count_time.time
+            .post-symbolcount
+              //- span.post-meta-divider='|'
+              if config.symbols_count_time.symbols
+                span.post-meta-item-icon
+                  i(class='far fa-file-word')
+                  |  
+                  if theme.symbols_count_time.item_text_post
+                    span.post-meta-item-text=__('symbols_count_time.count') + __('symbol.colon')
+                  span(title=__('symbols_count_time.count'))=symbolsCount(post.content)
+              if config.symbols_count_time.symbols && config.symbols_count_time.time
+                span.post-meta-divider='|'
+              if config.symbols_count_time.time
+                span.post-meta-item-icon
+                  i(class='far fa-clock')
+                  |  
+                if theme.symbols_count_time.item_text_post
+                  span.post-meta-item-text=__('symbols_count_time.time')
+                  |  
+                span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
+
+          if post.description
+            .post-description=post.desciption
                 
-              
+      .post-body(itemprop='articleBody')
+
+        if is_index
+          if post.excerpt
+            != post.excerpt
+            
+          .post-button(class='text-center')
+            a.btn(href=url_for(post.path))=__('post.read_more')
+    
+      footer.post-footer
+        if is_index
+          .post-eof

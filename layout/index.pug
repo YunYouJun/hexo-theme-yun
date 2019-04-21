@@ -5,5 +5,5 @@ block content
   include _macro/post.pug
   section#posts.posts-expand
     each post in page.posts.data
-      +post_item(post)
+      +post_item(post, true)
   include _partial/pagination.pug

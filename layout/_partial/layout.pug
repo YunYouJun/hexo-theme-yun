@@ -34,6 +34,7 @@ html(lang=config.language)
     each item in theme.cdn.css
       if item !== undefined
         link(rel='stylesheet', href=item)
+    include head.pug
   body
     include nav.pug
     #content-outer

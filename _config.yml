@@ -27,6 +27,8 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-starry.js
+- /js/utils.js
+- /js/starry-boot.js
 
 # starry
 
@@ -43,6 +45,8 @@ cdn:
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
     # velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+
+# Article
 
 # Footer Settings
 # ---------------
@@ -83,7 +87,7 @@ busuanzi:
   site_pv: true
   site_pv_icon: far fa-eye
   page_pv: true
-  post_pv_icon: far fa-eye
+  page_pv_icon: far fa-eye
 
 # Post meta display settings
 post_meta:
@@ -91,3 +95,12 @@ post_meta:
   created_at: true
   updated_at: true
   categories: true
+  tags: true
+
+# Post wordcount display settings
+# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  item_text_post: true
+  item_text_total: true
+  awl: 2
+  wpm: 250
