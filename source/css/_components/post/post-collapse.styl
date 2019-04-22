@@ -1,0 +1,65 @@
+.post-collapse
+  position: relative
+  margin: 0 20px
+
+  &::after
+    content: " "
+    position: absolute
+    top: 2rem
+    left: 0
+    margin-left: -2px
+    width: 4px
+    height: 100%
+    background: $light
+    z-index: -1
+
+  .collection-title
+    position: relative
+    margin: 0
+
+    h2
+      margin-left: 20px
+
+    &::before
+      content: " "
+      position: absolute
+      left: 0
+      top: 50%
+      margin-left: -4px
+      margin-top: -4px
+      width: 8px
+      height: 8px
+      background: $grey
+      border-radius: 50%
+
+  .post-header
+    position: relative
+    text-align: left
+    border-bottom: 1px dotted $grey;
+
+    &::before
+      content: " "
+      position: absolute
+      left: 0
+      top: 12px
+      width: 6px
+      height: 6px
+      margin-left: -4px
+      border-radius: 50%
+      border: 1px solid $grey
+      the-transition()
+      transition-property: background
+
+    &:hover
+      &::before
+        border:1px dotted $blue
+        background: $blue
+    
+  .post-title
+    margin-left: 100px
+    line-height: 1
+
+  .post-meta
+    position: absolute
+    top: 0.2rem
+    left: 20px

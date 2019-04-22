@@ -2,7 +2,7 @@ extends _partial/layout.pug
 
 block content
   //- include _partial/recent-posts.pug
-  include _macro/post.pug
+  include _mixin/post.pug
   section#posts.posts-expand
     each post in page.posts.data
       +post_item(post, true)
