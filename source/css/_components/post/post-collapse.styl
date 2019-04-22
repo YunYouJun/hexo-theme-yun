@@ -1,3 +1,5 @@
+$light-blue = lighten($blue, 50%)
+
 .post-collapse
   position: relative
   margin: 0 20px
@@ -13,10 +15,13 @@
     background: lighten($blue, 90%);
     z-index: -1
 
+  &-title
+    text-align: center
+
   .collection-title
     position: relative
     margin: 0
-    border-bottom: 1px dotted lighten($blue, 50%)
+    border-bottom: 1px dotted $light-blue
 
     h2
       color: darken($blue, 60%)
@@ -31,24 +36,24 @@
       margin-top: -4px
       width: 8px
       height: 8px
-      background: lighten($blue, 50%);
+      background: $light-blue
       border-radius: 50%
 
   .post-header
     position: relative
     text-align: left
-    border-bottom: 1px dotted lighten($blue, 50%);;
+    border-bottom: 1px dotted $light-blue
 
     &::before
       content: " "
       position: absolute
       left: 0
-      top: 12px
+      top: 8px
       width: 6px
       height: 6px
       margin-left: -4px
       border-radius: 50%
-      border: 1px solid lighten($blue, 50%);
+      border: 1px solid $light-blue
       background-color: white
       the-transition()
       transition-property: background
@@ -58,11 +63,12 @@
         border:1px dotted $blue
         background: $blue
     
-  .post-title
-    margin-left: 100px
-    line-height: 1
+    .post-title
+      margin-left: 75px
+      line-height: 1.5
+      font-size: 1rem
 
-  .post-meta
-    position: absolute
-    top: 0.2rem
-    left: 20px
+    .post-meta
+      position: absolute
+      top: -0.1rem
+      left: 20px

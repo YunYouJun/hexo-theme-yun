@@ -1,14 +1,11 @@
 extends _partial/layout.pug
 
 prepend title
-  | #{__('title.category')} | 
+  | #{__('title.category') + ' - ' + page.category + ' | '}
 
 block content
+  include _mixin/post-collapse.pug
   #category
-    h1= page.category
-    - page.posts.each(function(article){
-      .category-item
-        a(href=url_for(article.path))= article.title
-        time(datetime=date_xml(article.date))= date(article.date)
-    - })
-  #paginator!= paginator()
+    h1.post-collapse-title= __('title.category') + ' - ' + page.category
+    +post_collapse(page.posts)
+  include _partial/pagination.pug

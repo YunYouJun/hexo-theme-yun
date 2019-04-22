@@ -1,11 +1,11 @@
 extends _partial/layout.pug
 
+prepend title
+  | #{__('title.tag') + ' - ' + page.tag + ' | '}
+
 block content
-  div#tag
-    h1= 'Tag: ' + page.tag
-    - page.posts.each(function(article){
-      a(href=url_for(article.path))= article.title
-      time(datetime=date_xml(article.date))= date(article.date)
-      br.clear
-    - })
-  #paginator!= paginator()
+  include _mixin/post-collapse.pug
+  #tag
+    h1.post-collapse-title= __('title.tag') + ' - ' + page.tag
+    +post_collapse(page.posts)
+  include _partial/pagination.pug

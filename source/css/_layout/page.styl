@@ -1,7 +1,12 @@
-// tag
-.tag-cloud
-  padding: 1rem 2rem
+// archive
+.archive-title
   text-align: center
+
+// tag
+// category
+.category-lists, .tag-cloud
+  text-align: center
+  padding: 1rem 2rem
 
   a
     display: inline-block
@@ -16,3 +21,33 @@
     color: $grey
     font-size: 1rem
     margin: 0.5rem
+
+.category-lists
+  &-container
+    text-align: left
+
+  .category-list
+    padding-inline-start: 0px
+    
+    &-item
+      list-style: none
+
+      &:hover
+        &::before
+          color: $blue
+
+      &::before
+        content: "\f07b"
+        font-family: "Font Awesome 5 Free"
+        
+        
+
+    &-link
+      color: $dark
+      border-bottom: 1px dotted $grey
+
+    &-count
+      &::before
+        content: " [ "
+      &::after
+        content: " ] "
