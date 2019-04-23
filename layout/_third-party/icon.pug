@@ -1,0 +1,7 @@
+mixin icon(name)
+  if name.indexOf('ion-icon') !== -1
+    ion-icon(name=name.slice(9))
+  else if name.indexOf('material-icons') !== -1
+    i(class='material-icons')=name.slice(15)
+  else
+    i(class=name)

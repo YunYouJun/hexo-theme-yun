@@ -1,6 +1,27 @@
 .post-header
   font-size: 2rem
   text-align: center
+  vertical-align: top
+
+  .post-title
+    .post-title-link
+      position: relative
+
+      &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: $colors.primary
+        visibility: hidden
+        transform: scaleX(0)
+        the-transition()
+
+      &:hover::before
+        visibility: visible
+        transform: scaleX(1)
 
 .post-meta
   font-size: 14px
@@ -26,3 +47,4 @@
   height: 1px
   background: $blue
   opacity: 0.1
+

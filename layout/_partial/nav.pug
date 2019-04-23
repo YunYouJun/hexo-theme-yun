@@ -1,10 +1,10 @@
-- var top_img = theme.top_img || config.top_img
-- var bg_img = top_img && top_img !== true ? `background-image: url(${top_img})` : ''
-- var flag = top_img === true ? 'no-bg' : ''
-
 #menu-outer
   nav#menu-inner
     ul#menu.menu
-      each url, label in theme.menu
+      each item, label in theme.menu
         li.menu-item
-          a.menu-link(href=url)= label
+          a.menu-link(href=item.path)
+            +icon(item.icon)
+            //- | #{__('menu.' + label)}
+            
+            

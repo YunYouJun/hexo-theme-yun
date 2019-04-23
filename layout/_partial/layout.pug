@@ -30,6 +30,11 @@ html(lang=config.language)
     include head.pug
   body
     canvas.fireworks
+    //- global
+    include ../_third-party/icon.pug
+
+    include ./sidebar.pug
+
     include nav.pug
     #content-outer
       #content-inner.layout

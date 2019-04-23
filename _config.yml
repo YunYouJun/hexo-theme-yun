@@ -16,11 +16,21 @@ color:
 
 # main menu navigation
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  Categories: /categories
-  About: /about
+  home:
+    path: /
+    icon: fas fa-home
+  archives:
+    path: /archives
+    icon: fas fa-archive
+  tags:
+    path: /tags
+    icon: fas fa-tags
+  categories:
+    path: /categories
+    icon: fas fa-folder
+  about:
+    path: /about
+    icon: fas fa-info
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -32,21 +42,31 @@ scripts:
 - /js/utils.js
 - /js/starry-boot.js
 - /js/ui/fireworks.js
+- /js/component/sidebar.js
 
 # starry
 
 # cdn for third-party library
 cdn:
   css:
-    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
+    # font
     font: https://fonts.googleapis.com/css?family=Montserrat
+    # icon
+    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
+    # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
+    # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
+    # iconfont: //at.alicdn.com/t/font_xxxxxxxxxx.css
+    # markdown
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
   js:
+    # icon
+    # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/ionicons.js
+    # ui
     anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-    # velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
+    velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
 
 # Article
