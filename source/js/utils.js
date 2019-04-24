@@ -33,6 +33,10 @@ function throttle(func, wait, mustRun) {
   }
 }
 
+function wrapTable() {
+  $('table').wrap('<div class="table-container"></div>');
+}
+
 Starry.utils = {
   /**
    * Transform embedded video to support responsive layout.
@@ -116,3 +120,4 @@ Starry.utils = {
 
 window.debounce = debounce
 window.throttle = throttle
+

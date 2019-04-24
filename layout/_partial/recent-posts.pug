@@ -1,4 +1,4 @@
-include ../_mixin/post.pug
+include ../_mixin/recent-post.pug
 section#recent-posts
   each post in page.posts.data
-    +post_item(post, true)
+    +recent_post_item(post, true)

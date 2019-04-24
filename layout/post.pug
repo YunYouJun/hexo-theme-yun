@@ -2,6 +2,6 @@ extends _partial/layout.pug
 
 block content
   article#post
-    h1= page.title
-    != page.content
-  #paginator!= paginator()
+    include _mixin/post.pug
+    +post_item(page)
+  include _partial/pagination.pug

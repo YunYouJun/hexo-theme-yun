@@ -57,6 +57,7 @@ cdn:
     # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
     # iconfont: //at.alicdn.com/t/font_xxxxxxxxxx.css
     # markdown
+    # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
   js:
@@ -70,6 +71,10 @@ cdn:
     # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
 
 # Article
+# Code Highlight theme
+# Available values: normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
 
 # Footer Settings
 # ---------------

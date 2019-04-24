@@ -32,4 +32,7 @@ $(function () {
       }
     }
   })
+  if ($('#sidebar').hasClass('is-post')) {
+    $('.hamburger').trigger('click')
+  }
 })
