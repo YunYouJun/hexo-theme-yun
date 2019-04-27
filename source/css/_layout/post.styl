@@ -48,9 +48,15 @@
   background: $blue
   opacity: 0.1
 
-.post-excerpt
-  padding: 0 50px
-
 .post-body
-  padding: 0 20px
+  padding: 0 10px
+
+  .post-excerpt
+    padding: 0 20px
+
+  @media screen and (max-width: $sm)
+    .post-excerpt
+      padding: 0
+
+
   

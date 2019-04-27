@@ -50,7 +50,8 @@ scripts:
 cdn:
   css:
     # font
-    font: https://fonts.googleapis.com/css?family=Montserrat
+    # font: https://fonts.googleapis.com/css?family=Montserrat
+    font: https://fonts.lug.ustc.edu.cn/css?family=Montserrat
     # icon
     fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
@@ -59,6 +60,7 @@ cdn:
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
+    # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
   js:
     # icon
@@ -71,10 +73,19 @@ cdn:
     # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
 
 # Article
+# ---------------
 # Code Highlight theme
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
+
+# Reward (Donate)
+reward_settings:
+  # If true, reward would be displayed in every article by default.
+  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+  enable: false
+  animation: false
+  #comment: Donate comment here
 
 # Footer Settings
 # ---------------

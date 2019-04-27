@@ -1,10 +1,7 @@
-#menu-outer
-  nav#menu-inner
-    ul#menu.menu
-      each item, label in theme.menu
-        li.menu-item
-          a.menu-link(href=item.path)
-            +icon(item.icon)
-            //- | #{__('menu.' + label)}
-            
-            
+nav#menu-inner
+  ul#menu.menu
+    each item, label in theme.menu
+      li.menu-item
+        a.menu-link(href=item.path)
+          +icon(item.icon)
+          //- | #{__('menu.' + label)}

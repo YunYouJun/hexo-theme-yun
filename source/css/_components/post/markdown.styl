@@ -1,13 +1,15 @@
 .markdown-body
+  line-height: 1.8
+
   h1
     font-size: 2.5em
-    border-bottom: 1px solid rgba($colors.primary, 0.5)
+    border-bottom: 1px solid rgba($gray, 0.5)
   h2
     font-size: 2.2em
-    border-bottom: 1px solid rgba($colors.primary, 0.5)
+    border-bottom: 1px solid rgba($gray, 0.5)
   h3
     font-size: 1.9em
-    border-bottom: 1px dotted rgba($colors.primary, 0.5)
+    border-bottom: 1px dotted rgba($gray, 0.5)
   h4
     font-size: 1.6em
   h5
@@ -19,3 +21,24 @@
     font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace
     font-size: 14px
     line-height: 1.6
+
+  code
+    overflow-wrap: break-word
+    word-wrap: break-word
+    padding: 3px 6px
+    color: $dark
+    background: #eee
+    border-radius: 3px
+
+  blockquote
+    margin: 0
+    padding: 0 1rem
+    color: $dark
+    border-left: .25rem solid $gray
+  
+  hr
+    margin: 40px 0
+    height: 3px
+    border: none
+    background-color: #ddd
+    background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px)

@@ -32,22 +32,18 @@ html(lang=config.language)
     canvas.fireworks
     //- global
     include ../_third-party/icon.pug
-
-    include ./sidebar.pug
-
-    include nav.pug
-    #content-outer
+    
+    include sidebar.pug
+    header#menu-outer
+      include nav.pug
+    main#content-outer
       #content-inner.layout
-        if body
-          div!= body
-        else
-          block content
+        block content
+    footer
+      include footer.pug
     each item in theme.cdn.js
       if item !== undefined
         script(src=url_for(item))
     if theme.scripts !== undefined && theme.scripts.length > 0
-      //- scripts list from config.yml
       each url in theme.scripts
         script(src=url)
-    footer
-      include footer.pug

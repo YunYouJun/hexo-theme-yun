@@ -2,13 +2,13 @@ mixin post_item(post)
   article(itemscope, itemtype='http://schema.org/Article')
     .post-block
       include ../_partial/post/post-schema.pug
-      
+
       header.post-header
         include ../_partial/post/post-title.pug
         include ../_partial/post/post-meta.pug
 
-      section.post-body
-        .post-content(class='markdown-body')
-          != post.content
+      section.post-body(itemprop='articleBody')
+        .post-content(class='markdown-body')!=post.content
+        include ../_partial/post/reward.pug
     
       footer.post-footer

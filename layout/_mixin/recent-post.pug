@@ -2,13 +2,13 @@ mixin recent_post_item(post)
   article(itemscope, itemtype='http://schema.org/Article')
     .post-block
       include ../_partial/post/post-schema.pug
-      
+
       header.post-header
         include ../_partial/post/post-title.pug
         include ../_partial/post/post-meta.pug
      
       section.post-body
-        .post-excerpt(itemprop='articleBody')
+        .post-excerpt(class='markdown-body', itemprop='articleBody')
           if post.excerpt
             != post.excerpt
         .post-button(class='text-center')
