@@ -1,0 +1,11 @@
+ul.post-copyright
+  li.post-copyright-author
+    strong!= __('post.copyright.author') + __('symbol.colon')
+    != post.author || author
+  li.post-copyright-link
+    strong!= __('post.copyright.link') + __('symbol.colon')
+    - var postURL = post.url || post.permalink
+    a(href=postURL, title: post.title)!= postURL
+  li.post-copyright-license
+    strong!= __('post.copyright.license_title') + __('symbol.colon')
+    //- != _p('post.copyright.license_content', )

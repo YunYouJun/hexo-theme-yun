@@ -1,9 +1,9 @@
 const sidebarWidth = '320px'
 $(function () {
+  let isSmall = $(window).width() < 768
   $('.hamburger').on('click', function() {
     let isOpen = $(this).hasClass('is-active')
     isOpen ? $(this).removeClass('is-active') : $(this).addClass('is-active')
-    let isSmall = $(window).width() < 768
     if (isOpen) {
       $('#sidebar').velocity('stop').velocity({
         translateX: '0px'
@@ -33,6 +33,8 @@ $(function () {
     }
   })
   if ($('#sidebar').hasClass('is-post')) {
-    $('.hamburger').trigger('click')
+    if (!isSmall) {
+      $('.hamburger').trigger('click')
+    }
   }
 })

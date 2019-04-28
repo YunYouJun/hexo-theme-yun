@@ -9,6 +9,13 @@ mixin post_item(post)
 
       section.post-body(itemprop='articleBody')
         .post-content(class='markdown-body')!=post.content
-        include ../_partial/post/reward.pug
+
+        if theme.reward_settings.enable
+          include ../_partial/post/reward.pug
+        
+        if theme.creative_commons.license && theme.creative_commons.post
+          include ../_partial/post/post-copyright.pug
+
+
     
       footer.post-footer

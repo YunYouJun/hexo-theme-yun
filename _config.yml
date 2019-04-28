@@ -51,7 +51,7 @@ cdn:
   css:
     # font
     # font: https://fonts.googleapis.com/css?family=Montserrat
-    font: https://fonts.lug.ustc.edu.cn/css?family=Montserrat
+    font: https://fonts.loli.net/css?family=Montserrat
     # icon
     fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
@@ -83,9 +83,23 @@ highlight_theme: normal
 reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
-  enable: false
-  animation: false
+  enable: true
   #comment: Donate comment here
+reward:
+  wechatpay: /images/donate/wechatpay.png
+  alipay: /images/donate/alipay.jpg
+
+# Creative Commons 4.0 International License.
+# See: https://creativecommons.org/share-your-work/licensing-types-examples
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license.
+# CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
+# Valid values of language: deed.zh, deed.fr, deed.de, etc.
+creative_commons:
+  license: by-nc-sa
+  sidebar: false
+  post: true
+  language: deed.zh
 
 # Footer Settings
 # ---------------

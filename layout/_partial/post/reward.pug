@@ -1,2 +1,10 @@
-.reward-container
-  
+#reward-container
+  button#reward-button(onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";')
+    != __('reward.donate')
+  #qr(style='display:none;')
+    for image, name in theme.reward
+      - var builtin = ['wechatpay', 'alipay']
+      - var translation = builtin.indexOf(name) !== -1 ? __('reward.' + name) : name
+      div(style='display:inline-block')
+        img(src=url_for(image), alt=author + translation)
+        p!=translation
