@@ -1,11 +1,16 @@
+- let ccLicense = theme.creative_commons.license.toUpperCase()
+- let ccIcon = '<i class="fab fa-creative-commons"></i>'
+- let ccType = 'licenses/' + ccLicense + '/4.0/' + theme.creative_commons.language
+- let ccURL = 'https://creativecommons.org/' + ccType
+
 ul.post-copyright
   li.post-copyright-author
     strong!= __('post.copyright.author') + __('symbol.colon')
     != post.author || author
   li.post-copyright-link
     strong!= __('post.copyright.link') + __('symbol.colon')
-    - var postURL = post.url || post.permalink
+    - let postURL = post.url || post.permalink
     a(href=postURL, title: post.title)!= postURL
   li.post-copyright-license
     strong!= __('post.copyright.license_title') + __('symbol.colon')
-    //- != _p('post.copyright.license_content', )
+    != _p('post.copyright.license_content', `<a href="${ccURL}" target="_blank">${ccIcon} ${ccLicense}</a>`)

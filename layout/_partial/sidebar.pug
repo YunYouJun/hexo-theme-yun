@@ -4,4 +4,10 @@
       span.hamburger-inner
 
 aside#sidebar(class=is_post() ? 'is-post' : '')
-  h2='YunYouJun'
+  .sidebar-panel
+    .site-overview
+      .site-author
+        if theme.avatar.url
+          img.site-author-image(src=theme.avatar.url, alt=author)
+          p.site-author-name!= author
+          .site-desciption!=description

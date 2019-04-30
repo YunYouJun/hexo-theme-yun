@@ -1,0 +1,11 @@
+link(rel='stylesheet', href=theme.vendors.gitalk_css)
+script(src=theme.vendors.gitalk_js)
+
+#gitalk-container
+- let gitalk_config = {}
+- gitalk_config.id = page.permalink
+- gitalk_config.language = config.language
+- gitalk_config = Object.assign(gitalk_config, theme.gitalk)
+script.
+  var gitalk = new Gitalk(!{JSON.stringify(gitalk_config)})
+  gitalk.render('gitalk-container')

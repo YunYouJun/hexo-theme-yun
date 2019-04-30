@@ -1,10 +1,9 @@
-- var pageDescription = page.description || page.title || config.description || ''
-- var pageKeywords = (config.keywords || []).join(',')
-- if (page.tags && page.tags.data) pageKeywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
-- var pageAuthor = config.email ? config.author + ',' + config.email : config.author
-- var pageCopyright = config.copyright || config.author
-
-- title = __('title') !== 'title' && __('title') || config.title
+- var title = __('title') !== 'title' && __('title') || config.title
+- var description = page.description || page.title || config.description || ''
+- var keywords = (config.keywords || []).join(',')
+- if (page.tags && page.tags.data) keywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
+- var author = config.email ? config.author + ',' + config.email : config.author
+- var copyright = config.copyright || config.author
 
 doctype html
 html(lang=config.language)
@@ -12,10 +11,10 @@ html(lang=config.language)
     meta(charset='UTF-8')
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    meta(name="description" content=pageDescription)
-    meta(name="keywords" content=pageKeywords)
-    meta(name="author" content=pageAuthor)
-    meta(name="copyright" content=pageCopyright)
+    meta(name="description" content=description)
+    meta(name="keywords" content=keywords)
+    meta(name="author" content=author)
+    meta(name="copyright" content=copyright)
     meta(name='theme-color', content=theme.color.primary)
     title
       block title

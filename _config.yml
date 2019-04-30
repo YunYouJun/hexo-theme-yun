@@ -14,6 +14,44 @@ color:
   tag_start_color: "#A4D8FA"
   tag_end_color: "#1B9EF3"
 
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+# Posts / Categories / Tags in sidebar.
+site_state: true
+
+# Social Links.
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimeter is the target permalink.
+# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+social:
+  GitHub: https://github.com/YunYouJun || github
+  E-Mail: mailto:me@yunyoujun.cn || envelope
+  bilibili: https://space.bilibili.com/1579790 || bolt
+  微博: http://weibo.com/jizhideyunyoujun || weibo
+  豆瓣: https://www.douban.com/people/yunyoujun/ || book
+  网易云音乐: http://music.163.com/#/user/home?id=247102977 || music
+  # bangumi: http://bangumi.tv/user/yunyoujun || television
+  pixiv: https://pixiv.me/yunyoujun || paint-brush
+  #Google: https://plus.google.com/yourname || google
+  Twitter: https://twitter.com/yunyoujun || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
+
+# Sidebar Avatar
+avatar:
+  url: /images/avatar.jpg
+  # If true, the avatar would be dispalyed in circle.
+  rounded: false
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+
 # main menu navigation
 menu:
   home:
@@ -46,7 +84,7 @@ scripts:
 
 # starry
 
-# cdn for third-party library
+# cdn for third-party library (always include)
 cdn:
   css:
     # font
@@ -71,6 +109,11 @@ cdn:
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
     velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+
+# cdn for third-party library (alternative include)
+vendors:
+  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
+  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
 
 # Article
 # ---------------
@@ -100,6 +143,22 @@ creative_commons:
   sidebar: false
   post: true
   language: deed.zh
+
+# AddThis Share, See: https://www.addthis.com
+# Go to https://www.addthis.com/dashboard to customize your tools.
+# add_this_id:
+
+# Comments
+# See: https://github.com/gitalk/gitalk
+# gitalk:
+  # enable: true
+  # clientID: # Github Application Client ID
+  # clientSecret: # Github Application Client Secret
+  # repo: # GitHub repo
+  # owner: # GitHub repo owner
+  # admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
+  # distraction_free_mode: # Facebook-like distraction free mode
+
 
 # Footer Settings
 # ---------------

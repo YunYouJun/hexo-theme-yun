@@ -1,11 +1,22 @@
 .btn
+  background-color: transparent
   padding: 5px 15px
-  border: 2px solid $blue
-  the-transition()
+  border: 2px solid $colors.primary
   border-radius: 2px
-  color: $blue
+  color: $colors.primary
+  the-transition()
 
   &:hover
-    border-color: $blue
-    background: $blue
+    border-color: $colors.primary
+    background: $colors.primary
     color: $white
+
+.btn-inverse
+  @extend .btn
+  color: $white
+  background-color: $colors.primary
+
+  &:hover
+    background-color: transparent
+    color: $colors.primary
+

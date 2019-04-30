@@ -8,7 +8,7 @@ mixin recent_post_item(post)
         include ../_partial/post/post-meta.pug
      
       section.post-body
-        .post-excerpt(class='markdown-body', itemprop='articleBody')
+        .post-excerpt(class='post-markdown', itemprop='articleBody')
           if post.excerpt
             != post.excerpt
         .post-button(class='text-center')
