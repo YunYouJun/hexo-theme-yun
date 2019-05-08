@@ -66,11 +66,11 @@ counter:
     one: 1 post.
     other: "%d posts in total."
 
-# state:
-#   posts: posts
-#   pages: pages
-#   tags: tags
-#   categories: categories
+state:
+  posts: posts
+  pages: pages
+  tags: tags
+  categories: categories
 
 # search:
 #   placeholder: Searching...

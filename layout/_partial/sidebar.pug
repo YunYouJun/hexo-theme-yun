@@ -10,4 +10,30 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
         if theme.avatar.url
           img.site-author-image(src=theme.avatar.url, alt=author)
           p.site-author-name!= author
-          .site-desciption!=description
+          .site-desciption!=config.description
+      
+      nav.site-state
+        if config.archive_dir != '/' && site.posts.length > 0
+          .site-state-item.site-state-posts
+            a(href=url_for(config.archive_dir))
+              span.site-state-item-count!=site.posts.length
+              span.site-state-item-name!=__('state.posts')
+        if site.categories.length > 0
+          .site-state-item.site-state-categories
+            a(href=url_for(config.category_dir))
+              span.site-state-item-count!=site.categories.length
+              span.site-state-item-name!=__('state.categories')
+        if site.tags.length > 0
+          .site-state-item.site-state-tags
+            a(href=url_for(config.tag_dir))
+              span.site-state-item-count!=site.tags.length
+              span.site-state-item-name!=__('state.tags')
+        
+      if !theme.rss && config.feed && config.feed.path
+        - theme.rss = config.feed.path
+      if theme.rss
+        .feed-link
+          a.btn(href=url_for(theme.rss), rel='alternate')
+            i.fas.fa-rss
+            |
+            | RSS
