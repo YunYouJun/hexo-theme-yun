@@ -37,3 +37,13 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
             i.fas.fa-rss
             |
             | RSS
+      
+      if theme.social
+        .links-of-author
+          for social, name in theme.social
+            span.links-of-author-item
+              a(href=social.link, title=name, target='_blank')
+                i(class=social.icon)
+                |
+                | #{name}
+
