@@ -1,0 +1,25 @@
+.sidebar-nav
+  padding-left: 0
+  margin: 20px
+
+  li
+    display: inline-block
+    cursor: pointer
+    font-size: 0.8rem
+    border-bottom: 1px solid transparent
+
+  .sidebar-nav-item
+    border: 1px solid $dark
+    padding: 4px 16px
+
+    &:first-child
+      border-right-width: 0px
+  
+    &:hover
+      the-transition()
+      background-color: $dark
+      color: $white
+
+  .sidebar-nav-active
+    background-color: $dark
+    color: $white

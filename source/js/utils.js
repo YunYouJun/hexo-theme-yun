@@ -118,6 +118,10 @@ Starry.utils = {
   }
 }
 
+function isSmall() {
+  return $(window).width() < 768
+}
+
 window.debounce = debounce
 window.throttle = throttle
-
+window.isSmall = isSmall

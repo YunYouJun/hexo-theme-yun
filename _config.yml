@@ -34,25 +34,31 @@ rss:
 social:
   GitHub: 
     link: https://github.com/YunYouJun
-    icon: fab fa-github-alt
+    icon: fab fa-github
+    color: black
   E-Mail:
     link: mailto:me@yunyoujun.cn
-    icon: fas fa-envelope
-  bilibili:
-    link: https://space.bilibili.com/1579790
-    icon: fas fa-bolt
+    icon: far fa-envelope
   微博:
     link: https://weibo.com/jizhideyunyoujun
     icon: fab fa-weibo
+    color: red
   豆瓣:
     link: https://www.douban.com/people/yunyoujun/
-    icon: fas fa-book
+    icon: iconfont icon-douban
+    color: green
   网易云音乐:
     link: https://music.163.com/#/user/home?id=247102977
-    icon: fas fa-music
+    icon: iconfont icon-netease-cloud-music
+    color: red
   知乎:
     link: https://www.zhihu.com/people/yunyoujun/
-    icon: fab fa-zhihu
+    icon: iconfont icon-zhihu
+    color: blue
+  哔哩哔哩动画:
+    link: https://space.bilibili.com/1579790
+    icon: iconfont icon-bilibili
+    color: '#f25a8d'
   # bangumi: http://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   #Google: https://plus.google.com/yourname || google
@@ -99,6 +105,7 @@ scripts:
 - /js/hexo-theme-starry.js
 - /js/utils.js
 - /js/starry-boot.js
+- /js/scroll.js
 - /js/ui/fireworks.js
 - /js/component/sidebar.js
 
@@ -114,7 +121,7 @@ cdn:
     fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
     # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
-    # iconfont: //at.alicdn.com/t/font_xxxxxxxxxx.css
+    iconfont: //at.alicdn.com/t/font_1140697_rowhas0mn3c.css
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
@@ -128,7 +135,7 @@ cdn:
     jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
     velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
-    # velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+    velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
