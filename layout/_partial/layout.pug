@@ -33,13 +33,14 @@ html(lang=config.language)
     include ../_third-party/icon.pug
     
     include sidebar.pug
-    header#menu-outer
+    header#site-header
       include nav.pug
-    main#content-outer
+    main#content-outer.sidebar-translate
       #content-inner.layout
         block content
-    footer
+    footer.sidebar-translate
       include footer.pug
+    i.fa.fa-arrow-up#go-up(aria-hidden="true")
     each item in theme.cdn.js
       if item !== undefined
         script(src=url_for(item))

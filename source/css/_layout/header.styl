@@ -1,0 +1,35 @@
+#site-header
+  position: fixed
+  width: 100%
+  z-index: 9
+  top: -60px
+  transition: all 0.2s ease-in-out
+  background: alpha($white, 0.8)
+  box-shadow: 0 5px 6px -5px alpha($dark, 0.3)
+
+  &.fixed
+    position: fixed
+    top: -60px
+    z-index: 10
+    background: alpha($white, 0.8)
+    box-shadow: 0 5px 6px -5px alpha($dark, 0.3)
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out
+
+  &.visible
+    transform: translate3d(0, 100%, 0)
+
+.menu
+  padding-left: 0
+  text-align: center
+
+.menu .menu-item
+  display: inline-block
+  margin: 0 10px
+  list-style: none
+
+.menu-link
+  color: $colors.primary
+  text-decoration: none
+
+  &:hover
+    color: $orange

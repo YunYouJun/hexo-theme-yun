@@ -1,26 +1,22 @@
 // paste from hexo-theme-melody
+// modify by hexo-theme-starry
 
 $(function () {
   var initTop = 0
   $('.toc-child').hide()
 
   // main of scroll
+  // show header
   $(window).scroll(throttle(function (event) {
     var currentTop = $(this).scrollTop()
-    if (!isSmall()) {
-      // percentage inspired by hexo-theme-next
-      scrollPercent(currentTop)
-      // head position
-      findHeadPosition(currentTop)
-    }
     var isUp = scrollDirection(currentTop)
     if (currentTop > 56) {
       if (isUp) {
-        $('#page-header').hasClass('visible') ? $('#page-header').removeClass('visible') : console.log()
+        $('#site-header').hasClass('visible') ? $('#site-header').removeClass('visible') : console.log()
       } else {
-        $('#page-header').hasClass('visible') ? console.log() : $('#page-header').addClass('visible')
+        $('#site-header').hasClass('visible') ? console.log() : $('#site-header').addClass('visible')
       }
-      $('#page-header').addClass('fixed')
+      $('#site-header').addClass('fixed')
       if ($('#go-up').css('opacity') === '0') {
         $('#go-up').velocity('stop').velocity({
           translateX: -30,
@@ -33,7 +29,7 @@ $(function () {
       }
     } else {
       if (currentTop === 0) {
-        $('#page-header').removeClass('fixed').removeClass('visible')
+        $('#site-header').removeClass('fixed').removeClass('visible')
       }
       $('#go-up').velocity('stop').velocity({
         translateX: 0,

@@ -10,7 +10,7 @@ $(function () {
         duration: 200
       })
       if (!isSmall()) {
-        $('body').velocity('stop').velocity({
+        $('.sidebar-translate').velocity('stop').velocity({
           paddingLeft: '0px'
         }, {
           duration: 200
@@ -23,7 +23,7 @@ $(function () {
         duration: 200
       })
       if (!isSmall()) {
-        $('body').velocity('stop').velocity({
+        $('.sidebar-translate').velocity('stop').velocity({
           paddingLeft: sidebarWidth
         }, {
           duration: 200
