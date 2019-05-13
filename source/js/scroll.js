@@ -9,6 +9,10 @@ $(function () {
   // show header
   $(window).scroll(throttle(function (event) {
     var currentTop = $(this).scrollTop()
+    // percentage inspired by hexo-theme-next
+    scrollPercent(currentTop)
+    // head position
+    findHeadPosition(currentTop)
     var isUp = scrollDirection(currentTop)
     if (currentTop > 56) {
       if (isUp) {

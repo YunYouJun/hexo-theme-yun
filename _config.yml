@@ -243,3 +243,11 @@ symbols_count_time:
   item_text_total: true
   awl: 2
   wpm: 250
+
+# Ads
+# ---------------
+# Google Adsense
+google_adsense:
+  enable: false
+  client: ca-pub-xxxxxxxxxx
+  enable_page_level_ads: true

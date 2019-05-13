@@ -15,6 +15,11 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
         if theme.avatar.url
           img.site-author-image(src=theme.avatar.url, alt=author)
           p.site-author-name!= author
+          .site-home
+          a(href=url_for())
+            i.fas.fa-home
+            |
+            | #{config.title}
           .site-desciption!=config.description
       
       nav.site-state

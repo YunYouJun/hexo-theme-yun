@@ -17,6 +17,19 @@
   h6
     font-size: 1.03em
 
+  h1,h2,h3,h4,h5,h6
+    cursor: pointer
+    transition: all 0.2s ease-out
+    &:before
+      content: "# "
+      color: $gray
+      transition: all 0.2s ease-out
+
+    &:hover
+
+      &:before
+        color: $colors.primary
+
   pre, code
     font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace
     font-size: 14px
