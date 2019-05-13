@@ -251,3 +251,9 @@ google_adsense:
   enable: false
   client: ca-pub-xxxxxxxxxx
   enable_page_level_ads: true
+
+# Analysis
+# ---------------
+google_analytics:
+  enable: false
+  id: UA-XXXXXXXXX-X
