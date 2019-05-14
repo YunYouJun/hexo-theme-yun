@@ -5,3 +5,9 @@ nav#nav-menu
         a.menu-link(href=item.path)
           +icon(item.icon)
           //- | #{__('menu.' + label)}
+    if theme.local_search.enable || theme.algolia_search.enable
+      li.menu-item.menu-item-search
+        a.popup-trigger(href='javascript:;')
+          i.fas.fa-search
+          |
+          | #{__('menu.search')}

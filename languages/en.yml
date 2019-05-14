@@ -10,7 +10,7 @@ menu:
   categories: Categories
   tags: Tags
   about: About
-#   search: Search
+  search: Search
 #   schedule: Schedule
 #   sitemap: Sitemap
 #   commonweal: Commonweal 404
@@ -72,8 +72,8 @@ state:
   tags: tags
   categories: categories
 
-# search:
-#   placeholder: Searching...
+search:
+  placeholder: Searching...
 
 # cheers:
 #   um: Um..

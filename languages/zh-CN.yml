@@ -10,7 +10,7 @@ menu:
   categories: 分类
   tags: 标签
   about: 关于
-#   search: 搜索
+  search: 搜索
 #   schedule: 日程表
 #   sitemap: 站点地图
 #   commonweal: 公益 404
@@ -71,8 +71,9 @@ state:
   tags: 标签
   categories: 分类
 
-# search:
-#   placeholder: 搜索...
+search:
+  placeholder: 搜索...
+
 # cheers:
 #   um: 嗯..
 #   ok: 还行

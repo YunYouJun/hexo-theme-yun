@@ -244,6 +244,17 @@ symbols_count_time:
   awl: 2
   wpm: 250
 
+# search
+# https://github.com/wzpan/hexo-generator-search
+local_search:
+  enable: false
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+
+algolia_search:
+  enable: false
+
 # Ads
 # ---------------
 # Google Adsense
