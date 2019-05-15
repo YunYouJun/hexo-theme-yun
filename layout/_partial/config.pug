@@ -1,0 +1,23 @@
+-
+  var algolia = 'undefined';
+  var env = process.env;
+  if (theme.algolia_search.enable) {
+    algolia = JSON.stringify({
+      appId: env.ALGOLIA_APP_ID || config.algolia.appId || config.algolia.applicationID,
+      apiKey: env.ALGOLIA_API_KEY || config.algolia.apiKey,
+      indexName: env.ALGOLIA_INDEX_NAME || config.algolia.indexName,
+      hits: theme.algolia_search.hits,
+      // search languages
+      languages: {
+        input_placeholder: __("algolia_search.input_placeholder"),
+        hits_empty: __("algolia_search.hits_empty"),
+        hits_stats: __("algolia_search.hits_stats")
+      }
+    })
+  }
+
+script.
+  var GLOBAL_CONFIG = { 
+    root: '!{config.root}',
+    algolia: !{algolia}
+  } 

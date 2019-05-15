@@ -27,6 +27,7 @@ html(lang=config.language)
       if item !== undefined
         link(rel='stylesheet', href=item)
     include head.pug
+    include config.pug
   body
     canvas.fireworks
     //- global
@@ -49,4 +50,6 @@ html(lang=config.language)
       each url in theme.scripts
         script(src=url)
     //- widget
-    include ../_widget/search/index.pug
+    //- search
+    if theme.local_search.enable || theme.algolia_search.enable
+      include ../_widget/search/index.pug

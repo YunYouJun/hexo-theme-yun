@@ -13,6 +13,7 @@
 @import "_layout/*"
 
 // widget
-@import "_widget/search"
+if hexo-config('local_search.enable') || hexo-config('algolia_search.enable')
+  @import "_widget/search"
 
 // third-party

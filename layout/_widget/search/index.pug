@@ -1,2 +1,48 @@
-if theme.local_search && theme.local_search.enable
+if theme.algolia_search && theme.algolia_search.enable
+  include algolia-search.pug
+else if theme.local_search && theme.local_search.enable
   include local-search.pug
+.search-popup-overlay
+
+script.
+  $(document).ready(function() {
+    function closeSearchDialog(e) {
+      $('body').css('overflow', 'auto')
+      $('.popup').velocity('stop')
+        .velocity('transition.expandOut', {
+          duration: 300
+        })
+      $(".search-popup-overlay").velocity('stop')
+        .velocity('transition.fadeOut', {
+          duration: 300
+        })
+    }
+
+    function openSearchDialog() {
+      $("body").css('overflow', 'hidden')
+      $('.search-popup-overlay').velocity('stop')
+        .velocity('transition.fadeIn', {
+          duration: 300
+        })
+      $('.popup').velocity('stop')
+        .velocity('transition.expandIn', {
+          duration: 300,
+          complete: function() {
+            $('.search-input').find('input').focus()
+          }
+        })
+    }
+
+    $('.popup-trigger').click(function(e) {
+      openSearchDialog()
+      search()
+      //- shortcut: esc
+      $(document).on('keyup', function f(e) {
+        if (event.code == "Escape") {
+          closeSearchDialog();
+          $(document).off('keyup', f)
+        }
+      })
+    })
+    $('.popup-btn-close,.search-popup-overlay').click(closeSearchDialog)
+  })

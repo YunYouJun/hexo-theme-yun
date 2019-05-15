@@ -139,8 +139,10 @@ cdn:
 
 # cdn for third-party library (alternative include)
 vendors:
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
+  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
+  algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
 
 # Article
 # ---------------
@@ -248,12 +250,11 @@ symbols_count_time:
 # https://github.com/wzpan/hexo-generator-search
 local_search:
   enable: false
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
-  trigger: auto
 
 algolia_search:
   enable: false
+  hits:
+    per_page: 10 # the number of search results per page
 
 # Ads
 # ---------------

@@ -14,7 +14,8 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
       .site-author
         if theme.avatar.url
           img.site-author-image(src=theme.avatar.url, alt=author)
-          p.site-author-name!= author
+          p.site-author-name
+            a(href=url_for('about'))!= author
           .site-home
           a(href=url_for())
             i.fas.fa-home
