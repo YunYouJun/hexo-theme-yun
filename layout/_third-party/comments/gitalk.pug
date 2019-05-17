@@ -2,10 +2,15 @@ link(rel='stylesheet', href=theme.vendors.gitalk_css)
 script(src=theme.vendors.gitalk_js)
 
 #gitalk-container.comment-container
-- let gitalk_config = {}
-- gitalk_config.id = page.permalink
-- gitalk_config.language = config.language
-- gitalk_config = Object.assign(gitalk_config, theme.gitalk)
 script.
   var gitalk = new Gitalk(!{JSON.stringify(gitalk_config)})
+  var gitalk = new Gitalk({
+      clientID: '!{theme.gitalk.client_id}',
+      clientSecret: '!{theme.gitalk.client_secret}',
+      repo: '!{theme.gitalk.repo}',
+      owner: '!{theme.gitalk.owner}',
+      admin: '!{theme.gitalk.admin}',
+      id: '!{page.permalink}',
+      language: '!{config.language}'
+    })
   gitalk.render('gitalk-container')

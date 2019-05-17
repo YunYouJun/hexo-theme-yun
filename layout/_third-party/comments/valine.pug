@@ -1,6 +1,7 @@
 #valine-container.comment-container
 script(src='//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js')
 script(src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+- var valine_lang = config.language || 'zh-cn'
 script.
   var GUEST_INFO = ['nick', 'mail', 'link'];
   var guest_info = '{{ theme.valine.guest_info }}';
@@ -17,5 +18,5 @@ script.
     avatar: '#{theme.valine.avatar}',
     meta: guest_info,
     pageSize: '#{theme.valine.pageSize}',
-    lang: '#{config.language.toLowerCase()}'
+    lang: '#{valine_lang.toLowerCase()}'
   });

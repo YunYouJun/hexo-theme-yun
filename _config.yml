@@ -191,7 +191,6 @@ gitalk:
   repo: # GitHub repo
   owner: # GitHub repo owner
   admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
-  distraction_free_mode: # Facebook-like distraction free mode
 
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
