@@ -3,9 +3,8 @@ script(src=theme.vendors.gitalk_js)
 
 #gitalk-container.comment-container
 script.
-  var gitalk = new Gitalk(!{JSON.stringify(gitalk_config)})
   var gitalk = new Gitalk({
-      clientID: '!{theme.gitalk.clientId}',
+      clientID: '!{theme.gitalk.clientID}',
       clientSecret: '!{theme.gitalk.clientSecret}',
       repo: '!{theme.gitalk.repo}',
       owner: '!{theme.gitalk.owner}',
