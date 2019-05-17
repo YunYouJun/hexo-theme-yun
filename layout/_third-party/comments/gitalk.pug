@@ -9,7 +9,7 @@ script.
       repo: '!{theme.gitalk.repo}',
       owner: '!{theme.gitalk.owner}',
       admin: '!{theme.gitalk.admin}',
-      id: '!{page.permalink}',
+      id: location.pathname,
       language: '!{config.language}'
     })
   gitalk.render('gitalk-container')
