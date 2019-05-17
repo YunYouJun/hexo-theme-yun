@@ -27,10 +27,6 @@ site_state: true
 rss:
 
 # Social Links.
-# Usage: `Key: permalink || icon`
-# Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: 
     link: https://github.com/YunYouJun
@@ -61,14 +57,13 @@ social:
     color: '#f25a8d'
   # bangumi: http://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
-  #Google: https://plus.google.com/yourname || google
+  # Google: https://plus.google.com/yourname || google
   # Twitter: https://twitter.com/yunyoujun || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
-  #Instagram: https://instagram.com/yourname || instagram
-  #Skype: skype:yourname?call|chat || skype
+  # FB Page: https://www.facebook.com/yourname || facebook
+  # StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  # YouTube: https://youtube.com/yourname || youtube
+  # Instagram: https://instagram.com/yourname || instagram
+  # Skype: skype:yourname?call|chat || skype
 
 # Sidebar Avatar
 avatar:
@@ -146,6 +141,8 @@ vendors:
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
+  leancloud_storage: //cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js
+  valine_js: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
 
 # Article
 # ---------------
