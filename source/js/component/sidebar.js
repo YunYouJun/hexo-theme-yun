@@ -4,29 +4,35 @@ $(function () {
     let isOpen = $(this).hasClass('is-active')
     isOpen ? $(this).removeClass('is-active') : $(this).addClass('is-active')
     if (isOpen) {
+      // close
       $('#sidebar').velocity('stop').velocity({
         translateX: '0px'
       }, {
-        duration: 200
+        duration: 400,
+        easing: 'easeInOutQuint'
       })
       if (!isSmall()) {
         $('.sidebar-translate').velocity('stop').velocity({
           paddingLeft: '0px'
         }, {
-          duration: 200
+          duration: 400,
+          easing: 'easeInOutQuint'
         })
       }
     } else {
+      // open
       $('#sidebar').velocity('stop').velocity({
         translateX: sidebarWidth
       }, {
-        duration: 200
+        duration: 400,
+        easing: 'easeInOutQuint'
       })
       if (!isSmall()) {
         $('.sidebar-translate').velocity('stop').velocity({
           paddingLeft: sidebarWidth
         }, {
-          duration: 200
+          duration: 400,
+          easing: 'easeInOutQuint'
         })
       }
     }

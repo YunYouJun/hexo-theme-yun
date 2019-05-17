@@ -86,7 +86,7 @@ $(function () {
       return
     }
     $item.velocity('stop').velocity('transition.fadeIn', {
-      duration: 500,
+      duration: 400,
       easing: 'easeInQuart'
     })
   }
@@ -99,7 +99,7 @@ $(function () {
     var scrollPercentRounded = Math.round(scrollPercent * 100)
     var percentage = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded
     $('.progress-num').text(percentage)
-    $('.sidebar-toc__progress-bar').velocity('stop')
+    $('.post-toc-progress .progress-bar').velocity('stop')
       .velocity({
         width: percentage + '%'
       }, {

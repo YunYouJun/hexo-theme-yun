@@ -15,11 +15,10 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
         if theme.avatar.url
           img.site-author-image(src=theme.avatar.url, alt=author)
           p.site-author-name
-            a(href=url_for('about'))!= author
+            a(href=url_for('about'))
+              | #{author}
           .site-home
           a(href=url_for())
-            i.fas.fa-home
-            |
             | #{config.title}
           .site-desciption!=config.description
       
@@ -63,5 +62,10 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
     .post-toc-wrap.sidebar-panel.sidebar-panel-active
       if toc(page.content).length > 1
         .post-toc
+          .post-toc-progress
+            .progress-bar
+            span.progress-notice=__('sidebar.have_read')
+            span.progress-num 0
+            span.progress-percentage='%'
           .post-toc-content!=toc(page.content)
 
