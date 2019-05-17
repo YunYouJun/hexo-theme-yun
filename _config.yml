@@ -106,8 +106,8 @@ scripts:
 - /js/utils.js
 - /js/starry-boot.js
 - /js/scroll.js
-- /js/ui/fireworks.js
 - /js/component/sidebar.js
+- /js/ui/fireworks.js
 
 # starry
 
@@ -120,29 +120,32 @@ cdn:
     # icon
     fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
-    # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
     iconfont: //at.alicdn.com/t/font_1140697_rowhas0mn3c.css
+    material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
+    # material
+    # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.css
   js:
     # icon
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/ionicons.js
     # ui
-    anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-    jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+    jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     # fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-    velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
-    velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+    velocity: //cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
+    velocity-ui: //cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+    # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-  algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-  algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
+  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
+  algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
 
 # Article
 # ---------------
@@ -178,16 +181,31 @@ creative_commons:
 # add_this_id:
 
 # Comments
+# -----------
+# gitalk
 # See: https://github.com/gitalk/gitalk
-# gitalk:
-  # enable: true
-  # clientID: # Github Application Client ID
-  # clientSecret: # Github Application Client Secret
-  # repo: # GitHub repo
-  # owner: # GitHub repo owner
-  # admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
-  # distraction_free_mode: # Facebook-like distraction free mode
+gitalk:
+  enable: false
+  clientID: # Github Application Client ID
+  clientSecret: # Github Application Client Secret
+  repo: # GitHub repo
+  owner: # GitHub repo owner
+  admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
+  distraction_free_mode: # Facebook-like distraction free mode
 
+# Valine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://valine.js.org
+valine:
+  enable: false
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
 
 # Footer Settings
 # ---------------

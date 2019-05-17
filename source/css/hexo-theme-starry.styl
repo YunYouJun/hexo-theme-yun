@@ -15,5 +15,6 @@
 // widget
 if hexo-config('local_search.enable') || hexo-config('algolia_search.enable')
   @import "_widget/search"
-
+if hexo-config('gitalk.enable') || hexo-config('valine.enable')
+  @import "_widget/comment"
 // third-party

@@ -28,11 +28,15 @@ html(lang=config.language)
         link(rel='stylesheet', href=item)
     include head.pug
     include config.pug
+    each item, name in theme.cdn.js
+      if name === 'jquery'
+        script(src=item)
+      else
+        script(src=item, defer)
   body
     canvas.fireworks
     //- global
     include ../_third-party/icon.pug
-    
     include sidebar.pug
     header#site-header
       .header-inner
@@ -43,12 +47,8 @@ html(lang=config.language)
     footer.sidebar-translate
       include footer.pug
     i.fa.fa-arrow-up#go-up(aria-hidden="true")
-    each item in theme.cdn.js
-      if item !== undefined
-        script(src=url_for(item))
-    if theme.scripts !== undefined && theme.scripts.length > 0
-      each url in theme.scripts
-        script(src=url)
+    each url in theme.scripts
+      script(src=url_for(url), defer)
     //- widget
     //- search
     if theme.local_search.enable || theme.algolia_search.enable
