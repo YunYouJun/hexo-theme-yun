@@ -69,3 +69,29 @@
   border-left: 3px solid #f8722a
   background-color: $light
   list-style: none
+
+a.fancybox
+  outline: none
+
+  &:focus
+    outline: none
+  
+  display: inline-block
+  width: 100%
+  text-align: center
+  text-decoration: none
+
+  .image-caption
+    color: $gray
+    font-size: 0.8rem
+    line-height: 1
+    margin-bottom: 20px
+
+img
+  padding: 5px
+  max-width: 100%
+  border: 1px solid $light-gray
+  transition: all 0.2s
+
+  &:hover
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)

@@ -25,6 +25,6 @@ block content
 
   else
     article#page
-      h1= page.title
-      != page.content
+      //- h1= page.title
+      .post-content(class='post-markdown')!= page.content
     include _partial/pagination.pug

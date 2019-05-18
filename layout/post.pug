@@ -1,6 +1,11 @@
 extends _partial/layout.pug
 
+prepend title
+  | #{page.title} | 
+
 block content
   article#post
     include _mixin/post.pug
     +post_item(page)
+
+  script(src=url_for('/js/scroll.js', defer))

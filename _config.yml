@@ -100,7 +100,6 @@ scripts:
 - /js/hexo-theme-starry.js
 - /js/utils.js
 - /js/starry-boot.js
-- /js/scroll.js
 - /js/component/sidebar.js
 - /js/ui/fireworks.js
 
@@ -110,8 +109,8 @@ scripts:
 cdn:
   css:
     # font
-    # font: https://fonts.googleapis.com/css?family=Montserrat
-    font: https://fonts.loli.net/css?family=Montserrat
+    font: https://fonts.googleapis.com/css?family=Montserrat
+    # font: https://fonts.loli.net/css?family=Montserrat
     # icon
     fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css
@@ -124,6 +123,7 @@ cdn:
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # material
     # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.css
+    fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
   js:
     # icon
     # ionicons: https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/ionicons.js
@@ -134,6 +134,7 @@ cdn:
     velocity: //cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     velocity-ui: //cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
     # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.js
+    fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
 
 # cdn for third-party library (alternative include)
 vendors:

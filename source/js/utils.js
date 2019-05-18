@@ -38,6 +38,53 @@ function wrapTable() {
 }
 
 Starry.utils = {
+    /**
+   * Wrap images with fancybox support.
+   */
+  wrapImageWithFancyBox: function() {
+    $('article img')
+      .not(':hidden')
+      .each(function() {
+        var $image = $(this);
+        $image.attr('lazyload', 'auto')
+        var imageTitle = $image.attr('title') || $image.attr('alt');
+        var $imageWrapLink = $image.parent('a');
+
+        if ($imageWrapLink.length < 1) {
+          var imageLink = $image.attr('data-original') || $image.attr('src');
+          $imageWrapLink = $image.wrap('<a class="fancybox fancybox.image" href="' + imageLink + '" itemscope itemtype="http://schema.org/ImageObject" itemprop="url"></a>').parent('a');
+          if ($image.is('.post-gallery img')) {
+            $imageWrapLink.addClass('post-gallery-img');
+            $imageWrapLink.attr('data-fancybox', 'gallery').attr('rel', 'gallery');
+          }
+          else if ($image.is('.group-picture img')) {
+            $imageWrapLink.attr('data-fancybox', 'group').attr('rel', 'group');
+          }
+          else {
+            $imageWrapLink.attr('data-fancybox', 'default').attr('rel', 'default');
+          }
+        }
+
+        if (imageTitle) {
+          $imageWrapLink.append('<div class="image-caption">' + imageTitle + '</div>');
+          // Make sure img title tag will show correctly in fancybox
+          $imageWrapLink.attr('title', imageTitle).attr('data-caption', imageTitle);
+        }
+      });
+
+    $('.fancybox').fancybox({
+      loop: true,
+      buttons: [
+        "zoom",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+      ]
+    });
+  },
+
   /**
    * Transform embedded video to support responsive layout.
    * @see http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/
