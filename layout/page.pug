@@ -5,6 +5,8 @@ prepend title
     | #{__('title.category')}
   else if page.type === 'tags'
     | #{__('title.tag')}
+  else
+    | #{page.title}
   |
   | |
   | 

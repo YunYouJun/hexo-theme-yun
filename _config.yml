@@ -100,6 +100,7 @@ scripts:
 - /js/hexo-theme-starry.js
 - /js/utils.js
 - /js/starry-boot.js
+- /js/scroll.js
 - /js/component/sidebar.js
 - /js/ui/fireworks.js
 

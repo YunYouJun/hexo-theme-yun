@@ -4,15 +4,26 @@
 
 Demo & Docs: <https://starry.yunyoujun.cn>
 
+Deving...
+
 ## Install
 
 ```sh
 git clone -b master https://github.com/YunYouJun/hexo-theme-starry themes/starry
 ```
 
-## About
+If you don't have jade & stylus renderer:
 
-- [Hexo](https://hexo.io)
+```sh
+npm install hexo-renderer-jade hexo-renderer-stylus
+```
+
+## Usage
+
+```yml
+# root/_config.yml
+theme: starry
+```
 
 ## Ref
 

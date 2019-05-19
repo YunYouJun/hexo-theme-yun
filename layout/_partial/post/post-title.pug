@@ -1,9 +1,6 @@
-h1.post-title(itemprop='name headline')
-  if post.sticky > 0
-    span.post-sticky-flag(title=__('post.sticky') + '：' + post.sticky)
-      i(class='fas fa-paperclip')
-      |  
-  if is_post()
+if is_post()
+  h1.post-title(itemprop='name headline')
     | #{post.title}
-  else
+else
+  h2.post-title(itemprop='name headline')
     a.post-title-link(itemprop='url', href=url_for(post.path))=post.title

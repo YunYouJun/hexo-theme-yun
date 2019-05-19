@@ -3,6 +3,12 @@
     - var date_diff = date(post.date) != date(post.updated)
     - var time_diff = time(post.date) != time(post.updated)
     - var datetime_diff = date_diff || time_diff
+    if post.sticky > 0
+      span.post-sticky-flag.post-meta-item-icon(title=__('post.sticky') + '：' + post.sticky)
+        i(class='fas fa-paperclip')
+      |  
+      span.post-meta-icon-text=__('post.sticky')
+      span.post-meta-divider='|'
     if theme.post_meta.created_at
       span.post-meta-item-icon
         i(class='far fa-calendar')
