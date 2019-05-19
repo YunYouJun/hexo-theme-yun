@@ -43,8 +43,6 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
 
       if theme.social
         .links-of-author
-          if !theme.rss && config.feed && config.feed.path
-            - theme.rss = config.feed.path
           if theme.rss
             span.links-of-author-item
               a(href=url_for(theme.rss), title='RSS', target='_blank', style='color:orange')

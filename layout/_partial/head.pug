@@ -1,3 +1,10 @@
+link(rel="dns-prefetch" href="https://cdn.jsdelivr.net")
+!=favicon_tag(config.favicon || theme.favicon || '/starry-favicon.ico')
+
+if !theme.rss && config.feed && config.feed.path
+  - theme.rss = config.feed.path
+  != feed_tag(config.feed.path)
+
 script#starry-config
   | var Starry = window.Starry || {};
 

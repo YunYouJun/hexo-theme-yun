@@ -19,15 +19,14 @@ html(lang=config.language)
     title
       block title
         | #{title}
-    !=favicon_tag(config.favicon || theme.favicon || '/favicon.ico')
-    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
-      each url in theme.stylesheets
+    include head.pug
+    include config.pug
+    if theme.css !== undefined && theme.css.length > 0
+      each url in theme.css
         link(rel='stylesheet', href=url_for(url))
     each item in theme.cdn.css
       if item !== undefined
         link(rel='stylesheet', href=item)
-    include head.pug
-    include config.pug
     each item, name in theme.cdn.js
       if name === 'jquery'
         script(src=item)
@@ -47,7 +46,7 @@ html(lang=config.language)
     footer.sidebar-translate
       include footer.pug
     i.fa.fa-arrow-up#go-up(aria-hidden="true")
-    each url in theme.scripts
+    each url in theme.js
       script(src=url_for(url), defer)
     //- widget
     //- search

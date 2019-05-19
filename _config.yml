@@ -14,6 +14,7 @@ color:
   tag_start_color: "#A4D8FA"
   tag_end_color: "#1B9EF3"
 
+# https://www.jsdelivr.com
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
@@ -91,12 +92,16 @@ menu:
     path: /about
     icon: fas fa-info
 
+# Favicon
+# ---------------
+favicon: /starry-favicon.ico
+
 # stylesheets loaded in the <head>
-stylesheets:
+css:
 - /css/hexo-theme-starry.css
 
 # scripts loaded in the end of the body
-scripts:
+js:
 - /js/hexo-theme-starry.js
 - /js/utils.js
 - /js/starry-boot.js
@@ -104,10 +109,9 @@ scripts:
 - /js/component/sidebar.js
 - /js/ui/fireworks.js
 
-# starry
-
 # cdn for third-party library (always include)
 cdn:
+  gh: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
   css:
     # font
     font: https://fonts.googleapis.com/css?family=Montserrat
