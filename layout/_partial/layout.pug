@@ -45,7 +45,8 @@ html(lang=config.language)
         block content
     footer.sidebar-translate
       include footer.pug
-    i.fa.fa-arrow-up#go-up(aria-hidden="true")
+    i#go-up(aria-hidden="true")
+      +icon('icon-arrow-up-line')
     each url in theme.js
       script(src=url_for(url), defer)
     //- widget

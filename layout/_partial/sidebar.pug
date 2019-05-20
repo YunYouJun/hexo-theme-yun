@@ -46,15 +46,11 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           if theme.rss
             span.links-of-author-item
               a(href=url_for(theme.rss), title='RSS', target='_blank', style='color:orange')
-                i.fas.fa-rss
-                |
-                | RSS
+                +icon(theme.rss_icon)
           for social, name in theme.social
             span.links-of-author-item
               a(href=social.link, title=name, target='_blank', style='color:' + social.color)
                 +icon(social.icon)
-                |
-                | #{name}
 
   if is_post()
     .post-toc-wrap.sidebar-panel.sidebar-panel-active

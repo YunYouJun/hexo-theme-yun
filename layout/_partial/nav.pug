@@ -1,13 +1,7 @@
-nav#nav-menu
-  ul#menu.menu
-    each item, label in theme.menu
-      li.menu-item
-        a.menu-link(href=item.path)
-          +icon(item.icon)
-          //- | #{__('menu.' + label)}
-    if theme.local_search.enable || theme.algolia_search.enable
-      li.menu-item.menu-item-search
-        a.popup-trigger(href='javascript:;')
-          i.fas.fa-search
-          |
-          | #{__('menu.search')}
+nav#menu.menu
+  each item, label in theme.menu
+    a.menu-item.menu-link(href=item.path, title=__('menu.' + label))
+      +icon(item.icon)
+  if theme.local_search.enable || theme.algolia_search.enable
+    a.menu-item.menu-item-search.popup-trigger(href='javascript:;', title=__('menu.search'))
+      +icon('icon-search-line')

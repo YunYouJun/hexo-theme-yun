@@ -11,7 +11,7 @@
         | #{theme.footer.since} – 
       | #{nowYear} 
     span#animate.with-love
-      i(class="fas fa-" + theme.footer.icon.name)
+      +icon(theme.footer.icon.name, 20)
     span.author  #{config.author}
 
   .powered

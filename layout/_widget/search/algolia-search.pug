@@ -1,14 +1,15 @@
 .popup.search-popup.algolia-search-popup
   .algolia-search
-    .algolia-search-input-icon
-      i.fas.fa-search
-    .algolia-search-input#algolia-search-input.search-input
+    span.algolia-search-input-icon.search-icon
+      +icon('icon-search-line')
+    span.algolia-search-input#algolia-search-input.search-input
+    span.popup-btn-close.close-icon
+      +icon('icon-close-circle-line')
   .algolia-results
     #algolia-stats
     #algolia-hits
     #algolia-pagination.algolia-pagination
-  span.popup-btn-close
-    i.far.fa-times-circle
+
 
 if theme.vendors.algolia_instant_css
   link(rel='stylesheet', href=theme.vendors.algolia_instant_css)

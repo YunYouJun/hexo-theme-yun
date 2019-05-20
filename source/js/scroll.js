@@ -14,7 +14,7 @@ $(function () {
     // head position
     findHeadPosition(currentTop)
     var isUp = scrollDirection(currentTop)
-    if (currentTop > 56) {
+    if (currentTop > 64) {
       if (isUp) {
         $('#site-header').hasClass('visible') ? $('#site-header').removeClass('visible') : console.log()
       } else {

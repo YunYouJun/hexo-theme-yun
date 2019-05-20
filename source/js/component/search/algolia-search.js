@@ -78,10 +78,10 @@ algoliasearch.addWidget(
     scrollTo: false,
     showFirstLast: false,
     labels: {
-      first: '<i class="fa fa-angle-double-left"></i>',
-      last: '<i class="fa fa-angle-double-right"></i>',
-      previous: '<i class="fa fa-angle-left"></i>',
-      next: '<i class="fa fa-angle-right"></i>'
+      first: '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
+      last: '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
+      previous: '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
+      next: '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>'
     },
     cssClasses: {
       root: 'pagination',

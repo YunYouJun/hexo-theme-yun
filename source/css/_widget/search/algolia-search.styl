@@ -1,3 +1,18 @@
+.ais-search-box
+  margin: 0 auto
+  width: 100% !important
+  max-width: 100% !important
+  position: static !important
+  &--input
+    padding: 0.2rem
+    outline: none
+    font-size: 1.2rem
+    width: 100%
+    border: none
+    background: transparent
+    padding-left: 0px !important
+    line-height: 1
+
 .algolia-search-popup
   overflow: hidden
   padding: 0
@@ -22,45 +37,20 @@
     border-radius: 0
 
   .popup-btn-close
-    position: absolute
-    right: 14px
-    color: #4EBD79
-    font-size: 14px
-    font-weight: bold
-    text-transform: uppercase
     cursor: pointer
-    padding-left: 15px
-    border-left: 1px solid #eee
-    top: 10px
-    .fa
-      color: $grey-dark
-      font-size: 18px
-    &:hover .fa
-      color: $black-deep
+    float: right
+    &:hover 
+      .icon
+        color: $gray
 
 .algolia-search
-  padding: 10px 15px 5px
-  max-height: 50px
   border-bottom: 1px solid #ccc
-  background: $whitesmoke
-  border-top-left-radius: 5px
-  border-top-right-radius: 5px
-
-.algolia-search-input-icon
-  display: inline-block
-  width: 20px
-  .fa
-    font-size: 18px
 
 .algolia-search-input
   display: inline-block
-  width: calc(90% - 20px)
-  input
-    padding: 5px 0
-    width: 100%
-    outline: none
-    border: none
-    background: transparent
+  padding: 0.5rem
+  vertical-align: bottom
+  width: 80%
 
 .algolia-powered
   float: right

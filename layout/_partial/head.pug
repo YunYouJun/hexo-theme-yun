@@ -8,8 +8,8 @@ if !theme.rss && config.feed && config.feed.path
 script#starry-config
   | var Starry = window.Starry || {};
 
-if theme.google_adsense && theme.google_adsense.enable
+if process.env.NODE_ENV !== 'dev' && theme.google_adsense && theme.google_adsense.enable
   include ../_third-party/google-adsense.pug
 
-if theme.google_analytics && theme.google_analytics.enable
+if process.env.NODE_ENV !== 'dev' && theme.google_analytics && theme.google_analytics.enable
   include ../_third-party/analytics/google-analytics.pug

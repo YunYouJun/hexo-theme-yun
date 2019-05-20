@@ -5,13 +5,13 @@
     - var datetime_diff = date_diff || time_diff
     if post.sticky > 0
       span.post-sticky-flag.post-meta-item-icon(title=__('post.sticky') + '：' + post.sticky)
-        i(class='fas fa-paperclip')
+        +icon('icon-map-pin-3-line')
       |  
       span.post-meta-icon-text=__('post.sticky')
       span.post-meta-divider='|'
     if theme.post_meta.created_at
       span.post-meta-item-icon
-        i(class='far fa-calendar')
+        +icon('icon-calendar-line')
       |  
       if theme.post_meta.item_text
         span.post-meta-icon-text=__('post.posted')
@@ -25,7 +25,7 @@
         if theme.post_meta.created_at && theme.post_meta.updated_at
           span.post-meta-divider='|'
           span.post-meta-item-icon
-            i(class='far fa-calendar-check')
+            +icon('icon-calendar-2-line')
           |  
           if theme.post_meta.item_text
             span.post-meta-icon-text=__('post.edited')
@@ -38,7 +38,7 @@
       if theme.post_meta.created_at || theme.post_meta.updated_at
         span.post-meta-divider='|'
         span.post-meta-item-icon
-          i(class='far fa-folder')
+          +icon('icon-folder-line')
         |  
         for category, index in post.categories.data
           span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
@@ -56,7 +56,7 @@
         for tag in post.tags.data
           |  
           span.post-meta-item-icon
-            i(class='fas fa-hashtag')
+            +icon('icon-price-tag-3-line')
             |  
             a(href=url_for(tag.path, rel='tag'))=tag.name + ' '
 
@@ -65,7 +65,7 @@
     if theme.post_meta.created_at || theme.post_meta.updated_at
       span.post-meta-divider='|'
     span.post-meta-item-icon(title=__('post.views'))
-      i(class=theme.busuanzi.page_pv_icon)
+      +icon(theme.busuanzi.page_pv_icon)
       |  
       if theme.post_meta.item_text
         | #{__('post.views') + __('symbol.colon')}
@@ -76,7 +76,7 @@
       //- span.post-meta-divider='|'
       if config.symbols_count_time.symbols
         span.post-meta-item-icon
-          i(class='far fa-file-word')
+          +icon('icon-file-word-line')
         |  
         if theme.symbols_count_time.item_text_post
           span.post-meta-item-text=__('symbols_count_time.count') + __('symbol.colon')
@@ -85,7 +85,7 @@
         span.post-meta-divider='|'
       if config.symbols_count_time.time
         span.post-meta-item-icon
-          i(class='far fa-clock')
+          +icon('icon-timer-line')
         |  
         if theme.symbols_count_time.item_text_post
           span.post-meta-item-text=__('symbols_count_time.time')

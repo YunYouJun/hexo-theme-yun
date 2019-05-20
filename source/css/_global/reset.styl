@@ -1,8 +1,8 @@
 body
-  font-family: Montserrat, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-family: 'Open Sans', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif
   font-weight: 300
-  line-height: 1.8
   margin: 0px
+  line-height: 2
 
 ::selection
 {
@@ -11,23 +11,22 @@ body
 }
 
 a {
-  color: $link-color;
+  color: $color.link;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: mix($black, $link-color, 50%);
+    color: mix($black, $color.link, 50%);
   }
 
   &:active {
-    color: mix($black, $link-color, 50%);
+    color: mix($black, $color.link, 50%);
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $text-color;
-  font-weight: inherit;
-}
+h1, h2, h3, h4, h5, h6
+  color: $color.text
+  font-weight: inherit
 
 $--head-font-size-base = 1rem !default
 $--head-font-size-step = 0.3rem !default

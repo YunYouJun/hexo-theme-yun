@@ -1,15 +1,15 @@
 
-.busuanzi
+#busuanzi
   script(async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js")
   if theme.busuanzi.site_uv
     span#busuanzi_container_site_uv!= theme.busuanzi.site_uv_header
       span
-        i(class=theme.busuanzi.site_uv_icon)
+        +icon(theme.busuanzi.site_uv_icon, 14)
       span#busuanzi_value_site_uv
   if theme.busuanzi.site_pv
     if theme.busuanzi.site_pv
       span.footer-separator |
     span#busuanzi_container_site_pv!= theme.busuanzi.site_pv_header
       span
-        i(class=theme.busuanzi.site_pv_icon)
+        +icon(theme.busuanzi.site_pv_icon, 14)
       span#busuanzi_value_site_pv

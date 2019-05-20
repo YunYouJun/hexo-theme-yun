@@ -187,9 +187,9 @@ var searchFunc = function(path, search_id, content_id) {
           })
         };
         if (keywords.length === 1 && keywords[0] === "") {
-          resultContent.innerHTML = '<div id="no-result"><i class="fas fa-search fa-5x"></i></div>'
+          resultContent.innerHTML = '<div id="no-result"><svg class="icon"><use xlink:href="#icon-search-line"></use></svg></div>'
         } else if (resultItems.length === 0) {
-          resultContent.innerHTML = '<div id="no-result"><i class="far fa-frown fa-5x"></i></div>'
+          resultContent.innerHTML = '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>'
         } else {
           resultItems.sort(function (resultLeft, resultRight) {
             if (resultLeft.searchTextCount !== resultRight.searchTextCount) {

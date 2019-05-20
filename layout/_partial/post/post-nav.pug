@@ -2,15 +2,16 @@
   .post-nav-item.post-nav-prev
     if post.prev
       a(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
-        i(class='fas fa-chevron-left')
+        +icon('icon-arrow-left-s-line')
         |  
         != post.prev.title
   .post-nav-divider
     if theme.add_this_id
-      i.btn-inverse.social-share(class='fas fa-share-alt', onclick='var share = document.getElementById("share"); share.style.display = (share.style.display === "none") ? "block" : "none";')
+      i.btn.social-share(onclick='var share = document.getElementById("share"); share.style.display = (share.style.display === "none") ? "block" : "none";')
+        +icon('icon-share-line')
   .post-nav-item.post-nav-next
     if post.next
       a(href=url_for(post.next.path), rel='next', title=post.next.title)
         != post.next.title
         |  
-        i(class='fas fa-chevron-right')
+        +icon('icon-arrow-right-s-line')
