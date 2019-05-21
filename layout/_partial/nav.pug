@@ -1,7 +1,0 @@
-nav#menu.menu
-  each item, label in theme.menu
-    a.menu-item.menu-link(href=item.path, title=__('menu.' + label))
-      +icon(item.icon)
-  if theme.local_search.enable || theme.algolia_search.enable
-    a.menu-item.menu-item-search.popup-trigger(href='javascript:;', title=__('menu.search'))
-      +icon('icon-search-line')

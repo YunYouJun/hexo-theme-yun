@@ -1,32 +1,20 @@
-// scrollbar
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
 
-// track 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track
   border-radius: 2px
-  background-color: rgba(0, 0, 0, 0.1)
-}
+  background-color: rgba(0, 0, 0, 0.05)
 
-// Handle style
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;  
-  background: rgba(0, 0, 0, 0.2);   
-}
+::-webkit-scrollbar-thumb
+  border-radius: 2px
+  background-color: alpha($colors.primary, 0.4)
 
-// inactive style
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0, 0, 0, 0.1);
-}
+  &:window-inactive
+    background-color: alpha($colors.primary, 0.2)
 
-// hover style
-::-webkit-scrollbar-thumb:hover{
-  background-color: rgba(0, 0, 0, 0.3);
-}
+  &:hover
+    background-color: alpha($colors.primary, 0.6)
 
-// active style
-::-webkit-scrollbar-thumb:active{
-  background-color: rgba(0, 0, 0, 0.4);
-}
+  &:active
+    background-color: alpha($colors.primary, 0.8)

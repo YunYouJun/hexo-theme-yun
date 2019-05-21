@@ -6,7 +6,6 @@ $(function () {
   $('.toc-child').hide()
 
   // main of scroll
-  // show header
   $(window).scroll(throttle(function (event) {
     var currentTop = $(this).scrollTop()
     // percentage inspired by hexo-theme-next
@@ -15,12 +14,6 @@ $(function () {
     findHeadPosition(currentTop)
     var isUp = scrollDirection(currentTop)
     if (currentTop > 64) {
-      if (isUp) {
-        $('#site-header').hasClass('visible') ? $('#site-header').removeClass('visible') : console.log()
-      } else {
-        $('#site-header').hasClass('visible') ? console.log() : $('#site-header').addClass('visible')
-      }
-      $('#site-header').addClass('fixed')
       if ($('#go-up').css('opacity') === '0') {
         $('#go-up').velocity('stop').velocity({
           translateX: -30,
@@ -32,9 +25,6 @@ $(function () {
         })
       }
     } else {
-      if (currentTop === 0) {
-        $('#site-header').removeClass('fixed').removeClass('visible')
-      }
       $('#go-up').velocity('stop').velocity({
         translateX: 0,
         rotateZ: 180,

@@ -23,21 +23,32 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           .site-desciption!=config.description
       
       nav.site-state
-        if config.archive_dir != '/' && site.posts.length > 0
+        .site-state-item
+          a(href=url_for(theme.menu.home.path), title=__('menu.home'))
+            span.site-state-item-icon
+              +icon(theme.menu.home.icon)
+        if site.posts.length > 0
           .site-state-item.site-state-posts
-            a(href=url_for(config.archive_dir))
+            a(href=url_for(config.archive_dir), title=__('menu.archives'))
+              span.site-state-item-icon
+                +icon(theme.menu.archives.icon)
               span.site-state-item-count!=site.posts.length
-              span.site-state-item-name!=__('state.posts')
         if site.categories.length > 0
           .site-state-item.site-state-categories
-            a(href=url_for(config.category_dir))
+            a(href=url_for(config.category_dir), title=__('menu.categories'))
+              span.site-state-item-icon
+                +icon(theme.menu.categories.icon)
               span.site-state-item-count!=site.categories.length
-              span.site-state-item-name!=__('state.categories')
         if site.tags.length > 0
           .site-state-item.site-state-tags
-            a(href=url_for(config.tag_dir))
+            a(href=url_for(config.tag_dir), title=__('menu.tags'))
+              span.site-state-item-icon
+                +icon(theme.menu.tags.icon)
               span.site-state-item-count!=site.tags.length
-              span.site-state-item-name!=__('state.tags')
+        .site-state-item
+          a.popup-trigger(href='javascript:;', title=__('menu.search'))
+            span.site-state-item-icon
+              +icon('icon-search-line')
       
       hr
 
@@ -51,7 +62,7 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
             span.links-of-author-item
               a(href=social.link, title=name, target='_blank', style='color:' + social.color)
                 +icon(social.icon)
-
+      
   if is_post()
     .post-toc-wrap.sidebar-panel.sidebar-panel-active
       if toc(page.content).length > 1

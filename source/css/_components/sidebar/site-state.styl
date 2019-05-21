@@ -12,22 +12,23 @@
   margin-top: 10px
 
 .site-state-item
+  display: flex
   padding: 0 15px
   border-left: 1px solid $light-gray
+  align-items: center
 
   &:first-child
     border-left: none
+
+.site-state-item-icon
+  color: $dark
+  line-height: 1
+  .icon
+    width: 1.5rem
+    height: 1.5rem
 
 .site-state-item-count
   display: block
   text-align: center
   color: $dark
-  font-weight: bold
-  font-size: 1.2rem
-
-.site-state-item-name
-  font-size: 0.9rem
-  color: $dark
-
-.feed-link
-  margin: 15px 0
+  font-size: 1rem
