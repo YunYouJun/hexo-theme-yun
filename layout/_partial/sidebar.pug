@@ -17,9 +17,9 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           p.site-author-name
             a(href=url_for('about'))
               | #{author}
-          .site-home
-          a(href=url_for())
-            | #{config.title}
+          .site-info
+            a(href=url_for('about/site.html'))
+              | #{config.title}
           .site-desciption!=config.description
       
       nav.site-state
