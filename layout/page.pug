@@ -27,6 +27,10 @@ block content
 
   else
     article#page
-      //- h1= page.title
-      .post-content(class='post-markdown')!= page.content
-    include _partial/pagination.pug
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content
+
+        hr
+        if page.comments
+          include ./_third-party/comments/index.pug
+    

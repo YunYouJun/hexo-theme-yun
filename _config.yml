@@ -218,7 +218,6 @@ footer:
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
     name: icon-cloud-line
     # If you want to animate the icon, set it to true.
