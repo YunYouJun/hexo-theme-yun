@@ -1,13 +1,13 @@
 .page-number-basic
   display: inline-block
-  min-width: 1rem
-  padding: 3px 10px 0px 10px
-  margin: 0
+  width: 2rem
   height: 2rem
-  border-bottom: 1px solid $light-gray
+  margin: 0
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1)
 
 .pagination
-  margin-top: 4rem;
+  margin-top: 4rem
   text-align: center
 
   .space
@@ -20,9 +20,10 @@
     text-decoration: none
 
     &:hover
-      border-bottom-color: $gray
+      background: alpha($colors.primary, 0.1)
 
     &.current
-      background: $light-gray
+      background: $colors.primary
       color: $white
       cursor: default
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset

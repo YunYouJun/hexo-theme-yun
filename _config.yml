@@ -116,7 +116,7 @@ cdn:
   # pre: https://cdn.yunyoujun.cn
   css:
     # font
-    font: https://fonts.googleapis.com/css?family=Open+Sans:300
+    font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
     # font: https://fonts.loli.net/css?family=Montserrat
     # icon
     # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
@@ -130,7 +130,7 @@ cdn:
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_x32eq4xmhp.js
+    iconfont: //at.alicdn.com/t/font_1140697_uv9hpdsx7c9.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -138,6 +138,7 @@ cdn:
     velocity: //cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     velocity-ui: //cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
     # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.js
+    css-doodle: //cdn.jsdelivr.net/npm/css-doodle@latest/css-doodle.min.js
 
 # cdn for third-party library (alternative include)
 vendors:

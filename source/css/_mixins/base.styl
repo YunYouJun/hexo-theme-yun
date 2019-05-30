@@ -1,12 +1,15 @@
-the-transition() {
+// small
+mobile()
+  @media screen and (max-width: 768px)
+    {block}
+
+the-transition()
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-}
 
-// small
-mobile() {
-  @media screen and (max-width: 768px) {
-    {block}
-  }
-}
+// shadow
+the-box-shadow()
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1)
+  &:hover
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)

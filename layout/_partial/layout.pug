@@ -21,9 +21,6 @@ html(lang=config.language)
         | #{title}
     include head.pug
     include config.pug
-    if theme.css !== undefined && theme.css.length > 0
-      each url in theme.css
-        link(rel='stylesheet', href=url_for(url))
     each item in theme.cdn.css
       if item !== undefined
         link(rel='stylesheet', href=item)
@@ -32,11 +29,15 @@ html(lang=config.language)
         script(src=item)
       else
         script(src=item, defer)
+    if theme.css !== undefined && theme.css.length > 0
+      each url in theme.css
+        link(rel='stylesheet', href=url_for(url))
   body
     canvas.fireworks
     //- global
     include ../_third-party/icon.pug
     include sidebar.pug
+    include background.pug
     main#content-outer.sidebar-translate
       #content-inner.layout
         block content

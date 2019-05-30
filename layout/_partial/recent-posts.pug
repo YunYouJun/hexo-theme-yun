@@ -1,4 +1,23 @@
-include ../_mixin/recent-post.pug
 section#recent-posts
   each post in page.posts.data
-    +recent_post_item(post, true)
+    article(class='hts-card recent-post-item', itemscope, itemtype='http://schema.org/Article')
+      .post-block
+        include ../_partial/post/post-schema.pug
+
+        header.post-header
+          include ../_partial/post/post-title.pug
+          include ../_partial/post/post-meta.pug
+        
+        section.post-body(class='post-markdown')
+          if post.description
+            .post-description!=post.description
+          .post-excerpt(itemprop='articleBody')
+            if post.excerpt
+              != post.excerpt
+          //- .post-button(class='text-center')
+            a.btn(href=url_for(post.path))=__('post.read_more')
+        
+        if post.excerpt !== post.content.replace('<a id="more"></a>', '')
+          .read-more.text-center
+            a(href=url_for(post.path))
+              +icon('icon-more-line')
