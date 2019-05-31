@@ -8,10 +8,10 @@ section#recent-posts
           include ../_partial/post/post-title.pug
           include ../_partial/post/post-meta.pug
         
-        section.post-body(class='post-markdown')
+        section.post-body
           if post.description
             .post-description!=post.description
-          .post-excerpt(itemprop='articleBody')
+          .post-excerpt(class='post-markdown', itemprop='articleBody')
             if post.excerpt
               != post.excerpt
           //- .post-button(class='text-center')

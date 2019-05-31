@@ -13,8 +13,8 @@ block content
         include _partial/post/post-title.pug
         include _partial/post/post-meta.pug
 
-      section.post-body(class='post-markdown', itemprop='articleBody')
-        .post-content!=post.content
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!=post.content
 
         if theme.reward_settings.enable
           include _partial/post/reward.pug

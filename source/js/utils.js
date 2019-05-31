@@ -42,7 +42,7 @@ Starry.utils = {
    * Wrap images with fancybox support.
    */
   wrapImageWithFancyBox: function() {
-    $('.post-body img')
+    $('.post-content img, .post-excerpt img')
       .not(':hidden')
       .each(function() {
         var $image = $(this);
