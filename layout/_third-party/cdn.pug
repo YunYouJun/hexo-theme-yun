@@ -1,0 +1,15 @@
+link(rel="dns-prefetch" href="https://cdn.jsdelivr.net")
+each item in theme.cdn.css
+  if typeof item === 'object'
+    each component in item
+      link(rel='stylesheet', href=component)
+  else
+    link(rel='stylesheet', href=item)
+each item, name in theme.cdn.js
+  if typeof item === 'object'
+    each component in item
+      script(src=component, async)
+  else if name === 'jquery'
+    script(src=item)
+  else
+    script(src=item, defer)

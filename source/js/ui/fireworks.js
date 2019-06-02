@@ -1,3 +1,6 @@
+// rf hexo-theme-melody
+// custom by hexo-theme-starry
+
 const numberOfParticules = 20
 
 const minOrbitRadius = 50
@@ -149,3 +152,4 @@ function animateParticules (x, y) {
       offset: 0
     })
 }
+

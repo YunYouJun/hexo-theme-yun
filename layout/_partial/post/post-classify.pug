@@ -1,0 +1,22 @@
+.post-classify
+  if post.categories && post.categories.length && theme.post_meta.categories
+    .post-card-category
+      span.post-meta-item-icon
+        +icon('icon-folder-line')
+      |  
+      for category, index in post.categories.data
+        span
+          a(href=url_for(category.path))
+            span(itemprop='text')=category.name
+
+        - var category_length = post.categories.length
+        if category_length > 1 && index != category_length - 1
+          |  > 
+  if post.tags && post.tags.length && theme.post_meta.tags
+    .post-card-tag
+        for tag in post.tags.data
+          |  
+          span.post-meta-item-icon
+            +icon('icon-price-tag-3-line')
+            |  
+            a(href=url_for(tag.path, rel='tag'))=tag.name + ' '

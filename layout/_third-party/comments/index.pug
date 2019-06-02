@@ -3,25 +3,26 @@ if theme.gitalk.enable && theme.valine.enable
     .comment-tooltip
       | 若您无 GitHub 账号，可使用 Valine 匿名评论。<br/>
       | 如果您想要收到回复提醒，建议使用 Gitalk 。
-    span.btn.active.comment-nav-item(data-target='gitalk-container')='Gitalk'
+    //- <button class="mdc-button mdc-button--outlined">Learn More</button>
+    button.comment-nav-item.mdc-button(data-target='gitalk-container')='Gitalk'
     |
     | or
     |
-    span.btn.comment-nav-item(data-target='valine-container')='Valine'
+    button.comment-nav-item.mdc-button(data-target='valine-container')='Valine'
   script.
     $(document).ready(function() {
       $('#valine-container').hide()
       $('.comment-nav-item').on('click', function() {
-        $('.comment-nav-item').removeClass('active')
+        $('.comment-nav-item').removeClass('mdc-button--raised')
         $('.comment-container').hide()
         var item = $(this)
-        item.addClass('active')
+        item.addClass('mdc-button--raised')
         var target = $('#' + item.data('target'))
         target.show()
       })
     })
 
-if theme.gitalk && theme.gitalk.enable
+if process.env.NODE_ENV !== 'dev' && theme.gitalk && theme.gitalk.enable
   include gitalk.pug
 if theme.valine && theme.valine.enable
   include valine.pug

@@ -5,12 +5,13 @@
 // mixin
 @import "_mixins/*"
 
+// global
+@import "_global"
+@import "_layout/*"
+
 // component
 @import "_components/*"
 @import "_components/*/*"
-
-@import "_global"
-@import "_layout/*"
 
 // widget
 if hexo-config('local_search.enable') || hexo-config('algolia_search.enable')

@@ -106,9 +106,8 @@ js:
 - /js/hexo-theme-starry.js
 - /js/utils.js
 - /js/starry-boot.js
-- /js/scroll.js
 - /js/component/sidebar.js
-- /js/ui/fireworks.js
+- /js/scroll.js
 
 # cdn for third-party library (always include)
 cdn:
@@ -116,18 +115,24 @@ cdn:
   # pre: https://cdn.yunyoujun.cn
   css:
     # font
-    font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
+    # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
     # font: https://fonts.loli.net/css?family=Montserrat
     # icon
-    # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons
+    material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
-    # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.css
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
+    material:
+      # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
+      - https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css
+      - https://cdn.jsdelivr.net/npm/@material/card/dist/mdc.card.min.css
+      - https://cdn.jsdelivr.net/npm/@material/fab/dist/mdc.fab.min.css
+      - https://cdn.jsdelivr.net/npm/@material/icon-button/dist/mdc.icon-button.min.css
+      - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
   js:
     # icon
     iconfont: //at.alicdn.com/t/font_1140697_uv9hpdsx7c9.js
@@ -137,17 +142,26 @@ cdn:
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
     velocity: //cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
     velocity-ui: //cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
-    # material-design-lite: https://cdn.jsdelivr.net/npm/material-design-lite/material.min.js
-    css-doodle: //cdn.jsdelivr.net/npm/css-doodle@latest/css-doodle.min.js
+    material:
+      # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
+      - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
-  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
+  css_doodle: //cdn.jsdelivr.net/npm/css-doodle@latest/css-doodle.min.js
+  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   leancloud_storage: //cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js
   valine_js: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  fireworks: /js/ui/fireworks.js
+  rymd: /js/ui/rymd.js
+
+ui:
+  css_doodle: false
+  fireworks: true
+  rymd: false
 
 # Article
 # ---------------

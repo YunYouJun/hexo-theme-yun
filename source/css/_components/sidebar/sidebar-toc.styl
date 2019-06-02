@@ -1,12 +1,17 @@
-.post-toc ol
-  list-style: none
-  text-align: left
-  margin: 0
-  padding: 0 2px 5px 10px
+.post-toc 
+  line-height: 1.8
 
-  .toc-link
-    &.active
-      color: $orange
+  ol
+    list-style: none
+    text-align: left
+    margin: 0
+    padding: 0 2px 5px 10px
+
+    .toc-link
+      the-transition()
+      &.active
+        color: $orange
+        font-weight: bold
 
 .post-toc-progress
   color: $gray

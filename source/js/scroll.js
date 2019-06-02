@@ -1,4 +1,4 @@
-// paste from hexo-theme-melody
+// rf from hexo-theme-melody
 // modify by hexo-theme-starry
 
 $(function () {

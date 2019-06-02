@@ -21,19 +21,13 @@ html(lang=config.language)
         | #{title}
     include head.pug
     include config.pug
-    each item in theme.cdn.css
-      if item !== undefined
-        link(rel='stylesheet', href=item)
-    each item, name in theme.cdn.js
-      if name === 'jquery'
-        script(src=item)
-      else
-        script(src=item, defer)
+    include ../_third-party/cdn.pug
+    each url in theme.js
+      script(src=url_for(url), defer)
     if theme.css !== undefined && theme.css.length > 0
       each url in theme.css
         link(rel='stylesheet', href=url_for(url))
   body
-    canvas.fireworks
     //- global
     include ../_third-party/icon.pug
     include sidebar.pug
@@ -43,10 +37,8 @@ html(lang=config.language)
         block content
     footer.sidebar-translate
       include footer.pug
-    i#go-up(aria-hidden="true")
-      +icon('icon-arrow-up-line')
-    each url in theme.js
-      script(src=url_for(url), defer)
+    button#go-up.mdc-icon-button.material-icons-outlined(aria-label='back-to-top')!='keyboard_arrow_up'
+
     //- widget
     //- search
     if theme.local_search.enable || theme.algolia_search.enable

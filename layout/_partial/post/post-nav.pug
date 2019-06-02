@@ -1,7 +1,7 @@
 .post-nav
   .post-nav-item.post-nav-prev
     if post.prev
-      a(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
+      a.mdc-button(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
         +icon('icon-arrow-left-s-line')
         |  
         != post.prev.title
@@ -11,7 +11,7 @@
         +icon('icon-share-line')
   .post-nav-item.post-nav-next
     if post.next
-      a(href=url_for(post.next.path), rel='next', title=post.next.title)
+      a.mdc-button(href=url_for(post.next.path), rel='next', title=post.next.title)
         != post.next.title
         |  
         +icon('icon-arrow-right-s-line')

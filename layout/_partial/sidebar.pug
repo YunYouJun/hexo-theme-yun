@@ -72,5 +72,7 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
             span.progress-notice=__('sidebar.have_read')
             span.progress-num 0
             span.progress-percentage='%'
-          .post-toc-content!=toc(page.content)
-
+          .post-toc-content
+            !=toc(page.content)
+            //- svg.toc-marker(width='200', height='200')
+            //-   path(stroke='#444', stroke-width='3', fill='transparent', stroke-dasharray='0, 0, 0, 1000', stroke-linecap='round', stroke-linejoin='round', transform='translate(-0.5, -0.5)')

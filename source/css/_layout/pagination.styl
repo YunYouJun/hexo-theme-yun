@@ -5,6 +5,7 @@
   margin: 0
   border-bottom: 1px solid rgba(0, 0, 0, 0.1)
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1)
+  background-color: alpha($white, 0.5)
 
 .pagination
   margin-top: 4rem
@@ -20,7 +21,8 @@
     text-decoration: none
 
     &:hover
-      background: alpha($colors.primary, 0.1)
+      background: alpha($colors.primary, 0.5)
+      color: $white
 
     &.current
       background: $colors.primary
