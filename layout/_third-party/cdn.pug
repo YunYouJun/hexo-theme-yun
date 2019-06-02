@@ -8,7 +8,7 @@ each item in theme.cdn.css
 each item, name in theme.cdn.js
   if typeof item === 'object'
     each component in item
-      script(src=component, async)
+      script(src=component)
   else if name === 'jquery'
     script(src=item)
   else

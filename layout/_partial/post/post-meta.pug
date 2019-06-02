@@ -35,7 +35,6 @@
 
   if config.symbols_count_time.symbols || config.symbols_count_time.time
     .post-symbolcount
-      //- span.post-meta-divider='|'
       if config.symbols_count_time.symbols
         span.post-meta-item-icon(title=__('symbols_count_time.count'))
           +icon('icon-file-word-line')
@@ -61,22 +60,21 @@
     .post-classify
       if post.categories && post.categories.length && theme.post_meta.categories
         span.post-category
-          if theme.post_meta.created_at || theme.post_meta.updated_at
-            span.post-meta-item-icon
-              +icon('icon-folder-line')
-            |  
-            for category, index in post.categories.data
-              span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
-                a(href=url_for(category.path), itemprop='url', rel='index')
-                  span(itemprop='text')=category.name
+          span.post-meta-item-icon
+            +icon('icon-folder-line')
+          |  
+          for category, index in post.categories.data
+            span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
+              a(href=url_for(category.path), itemprop='url', rel='index')
+                span(itemprop='text')=category.name
 
-              - var category_length = post.categories.length
-              if category_length > 1 && index != category_length - 1
-                |  > 
+            - var category_length = post.categories.length
+            if category_length > 1 && index != category_length - 1
+              |  > 
 
       if post.tags && post.tags.length && theme.post_meta.tags
         span.post-tag
-          if theme.post_meta.created_at || theme.post_meta.updated_at
+          if post.categories && post.categories.length && theme.post_meta.categories
             span.post-meta-divider='-'
             for tag in post.tags.data
               |  

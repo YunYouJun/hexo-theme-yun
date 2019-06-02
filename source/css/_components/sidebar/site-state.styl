@@ -14,11 +14,24 @@
 .site-state-item
   display: flex
   padding: 0 15px
-  border-left: 1px solid $light-gray
   align-items: center
+  // border-left: 1px solid $light-gray
 
   &:first-child
-    border-left: none
+    // border-left: none
+    border-right: 1px solid $gray
+  
+  &:last-child
+    border-left: 1px solid $gray
+
+  &.site-state-posts,
+  &.site-state-categories
+    border-right: 1px solid $light-gray
+
+  &.icon-home,
+  &.icon-search
+    line-height: 1
+    padding: 0
 
 .site-state-item-icon
   color: $dark

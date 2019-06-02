@@ -23,10 +23,9 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           .site-desciption!=config.description
       
       nav.site-state
-        .site-state-item
-          a(href=url_for(theme.menu.home.path), title=__('menu.home'))
-            span.site-state-item-icon
-              +icon(theme.menu.home.icon)
+        a.site-state-item.hts-icon-button.icon-home.mdc-ripple-surface(href=url_for(theme.menu.home.path), title=__('menu.home'))
+          span.site-state-item-icon
+            +icon(theme.menu.home.icon)
         if site.posts.length > 0
           .site-state-item.site-state-posts
             a(href=url_for(config.archive_dir), title=__('menu.archives'))
@@ -45,23 +44,20 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
               span.site-state-item-icon
                 +icon(theme.menu.tags.icon)
               span.site-state-item-count!=site.tags.length
-        .site-state-item
-          a.popup-trigger(href='javascript:;', title=__('menu.search'))
-            span.site-state-item-icon
-              +icon('icon-search-line')
+        a.popup-trigger.site-state-item.hts-icon-button.icon-search.mdc-ripple-surface(href='javascript:;', title=__('menu.search'))
+          span.site-state-item-icon
+            +icon('icon-search-line')
       
       hr
 
       if theme.social
         .links-of-author
           if theme.rss
-            span.links-of-author-item
-              a(href=url_for(theme.rss), title='RSS', target='_blank', style='color:orange')
-                +icon(theme.rss_icon)
+            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=url_for(theme.rss), title='RSS', target='_blank', style='color:orange')
+              +icon(theme.rss_icon)
           for social, name in theme.social
-            span.links-of-author-item
-              a(href=social.link, title=name, target='_blank', style='color:' + social.color)
-                +icon(social.icon)
+            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=social.link, title=name, target='_blank', style='color:' + social.color)
+              +icon(social.icon)
       
   if is_post()
     .post-toc-wrap.sidebar-panel.sidebar-panel-active

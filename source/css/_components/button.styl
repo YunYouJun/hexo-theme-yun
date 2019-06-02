@@ -1,27 +1,37 @@
-.btn
-  background-color: transparent
-  padding: 5px 15px
-  border: 2px solid $colors.primary
-  border-radius: 2px
-  color: $colors.primary
-  the-transition()
-
-  &:hover
-    border-color: $colors.primary
-    background: $colors.primary
-    color: $white
-
-  &.active
-    border-color: $colors.primary
-    background: $colors.primary
-    color: $white
-
-.btn-inverse
-  @extend .btn
-  color: $white
-  background-color: $colors.primary
-
-  &:hover
+.hts
+  &-button
     background-color: transparent
+    padding: 5px 15px
+    border: 2px solid $colors.primary
+    border-radius: 2px
     color: $colors.primary
+    the-transition()
 
+    &:hover
+      border-color: $colors.primary
+      background: $colors.primary
+      color: $white
+
+    &.active
+      border-color: $colors.primary
+      background: $colors.primary
+      color: $white
+
+    &-inverse
+      color: $white
+      background-color: $colors.primary
+
+      &:hover
+        background-color: transparent
+        color: $colors.primary
+
+  &-icon-button
+    display: flex
+    width: 3rem
+    height: 3rem
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+
+    &:hover
+      background-color: alpha($black, 0.1)

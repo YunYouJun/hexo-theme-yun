@@ -1,7 +1,6 @@
 .post-nav
+  position: relative
   display: table
-  border-top: 1px solid $light-gray
-  border-bottom: 1px solid $light-gray
   padding: 1rem 0
   width: 100%
 
@@ -13,6 +12,15 @@
   .social-share
     padding: 3px
     border-radius: 2px
+
+#share
+  position: absolute
+  left: 0
+  right: 0
+  top: -1000
+  opacity: 0
+  text-align:center
+  the-transition()
 
 .post-nav-item
   display: table-cell

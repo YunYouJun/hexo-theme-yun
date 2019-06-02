@@ -21,14 +21,10 @@ block content
         
         if theme.creative_commons.license && theme.creative_commons.post
           include _partial/post/post-copyright.pug
-            
-        if post.prev || post.next
-          include _partial/post/post-nav.pug
         
-        if theme.add_this_id
-          include _partial/post/post-share.pug
+  if post.prev || post.next
+    include _partial/post/post-nav.pug
 
-        if post.comments
-          include _third-party/comments/index.pug
-    
-      footer.post-footer
+  if post.comments
+    .hts-card.post-comment
+      include _third-party/comments/index.pug

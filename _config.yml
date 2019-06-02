@@ -118,7 +118,7 @@ cdn:
     # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
     # font: https://fonts.loli.net/css?family=Montserrat
     # icon
-    material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
+    # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
@@ -130,12 +130,11 @@ cdn:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
       - https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css
       - https://cdn.jsdelivr.net/npm/@material/card/dist/mdc.card.min.css
-      - https://cdn.jsdelivr.net/npm/@material/fab/dist/mdc.fab.min.css
-      - https://cdn.jsdelivr.net/npm/@material/icon-button/dist/mdc.icon-button.min.css
+      - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_uv9hpdsx7c9.js
+    iconfont: //at.alicdn.com/t/font_1140697_5t4jm0rbos.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
