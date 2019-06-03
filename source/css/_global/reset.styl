@@ -7,24 +7,20 @@ body
   background: #FAFAFA
 
 ::selection
-{
-  color: #fff;
-  background: $purple;
-}
+  color: #fff
+  background: $purple
 
-a {
-  color: $color.link;
-  text-decoration: none;
+a
+  color: $color.link
+  text-decoration: none
+  transition: color 0.1s
 
   &:hover,
-  &:focus {
-    color: mix($black, $color.link, 50%);
-  }
+  &:focus
+    color: $colors.danger
 
-  &:active {
-    color: mix($black, $color.link, 50%);
-  }
-}
+  &:active
+    color: mix($black, $color.link, 50%)
 
 h1, h2, h3, h4, h5, h6
   font-weight: inherit
@@ -75,5 +71,5 @@ p
     margin-bottom: 0
 
 hr
-  opacity: 0.3
+  opacity: 0.2
   margin: 20px

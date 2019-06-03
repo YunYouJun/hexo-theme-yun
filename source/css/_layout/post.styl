@@ -1,32 +1,6 @@
 #post
   padding: 10px
 
-.post-header
-  text-align: center
-
-  .post-title
-    margin: 0
-    padding: 10px
-    font-size: 1.8rem
-    .post-title-link
-      position: relative
-
-      &::before
-        content: ""
-        position: absolute
-        width: 100%
-        height: 2px
-        bottom: 0
-        left: 0
-        background-color: $colors.primary
-        visibility: hidden
-        transform: scaleX(0)
-        the-transition()
-
-      &:hover::before
-        visibility: visible
-        transform: scaleX(1)
-
 .post-meta
   font-size: 14px
   color: $dark
