@@ -1,7 +1,21 @@
 .hts-
   &card
-    // display: block
-    background: alpha($white, 0.99)
+    display: flex
+    background-color: alpha($white, 0.99)
     border-radius: 4px
     the-transition()
     the-box-shadow()
+    flex-direction: column
+    box-sizing: border-box
+
+    &__actions
+      display: flex
+      flex-direction: row
+      align-items: center
+      box-sizing: border-box
+      min-height: 3rem
+
+    .post-card-tag
+      display: flex
+      flex-grow: 1
+      justify-content: flex-end

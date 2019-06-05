@@ -1,0 +1,14 @@
+.sidebar-translate.mdc-top-app-bar.mdc-top-app-bar--fixed
+  .mdc-top-app-bar__row
+    section.mdc-top-app-bar__section.mdc-top-app-bar__section--align-start
+      a.mdc-top-app-bar__navigation-icon.hts-icon-button.sidebar-toggle
+        button.hamburger(class='hamburger--spin', type='button')
+          span.hamburger-box
+            span.hamburger-inner
+        //- +icon('icon-menu-line')
+      a.mdc-top-app-bar__title.site-title(href=url_for('/'))!=title
+    section.mdc-top-app-bar__section.mdc-top-app-bar__section--align-end(role='toolbar')
+      a.mdc-top-app-bar__action-item.top-bar-icon.popup-trigger(href='javascript:;')
+        +icon('icon-search-line')
+
+.hts-drawer-scrim(style='display:none')

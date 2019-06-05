@@ -32,13 +32,13 @@ html(lang=config.language)
     include ../_third-party/icon.pug
     include sidebar.pug
     include background.pug
-    main#content-outer.sidebar-translate
+    include header.pug
+    main#content-outer.sidebar-translate.mdc-top-app-bar--fixed-adjust
       #content-inner.layout
         block content
     footer.sidebar-translate
       include footer.pug
     include ../_widget/back-to-top.pug
-
     //- widget
     //- search
     if theme.local_search.enable || theme.algolia_search.enable

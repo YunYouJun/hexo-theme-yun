@@ -1,8 +1,9 @@
 const sidebarWidth = '320px'
 $(function () {
-  $('.hamburger').on('click', function() {
-    let isOpen = $(this).hasClass('is-active')
-    isOpen ? $(this).removeClass('is-active') : $(this).addClass('is-active')
+  $('.sidebar-toggle, .hts-drawer-scrim').on('click', function() {
+    let hamburger = $('.sidebar-toggle .hamburger')
+    let isOpen = hamburger.hasClass('is-active')
+    isOpen ? hamburger.removeClass('is-active') : hamburger.addClass('is-active')
     if (isOpen) {
       // close
       $('#sidebar').velocity('stop').velocity({
@@ -18,6 +19,8 @@ $(function () {
           duration: 400,
           easing: 'easeInOutQuint'
         })
+      } else {
+        $('.hts-drawer-scrim').fadeOut(200)
       }
     } else {
       // open
@@ -34,6 +37,8 @@ $(function () {
           duration: 400,
           easing: 'easeInOutQuint'
         })
+      } else {
+        $('.hts-drawer-scrim').fadeIn(200)
       }
     }
   })

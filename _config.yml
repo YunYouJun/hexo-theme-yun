@@ -30,10 +30,14 @@ rss_icon: icon-rss-line
 
 # Social Links.
 social:
+  QQ:
+    link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    icon: icon-qq-line
+    color: '#EB1923'
   GitHub: 
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: black
+    color: '#181717'
   E-Mail:
     link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
@@ -129,12 +133,12 @@ cdn:
     material:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
       - https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css
-      - https://cdn.jsdelivr.net/npm/@material/card/dist/mdc.card.min.css
       - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
+      - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.top-app-bar.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_5t4jm0rbos.js
+    iconfont: //at.alicdn.com/t/font_1140697_b9b3vt8gbsi.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -144,6 +148,7 @@ cdn:
     material:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
+      - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.topAppBar.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -161,6 +166,9 @@ ui:
   css_doodle: false
   fireworks: true
   rymd: false
+  bg_image:
+    enable: true
+    url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.jpg
 
 # Article
 # ---------------
@@ -178,7 +186,7 @@ reward_settings:
 reward:
   wechatpay:
     path: /img/donate/wechatpay-qrcode.jpg
-    color: '#2DC100'
+    color: '#2DC100' #7BB32E
   alipay:
     path: /img/donate/alipay-qrcode.jpg
     color: '#00A3EE'
