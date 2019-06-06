@@ -12,12 +12,13 @@ $green = #21ba45
 $blue = #0078E7
 $indigo = #515bd4
 $purple = #8e71c1
+$indigo = #6200ee
 
 $light-blue = #42B8DD
 $light-gray = #CCCCCC
 
 $colors := {
-  primary: $blue,
+  primary: convert(hexo-config('color.primary')) || $purple,
   inverse: $yellow,
   success: $green,
   warning: $orange,
@@ -27,6 +28,6 @@ $colors := {
 
 // text
 $color := {
-  text: $black,
-  link: $blue
+  text: $dark,
+  link: $colors.primary
 }

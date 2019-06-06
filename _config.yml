@@ -3,9 +3,9 @@
 # ---------------
 # color
 color:
+  # primary: '#8e71c1'
+  # primary: '#6200ee'
   primary: '#0078E7'
-#   enable: true
-#   main: "#49B1F5"
 #   paginator: "#00C4B6"
 #   button_hover: "#FF7242"
 #   text_selection: "#00C4B6"

@@ -34,12 +34,11 @@ html(lang=config.language)
     include background.pug
     include header.pug
     main#content-outer.sidebar-translate.mdc-top-app-bar--fixed-adjust
-      #content-inner.layout
+      #content-inner
         block content
-    footer.sidebar-translate
-      include footer.pug
-    include ../_widget/back-to-top.pug
+    include footer.pug
     //- widget
+    include ../_widget/back-to-top.pug
     //- search
     if theme.local_search.enable || theme.algolia_search.enable
       include ../_widget/search/index.pug
