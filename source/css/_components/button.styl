@@ -1,29 +1,36 @@
 .hts
   &-button
+    font-family: Roboto, sans-serif
     background-color: transparent
-    padding: 5px 15px
-    border: 2px solid $colors.primary
-    border-radius: 2px
+    padding: 0 1rem
+    border-radius: 4px
     color: $colors.primary
     the-transition()
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border: none
+    min-height: 2rem
+    min-width: 4rem
+    outline: none
+    line-height: 2.5
+    font-size: 0.9rem
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0.09rem
+    -webkit-font-smoothing: antialiased
 
     &:hover
-      border-color: $colors.primary
-      background: $colors.primary
-      color: $white
+      cursor: pointer
+      background-color: alpha($colors.primary, 0.05)
 
-    &.active
-      border-color: $colors.primary
-      background: $colors.primary
+    &--raised
+      background-color: var(--hts-theme-primary, $colors.primary)
+      box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3)
       color: $white
-
-    &-inverse
-      color: $white
-      background-color: $colors.primary
 
       &:hover
-        background-color: transparent
-        color: $colors.primary
+        background-color: alpha($colors.primary, 0.9)
 
   &-icon-button
     display: flex
@@ -37,3 +44,17 @@
 
     &:hover
       background-color: alpha($black, 0.1)
+
+.button
+  &-glow
+    animation-duration: 3s
+    animation-iteration-count: infinite
+    animation-name: glowing
+
+@keyframes glowing
+  from
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1)
+  50%
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+  to
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1)

@@ -1,7 +1,7 @@
 .post-nav
   .post-nav-item.post-nav-prev
     if post.prev
-      a.mdc-button(href=url_for(post.prev.path), rel='prev', title=post.prev.title, style='height:3rem;')
+      a.hts-button(href=url_for(post.prev.path), rel='prev', title=post.prev.title, style='height:3rem;')
         +icon('icon-arrow-left-s-line')
         |  
         != post.prev.title
@@ -13,7 +13,7 @@
       #share.addthis_inline_share_toolbox(style='visibility:hidden;opacity:0;')
   .post-nav-item.post-nav-next
     if post.next
-      a.mdc-button(href=url_for(post.next.path), rel='next', title=post.next.title, style='height:3rem;')
+      a.hts-button(href=url_for(post.next.path), rel='next', title=post.next.title, style='height:3rem;')
         != post.next.title
         |  
         +icon('icon-arrow-right-s-line')

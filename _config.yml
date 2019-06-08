@@ -132,7 +132,6 @@ cdn:
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
     material:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
-      - https://cdn.jsdelivr.net/npm/@material/button/dist/mdc.button.min.css
       - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
       - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.top-app-bar.min.css
