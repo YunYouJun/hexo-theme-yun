@@ -1,5 +1,5 @@
 #reward-container
-  span.hts-button.mdc-ripple-surface#reward-button(title=__('reward.donate'), onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";')
+  span#reward-button.hts-icon-button.button-glow(title=__('reward.donate'), onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";')
     +icon('icon-donate')
   #qr(style='display:none;')
     for image, name in theme.reward
