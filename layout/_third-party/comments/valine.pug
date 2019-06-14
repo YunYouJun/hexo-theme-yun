@@ -4,7 +4,7 @@ script(src=theme.vendors.valine_js)
 - var valine_lang = config.language || 'zh-cn'
 script.
   var GUEST_INFO = ['nick', 'mail', 'link'];
-  var guest_info = '{{ theme.valine.guest_info }}';
+  var guest_info = '#{theme.valine.guest_info}';
   guest_info = guest_info.split(',').filter(function(item) {
     return GUEST_INFO.indexOf(item) > -1;
   });

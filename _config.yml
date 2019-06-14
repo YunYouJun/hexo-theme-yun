@@ -156,7 +156,7 @@ vendors:
   css_doodle: //cdn.jsdelivr.net/npm/css-doodle@latest/css-doodle.min.js
   gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-  leancloud_storage: //cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js
+  leancloud_storage: //cdn1.lncld.net/static/js/3.0.4/av-min.js
   valine_js: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
