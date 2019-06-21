@@ -57,6 +57,12 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           for social, name in theme.social
             a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=social.link, title=name, target='_blank', style='color:' + social.color)
               +icon(social.icon)
+
+      if theme.links.enable
+        .links-of-friend
+          a.hts-icon-button.mdc-ripple-surface(href=url_for(theme.links.url), title=theme.links.title)
+            +icon(theme.links.icon)
+        
       
   if is_post()
     .post-toc-wrap.sidebar-panel.sidebar-panel-active

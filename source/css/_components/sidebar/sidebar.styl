@@ -21,9 +21,23 @@
     display: block
 
   .links-of-author
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
     .icon
       width: 1.5rem
       height: 1.5rem
+
+    &-item
+      line-height: 1
+      font-size: 0.9rem
+
+  .links-of-friend
+    display: flex
+    justify-content: center
+    .icon
+      width: 2rem
+      height: 2rem
 
 .hts-drawer-scrim
   background-color: rgba(0, 0, 0, 0.3)

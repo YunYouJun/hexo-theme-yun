@@ -71,6 +71,13 @@ social:
   # Instagram: https://instagram.com/yourname || instagram
   # Skype: skype:yourname?call|chat || skype
 
+links:
+  enable: false
+  icon: icon-open-arm-line
+  title: 我的小伙伴们
+  url: /links
+
+
 # Sidebar Avatar
 avatar:
   url: /images/avatar.jpg
@@ -137,7 +144,7 @@ cdn:
       - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.top-app-bar.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_b9b3vt8gbsi.js
+    iconfont: //at.alicdn.com/t/font_1140697_d17celis2wb.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
