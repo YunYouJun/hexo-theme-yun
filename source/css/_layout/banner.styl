@@ -1,0 +1,35 @@
+$char-size-1 = 1.5rem
+.banner
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.vertical-line
+  &-top,
+  &-bottom
+    display: flex
+    background-color: $white
+    width: 1px
+    height: 50vh
+
+.char
+  background-color: alpha($black, 0.1)
+  the-transition()
+  &:hover
+    color: $black
+    background-color: $white
+
+  &-left,
+  &-right
+    display: flex
+    color: $white
+    line-height: 1
+    font-family: 'ZCOOL XiaoWei'
+
+  &-left
+    border-left: 1px solid $white
+    border-right: 0px solid alpha($purple, 0.1)
+
+  &-right
+    border-left: 0px solid alpha($purple, 0.1)
+    border-right: 1px solid $white

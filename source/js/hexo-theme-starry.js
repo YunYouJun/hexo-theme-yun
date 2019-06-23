@@ -3,5 +3,5 @@ $(document).ready(function() {
   document.querySelectorAll('.mdc-ripple-surface').forEach(el => {
     MDCRipple.attachTo(el)
   })
-  mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'))
+  // mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'))
 })

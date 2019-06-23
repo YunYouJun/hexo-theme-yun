@@ -1,0 +1,29 @@
+.banner
+  .vertical-line-top
+  .vertical-line-bottom
+
+script.
+  function random(min, max) {
+    return Math.random() * (max - min) + min
+  }
+  function generateBanner(banner) {
+    let sumH = 0
+    for (let i = 0; i < banner.length; i++) {
+      let $char = $('<div></div>')
+      let ran = random(1.5, 3.5)
+      let charSize = ran + 'rem'
+      $char.css('fontSize', charSize)
+      $char.html('<span class="char">' + banner[i] + '</span>')
+      $char.hide().insertBefore($('.vertical-line-bottom')).fadeIn()
+      if (i % 2 == 0) {
+        $char.addClass('char-left')
+        $char.animate({borderRightWidth: charSize}, 500, 'swing')
+      } else {
+        $char.addClass('char-right')
+        $char.animate({borderLeftWidth: charSize}, 500, 'swing')
+      }
+      sumH += ran
+    }
+    $('.vertical-line-top, .vertical-line-bottom').css('height', 'calc(50vh - ' + sumH/2 + 'rem)')
+  }
+  setTimeout(function(){generateBanner('#{theme.banner || config.title}')}, 100)
