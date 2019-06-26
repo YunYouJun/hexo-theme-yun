@@ -6,10 +6,7 @@ prepend title
   else if page.type === 'tags'
     | #{__('title.tag')}
   else
-    | #{page.title}
-  |
-  | |
-  | 
+    | #{page.title} | 
 
 block content
   include _partial/page/page-header.pug

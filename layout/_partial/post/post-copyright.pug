@@ -10,7 +10,7 @@ ul.post-copyright
   li.post-copyright-link
     strong!= __('post.copyright.link') + __('symbol.colon')
     - let postURL = post.url || post.permalink
-    a(href=postURL, title: post.title)!= postURL
+    a(href=postURL, title=post.title)!= postURL
   li.post-copyright-license
     strong!= __('post.copyright.license_title') + __('symbol.colon')
-    != _p('post.copyright.license_content', `<a href="${ccURL}" target="_blank">${ccIcon} ${ccLicense}</a>`)
+    != _p('post.copyright.license_content', '<a href="${ccURL}" target="_blank">${ccIcon} ${ccLicense}</a>')

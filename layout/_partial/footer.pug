@@ -23,7 +23,7 @@ footer#footer.sidebar-translate
       |  v#{starry_env('version')}
 
   if theme.footer.custom_text
-    .footer_custom_text!=`${theme.footer.custom_text}`
+    .footer_custom_text!='${theme.footer.custom_text}'
 
   if theme.busuanzi.enable
     include ../_third-party/analytics/busuanzi.pug

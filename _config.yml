@@ -143,10 +143,9 @@ cdn:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
       - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
-      - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.top-app-bar.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_d17celis2wb.js
+    iconfont: //at.alicdn.com/t/font_1140697_e94zkndmvt.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -156,7 +155,6 @@ cdn:
     material:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
-      - https://cdn.jsdelivr.net/npm/@material/top-app-bar/dist/mdc.topAppBar.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -213,6 +211,12 @@ creative_commons:
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
 # add_this_id:
+
+# Post edit
+# Dependencies: https://github.com/hexojs/hexo-deployer-git
+post_edit:
+  enable: false
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
 
 # Comments
 # -----------
