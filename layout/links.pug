@@ -4,14 +4,15 @@ prepend title
   | #{page.title} | 
 
 block content
-  include _partial/page/page-header.pug
-  if page.links
-    .links
-      ul.link-items
-        for link in page.links
-          li.link-item
-            a(href=link.url, title=link.desc, alt='portrait', target='_blank', rel='friend')
-              img.link-avatar(lazyload='auto', src=link.img)
+  .hts-card(style='margin:1rem;')
+    include _partial/page/page-header.pug
+    if page.links
+      .links
+        ul.link-items
+          for link in page.links
+            li.link-item
+              a(href=link.url, title=link.desc, alt='portrait', target='_blank', rel='friend')
+                img.link-avatar(lazyload='auto', src=link.img)
               .link-name!=link.name
   if page.comments
     include ./_third-party/comments/index.pug

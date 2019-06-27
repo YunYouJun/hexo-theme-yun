@@ -12,8 +12,7 @@ $light-blue = lighten($blue, 50%)
     margin-left: -2px
     width: 4px
     height: 100%
-    background: lighten($blue, 90%);
-    z-index: -1
+    background: alpha($colors.primary, 0.3);
 
   &-title
     text-align: center
@@ -38,6 +37,7 @@ $light-blue = lighten($blue, 50%)
       height: 8px
       background: $light-blue
       border-radius: 50%
+      z-index: 1
 
   .post-header
     position: relative
@@ -57,6 +57,7 @@ $light-blue = lighten($blue, 50%)
       background-color: white
       the-transition()
       transition-property: background
+      z-index: 1
 
     &:hover
       &::before

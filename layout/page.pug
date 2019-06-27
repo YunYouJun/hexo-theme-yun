@@ -9,25 +9,25 @@ prepend title
     | #{page.title} | 
 
 block content
-  include _partial/page/page-header.pug
-  if page.type === 'tags'
-    .tag-cloud
-      .tag-cloud__title= _p('counter.tag_cloud', site.tags.length)
-      - var start_color = theme.color ? (theme.color.tag_start_color || '#A4D8FA'): '#A4D8FA'
-      - var end_color = theme.color ? (theme.color.tag_end_color || '#1B9EF3') : '#1B9EF3'
-      .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
+  .hts-card(style='margin:1rem;')
+    include _partial/page/page-header.pug
+    if page.type === 'tags'
+      .tag-cloud
+        .tag-cloud__title= _p('counter.tag_cloud', site.tags.length)
+        - var start_color = theme.color ? (theme.color.tag_start_color || '#A4D8FA'): '#A4D8FA'
+        - var end_color = theme.color ? (theme.color.tag_end_color || '#1B9EF3') : '#1B9EF3'
+        .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
-  else if page.type === 'categories'
-    .category-lists
-      .category-lists__title= _p('counter.categories', site.categories.length)
-      .category-lists-container!= list_categories()
+    else if page.type === 'categories'
+      .category-lists
+        .category-lists__title= _p('counter.categories', site.categories.length)
+        .category-lists-container!= list_categories()
 
-  else
-    article#page
-      section.post-body(itemprop='articleBody')
-        .post-content(class='post-markdown')!= page.content
+    else
+      article#page
+        section.post-body(itemprop='articleBody')
+          .post-content(class='post-markdown')!= page.content
 
-        hr
-        if page.comments
-          include ./_third-party/comments/index.pug
+  if page.comments
+    include ./_third-party/comments/index.pug
     
