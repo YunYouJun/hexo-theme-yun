@@ -47,11 +47,11 @@ social:
     color: '#E6162D'
   豆瓣:
     link: https://www.douban.com/people/yunyoujun/
-    icon: icon-book-2-line
+    icon: icon-douban-line
     color: '#007722'
   网易云音乐:
     link: https://music.163.com/#/user/home?id=247102977
-    icon: icon-disc-line
+    icon: icon-netease-cloud-music-line
     color: '#C10D0C'
   知乎:
     link: https://www.zhihu.com/people/yunyoujun/
@@ -145,7 +145,7 @@ cdn:
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_e94zkndmvt.js
+    iconfont: //at.alicdn.com/t/font_1140697_krj818zny2.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
