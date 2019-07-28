@@ -43,3 +43,7 @@ theme: starry
 ### Article
 
 - [Hexo主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
+
+### Other
+
+- 明日方舟

@@ -11,7 +11,7 @@ color:
 #   text_selection: "#00C4B6"
 #   link_color: "#858585"
 #   hr_color: "#A4D8FA"
-  tag_start_color: "#A4D8FA"
+  tag_start_color: "#999999"
   tag_end_color: "#1B9EF3"
 
 # https://www.jsdelivr.com

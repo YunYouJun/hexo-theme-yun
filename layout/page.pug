@@ -14,7 +14,7 @@ block content
     if page.type === 'tags'
       .tag-cloud
         .tag-cloud__title= _p('counter.tag_cloud', site.tags.length)
-        - var start_color = theme.color ? (theme.color.tag_start_color || '#A4D8FA'): '#A4D8FA'
+        - var start_color = theme.color ? (theme.color.tag_start_color || '#999999'): '#999999'
         - var end_color = theme.color ? (theme.color.tag_end_color || '#1B9EF3') : '#1B9EF3'
         .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
