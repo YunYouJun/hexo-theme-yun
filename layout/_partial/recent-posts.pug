@@ -1,12 +1,14 @@
 section#recent-posts.mdc-layout-grid
+  h2.text-center!='POSTS'
   .mdc-layout-grid__inner
     each post in page.posts.data
-      .mdc-layout-grid__cell.mdc-layout-grid__cell--span-6-desktop.mdc-layout-grid__cell--span-12-tablet
+      .mdc-layout-grid__cell.mdc-layout-grid__cell--span-4-desktop.animated.fadeIn.zoomIn.faster
         article.hts-card.recent-post-item(itemscope, itemtype='http://schema.org/Article')
           include ../_partial/post/post-schema.pug
           .post-card-header
             .post-header
-              include ../_partial/post/post-title.pug
+              h2.post-title(itemprop='name headline')
+                a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
               include ../_partial/post/post-meta.pug
           //- .post-card-content
             p.post-card-description.text-center!=post.description
@@ -29,8 +31,8 @@ section#recent-posts.mdc-layout-grid
                 for tag in post.tags.data
                   span.post-meta-item-icon
                     +icon('icon-price-tag-3-line')
-                    |  
-                    a(href=url_for(tag.path, rel='tag'))!=tag.name + '&nbsp;'
+                  a(href=url_for(tag.path, rel='tag'))
+                    span!='&nbsp;' + tag.name + '&nbsp;'
               else
                 span.post-meta-item-icon
                   +icon('icon-price-tag-3-line')

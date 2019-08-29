@@ -20,9 +20,8 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           p.site-author-name
             a(href=url_for('about'))
               | #{author}
-          .site-info
-            a(href=url_for('about/site.html'))
-              | #{config.title}
+          a.site-info(href=url_for('about/site.html'))
+            | #{config.title}
           .site-desciption!=config.description
       
       nav.site-state

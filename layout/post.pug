@@ -5,10 +5,6 @@ prepend title
 
 block content
   - var post = page
-  style.
-    body {
-      background-color: #fff;
-    }
   article#post.hts-card(itemscope, itemtype='http://schema.org/Article')
     .post-block
       include _partial/post/post-schema.pug
@@ -16,7 +12,7 @@ block content
       header.post-header
         if theme.post_edit.enable
           include _partial/post/post-edit.pug
-        include _partial/post/post-title.pug
+        h1.post-title(itemprop='name headline')!=post.title
         include _partial/post/post-meta.pug
 
       section.post-body(itemprop='articleBody')

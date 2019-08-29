@@ -1,4 +1,8 @@
 $char-size-1 = 1.5rem
+$line-color = $black
+$char-color = $black
+$char-bg-color = $white
+
 .banner
   display: flex
   flex-direction: column
@@ -8,28 +12,28 @@ $char-size-1 = 1.5rem
   &-top,
   &-bottom
     display: flex
-    background-color: $white
+    background-color: $line-color
     width: 1px
     height: 50vh
 
 .char
-  background-color: alpha($black, 0.1)
+  background-color: alpha($char-bg-color, 0.5)
   the-transition()
   &:hover
-    color: $black
-    background-color: $white
+    color: $char-bg-color
+    background-color: alpha($char-color, 0.5)
 
   &-left,
   &-right
     display: flex
-    color: $white
+    color: $char-color
     line-height: 1
     font-family: 'ZCOOL XiaoWei'
 
   &-left
-    border-left: 1px solid $white
+    border-left: 1px solid $line-color
     border-right: 0px solid alpha($purple, 0.1)
 
   &-right
     border-left: 0px solid alpha($purple, 0.1)
-    border-right: 1px solid $white
+    border-right: 1px solid $line-color

@@ -143,6 +143,7 @@ cdn:
       # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
       - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
+    animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     # icon
     iconfont: //at.alicdn.com/t/font_1140697_krj818zny2.js
