@@ -6,7 +6,10 @@ prepend title
   else if page.type === 'tags'
     | #{__('title.tag')}
   else
-    | #{page.title} | 
+    | #{page.title}
+  |
+  | |
+  |
 
 block content
   .hts-card(style='margin:1rem;')
