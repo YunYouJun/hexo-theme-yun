@@ -1,9 +1,9 @@
 section#recent-posts.mdc-layout-grid
-  h2.text-center!='POSTS'
+  h2.text-center(style='margin-top:0')!='POSTS'
   .mdc-layout-grid__inner
     each post in page.posts.data
       .mdc-layout-grid__cell.mdc-layout-grid__cell--span-4-desktop.animated.fadeIn.zoomIn.faster
-        article.hts-card.recent-post-item(itemscope, itemtype='http://schema.org/Article')
+        article.hts-card.mdc-ripple-surface.mdc-ripple-surface--primary.recent-post-item(itemscope, itemtype='http://schema.org/Article')
           include ../_partial/post/post-schema.pug
           .post-card-header
             .post-header

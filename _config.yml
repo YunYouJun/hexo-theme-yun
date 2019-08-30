@@ -127,7 +127,7 @@ cdn:
   # pre: https://cdn.yunyoujun.cn
   css:
     # font
-    font: https://fonts.googleapis.com/css?family=Noto+Serif+SC|ZCOOL+XiaoWei&display=swap
+    # font: https://fonts.googleapis.com/css?family=Noto+Serif+SC|ZCOOL+XiaoWei&display=swap
     # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
     # font: https://fonts.loli.net/css?family=Montserrat
     # icon
@@ -236,13 +236,14 @@ gitalk:
 # More info available at https://valine.js.org
 valine:
   enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appId:  # your leancloud application appid
+  appKey:  # your leancloud application appkey
+  serverURLs:
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: # gravatar style
-  guest_info: nick,mail,link # custom comment header
+  meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
 # Footer Settings

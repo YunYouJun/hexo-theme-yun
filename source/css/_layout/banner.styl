@@ -2,6 +2,7 @@ $char-size-1 = 1.5rem
 $line-color = $black
 $char-color = $black
 $char-bg-color = $white
+$border-width = 1px
 
 .banner
   display: flex
@@ -13,7 +14,7 @@ $char-bg-color = $white
   &-bottom
     display: flex
     background-color: $line-color
-    width: 1px
+    width: $border-width
     height: 50vh
 
 .char
@@ -28,12 +29,12 @@ $char-bg-color = $white
     display: flex
     color: $char-color
     line-height: 1
-    font-family: 'ZCOOL XiaoWei'
+    // font-family: 'ZCOOL XiaoWei'
 
   &-left
-    border-left: 1px solid $line-color
+    border-left: $border-width solid $line-color
     border-right: 0px solid alpha($purple, 0.1)
 
   &-right
     border-left: 0px solid alpha($purple, 0.1)
-    border-right: 1px solid $line-color
+    border-right: $border-width solid $line-color
