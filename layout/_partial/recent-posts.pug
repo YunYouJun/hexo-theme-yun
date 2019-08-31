@@ -1,5 +1,18 @@
 section#recent-posts.mdc-layout-grid
-  h2.text-center(style='margin-top:0')!='POSTS'
+  h5#say.text-center(style='margin-top:15px')
+    span#say-content
+    small#say-from
+  script.
+    let words = !{JSON.stringify(theme.words)}
+    let word = words[Math.floor(Math.random()*words.length)]
+    if (word.source) {
+      $('#say-content').text(word.content)
+      if (word.url) {
+        $('#say-from').html(' —— <a href=' + word.url + '>' + word.source + '</a>')
+      } else {
+        $('#say-from').text(word.source)
+      }
+    }
   .mdc-layout-grid__inner
     each post in page.posts.data
       .mdc-layout-grid__cell.mdc-layout-grid__cell--span-4-desktop.animated.fadeIn.zoomIn.faster
