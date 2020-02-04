@@ -52,34 +52,11 @@ $(function() {
     )
   );
 
-  // head scroll
-  $(".post-content")
-    .find("h1,h2,h3,h4,h5,h6")
-    .on("click", function(e) {
-      scrollToHead("#" + $(this).attr("id"));
-    });
-
-  // head scroll
-  $(".toc-link").on("click", function(e) {
-    e.preventDefault();
-    scrollToHead($(this).attr("href"));
-  });
-
   // find the scroll direction
   function scrollDirection(currentTop) {
     var result = currentTop > initTop; // true is down & false is up
     initTop = currentTop;
     return result;
-  }
-
-  // scroll to a head(anchor)
-  function scrollToHead(anchor) {
-    $(anchor)
-      .velocity("stop")
-      .velocity("scroll", {
-        duration: 500,
-        easing: "easeInOutQuart"
-      });
   }
 
   // expand toc-item

@@ -1,77 +1,91 @@
-.post-markdown
-  line-height: 1.8
+.post-markdown {
+  line-height: 1.8;
 
-  h1
-    font-size: 2.5em
-    border-bottom: 1px solid rgba($gray, 0.5)
-  h2
-    font-size: 2.2em
-    border-bottom: 1px solid rgba($gray, 0.5)
-  h3
-    font-size: 1.9em
-    border-bottom: 1px dotted rgba($gray, 0.5)
-  h4
-    font-size: 1.6em
-  h5
-    font-size: 1.3em
-  h6
-    font-size: 1.03em
+  h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid rgba($gray, 0.5);
+  }
 
-  h1,h2,h3,h4,h5,h6
-    cursor: pointer
-    transition: all 0.2s ease-out
-    &:before
-      content: "# "
-      color: $gray
-      transition: all 0.2s ease-out
+  h2 {
+    font-size: 2.2em;
+    border-bottom: 1px solid rgba($gray, 0.5);
+  }
 
-    &:hover
+  h3 {
+    font-size: 1.9em;
+    border-bottom: 1px dotted rgba($gray, 0.5);
+  }
 
-      &:before
-        color: $colors.primary
+  h4 {
+    font-size: 1.6em;
+  }
 
-  pre, code
-    font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace
-    font-size: 14px
-    line-height: 1.6
+  h5 {
+    font-size: 1.3em;
+  }
 
-  code
-    overflow-wrap: break-word
-    word-wrap: break-word
-    padding: 3px 6px
-    color: $dark
-    background: #eee
-    border-radius: 3px
+  h6 {
+    font-size: 1.03em;
+  }
 
-  kbd
-    background-color: #ffffff
-    border-radius: 0.2rem
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(0,0,0,0.06)
-    padding: 0.25rem 0.5rem
-    margin: 0.1rem
-    font-size: 12px
+  h1, h2, h3, h4, h5, h6 {
+    transition: all 0.2s ease-out;
 
-  blockquote
-    margin: 0
-    padding: 0 1rem
-    color: $dark
-    border-left: .25rem solid $gray
-  
-  hr
-    margin: 44px 0
-    height: 2px
-    border: none
-    background-color: #ddd
-    background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px)
+    .header-anchor {
+      margin-right: 0.2rem;
+    }
+  }
 
-  img
-    padding: 5px
-    margin: 5px
-    max-width: 92%
-    max-height: 888px
-    border: 1px solid $light-gray
-    border-radius: 5px
-    the-transition()
+  pre, code {
+    font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+  }
 
-    &:hover
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)
+  code {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 3px 6px;
+    color: $dark;
+    background: #eee;
+    border-radius: 3px;
+  }
+
+  kbd {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.06);
+    padding: 0.25rem 0.5rem;
+    margin: 0.1rem;
+    font-size: 12px;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0 1rem;
+    color: $dark;
+    border-left: 0.25rem solid $gray;
+  }
+
+  hr {
+    margin: 44px 0;
+    height: 2px;
+    border: none;
+    background-color: #ddd;
+    background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+  }
+
+  img {
+    padding: 5px;
+    margin: 5px;
+    max-width: 92%;
+    max-height: 888px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    the-transition();
+
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}

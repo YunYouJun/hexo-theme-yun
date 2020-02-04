@@ -1,31 +1,35 @@
-body
-  // 'Open Sans'
-  font-family: 'PingFang SC', 'Microsoft YaHei', Arial, serif
-  font-weight: 300
-  margin: 0px
-  line-height: 2
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, serif;
+  font-weight: 300;
+  margin: 0px;
+  line-height: 2;
+}
 
-::selection
-  color: #fff
-  background: $purple
+::selection {
+  color: #fff;
+  background: $purple;
+}
 
-a
-  color: $color.link
-  text-decoration: none
-  transition: color 0.1s
+a {
+  color: $color.link;
+  text-decoration: none;
+  transition: color 0.1s;
 
-  &:hover,
-  &:focus
-    color: $colors.danger
+  &:hover, &:focus {
+    color: $colors.danger;
+  }
 
-  &:active
-    color: mix($black, $color.link, 50%)
+  &:active {
+    color: mix($black, $color.link, 50%);
+  }
+}
 
-h1, h2, h3, h4, h5, h6
-  font-weight: inherit
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
 
-$--head-font-size-base = 1rem !default
-$--head-font-size-step = 0.3rem !default
+$--head-font-size-base = 1rem !default;
+$--head-font-size-step = 0.3rem !default;
 
 h1 {
   font-size: $--head-font-size-base + 5 * $--head-font-size-step;
@@ -56,19 +60,24 @@ h6 {
   font-size: $--head-font-size-base;
 }
 
-button
-  outline: none
+button {
+  outline: none;
+}
 
-p
-  font-size: inherit
-  font-weight: inherit
+p {
+  font-size: inherit;
+  font-weight: inherit;
 
-  &:first-child
-    margin-top: 0
+  &:first-child {
+    margin-top: 0;
+  }
 
-  &:last-child
-    margin-bottom: 0
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
-hr
-  opacity: 0.2
-  margin: 20px
+hr {
+  opacity: 0.2;
+  margin: 20px;
+}
