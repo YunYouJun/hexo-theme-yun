@@ -2,9 +2,9 @@
   var options = {
     prev_text: '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
     next_text: '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
-    mid_size: 1
+    escape: false
   }
+
 if page.prev || page.next
   nav.pagination
     !=paginator(options)
-

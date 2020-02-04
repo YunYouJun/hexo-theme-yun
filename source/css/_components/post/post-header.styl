@@ -1,57 +1,73 @@
-@keyframes text-glow
-  from
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.01)
-  50%
-    text-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
-  to
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.01)
+@keyframes text-glow {
+  from {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.01);
+  }
 
-.post-header
-  text-align: center
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
 
-  .post-title
-    margin: 0
-    padding: 10px
-    font-size: 1.5rem
-    animation: text-glow 3s infinite
+  to {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.01);
+  }
+}
 
-    .post-title-link
-      position: relative
-      padding: 0.7rem 1.2rem
+.post-header {
+  text-align: center;
 
-      &::before,
-      &::after
-        content: ''
-        position: absolute
-        width: 10px
-        height: 10px
-        opacity: 0
-        border: 2px solid #d94f5c
-        transition: transform 0.3s, opacity 0.3s
-        transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29)
+  .post-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Noto Serif SC, serif;
+    animation: text-glow 3s infinite;
 
-      &::before
-        top: 0
-        left: 0
-        border-width: 2px 0 0 2px
-        transform: translate3d(10px, 10px, 0)
+    .post-title-link {
+      position: relative;
+      padding: 0.7rem 1.2rem;
 
-      &::after
-        right: 0
-        bottom: 0
-        border-width: 0 2px 2px 0
-        transform: translate3d(-10px, -10px, 0)
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        opacity: 0;
+        border: 2px solid #d94f5c;
+        transition: transform 0.3s, opacity 0.3s;
+        transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+      }
 
-      &:hover::before,
-      &:hover::after
-        opacity: 1
-        transform: translate3d(0, 0, 0)
+      &::before {
+        top: 0;
+        left: 0;
+        border-width: 2px 0 0 2px;
+        transform: translate3d(10px, 10px, 0);
+      }
 
-.post-edit-link
-  position: absolute
-  top: .5rem
-  right: .5rem
-  color: $gray
-  .icon
-    width: 1.5rem
-    height: 1.5rem
+      &::after {
+        right: 0;
+        bottom: 0;
+        border-width: 0 2px 2px 0;
+        transform: translate3d(-10px, -10px, 0);
+      }
+
+      &:hover::before, &:hover::after {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+
+.post-edit-link {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: $gray;
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

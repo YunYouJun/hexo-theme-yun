@@ -31,11 +31,12 @@ html(lang=config.language)
     //- global
     include ../_third-party/icon.pug
     include sidebar.pug
-    include background.pug
     include header.pug
     main#content.sidebar-translate
       block content
     include footer.pug
+    //- background
+    include background.pug
     //- widget
     include ../_widget/back-to-top.pug
     //- search

@@ -1,40 +1,57 @@
-$char-size-1 = 1.5rem
-$line-color = $black
-$char-color = $black
-$char-bg-color = $white
-$border-width = 1px
+$char-size-1 = 1.5rem;
+$border-width = 1px;
 
-.banner
-  display: flex
-  flex-direction: column
-  align-items: center
+if (hexo-config('mode') == 'dark') {
+  --hts-theme-bgcolor: #000;
+  $line-color = $white;
+  $char-color = $line-color;
+  $char-bg-color = $black;
+} else {
+  $line-color = $black;
+  $char-color = $line-color;
+  $char-bg-color = $white;
+}
 
-.vertical-line
-  &-top,
-  &-bottom
-    display: flex
-    background-color: $line-color
-    width: $border-width
-    height: 50vh
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Noto Serif SC, serif;
+  font-weight: 900;
+}
 
-.char
-  background-color: alpha($char-bg-color, 0.5)
-  the-transition()
-  &:hover
-    color: $char-bg-color
-    background-color: alpha($char-color, 0.5)
+.vertical-line {
+  &-top, &-bottom {
+    display: flex;
+    background-color: $line-color;
+    width: $border-width;
+    height: 50vh;
+  }
+}
 
-  &-left,
-  &-right
-    display: flex
-    color: $char-color
-    line-height: 1
+.char {
+  background-color: alpha($char-bg-color, 0.5);
+  the-transition();
+
+  &:hover {
+    color: $char-bg-color;
+    background-color: alpha($char-color, 0.5);
+  }
+
+  &-left, &-right {
+    display: flex;
+    color: $char-color;
+    line-height: 1;
     // font-family: 'ZCOOL XiaoWei'
+  }
 
-  &-left
-    border-left: $border-width solid $line-color
-    border-right: 0px solid alpha($purple, 0.1)
+  &-left {
+    border-left: $border-width solid $line-color;
+    border-right: 0px solid alpha($purple, 0.1);
+  }
 
-  &-right
-    border-left: 0px solid alpha($purple, 0.1)
-    border-right: $border-width solid $line-color
+  &-right {
+    border-left: 0px solid alpha($purple, 0.1);
+    border-right: $border-width solid $line-color;
+  }
+}

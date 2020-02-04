@@ -1,35 +1,3 @@
-if theme.ui.css_doodle
-  script(async, src=theme.vendors.css_doodle)
-  css-doodle(grid='5', class='doodle').
-    //- :doodle {
-    //-   @grid: 20 / 100vmax;
-    //-   font-family: sans-serif;
-    //- }
-    //- :after {
-    //-   content: \@hex(@r(0x2500, 0x257f));
-    //-   color: hsla(@r(360), 70%, 70%, @r(.9));
-    //-   font-size: 5vmax;
-    //- }
-
-    :doodle {
-      @grid: 10 / 100vmax;
-    }
-    @shape: bud 5;
-    background: hsla(
-      calc(360 - @i() * 4), 70%, 68%, @r(.8)
-    );
-    transform:
-      scale(@r(.1, 1.5))
-      translate(@m2(@r(-50%, 50%)));
-
-if theme.ui.fireworks
-  script(defer, src=theme.vendors.fireworks)
-  canvas.fireworks
-
-if theme.ui.rymd
-  script(defer, src=theme.vendors.rymd)
-  canvas#rymd
-
 if theme.ui.bg_image.enable
   style.
     body::before {
@@ -41,7 +9,15 @@ if theme.ui.bg_image.enable
       opacity: 0.2;
       background-image: url(#{theme.ui.bg_image.url});
       background-size: cover;
-      background-position:center;
-      background-repeat:no-repeat;
-      background-attachment:fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
+
+if theme.ui.fireworks
+  script(defer, src=theme.vendors.fireworks)
+  canvas.fireworks
+
+if theme.ui.rymd
+  script(defer, src=theme.vendors.rymd)
+  canvas#rymd

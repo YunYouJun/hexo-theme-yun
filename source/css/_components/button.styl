@@ -1,63 +1,82 @@
-.hts
-  &-button
-    font-family: Roboto, sans-serif
-    background-color: transparent
-    margin: 0 1rem
-    padding: 0 0.5rem
-    border-radius: 4px
-    color: $colors.primary
-    the-transition()
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    border: none
-    min-height: 2rem
-    min-width: 4rem
-    outline: none
-    line-height: 2
-    font-size: 0.9rem
-    font-weight: 500
-    text-transform: uppercase
-    letter-spacing: 0.09rem
-    -webkit-font-smoothing: antialiased
+.hts {
+  &-button {
+    font-family: Roboto, sans-serif;
+    background-color: transparent;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    border-radius: 4px;
+    color: $colors.primary;
+    the-transition();
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    min-height: 2rem;
+    min-width: 4rem;
+    outline: none;
+    line-height: 2;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.09rem;
+    -webkit-font-smoothing: antialiased;
 
-    &:hover
-      cursor: pointer
-      background-color: alpha($colors.primary, 0.05)
+    &:hover {
+      cursor: pointer;
+      background-color: alpha($colors.primary, 0.05);
+    }
 
-    &--raised
-      background-color: var(--hts-theme-primary, $colors.primary)
-      box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3)
-      color: $white
+    &--raised {
+      background-color: var(--hts-theme-primary, $colors.primary);
+      box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3);
+      color: $white;
 
-      &:hover
-        background-color: alpha($colors.primary, 0.9)
+      &:hover {
+        background-color: alpha($colors.primary, 0.9);
+      }
+    }
+  }
 
-  &-icon-button
-    display: inline-flex
-    border: none
-    cursor: pointer
-    width: 3rem
-    height: 3rem
-    align-items: center
-    justify-content: center
-    border-radius: 50%
-    line-height: 1
-    the-transition()
+  &-icon-button {
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    line-height: 1;
+    the-transition();
 
-    &:hover
-      background-color: alpha($colors.primary, 0.1)
+    &:hover {
+      background-color: alpha($colors.primary, 0.1);
+    }
 
-.button
-  &-glow
-    animation-duration: 3s
-    animation-iteration-count: infinite
-    animation-name: glowing
+    &:active {
+      background-color: alpha($colors.primary, 0.3);
+    }
+  }
+}
 
-@keyframes glowing
-  from
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1)
-  50%
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
-  to
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1)
+.button {
+  &-glow {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: glowing;
+  }
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  to {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+}

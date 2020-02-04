@@ -1,7 +1,7 @@
 // from https://codepen.io/hakimel/pen/bzrZGo
 // custom by YunYouJun
 
-(function () {
+(function() {
   const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
     STAR_SIZE = 3,
     STAR_MIN_SCALE = 0.2,
@@ -196,4 +196,4 @@
     pointerX = null;
     pointerY = null;
   }
-})()
+})();

@@ -16,8 +16,7 @@ $(function () {
         $('.sidebar-translate').velocity('stop').velocity({
           paddingLeft: '0px'
         }, {
-          duration: 400,
-          easing: 'easeInOutQuint'
+          duration: 400
         })
       } else {
         $('.hts-drawer-scrim').fadeOut(200)

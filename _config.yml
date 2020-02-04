@@ -1,18 +1,19 @@
+# ligh | dark | Todo: auto
+mode: dark
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
 # color
 color:
-  # primary: '#8e71c1'
-  # primary: '#6200ee'
-  primary: '#0078E7'
-#   paginator: "#00C4B6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00C4B6"
-#   link_color: "#858585"
-#   hr_color: "#A4D8FA"
-  tag_start_color: "#999999"
-  tag_end_color: "#1B9EF3"
+  primary: "#6200ee"
+  # primary: "#0078E7"
+  # paginator: "#00C4B6"
+  # button_hover: "#FF7242"
+  # text_selection: "#00C4B6"
+  # link_color: "#858585"
+  # hr_color: "#A4D8FA"
+  # tag_start_color: "#999999"
+  # tag_end_color: "#1B9EF3"
 
 # https://www.jsdelivr.com
 # ---------------------------------------------------------------
@@ -33,34 +34,35 @@ social:
   QQ:
     link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
-    color: '#EB1923'
-  GitHub: 
+    color: "#EB1923"
+  GitHub:
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: '#181717'
+    color: "#181717"
   E-Mail:
     link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
+    color: "#8E71C1"
   微博:
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
-    color: '#E6162D'
+    color: "#E6162D"
   豆瓣:
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
-    color: '#007722'
+    color: "#007722"
   网易云音乐:
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
-    color: '#C10D0C'
+    color: "#C10D0C"
   知乎:
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
-    color: '#0084FF'
+    color: "#0084FF"
   哔哩哔哩动画:
     link: https://space.bilibili.com/1579790
-    icon: icon-tv-line
-    color: '#FF8EB3'
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
   # bangumi: http://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   # Google: https://plus.google.com/yourname || google
@@ -111,15 +113,15 @@ favicon: /starry-favicon.ico
 
 # stylesheets loaded in the <head>
 css:
-- /css/hexo-theme-starry.css
+  - /css/hexo-theme-starry.css
 
 # scripts loaded in the end of the body
 js:
-- /js/hexo-theme-starry.js
-- /js/utils.js
-- /js/starry-boot.js
-- /js/component/sidebar.js
-- /js/scroll.js
+  - /js/hexo-theme-starry.js
+  - /js/utils.js
+  - /js/starry-boot.js
+  - /js/component/sidebar.js
+  - /js/scroll.js
 
 # cdn for third-party library (always include)
 cdn:
@@ -146,7 +148,7 @@ cdn:
     animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     # icon
-    iconfont: //at.alicdn.com/t/font_1140697_krj818zny2.js
+    iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
     # ui
     anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -161,7 +163,6 @@ cdn:
 vendors:
   algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
-  css_doodle: //cdn.jsdelivr.net/npm/css-doodle@latest/css-doodle.min.js
   gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   valine_js: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
@@ -169,7 +170,6 @@ vendors:
   rymd: /js/ui/rymd.js
 
 ui:
-  css_doodle: false
   fireworks: true
   rymd: false
   bg_image:
@@ -192,10 +192,10 @@ reward_settings:
 reward:
   wechatpay:
     path: /img/donate/wechatpay-qrcode.jpg
-    color: '#2DC100' #7BB32E
+    color: "#2DC100" #7BB32E
   alipay:
     path: /img/donate/alipay-qrcode.jpg
-    color: '#00A3EE'
+    color: "#00A3EE"
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -236,8 +236,8 @@ gitalk:
 # More info available at https://valine.js.org
 valine:
   enable: false
-  appId:  # your leancloud application appid
-  appKey:  # your leancloud application appkey
+  appId: # your leancloud application appid
+  appKey: # your leancloud application appkey
   serverURLs:
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
@@ -258,20 +258,20 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: '#0078E7'
+    color: "#0078E7"
 
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
     version: true
-  
+
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
   beian:
     enable: false
     # icp: 苏ICP备xxxxxxxx号
-  
+
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
 
@@ -288,7 +288,7 @@ busuanzi:
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: true
   updated_at: true
   categories: true

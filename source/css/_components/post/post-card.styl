@@ -1,33 +1,71 @@
-.post-card-category, .post-card-tag
-  font-size: 0.8rem
-  span
-    color: $dark
-    &:hover
-      color: $colors.primary
-  .icon
-    width: 0.8rem
-    height: 0.8rem
+#recent-posts {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
-.post-card-tag
-  display: flex
-  flex-grow: 1
-  justify-content: flex-end
+.post-card {
+  border: 1px solid rgba(black, 0.5);
+  box-shadow: 0 5px 25px rgba($colors.primary, 0.3);
+  background-color: rgba(white, 0.8);
 
-// post card
-.post-card
-  &-header
-    padding-top: .5rem
+  &:hover {
+    box-shadow: 0 5px 30px rgba(white, 0.3);
+  }
 
-  &-content
-    padding: .5rem 1rem
+  &:hover {
+    background-color: #fff;
+  }
 
-  &-title
-    margin: 0
+  &-header {
+    padding-top: 0.5rem;
+  }
 
-  &__actions
-    padding-left: 1rem
-    padding-right: 1rem
+  &-excerpt {
+    max-height: 6.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
 
-.recent-post-item
-  &:hover
-    background-color: white
+  &-content {
+    padding: 0.5rem 1rem;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &__actions {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &-tag {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  &-tag, &-category {
+    font-size: 0.8rem;
+
+    span {
+      color: $dark;
+
+      &:hover {
+        color: $colors.primary;
+      }
+    }
+
+    .icon {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+
+  &-readmore {
+    button {
+      font-size: 18px;
+    }
+  }
+}

@@ -33,21 +33,22 @@
           - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
           time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
 
-  .post-count
-    if config.symbols_count_time.symbols || config.symbols_count_time.time
-      span.post-symbolcount
-        if config.symbols_count_time.symbols
-          span.post-meta-item-icon(title=__('symbols_count_time.count'))
-            +icon('icon-file-word-line')
-          |  
-          span(title=__('symbols_count_time.count'))=symbolsCount(post.content)
-        if config.symbols_count_time.symbols && config.symbols_count_time.time
-          span.post-meta-divider='-'
-        if config.symbols_count_time.time
-          span.post-meta-item-icon(title=__('symbols_count_time.time'))
-            +icon('icon-timer-line')
-          |  
-          span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
+  if config.symbols_count_time
+    .post-count
+      if config.symbols_count_time.symbols || config.symbols_count_time.time
+        span.post-symbolcount
+          if config.symbols_count_time.symbols
+            span.post-meta-item-icon(title=__('symbols_count_time.count'))
+              +icon('icon-file-word-line')
+            |  
+            span(title=__('symbols_count_time.count'))=symbolsCount(post.content)
+          if config.symbols_count_time.symbols && config.symbols_count_time.time
+            span.post-meta-divider='-'
+          if config.symbols_count_time.time
+            span.post-meta-item-icon(title=__('symbols_count_time.time'))
+              +icon('icon-timer-line')
+            |  
+            span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
 
     if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
       span.post-busuanzi

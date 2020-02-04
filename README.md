@@ -2,7 +2,7 @@
 
 > A simple hexo theme.
 
-Demo & Docs: <https://starry.yunyoujun.cn>
+Demo：<https://yunyoujun.cn>
 
 Deving...
 
@@ -15,7 +15,13 @@ git clone -b master https://github.com/YunYouJun/hexo-theme-starry themes/starry
 If you don't have jade & stylus renderer:
 
 ```sh
-npm install hexo-renderer-jade hexo-renderer-stylus
+npm install hexo-render-pug hexo-renderer-stylus
+```
+
+### Plugns
+
+```sh
+npm install hexo-symbols-count-time
 ```
 
 ## Usage
@@ -23,6 +29,16 @@ npm install hexo-renderer-jade hexo-renderer-stylus
 ```yml
 # root/_config.yml
 theme: starry
+```
+
+### config
+
+#### Config in Root
+
+Recommended:
+
+```yml
+per_page: 9
 ```
 
 ## Ref

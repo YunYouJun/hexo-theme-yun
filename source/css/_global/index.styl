@@ -1,10 +1,25 @@
-@import "reset.styl"
+@import 'reset.styl';
 
-// body
-  // background: radial-gradient(#e6e9f0, #fefefe)
-  // background-attachment: fixed
+:root {
+  --mdc-layout-grid-margin-desktop: 10rem;
+  // --mdc-layout-grid-gutter-desktop: 2px;
+}
 
-body
-  --mdc-theme-primary: $colors.primary
-  --mdc-layout-grid-gutter-desktop: 2px
-  --hts-theme-primary: $colors.primary
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  if (hexo-config('mode') == 'dark') {
+    --hts-theme-bgcolor: #141516;
+    // --hts-theme-textcolor: #fff;
+    --hts-card-bgcolor: #141516;
+  } else {
+    --hts-theme-bgcolor: #fff;
+  }
+  --mdc-theme-primary: $colors.primary;
+  --hts-theme-primary: $colors.primary;
+
+  background-color: var(--hts-theme-bgcolor, #fff);
+  // color: var(--hts-theme-textcolor, #000);
+}
