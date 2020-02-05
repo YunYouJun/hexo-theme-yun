@@ -1,40 +1,58 @@
-#footer
-  font-size: 14px
-  padding: 1.5rem
-  color: $gray
-  text-align: center
+#footer {
+  font-size: 0.9rem;
+  color: $gray;
+  text-align: center;
+  margin: 1rem;
 
-  a
-    color: $gray
-    text-decoration: none
-    cursor: pointer
+  a {
+    color: $gray;
+    text-decoration: none;
+    cursor: pointer;
 
-    &:hover
-      color: $dark
+    &:hover {
+      color: $light;
+    }
+  }
 
-  .footer-separator
-    margin: 0 0.5rem
-
-@keyframes iconAnimate {
-  0%, 100% { transform: scale(1); }
-  10%, 30% { transform: scale(0.9); }
-  20%, 40%, 60%, 80% { transform: scale(1.1); }
-  50%, 70% { transform: scale(1.1); }
+  .footer-separator {
+    margin: 0 0.5rem;
+  }
 }
 
-if hexo-config('footer.icon.animated')
-  #animate
-    animation: iconAnimate 1.33s ease-in-out infinite
+@keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
 
-.with-love
-  display: inline-block
-  margin: 5px 5px 0 5px
-  color: unquote(hexo-config('footer.icon.color'))
+  10%, 30% {
+    transform: scale(0.9);
+  }
 
-#busuanzi
-  &_value
-    &_site_uv,
-    &_site_pv,
-    &_page_pv
-      margin-left: 0.2rem
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
 
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+
+if (hexo-config('footer.icon.animated')) {
+  #animate {
+    animation: iconAnimate 1.33s ease-in-out infinite;
+  }
+}
+
+.with-love {
+  display: inline-block;
+  margin: 5px 5px 0 5px;
+  color: unquote(hexo-config('footer.icon.color'));
+}
+
+#busuanzi {
+  &_value {
+    &_site_uv, &_site_pv, &_page_pv {
+      margin-left: 0.2rem;
+    }
+  }
+}

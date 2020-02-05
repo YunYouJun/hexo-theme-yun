@@ -1,72 +1,87 @@
-#post
-  padding: 10px
-  margin: 1rem
+#post {
+  margin: 1rem;
+}
 
-.post-meta
-  font-size: 14px
-  color: $dark
+.post {
+  &-block, &-comment {
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: white;
 
-  .icon
-    margin-bottom: -1px
+    +mobile() {
+      margin: 0;
+    }
+  }
 
-  .post-sticky-flag
-    color: $colors.warning
+  &-body {
+    padding: 0 5rem;
 
-.post-meta-item-icon
-  display: inline-block
+    +mobile() {
+      padding: 0 0.5rem;
+    }
+  }
 
-.post-meta-divider
-  height: 25px
-  color: $dark
-  margin: 0 0.5rem
+  &-content {
+    padding: 20px 0px;
+  }
+}
 
-.post-eof
-  margin: 50px auto
-  width: 50%
-  height: 1px
-  background: $blue
-  opacity: 0.1
+.post-meta {
+  font-size: 14px;
+  color: $dark;
 
-.post-body
-  padding: 0 10px
+  .icon {
+    margin-bottom: -1px;
+  }
 
-  .post-excerpt
-    padding: 0 20px
+  .post-sticky-flag {
+    color: $colors.warning;
+  }
+}
 
-  +mobile()
-    .post-excerpt
-      padding: 0
+.post-meta-item-icon {
+  display: inline-block;
+}
 
-  .post-content
-    padding: 20px 0px
-  
-  // .post-content, .post-excerpt
+.post-meta-divider {
+  height: 25px;
+  color: $dark;
+  margin: 0 0.5rem;
+}
 
-.post-copyright
-  font-size: 0.9rem
-  margin: 2rem 0
-  padding: 0.5rem 1rem
-  border-left: 3px solid #f8722a
-  background-color: $light
-  list-style: none
+.post-eof {
+  margin: 50px auto;
+  width: 50%;
+  height: 1px;
+  background: $blue;
+  opacity: 0.1;
+}
 
-a.fancybox
-  outline: none
+.post-copyright {
+  font-size: 0.9rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid #f8722a;
+  background-color: $light;
+  list-style: none;
+}
 
-  &:focus
-    outline: none
-  
-  display: inline-block
-  width: 100%
-  text-align: center
-  text-decoration: none
+a.fancybox {
+  outline: none;
 
-  .image-caption
-    color: $gray
-    font-size: 0.8rem
-    line-height: 1
-    margin-bottom: 20px
+  &:focus {
+    outline: none;
+  }
 
-.post-comment
-  padding: 1rem
-  margin: 1rem
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+
+  .image-caption {
+    color: $gray;
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}

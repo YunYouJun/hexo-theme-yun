@@ -1,19 +1,11 @@
 .post-nav
-  .post-nav-item.post-nav-prev
+  .post-nav-item
     if post.prev
-      a.hts-button(href=url_for(post.prev.path), rel='prev', title=post.prev.title, style='height:3rem;')
+      a.post-nav-item.post-nav-prev(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
         +icon('icon-arrow-left-s-line')
-        |  
-        != post.prev.title
-  .post-nav-divider
-    if theme.add_this_id
-      i.hts-icon-button(onclick='var share = document.getElementById("share"); share.style.visibility = (share.style.visibility === "hidden") ? "visible" : "hidden";share.style.opacity = (share.style.opacity === "0") ? 1 : 0;')
-        +icon('icon-share-line')
-      script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=' + theme.add_this_id)
-      #share.addthis_inline_share_toolbox(style='visibility:hidden;opacity:0;')
-  .post-nav-item.post-nav-next
+        span.post-nav-text=post.prev.title
+  .post-nav-item
     if post.next
-      a.hts-button(href=url_for(post.next.path), rel='next', title=post.next.title, style='height:3rem;')
-        != post.next.title
-        |  
+      a.post-nav-next(href=url_for(post.next.path), rel='next', title=post.next.title)
+        span.post-nav-text=post.next.title
         +icon('icon-arrow-right-s-line')

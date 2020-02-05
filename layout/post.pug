@@ -5,8 +5,8 @@ prepend title
 
 block content
   - var post = page
-  article#post.hts-card(itemscope, itemtype='http://schema.org/Article')
-    .post-block
+  #post
+    article.post-block(itemscope, itemtype='http://schema.org/Article')
       include _partial/post/post-schema.pug
 
       header.post-header
@@ -20,12 +20,12 @@ block content
 
         if theme.reward_settings.enable
           include _partial/post/reward.pug
-        
+
         if theme.creative_commons.license && theme.creative_commons.post
           include _partial/post/post-copyright.pug
-        
-  if post.prev || post.next
-    include _partial/post/post-nav.pug
 
-  if post.comments
-    include _third-party/comments/index.pug
+    if post.prev || post.next
+      include _partial/post/post-nav.pug
+
+    if post.comments
+      include _third-party/comments/index.pug

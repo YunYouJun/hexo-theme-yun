@@ -1,30 +1,49 @@
-.post-nav
-  position: relative
-  display: table
-  width: 100%
+.post-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-.post-nav-divider
-  display: table-cell
-  width: 10%
-  text-align: center
+  &-item {
+    display: inline-block;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 3rem;
+    line-height: 2.9rem;
 
-#share
-  position: absolute
-  left: 0
-  right: 0
-  top: 50px
-  opacity: 0
-  text-align:center
-  the-transition()
-  z-index: 100
+    &:hover {
+      background-color: rgba($colors.primary, 0.1);
+    }
+  }
 
-.post-nav-item
-  display: table-cell
-  width: 45%
-  vertical-align: middle
+  &-prev, &-next {
+    display: inline-flex;
+    align-items: center;
+    color: $purple;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    the-transition();
 
-.post-nav-prev
-  text-align: left
+    +mobile() {
+      max-width: 10rem;
+    }
 
-.post-nav-next
-  text-align: right
+    &:active {
+      color: white;
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
