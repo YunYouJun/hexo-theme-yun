@@ -15,6 +15,28 @@ color:
   # tag_start_color: "#999999"
   # tag_end_color: "#1B9EF3"
 
+words:
+  -
+    content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+    source: 《日常》
+    url: https://baike.baidu.com/item/日常/5844361
+  -
+    content: 是啊，我所爱的，即非群星，也非银河。
+    source: 云游君
+    url: https://yunyoujun.cn
+  -
+    content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
+    source: 《万叶集》雷神短歌
+    url: https://book.douban.com/subject/1066538/
+  -
+    content: 人类的悲欢并不相通，我只觉得他们吵闹。
+    source: 《小杂感》鲁迅
+    url: https://baike.baidu.com/item/小杂感
+  -
+    content: 遍身罗绮者，不是养蚕人。
+    source: 《蚕妇》张俞
+    url: https://baike.baidu.com/item/蚕妇/40814
+
 # https://www.jsdelivr.com
 # ---------------------------------------------------------------
 # Sidebar Settings
