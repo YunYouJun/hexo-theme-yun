@@ -27,3 +27,18 @@ script.
     $('.vertical-line-top, .vertical-line-bottom').css('height', 'calc(50vh - ' + sumH/2 + 'rem)')
   }
   setTimeout(function(){generateBanner('#{theme.banner || config.title}')}, 100)
+
+h5#say.text-center(style='margin-top:15px')
+  span#say-content
+  small#say-from
+script.
+  let words = !{JSON.stringify(theme.words)}
+  let word = words[Math.floor(Math.random()*words.length)]
+  if (word.source) {
+    $('#say-content').text(word.content)
+    if (word.url) {
+      $('#say-from').html(' —— <a href=' + word.url + '>' + word.source + '</a>')
+    } else {
+      $('#say-from').text(word.source)
+    }
+  }

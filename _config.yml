@@ -120,8 +120,6 @@ js:
   - /js/hexo-theme-starry.js
   - /js/utils.js
   - /js/starry-boot.js
-  - /js/component/sidebar.js
-  - /js/scroll.js
 
 # cdn for third-party library (always include)
 cdn:
@@ -147,17 +145,15 @@ cdn:
       - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
     animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
-    # icon
-    iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
-    # ui
-    anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-    jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-    fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
-    velocity: //cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
-    velocity-ui: //cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
-    material:
-      # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
-      - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
+    base:
+      jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    async:
+      anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+      fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+      iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
+      # mdc: https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
+      mdc_ripple: https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
+    defer:
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -306,9 +302,11 @@ symbols_count_time:
 # https://github.com/wzpan/hexo-generator-search
 local_search:
   enable: false
+  src: /js/search/local-search.js
 
 algolia_search:
   enable: false
+  src: /js/search/algolia-search.js
   hits:
     per_page: 10 # the number of search results per page
 

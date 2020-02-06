@@ -1,47 +1,62 @@
-.site-desciption
-  color: $gray
-  font-size: 0.8rem
+.site-info {
+  color: $dark;
+  font-family: $font-family-serif;
+  font-weight: bold;
+}
 
-.site-state
-  display: flex
-  justify-content: center
-  overflow: hidden
-  line-height: 1.5
-  white-space: nowrap
-  text-align: center
-  margin-top: 10px
+.site-desciption {
+  color: $gray;
+  font-size: 0.8rem;
+}
 
-.site-state-item
-  display: flex
-  padding: 0 15px
-  align-items: center
+.site-state {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.site-state-item {
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+
   // border-left: 1px solid $light-gray
-
-  &:first-child
+  &:first-child {
     // border-left: none
-    border-right: 1px solid $gray
-  
-  &:last-child
-    border-left: 1px solid $gray
+    border-right: 1px solid $gray;
+  }
 
-  &.site-state-posts,
-  &.site-state-categories
-    border-right: 1px solid $light-gray
+  &:last-child {
+    border-left: 1px solid $gray;
+  }
 
-  &.icon-home,
-  &.icon-search
-    line-height: 1
-    padding: 0
+  &.site-state-posts, &.site-state-categories {
+    border-right: 1px solid $light-gray;
+  }
 
-.site-state-item-icon
-  color: $dark
-  line-height: 1
-  .icon
-    width: 1.5rem
-    height: 1.5rem
+  &.icon-home, &.icon-search {
+    line-height: 1;
+    padding: 0;
+  }
+}
 
-.site-state-item-count
-  display: block
-  text-align: center
-  color: $dark
-  font-size: 1rem
+.site-state-item-icon {
+  color: $dark;
+  line-height: 1;
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.site-state-item-count {
+  display: block;
+  text-align: center;
+  color: $dark;
+  font-size: 1rem;
+}

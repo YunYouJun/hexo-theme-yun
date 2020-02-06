@@ -1,25 +1,31 @@
-if hexo-config('local_search') && hexo-config('local_search.enable')
-  @import "local-search.styl"
-else if hexo-config('algolia_search') && hexo-config('algolia_search.enable')
-  @import "algolia-search.styl"
+if (hexo-config('local_search') && hexo-config('local_search.enable')) {
+  @import 'local-search.styl';
+} else if (hexo-config('algolia_search') && hexo-config('algolia_search.enable')) {
+  @import 'algolia-search.styl';
+}
 
-.search-popup-overlay
-  display: none
-  position: fixed
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  z-index: 1024
-  background-color: rgba(0, 0, 0, 0.2)
+.search-popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1024;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(5px);
+}
 
-.popup
-  .search-icon, .close-icon
-    display: inline-block
-    width: 2rem
-    height: 2rem
-    padding: .5rem
-    .icon
-      width: 2rem
-      height: 2rem
+.popup {
+  .search-icon, .close-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
 
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

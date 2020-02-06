@@ -20,25 +20,24 @@ html(lang=config.language)
       block title
         | #{title}
     include head.pug
-    include config.pug
     include ../_third-party/cdn.pug
     each url in theme.js
       script(src=url_for(url), defer)
     if theme.css !== undefined && theme.css.length > 0
       each url in theme.css
         link(rel='stylesheet', href=url_for(url))
-  body
-    //- global
-    include ../_third-party/icon.pug
-    include sidebar.pug
-    include header.pug
-    main#content.sidebar-translate
-      block content
-    include footer.pug
-    //- background
-    include background.pug
-    //- widget
-    include ../_widget/back-to-top.pug
-    //- search
-    if theme.local_search.enable || theme.algolia_search.enable
-      include ../_widget/search/index.pug
+  body(class= is_home() ? 'is-home' : '')
+    .container
+      //- global
+      include ../_third-party/icon.pug
+      include sidebar.pug
+      main#content.sidebar-translate
+        block content
+      include footer.pug
+      //- background
+      include background.pug
+      //- widget
+      include ../_widget/back-to-top.pug
+      //- search
+      if theme.local_search.enable || theme.algolia_search.enable
+        include ../_widget/search/index.pug

@@ -1,7 +1,7 @@
 extends _partial/layout.pug
 
 block content
-  if page.current == 1
-    include _partial/banner.pug
+  if is_home() && page.current == 1
+    include ./_partial/banner.pug
   include _partial/recent-posts.pug
   include _partial/pagination.pug

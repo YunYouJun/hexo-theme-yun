@@ -8,7 +8,7 @@
       input.search-input#local-search-input(type='text', placeholder=__('search.placeholder'))
   #local-search-result
 
-script(src=url_for('/js/component/search/local-search.js'), defer)
+script(src=url_for(theme.local_search.src), defer)
 script.
   // Popup Window;
   var isXml = true;

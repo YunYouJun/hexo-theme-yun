@@ -1,9 +1,9 @@
 a.sidebar-toggle-fixed.hts-icon-button.sidebar-toggle
-  button.hamburger(class='hamburger--spin', type='button')
+  button.hamburger(class='hamburger--spin' type='button')
     span.hamburger-box
       span.hamburger-inner
 
-aside#sidebar(class=is_post() ? 'is-post' : '')
+aside.sidebar
   if is_post()
     ul.sidebar-nav
       li.sidebar-nav-item.sidebar-nav-toc.sidebar-nav-active(data-target='post-toc-wrap')=__('sidebar.toc')
@@ -20,7 +20,7 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
           a.site-info(href=url_for('about/site.html'))
             | #{config.title}
           .site-desciption!=config.description
-      
+
       nav.site-state
         a.site-state-item.hts-icon-button.icon-home.mdc-ripple-surface(href=url_for(theme.menu.home.path), title=__('menu.home'))
           span.site-state-item-icon
@@ -46,34 +46,33 @@ aside#sidebar(class=is_post() ? 'is-post' : '')
         a.popup-trigger.site-state-item.hts-icon-button.icon-search.mdc-ripple-surface(href='javascript:;', title=__('menu.search'))
           span.site-state-item-icon
             +icon('icon-search-line')
-      
+
       hr
 
       if theme.social
         .links-of-author
           if theme.rss
-            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=url_for(theme.rss), title='RSS', target='_blank', style='color:orange')
+            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=url_for(theme.rss), title='RSS' target='_blank' style='color:orange')
               +icon(theme.rss_icon)
           for social, name in theme.social
-            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=social.link, title=name, target='_blank', style='color:' + social.color)
+            a.links-of-author-item.hts-icon-button.mdc-ripple-surface(href=social.link, title=name, target='_blank' style='color:' + social.color)
               +icon(social.icon)
 
       if theme.links.enable
         .links-of-friend
           a.hts-icon-button.mdc-ripple-surface(href=url_for(theme.links.url), title=theme.links.title)
             +icon(theme.links.icon)
-        
-      
+
+
   if is_post()
     .post-toc-wrap.sidebar-panel.sidebar-panel-active
-      if toc(page.content).length > 1
-        .post-toc
-          .post-toc-progress
-            .progress-bar
-            span.progress-notice=__('sidebar.have_read')
-            span.progress-num 0
-            span.progress-percentage='%'
-          .post-toc-content
-            !=toc(page.content)
-            //- svg.toc-marker(width='200', height='200')
-            //-   path(stroke='#444', stroke-width='3', fill='transparent', stroke-dasharray='0, 0, 0, 1000', stroke-linecap='round', stroke-linejoin='round', transform='translate(-0.5, -0.5)')
+      .post-toc
+        .post-toc-progress
+          .progress-bar
+          span.progress-notice=__('sidebar.have_read')
+          span.progress-num 0
+          span.progress-percentage='%'
+        .post-toc-content
+          != toc(page.content).length > 1 ? toc(page.content) : '很遗憾，咱没写啥目录' 
+          //- svg.toc-marker(width='200' height='200')
+            path(stroke='#444' stroke-width='3' fill='transparent' stroke-dasharray='0, 0, 0, 1000' stroke-linecap='round' stroke-linejoin='round' transform='translate(-0.5, -0.5)')
