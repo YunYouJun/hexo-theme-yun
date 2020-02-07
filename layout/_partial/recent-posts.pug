@@ -1,7 +1,7 @@
-section#recent-posts.hts-layout-grid
+section#recent-posts.hty-layout-grid
   each post in page.posts.data
-    .hts-layout-grid__cell.hts-layout-grid__cell--span-12.animated.fadeIn
-      article.hts-card.mdc-ripple-surface.mdc-ripple-surface--primary.post-card(itemscope, itemtype='http://schema.org/Article')
+    .hty-layout-grid__cell.hty-layout-grid__cell--span-12.animated.fadeIn
+      article.hty-card.mdc-ripple-surface.mdc-ripple-surface--primary.post-card(itemscope, itemtype='http://schema.org/Article')
         include ../_partial/post/post-schema.pug
         .post-card-header
           .post-header
@@ -19,11 +19,11 @@ section#recent-posts.hts-layout-grid
           .post-card-readmore
             if post.type == 'yuque'
               a(href=post.url, target='_blank')
-                button.hts-button.hts-button--raised.yuque-button!='READ MORE'
+                button.hty-button.hty-button--raised.yuque-button!='READ MORE'
             else
               a(href=url_for(post.path))
-                button.hts-button.hts-button--raised!='READ MORE'
-        .hts-card__actions.post-card__actions
+                button.hty-button.hty-button--raised!='READ MORE'
+        .hty-card__actions.post-card__actions
           .post-card-category
             span.post-meta-item-icon
               +icon('icon-folder-line')

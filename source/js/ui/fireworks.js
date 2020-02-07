@@ -1,5 +1,5 @@
 // rf hexo-theme-melody
-// custom by hexo-theme-starry
+// custom by hexo-theme-yun
 
 const numberOfParticules = 20
 

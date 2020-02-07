@@ -1,6 +1,6 @@
-# Hexo-Theme-Starry
+# Hexo-Theme-Yun
 
-> A simple hexo theme.
+> A simple and fast hexo theme.
 
 Demo：<https://yunyoujun.cn>
 
@@ -9,7 +9,7 @@ Deving...
 ## Install
 
 ```sh
-git clone -b master https://github.com/YunYouJun/hexo-theme-starry themes/starry
+git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 If you don't have jade & stylus renderer:
@@ -28,7 +28,7 @@ npm install hexo-symbols-count-time
 
 ```yml
 # root/_config.yml
-theme: starry
+theme: yun
 ```
 
 ### config

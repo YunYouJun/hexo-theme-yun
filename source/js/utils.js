@@ -37,7 +37,7 @@ function wrapTable() {
   $("table").wrap('<div class="table-container"></div>');
 }
 
-Starry.utils = {
+Yun.utils = {
   /**
    * Wrap images with fancybox support.
    */

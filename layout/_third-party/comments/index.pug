@@ -4,17 +4,17 @@
       .comment-tooltip
         | 若您无 GitHub 账号，可使用 Valine 匿名评论。<br/>
         | 如果您想要收到回复提醒，建议使用 Gitalk 。
-      button.comment-nav-item.hts-button(data-target='gitalk-container')='Gitalk'
+      button.comment-nav-item.hty-button(data-target='gitalk-container')='Gitalk'
       |  or 
-      button.comment-nav-item.hts-button(data-target='valine-container')='Valine'
+      button.comment-nav-item.hty-button(data-target='valine-container')='Valine'
     script.
       $(document).ready(function() {
         $('#valine-container').hide()
         $('.comment-nav-item').on('click', function() {
-          $('.comment-nav-item').removeClass('hts-button--raised')
+          $('.comment-nav-item').removeClass('hty-button--raised')
           $('.comment-container').hide()
           var item = $(this)
-          item.addClass('hts-button--raised')
+          item.addClass('hty-button--raised')
           var target = $('#' + item.data('target'))
           target.show()
         })

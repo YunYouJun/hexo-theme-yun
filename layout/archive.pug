@@ -5,7 +5,7 @@ prepend title
   | #{__('title.archive')} | 
 
 block content
-  #archive.hts-card
+  #archive.hty-card
     include _mixin/post-collapse.pug
     .archive-title= _p('counter.archive_posts', site.posts.length)
     +post_collapse(page.posts)

@@ -126,17 +126,17 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /starry-favicon.ico
+favicon: /yun-favicon.ico
 
 # stylesheets loaded in the <head>
 css:
-  - /css/hexo-theme-starry.css
+  - /css/hexo-theme-yun.css
 
 # scripts loaded in the end of the body
 js:
-  - /js/hexo-theme-starry.js
+  - /js/hexo-theme-yun.js
   - /js/utils.js
-  - /js/starry-boot.js
+  - /js/yun-boot.js
 
 # cdn for third-party library (always include)
 cdn:

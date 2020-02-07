@@ -1,11 +1,11 @@
-!=favicon_tag(config.favicon || theme.favicon || '/starry-favicon.ico')
+!=favicon_tag(config.favicon || theme.favicon || '/yun-favicon.ico')
 
 if !theme.rss && config.feed && config.feed.path
   - theme.rss = config.feed.path
   != feed_tag(config.feed.path)
 
-script#starry-config
-  | let Starry = window.Starry || {};
+script#yun-config
+  | let Yun = window.Yun || {};
 
 if process.env.NODE_ENV !== 'dev' && theme.google_adsense && theme.google_adsense.enable
   include ../_third-party/google-adsense.pug

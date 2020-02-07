@@ -59,7 +59,7 @@ $(".popup-btn-close,.search-popup-overlay").click(closeSearchDialog);
 
 // display toc
 // rf from hexo-theme-melody
-// modify by hexo-theme-starry
+// modify by hexo-theme-yun
 $(function() {
   let initTop = 0;
   $(".toc-child").slideUp();
