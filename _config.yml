@@ -16,24 +16,19 @@ color:
   # tag_end_color: "#1B9EF3"
 
 words:
-  -
-    content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
     source: 《日常》
     url: https://baike.baidu.com/item/日常/5844361
-  -
-    content: 是啊，我所爱的，即非群星，也非银河。
+  - content: 是啊，我所爱的，即非群星，也非银河。
     source: 云游君
     url: https://yunyoujun.cn
-  -
-    content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
+  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
     source: 《万叶集》雷神短歌
     url: https://book.douban.com/subject/1066538/
-  -
-    content: 人类的悲欢并不相通，我只觉得他们吵闹。
+  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
     source: 《小杂感》鲁迅
     url: https://baike.baidu.com/item/小杂感
-  -
-    content: 遍身罗绮者，不是养蚕人。
+  - content: 遍身罗绮者，不是养蚕人。
     source: 《蚕妇》张俞
     url: https://baike.baidu.com/item/蚕妇/40814
 
@@ -161,10 +156,7 @@ cdn:
     # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
-    material:
-      # - https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.css
-      - https://cdn.jsdelivr.net/npm/@material/layout-grid/dist/mdc.layout-grid.min.css
-      - https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
+    mdc_ripple: //cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
     animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     base:
@@ -173,8 +165,7 @@ cdn:
       anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
       fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
       iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
-      # mdc: https://cdn.jsdelivr.net/npm/material-components-web/dist/material-components-web.min.js
-      mdc_ripple: https://cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
+      mdc_ripple: //cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
     defer:
 
 # cdn for third-party library (alternative include)

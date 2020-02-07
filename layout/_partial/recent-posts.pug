@@ -1,40 +1,49 @@
-section#recent-posts.mdc-layout-grid
-  .mdc-layout-grid__inner
-    each post in page.posts.data
-      .mdc-layout-grid__cell.mdc-layout-grid__cell--span-12-desktop.mdc-layout-grid__cell--span-12-tablet.animated.fadeIn
-        article.hts-card.mdc-ripple-surface.mdc-ripple-surface--primary.post-card(itemscope, itemtype='http://schema.org/Article')
-          include ../_partial/post/post-schema.pug
-          .post-card-header
-            .post-header
-              h2.post-title(itemprop='name headline')
+section#recent-posts.hts-layout-grid
+  each post in page.posts.data
+    .hts-layout-grid__cell.hts-layout-grid__cell--span-12.animated.fadeIn
+      article.hts-card.mdc-ripple-surface.mdc-ripple-surface--primary.post-card(itemscope, itemtype='http://schema.org/Article')
+        include ../_partial/post/post-schema.pug
+        .post-card-header
+          .post-header
+            h2.post-title(itemprop='name headline')
+              if post.type == 'yuque'
+                a.post-title-link.yuque-link(itemprop='url',href=post.url, target='_blank')
+                  i.yuque-icon
+                    img(src='https://gw.alipayobjects.com/zos/rmsportal/UTjFYEzMSYVwzxIGVhMu.png')
+                  span=post.title
+              else
                 a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
-              include ../_partial/post/post-meta.pug
-          .post-card-content.text-center
-            .post-card-excerpt!=post.excerpt
-            .post-card-readmore
+            include ../_partial/post/post-meta.pug
+        .post-card-content.text-center
+          .post-card-excerpt!=post.excerpt
+          .post-card-readmore
+            if post.type == 'yuque'
+              a(href=post.url, target='_blank')
+                button.hts-button.hts-button--raised.yuque-button!='READ MORE'
+            else
               a(href=url_for(post.path))
                 button.hts-button.hts-button--raised!='READ MORE'
-          .hts-card__actions.post-card__actions
-            .post-card-category
-              span.post-meta-item-icon
-                +icon('icon-folder-line')
-              |  
-              if post.categories && post.categories.length && theme.post_meta.categories
-                for category, index in post.categories.data
-                  span
-                    a(href=url_for(category.path))
-                      span(itemprop='text')=category.name
+        .hts-card__actions.post-card__actions
+          .post-card-category
+            span.post-meta-item-icon
+              +icon('icon-folder-line')
+            |  
+            if post.categories && post.categories.length && theme.post_meta.categories
+              for category, index in post.categories.data
+                span
+                  a(href=url_for(category.path))
+                    span(itemprop='text')=category.name
 
-                  - var category_length = post.categories.length
-                  if category_length > 1 && index != category_length - 1
-                      |  > 
-            .post-card-tag
-              if post.tags && post.tags.length && theme.post_meta.tags
-                for tag in post.tags.data
-                  span.post-meta-item-icon
-                    +icon('icon-price-tag-3-line')
-                  a(href=url_for(tag.path, rel='tag'))
-                    span!='&nbsp;' + tag.name + '&nbsp;'
-              else
+                - var category_length = post.categories.length
+                if category_length > 1 && index != category_length - 1
+                  |  > 
+          .post-card-tag
+            if post.tags && post.tags.length && theme.post_meta.tags
+              for tag in post.tags.data
                 span.post-meta-item-icon
                   +icon('icon-price-tag-3-line')
+                a(href=url_for(tag.path, rel='tag'))
+                  span!='&nbsp;' + tag.name + '&nbsp;'
+            else
+              span.post-meta-item-icon
+                +icon('icon-price-tag-3-line')

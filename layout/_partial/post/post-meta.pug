@@ -33,7 +33,7 @@
           - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
           time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
 
-  if config.symbols_count_time
+  if config.symbols_count_time && post.type != 'yuque'
     .post-count
       if config.symbols_count_time.symbols || config.symbols_count_time.time
         span.post-symbolcount

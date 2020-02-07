@@ -1,7 +1,7 @@
 .post-nav
   .post-nav-item
     if post.prev
-      a.post-nav-item.post-nav-prev(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
+      a.post-nav-prev(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
         +icon('icon-arrow-left-s-line')
         span.post-nav-text=post.prev.title
   .post-nav-item

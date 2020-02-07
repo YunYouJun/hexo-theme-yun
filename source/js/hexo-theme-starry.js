@@ -6,22 +6,19 @@ $(document).ready(function() {
 });
 
 // sidebar
-const sidebarWidth = "320px";
-const duration = 200;
 $(function() {
   $(".sidebar-toggle").on("click", function() {
-    let hamburger = $(".sidebar-toggle .hamburger");
-    let isOpen = hamburger.hasClass("is-active");
+    $(".sidebar-toggle .hamburger").toggleClass("is-active");
     $(".container").toggleClass("sidebar-open");
   });
   // click sidebar nav
   $(".sidebar-nav li").on("click", function() {
-    var item = $(this);
-    var activeTabClassName = "sidebar-nav-active";
-    var activePanelClassName = "sidebar-panel-active";
+    let item = $(this);
+    let activeTabClassName = "sidebar-nav-active";
+    let activePanelClassName = "sidebar-panel-active";
     if (item.hasClass(activeTabClassName)) return;
-    var currentTarget = $("." + activePanelClassName);
-    var target = $("." + item.data("target"));
+    let currentTarget = $("." + activePanelClassName);
+    let target = $("." + item.data("target"));
     // currentTarget.hide()
     currentTarget.removeClass(activePanelClassName);
     // target.show()
@@ -116,7 +113,10 @@ $(function() {
     var scrollPercentRounded = Math.round(scrollPercent * 100);
     var percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded;
     $(".progress-num").text(percentage);
-    $(".post-toc-progress .progress-bar").animate({ width: percentage + "%" }, 100);
+    $(".post-toc-progress .progress-bar").animate(
+      { width: percentage + "%" },
+      100
+    );
   }
 
   function updateAnchor(anchor) {

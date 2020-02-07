@@ -24,11 +24,15 @@ script.
       }
       sumH += ran
     }
-    $('.vertical-line-top, .vertical-line-bottom').css('height', 'calc(50vh - ' + sumH/2 + 'rem)')
+    $('.vertical-line-top, .vertical-line-bottom').css('height', 'calc(50vh - ' + sumH/2 + 'rem + 1px)')
   }
   setTimeout(function(){generateBanner('#{theme.banner || config.title}')}, 100)
 
-h5#say.text-center(style='margin-top:15px')
+#hts-cloud
+  #cloud-1
+  #cloud-2
+
+#say
   span#say-content
   small#say-from
 script.
@@ -37,7 +41,7 @@ script.
   if (word.source) {
     $('#say-content').text(word.content)
     if (word.url) {
-      $('#say-from').html(' —— <a href=' + word.url + '>' + word.source + '</a>')
+      $('#say-from').html('<a class="say-from-link" href=' + word.url + '>' + word.source + '</a>')
     } else {
       $('#say-from').text(word.source)
     }

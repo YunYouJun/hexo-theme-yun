@@ -6,12 +6,24 @@ if theme.ui.bg_image.enable
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.2;
+      opacity: 0.3;
       background-image: url(#{theme.ui.bg_image.url});
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      animation-name: bgFadeIn;
+      animation-duration: 5s;
+      filter: blur(5px);
+    }
+
+    @keyframes bgFadeIn{
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 0.3;
+      }
     }
 
 if theme.ui.fireworks

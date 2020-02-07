@@ -1,34 +1,31 @@
 // color
-$white = #FFFFFF
-$black = #000000
-
-$light = #fafbfc
-$dark = #303133
-$gray = #999999
-
-$red = #db2828
-$orange = #f2711c
-$yellow = #FF8718
-$green = #21ba45
-$blue = #0078E7
-$indigo = #515bd4
-$purple = #8e71c1
-$indigo = #6200ee
-
-$light-blue = #42B8DD
-$light-gray = #CCCCCC
-
-$colors := {
+$white = #FFFFFF;
+$black = #000000;
+$light = #fafbfc;
+$dark = #303133;
+$gray = #999999;
+$red = #db2828;
+$orange = #f2711c;
+$yellow = #FF8718;
+$green = #21ba45;
+$blue = #0078E7;
+$indigo = #515bd4;
+$purple = #8e71c1;
+$indigo = #6200ee;
+$light-blue = #42B8DD;
+$light-gray = #CCCCCC;
+// custom
+$color-yuque = #25b864;
+$colors ?= {
   primary: convert(hexo-config('color.primary')) || $purple,
   inverse: $yellow,
   success: $green,
   warning: $orange,
   danger: $red,
   info: $light-blue
-}
-
+};
 // text
-$color := {
+$color ?= {
   text: $dark,
   link: $colors.primary
-}
+};

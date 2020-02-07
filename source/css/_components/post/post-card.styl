@@ -1,27 +1,22 @@
-#recent-posts {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+// #recent-posts {
 
+// }
 .post-card {
-  border: 1px solid rgba(black, 0.5);
-  box-shadow: 0 5px 25px rgba($colors.primary, 0.3);
-  background-color: rgba(white, 0.8);
+  box-shadow: 0 2px 5px rgba(black, 0.2);
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
 
   &:hover {
-    box-shadow: 0 5px 30px rgba(white, 0.3);
-  }
-
-  &:hover {
-    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(white, 0.2);
   }
 
   &-header {
     padding-top: 0.5rem;
   }
 
-  &-excerpt {
-    max-height: 6.5rem;
+  &-excerpt, &-excerpt p {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
@@ -64,8 +59,34 @@
   }
 
   &-readmore {
+    margin: 1rem auto;
+
     button {
-      border-radius: 0;  
+      border-radius: 0;
+    }
+  }
+
+  .yuque-button {
+    --hts-theme-primary: $color-yuque;
+
+    &:hover {
+      background-color: alpha($green, 0.9);
+    }
+  }
+
+  .yuque-icon {
+    display: inline-block;
+    margin-right: 0.2rem;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .yuque {
+    &-link {
+      color: $color-yuque;
     }
   }
 }
