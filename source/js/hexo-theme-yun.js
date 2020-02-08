@@ -73,7 +73,6 @@ $(function() {
         scrollPercent(currentTop);
         // head position
         findHeadPosition(currentTop);
-        var isUp = scrollDirection(currentTop);
         if (currentTop > 64) {
           if ($("#go-up").css("opacity") === "0") {
             $("#go-up").addClass("show");
@@ -86,13 +85,6 @@ $(function() {
       100
     )
   );
-
-  // find the scroll direction
-  function scrollDirection(currentTop) {
-    var result = currentTop > initTop; // true is down & false is up
-    initTop = currentTop;
-    return result;
-  }
 
   // expand toc-item
   function expandToc($item) {

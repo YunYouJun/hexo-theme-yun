@@ -16,6 +16,14 @@
     "hexo",
     "theme",
     "yun",
-    "starry"
-  ]
+    "starry",
+    "docs"
+  ],
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.3.0"
+  }
 }

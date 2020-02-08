@@ -33,6 +33,7 @@ $hamburger-active-hover-filter = $hamburger-hover-filter;
   margin: 0;
   overflow: visible;
 
+
   &:hover {
     if ($hamburger-hover-use-filter == true) {
       filter: $hamburger-hover-filter;
@@ -57,6 +58,7 @@ $hamburger-active-hover-filter = $hamburger-hover-filter;
 }
 
 .hamburger-box {
+  outline: none;
   width: $hamburger-layer-width;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;

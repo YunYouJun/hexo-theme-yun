@@ -9,7 +9,7 @@ section#recent-posts.hty-layout-grid
               if post.type == 'yuque'
                 a.post-title-link.yuque-link(itemprop='url',href=post.url, target='_blank')
                   i.yuque-icon
-                    img(src='https://gw.alipayobjects.com/zos/rmsportal/UTjFYEzMSYVwzxIGVhMu.png')
+                    include ../_third-party/icon/yuque.pug
                   span=post.title
               else
                 a.post-title-link(itemprop='url', href=url_for(post.path))=post.title

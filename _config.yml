@@ -328,8 +328,7 @@ algolia_search:
 # Google Adsense
 google_adsense:
   enable: false
-  client: ca-pub-xxxxxxxxxx
-  enable_page_level_ads: true
+  client: ca-pub-2245427233262012
 
 # Analysis
 # ---------------
