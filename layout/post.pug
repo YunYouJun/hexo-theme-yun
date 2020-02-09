@@ -7,6 +7,10 @@ block content
   - var post = page
   #post
     article.post-block(itemscope, itemtype='http://schema.org/Article')
+      if post.url
+        script.
+          window.location.href = "#{post.url}";
+
       include _partial/post/post-schema.pug
 
       header.post-header

@@ -3,14 +3,13 @@
 :root {
   if (hexo-config('mode') == 'dark') {
     --hty-theme-bgcolor: #141516;
-    // --hty-theme-textcolor: #fff;
     --hty-card-bgcolor: #141516;
   } else {
     --hty-theme-bgcolor: #f9f9f9;
   }
 
-  --mdc-theme-primary: $colors.primary;
   --hty-theme-primary: $colors.primary;
+  --mdc-theme-primary: $colors.primary;
 }
 
 html {
@@ -20,5 +19,4 @@ html {
 
 body {
   background-color: var(--hty-theme-bgcolor, #f5f5f5);
-  // color: var(--hty-theme-textcolor, #000);
 }

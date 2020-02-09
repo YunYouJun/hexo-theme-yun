@@ -14,9 +14,9 @@
 if theme.vendors.algolia_instant_css
   link(rel='stylesheet', href=theme.vendors.algolia_instant_css)
 if theme.vendors.algolia_instant_js
-  script(src=theme.vendors.algolia_instant_js)
+  script(async, src=theme.vendors.algolia_instant_js)
 
-script(async, src=url_for(theme.algolia_search.src))
+script(defer, src=url_for(theme.algolia_search.src))
 
 -
   var algolia = 'undefined';

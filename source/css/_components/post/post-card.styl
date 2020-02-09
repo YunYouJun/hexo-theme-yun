@@ -74,10 +74,26 @@
     }
   }
 
-
   .yuque {
     &-link {
       color: $color-yuque;
+    }
+  }
+
+  .bilibili {
+    &-link {
+      color: $color-bilibili;
+
+      .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: -0.2rem;
+      }
+    }
+
+    &-button {
+      --hty-theme-primary: $color-bilibili;
+      background-color: alpha($color-bilibili, 0.9);
     }
   }
 }

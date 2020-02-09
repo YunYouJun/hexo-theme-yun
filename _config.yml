@@ -100,7 +100,7 @@ banner: 云游君的小站
 
 # Sidebar Avatar
 avatar:
-  url: /images/avatar.jpg
+  url: /images/avatar.jpg # recommend avatar.webp
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -151,9 +151,8 @@ cdn:
     # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
     # markdown
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-    # star-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/star/star-common.min.css
     # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
-    # blood-markdown-css: https://unpkg.com/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
+    # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
     mdc_ripple: //cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
@@ -183,7 +182,7 @@ ui:
   rymd: false
   bg_image:
     enable: true
-    url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.jpg
+    url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
 
 # Article
 # ---------------
