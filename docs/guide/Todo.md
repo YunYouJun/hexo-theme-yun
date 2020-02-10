@@ -59,7 +59,6 @@ categories:
   - [ ] background
     - [ ] freehand star
     - [x] custom image
-  - [x] btn ripple (from [Material Ripples](https://material.io/develop/web/components/ripples/))
   - [ ] markdown css toggle
 
 ## Reference

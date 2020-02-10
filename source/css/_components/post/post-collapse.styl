@@ -1,74 +1,96 @@
-.post-collapse
-  position: relative
-  margin: 0 20px
+.post-collapse {
+  position: relative;
+  margin: 0 2rem;
 
-  &::after
-    content: " "
-    position: absolute
-    top: 2rem
-    left: 0
-    margin-left: -2px
-    width: 4px
-    height: 100%
+  +mobile() {
+    margin: 0 1.5rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 4px;
+    height: 95%;
     background: alpha($colors.primary, 0.3);
+  }
 
-  &-title
-    text-align: center
+  &-title {
+    text-align: center;
+  }
 
-  .collection-title
-    position: relative
-    margin: 0
-    border-bottom: 1px dotted $colors.primary
+  .collection-title {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px dotted $colors.primary;
 
-    h2
-      color: darken($colors.primary, 60%)
-      margin-left: 20px
+    .archive-year {
+      font-family: monospace;
+      color: darken($colors.primary, 60%);
+      margin-left: 1.5rem;
+      margin: 0 1.5rem;
+    }
 
-    &::before
-      content: " "
-      position: absolute
-      left: 0
-      top: 35%
-      margin-left: -4px
-      margin-top: -4px
-      width: 8px
-      height: 8px
-      background: $colors.primary
-      border-radius: 50%
-      z-index: 1
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 35%;
+      margin-left: -0.65rem;
+      margin-top: -4px;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: $colors.primary;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
 
-  .post-header
-    position: relative
-    text-align: left
-    border-bottom: 1px dotted $colors.primary
+  .post-header {
+    position: relative;
+    text-align: left;
+    border-bottom: 1px dotted $colors.primary;
 
-    &::before
-      content: " "
-      position: absolute
-      left: 0
-      top: 8px
-      width: 6px
-      height: 6px
-      margin-left: -4px
-      border-radius: 50%
-      border: 1px solid $colors.primary
-      background-color: white
-      the-transition()
-      transition-property: background
-      z-index: 1
+    &::before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-left: -0.2rem;
+      border-radius: 50%;
+      border: 1px solid $colors.primary;
+      background-color: white;
+      the-transition();
+      transition-property: background;
+      z-index: 1;
+    }
 
-    &:hover
-      &::before
-        border:1px dotted $colors.primary
-        background: $colors.primary
-    
-    .post-title
-      margin: 15px 0 15px 75px
-      padding: 0
-      line-height: 1.5
-      font-size: 1rem
+    &:hover {
+      &::before {
+        background: $colors.primary;
+      }
+    }
 
-    .post-meta
-      position: absolute
-      top: 0
-      left: 20px
+    .post-title {
+      margin: 15px 0 15px 75px;
+      padding: 0;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    .post-meta {
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+  }
+}
+
+.last-word {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}

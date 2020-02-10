@@ -1,5 +1,70 @@
 # 使用指南
 
-## 
+## 快速开始
 
-<kbd>M</kbd>
+::: tip 渲染器
+如果您没有 `pug` 与 `stylus` 的渲染器，请先安装：
+[hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
+（这个是　 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
+或[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
+（以及前者尚未支持开发时热更新，后者支持。）
+和 [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
+
+```sh
+npm install hexo-render-pug hexo-renderer-stylus --save
+# or
+yarn add hexo-render-pug hexo-renderer-stylus
+```
+
+:::
+
+### 安装主题
+
+进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。w
+
+```sh
+git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
+### 启用主题
+
+修改 Hexo 站点配置文件 `_config.yml`
+
+```sh
+# 将主题设置为 hexo-theme-yun
+theme: yun
+```
+
+### 配置主题
+
+在 Hexo 工作目录下新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建。）
+
+您仅需在 `yun.yml` 中自定义您想要的配置，其余将自动采用主题默认配置。
+
+::: warning 请使用与默认配置中同样完整的配置选项
+如：
+
+```yml
+avatar:
+  url: /images/chen-200.webp
+  rounded: true
+  opacity: 1
+```
+
+而不是：
+
+```yml
+avatar:
+  rounded: true
+```
+
+:::
+
+### 升级主题
+
+在 Hexo 工作路径中输入以下命令：
+
+```sh
+cd themes/yun
+git pull
+```

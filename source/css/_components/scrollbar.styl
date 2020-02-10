@@ -1,20 +1,26 @@
-::-webkit-scrollbar
-  width: 8px
-  height: 8px
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-::-webkit-scrollbar-track
-  border-radius: 2px
-  background-color: rgba(255, 255, 255, 0.1)
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-::-webkit-scrollbar-thumb
-  border-radius: 2px
-  background-color: alpha($colors.primary, 0.5)
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: alpha($colors.primary, 0.5);
 
-  &:window-inactive
-    background-color: alpha($colors.primary, 0.3)
+  &:window-inactive {
+    background-color: alpha($colors.primary, 0.3);
+  }
 
-  &:hover
-    background-color: alpha($colors.primary, 0.7)
+  &:hover {
+    background-color: alpha($colors.primary, 0.7);
+  }
 
-  &:active
-    background-color: alpha($colors.primary, 0.9)
+  &:active {
+    background-color: alpha($colors.primary, 0.9);
+  }
+}

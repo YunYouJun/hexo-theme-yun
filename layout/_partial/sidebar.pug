@@ -13,7 +13,8 @@ aside.sidebar
     .site-overview
       .site-author
         if theme.avatar.url
-          img.site-author-image(src=theme.avatar.url, alt=author, loading='lazy')
+          .avatar
+            img.site-author-image(width=200, height=200, src=theme.avatar.url, alt=author, loading='lazy')
           p.site-author-name
             a(href=url_for('about'))
               | #{author}
@@ -22,7 +23,7 @@ aside.sidebar
           .site-desciption!=config.description
 
       nav.site-state
-        a.site-state-item.hty-icon-button.icon-home.mdc-ripple-surface(href=url_for(theme.menu.home.path), title=__('menu.home'))
+        a.site-state-item.hty-icon-button.icon-home(href=url_for(theme.menu.home.path), title=__('menu.home'))
           span.site-state-item-icon
             +icon(theme.menu.home.icon)
         if site.posts.length > 0
@@ -43,7 +44,7 @@ aside.sidebar
               span.site-state-item-icon
                 +icon(theme.menu.tags.icon)
               span.site-state-item-count!=site.tags.length
-        a.popup-trigger.site-state-item.hty-icon-button.icon-search.mdc-ripple-surface(href='javascript:;', title=__('menu.search'))
+        a.popup-trigger.site-state-item.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
           span.site-state-item-icon
             +icon('icon-search-line')
 
@@ -52,15 +53,15 @@ aside.sidebar
       if theme.social
         .links-of-author
           if theme.rss
-            a.links-of-author-item.hty-icon-button.mdc-ripple-surface(href=url_for(theme.rss), title='RSS' target='_blank' style='color:orange')
+            a.links-of-author-item.hty-icon-button(href=url_for(theme.rss), title='RSS' target='_blank' style='color:orange')
               +icon(theme.rss_icon)
           for social, name in theme.social
-            a.links-of-author-item.hty-icon-button.mdc-ripple-surface(href=social.link, title=name, target='_blank' style='color:' + social.color)
+            a.links-of-author-item.hty-icon-button(href=social.link, title=name, target='_blank' style='color:' + social.color)
               +icon(social.icon)
 
       if theme.links.enable
         .links-of-friend
-          a.hty-icon-button.mdc-ripple-surface(href=url_for(theme.links.url), title=theme.links.title)
+          a.hty-icon-button(href=url_for(theme.links.url), title=theme.links.title)
             +icon(theme.links.icon)
 
 
@@ -76,3 +77,6 @@ aside.sidebar
           != toc(page.content).length > 1 ? toc(page.content) : '很遗憾，咱没写啥目录' 
           //- svg.toc-marker(width='200' height='200')
             path(stroke='#444' stroke-width='3' fill='transparent' stroke-dasharray='0, 0, 0, 1000' stroke-linecap='round' stroke-linejoin='round' transform='translate(-0.5, -0.5)')
+
+  .wave-1
+  .wave-2

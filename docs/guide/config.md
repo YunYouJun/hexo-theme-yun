@@ -1,40 +1,12 @@
----
-title: Docs
-tags:
-  - Docs
----
+# 主题配置
 
-## Usage
-
-如果你没有 `pug` 以及 `stylus` 的渲染器，请下载安装：
-
-[hexo-renderer-jade](https://github.com/hexojs/hexo-renderer-jade)
-这个是　Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。
-
-[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
-
-```sh
-npm install hexo-render-pug hexo-renderer-stylus --save
-# or
-yarn add hexo-render-pug hexo-renderer-stylus
-```
-
-### Config
+## 配置文件
 
 约定 ＞ 配置
 
-在 `source/_data/` 目录下创建 `starry.yml` 文件。
+请在 `source/_data/yun.yml` 中定义您所需要的配置，其余将自动使用主题的默认配置。
 
-只需在必要时，在 `starry.yml` 中定义您所需要的配置，其余将自动使用主题的默认配置。
-
-#### Root Config
-
-```yml
-index_generator:
-  per_page: 6 # 最好为偶数
-```
-
-### Icon
+## Icon
 
 在主题 `_config.yml`， `cdn` 下 `css` 字段配置。
 
@@ -43,7 +15,7 @@ index_generator:
 推荐方式二：全部使用自定义 `iconfont` 图标集。（速度快，但需自行配置）
 推荐方式三：`ionicons` 加载与 `iconfont` 自定义搭配使用。
 
-#### [Font-Awesome](https://fontawesome.com)
+### [Font-Awesome](https://fontawesome.com)
 
 GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
 cdn: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css>
@@ -54,7 +26,7 @@ cdn: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.m
 <i class="fas fa-home"></i>
 ```
 
-#### [Ionicons](https://ionicons.com)
+### [Ionicons](https://ionicons.com)
 
 GitHub: [ionicons](https://github.com/ionic-team/ionicons)
 cdn_css: <https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css>
@@ -83,7 +55,10 @@ cdn_js: <https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js>
 ```html
 <!-- 比 unpkg 快 -->
 <!-- https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css -->
-<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+<link
+  href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+  rel="stylesheet"
+/>
 ```
 
 ```html
@@ -92,7 +67,7 @@ cdn_js: <https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js>
 
 如使用 font-class 方式，配置中请如下填写：`icon ion-md-heart`。
 
-#### [Material Design icons](https://google.github.io/material-design-icons/)
+### [Material Design icons](https://google.github.io/material-design-icons/)
 
 GitHub: [material-design-icons](https://github.com/google/material-design-icons)
 
@@ -106,7 +81,7 @@ GitHub: [material-design-icons](https://github.com/google/material-design-icons)
 
 如使用 `ionicon`，配置中请如下填写：`material-icons face`。
 
-#### [iconfont](https://www.iconfont.cn/)
+### [iconfont](https://www.iconfont.cn/)
 
 阿里旗下，可定制自己所需图标集。
 
@@ -120,7 +95,7 @@ GitHub: [material-design-icons](https://github.com/google/material-design-icons)
 <i class="iconfont icon-xxx"></i>
 ```
 
-#### [Remix Icon](https://remixicon.com/)
+### [Remix Icon](https://remixicon.com/)
 
 GitHub: <https://github.com/Remix-Design/remixicon>
 

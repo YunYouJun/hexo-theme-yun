@@ -124,6 +124,10 @@ menu:
     path: /about
     icon: icon-information-line
 
+# archive
+archive:
+  last_word: 没有更多的黑历史了_(:з」∠)_
+
 # Favicon
 # ---------------
 favicon: /yun-favicon.ico
@@ -155,7 +159,6 @@ cdn:
     # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
-    mdc_ripple: //cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.css
     animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     base:
@@ -164,7 +167,6 @@ cdn:
       anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
       fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
       iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
-      mdc_ripple: //cdn.jsdelivr.net/npm/@material/ripple/dist/mdc.ripple.min.js
     defer:
 
 # cdn for third-party library (alternative include)

@@ -1,10 +1,3 @@
-$(document).ready(function() {
-  const MDCRipple = mdc.ripple.MDCRipple;
-  document.querySelectorAll(".mdc-ripple-surface").forEach(el => {
-    MDCRipple.attachTo(el);
-  });
-});
-
 // sidebar
 $(function() {
   $(".sidebar-toggle").on("click", function() {
@@ -30,13 +23,11 @@ $(function() {
 
 // search
 function closeSearchDialog(e) {
-  $("body").css("overflow", "auto");
   $(".popup").slideUp("fast");
   $(".search-popup-overlay").fadeOut("fast");
 }
 
 function openSearchDialog() {
-  $("body").css("overflow", "hidden");
   $(".search-popup-overlay").fadeIn();
   $(".popup").slideDown("fast", function() {
     $(".search-input")

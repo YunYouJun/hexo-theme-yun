@@ -1,7 +1,7 @@
 section#recent-posts.hty-layout-grid
   each post in page.posts.data
     .hty-layout-grid__cell.hty-layout-grid__cell--span-12.animated.fadeIn
-      article.hty-card.mdc-ripple-surface.mdc-ripple-surface--primary.post-card(itemscope, itemtype='http://schema.org/Article')
+      article.hty-card.post-card(itemscope, itemtype='http://schema.org/Article')
         include ../_partial/post/post-schema.pug
         .post-card-header
           .post-header
