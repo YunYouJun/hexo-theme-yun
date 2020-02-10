@@ -49,7 +49,7 @@ post:
 footer:
   powered: "由 %s 驱动"
   theme: 主题
-#   total_views: 总访问量
+  total_views: 总访问量
 #   total_visitors: 总访客量
 
 counter:
@@ -92,7 +92,6 @@ reward:
   wechatpay: 微信支付
   alipay: 支付宝
 
-# gitmentbutton: 显示 Gitment 评论
 # accessibility:
 #   nav_toggle: 切换导航栏
 #   prev_page: 上一页

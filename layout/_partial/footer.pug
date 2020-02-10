@@ -27,3 +27,6 @@ footer#footer.sidebar-translate
 
   if theme.busuanzi.enable
     include ../_third-party/analytics/busuanzi.pug
+
+  if theme.valine.enable && theme.valine.visitor
+    include ../_third-party/analytics/valine-visitor.pug

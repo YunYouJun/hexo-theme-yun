@@ -253,6 +253,7 @@ valine:
   avatar: # gravatar style
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
+  visitor: true
 
 # Footer Settings
 # ---------------
@@ -286,7 +287,7 @@ footer:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi:
-  enable: true
+  enable: false
   site_uv: true
   site_uv_icon: icon-user-line
   site_pv: true

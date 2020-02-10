@@ -1,0 +1,33 @@
+if !is_post()
+  span.leancloud_visitors(id='/', data-flag-title=config.title)
+    span.post-meta-item-icon(title=__('footer.total_views'))
+      //- +icon(theme.busuanzi.site_pv_icon, 14)
+      +icon(theme.busuanzi.site_uv_icon, 14)
+      |  
+      span.leancloud-visitors-count
+
+script(src=theme.vendors.valine_js)
+- var valine_lang = config.language || 'zh-cn'
+script.
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = '#{theme.valine.meta}';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#valine-container',
+    verify: #{theme.valine.verify},
+    notify: #{theme.valine.notify},
+    appId: '#{theme.valine.appId}',
+    appKey: '#{theme.valine.appKey}',
+    serverURLs: '#{theme.valine.serverURLs}',
+    placeholder: '#{theme.valine.placeholder}',
+    avatar: '#{theme.valine.avatar}',
+    meta: meta,
+    pageSize: '#{theme.valine.pageSize}',
+    lang: '#{valine_lang.toLowerCase()}',
+    visitor: #{theme.valine.visitor}
+  });
+
+
+

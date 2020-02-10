@@ -58,6 +58,13 @@
           |  
           span#busuanzi_value_page_pv
 
+    if is_post() && theme.valine.enable && theme.valine.visitor
+      span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
+        span.post-meta-item-icon(title=__('post.views'))
+          +icon(theme.busuanzi.page_pv_icon)
+          |  
+          span.leancloud-visitors-count
+
   if is_post()
     .post-classify
       if post.categories && post.categories.length && theme.post_meta.categories
@@ -67,7 +74,7 @@
           |  
           for category, index in post.categories.data
             span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
-              a(href=url_for(category.path), itemprop='url', rel='index')
+              a(href=url_for(category.path), itemprop='url' rel='index')
                 span(itemprop='text')=category.name
 
             - var category_length = post.categories.length
@@ -83,7 +90,7 @@
               span.post-meta-item-icon
                 +icon('icon-price-tag-3-line')
                 |  
-                a(href=url_for(tag.path, rel='tag'))=tag.name + ' '
+                a(href=url_for(tag.path, rel='tag'))=tag.name + ' ' 
 
   if post.description
     .post-description=post.desciption
