@@ -164,13 +164,13 @@ cdn:
     base:
       jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     async:
-      anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
       fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
       iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
     defer:
 
 # cdn for third-party library (alternative include)
 vendors:
+  anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
   gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
