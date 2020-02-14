@@ -149,6 +149,14 @@ js:
   - /js/utils.js
   - /js/yun-boot.js
 
+head:
+  css:
+  js:
+    base:
+    async:
+      iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
+    defer:
+
 # cdn for third-party library (always include)
 cdn:
   pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
@@ -172,7 +180,6 @@ cdn:
       jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     async:
       fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
-      iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
     defer:
 
 # cdn for third-party library (alternative include)

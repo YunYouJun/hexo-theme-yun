@@ -39,7 +39,10 @@ module.exports = {
         editLinkText: "在 GitHub 上编辑此页",
         lastUpdated: "上次更新",
         editLinkText: "帮助改善此页面！( ￣□￣)/",
-        nav: [{ text: "使用指南", link: "/guide/" }]
+        nav: [
+          { text: "使用指南", link: "/guide/" },
+          { text: "示例", link: "https://www.yunyoujun.cn" }
+        ]
       },
       "/en/": {
         label: "English",

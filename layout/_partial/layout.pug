@@ -19,8 +19,8 @@ html(lang=config.language)
     title
       block title
         | #{title}
-    include head.pug
     include ../_third-party/cdn.pug
+    include head.pug
     each url in theme.js
       script(src=url_for(url), defer)
     if theme.css !== undefined && theme.css.length > 0

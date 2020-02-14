@@ -12,3 +12,20 @@ if process.env.NODE_ENV !== 'dev' && theme.google_analytics && theme.google_anal
 
 script#yun-config
   | let Yun = window.Yun || {};
+
+//- head custom
+if theme.head.css
+  each item in theme.head.css
+    link(rel='stylesheet', href=item)
+
+if theme.head.js.base
+  each item in theme.head.js.base
+    script(src=item)
+
+if theme.head.js.async
+  each item in theme.head.js.async
+    script(src=item, async)
+
+if theme.head.js.defer
+  each item in theme.head.js.defer
+    script(src=item, defer)

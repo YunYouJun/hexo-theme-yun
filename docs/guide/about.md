@@ -6,6 +6,14 @@
 
 - [文档 ｜ Hexo](https://hexo.io/zh-cn/docs/)
 
+如果您喜欢我的主题，请给一颗 [:star:](https://github.com/YunYouJun/hexo-theme-yun) 鼓励我。
+
+## 设计原则
+
+### 简洁至上
+
+按钮优先使用简洁异动的图标表现，不呈现文字。
+
 ## Inspiration
 
 ### Theme
