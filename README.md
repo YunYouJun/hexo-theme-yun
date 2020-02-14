@@ -3,6 +3,7 @@
 > A simple and fast hexo theme.
 
 Demo：<https://yunyoujun.cn>
+Docs: <https://yun.yunyoujun.cn>
 
 Deving...
 
@@ -18,7 +19,7 @@ If you don't have jade & stylus renderer:
 npm install hexo-render-pug hexo-renderer-stylus
 ```
 
-### Plugns
+### Plugins
 
 ```sh
 npm install hexo-symbols-count-time
@@ -33,16 +34,9 @@ theme: yun
 
 ### config
 
-#### Config in Root
-
-Recommended:
-
-```yml
-per_page: 9
-```
+More Info [here](https://yun.yunyoujun.cn/guide/config/).
 
 ## Ref
-
 
 ## Inspiration
 
@@ -59,8 +53,8 @@ per_page: 9
 
 ### Article
 
-- [Hexo主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
+- [Hexo 主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
 
 ### Other
 
-- 明日方舟
+- [明日方舟](https://ak.hypergryph.com/)
