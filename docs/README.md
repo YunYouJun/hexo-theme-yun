@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo.gif
 heroText: Hexo-Theme-Yun
 tagline: A powerful & simple & fast theme for Hexo.
 actionText: 快速上手 →

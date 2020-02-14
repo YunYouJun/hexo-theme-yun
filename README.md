@@ -1,9 +1,11 @@
 # Hexo-Theme-Yun
 
+![logo.gif](docs/.vuepress/public/logo.gif)
+
 > A simple and fast hexo theme.
 
-Demo：<https://yunyoujun.cn>
-Docs: <https://yun.yunyoujun.cn>
+- Demo：<https://yunyoujun.cn>
+- Docs: <https://yun.yunyoujun.cn>
 
 Deving...
 

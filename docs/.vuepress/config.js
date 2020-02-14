@@ -46,7 +46,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    logo: "/logo.png",
+    logo: "/logo.gif",
     nextLinks: true,
     prevLinks: true,
     repo: "YunYouJun/hexo-theme-yun",
