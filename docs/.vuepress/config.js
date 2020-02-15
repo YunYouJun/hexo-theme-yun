@@ -54,7 +54,14 @@ module.exports = {
     editLinks: true,
     smoothScroll: true,
     sidebar: {
-      "/guide/": ["about", "", "config", "additional-package-support", "faq"]
+      "/guide/": [
+        "about",
+        "",
+        "config",
+        "page",
+        "additional-package-support",
+        "faq"
+      ]
     },
     sidebarDepth: 2,
     locales: {

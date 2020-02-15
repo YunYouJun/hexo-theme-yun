@@ -1,12 +1,16 @@
 link(rel="dns-prefetch" href="https://cdn.jsdelivr.net")
-each item in theme.cdn.css
-  link(rel='stylesheet', href=item)
 
-each item in theme.cdn.js.base
-  script(src=item)
+if theme.cdn.css
+  each item in theme.cdn.css
+    link(rel='stylesheet', href=item)
 
-each item in theme.cdn.js.async
-  script(src=item, async)
+if theme.cdn.js.base
+  each item in theme.cdn.js.base
+    script(src=item)
+
+if theme.cdn.js.async
+  each item in theme.cdn.js.async
+    script(src=item, async)
 
 if theme.cdn.js.defer
   each item in theme.cdn.js.defer
