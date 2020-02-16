@@ -56,9 +56,10 @@ rss_icon: icon-rss-line
 # Social Links.
 social:
   QQ:
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
-    color: "#EB1923"
+    color: "#12B7F5"
   GitHub:
     link: https://github.com/YunYouJun
     icon: icon-github-line
@@ -274,7 +275,7 @@ valine:
 # Footer Settings
 # ---------------
 footer:
-  since: 2018
+  since: 2020
 
   # Icon between year and copyright info.
   icon:
@@ -298,7 +299,7 @@ footer:
     # icp: 苏ICP备xxxxxxxx号
 
   # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi

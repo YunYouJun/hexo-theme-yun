@@ -20,9 +20,9 @@ color:
   primary: "#6200ee"
 ```
 
-## head 资源
+## 头部资源
 
-如果您有想自定义的资源，请添加到 head 中。
+如果您有想自定义的资源，请添加到 `head` 中。
 
 遵照以下示例，自定义您要添加的 `css` 与 `js` 资源。
 
@@ -181,39 +181,149 @@ cdn:
 
 与上述几种图标使用方式类似，图标相关配置中填写对应图标 `class` 即可。
 
+## 社交图标
+
+默认提供以下几种社交图标，您可以通过在头部引入自定义图标资源来获取更多图标。
+
+- `link`: 链接
+- `icon`: 图标 Class
+- `color`: 图标颜色（前提是您引入的图标支持 SVG 自定义颜色）当前默认色彩采用官方图标的品牌主色。
+
+```yml
+social:
+  QQ:
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  GitHub:
+    link: https://github.com/YunYouJun
+    icon: icon-github-line
+    color: "#181717"
+  E-Mail:
+    link: mailto:me@yunyoujun.cn
+    icon: icon-mail-line
+    color: "#8E71C1"
+  微博:
+    link: https://weibo.com/jizhideyunyoujun
+    icon: icon-weibo-line
+    color: "#E6162D"
+  豆瓣:
+    link: https://www.douban.com/people/yunyoujun/
+    icon: icon-douban-line
+    color: "#007722"
+  网易云音乐:
+    link: https://music.163.com/#/user/home?id=247102977
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  知乎:
+    link: https://www.zhihu.com/people/yunyoujun/
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  哔哩哔哩动画:
+    link: https://space.bilibili.com/1579790
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+```
+
+默认使用对象名称作为图标提示的标题。譬如您想要显示提示为 `bilibili` 而非 `哔哩哔哩动画`。
+
+则修改如下：
+
+```yml
+bilibili:
+  link: https://space.bilibili.com/1579790
+  icon: icon-bilibili-line
+  color: "#FF8EB3"
+```
+
+## 首页标语
+
+首页的垂直交错排列文字效果。您可以访问 <https://yunyoujun.cn> 查看效果。
+
+如果您未定义 `banner`，将默认使用您为 Hexo 配置的标题。
+
+```yml
+banner: 云游君的小站
+```
+
 ## 页脚
 
-emm, 这里直接看注释就 OK 了吧。
+::: tip 注意
+以下配置均写在 `footer` 字段下。
+如：
 
 ```yml
 footer:
-  # 博客起始年份
-  since: 2016
+  since: 1997
+```
 
-  # Icon between year and copyright info.
-  icon:
-    name: icon-cloud-line
-    # If you want to animate the icon, set it to true.
-    animated: true
-    # Change the color of icon, using Hex Code.
-    color: "#0078E7"
+:::
 
-  powered:
-    # Hexo link (Powered by Hexo).
-    enable: true
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+### 起始年份
 
-  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # http://www.beian.miit.gov.cn
-  beian:
-    enable: false
-    # icp: 苏ICP备xxxxxxxx号
+```yml
+since: 2016
+```
 
-  # Any custom text can be defined here.
-  custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+### 图标
+
+位于年份和名称之间的图标。
+
+- `name`: 图标名称（即 `class`）
+- `animated`: 是否开启动画
+- `color`: 图标颜色
+
+```yml
+icon:
+  name: icon-cloud-line
+  animated: true
+  color: "#0078E7"
+```
+
+### 驱动
+
+自豪地显示当前使用的博客框架 Hexo 与主题 Yun 的名字及版本。
+
+如：`由 Hexo 驱动 v4.2.0 | 主题 - Yun v0.0.2`。
+
+让更多人知道 Hexo 与主题 Yun，这有利于开源社区进一步发展。
+
+- `enable`: 开启
+- `version`: 显示版本
+
+```yml
+powered:
+  enable: true
+  version: true
+```
+
+### 备案
+
+国内用户可以提供备案号，开启备案显示。
+
+备案信息默认链接为：<http://www.beian.miit.gov.cn>
+
+- `enable`: 开启备案
+- `icp`: 备案号
+
+```yml
+beian:
+  enable: true
+  icp: 苏ICP备xxxxxxxx号
+```
+
+### 自定义文本
+
+`custom_text` 为自定义页脚，可以包含 HTML。
+譬如有时使用其他服务商进行托管页面。
+
+```yml
+custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 ```
 
 ## 更多配置
 
-你可以直接查看 [`themes/yun/_config.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
+你可以直接查看 [themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
+
+或者参考我的博客的自定义配置 [source/\_data/yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml)。

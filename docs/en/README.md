@@ -4,7 +4,7 @@ heroImage: /logo.gif
 heroText: hexo-theme-yun
 tagline: A powerful & simple & fast theme for Hexo.
 actionText: 快速上手 →
-actionLink: /zh/guide/
+actionLink: /en/guide/
 features:
   - title: Powerful
     details: Common functions are available.
