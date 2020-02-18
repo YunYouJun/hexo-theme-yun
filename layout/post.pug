@@ -14,9 +14,11 @@ block content
       include _partial/post/post-schema.pug
 
       header.post-header
-        if theme.post_edit.enable
-          include _partial/post/post-edit.pug
-        h1.post-title(itemprop='name headline')!=post.title
+
+        h1.post-title(itemprop='name headline')
+          | #{post.title}
+          if theme.post_edit.enable
+            include _partial/post/post-edit.pug
         include _partial/post/post-meta.pug
 
       section.post-body(itemprop='articleBody')

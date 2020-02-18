@@ -60,6 +60,8 @@ categories:
     - [ ] freehand star
     - [x] custom image
   - [ ] markdown css toggle
+- [ ] Page
+  - [ ] friend link
 
 ## Reference
 
