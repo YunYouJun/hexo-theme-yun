@@ -20,6 +20,7 @@
 
 - [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
 - [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
+- [hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)
 
 ### PV
 

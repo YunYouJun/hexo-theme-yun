@@ -20,7 +20,7 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 ### 安装主题
 
-进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。w
+进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。
 
 ```sh
 git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
