@@ -42,7 +42,7 @@ Yun.utils = {
    * Wrap images with fancybox support.
    */
   wrapImageWithFancyBox: function() {
-    $(".post-content img, .post-excerpt img")
+    $(".post-card-excerpt img, .post-content img, .post-excerpt img")
       .not(":hidden")
       .each(function() {
         var $image = $(this);
