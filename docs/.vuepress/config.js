@@ -59,6 +59,7 @@ module.exports = {
         "",
         "config",
         "page",
+        "third-party-support",
         "additional-package-support",
         "faq"
       ]

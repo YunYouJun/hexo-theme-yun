@@ -194,12 +194,13 @@ vendors:
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
 
-ui:
-  fireworks: true
-  rymd: false
-  bg_image:
-    enable: true
-    url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
+# UI
+fireworks: true
+rymd: true
+
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
 
 # Article
 # ---------------
@@ -230,9 +231,8 @@ reward:
 # Valid values of language: deed.zh, deed.fr, deed.de, etc.
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: true
   language: deed.zh
+  post: true
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.

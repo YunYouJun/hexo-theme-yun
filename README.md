@@ -4,7 +4,7 @@
 
 > A simple and fast hexo theme.
 
-- Demo：<https://yunyoujun.cn>
+- Demo: <https://yunyoujun.cn>
 - Docs: <https://yun.yunyoujun.cn>
 
 Deving...

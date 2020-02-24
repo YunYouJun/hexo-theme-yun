@@ -247,6 +247,172 @@ bilibili:
 banner: 云游君的小站
 ```
 
+## UI
+
+### 背景
+
+```yml
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
+```
+
+### 烟花
+
+点击页面效果
+
+```yml
+fireworks: true
+```
+
+> 参考自：[anime.js](https://animejs.com/) [fireworks](https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/third-party-support.html#%E7%83%9F%E8%8A%B1)
+
+### rymd
+
+群星移动效果，默认关闭。
+
+```tml
+rymd: false
+```
+
+![rymd.webp](/img/rymd.webp)
+
+> 参考自: [rymd](https://codepen.io/hakimel/pen/bzrZGo)
+
+## 侧边栏
+
+### 头像
+
+- `url`: 头像链接（推荐使用 webp ，体积更小，加载更快）
+- `rounded`: 是否显示圆形
+- `opacity`: 透明度
+
+```yml
+avatar:
+  url: /images/avatar.jpg # recommend avatar.webp
+  rounded: false
+  opacity: 1
+```
+
+### 导航
+
+设置导航对应图标及链接
+
+```yml
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  archives:
+    path: /archives
+    icon: icon-archive-line
+  tags:
+    path: /tags
+    icon: icon-price-tag-3-line
+  categories:
+    path: /categories
+    icon: icon-folder-2-line
+  about:
+    path: /about
+    icon: icon-information-line
+```
+
+## 文章
+
+### 信息
+
+- `item_text`: 是否显示文字（如：发表于、更新于，若关闭则只显示图标与时间信息）
+- `created_at`: 是否显示创建时间
+- `updated_at`: 是否显示更新时间
+- `categories`: 是否显示种类
+- `tags`: 是否显示标签
+
+```yml
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+```
+
+### 版权
+
+设置您的文章的分享版权
+
+默认使用 [Creative Commons 4.0 International License](https://creativecommons.org/share-your-work/licensing-types-examples)
+
+- `license`: 设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
+- `language`: 设置语言 (deed.zh | deed.fr | deed.de)
+- `post`: 在每篇文章末尾显示
+
+```yml
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+```
+
+## 打赏
+
+开启后，将在每篇文章末尾显示打赏按钮。
+
+- `enable`: 开启打赏
+- `comment`: 在打赏按钮下显示你想说的话
+
+```yml
+reward_settings:
+  enable: true
+  #comment: 我很可爱，请给我钱。
+```
+
+您也可以在某篇文章的首部单独设置是否开启打赏。
+
+```yml
+reward: true | false
+```
+
+### 打赏二维码
+
+默认支持微信、支付宝打赏图标，`color` 为自定义图标颜色。
+
+```yml
+reward:
+  wechatpay:
+    path: /img/donate/wechatpay-qrcode.jpg
+    color: "#2DC100" #7BB32E
+  alipay:
+    path: /img/donate/alipay-qrcode.jpg
+    color: "#00A3EE"
+```
+
+## 友链
+
+新建友链页面
+
+```sh
+hexo new page links
+```
+
+进入 `source/links/index.md`
+
+```yml
+---
+layout: links
+title: 我的小伙伴们
+date: 2019-06-21 13:06:06
+keywords: 链接
+description: 云游和他的小伙伴们
+comments: true
+links:
+  - url: https://yunyoujun.cn
+    img: https://yunnyoujun.cn/images/avatar.webp
+    name: 云游君
+    desc: 云游君的小站
+---
+
+```
+
 ## 页脚
 
 ::: tip 注意
