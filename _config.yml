@@ -196,7 +196,7 @@ vendors:
 
 # UI
 fireworks: true
-rymd: true
+rymd: false
 
 bg_image:
   enable: true
