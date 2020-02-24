@@ -556,6 +556,9 @@ say:
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
 ```
 
+> [say.elpsy.cn](https://say.elpsy.cn) 是我收藏中二语句的地方。= =，自动导出 JSON 用来拉取。  
+> 可以自定义，不介意的话，也可以用我的。
+
 如果不使用外部远程，则需要自定义语句。
 
 ```yml
