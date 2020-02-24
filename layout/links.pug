@@ -11,9 +11,11 @@ block content
         ul.link-items
           for link in page.links
             li.link-item
-              a(href=link.url, title=link.desc, alt='portrait', target='_blank', rel='friend')
+              a(href=link.url, title=link.desc, alt='portrait' target='_blank' rel='friend')
                 img.link-avatar(lazyload='auto', src=link.img)
               .link-name!=link.name
+    section.post-body(itemprop='articleBody')
+      .post-content(class='post-markdown')!= page.content
   if page.comments
     include ./_third-party/comments/index.pug
-    
+
