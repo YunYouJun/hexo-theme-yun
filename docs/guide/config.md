@@ -44,6 +44,14 @@ head:
     defer:
 ```
 
+### favicon
+
+设置网站图标
+
+```yml
+favicon: /favicon.ico
+```
+
 ## CDN
 
 Content Delivery Network，统一加载网络资源，有利于提高网页加载速度。
@@ -336,6 +344,33 @@ post_meta:
   tags: true
 ```
 
+### 编辑链接
+
+若开启，则会在文章页面标题旁显示一个编辑图标。
+点击后跳转到编辑页面。
+
+- `url`: 文章所在地址（您可以参照默认链接设置您的仓库跳转链接）
+
+如我使用 `GitHub` 作为博客的托管仓库，仓库名为 `yunyoujun.github.io`，在 `hexo` 分支下，`source` 文件夹中，
+则链接为 <https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/>。
+
+```yml
+post_edit:
+  enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+```
+
+### 代码高亮
+
+设置代码高亮主题
+
+可选值：normal | night | night eighties | night blue | night bright
+
+```yml
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
+```
+
 ### 版权
 
 设置您的文章的分享版权
@@ -387,6 +422,21 @@ reward:
 ```
 
 ## 友链
+
+友链显示在侧边栏中
+
+- `enable`: 是否显示友链
+- `icon`: 友链图标
+- `title`: 标题提示
+- `url`: 链接
+
+```yml
+links:
+  enable: true
+  icon: icon-open-arm-line
+  title: 云游和他的小伙伴们
+  url: /links
+```
 
 新建友链页面
 
@@ -486,6 +536,44 @@ beian:
 
 ```yml
 custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+```
+
+## Say
+
+随机在网站主页显示一句~~中二~~句子。
+
+- `enable`: 是否开启
+- `remote`: 是否使用远程外部数据（通过 fetch 获取 json 数据，数据格式见示例）
+- `api`: 远程 JSON API
+
+```yml
+say:
+  enable: true
+  remote: true
+  # api: https://say.elpsy.cn/sentences.json
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+```
+
+如果不使用外部远程，则需要自定义语句。
+
+```yml
+# when remote is false
+sentences:
+  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+    from: 《日常》
+    url: https://baike.baidu.com/item/日常/5844361
+  - content: 是啊，我所爱的，即非群星，也非银河。
+    from: 云游君
+    url: https://yunyoujun.cn
+  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
+    from: 《万叶集》雷神短歌
+    url: https://book.douban.com/subject/1066538/
+  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
+    from: 《小杂感》鲁迅
+    url: https://baike.baidu.com/item/小杂感
+  - content: 遍身罗绮者，不是养蚕人。
+    from: 《蚕妇》张俞
+    url: https://baike.baidu.com/item/蚕妇/40814
 ```
 
 ## 更多配置
