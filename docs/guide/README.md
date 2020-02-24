@@ -1,5 +1,17 @@
 # 使用指南
 
+本主题为 Hexo 主题，请确保您已了解 Hexo 的基本使用方式。
+
+```sh
+npm install hexo-cli -g
+hexo init your-blog
+cd your-blog
+npm install
+hexo server
+```
+
+> 更多信息请参见 [Hexo 官网](https://hexo.io/)
+
 ## 快速开始
 
 ::: tip 渲染器
@@ -23,7 +35,7 @@ yarn add hexo-render-pug hexo-renderer-stylus
 进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。
 
 ```sh
-git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
+git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 ### 启用主题

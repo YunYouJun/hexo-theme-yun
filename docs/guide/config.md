@@ -291,14 +291,16 @@ rymd: false
 
 ### 头像
 
+- `enable`: 是否显示头像
 - `url`: 头像链接（推荐使用 webp ，体积更小，加载更快）
 - `rounded`: 是否显示圆形
 - `opacity`: 透明度
 
 ```yml
 avatar:
+  enable: true
   url: /images/avatar.jpg # recommend avatar.webp
-  rounded: false
+  rounded: true
   opacity: 1
 ```
 

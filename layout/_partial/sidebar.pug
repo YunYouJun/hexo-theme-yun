@@ -12,7 +12,7 @@ aside.sidebar
   .site-overview-wrap.sidebar-panel(class= is_post() ? '' : 'sidebar-panel-active')
     .site-overview
       .site-author
-        if theme.avatar.url
+        if theme.avatar && theme.avatar.url
           .avatar
             img.site-author-image(width=200, height=200, src=theme.avatar.url, alt=author, loading='lazy')
           p.site-author-name

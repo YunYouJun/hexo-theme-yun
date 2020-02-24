@@ -23,10 +23,10 @@
   display: flex;
   padding: 0 15px;
   align-items: center;
+  border-left: 1px solid $light-gray;
 
-  // border-left: 1px solid $light-gray
   &:first-child {
-    // border-left: none
+    border-left: none;
     border-right: 1px solid $gray;
   }
 
@@ -34,8 +34,8 @@
     border-left: 1px solid $gray;
   }
 
-  &.site-state-posts, &.site-state-categories {
-    border-right: 1px solid $light-gray;
+  &:nth-child(2) {
+    border: none;
   }
 
   &.icon-home, &.icon-search {

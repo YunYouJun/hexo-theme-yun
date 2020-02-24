@@ -108,7 +108,8 @@ banner: 云游君的小站
 
 # Sidebar Avatar
 avatar:
-  url: /images/avatar.jpg # recommend avatar.webp
+  enable: true
+  url: /Yun.png # recommend avatar.webp
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -138,7 +139,7 @@ archive:
 
 # Favicon
 # ---------------
-favicon: /yun-favicon.ico
+favicon: /favicon.ico
 
 # stylesheets loaded in the <head>
 css:
