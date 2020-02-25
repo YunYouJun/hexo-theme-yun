@@ -4,18 +4,24 @@ prepend title
   | #{page.title} | 
 
 block content
-  .hty-card(style='margin:1rem;')
+  #page
     include _partial/page/page-header.pug
     if page.links
       .links
         ul.link-items
           for link in page.links
             li.link-item
-              a(href=link.url, title=link.desc, alt='portrait' target='_blank' rel='friend')
+              a.link-url(href=link.url, title=link.desc, alt='portrait' target='_blank' rel='friend')
                 img.link-avatar(lazyload='auto', src=link.img)
-              .link-name!=link.name
-    section.post-body(itemprop='articleBody')
-      .post-content(class='post-markdown')!= page.content
+                .link-name!=link.name
+              .link-info
+                .link-blog!=link.blog
+                if !link.desc
+                  - link.desc = '还没想好说些什么'
+                .link-desc!=link.desc
+    article.post-block
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content
   if page.comments
     include ./_third-party/comments/index.pug
 
