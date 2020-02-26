@@ -13,7 +13,7 @@ aside.sidebar
     .site-overview
       .site-author
         if theme.avatar && theme.avatar.url
-          .avatar
+          a(href=url_for('about'))
             img.site-author-image(width=200, height=200, src=theme.avatar.url, alt=author, loading='lazy')
           p.site-author-name
             a(href=url_for('about'))

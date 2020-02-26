@@ -31,6 +31,9 @@ block content
         section.post-body(itemprop='articleBody')
           .post-content(class='post-markdown')!= page.content
 
+    if theme.reward_settings.enable
+      include _partial/post/reward.pug
+
   if page.comments
     include ./_third-party/comments/index.pug
 
