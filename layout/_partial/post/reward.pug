@@ -8,7 +8,7 @@
       - var builtin = ['wechatpay', 'alipay']
       - var translation = builtin.indexOf(name) !== -1 ? __('reward.' + name) : name
       div(style='display:inline-block')
-        img(src=url_for((theme.cdn.pre || '') + image.path), alt=author + ' ' + translation, title=author + ' ' + translation)
+        img(loading='lazy', src=url_for((theme.cdn.pre || '') + image.path), alt=author + ' ' + translation, title=author + ' ' + translation)
         div
           if name === 'wechatpay'
             - name = 'wechat-pay'

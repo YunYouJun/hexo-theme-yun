@@ -2,4 +2,9 @@ if theme.algolia_search && theme.algolia_search.enable
   include algolia-search.pug
 else if theme.local_search && theme.local_search.enable
   include local-search.pug
+
 .search-popup-overlay
+
+a#search.popup-trigger.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
+  span.site-state-item-icon
+    +icon('icon-search-line')

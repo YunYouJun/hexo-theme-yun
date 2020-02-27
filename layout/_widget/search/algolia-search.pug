@@ -10,14 +10,6 @@
     #algolia-hits
     #algolia-pagination.algolia-pagination
 
-
-if theme.vendors.algolia_instant_css
-  link(rel='stylesheet', href=theme.vendors.algolia_instant_css)
-if theme.vendors.algolia_instant_js
-  script(src=theme.vendors.algolia_instant_js)
-
-script(defer, src=url_for(theme.algolia_search.src))
-
 -
   var algolia = 'undefined';
   var env = process.env;
@@ -41,3 +33,10 @@ script.
     root: '!{config.root}',
     algolia: !{algolia}
   } 
+
+if theme.vendors.algolia_instant_css
+  link(rel='stylesheet', href=theme.vendors.algolia_instant_css)
+if theme.vendors.algolia_instant_js
+  script(defer, src=theme.vendors.algolia_instant_js)
+
+script(defer, src=url_for(theme.algolia_search.src))

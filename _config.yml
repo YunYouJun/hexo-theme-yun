@@ -1,10 +1,11 @@
-# ligh | dark | Todo: auto
-mode: dark
+# Todo: mode: ligh | dark | Todo: auto
+mode: light
+
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
 # color
-color:
+colors:
   primary: "#6200ee"
   # primary: "#0078E7"
   # paginator: "#00C4B6"
@@ -57,7 +58,7 @@ rss_icon: icon-rss-line
 social:
   QQ:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
     color: "#12B7F5"
   GitHub:
@@ -176,7 +177,6 @@ cdn:
     # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
-    animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     base:
       jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
@@ -201,7 +201,8 @@ rymd: false
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.webp
+  # https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
 
 # Article
 # ---------------

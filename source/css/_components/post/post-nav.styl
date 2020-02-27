@@ -12,16 +12,18 @@
     height: 3rem;
     line-height: 2.9rem;
     padding: 0 0.5rem;
+    transition: 0.4s;
 
     &:hover {
       background-color: rgba($colors.primary, 0.1);
+      border-radius: 0.2rem;
     }
   }
 
   &-prev, &-next {
     display: inline-flex;
     align-items: center;
-    color: $purple;
+    color: $colors.primary;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

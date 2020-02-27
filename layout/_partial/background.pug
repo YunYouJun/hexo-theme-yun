@@ -1,33 +1,5 @@
-if theme.bg_image.enable
-  style.
-    body::before {
-      content: '';
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      opacity: 0.3;
-      background-image: url(#{theme.bg_image.url});
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      animation-name: bgFadeIn;
-      animation-duration: 5s;
-      filter: blur(5px);
-    }
-
-    @keyframes bgFadeIn{
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 0.3;
-      }
-    }
-
 if theme.fireworks
-  script(src=theme.vendors.anime)
+  script(defer, src=theme.vendors.anime)
   script(defer, src=theme.vendors.fireworks)
   canvas.fireworks
 

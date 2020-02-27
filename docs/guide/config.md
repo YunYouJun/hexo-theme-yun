@@ -71,7 +71,6 @@ cdn:
   pre:
   css:
     fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
-    animate.css: //cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css
   js:
     base:
       jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js

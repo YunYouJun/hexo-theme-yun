@@ -1,16 +1,21 @@
 // small
-mobile()
-  @media screen and (max-width: 768px)
-    {block}
+mobile() {
+  @media screen and (max-width: 768px) {
+    {block};
+  }
+}
 
-the-transition()
+the-transition() {
   transition-property: all;
   transition-duration: 0.2s;
-  transition-timing-function: ease;
   transition-delay: 0s;
+}
 
 // shadow
-the-box-shadow()
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
-  &:hover
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+the-box-shadow() {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}

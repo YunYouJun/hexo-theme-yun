@@ -1,5 +1,5 @@
 a.sidebar-toggle-fixed.hty-icon-button.sidebar-toggle
-  button.hamburger(class='hamburger--spin' type='button')
+  .hamburger(class='hamburger--spin' type='button')
     span.hamburger-box
       span.hamburger-inner
 
@@ -14,7 +14,7 @@ aside.sidebar
       .site-author
         if theme.avatar && theme.avatar.url
           a(href=url_for('about'))
-            img.site-author-image(width=200, height=200, src=theme.avatar.url, alt=author, loading='lazy')
+            img.site-author-image(loading='lazy', width=200, height=200, src=theme.avatar.url, alt=author)
           p.site-author-name
             a(href=url_for('about'))
               | #{author}
