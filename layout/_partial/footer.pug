@@ -2,7 +2,7 @@ footer#footer.sidebar-translate
   - var nowYear = date(Date.now(), "YYYY")
   if theme.footer.beian.enable
     .beian
-      a(href='http://www.beian.miit.gov.cn' target='_blank') #{theme.footer.beian.icp}
+      a(rel='noopener' href='http://www.beian.miit.gov.cn' target='_blank') #{theme.footer.beian.icp}
 
   .copyright
     span
@@ -16,10 +16,10 @@ footer#footer.sidebar-translate
 
   if theme.footer.powered.enable
     .powered
-      span!= __('footer.powered', '<a href="https://hexo.io" target="_blank">Hexo</a>') + ' v' + hexo_env('version')
+      span!= __('footer.powered', '<a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>') + ' v' + hexo_env('version')
       span.footer-separator |
       span= __('footer.theme') + ' - '
-        a(href='https://github.com/YunYouJun/hexo-theme-yun' target='_blank')
+        a(rel='noopener' href='https://github.com/YunYouJun/hexo-theme-yun' target='_blank')
           span Yun
         |  v#{yun_env('version')}
 
