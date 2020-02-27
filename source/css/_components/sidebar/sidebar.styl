@@ -1,3 +1,5 @@
+$sidebar-bg-image = hexo-config('sidebar.bg_image');
+
 .sidebar {
   position: fixed;
   overflow-y: auto;
@@ -5,12 +7,11 @@
   bottom: 0;
   left: 0;
   width: 20rem;
-  // background: rgba(white, 0.6);
-  background-color: #fff;
-  background-image: url('https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg');
+  background: white;
+  background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 7rem center;
+  background-position: bottom 6rem center;
   text-align: center;
   z-index: 10;
   the-transition();

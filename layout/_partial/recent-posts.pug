@@ -7,12 +7,12 @@ section#recent-posts.hty-layout-grid
           .post-header
             h2.post-title(itemprop='name headline')
               if post.type == 'yuque'
-                a.post-title-link.yuque-link(itemprop='url',href=post.url, target='_blank')
+                a.post-title-link.yuque-link(itemprop='url' href=post.url target='_blank' rel='noopener')
                   i.yuque-icon
                     include ../_third-party/icon/yuque.pug
                   span=post.title
               else if post.type == 'bilibili'
-                a.post-title-link.bilibili-link(itemprop='url',href=post.url, target='_blank')
+                a.post-title-link.bilibili-link(itemprop='url' href=post.url target='_blank' rel='noopener')
                   +icon('icon-bilibili-line')
                   span=post.title
               else
@@ -22,10 +22,10 @@ section#recent-posts.hty-layout-grid
           .post-card-excerpt!=post.excerpt
           .post-card-readmore
             if post.type == 'yuque'
-              a(href=post.url, target='_blank')
+              a(href=post.url, target='_blank' rel='noopener')
                 button.hty-button.hty-button--raised.yuque-button!='READ MORE'
             else if post.type == 'bilibili'
-              a(href=post.url, target='_blank')
+              a(href=post.url, target='_blank' rel='noopener')
                 button.hty-button.hty-button--raised.bilibili-button!='READ MORE'
             else
               a(href=url_for(post.path))

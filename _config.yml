@@ -46,6 +46,9 @@ sentences:
 # ---------------------------------------------------------------
 
 # Posts / Categories / Tags in sidebar.
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.webp
+
 site_state: true
 
 # Set rss to false to disable feed link.

@@ -53,10 +53,10 @@ aside.sidebar
       if theme.social
         .links-of-author
           if theme.rss
-            a.links-of-author-item.hty-icon-button(href=url_for(theme.rss), title='RSS' target='_blank' style='color:orange')
+            a.links-of-author-item.hty-icon-button(rel='noopener' href=url_for(theme.rss), title='RSS' target='_blank' style='color:orange')
               +icon(theme.rss_icon)
           for social, name in theme.social
-            a.links-of-author-item.hty-icon-button(href=social.link, title=name, target='_blank' style='color:' + social.color)
+            a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
               +icon(social.icon)
 
       if theme.links.enable
