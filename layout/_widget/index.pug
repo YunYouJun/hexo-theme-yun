@@ -3,7 +3,3 @@ include back-to-top.pug
 //- search
 if theme.local_search.enable || theme.algolia_search.enable
   include search/index.pug
-
-a#search.popup-trigger.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
-  span.site-state-item-icon
-    +icon('icon-search-line')

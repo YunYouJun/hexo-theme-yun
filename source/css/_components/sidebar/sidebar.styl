@@ -1,19 +1,16 @@
 .sidebar {
-  &-translate {
-    padding-left: 20rem;
-
-    +mobile() {
-      padding-left: 0;
-    }
-  }
-
   position: fixed;
   overflow-y: auto;
   top: 0;
   bottom: 0;
   left: 0;
   width: 20rem;
-  background: white;
+  // background: rgba(white, 0.6);
+  background-color: #fff;
+  background-image: url('https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom 7rem center;
   text-align: center;
   z-index: 10;
   the-transition();
@@ -22,6 +19,14 @@
   +mobile() {
     left: -20rem;
     transform: translateX(0);
+  }
+
+  &-translate {
+    padding-left: 20rem;
+
+    +mobile() {
+      padding-left: 0;
+    }
   }
 
   &-toggle {
@@ -78,8 +83,11 @@
 }
 
 .sidebar-open {
-  .sidebar {
-    transform: translateX(20rem);
+  +mobile() {
+    .sidebar {
+      transform: translateX(20rem);
+      visibility: visible;
+    }
   }
 }
 
@@ -87,6 +95,7 @@
   .sidebar {
     left: -20rem;
     transform: translateX(0);
+    visibility: hidden;
   }
 
   .sidebar-toggle {
@@ -101,6 +110,7 @@
   .sidebar-open {
     .sidebar {
       transform: translateX(20rem);
+      visibility: visible;
     }
 
     .sidebar-translate {

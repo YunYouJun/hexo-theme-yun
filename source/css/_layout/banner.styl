@@ -1,8 +1,7 @@
 $char-size-1 = 1.5rem;
-$border-width = 1px;
 
 if (hexo-config('mode') == 'dark') {
-  --hty-theme-bgcolor: #000;
+  --hty-bgcolor: #000;
   $line-color = $white;
   $char-color = $line-color;
   $char-bg-color = $black;
@@ -68,30 +67,5 @@ if (hexo-config('mode') == 'dark') {
 
   to {
     left: -300px;
-  }
-}
-
-#say {
-  color: white;
-  display: block;
-  text-align: center;
-  font-family: $font-family-serif;
-  font-weight: bold;
-  padding: 0.5rem;
-  background-color: rgba(black, 0.2);
-  mix-blend-mode: difference;
-  box-shadow: 0 0 20px rgba(black, 0.2);
-
-  #say-content {
-    display: block;
-  }
-
-  #say-from {
-    display; block;
-  }
-
-  .say-from-link {
-    color: white;
-    border-bottom: 1px solid white;
   }
 }

@@ -1,16 +1,13 @@
-// #recent-posts {
-
-// }
 .post-card {
   position: relative;
-  box-shadow: 0 2px 5px rgba(black, 0.2);
-  background-color: white;
   max-width: 900px;
   margin: 0 auto;
   the-transition();
+  background-color: rgba(white, 0.8);
+  box-shadow: 0 1px 8px rgba(white, 0.1);
 
   &:hover {
-    box-shadow: 0 5px 20px rgba(white, 0.2);
+    box-shadow: 0 1px 10px rgba(black, 0.08);
   }
 
   &-header {
@@ -83,7 +80,7 @@
   }
 
   .yuque-button {
-    --hty-theme-primary: $color-yuque;
+    --hty-primary: $color-yuque;
 
     &:hover {
       background-color: alpha($green, 0.9);
@@ -108,7 +105,7 @@
     }
 
     &-button {
-      --hty-theme-primary: $color-bilibili;
+      --hty-primary: $color-bilibili;
       background-color: alpha($color-bilibili, 0.9);
     }
   }
