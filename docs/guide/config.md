@@ -251,7 +251,9 @@ bilibili:
 如果您未定义 `banner`，将默认使用您为 Hexo 配置的标题。
 
 ```yml
-banner: 云游君的小站
+banner:
+  title: 云游君的小站
+  src: /js/ui/banner.js
 ```
 
 ## UI

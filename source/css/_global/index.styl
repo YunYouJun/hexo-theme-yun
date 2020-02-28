@@ -2,9 +2,9 @@
 
 :root {
   if (hexo-config('mode') == 'light') {
-    --hty-bgcolor: #f9f9f9;
+    --hty-bg-color: #f9f9f9;
   } else {
-    --hty-bgcolor: #141516;
+    --hty-bg-color: #141516;
   }
 
   --hty-primary: $colors.primary;
@@ -20,8 +20,7 @@ $bg-image-url = hexo-config('bg_image.url');
 $bg-opacity = 0.8;
 
 body {
-  background-color: var(--hty-bgcolor, #f5f5f5);
-  -webkit-overflow-scrolling: touch;
+  background-color: var(--hty-bg-color, #f5f5f5);
 
   if (hexo-config('bg_image.enable')) {
     &::before {
@@ -37,7 +36,7 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       animation-name: bgFadeIn;
-      animation-duration: 3s;
+      animation-duration: 2s;
       filter: blur(30px);
     }
   }

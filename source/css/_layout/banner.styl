@@ -1,71 +1,66 @@
 $char-size-1 = 1.5rem;
+$banner-animation-duration = 1s;
 
-if (hexo-config('mode') == 'dark') {
-  --hty-bgcolor: #000;
-  $line-color = $white;
-  $char-color = $line-color;
-  $char-bg-color = $black;
+if (hexo-config('mode') == 'light') {
+  $banner-line-color = $black;
+  $banner-char-color = $banner-line-color;
+  $banner-char-bg-color = $white;
 } else {
-  $line-color = $black;
-  $char-color = $line-color;
-  $char-bg-color = $white;
+  $banner-line-color = $white;
+  $banner-char-color = $banner-line-color;
+  $banner-char-bg-color = $black;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: $font-family-serif;
-  font-weight: 900;
+  height: 100vh;
 }
 
 .vertical-line {
   &-top, &-bottom {
     display: flex;
-    background-color: $line-color;
+    background-color: $banner-line-color;
     width: $border-width;
-    height: 50vh;
+    height: 0;
+  }
+
+  &-bottom {
+    position: absolute;
+    bottom: 0;
   }
 }
 
 .char {
-  background-color: alpha($char-bg-color, 0.5);
+  font-family: $font-family-serif;
+  font-weight: 900;
+  background-color: rgba($banner-char-bg-color, 0.5);
+  line-height: 1;
   the-transition();
 
   &:hover {
-    color: $char-bg-color;
-    background-color: alpha($char-color, 0.5);
+    color: $banner-char-bg-color;
+    background-color: rgba($banner-char-color, 0.9);
   }
 
   &-left, &-right {
     display: flex;
-    color: $char-color;
-    line-height: 1;
-    // font-family: 'ZCOOL XiaoWei'
+    color: $banner-char-color;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: $banner-animation-duration;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
   }
 
   &-left {
-    border-left: $border-width solid $line-color;
-    border-right: 0px solid alpha($purple, 0.1);
+    border-left: $border-width solid $banner-line-color;
+    border-right: 0px solid rgba($colors.primary, 0.1);
   }
 
   &-right {
-    border-left: 0px solid alpha($purple, 0.1);
-    border-right: $border-width solid $line-color;
-  }
-}
-
-#hty-card {
-  display: flex;
-  width: 100%;
-}
-
-@keyframes cloud-move {
-  from {
-    left: 0px;
-  }
-
-  to {
-    left: -300px;
+    border-left: 0px solid rgba($colors.primary, 0.1);
+    border-right: $border-width solid $banner-line-color;
   }
 }

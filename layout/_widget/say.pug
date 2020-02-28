@@ -1,0 +1,34 @@
+#say
+  span#say-content
+  small#say-author
+  small#say-from
+
+if theme.say.remote
+  script.
+    fetch(new Request("#{theme.say.api}"))
+      .then(function(res) {
+        if (!res.ok) {
+          throw new Error("HTTP error, status = " + res.status);
+        }
+        res.json().then(function(data) {
+          let sentence = data[Math.floor(Math.random() * data.length)];
+          $('#say-content').text(sentence.content);
+          $('#say-author').text(sentence.author);
+          $('#say-from').text("「" + sentence.from + "」");
+        });
+      })
+      .catch(function(e) {
+        console.log("error: " + e.toString());
+      });
+else
+  script.
+    let sentences = !{JSON.stringify(theme.words)};
+    let sentence = sentences[Math.floor(Math.random()*words.length)];
+    if (sentence.from) {
+      $('#say-content').text(sentence.content);
+      if (sentence.url) {
+        $('#say-from').html('<a class="say-from-link" href=' + sentence.url + '>' + sentence.from + '</a>');
+      } else {
+        $('#say-from').text(sentence.from);
+      }
+    }

@@ -4,14 +4,14 @@ if !theme.rss && config.feed && config.feed.path
   - theme.rss = config.feed.path
   != feed_tag(config.feed.path)
 
-if process.env.NODE_ENV !== 'dev' && theme.google_adsense && theme.google_adsense.enable
-  include ../_third-party/google-adsense.pug
+if process.env.NODE_ENV !== 'dev'
+  if theme.google_analytics && theme.google_analytics.enable
+    include ../_third-party/analytics/google-analytics.pug
+  if heme.google_adsense && theme.google_adsense.enable
+    include ../_third-party/google-adsense.pug
 
-if process.env.NODE_ENV !== 'dev' && theme.google_analytics && theme.google_analytics.enable
-  include ../_third-party/analytics/google-analytics.pug
-
-script#yun-config
-  | let Yun = window.Yun || {};
+//- config
+!=yun_config()
 
 //- head custom
 if theme.head.css

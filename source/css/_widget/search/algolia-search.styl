@@ -1,106 +1,96 @@
-.ais-search-box
-  margin: 0 auto
-  width: 100% !important
-  max-width: 100% !important
-  position: static !important
-  &--input
-    padding: 0.2rem
-    outline: none
-    font-size: 1.2rem
-    width: 100%
-    border: none
-    background: transparent
-    padding-left: 0px !important
-    line-height: 1
+.ais-SearchBox {
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 100% !important;
+  position: static !important;
 
-.algolia-search-popup
-  overflow: hidden
-  padding: 0
-  display: none
-  position: fixed
-  top: 10%
-  left: 50%
-  width: 700px
-  height: 80%
-  margin-left: -350px
-  background: #fff
-  color: #333
-  z-index: 9999
-  border-radius: 5px
-  +mobile()
-    padding: 0
-    top: 0
-    left: 0
-    margin: 0
-    width: 100%
-    height: 100%
-    border-radius: 0
+  &-input {
+    padding: 0.2rem;
+    outline: none;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding-left: 0px;
+    line-height: 1;
+  }
+}
 
-  .popup-btn-close
-    cursor: pointer
-    float: right
-    &:hover 
-      .icon
-        color: $gray
+.algolia-powered {
+  float: right;
 
-.algolia-search
-  border-bottom: 1px solid #ccc
+  img {
+    display: inline-block;
+    height: 1.2rem;
+    vertical-align: middle;
+  }
+}
 
-.algolia-search-input
-  display: inline-block
-  padding: 0.5rem
-  vertical-align: bottom
-  width: 70%
+.algolia-results {
+  position: relative;
+  overflow: auto;
+  padding: 10px 30px;
+  height: calc(100% - 50px);
 
-.algolia-powered
-  float: right
-  img
-    display: inline-block
-    height: 18px
-    vertical-align: middle
+  hr {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
 
-.algolia-results
-  position: relative
-  overflow: auto
-  padding: 10px 30px
-  height: calc(100% - 50px)
+#algolia-hits {
+  background-color: rgba(white, 0.5);
+}
 
-  hr
-    margin: 10px 0
+.algolia-hit-item {
+  display: flex;
+  justify-content: center;
+}
 
-  .highlight
-    font-style: normal
-    margin: 0
-    padding: 0 2px
-    font-size: inherit
-    color: red
+.algolia-hit-item-link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px dashed #ccc;
+  font-family: $font-family-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  max-width: 800px;
+  the-transition();
 
-.algolia-hits
-  margin-top: 20px
+  mark {
+    color: $red;
+    font-family: 900;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
 
-.algolia-hit-item
-  margin: 15px 0
+.algolia-pagination {
+  .ais-Pagination-list {
+    padding-inline-start: 0;
+  }
 
-.algolia-hit-item-link
-  display: block
-  border-bottom: 1px dashed #ccc
-  the-transition()
+  .pagination-item {
+    display: inline-block;
+    list-style-type: none;
+  }
 
-.algolia-pagination
-  .pagination
-    margin: 40px 0px
-    border-top: none
-    padding: 0
-    opacity: 1
-  .pagination-item
-    display: inline-block
-  .page-number
-    border-top: none
-    &:hover
-      border-bottom: 1px solid $dark
+  .page-number {
+    border-top: none;
+  }
 
-  .current .page-number
-    @extend .pagination .page-number.current
+  .current .page-number {
+    @extend .pagination .page-number.current;
+  }
 
-  .disabled-item
-    visibility: hidden
+  .disabled-item {
+    display: none;
+  }
+}
+
+.ais-Hits-list {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+}

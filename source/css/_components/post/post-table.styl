@@ -1,21 +1,20 @@
 // Table
 // --------------------------------------------------
-$table-width                    = 100%
-$table-border-color             = $light-gray
-$table-font-size                = 14px
-$table-content-alignment        = left
-$table-content-vertical         = middle
-$table-th-font-weight           = 700
-$table-cell-padding             = 8px
-$table-cell-border-right-color  = $gray
-$table-cell-border-bottom-color = $light-gray
-$table-row-odd-bg-color         = #fafafa
-$table-row-hover-bg-color       = #f5f5f5
+$table-width = 100%;
+$table-border-color = $light-gray;
+$table-font-size = 14px;
+$table-content-alignment = left;
+$table-content-vertical = middle;
+$table-th-font-weight = 700;
+$table-cell-padding = 8px;
+$table-cell-border-right-color = $gray;
+$table-cell-border-bottom-color = $light-gray;
+$table-row-odd-bg-color = #fafafa;
+$table-row-hover-bg-color = #f5f5f5;
 
 .table-container {
   margin: 20px 0;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .highlight .table-container {
@@ -30,8 +29,13 @@ table {
 }
 
 table > tbody > tr {
-  &:nth-of-type(odd) { background-color: $table-row-odd-bg-color; }
-  &:hover { background-color: $table-row-hover-bg-color; }
+  &:nth-of-type(odd) {
+    background-color: $table-row-odd-bg-color;
+  }
+
+  &:hover {
+    background-color: $table-row-hover-bg-color;
+  }
 }
 
 caption, th, td {

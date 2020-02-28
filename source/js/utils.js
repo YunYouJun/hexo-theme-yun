@@ -86,14 +86,7 @@ Yun.utils = {
 
     $(".fancybox").fancybox({
       loop: true,
-      buttons: [
-        "zoom",
-        "slideShow",
-        "fullScreen",
-        "download",
-        "thumbs",
-        "close"
-      ]
+      buttons: ["zoom", "fullScreen", "download", "thumbs", "close"]
     });
   },
 

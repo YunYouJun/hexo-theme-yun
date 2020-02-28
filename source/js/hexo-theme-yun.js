@@ -1,5 +1,10 @@
-// sidebar
-$(function() {
+// wrap
+document.addEventListener("DOMContentLoaded", function(event) {
+  Yun.utils.embeddedVideoTransformer();
+  Yun.utils.wrapImageWithFancyBox();
+  wrapTable();
+
+  // sidebar
   $(".sidebar-toggle").on("click", function() {
     $(".sidebar-toggle .hamburger").toggleClass("is-active");
     $(".container").toggleClass("sidebar-open");
@@ -19,39 +24,9 @@ $(function() {
     item.siblings().removeClass(activeTabClassName);
     item.addClass(activeTabClassName);
   });
-});
-
-// search
-function closeSearchDialog(e) {
-  $(".popup").slideUp("fast");
-  $(".search-popup-overlay").fadeOut("fast");
-}
-
-function openSearchDialog() {
-  $(".search-popup-overlay").fadeIn();
-  $(".popup").slideDown("fast", function() {
-    $(".search-input")
-      .find("input")
-      .focus();
-  });
-}
-
-$(".popup-trigger").click(function(e) {
-  openSearchDialog();
-  //- shortcut: esc
-  $(document).on("keyup", function f(e) {
-    if (event.code == "Escape") {
-      closeSearchDialog();
-      $(document).off("keyup", f);
-    }
-  });
-});
-$(".popup-btn-close,.search-popup-overlay").click(closeSearchDialog);
-
-// display toc
-// rf from hexo-theme-melody
-// modify by hexo-theme-yun
-$(function() {
+  // display toc
+  // rf from hexo-theme-melody
+  // modify by hexo-theme-yun
   let initTop = 0;
   $(".toc-child").slideUp();
 
