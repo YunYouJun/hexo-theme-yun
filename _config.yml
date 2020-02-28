@@ -92,7 +92,7 @@ social:
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "#FF8EB3"
-  # bangumi: http://bangumi.tv/user/yunyoujun || television
+  # bangumi: https://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   # Google: https://plus.google.com/yourname || google
   # Twitter: https://twitter.com/yunyoujun || twitter
@@ -179,22 +179,22 @@ cdn:
     # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
     # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
     # lib
-    fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
+    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
   js:
     base:
-      jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+      jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     async:
-      fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+      fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
     defer:
 
 # cdn for third-party library (alternative include)
 vendors:
-  anime: //cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-  algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
-  gitalk_css: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-  gitalk_js: //cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
-  valine_js: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+  algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
+  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
+  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
+  valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
 

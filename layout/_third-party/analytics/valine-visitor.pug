@@ -1,12 +1,11 @@
 if !is_post()
   span.leancloud_visitors(id='/', data-flag-title=config.title)
     span.post-meta-item-icon(title=__('footer.total_views'))
-      //- +icon(theme.busuanzi.site_pv_icon, 14)
       +icon(theme.busuanzi.site_uv_icon, 14)
       |  
       span.leancloud-visitors-count
 
-script(async, src=theme.vendors.valine_js)
+script(defer, src=theme.vendors.valine_js)
 - var valine_lang = config.language || 'zh-cn'
 script.
   var GUEST_INFO = ['nick', 'mail', 'link'];

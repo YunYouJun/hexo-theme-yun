@@ -65,7 +65,7 @@ categories:
 
 ## Reference
 
-- [parallax.js](http://matthew.wagerfield.com/parallax/)
+- [parallax.js](https://matthew.wagerfield.com/parallax/)
 
 ###　[css-doodle](https://github.com/css-doodle/css-doodle)
 
