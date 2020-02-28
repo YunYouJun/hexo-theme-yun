@@ -7,7 +7,7 @@ if !theme.rss && config.feed && config.feed.path
 if process.env.NODE_ENV !== 'dev'
   if theme.google_analytics && theme.google_analytics.enable
     include ../_third-party/analytics/google-analytics.pug
-  if heme.google_adsense && theme.google_adsense.enable
+  if theme.google_adsense && theme.google_adsense.enable
     include ../_third-party/google-adsense.pug
 
 //- config

@@ -1,5 +1,8 @@
 # Hexo-Theme-Yun
 
+![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/Docs/badge.svg)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
+
 ![logo.gif](docs/.vuepress/public/logo.gif)
 
 > A simple and fast hexo theme.
