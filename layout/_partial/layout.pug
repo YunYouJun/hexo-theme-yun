@@ -21,8 +21,6 @@ html(lang=config.language)
         | #{title}
     include ../_third-party/cdn.pug
     include head.pug
-    each url in theme.js
-      script(src=url_for(url), defer)
     if theme.css !== undefined && theme.css.length > 0
       each url in theme.css
         link(rel='stylesheet', href=url_for(url))
@@ -38,3 +36,5 @@ html(lang=config.language)
       include background.pug
       //- widget
       include ../_widget/index.pug
+    each url in theme.js
+      script(src=url_for(url), defer)
