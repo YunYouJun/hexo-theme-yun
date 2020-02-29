@@ -2,6 +2,14 @@
 
 本主题默认支持并使用以下页面类型。
 
+## 文章 post
+
+### Front-matter
+
+|      | Description                | Default |
+| ---- | -------------------------- | ------- |
+| hide | Hide your post temporarily | false   |
+
 ## 标签 tags
 
 如果您尚未安装 `hexo-generator-tag`，请输入 `npm install hexo-generator-tag`。

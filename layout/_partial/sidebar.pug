@@ -45,7 +45,7 @@ aside.sidebar
                 +icon(theme.menu.tags.icon)
               span.site-state-item-count!=site.tags.length
         if theme.reward_settings && theme.reward_settings.url
-          a.site-state-item.hty-icon-button(href=theme.reward_settings.url)
+          a.site-state-item.hty-icon-button(href=theme.reward_settings.url, title=__('reward.comment'))
             span.site-state-item-icon
               +icon('icon-hand-coin-line')
         else
