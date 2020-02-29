@@ -40,7 +40,6 @@ head:
     base:
     async:
       # 如果您不打算自定义图标，请务必附带以下 cdn 链接。
-      iconfont: //at.alicdn.com/t/font_1140697_6vwcpoubqek.js
     defer:
 ```
 
@@ -64,18 +63,15 @@ Content Delivery Network，统一加载网络资源，有利于提高网页加�
 - GitHub CDN: `https://cdn.jsdelivr.net/gh/user/repo@version/file`
 - npm: `https://cdn.jsdelivr.net/npm/package@version/file`
 
-`cdn` 为主题目前默认引入的 CDN 资源，请尽量不要覆盖：
+`cdn` 为主题目前默认引入的 CDN 资源，结构与 `head` 类似，请尽量不要覆盖：
 
 ```yml
 cdn:
   pre:
   css:
-    fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
   js:
     base:
-      jquery: //cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
     async:
-      fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
     defer:
 ```
 

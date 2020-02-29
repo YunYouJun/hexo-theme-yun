@@ -6,6 +6,13 @@ hexo.extend.helper.register("yun_config", function() {
     version: yun_version
   };
 
+  // say
+  if (theme.say.enable) {
+    exportConfig.say = {
+      api: theme.say.api
+    };
+  }
+
   // algolia
   if (theme.algolia_search.enable) {
     exportConfig.algolia = {
@@ -21,6 +28,17 @@ hexo.extend.helper.register("yun_config", function() {
         hits_empty: __("algolia_search.hits_empty"),
         hits_stats: __("algolia_search.hits_stats")
       }
+    };
+  }
+
+  // local search
+  if (theme.local_search.enable) {
+    let search_path = config.search.path;
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    }
+    exportConfig.local_search = {
+      path: config.root + search_path
     };
   }
 

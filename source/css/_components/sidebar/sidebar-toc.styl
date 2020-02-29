@@ -1,26 +1,59 @@
-.post-toc 
-  line-height: 1.8
+.post-toc {
+  line-height: 1.8;
+  padding-bottom: 1rem;
 
-  ol
-    list-style: none
-    text-align: left
-    margin: 0
-    padding: 0 2px 5px 10px
+  ol {
+    list-style: none;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0;
 
-    .toc-link
-      the-transition()
-      &.active
-        color: $orange
-        font-weight: bold
+    .toc-link {
+      color: $colors.primary;
 
-.post-toc-progress
-  color: $gray
+      &:hover {
+        color: $colors.danger;
+      }
+    }
 
-  .progress-num
-    display: inline-block
-    min-width: 2rem
+    .toc-child {
+      overflow: hidden;
+      transition: max-height 1s ease-in;
+      max-height: 0;
+    }
 
-  .progress-bar
-    width: 0
-    height: 2px
-    background: $colors.primary
+    .toc-item {
+      &.active {
+        &>.toc-link {
+          color: $orange;
+        }
+
+        &>.toc-child {
+          max-height: 1000px;
+        }
+      }
+    }
+  }
+}
+
+.post-toc-progress {
+  color: $gray;
+
+  .progress {
+    &-bar {
+      width: 0;
+      height: 0.2rem;
+      background: $colors.primary;
+      transition: width 0.4s;
+    }
+
+    &-info {
+      margin-top: 0.1rem;
+    }
+
+    &-num {
+      display: inline-block;
+      min-width: 2rem;
+    }
+  }
+}

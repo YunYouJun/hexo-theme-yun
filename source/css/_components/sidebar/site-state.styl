@@ -25,6 +25,11 @@
   align-items: center;
   border-left: 1px solid $light-gray;
 
+  &:first-child, &:last-child {
+    line-height: 1;
+    padding: 0;
+  }
+
   &:first-child {
     border-left: none;
     border-right: 1px solid $gray;
@@ -36,11 +41,6 @@
 
   &:nth-child(2) {
     border: none;
-  }
-
-  &.icon-home, &.icon-search {
-    line-height: 1;
-    padding: 0;
   }
 }
 

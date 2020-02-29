@@ -8,19 +8,25 @@
       |  or 
       button.comment-nav-item.hty-button(data-target='valine-container')='Valine'
     script.
-      $(document).ready(function() {
-        $('#valine-container').hide()
-        $('.comment-nav-item').on('click', function() {
-          $('.comment-nav-item').removeClass('hty-button--raised')
-          $('.comment-container').hide()
-          var item = $(this)
-          item.addClass('hty-button--raised')
-          var target = $('#' + item.data('target'))
-          target.show()
-        })
-      })
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.querySelector("#valine-container").style.display = "none";
+        let navItems = document.querySelectorAll(".comment-nav-item");
+        navItems.forEach(function(navItem) {
+          navItem.onclick = function() {
+            navItems.forEach((el) => {
+              el.classList.remove("hty-button--raised");
+            })
+            this.classList.add("hty-button--raised");
+            document.querySelectorAll(".comment-container").forEach((el)=>{
+              el.style.display = "none";
+            });
+            document.querySelector("#" + this.dataset.target).style.display = "block";
+          }
+        });
+      });
 
-  //- if process.env.NODE_ENV !== 'dev' && theme.gitalk && theme.gitalk.enable
-  include gitalk.pug
-  //- if process.env.NODE_ENV !== 'dev' && theme.valine && theme.valine.enable
-  include valine.pug
+  //- if process.env.NODE_ENV !== 'dev'
+  if theme.gitalk && theme.gitalk.enable
+    include gitalk.pug
+  if theme.valine && theme.valine.enable
+    include valine.pug

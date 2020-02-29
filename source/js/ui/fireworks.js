@@ -32,13 +32,13 @@ let colors = [
   // '0, 8, 55'
 ];
 
-let setCanvasSize = debounce(function() {
+let setCanvasSize = function() {
   canvasEl.width = window.innerWidth;
   canvasEl.height = window.innerHeight;
   canvasEl.style.width = window.innerWidth + "px";
   canvasEl.style.height = window.innerHeight + "px";
   canvasEl.getContext("2d").scale(1, 1);
-}, 500);
+};
 
 let render = anime({
   duration: Infinity,

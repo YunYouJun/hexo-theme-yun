@@ -55,13 +55,15 @@ add_this_id:
 
 您需要先安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)，并参考配置文档。
 
+本主题使用原生 JavaScript 实现，无 jQuery 依赖。
+
 > 格式只支持 XML
 
 ```yml
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   src: /js/search/local-search.js
 ```
 

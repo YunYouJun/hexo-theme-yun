@@ -18,29 +18,43 @@ colors:
 
 say:
   enable: true
-  remote: true
   # api: https://say.elpsy.cn/sentences.json
+  # if api is not exist, will use local sentences
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # src is the script
+  src: /js/say.js
 
-# when remote is false
-sentences:
-  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
-    from: 《日常》
-    url: https://baike.baidu.com/item/日常/5844361
-  - content: 是啊，我所爱的，即非群星，也非银河。
-    from: 云游君
-    url: https://yunyoujun.cn
-  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
-    from: 《万叶集》雷神短歌
-    url: https://book.douban.com/subject/1066538/
-  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
-    from: 《小杂感》鲁迅
-    url: https://baike.baidu.com/item/小杂感
-  - content: 遍身罗绮者，不是养蚕人。
-    from: 《蚕妇》张俞
-    url: https://baike.baidu.com/item/蚕妇/40814
+# you can new JSON file in your blog root folder
+# example: source/data/sentences.json
+# then set say.api: /data/sentences.json
+# [
+#   {
+#     "content": "我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。",
+#     "from": "《日常》",
+#     "url": "https://baike.baidu.com/item/日常/5844361"
+#   },
+#   {
+#     "content": "是啊，我所爱的，即非群星，也非银河。",
+#     "from": "云游君",
+#     "url": "https://yunyoujun.cn"
+#   },
+#   {
+#     "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
+#     "from": "《万叶集》雷神短歌",
+#     "url": "https://book.douban.com/subject/1066538/"
+#   },
+#   {
+#     "content": "人类的悲欢并不相通，我只觉得他们吵闹。",
+#     "from": "《小杂感》鲁迅",
+#     "url": "https://baike.baidu.com/item/小杂感"
+#   },
+#   {
+#     "content": "遍身罗绮者，不是养蚕人。",
+#     "from": "《蚕妇》张俞",
+#     "url": "https://baike.baidu.com/item/蚕妇/40814"
+#   }
+# ]
 
-# https://www.jsdelivr.com
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
@@ -162,7 +176,6 @@ head:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_tdhy0p11whd.js
     defer:
 
 # cdn for third-party library (always include)
@@ -180,15 +193,13 @@ cdn:
     # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
     # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
     # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
-    # lib
-    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
   js:
     base:
     async:
+      iconfont: //at.alicdn.com/t/font_1140697_tdhy0p11whd.js
     defer:
-      # zepto: https://cdn.jsdelivr.net/npm/zepto/dist/zepto.min.js
-      jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-      fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+      scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
+      medium-zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -201,6 +212,7 @@ vendors:
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
   search: /js/search/index.js
+  toc: /js/toc.js
 
 # UI
 fireworks: true
@@ -223,6 +235,7 @@ reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
   enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   #comment: Donate comment here
 reward:
   wechatpay:

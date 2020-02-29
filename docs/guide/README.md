@@ -51,10 +51,12 @@ theme: yun
 
 在 Hexo 工作目录下新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建。）
 
-您仅需在 `yun.yml` 中自定义您想要的配置，其余将自动采用主题默认配置。（这样做更方便日后的升级）
+采用约定大于配置的方式，您仅需在 `yun.yml` 中自定义您想要覆盖的配置，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
 
-::: warning 请使用与默认配置中同样完整的配置选项
+::: tip
 如：
+
+`avatar` 的完整配置如下
 
 ```yml
 avatar:
@@ -63,11 +65,11 @@ avatar:
   opacity: 1
 ```
 
-而不是：
+你可以在 `yun.yml` 中仅定义（当然，全部覆盖也是可以的）
 
 ```yml
 avatar:
-  rounded: true
+  url: /images/chen-200.webp
 ```
 
 :::
