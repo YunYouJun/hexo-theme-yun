@@ -173,7 +173,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: https://at.alicdn.com/t/font_1140697_tdhy0p11whd.js
+      iconfont: https://at.alicdn.com/t/font_1140697_m1jieu7wh4.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
       medium-zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js

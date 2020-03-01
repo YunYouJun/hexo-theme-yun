@@ -42,6 +42,7 @@ Yun.utils = {
       ".post-card-excerpt img, .post-content img, .post-excerpt img"
     );
     images.forEach(image => {
+      image.loading = "lazy";
       image.parentNode.style.textAlign = "center";
     });
 

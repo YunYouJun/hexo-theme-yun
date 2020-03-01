@@ -6,73 +6,74 @@ a.sidebar-toggle-fixed.hty-icon-button.sidebar-toggle
 aside.sidebar
   if is_post()
     ul.sidebar-nav
-      li.sidebar-nav-item.sidebar-nav-toc.sidebar-nav-active(data-target='post-toc-wrap')=__('sidebar.toc')
-      li.sidebar-nav-item.sidebar-nav-overview(data-target='site-overview-wrap')=__('sidebar.overview')
+      li.sidebar-nav-item.sidebar-nav-toc.sidebar-nav-active.hty-icon-button(data-target='post-toc-wrap', title=__('sidebar.toc'))
+        +icon('icon-list-ordered')
+      li.sidebar-nav-item.sidebar-nav-overview.hty-icon-button(data-target='site-overview-wrap', title=__('sidebar.overview'))
+        +icon('icon-passport-line')
 
-  .site-overview-wrap.sidebar-panel(class= is_post() ? '' : 'sidebar-panel-active')
-    .site-overview
-      .site-author
-        if theme.avatar && theme.avatar.url
+  #site-overview-wrap.sidebar-panel(class= is_post() ? 'mickey-mouse' : 'sidebar-panel-active')
+    .site-info
+      if theme.avatar && theme.avatar.url
+        a.site-author-avatar(href=url_for('about'), title=config.author)
+          img(loading='lazy', src=theme.avatar.url, alt=author)
+        p.site-author-name
           a(href=url_for('about'))
-            img.site-author-image(loading='lazy', width=200, height=200, src=theme.avatar.url, alt=author)
-          p.site-author-name
-            a(href=url_for('about'))
-              | #{author}
-          a.site-info(href=url_for('about/site.html'))
-            | #{config.title}
-          .site-desciption!=config.description
+            | #{author}
+        a.site-name(href=url_for('about/site.html'))
+          | #{config.title}
+        .site-desciption!=config.description
 
-      nav.site-state
-        a.site-state-item.hty-icon-button.icon-home(href=url_for(theme.menu.home.path), title=__('menu.home'))
+    nav.site-state
+      a.site-state-item.hty-icon-button.icon-home(href=url_for(theme.menu.home.path), title=__('menu.home'))
+        span.site-state-item-icon
+          +icon(theme.menu.home.icon)
+      if site.posts.length > 0
+        .site-state-item.site-state-posts
+          a(href=url_for(config.archive_dir), title=__('menu.archives'))
+            span.site-state-item-icon
+              +icon(theme.menu.archives.icon)
+            span.site-state-item-count!=site.posts.length
+      if site.categories.length > 0
+        .site-state-item.site-state-categories
+          a(href=url_for(config.category_dir), title=__('menu.categories'))
+            span.site-state-item-icon
+              +icon(theme.menu.categories.icon)
+            span.site-state-item-count!=site.categories.length
+      if site.tags.length > 0
+        .site-state-item.site-state-tags
+          a(href=url_for(config.tag_dir), title=__('menu.tags'))
+            span.site-state-item-icon
+              +icon(theme.menu.tags.icon)
+            span.site-state-item-count!=site.tags.length
+      if theme.reward_settings && theme.reward_settings.url
+        a.site-state-item.hty-icon-button(href=theme.reward_settings.url, title=__('reward.comment'))
           span.site-state-item-icon
-            +icon(theme.menu.home.icon)
-        if site.posts.length > 0
-          .site-state-item.site-state-posts
-            a(href=url_for(config.archive_dir), title=__('menu.archives'))
-              span.site-state-item-icon
-                +icon(theme.menu.archives.icon)
-              span.site-state-item-count!=site.posts.length
-        if site.categories.length > 0
-          .site-state-item.site-state-categories
-            a(href=url_for(config.category_dir), title=__('menu.categories'))
-              span.site-state-item-icon
-                +icon(theme.menu.categories.icon)
-              span.site-state-item-count!=site.categories.length
-        if site.tags.length > 0
-          .site-state-item.site-state-tags
-            a(href=url_for(config.tag_dir), title=__('menu.tags'))
-              span.site-state-item-icon
-                +icon(theme.menu.tags.icon)
-              span.site-state-item-count!=site.tags.length
-        if theme.reward_settings && theme.reward_settings.url
-          a.site-state-item.hty-icon-button(href=theme.reward_settings.url, title=__('reward.comment'))
-            span.site-state-item-icon
-              +icon('icon-hand-coin-line')
-        else
-          a.popup-trigger.site-state-item.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
-            span.site-state-item-icon
-              +icon('icon-search-line')
+            +icon('icon-hand-coin-line')
+      else
+        a.popup-trigger.site-state-item.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
+          span.site-state-item-icon
+            +icon('icon-search-line')
 
-      hr
+    hr
 
-      if theme.social
-        .links-of-author
-          if config.feed && config.feed.path
-            a.links-of-author-item.hty-icon-button(rel='noopener' href=url_for(config.feed.path), title='RSS' target='_blank' style='color:orange')
-              +icon(theme.rss_icon)
-          for social, name in theme.social
-            a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
-              +icon(social.icon)
+    if theme.social
+      .links-of-author
+        if config.feed && config.feed.path
+          a.links-of-author-item.hty-icon-button(rel='noopener' href=url_for(config.feed.path), title='RSS' target='_blank' style='color:orange')
+            +icon(theme.rss_icon)
+        for social, name in theme.social
+          a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
+            +icon(social.icon)
 
-      if theme.links.enable
-        .links-of-friend
-          a.hty-icon-button(href=url_for(theme.links.url), title=theme.links.title)
-            +icon(theme.links.icon)
+    if theme.links.enable
+      .links-of-friend
+        a.hty-icon-button(href=url_for(theme.links.url), title=theme.links.title)
+          +icon(theme.links.icon)
 
 
   if is_post()
     script(defer, src=url_for(theme.vendors.toc))
-    .post-toc-wrap.sidebar-panel.sidebar-panel-active
+    #post-toc-wrap.sidebar-panel.sidebar-panel-active
       .post-toc
         .post-toc-progress
           .progress-bar

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .querySelector("." + activePanelClass)
         .classList.remove(activePanelClass);
       document
-        .querySelector("." + this.dataset.target)
+        .querySelector("#" + this.dataset.target)
         .classList.add(activePanelClass);
       document
         .querySelector("." + activeTabClass)

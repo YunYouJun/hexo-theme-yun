@@ -1,4 +1,39 @@
-.site-info {
+#site-overview-wrap {
+  padding-top: 2rem;
+
+  &.mickey-mouse {
+    margin-top: -2.5rem;
+  }
+}
+
+.site-author-avatar {
+  img {
+    height: 96px;
+    width: 96px;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(black, 0.2);
+    transition: 0.4s;
+
+    &:hover {
+      box-shadow: 0 0 30px rgba($colors.primary, 0.2);
+    }
+  }
+}
+
+if (hexo-config('avatar.rounded')) {
+  .site-author-avatar {
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.site-author-name {
+  margin: 0.5rem;
+}
+
+.site-name {
   color: $dark;
   font-family: $font-family-serif;
   font-weight: bold;

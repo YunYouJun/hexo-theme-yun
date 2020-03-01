@@ -2,29 +2,25 @@
   padding-left: 0px;
   margin-top: 1rem;
   margin-bottom: 0;
-  display: block;
-  box-sizing: border-box;
 
   li {
-    display: inline-block;
     cursor: pointer;
-    font-size: 0.8rem;
-    border-bottom: 1px solid transparent;
-    width: 4rem;
   }
 
   .sidebar-nav-item {
     border: 1px solid $colors.primary;
-    padding: 4px 16px;
-
-    &:first-child {
-      border-right-width: 0px;
-    }
+    color: $colors.primary;
+    margin: 0 1.25rem;
 
     &:hover {
       the-transition();
       background-color: $colors.primary;
       color: $white;
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 
