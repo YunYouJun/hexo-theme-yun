@@ -1,7 +1,7 @@
 // wrap
 document.addEventListener("DOMContentLoaded", function() {
+  Yun.utils.wrapImage();
   Yun.utils.embeddedVideoTransformer();
-  Yun.utils.wrapImageWithMediumZoom();
 
   // open sidebar
   document.querySelectorAll(".sidebar-toggle").forEach(el => {

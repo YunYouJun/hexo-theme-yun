@@ -34,19 +34,15 @@ function throttle(func, wait, mustRun) {
 }
 
 Yun.utils = {
-  /**
-   * Wrap images with medium-zoom.
-   */
-  wrapImageWithMediumZoom: function() {
+  wrapImage: function() {
     let images = document.querySelectorAll(
       ".post-card-excerpt img, .post-content img, .post-excerpt img"
     );
+    // center & lazy
     images.forEach(image => {
       image.loading = "lazy";
       image.parentNode.style.textAlign = "center";
     });
-
-    mediumZoom(images);
   },
 
   /**

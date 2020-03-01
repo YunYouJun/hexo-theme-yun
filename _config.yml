@@ -173,10 +173,9 @@ cdn:
   js:
     base:
     async:
-      iconfont: https://at.alicdn.com/t/font_1140697_m1jieu7wh4.js
+      iconfont: https://at.alicdn.com/t/font_1140697_ddnjiswrj6.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
-      medium-zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -216,7 +215,7 @@ reward:
     color: "#00A3EE"
 
 # Creative Commons 4.0 International License.
-# See: https://creativecommons.org/share-your-work/licensing-types-examples
+# https://creativecommons.org/licenses/
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 # You can set a language value if you prefer a translated version of CC license.
 # CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
