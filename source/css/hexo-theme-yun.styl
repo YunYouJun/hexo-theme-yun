@@ -1,22 +1,21 @@
 // var
-@import "_variables/_base"
-@import "_variables/_colors"
-
+@import '_variables/_base';
+@import '_variables/_colors';
 // mixin
-@import "_mixins/*"
-
+@import '_mixins/*';
 // global
-@import "_global"
-@import "_layout/*"
-
+@import '_global';
+@import '_layout/*';
 // component
-@import "_components/*"
-@import "_components/*/*"
-
+@import '_components/*';
+@import '_components/*/*';
 // widget
-@import "_widget/back-to-top";
-if hexo-config('local_search.enable') || hexo-config('algolia_search.enable')
-  @import "_widget/search"
-if hexo-config('gitalk.enable') || hexo-config('valine.enable')
-  @import "_widget/comment"
-// third-party
+@import '_widget/back-to-top';
+
+if (hexo-config('local_search.enable') || hexo-config('algolia_search.enable')) {
+  @import '_widget/search';
+}
+
+if (hexo-config('gitalk.enable') || hexo-config('valine.enable')) {
+  @import '_widget/comment';
+}

@@ -7,10 +7,10 @@ mode: light
 # color
 colors:
   primary: "#6200ee"
+  selection_bg: "#8e71c1"
   # primary: "#0078E7"
   # paginator: "#00C4B6"
   # button_hover: "#FF7242"
-  # text_selection: "#00C4B6"
   # link_color: "#858585"
   # hr_color: "#A4D8FA"
   # tag_start_color: "#999999"
@@ -161,6 +161,28 @@ archive:
 # ---------------
 favicon: /favicon.ico
 
+# link
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/yun-boot.js
+    - /js/utils.js
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  style:
+    - /css/prism.css
+  script:
+    - /js/toc.js
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+
 # stylesheets loaded in the <head>
 css:
   - /css/hexo-theme-yun.css
@@ -171,6 +193,7 @@ js:
   - /js/utils.js
   - /js/hexo-theme-yun.js
 
+# custom your assets in head
 head:
   css:
   js:
@@ -196,7 +219,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_tdhy0p11whd.js
+      iconfont: https://at.alicdn.com/t/font_1140697_tdhy0p11whd.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
       medium-zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js

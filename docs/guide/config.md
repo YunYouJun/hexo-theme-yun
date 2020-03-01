@@ -363,12 +363,11 @@ post_edit:
 
 设置代码高亮主题
 
-可选值：normal | night | night eighties | night blue | night bright
+由于性能问题，抛弃 `highlight.js` ，使用 [prism](https://github.com/PrismJS/prism)。
 
-```yml
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
-```
+请参考 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 使用。
+
+等待 [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) 原生支持 Prism
 
 ### 版权
 

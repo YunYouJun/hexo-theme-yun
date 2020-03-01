@@ -37,15 +37,28 @@
   }
 
   pre, code {
-    font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
-    font-size: 14px;
+    overflow: auto;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
     line-height: 1.6;
+    border-radius: 3px;
+
+    code {
+      padding: 0px;
+      background: transparent;
+      font-size: 0.85rem;
+    }
+  }
+
+  >pre {
+    padding: 0.5rem;
+    background-color: #eee;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   code {
     overflow-wrap: break-word;
-    word-wrap: break-word;
-    padding: 3px 6px;
+    padding: 3px 5px;
     color: $dark;
     background: #eee;
     border-radius: 3px;
@@ -68,7 +81,7 @@
   }
 
   hr {
-    margin: 44px 0;
+    margin: 2rem 0;
     height: 2px;
     border: none;
     background-color: #ddd;

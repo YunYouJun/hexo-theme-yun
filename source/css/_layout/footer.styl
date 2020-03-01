@@ -40,10 +40,12 @@ if (hexo-config('footer.icon.animated')) {
   color: unquote(hexo-config('footer.icon.color'));
 }
 
-#busuanzi {
-  &_value {
-    &_site_uv, &_site_pv, &_page_pv {
-      margin-left: 0.2rem;
+if (hexo-config('busuanzi.enable')) {
+  #busuanzi {
+    &_value {
+      &_site_uv, &_site_pv, &_page_pv {
+        margin-left: 0.2rem;
+      }
     }
   }
 }

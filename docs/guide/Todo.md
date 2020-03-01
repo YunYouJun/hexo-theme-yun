@@ -8,6 +8,7 @@ categories:
 ---
 
 - [ ] Docs
+  - [ ] RSS
 
 ## Function
 
