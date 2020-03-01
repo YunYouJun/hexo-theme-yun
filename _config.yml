@@ -9,51 +9,10 @@ colors:
   primary: "#6200ee"
   selection_bg: "#8e71c1"
   # primary: "#0078E7"
-  # paginator: "#00C4B6"
-  # button_hover: "#FF7242"
-  # link_color: "#858585"
-  # hr_color: "#A4D8FA"
-  # tag_start_color: "#999999"
-  # tag_end_color: "#1B9EF3"
 
-say:
-  enable: true
-  # api: https://say.elpsy.cn/sentences.json
-  # if api is not exist, will use local sentences
-  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
-  # src is the script
-  src: /js/say.js
-
-# you can new JSON file in your blog root folder
-# example: source/data/sentences.json
-# then set say.api: /data/sentences.json
-# [
-#   {
-#     "content": "我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。",
-#     "from": "《日常》",
-#     "url": "https://baike.baidu.com/item/日常/5844361"
-#   },
-#   {
-#     "content": "是啊，我所爱的，即非群星，也非银河。",
-#     "from": "云游君",
-#     "url": "https://yunyoujun.cn"
-#   },
-#   {
-#     "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
-#     "from": "《万叶集》雷神短歌",
-#     "url": "https://book.douban.com/subject/1066538/"
-#   },
-#   {
-#     "content": "人类的悲欢并不相通，我只觉得他们吵闹。",
-#     "from": "《小杂感》鲁迅",
-#     "url": "https://baike.baidu.com/item/小杂感"
-#   },
-#   {
-#     "content": "遍身罗绮者，不是养蚕人。",
-#     "from": "《蚕妇》张俞",
-#     "url": "https://baike.baidu.com/item/蚕妇/40814"
-#   }
-# ]
+# Favicon
+# ---------------
+favicon: /favicon.ico
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -65,10 +24,8 @@ sidebar:
 
 site_state: true
 
-# Set rss to false to disable feed link.
-# Leave rss as blank to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
-# Set rss to specific value if you have burned your feed already.
-rss:
+# set rss in your root config
+# https://github.com/hexojs/hexo-generator-feed
 rss_icon: icon-rss-line
 
 # Social Links.
@@ -157,11 +114,8 @@ menu:
 archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
 
-# Favicon
-# ---------------
-favicon: /favicon.ico
-
 # link
+# -------
 preload:
   style:
     - /css/hexo-theme-yun.css
@@ -246,13 +200,6 @@ bg_image:
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.webp
   # https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
 
-# Article
-# ---------------
-# Code Highlight theme
-# Available values: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
-
 # Reward (Donate)
 reward_settings:
   # If true, reward would be displayed in every article by default.
@@ -289,8 +236,79 @@ post_edit:
   enable: false
   url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
 
+# Footer Settings
+# ---------------
+footer:
+  since: 2019
+
+  # Icon between year and copyright info.
+  icon:
+    # `heart` is recommended with animation in red (#ff0000).
+    name: icon-cloud-line
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#0078E7"
+
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
+
+  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+  # http://www.beian.miit.gov.cn
+  beian:
+    enable: false
+    # icp: 苏ICP备xxxxxxxx号
+
+  # Any custom text can be defined here.
+  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+
+# Post meta display settings
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+# third party
+# ----------------
+
+# say something
+# https://say.elpsy.cn
+say:
+  enable: true
+  # api: https://say.elpsy.cn/sentences.json
+  # if api is not exist, will use local sentences
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # src is the script
+  src: /js/say.js
+
+# you can new JSON file in your blog root folder
+# example: source/data/sentences.json
+# then set say.api: /data/sentences.json
+# [
+#   {
+#     "content": "我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。",
+#     "from": "《日常》",
+#     "url": "https://baike.baidu.com/item/日常/5844361"
+#   },
+#   {
+#     "content": "是啊，我所爱的，即非群星，也非银河。",
+#     "from": "云游君",
+#     "url": "https://yunyoujun.cn"
+#   },
+#   {
+#     "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
+#     "from": "《万叶集》雷神短歌",
+#     "url": "https://book.douban.com/subject/1066538/"
+#   }
+# ]
+
 # Comments
-# -----------
+# -------
 # gitalk
 # See: https://github.com/gitalk/gitalk
 gitalk:
@@ -317,35 +335,6 @@ valine:
   pageSize: 10 # pagination size
   visitor: true
 
-# Footer Settings
-# ---------------
-footer:
-  since: 2020
-
-  # Icon between year and copyright info.
-  icon:
-    # `heart` is recommended with animation in red (#ff0000).
-    name: icon-cloud-line
-    # If you want to animate the icon, set it to true.
-    animated: true
-    # Change the color of icon, using Hex Code.
-    color: "#0078E7"
-
-  powered:
-    # Hexo link (Powered by Hexo).
-    enable: true
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
-
-  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # http://www.beian.miit.gov.cn
-  beian:
-    enable: false
-    # icp: 苏ICP备xxxxxxxx号
-
-  # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
-
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi:
@@ -356,14 +345,6 @@ busuanzi:
   site_pv_icon: icon-eye-line
   page_pv: true
   page_pv_icon: icon-eye-line
-
-# Post meta display settings
-post_meta:
-  item_text: false
-  created_at: true
-  updated_at: true
-  categories: true
-  tags: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
@@ -382,6 +363,7 @@ local_search:
   enable: false
   src: /js/search/local-search.js
 
+# https://github.com/oncletom/hexo-algolia
 algolia_search:
   enable: false
   src: /js/search/algolia-search.js

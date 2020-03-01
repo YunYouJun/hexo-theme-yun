@@ -30,8 +30,7 @@ if theme.css !== undefined && theme.css.length > 0
   each url in theme.css
     link(rel='stylesheet', href=url_for(url))
 
-if !theme.rss && config.feed && config.feed.path
-  - theme.rss = config.feed.path
+if config.feed && config.feed.path
   != feed_tag(config.feed.path)
 
 if process.env.NODE_ENV !== 'dev'
