@@ -89,8 +89,9 @@ symbol:
 
 reward:
   donate: 打赏
-  wechatpay: 微信支付
+  wechat-pay: 微信支付
   alipay: 支付宝
+  qq: QQ
   comment: 我很可爱，请给我钱！
 
 # accessibility:

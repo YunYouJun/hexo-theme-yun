@@ -157,19 +157,19 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
+  # you need change it to yourself
   pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
-  # pre: https://cdn.yunyoujun.cn
   css:
-    # font
-    # font: https://fonts.googleapis.com/css?family=Noto+Serif+SC|ZCOOL+XiaoWei&display=swap
-    # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
-    # font: https://fonts.loli.net/css?family=Montserrat
-    # icon
-    # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
-    # markdown
-    # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-    # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
-    # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
+  # font
+  # font: https://fonts.googleapis.com/css?family=Noto+Serif+SC|ZCOOL+XiaoWei&display=swap
+  # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
+  # font: https://fonts.loli.net/css?family=Montserrat
+  # icon
+  # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
+  # markdown
+  # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
+  # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
+  # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
   js:
     base:
     async:
@@ -207,12 +207,15 @@ reward_settings:
   url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   #comment: Donate comment here
 reward:
-  wechatpay:
-    path: /img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100" #7BB32E
   alipay:
-    path: /img/donate/alipay-qrcode.jpg
+    path: /img/donate/alipay-qrcode.webp
     color: "#00A3EE"
+  qq:
+    path: /img/donate/qqpay-qrcode.webp
+    color: "#12B7F5"
+  wechat-pay:
+    path: /img/donate/wechatpay-qrcode.webp
+    color: "#2DC100" #7BB32E
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/

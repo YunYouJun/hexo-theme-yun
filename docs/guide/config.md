@@ -411,11 +411,11 @@ reward: true | false
 
 ```yml
 reward:
-  wechatpay:
-    path: /img/donate/wechatpay-qrcode.jpg
+  wechat-pay:
+    path: /img/donate/wechatpay-qrcode.webp
     color: "#2DC100" #7BB32E
   alipay:
-    path: /img/donate/alipay-qrcode.jpg
+    path: /img/donate/alipay-qrcode.webp
     color: "#00A3EE"
 ```
 

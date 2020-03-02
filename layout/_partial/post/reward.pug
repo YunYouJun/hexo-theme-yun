@@ -5,12 +5,10 @@
     #reward-comment!=theme.reward_settings.comment
   #qr(style='display:none;')
     for image, name in theme.reward
-      - var builtin = ['wechatpay', 'alipay']
+      - var builtin = ['qq', 'wechat-pay', 'alipay']
       - var translation = builtin.indexOf(name) !== -1 ? __('reward.' + name) : name
       div(style='display:inline-block')
         img(loading='lazy', src=url_for((theme.cdn.pre || '') + image.path), alt=author + ' ' + translation, title=author + ' ' + translation)
         div
-          if name === 'wechatpay'
-            - name = 'wechat-pay'
           span(title=translation, style='color:' + image.color)
             +icon('icon-' + name + '-line')
