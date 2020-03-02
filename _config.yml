@@ -73,11 +73,19 @@ social:
   # Instagram: https://instagram.com/yourname || instagram
   # Skype: skype:yourname?call|chat || skype
 
+# pages
+# -------
+# friend
+anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.webp
+
 links:
   enable: false
   icon: icon-open-arm-line
   title: 我的小伙伴们
   url: /links
+
+girls:
+  enable: false
 
 banner:
   title: 云游君的小站

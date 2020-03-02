@@ -19,3 +19,8 @@ if (hexo-config('local_search.enable') || hexo-config('algolia_search.enable')) 
 if (hexo-config('gitalk.enable') || hexo-config('valine.enable')) {
   @import '_widget/comment';
 }
+
+// extend page
+if (hexo-config('girls.enable')) {
+  @import '_extend/girls';
+}

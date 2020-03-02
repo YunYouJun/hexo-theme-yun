@@ -1,0 +1,27 @@
+extends _partial/layout.pug
+
+prepend title
+  | #{page.title} | 
+
+block content
+  #page
+    include _partial/page/page-header.pug
+    if page.girls
+      #girls
+        .girl-banner!=page.banner
+        ul.girl-items
+          for girl in page.girls
+            if !girl.url
+              - girl.url = 'https://zh.moegirl.org/' + girl.name
+            li.girl-item
+              a.girl-url(href=girl.url, title=girl.reason, alt='portrait' target='_blank' rel='noopener')
+                figure.girl-info
+                  img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror=`this.src=CONFIG.anonymous_image`)
+                  figcaption.girl-name!=girl.name
+                  figcaption.girl-from!=girl.from
+        .girls-number!=page.girls.length
+    article.post-block
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content
+  if page.comments
+    include ./_third-party/comments/index.pug

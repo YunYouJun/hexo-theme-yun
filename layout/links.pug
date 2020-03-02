@@ -12,7 +12,7 @@ block content
           for link in page.links
             li.link-item
               a.link-url(href=link.url, title=link.desc, alt='portrait' target='_blank' rel='friend')
-                img.link-avatar(lazyload='auto', src=link.avatar, alt=link.name)
+                img.link-avatar(loading='lazy', src=link.avatar, alt=link.name)
                 .link-name!=link.name
               .link-info
                 .link-blog!=link.blog

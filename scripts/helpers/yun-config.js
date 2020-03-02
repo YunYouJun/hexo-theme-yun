@@ -6,6 +6,10 @@ hexo.extend.helper.register("yun_config", function() {
     version: yun_version
   };
 
+  // anonymous_image
+  if (theme.anonymous_image) {
+    exportConfig.anonymous_image = theme.anonymous_image;
+  }
   // say
   if (theme.say.enable) {
     exportConfig.say = {

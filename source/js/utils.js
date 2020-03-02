@@ -39,10 +39,12 @@ Yun.utils = {
       ".post-card-excerpt img, .post-content img, .post-excerpt img"
     );
     // center & lazy
-    images.forEach(image => {
-      image.loading = "lazy";
-      image.parentNode.style.textAlign = "center";
-    });
+    if (images && images.length > 0) {
+      images.forEach(image => {
+        image.loading = "lazy";
+        image.parentNode.style.textAlign = "center";
+      });
+    }
   },
 
   /**
