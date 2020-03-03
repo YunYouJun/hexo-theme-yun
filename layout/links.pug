@@ -12,12 +12,12 @@ block content
           for link in page.links
             li.link-item
               a.link-url(href=link.url, title=link.desc, alt='portrait' target='_blank' rel='friend')
-                img.link-avatar(loading='lazy', src=link.avatar, alt=link.name)
+                img.link-avatar(loading='lazy', src=link.avatar, alt=link.name, onerror='this.src=CONFIG.anonymous_image')
                 .link-name!=link.name
               .link-info
                 .link-blog!=link.blog
                 if !link.desc
-                  - link.desc = '还没想好说些什么'
+                  - link.desc = theme.links.placeholder
                 .link-desc!=link.desc
     article.post-block
       section.post-body(itemprop='articleBody')

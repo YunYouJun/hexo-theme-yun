@@ -21,6 +21,7 @@ html(lang=config.language)
         | #{title}
     include head.pug
     include ../_third-party/cdn.pug
+    block preconnect
   body(class= is_home() ? 'is-home' : '')
     .container
       //- global

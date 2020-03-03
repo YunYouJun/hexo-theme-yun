@@ -3,6 +3,9 @@ extends _partial/layout.pug
 prepend title
   | #{page.title} | 
 
+block preconnect
+  link(rel='preconnect' href='https://img.moegirl.org/', crossorigin)
+
 block content
   #page
     include _partial/page/page-header.pug
@@ -16,7 +19,7 @@ block content
             li.girl-item
               a.girl-url(href=girl.url, title=girl.reason, alt='portrait' target='_blank' rel='noopener')
                 figure.girl-info
-                  img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror=`this.src=CONFIG.anonymous_image`)
+                  img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror='this.src=CONFIG.anonymous_image')
                   figcaption.girl-name!=girl.name
                   figcaption.girl-from!=girl.from
         .girls-number!=page.girls.length

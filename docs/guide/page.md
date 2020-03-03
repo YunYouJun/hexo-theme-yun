@@ -6,9 +6,9 @@
 
 ### Front-matter
 
-|      | Description                | Default |
-| ---- | -------------------------- | ------- |
-| hide | Hide your post temporarily | false   |
+|      | 描述             | 默认值 |
+| ---- | ---------------- | ------ |
+| hide | 临时隐藏你的文章 | false  |
 
 ## 标签 tags
 
@@ -57,3 +57,9 @@ type: categories
 ## 归档 archives
 
 Hexo 默认支持
+
+## Girls
+
+New Feature
+
+...

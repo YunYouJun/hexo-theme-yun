@@ -83,6 +83,8 @@ links:
   icon: icon-open-arm-line
   title: 我的小伙伴们
   url: /links
+  # say something for default link.desc
+  placeholder: 还没想好说些什么
 
 girls:
   enable: false
