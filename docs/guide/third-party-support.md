@@ -51,6 +51,25 @@ add_this_id:
 
 ## 搜索
 
+### 引擎搜索
+
+跳转搜索引擎搜索你的网站内容
+
+可通过 `site:yunyoujun.cn 想要搜索的内容` 进行搜索
+
+🌰：<https://www.google.com/search?q=site:yunyoujun.cn%20云游君>
+
+- `enable`: 开启搜索引擎（因为另外两种搜索都需要额外配置，所以默认开启引擎搜索）
+- `href`: 搜索引擎前缀
+- `domain`: 你网站的域名
+
+```yml
+engine_search:
+  enable: true
+  href: "https://www.google.com/search?q=site:"
+  domain: yunyoujun.cn
+```
+
 ### 本地搜索
 
 您需要先安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)，并参考配置文档。
@@ -63,7 +82,7 @@ add_this_id:
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: true
+  enable: false
   src: /js/search/local-search.js
 ```
 

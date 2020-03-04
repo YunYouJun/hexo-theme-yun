@@ -63,6 +63,10 @@ social:
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "#FF8EB3"
+  POPI:
+    link: https://www.popiask.cn/elpsycn
+    icon: icon-questionnaire-line
+    color: "#525252"
   # bangumi: https://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   # Google: https://plus.google.com/yourname || google
@@ -183,7 +187,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: https://at.alicdn.com/t/font_1140697_ddnjiswrj6.js
+      iconfont: https://at.alicdn.com/t/font_1140697_yw6ikty01j.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 
@@ -369,6 +373,11 @@ symbols_count_time:
 # search
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.webp
+
+engine_search:
+  enable: true
+  href: "https://www.google.com/search?q=site:"
+  domain: yunyoujun.cn
 
 # https://github.com/wzpan/hexo-generator-search
 local_search:

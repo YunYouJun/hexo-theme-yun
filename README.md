@@ -3,9 +3,9 @@
 ![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/Docs/badge.svg)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
 
-<div style="text-align:center">
-<img width="128" src="docs/.vuepress/public/logo.gif" style="border-radius:50%;box-shadow:0 0 10px rgba(0,0,0,0.12)">
-</div>
+<p align="center">
+  <img width="128" src="docs/.vuepress/public/logo.gif">
+</p>
 
 > A simple and fast hexo theme.
 

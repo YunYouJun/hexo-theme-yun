@@ -11,6 +11,7 @@ block content
     include _partial/page/page-header.pug
     if page.girls
       #girls
+        .girls-number!=page.girls.length
         .girl-banner!=page.banner
         ul.girl-items
           for girl in page.girls
@@ -22,7 +23,6 @@ block content
                   img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror='this.src=CONFIG.anonymous_image')
                   figcaption.girl-name!=girl.name
                   figcaption.girl-from!=girl.from
-        .girls-number!=page.girls.length
     article.post-block
       section.post-body(itemprop='articleBody')
         .post-content(class='post-markdown')!= page.content
