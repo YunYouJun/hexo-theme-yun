@@ -75,6 +75,40 @@ cdn:
     defer:
 ```
 
+### 预加载
+
+通过 `preload`， `prefetch`，`preconnect`，`dns-prefetch`来优化网页记载速度。
+
+- `preload`：本页面之后一定会用到的资源
+- `prefetch`：跳转页面可能会用到的资源
+- `dns-prefetch`：解析域名的 DNS 地址
+- `preconnect`：提前与指定域名建立链接，相比 `dns-prefetch` 多来 TCP 连接
+
+> [\<link\> ：外部资源链接元素 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
+
+```yml
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/yun-boot.js
+    - /js/utils.js
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  style:
+    - /css/prism.css
+  script:
+    - /js/toc.js
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+```
+
 ## 图标 Icon
 
 本主题默认使用 Remix Icon 的部分图标，并通过 iconfont 生成的 cdn 加载。
@@ -432,7 +466,7 @@ reward:
 links:
   enable: true
   icon: icon-open-arm-line
-  title: 云游和他的小伙伴们
+  title: 我的小伙伴们
   url: /links
 ```
 
@@ -450,7 +484,7 @@ layout: links
 title: 我的小伙伴们
 date: 2019-06-21 13:06:06
 keywords: 链接
-description: 云游和他的小伙伴们
+description: 云游的小伙伴们
 comments: true
 links:
   - url: https://yunyoujun.cn
@@ -538,7 +572,7 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 
 ## Say
 
-随机在网站主页显示一句~~中二~~句子。
+随机在网站主页显示一句~~中二~~的话。
 
 - `enable`: 是否开启
 - `remote`: 是否使用远程外部数据（通过 fetch 获取 json 数据，数据格式见示例）
