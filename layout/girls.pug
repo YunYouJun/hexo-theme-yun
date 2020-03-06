@@ -17,7 +17,7 @@ block content
           for girl in page.girls
             if !girl.url
               - girl.url = 'https://zh.moegirl.org/' + girl.name
-            li.girl-item
+            li.girl-item(id=girl.name)
               a.girl-url(href=girl.url, title=girl.reason, alt='portrait' target='_blank' rel='noopener')
                 figure.girl-info
                   img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror='this.src=CONFIG.anonymous_image')
