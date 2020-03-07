@@ -31,3 +31,17 @@ symbols_count_time:
 ```
 
 > 更多信息及使用方法请参见 [hexo-symbols-count-time | GitHub](https://github.com/theme-next/hexo-symbols-count-time)。
+
+## RSS
+
+安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，参见官方文档进行配置。
+
+```sh
+npm install hexo-generator-feed --save
+```
+
+配置默认图标为 `icon-rss-line`，如需自定义，进入 `source/_data/yun.yml` 进行配置。
+
+```yml
+rss_icon: icon-rss-line
+```

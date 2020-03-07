@@ -4,21 +4,42 @@
 
 ## 评论
 
-支持同时开启 Gitalk 与 Valine 评论系统。
+### GitHub Issue 与 Gitalk
 
-### Gitalk
+最终我还是决定移除 [Gitalk](https://github.com/gitalk/gitalk)。
 
-参见 [Gitalk](https://github.com/gitalk/gitalk) 官方文档进行配置。
+首先肯定与感谢作者的开源精神与贡献，此前我一直开启 `Gitalk` 作为默认评论。（从弃坑的 Gitment 转来。）
+只是后来因为 GitHub API 的安全策略改变，每次进入文章都会调用 Gitalk 而收到了一大堆的安全警告邮件。
+于是我临时将其关闭，当然现在已经修复。但也因此觉得，Gitalk 对于我的小站点来说未必有开启的必要。（~~没什么人是一个要素~~）
+
+首先，Gitalk 提供的功能其实只要多个链接跳转到 GitHub Issue 页面即可，而且相对来说直接在 GitHub Issue 页面使用。拥有更好的显示和编辑体验。
+其次。我希望我的主题能够成为一个轻量迅速的主题，Gitalk 需要加载额外的 JS 与 CSS，一定程度会影响网页加载速度，并且本身也会有 API 请求数量限制。
+至于直接在文章末尾显示评论，我打算直接使用 Valine 进行补充，期望便捷的朋友，自身也可能更希望使用 Valine 无需登陆的评论。
+而想要收到回复提醒、及不介意使用自己 GitHub 账号参与讨论，自然也不会过于介意多跳转一个页面。
+
+- 因为 Gitalk 自身定位问题，本身就可能存在些许安全隐患，以及开发不是十分活跃，也堆积了不少 ISSUE。
+- Gitalk 通过 label 来搜索，Issues 里自动创建来一堆 label，本强迫症有点难受
+- 当自己访问不存在的链接时，也会自动初始化一些无用的 Issue。
+
+综上，本主题移除 Gitalk 评论。
+并内置实现跳转相关 Issue 的链接按钮与如何使用 GitHub Issue 进行评论的说明。
+可自行配置开启或关闭。
+
+- `filters`: 为 GitHub Issue 搜索规则，可参见 [searching-issues-and-pull-requests](https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)。
 
 ```yml
-gitalk:
-  enable: false
-  clientID: # Github Application Client ID
-  clientSecret: # Github Application Client Secret
-  repo: # GitHub repo
-  owner: # GitHub repo owner
-  admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
+github_issues:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+  filters: is:issue
 ```
+
+在项目 `Settings -> Options -> Features -> Issues -> Set up templates` 中为 GitHub Issues 设置 Comment 模版，第一个创建评论的人可以根据这个模版创建 Issue。
+
+也可以参考我的 [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md)。
+
+> 如果您实在觉得 Gitalk 有必要使用，可以在 Issue 里提出有力的理由来说服我或自行添加。
 
 ### Valine
 

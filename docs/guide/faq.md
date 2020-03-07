@@ -11,4 +11,13 @@
 
 相关 Issue ：[Problem with long pages](https://github.com/hexojs/hexo-browsersync/issues/15)
 
-问题截止目前（2019-04-25）还未解决。
+### 临时解决方案
+
+在根目录的 `_config.yml` 中设置
+
+```yml
+server:
+  compress: true
+```
+
+> https://github.com/hexojs/hexo-browsersync/issues/15#issuecomment-573492492

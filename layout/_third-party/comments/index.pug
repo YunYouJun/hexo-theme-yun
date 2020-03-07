@@ -1,32 +1,10 @@
 .post-comment
-  if theme.gitalk.enable && theme.valine.enable
-    .comment-nav.text-center
-      .comment-tooltip
-        | 若您无 GitHub 账号，可使用 Valine 匿名评论。<br/>
-        | 如果您想要收到回复提醒，建议使用 Gitalk 。
-      button.comment-nav-item.hty-button(data-target='gitalk-container')='Gitalk'
-      |  or 
-      button.comment-nav-item.hty-button(data-target='valine-container')='Valine'
-    script.
-      document.addEventListener("DOMContentLoaded", function(event) {
-        document.querySelector("#valine-container").style.display = "none";
-        let navItems = document.querySelectorAll(".comment-nav-item");
-        navItems.forEach(function(navItem) {
-          navItem.onclick = function() {
-            navItems.forEach((el) => {
-              el.classList.remove("hty-button--raised");
-            })
-            this.classList.add("hty-button--raised");
-            document.querySelectorAll(".comment-container").forEach((el)=>{
-              el.style.display = "none";
-            });
-            document.querySelector("#" + this.dataset.target).style.display = "block";
-          }
-        });
-      });
+  if theme.comment.enable
+    .comment-tooltip.text-center
+      each tip in theme.comment.tips
+        span!=tip
+        br
+      a#github-issues.hty-button.hty-button--raised(href=`https://github.com/${theme.github_issues.username}/${theme.github_issues.repository}/issues?q=${theme.github_issues.filters}+${post.title}`)!="GitHub Issues"
 
-  //- if process.env.NODE_ENV !== 'dev'
-  if theme.gitalk && theme.gitalk.enable
-    include gitalk.pug
   if theme.valine && theme.valine.enable
     include valine.pug

@@ -67,6 +67,10 @@ social:
     link: https://www.popiask.cn/elpsycn
     icon: icon-questionnaire-line
     color: "#525252"
+  喜欢的女孩子:
+    link: https://www.yunyoujun.cn/girls/
+    icon: icon-women-line
+    color: pink
   # bangumi: https://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   # Google: https://plus.google.com/yourname || google
@@ -187,7 +191,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: https://at.alicdn.com/t/font_1140697_yw6ikty01j.js
+      iconfont: //at.alicdn.com/t/font_1140697_tt2nyb1jgcc.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 
@@ -196,8 +200,6 @@ vendors:
   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css
-  gitalk_js: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
@@ -325,15 +327,20 @@ say:
 
 # Comments
 # -------
-# gitalk
-# See: https://github.com/gitalk/gitalk
-gitalk:
-  enable: false
-  clientID: # Github Application Client ID
-  clientSecret: # Github Application Client Secret
-  repo: # GitHub repo
-  owner: # GitHub repo owner
-  admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
+comment:
+  enable: true
+  tips:
+    - 若您无 GitHub 账号，可直接在下方匿名评论。
+    - 如果您想要得到及时回复与提醒，建议跳转 GitHub Issues 进行评论。
+    - 如果没有本文对应 Issue，您可以使用 Comment 模版新建 Issue。
+
+# GitHub Issues Link Button
+# https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
+github_issues:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+  filters: is:issue
 
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
@@ -368,7 +375,7 @@ symbols_count_time:
   item_text_post: true
   item_text_total: true
   awl: 2
-  wpm: 250
+  wpm: 275
 
 # search
 search:

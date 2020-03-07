@@ -7,9 +7,6 @@ categories:
   - world
 ---
 
-- [ ] Docs
-  - [ ] RSS
-
 ## Function
 
 - [ ] PWA
@@ -18,7 +15,6 @@ categories:
   - [x] Sidebar
     - [x] toc
       - [x] scrollspy
-      - [ ] enhance performance
     - [x] site info
   - [ ] header
     - [ ] toolbar
@@ -31,17 +27,18 @@ categories:
   - [x] share
     - [x] addthis
   - [ ] edit (to url in github)
-- [ ] Third Party
+- [x] Third Party
   - [x] fancybox
   - [x] Comment
-    - [x] gitalk
+    - [x] GitHub Issues
+    - [x] gitalk(removed)
     - [x] valine
   - [x] google adsense
   - [x] google analytics
-  - [ ] Search
+  - [x] Search
     - [x] alogia Search
     - [x] local search ([hexo-generator-search](https://github.com/wzpan/hexo-generator-search))
-    - enhance performance
+    - [x] engine search
   - [x] Icon
     - [x] fontawesome
     - [x] material icon
@@ -61,8 +58,9 @@ categories:
     - [ ] freehand star
     - [x] custom image
   - [ ] markdown css toggle
-- [ ] Page
-  - [ ] friend link
+- [x] Page
+  - [x] friend link
+  - [x] girls
 
 ## Reference
 
