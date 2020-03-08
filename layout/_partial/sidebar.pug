@@ -58,17 +58,17 @@ aside.sidebar
 
     if theme.social
       .links-of-author
-        if config.feed && config.feed.path
-          a.links-of-author-item.hty-icon-button(rel='noopener' href=url_for(config.feed.path), title='RSS' target='_blank' style='color:orange')
-            +icon(theme.rss_icon)
         for social, name in theme.social
           a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
             +icon(social.icon)
 
-    if theme.links.enable
-      .links-of-friend
-        a.hty-icon-button(href=url_for(theme.links.url), title=theme.links.title)
-          +icon(theme.links.icon)
+    hr
+
+    .links
+      for link, name in theme.pages
+        a.links-item.hty-icon-button(href=url_for(link.url), title=name, style='color:' + link.color)
+          +icon(link.icon)
+
 
 
   if is_post()

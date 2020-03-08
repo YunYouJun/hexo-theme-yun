@@ -70,7 +70,6 @@ Yun.utils = {
         wrap.style.minHeight = "90px";
         wrap.style.height = iframe.height;
         wrap.style.position = "relative";
-        wrap.style.paddingTop = videoRatio + "%";
 
         let iframeParent = iframe.parentNode;
         iframeParent.insertBefore(wrap, iframe);

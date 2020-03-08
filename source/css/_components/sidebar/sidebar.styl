@@ -11,7 +11,7 @@ $sidebar-bg-image = hexo-config('sidebar.bg_image');
   background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 4rem center;
+  background-position: bottom 3rem center;
   text-align: center;
   z-index: $sidebar-z-index;
   the-transition();
@@ -56,6 +56,19 @@ $sidebar-bg-image = hexo-config('sidebar.bg_image');
     display: block;
   }
 
+  .links {
+    display: block;
+
+    &-item {
+      display: inline-flex;
+
+      .icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
   .links-of-author {
     display: flex;
     flex-wrap: wrap;
@@ -69,16 +82,6 @@ $sidebar-bg-image = hexo-config('sidebar.bg_image');
     &-item {
       line-height: 1;
       font-size: 0.9rem;
-    }
-  }
-
-  .links-of-friend {
-    display: flex;
-    justify-content: center;
-
-    .icon {
-      width: 2rem;
-      height: 2rem;
     }
   }
 }

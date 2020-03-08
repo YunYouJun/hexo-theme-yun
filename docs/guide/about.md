@@ -14,6 +14,12 @@
 
 按钮优先使用简洁异动的图标表现，不呈现文字。
 
+### 速度
+
+谷歌 Audits - Lighthouse 检测分数
+
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
+
 ### 色彩
 
 采用亮色模式

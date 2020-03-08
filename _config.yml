@@ -24,12 +24,14 @@ sidebar:
 
 site_state: true
 
-# set rss in your root config
-# https://github.com/hexojs/hexo-generator-feed
-rss_icon: icon-rss-line
-
 # Social Links.
 social:
+  RSS:
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
   QQ:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
@@ -67,10 +69,10 @@ social:
     link: https://www.popiask.cn/elpsycn
     icon: icon-questionnaire-line
     color: "#525252"
-  喜欢的女孩子:
-    link: https://www.yunyoujun.cn/girls/
-    icon: icon-women-line
-    color: pink
+  微信公众号:
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.webp
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
   # bangumi: https://bangumi.tv/user/yunyoujun || television
   # pixiv: https://pixiv.me/yunyoujun || paint-brush
   # Google: https://plus.google.com/yourname || google
@@ -81,18 +83,20 @@ social:
   # Instagram: https://instagram.com/yourname || instagram
   # Skype: skype:yourname?call|chat || skype
 
+# Extra links
+pages:
+  我的小伙伴们:
+    url: /links/
+    icon: icon-men-line
+    color: dodgerblue
+  喜欢的女孩子:
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
 # pages
 # -------
 # friend
 anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.webp
-
-links:
-  enable: false
-  icon: icon-open-arm-line
-  title: 我的小伙伴们
-  url: /links
-  # say something for default link.desc
-  placeholder: 还没想好说些什么
 
 girls:
   enable: false
@@ -106,7 +110,7 @@ avatar:
   enable: true
   url: /Yun.png # recommend avatar.webp
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
 
@@ -191,7 +195,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_tt2nyb1jgcc.js
+      iconfont: //at.alicdn.com/t/font_1140697_ix6r7to3ly.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 
@@ -331,8 +335,8 @@ comment:
   enable: true
   tips:
     - 若您无 GitHub 账号，可直接在下方匿名评论。
-    - 如果您想要得到及时回复与提醒，建议跳转 GitHub Issues 进行评论。
-    - 如果没有本文对应 Issue，您可以使用 Comment 模版新建 Issue。
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
 
 # GitHub Issues Link Button
 # https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests

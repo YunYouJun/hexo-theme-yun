@@ -358,6 +358,19 @@ menu:
     icon: icon-information-line
 ```
 
+### 页面链接 pages
+
+在 sidebar 的最下方，添加醒目的图标链接。
+
+相比[社交链接](#社交图标)，图标更大。你可以放置你的页面导航，友情链接等。
+
+```yml
+pages:
+  我的小伙伴们:
+    url: /links
+    icon: icon-open-arm-line
+```
+
 ## 文章
 
 ### 信息
@@ -451,48 +464,6 @@ reward:
   alipay:
     path: /img/donate/alipay-qrcode.webp
     color: "#00A3EE"
-```
-
-## 友链
-
-友链显示在侧边栏中
-
-- `enable`: 是否显示友链
-- `icon`: 友链图标
-- `title`: 标题提示
-- `url`: 链接
-
-```yml
-links:
-  enable: true
-  icon: icon-open-arm-line
-  title: 我的小伙伴们
-  url: /links
-```
-
-新建友链页面
-
-```sh
-hexo new page links
-```
-
-进入 `source/links/index.md`
-
-```yml
----
-layout: links
-title: 我的小伙伴们
-date: 2019-06-21 13:06:06
-keywords: 链接
-description: 云游的小伙伴们
-comments: true
-links:
-  - url: https://yunyoujun.cn
-    img: https://yunnyoujun.cn/images/avatar.webp
-    name: 云游君
-    desc: 云游君的小站
----
-
 ```
 
 ## 页脚

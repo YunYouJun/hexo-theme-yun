@@ -17,7 +17,7 @@ block content
               .link-info
                 .link-blog!=link.blog
                 if !link.desc
-                  - link.desc = theme.links.placeholder
+                  - link.desc = page.placeholder
                 .link-desc!=link.desc
     article.post-block
       section.post-body(itemprop='articleBody')
