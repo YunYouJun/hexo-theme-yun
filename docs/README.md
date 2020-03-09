@@ -15,6 +15,6 @@ features:
 footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
 ---
 
-# 示例
+# 示例站点
 
-请访问 [yunyoujun.cn](https://yunyoujun.cn).
+- [云游君的小站](https://www.yunyoujun.cn)

@@ -60,7 +60,7 @@ theme: yun
 
 ```yml
 avatar:
-  url: /images/avatar.webp
+  url: /images/avatar.jpg
   rounded: true
   opacity: 1
 ```
@@ -69,7 +69,7 @@ avatar:
 
 ```yml
 avatar:
-  url: /images/avatar.webp
+  url: /images/avatar.jpg
 ```
 
 :::

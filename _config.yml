@@ -6,9 +6,9 @@ mode: light
 # ---------------
 # color
 colors:
-  primary: "#6200ee"
+  primary: "#0078E7"
+  # primary: "#6200ee"
   selection_bg: "#8e71c1"
-  # primary: "#0078E7"
 
 # Favicon
 # ---------------
@@ -20,7 +20,7 @@ favicon: /favicon.ico
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.webp
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
 
 site_state: true
 
@@ -70,7 +70,7 @@ social:
     icon: icon-questionnaire-line
     color: "#525252"
   微信公众号:
-    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.webp
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "#1AAD19"
   # bangumi: https://bangumi.tv/user/yunyoujun || television
@@ -96,7 +96,7 @@ pages:
 # pages
 # -------
 # friend
-anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.webp
+anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 
 girls:
   enable: false
@@ -108,7 +108,7 @@ banner:
 # Sidebar Avatar
 avatar:
   enable: true
-  url: /Yun.png # recommend avatar.webp
+  url: /Yun.png
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -180,18 +180,16 @@ head:
 # cdn for third-party library (always include)
 cdn:
   # you need change it to yourself
-  pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
   css:
   # font
-  # font: https://fonts.googleapis.com/css?family=Noto+Serif+SC|ZCOOL+XiaoWei&display=swap
   # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
   # font: https://fonts.loli.net/css?family=Montserrat
   # icon
   # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
   # markdown
   # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-  # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/star/star-markdown.min.css
-  # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.0.3/dist/blood/blood-common.min.css
+  # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/planet/planet-markdown.min.css
+  # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/blood/blood-common.min.css
   js:
     base:
     async:
@@ -216,8 +214,7 @@ rymd: false
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.webp
-  # https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg # recomend image related to your mode
 
 # Reward (Donate)
 reward_settings:
@@ -228,13 +225,13 @@ reward_settings:
   #comment: Donate comment here
 reward:
   alipay:
-    path: /img/donate/alipay-qrcode.webp
+    path: /img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
   qq:
-    path: /img/donate/qqpay-qrcode.webp
+    path: /img/donate/qqpay-qrcode.jpg
     color: "#12B7F5"
   wechat-pay:
-    path: /img/donate/wechatpay-qrcode.webp
+    path: /img/donate/wechatpay-qrcode.jpg
     color: "#2DC100" #7BB32E
 
 # Creative Commons 4.0 International License.
@@ -311,21 +308,25 @@ say:
 # you can new JSON file in your blog root folder
 # example: source/data/sentences.json
 # then set say.api: /data/sentences.json
+# https://say.elpsy.cn
 # [
 #   {
-#     "content": "我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。",
-#     "from": "《日常》",
-#     "url": "https://baike.baidu.com/item/日常/5844361"
+#     "content": "Hello, World!",
+#     "author": "Brian Kernighan",
+#     "from": "The C Programming Language"
+#   },
+#   {
+#     "content": "我们一日日度过的所谓日常，实际上可能是接连不断的奇迹。",
+#     "from": "日常"
 #   },
 #   {
 #     "content": "是啊，我所爱的，即非群星，也非银河。",
-#     "from": "云游君",
-#     "url": "https://yunyoujun.cn"
+#     "author": "云游君",
+#     "from": "yunyoujun.cn"
 #   },
 #   {
 #     "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
-#     "from": "《万叶集》雷神短歌",
-#     "url": "https://book.douban.com/subject/1066538/"
+#     "from": "万叶集·雷神短歌"
 #   }
 # ]
 
@@ -383,7 +384,7 @@ symbols_count_time:
 
 # search
 search:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.webp
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
 
 engine_search:
   enable: true

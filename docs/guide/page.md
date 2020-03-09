@@ -62,6 +62,12 @@ Hexo 默认支持
 
 记录喜欢的女孩子们
 
+```sh
+hexo new page girls
+```
+
+进入 `source/girls/index.md`
+
 ```yml
 - name: 名称
   avatar: 头像图片链接
@@ -71,15 +77,6 @@ Hexo 默认支持
 ```
 
 ## 友链 links
-
-友链显示在侧边栏中
-
-```yml
-pages:
-  我的小伙伴们:
-    url: /links
-    icon: icon-open-arm-line
-```
 
 新建友链页面
 
@@ -99,9 +96,19 @@ description: 云游的小伙伴们
 comments: true
 links:
   - url: https://yunyoujun.cn
-    img: https://yunnyoujun.cn/images/avatar.webp
+    img: https://yunnyoujun.cn/images/avatar.jpg
     name: 云游君
     desc: 云游君的小站
 placeholder: 还没想好说些什么 # 默认对友链的描述
 ---
+
+```
+
+友链显示在侧边栏中
+
+```yml
+pages:
+  我的小伙伴们:
+    url: /links
+    icon: icon-open-arm-line
 ```

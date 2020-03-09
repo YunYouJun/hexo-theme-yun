@@ -8,6 +8,13 @@
 
 如果您喜欢我的主题，请给一颗 [:star:](https://github.com/YunYouJun/hexo-theme-yun) 鼓励我。
 
+## 优势
+
+- 可自定义
+- 小且速度快
+- 常用功能齐全
+- 因为还没什么人用，所以基本不用担心撞衫！
+
 ## 设计原则
 
 ### 简洁至上
@@ -19,6 +26,12 @@
 谷歌 Audits - Lighthouse 检测分数
 
 ![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
+
+尽可能使用 CDN。
+
+虽然很想用 WebP，奈何万恶的 Safari 与 iOS 不支持，故又都切回了 JPG。
+
+> 顺便推荐谷歌的在线图片压缩工具：https://squoosh.app/
 
 ### 色彩
 

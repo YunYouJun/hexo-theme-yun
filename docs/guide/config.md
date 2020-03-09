@@ -293,7 +293,7 @@ banner:
 ```yml
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/alice-kirito-eugeo.webp
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
 ```
 
 ### 烟花
@@ -314,7 +314,7 @@ fireworks: true
 rymd: false
 ```
 
-![rymd.webp](/img/rymd.webp)
+![rymd.jpg](https://i.loli.net/2020/03/09/89pi5L2PjcmulyK.jpg)
 
 > 参考自: [rymd](https://codepen.io/hakimel/pen/bzrZGo)
 
@@ -323,14 +323,14 @@ rymd: false
 ### 头像
 
 - `enable`: 是否显示头像
-- `url`: 头像链接（推荐使用 webp ，体积更小，加载更快）
+- `url`: 头像图片链接
 - `rounded`: 是否显示圆形
 - `opacity`: 透明度
 
 ```yml
 avatar:
   enable: true
-  url: /images/avatar.jpg # recommend avatar.webp
+  url: /images/avatar.jpg
   rounded: true
   opacity: 1
 ```
@@ -459,10 +459,10 @@ reward: true | false
 ```yml
 reward:
   wechat-pay:
-    path: /img/donate/wechatpay-qrcode.webp
+    path: /img/donate/wechatpay-qrcode.jpg
     color: "#2DC100" #7BB32E
   alipay:
-    path: /img/donate/alipay-qrcode.webp
+    path: /img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
 ```
 
