@@ -294,6 +294,7 @@ banner:
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+  blur: 30px # 设置背景模糊程度
 ```
 
 ### 烟花
@@ -334,6 +335,12 @@ avatar:
   rounded: true
   opacity: 1
 ```
+
+话说这里是米老鼠，有人发现吗？
+
+![mickey.png](https://i.loli.net/2020/03/10/fPn637T98lA2wJ4.png)
+
+> 哪有彩蛋自己说出来的道理！
 
 ### 导航
 
@@ -414,7 +421,24 @@ post_edit:
 
 请参考 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 使用。
 
-等待 [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) 原生支持 Prism
+等待 [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) 原生支持 Prism 。
+
+```sh
+npm install hexo-prism-plugin
+```
+
+```yml
+# https://github.com/ele828/hexo-prism-plugin
+prism_plugin:
+  mode: preprocess # realtime/preprocess
+  theme: default
+  line_number: false # default false
+  # custom_css: "path/to/your/custom.css" # optional
+```
+
+> 建议关闭行号，这里是 highlight 作者写的为什么 highlight 不支持行号。
+> hexo-prism-plugin 开启行号后，也会存在样式上的些许不协调。
+> 行号是否存在影响不大，当去掉时可以节约出一部分空间，譬如一些原先需要滚动条的代码，去掉后，就可以完全显示出来。
 
 ### 版权
 
@@ -454,16 +478,19 @@ reward: true | false
 
 ### 打赏二维码
 
-默认支持微信、支付宝打赏图标，`color` 为自定义图标颜色。
+默认支持 QQ、微信、支付宝打赏图标，`color` 为自定义图标颜色。
 
 ```yml
 reward:
-  wechat-pay:
-    path: /img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100" #7BB32E
   alipay:
     path: /img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
+  qq:
+    path: /img/donate/qqpay-qrcode.jpg
+    color: "#12B7F5"
+  wechat-pay:
+    path: /img/donate/wechatpay-qrcode.jpg
+    color: "#2DC100" #7BB32E
 ```
 
 ## 页脚

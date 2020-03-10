@@ -38,6 +38,12 @@ yarn add hexo-render-pug hexo-renderer-stylus
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
+如果你想体验新版 `hexo-theme-yun`。
+
+```sh
+git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
 ### 启用主题
 
 修改 Hexo 站点配置文件 `_config.yml`

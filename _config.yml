@@ -193,7 +193,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_ix6r7to3ly.js
+      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
     defer:
       scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 
@@ -215,6 +215,7 @@ rymd: false
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg # recomend image related to your mode
+  blur: 30px
 
 # Reward (Donate)
 reward_settings:
@@ -225,14 +226,22 @@ reward_settings:
   #comment: Donate comment here
 reward:
   alipay:
-    path: /img/donate/alipay-qrcode.jpg
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
+    icon: icon-alipay-line
   qq:
-    path: /img/donate/qqpay-qrcode.jpg
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
     color: "#12B7F5"
+    icon: icon-qq-line
   wechat-pay:
-    path: /img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100" #7BB32E
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+    color: "#2DC100"
+    icon: icon-wechat-pay-line
+  # paypal:
+  #   link: https://paypal.com
+  #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
+  #   color: "#2D70B5"
+  #   icon: icon-paypal-line
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/

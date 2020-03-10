@@ -1,5 +1,7 @@
 $char-size-1 = 1.5rem;
 $banner-animation-duration = 1s;
+$line-animation-duration = 0.4s;
+$char-animation-duration = 0.4s;
 
 if (hexo-config('mode') == 'light') {
   $banner-line-color = $black;
@@ -24,6 +26,10 @@ if (hexo-config('mode') == 'light') {
     background-color: $banner-line-color;
     width: $border-width;
     height: 0;
+    // animation-name: extend-line;
+    animation-duration: $line-animation-duration;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
   }
 
   &-bottom {
@@ -32,8 +38,19 @@ if (hexo-config('mode') == 'light') {
   }
 }
 
+@keyframes extend-line {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--banner-line-height);
+  }
+}
+
 .char {
   font-family: $font-family-serif;
+  font-size: var(--banner-char-size);
   font-weight: 900;
   background-color: rgba($banner-char-bg-color, 0.5);
   line-height: 1;
@@ -48,19 +65,51 @@ if (hexo-config('mode') == 'light') {
     display: flex;
     color: $banner-char-color;
     opacity: 0;
-    animation-name: fade-in;
-    animation-duration: $banner-animation-duration;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
   }
 
   &-left {
     border-left: $border-width solid $banner-line-color;
     border-right: 0px solid rgba($colors.primary, 0.1);
+    border-right-width: 0px;
+    // animation-name: char-move-left;
+    animation-duration: $char-animation-duration;
+    animation-delay: $line-animation-duration;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
   }
 
   &-right {
     border-left: 0px solid rgba($colors.primary, 0.1);
     border-right: $border-width solid $banner-line-color;
+    border-left-width: 0px;
+    // animation-name: char-move-right;
+    animation-duration: $char-animation-duration;
+    animation-delay: $line-animation-duration;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes char-move-left {
+  from {
+    opacity: 0;
+    border-right-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-right-width: var(--banner-char-size, 1rem);
+  }
+}
+
+@keyframes char-move-right {
+  from {
+    opacity: 0;
+    border-left-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-left-width: var(--banner-char-size, 1rem);
   }
 }

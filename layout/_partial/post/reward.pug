@@ -4,11 +4,13 @@
   if theme.reward_settings.comment
     #reward-comment!=theme.reward_settings.comment
   #qr(style='display:none;')
-    for image, name in theme.reward
+    for method, name in theme.reward
       - var builtin = ['qq', 'wechat-pay', 'alipay']
       - var translation = builtin.indexOf(name) !== -1 ? __('reward.' + name) : name
       div(style='display:inline-block')
-        img(loading='lazy', src=url_for(image.path), alt=author + ' ' + translation, title=author + ' ' + translation)
-        div
-          span(title=translation, style='color:' + image.color)
-            +icon('icon-' + name + '-line')
+        if method.path
+          a(href= method.link ? method.link : method.path)
+            img(loading='lazy', src=url_for(method.path), alt=author + ' ' + translation, title=author + ' ' + translation)
+          div
+            span(title=translation, style='color:' + method.color)
+              +icon(method.icon)

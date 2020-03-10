@@ -74,7 +74,7 @@ module.exports = {
         editLinkText: "帮助改善此页面！( ￣□￣)/",
         nav: [
           { text: "使用指南", link: "/guide/" },
-          { text: "示例", link: "https://www.yunyoujun.cn" }
+          { text: "示例站点", link: "https://www.yunyoujun.cn" }
         ]
       },
       "/en/": {
