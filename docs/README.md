@@ -17,4 +17,21 @@ footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
 
 # 示例站点
 
-- [云游君的小站](https://www.yunyoujun.cn)
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://www.yunyoujun.cn">
+        <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg"/>
+        <br />
+        <sub>云游君的小站</sub>  
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://yuexiaoya.info">
+        <img width="80px" src="https://yuexiaoya.info/photo.jpg"/>
+        <br />
+        <sub>落梅听风雪</sub>
+      </a>
+    </td>
+  </tr>
+</table>
