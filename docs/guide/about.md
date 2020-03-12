@@ -2,36 +2,52 @@
 
 本主题是基于 [Hexo](https://hexo.io) 的自定义主题。
 
-请先了解 Hexo 的相关使用方法。
+请先了解 [Hexo](https://hexo.io/zh-cn/docs/) 的相关使用方法。
 
-- [文档 ｜ Hexo](https://hexo.io/zh-cn/docs/)
+你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
 
 如果您喜欢我的主题，请给一颗 [:star:](https://github.com/YunYouJun/hexo-theme-yun) 鼓励我。
 
+## 关键词
+
+简洁、优雅、自适应、快速、CDN、有趣、功能齐全
+
 ## 优势
 
-- 可自定义
-- 小且速度快
-- 常用功能齐全
+- 文档！（我觉得像咱这样有详细文档的主题还真不多，膨胀）
+- 自定义程度高
+- 小且速度快（无 jQuery 依赖，尽可能使用 CDN 与最新的 API）
 - 因为还没什么人用，所以基本不用担心撞衫！
+- 一些奇怪的功能（譬如生成老婆名单？）
+
+> 我发现大部分的 Hexo 主题都引入了 jQuery 以方便开发。
+> 而现今 jQuery 的 API 已经逐渐融入现代浏览器的标准，所以本主题移除了 jQuery 并全部使用原生 JavaScript 来实现以提升速度。
 
 ## 设计原则
 
 ### 简洁至上
 
-按钮优先使用简洁异动的图标表现，不呈现文字。
+按钮优先使用简洁易懂的图标表现，不呈现文字。
+
+### 新颖
+
+在大部分浏览器已经支持的情况下，优先使用最新的 API。（可以减少冗余代码，提高速度。）
 
 ### 速度
 
-谷歌 Audits - Lighthouse 检测分数
+谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
+![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
+
+谷歌浏览器 Audits - Lighthouse 检测分数
 
 ![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
 
-尽可能使用 CDN。
+尽可能使用 CDN，提高访问速度。
 
 虽然很想用 WebP，奈何万恶的 Safari 与 iOS 不支持，故又都切回了 JPG。
 
-> 顺便推荐谷歌的在线图片压缩工具：https://squoosh.app/
+> 顺便推荐谷歌的在线图片压缩工具：<https://squoosh.app/>
 
 ### 色彩
 

@@ -374,8 +374,9 @@ menu:
 ```yml
 pages:
   我的小伙伴们:
-    url: /links
-    icon: icon-open-arm-line
+    url: /links/
+    icon: icon-men-line
+    color: dodgerblue
 ```
 
 ## 文章
@@ -436,7 +437,7 @@ prism_plugin:
   # custom_css: "path/to/your/custom.css" # optional
 ```
 
-> 建议关闭行号，这里是 highlight 作者写的为什么 highlight 不支持行号。
+> 建议关闭行号，[这里](https://highlightjs.readthedocs.io/en/latest/line-numbers.html)是 highlight 作者写的为什么 highlight 不支持行号。
 > hexo-prism-plugin 开启行号后，也会存在样式上的些许不协调。
 > 行号是否存在影响不大，当去掉时可以节约出一部分空间，譬如一些原先需要滚动条的代码，去掉后，就可以完全显示出来。
 

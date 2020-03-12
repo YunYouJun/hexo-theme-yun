@@ -14,15 +14,15 @@
 ## 示例站点
 
 <table align="center">
-  <tr>
-    <td align="center">
+  <tr align="center">
+    <td>
       <a href="https://www.yunyoujun.cn">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg"/>
         <br />
         <sub>云游君的小站</sub>  
       </a>
     </td>
-    <td align="center">
+    <td>
       <a href="https://yuexiaoya.info">
         <img width="80px" src="https://yuexiaoya.info/photo.jpg"/>
         <br />
@@ -46,9 +46,9 @@ npm install hexo-render-pug hexo-renderer-stylus
 
 ### Plugins
 
-```sh
-npm install hexo-symbols-count-time
-```
+Deprecated highlight.js in Hexo.
+
+> More info [here](https://yun.yunyoujun.cn/guide/config.html#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE).
 
 ## Usage
 
@@ -57,9 +57,9 @@ npm install hexo-symbols-count-time
 theme: yun
 ```
 
-### config
+### Config
 
-More Info [here](https://yun.yunyoujun.cn/guide/config/).
+More info [here](https://yun.yunyoujun.cn/guide/config.html).
 
 ## Inspiration
 

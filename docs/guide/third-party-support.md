@@ -14,11 +14,11 @@
 
 首先，Gitalk 提供的功能其实只要多个链接跳转到 GitHub Issue 页面即可，而且相对来说直接在 GitHub Issue 页面使用。拥有更好的显示和编辑体验。
 其次。我希望我的主题能够成为一个轻量迅速的主题，Gitalk 需要加载额外的 JS 与 CSS，一定程度会影响网页加载速度，并且本身也会有 API 请求数量限制。
-至于直接在文章末尾显示评论，我打算直接使用 Valine 进行补充，期望便捷的朋友，自身也可能更希望使用 Valine 无需登陆的评论。
+至于直接在文章末尾显示评论，我打算使用 Valine 进行补充，期望便捷的朋友，自身也可能更希望使用 Valine 无需登陆的评论。
 而想要收到回复提醒、及不介意使用自己 GitHub 账号参与讨论，自然也不会过于介意多跳转一个页面。
 
 - 因为 Gitalk 自身定位问题，本身就可能存在些许安全隐患，以及开发不是十分活跃，也堆积了不少 ISSUE。
-- Gitalk 通过 label 来搜索，Issues 里自动创建来一堆 label，本强迫症有点难受
+- Gitalk 通过 label 来搜索，Issues 里自动创建来一堆 label，本强迫症有点难受。
 - 当自己访问不存在的链接时，也会自动初始化一些无用的 Issue。
 
 综上，本主题移除 Gitalk 评论。
@@ -60,15 +60,15 @@ valine:
   visitor: true
 ```
 
-## 分享
+<!-- ## 分享
 
 ### AddThis
 
-AddThis 提供多种社交分享挂件，请先前往 AddThis 获取您的 ID。
+AddThis 提供多种社交分享挂件，请先前往 [AddThis](https://www.addthis.com/) 获取您的 ID。
 
 ```yml
 add_this_id:
-```
+``` -->
 
 ## 搜索
 
