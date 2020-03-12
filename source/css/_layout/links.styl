@@ -34,13 +34,13 @@
   .link {
     &-url {
       display: inline-block;
+      line-height: 0;
     }
 
     &-avatar {
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
-      padding: 4px;
       background-color: #fff;
       border: 1px solid #ddd;
       transition: 0.5s;
@@ -51,25 +51,22 @@
     }
 
     &-info {
-      padding-left: 1rem;
-      padding-top: 1rem;
-    }
-
-    &-name {
-      margin-top: 0px;
-      padding-top: 0px;
-      font-size: 0.9rem;
-      color: $dark;
+      padding-left: 0.6rem;
     }
 
     &-blog {
       font-family: $font-family-serif;
       font-weight: 900;
+      margin: 0.42rem 0;
     }
 
     &-desc {
       font-size: 0.8rem;
       margin-top: 0.5rem;
+      width: 10.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 }
