@@ -117,9 +117,10 @@ description: 云游的小伙伴们
 comments: true
 links:
   - url: https://yunyoujun.cn
-    img: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
+    avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
     name: 云游君
-    desc: 云游君的小站
+    blog: 云游君的小站
+    desc: All at sea.
 placeholder: 还没想好说些什么 # 默认对友链的描述
 ---
 
@@ -130,6 +131,7 @@ placeholder: 还没想好说些什么 # 默认对友链的描述
 ```yml
 pages:
   我的小伙伴们:
-    url: /links
-    icon: icon-open-arm-line
+    url: /links/
+    icon: icon-men-line
+    color: dodgerblue
 ```
