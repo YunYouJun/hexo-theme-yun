@@ -24,6 +24,8 @@ block content
       section.post-body(itemprop='articleBody')
         .post-content(class='post-markdown')!=post.content
 
+        if page.reward !== undefined
+          - theme.reward_settings.enable = page.reward
         if theme.reward_settings.enable
           include _partial/post/reward.pug
 

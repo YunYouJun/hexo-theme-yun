@@ -81,6 +81,15 @@ Hexo 默认支持
 
 页面示例：<https://yunyoujun.cn/girls/>
 
+先设置开启。（我知道大多数人，可能并不会使用这个功能。所以默认是关闭的。）
+
+> 当关闭时，该页面的 CSS 文件也不会被打包进最后的 CSS 文件。所以不用担心本主题该功能会影响加载速度。
+
+```yml
+girls:
+  enable: true
+```
+
 ```sh
 hexo new page girls
 ```

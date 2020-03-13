@@ -129,7 +129,7 @@ menu:
     path: /categories
     icon: icon-folder-2-line
   about:
-    path: /about/
+    path: /about
     icon: icon-information-line
 
 # archive
@@ -224,8 +224,9 @@ reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
   enable: true
+  comment: I'm so cute. Please give me money.
   url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
-  #comment: Donate comment here
+
 reward:
   alipay:
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
