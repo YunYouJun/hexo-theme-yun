@@ -18,6 +18,7 @@
 ```yml
 color:
   primary: "#6200ee"
+  selection_bg: "#8e71c1" # 选取文字时的背景色
 ```
 
 ## 头部资源
@@ -28,9 +29,9 @@ color:
 
 JavaScript 资源类型说明：
 
-- `base`: 必须提前加载。
-- `async`: 可异步记载。
-- `defer`: 必须最后加载。
+- `base`: 必须提前加载并执行。
+- `async`: 异步加载，加载完成后立即执行。
+- `defer`: 异步加载资源，但最后执行。
 
 ```yml
 head:
@@ -39,7 +40,6 @@ head:
   js:
     base:
     async:
-      # 如果您不打算自定义图标，请务必附带以下 cdn 链接。
     defer:
 ```
 
@@ -67,11 +67,12 @@ Content Delivery Network，统一加载网络资源，有利于提高网页加�
 
 ```yml
 cdn:
-  pre:
   css:
   js:
     base:
     async:
+      # 默认引入的图标资源，使用 iconfont
+      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
     defer:
 ```
 
@@ -311,13 +312,21 @@ fireworks: true
 
 群星移动效果，默认关闭。（可能会影响性能。）
 
-```tml
+```yml
 rymd: false
 ```
 
 ![rymd.jpg](https://i.loli.net/2020/03/09/89pi5L2PjcmulyK.jpg)
 
 > 参考自: [rymd](https://codepen.io/hakimel/pen/bzrZGo)
+
+### ScrollReveal
+
+首页文章卡片的滚动浮现效果，可见[官网](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js)，默认开启。
+
+```yml
+scrollreveal: true
+```
 
 ## 侧边栏
 
@@ -599,40 +608,48 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 随机在网站主页显示一句~~中二~~的话。
 
 - `enable`: 是否开启
-- `remote`: 是否使用远程外部数据（通过 fetch 获取 json 数据，数据格式见示例）
 - `api`: 远程 JSON API
+- `src`: 调用的 js 文件，最好不要修改（你也可以自己写，来加载想要的 JSON 格式。）
 
 ```yml
 say:
   enable: true
-  remote: true
-  # api: https://say.elpsy.cn/sentences.json
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  src: /js/say.js
 ```
 
 > [say.elpsy.cn](https://say.elpsy.cn) 是我收藏中二语句的地方。= =，自动导出 JSON 用来拉取。  
 > 可以自定义，不介意的话，也可以用我的。
 
-如果不使用外部远程，则需要自定义语句。
+如果不使用外部远程，则需要自定义语句.
 
-```yml
-# when remote is false
-sentences:
-  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
-    from: 《日常》
-    url: https://baike.baidu.com/item/日常/5844361
-  - content: 是啊，我所爱的，即非群星，也非银河。
-    from: 云游君
-    url: https://yunyoujun.cn
-  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
-    from: 《万叶集》雷神短歌
-    url: https://book.douban.com/subject/1066538/
-  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
-    from: 《小杂感》鲁迅
-    url: https://baike.baidu.com/item/小杂感
-  - content: 遍身罗绮者，不是养蚕人。
-    from: 《蚕妇》张俞
-    url: https://baike.baidu.com/item/蚕妇/40814
+你可以根目录的 `source` 文件夹下新建 `data/sentences.json`。（注意是 `data` 不是 `_data`，当然你新建别的文件夹也可以。）
+
+并设置 `say.api` 为 `/data/sentences.json`。
+
+格式如下：
+
+```json
+[
+  {
+    "content": "Hello, World!",
+    "author": "Brian Kernighan",
+    "from": "The C Programming Language"
+  },
+  {
+    "content": "我们一日日度过的所谓日常，实际上可能是接连不断的奇迹。",
+    "from": "日常"
+  },
+  {
+    "content": "是啊，我所爱的，即非群星，也非银河。",
+    "author": "云游君",
+    "from": "yunyoujun.cn"
+  },
+  {
+    "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
+    "from": "万叶集·雷神短歌"
+  }
+]
 ```
 
 ## 更多配置

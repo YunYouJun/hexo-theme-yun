@@ -11,7 +11,11 @@
 
 - Docs: <https://yun.yunyoujun.cn>
 
-## 示例站点
+## Demo Sites
+
+If you are using this theme, welcome to leave your site in [Demo Sites | Example Site](https://github.com/YunYouJun/hexo-theme-yun/issues/3), and I will add it to the sample site below.
+
+如果你已经使用了本主题，欢迎前往 [Demo Sites | 示例站点](https://github.com/YunYouJun/hexo-theme-yun/issues/3) 留下你的站点，我将会将其添加到下方的示例站点中。
 
 <table align="center">
   <tr align="center">
@@ -60,6 +64,15 @@ theme: yun
 ### Config
 
 More info [here](https://yun.yunyoujun.cn/guide/config.html).
+
+### Upgrade
+
+You just need:
+
+```sh
+cd themes/yun
+git pull
+```
 
 ## Inspiration
 

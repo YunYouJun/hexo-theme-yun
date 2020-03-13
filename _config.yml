@@ -195,7 +195,6 @@ cdn:
     async:
       iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
     defer:
-      scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 
 # cdn for third-party library (alternative include)
 vendors:
@@ -203,6 +202,7 @@ vendors:
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
   search: /js/search/index.js
@@ -211,6 +211,8 @@ vendors:
 # UI
 fireworks: true
 rymd: false
+# You can see effect in https://scrollrevealjs.org/
+scrollreveal: true
 
 bg_image:
   enable: true
@@ -309,7 +311,7 @@ post_meta:
 say:
   enable: true
   # api: https://say.elpsy.cn/sentences.json
-  # if api is not exist, will use local sentences
+  # /data/sentences.json
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
   # src is the script
   src: /js/say.js
