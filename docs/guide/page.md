@@ -117,7 +117,7 @@ description: 云游的小伙伴们
 comments: true
 links:
   - url: https://yunyoujun.cn
-    img: https://yunnyoujun.cn/images/avatar.jpg
+    img: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
     name: 云游君
     desc: 云游君的小站
 placeholder: 还没想好说些什么 # 默认对友链的描述

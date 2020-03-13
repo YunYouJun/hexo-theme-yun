@@ -276,7 +276,7 @@ bilibili:
 
 ## 首页标语
 
-首页的垂直交错排列文字效果。您可以访问 <https://yunyoujun.cn> 查看效果。
+首页的垂直交错排列文字效果。您可以访问 <https://yunyoujun.cn> 查看效果。（每次刷新，随机字体大小）
 
 如果您未定义 `banner`，将默认使用您为 Hexo 配置的标题。
 
@@ -309,7 +309,7 @@ fireworks: true
 
 ### rymd
 
-群星移动效果，默认关闭。
+群星移动效果，默认关闭。（可能会影响性能。）
 
 ```tml
 rymd: false
@@ -364,6 +364,27 @@ menu:
     path: /about
     icon: icon-information-line
 ```
+
+::: tip
+侧边栏的标签与分类，只有当你真正有文章使用了它们时才会被展示出来。
+
+例如：
+
+```md
+---
+title: 教你如何从零开始搭建一个属于自己的网站
+date: 2020-03-05 01:31:08
+updated: 2020-03-13 01:31:08
+tags:
+  - 教程
+  - Hexo
+  - 分享
+categories:
+  - 云游的小安利
+---
+```
+
+:::
 
 ### 页面链接 pages
 

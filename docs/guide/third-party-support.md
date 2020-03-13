@@ -43,7 +43,11 @@ github_issues:
 
 ### Valine
 
-参见 [Valine](https://valine.js.org) 官方文档进行配置。
+参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随本主题语言设置。
+
+实际上，你只需要参考下方页面获取配置所需的 appId 和 appKey 即可。（不需要安装，主题默认使用 CDN。模版也已经内置。）
+
+> [快速开始 - 获取APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
 ```yml
 valine:
