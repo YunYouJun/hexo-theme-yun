@@ -20,6 +20,7 @@
 - 因为 Gitalk 自身定位问题，本身就可能存在些许安全隐患，以及开发不是十分活跃，也堆积了不少 ISSUE。
 - Gitalk 通过 label 来搜索，Issues 里自动创建来一堆 label，本强迫症有点难受。
 - 当自己访问不存在的链接时，也会自动初始化一些无用的 Issue。
+- 用户需要先授权第三方 OAuth。
 
 综上，本主题移除 Gitalk 评论。
 并内置实现跳转相关 Issue 的链接按钮与如何使用 GitHub Issue 进行评论的说明。
@@ -47,7 +48,7 @@ github_issues:
 
 实际上，你只需要参考下方页面获取配置所需的 appId 和 appKey 即可。（不需要安装，主题默认使用 CDN。模版也已经内置。）
 
-> [快速开始 - 获取APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
+> [快速开始 - 获取 APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
 ```yml
 valine:

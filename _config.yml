@@ -95,11 +95,6 @@ pages:
     color: hotpink
 # pages
 # -------
-# 404
-# You can see this only when you deploy it to GitHub Pages.
-# You can also see it locally through /404.html
-404: true
-
 # friend
 anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 

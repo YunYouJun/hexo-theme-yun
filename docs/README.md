@@ -20,19 +20,26 @@ footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
 如果你已经使用了本主题，欢迎前往 [Demo Sites | 示例站点](https://github.com/YunYouJun/hexo-theme-yun/issues/3) 留下你的站点，我将会将其添加到下方的示例站点中。
 
 <table align="center">
-  <tr>
-    <td align="center">
+  <tr align="center">
+    <td>
       <a href="https://www.yunyoujun.cn">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg"/>
         <br />
         <sub>云游君的小站</sub>  
       </a>
     </td>
-    <td align="center">
+    <td>
       <a href="https://yuexiaoya.info">
         <img width="80px" src="https://yuexiaoya.info/photo.jpg"/>
         <br />
         <sub>落梅听风雪</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://sernikki.github.io">
+        <img width="80px" src="https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg"/>
+        <br />
+        <sub>神崎日照の小窝</sub>
       </a>
     </td>
   </tr>

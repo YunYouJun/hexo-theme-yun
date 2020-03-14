@@ -33,6 +33,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub>落梅听风雪</sub>
       </a>
     </td>
+    <td>
+      <a href="https://sernikki.github.io">
+        <img width="80px" src="https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg"/>
+        <br />
+        <sub>神崎日照の小窝</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
