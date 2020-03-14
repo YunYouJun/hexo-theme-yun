@@ -75,36 +75,26 @@ type: categories
 
 Hexo 默认支持
 
-## Girls
+## 404
 
-记录喜欢的女孩子们
+你需要先新建 404 页面。可以直接在 `source` 目录下新建 `404.md`。
 
-页面示例：<https://yunyoujun.cn/girls/>
-
-先设置开启。（我知道大多数人，可能并不会使用这个功能。所以默认是关闭的。）
-
-> 当关闭时，该页面的 CSS 文件也不会被打包进最后的 CSS 文件。所以不用担心本主题该功能会影响加载速度。
-
-```yml
-girls:
-  enable: true
+```md
+---
+layout: 404
+title: 四大皆空
+permalink: /404.html
+reward: false
+---
 ```
 
-```sh
-hexo new page girls
-```
+只有当你将其部署到 GitHub Pages 上，你访问不存在的页面才会显示。
 
-进入 `source/girls/index.md`
+Example: <https://www.yunyoujun.cn/404.html>
 
-```yml
-- name: 名称
-  avatar: 头像图片链接
-  from: 出自什么作品
-  url: 人物百科链接
-  reason: 喜欢的理由
-```
+在本地，你也可以直接访问 `/404.html` 查看效果。
 
-可参考我的[配置](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md)。
+> [Creating a custom 404 page for your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
 
 ## 友链 links
 
@@ -144,3 +134,34 @@ pages:
     icon: icon-men-line
     color: dodgerblue
 ```
+
+## Girls
+
+记录喜欢的女孩子们
+
+页面示例：<https://yunyoujun.cn/girls/>
+
+先设置开启。（我知道大多数人，可能并不会使用这个功能。所以默认是关闭的。）
+
+> 当关闭时，该页面的 CSS 文件也不会被打包进最后的 CSS 文件。所以不用担心本主题该功能会影响加载速度。
+
+```yml
+girls:
+  enable: true
+```
+
+```sh
+hexo new page girls
+```
+
+进入 `source/girls/index.md`
+
+```yml
+- name: 名称
+  avatar: 头像图片链接
+  from: 出自什么作品
+  url: 人物百科链接
+  reason: 喜欢的理由
+```
+
+可参考我的[配置](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md)。

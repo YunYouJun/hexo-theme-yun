@@ -95,6 +95,11 @@ pages:
     color: hotpink
 # pages
 # -------
+# 404
+# You can see this only when you deploy it to GitHub Pages.
+# You can also see it locally through /404.html
+404: true
+
 # friend
 anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 
@@ -221,8 +226,8 @@ bg_image:
 
 # Reward (Donate)
 reward_settings:
-  # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+  # If true, reward would be displayed in every posts and pages by default.
+  # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
   enable: true
   comment: I'm so cute. Please give me money.
   url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96

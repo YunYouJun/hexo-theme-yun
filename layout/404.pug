@@ -1,0 +1,23 @@
+extends _partial/layout.pug
+
+prepend title
+  | #{page.title} | 
+
+block content
+  #page
+    include _partial/page/page-header.pug
+    .not-found 404
+    style.
+      .not-found {
+        text-align: center;
+        color: #fff;
+        font-size: 12rem;
+        text-shadow: 
+          0 5px 10px rgba(0,0,0,.25), 
+          0 20px 20px rgba(0,0,0,.15);
+      }
+    article.post-block
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content
+  if page.comments
+    include ./_third-party/comments/index.pug

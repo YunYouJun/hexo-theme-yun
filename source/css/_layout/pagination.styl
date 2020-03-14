@@ -4,8 +4,8 @@
   height: 2rem;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   background-color: alpha($white, 0.5);
+  transition: 0.2s;
 }
 
 .pagination {
@@ -22,7 +22,11 @@
     text-decoration: none;
 
     &:hover {
-      background: alpha($colors.primary, 0.5);
+      background: lighten($colors.primary, 90%);
+    }
+
+    &:active {
+      background: lighten($colors.primary, 20%);
       color: $white;
     }
 
