@@ -87,7 +87,7 @@ social:
 pages:
   我的小伙伴们:
     url: /links/
-    icon: icon-men-line
+    icon: icon-genderless-line
     color: dodgerblue
   喜欢的女孩子:
     url: /girls/
@@ -193,7 +193,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
+      iconfont: //at.alicdn.com/t/font_1140697_h3ruvprb06.js
     defer:
 
 # cdn for third-party library (alternative include)
