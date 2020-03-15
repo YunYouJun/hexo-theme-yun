@@ -62,12 +62,14 @@ aside.sidebar
           a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
             +icon(social.icon)
 
-    hr
 
-    .links
-      for link, name in theme.pages
-        a.links-item.hty-icon-button(href=url_for(link.url), title=name, style='color:' + link.color)
-          +icon(link.icon)
+
+    if theme.pages
+      hr
+      .links
+        for link, name in theme.pages
+          a.links-item.hty-icon-button(href=url_for(link.url), title=name, style='color:' + link.color)
+            +icon(link.icon)
 
 
 

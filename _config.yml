@@ -85,14 +85,15 @@ social:
 
 # Extra links
 pages:
-  我的小伙伴们:
-    url: /links/
-    icon: icon-genderless-line
-    color: dodgerblue
-  喜欢的女孩子:
-    url: /girls/
-    icon: icon-women-line
-    color: hotpink
+  # 我的小伙伴们:
+  #   url: /links/
+  #   icon: icon-genderless-line
+  #   color: dodgerblue
+  # 喜欢的女孩子:
+  #   url: /girls/
+  #   icon: icon-women-line
+  #   color: hotpink
+
 # pages
 # -------
 # friend

@@ -65,6 +65,8 @@ valine:
   visitor: true
 ```
 
+Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)
+
 <!-- ## 分享
 
 ### AddThis
