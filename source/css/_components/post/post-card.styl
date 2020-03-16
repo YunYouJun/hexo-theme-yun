@@ -32,22 +32,25 @@
   &__actions {
     padding-left: 1rem;
     padding-right: 1rem;
+    justify-content: space-between;
   }
 
   &-tag {
-    display: flex;
-    flex-grow: 1;
+    display: inline-flex;
     justify-content: flex-end;
   }
 
   &-tag, &-category {
     font-size: 0.8rem;
 
+    // border: 1px solid black;
     span {
-      color: $dark;
+      color: var(--text-color, black);
+      letter-spacing: 1px;
 
+      // font-weight: normal;
       &:hover {
-        color: $colors.primary;
+        text-shadow: 0 0 1px var(--text-color, black);
       }
     }
 
@@ -57,12 +60,9 @@
     }
   }
 
-  &-readmore {
-    margin: 1rem auto;
-
-    button {
-      border-radius: 0;
-    }
+  .tag-name {
+    padding-left: 0.1rem;
+    padding-right: 0.2rem;
   }
 
   img {
@@ -75,14 +75,6 @@
 
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
-    }
-  }
-
-  .yuque-button {
-    --hty-primary: $color-yuque;
-
-    &:hover {
-      background-color: alpha($green, 0.9);
     }
   }
 
@@ -101,11 +93,6 @@
         height: 2rem;
         margin-bottom: -0.2rem;
       }
-    }
-
-    &-button {
-      --hty-primary: $color-bilibili;
-      background-color: alpha($color-bilibili, 0.9);
     }
   }
 }

@@ -1,5 +1,5 @@
 // wrap
-document.addEventListener("DOMContentLoaded", function() {
+function initPage() {
   if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal(".post-card");
   }
@@ -35,4 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       passive: true
     }
   );
-});
+}
+
+document.addEventListener("DOMContentLoaded", initPage);

@@ -15,16 +15,13 @@
   margin: 0.5rem;
   width: 15rem;
   transition: 0.2s;
-  border: 1px solid #ccc;
+  color: var(--primary-color, black);
+  border: 1px solid var(--primary-color, gray);
 
   &:hover {
     color: white;
-    background-color: black;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-
-    .link-name {
-      color: white;
-    }
+    background-color: var(--primary-color, gray);
+    box-shadow: 0 2px 20px var(--primary-color, gray);
   }
 
   +mobile() {
@@ -42,7 +39,7 @@
       height: 4rem;
       border-radius: 50%;
       background-color: #fff;
-      border: 1px solid #ddd;
+      border: 1px solid var(--primary-color, gray);
       transition: 0.5s;
 
       &:hover {

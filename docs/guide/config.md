@@ -19,6 +19,38 @@
 color:
   primary: "#6200ee"
   selection_bg: "#8e71c1" # 选取文字时的背景色
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+```
+
+### tags
+
+可以为你的标签指定色彩，默认色 `#333`。
+
+```yml
+tags:
+  Vue: "#4fc08d"
+  Hexo: "0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+```
+
+### categories
+
+可以为你的分类指定色彩，默认色 `#333`。
+
+```yml
+categories:
+  笔记: dimgray
 ```
 
 ## 头部资源
@@ -84,8 +116,8 @@ cdn:
 
 - `preload`：本页面之后一定会用到的资源
 - `prefetch`：跳转页面可能会用到的资源
-- `dns-prefetch`：解析域名的 DNS 地址
-- `preconnect`：提前与指定域名建立链接，相比 `dns-prefetch` 多来 TCP 连接
+- `dns-prefetch`：解析将要用到的域名的 DNS 地址
+- `preconnect`：提前与指定域名建立链接，相比 `dns-prefetch` 多了 TCP 连接
 
 > [\<link\> ：外部资源链接元素 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
 

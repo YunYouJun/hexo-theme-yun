@@ -10,7 +10,7 @@ block content
       .links
         ul.link-items
           for link in page.links
-            li.link-item(id=link.name)
+            li.link-item(id=link.name, style= link.color ? `--primary-color:${link.color}` : '')
               a.link-url(href=link.url, title=link.name, alt='portrait' target='_blank' rel='friend')
                 img.link-avatar(loading='lazy', src=link.avatar, alt=link.name, onerror='this.src=CONFIG.anonymous_image')
               .link-info

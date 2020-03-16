@@ -9,6 +9,8 @@ colors:
   primary: "#0078E7"
   # primary: "#6200ee"
   selection_bg: "#8e71c1"
+  # tag_start_color:
+  # tag_end_color:
 
 # Favicon
 # ---------------
@@ -136,6 +138,24 @@ menu:
 # archive
 archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
+
+# You can set color for every tag or category.
+tags:
+  Vue: "#4fc08d"
+  Hexo: "0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+
+categories:
+  笔记: dimgray
 
 # link
 # -------

@@ -142,6 +142,7 @@ links:
     name: 云游君
     blog: 云游君的小站
     desc: All at sea.
+    color: "#0078e7" # 代表色
 placeholder: 还没想好说些什么 # 默认对友链的描述
 ---
 
