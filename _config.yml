@@ -2,9 +2,8 @@
 mode: light
 
 # Theme color for customize
-# Notice: color value must in double quotes like "#000" or may cause error!
+# Notice: color value must in double quotes: "#000000"
 # ---------------
-# color
 colors:
   primary: "#0078E7"
   # primary: "#6200ee"
@@ -23,8 +22,7 @@ favicon: /favicon.ico
 # Posts / Categories / Tags in sidebar.
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
-
-site_state: true
+  bg_position: bottom 3rem center
 
 # Social Links.
 social:

@@ -96,7 +96,16 @@ module.exports = {
       "@vuepress/pwa",
       {
         serviceWorker: true,
-        updatePopup: true
+        updatePopup: {
+          "/": {
+            message: "文档更新啦～",
+            buttonText: "快点我刷新！"
+          },
+          "/en/": {
+            message: "Documentation Updated～",
+            buttonText: "Refresh Me!"
+          }
+        }
       }
     ]
   ]

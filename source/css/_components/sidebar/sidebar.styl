@@ -1,4 +1,5 @@
 $sidebar-bg-image = hexo-config('sidebar.bg_image');
+$sidebar-bg-position = hexo-config('sidebar.bg_position');
 
 .sidebar {
   position: fixed;
@@ -11,7 +12,7 @@ $sidebar-bg-image = hexo-config('sidebar.bg_image');
   background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 3rem center;
+  background-position: convert($sidebar-bg-position);
   text-align: center;
   z-index: $sidebar-z-index;
   the-transition();

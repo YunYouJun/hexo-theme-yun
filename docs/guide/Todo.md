@@ -9,7 +9,7 @@ categories:
 
 ## Function
 
-- [ ] PWA
+- [ ] PJAX
 - [x] Layout
   - [x] [Material Layout Grid](https://material.io/develop/web/components/layout-grid/)
   - [x] Sidebar

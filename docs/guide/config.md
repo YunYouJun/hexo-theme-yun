@@ -16,7 +16,7 @@
 自定义主题的主色调。
 
 ```yml
-color:
+colors:
   primary: "#6200ee"
   selection_bg: "#8e71c1" # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
@@ -404,6 +404,18 @@ scrollreveal: true
 
 ## 侧边栏
 
+### 侧边栏背景
+
+```yml
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+```
+
+`bottom 3rem center` 代表居中并且距离底部 `3rem`。
+
+你可以参考 [background-position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position) 来设置背景图片的位置。
+
 ### 头像
 
 - `enable`: 是否显示头像
@@ -513,7 +525,7 @@ url: https://www.bilibili.com/video/av8153395/
 
 在文章标题前将会出现 bilibili 的图标，点击标题会跳转至对应的链接。
 
-目前默认支持以下类型：
+目前默认支持以下类型（哔哩哔哩、豆瓣、GitHub、网易云音乐、微信公众号、微博、语雀、知乎、外链）：
 
 ```yml
 types:

@@ -94,3 +94,51 @@ git pull
 ```
 
 如果您修改了主题的 `themes/yun/_config.yml` 配置文件，那么您升级时可能会遭遇冲突，需要自行调整。
+
+请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力且此后将不会对主题进行升级。
+
+如果你想对主题进行一些定制，你可以在 `head` 配置项中引入你的资源。
+
+> [头部资源](/guide/config.html#头部资源)
+
+譬如，你想为网站全局添加一个 Aplayer 播放器挂件。（目前并不推荐，本主题尚未支持 PJAX，所以当你跳转页面时，音乐会产生中断。未来将添加 PJAX 支持。）
+
+> 文章内你可以考虑使用 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
+
+你可以在 Hexo 根目录的 `source/js` 文件夹下新建 `load-aplayer.js` 文件。
+
+> 若 `js` 文件夹不存在，请新建。
+
+通过 `createElement` 的方式，`append` 到 `body` 容器中。
+
+```js
+document.addEventListener("DOMContentLoaded", function() {
+  let apContainer = document.createElement("div");
+  apContainer.id = "aplayer";
+  document.body.append(apContainer);
+  const ap = new APlayer({
+    container: document.getElementById("aplayer"),
+    fixed: true,
+    audio: [
+      {
+        name: "name",
+        artist: "artist",
+        url: "url.mp3",
+        cover: "cover.jpg"
+      }
+    ]
+  });
+});
+```
+
+并在 `yun.yml` 中设置 `head` 选项来引入 css 或 js。
+
+```yml
+head:
+  css:
+    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
+  js:
+    defer:
+      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/loadAplayer.js
+```
