@@ -230,8 +230,19 @@ vendors:
   toc: /js/toc.js
 
 # UI
-fireworks: true
+# custom your color in colors
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+    # - '3, 28, 95'
+    # - '0, 8, 55'
+
+# https://codepen.io/hakimel/pen/bzrZGo
 rymd: false
+
 # You can see effect in https://scrollrevealjs.org/
 scrollreveal: true
 
@@ -245,6 +256,7 @@ reward_settings:
   # If true, reward would be displayed in every posts and pages by default.
   # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
   enable: true
+  icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
   url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
 
@@ -388,6 +400,7 @@ valine:
   appId: # your leancloud application appid
   appKey: # your leancloud application appkey
   serverURLs:
+  # another choice: https://github.com/DesertsP/Valine-Admin
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder

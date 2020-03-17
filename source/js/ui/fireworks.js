@@ -19,18 +19,17 @@ let canvasEl = document.querySelector(".fireworks");
 let ctx = canvasEl.getContext("2d");
 let pointerX = 0;
 let pointerY = 0;
-// let tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown'
-// Fixed the mobile scroll
-let tap = "mousedown";
-// let colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C']
-// 星空蓝
+
+let tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown'
+
+// sky blue
 let colors = [
   "102, 167, 221",
   "62, 131, 225",
   "33, 78, 194"
-  // '3, 28, 95',
-  // '0, 8, 55'
 ];
+
+if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors
 
 let setCanvasSize = function() {
   canvasEl.width = window.innerWidth;

@@ -48,7 +48,7 @@ aside.sidebar
       if theme.reward_settings && theme.reward_settings.url
         a.site-state-item.hty-icon-button(href=url_for(theme.reward_settings.url), title=__('reward.comment'))
           span.site-state-item-icon
-            +icon('icon-hand-coin-line')
+            +icon(theme.reward_settings.icon)
       else
         a.popup-trigger.site-state-item.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
           span.site-state-item-icon

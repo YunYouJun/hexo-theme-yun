@@ -69,6 +69,12 @@ hexo.extend.helper.register("yun_config", function() {
       visitor: theme.valine.visitor
     };
   }
+
+  if (theme.fireworks && theme.fireworks.enable) {
+    exportConfig.fireworks = {
+      colors: theme.fireworks.colors
+    }
+  }
   return `<script id="yun-config">
     let Yun = window.Yun || {};
     let CONFIG = ${JSON.stringify(exportConfig)};

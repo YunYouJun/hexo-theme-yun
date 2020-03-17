@@ -531,12 +531,16 @@ creative_commons:
 开启后，将在每篇文章或页面末尾显示打赏按钮。
 
 - `enable`: 开启打赏
+- `icon`: 打赏图标
 - `comment`: 在打赏按钮下显示你想说的话
+- `url`: 你的打赏链接
 
 ```yml
 reward_settings:
   enable: true
-  #comment: 我很可爱，请给我钱。
+  icon: icon-hand-coin-line
+  comment: I'm so cute. Please give me money.
+  url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
 ```
 
 您也可以在某篇文章的首部单独设置是否开启打赏。

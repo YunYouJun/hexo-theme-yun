@@ -44,10 +44,10 @@ section#recent-posts.hty-layout-grid
                   if tag.name in theme.tags
                     - var tagColor = theme.tags[tag.name]
                   a.tag(href=url_for(tag.path, rel='tag'), style= tagColor ? `--text-color:${tagColor}`:'')
+                    - tagColor = null
                     span.post-meta-item-icon
                       +icon('icon-price-tag-3-line')
                     span.tag-name!=tag.name
-                  - tagColor = null
               else
                 span.post-meta-item-icon
                   +icon('icon-price-tag-3-line')

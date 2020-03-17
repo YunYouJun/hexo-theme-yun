@@ -40,31 +40,6 @@
     justify-content: flex-end;
   }
 
-  &-tag, &-category {
-    font-size: 0.8rem;
-
-    // border: 1px solid black;
-    span {
-      color: var(--text-color, black);
-      letter-spacing: 1px;
-
-      // font-weight: normal;
-      &:hover {
-        text-shadow: 0 0 1px var(--text-color, black);
-      }
-    }
-
-    .icon {
-      width: 0.8rem;
-      height: 0.8rem;
-    }
-  }
-
-  .tag-name {
-    padding-left: 0.1rem;
-    padding-right: 0.2rem;
-  }
-
   img {
     margin: 0.5rem;
     max-width: 92%;
@@ -94,5 +69,23 @@
         margin-bottom: -0.2rem;
       }
     }
+  }
+}
+
+.tag, .category {
+  font-size: 0.8rem;
+
+  span {
+    color: var(--text-color, black);
+    letter-spacing: 1px;
+
+    &:hover {
+      text-shadow: 0 0 1px var(--text-color, black);
+    }
+  }
+
+  .icon {
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
