@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const windowHeight = window.innerHeight;
     let percent = 0;
     if (bodyHeight > windowHeight) {
-      percent = Math.round((curTop / (bodyHeight - windowHeight)) * 100);
+      percent = Math.floor((curTop / (bodyHeight - windowHeight)) * 100);
     } else {
       percent = 100;
     }

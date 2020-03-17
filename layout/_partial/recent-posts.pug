@@ -7,20 +7,21 @@ section#recent-posts.hty-layout-grid
           .post-card-header
             .post-header
               h2.post-title(itemprop='name headline')
-                if post.type == 'yuque'
-                  a.post-title-link.yuque-link(itemprop='url' href=post.url target='_blank' rel='noopener')
-                    i.yuque-icon
-                      include ../_third-party/icon/yuque.pug
-                    span=post.title
-                else if post.type == 'bilibili'
-                  a.post-title-link.bilibili-link(itemprop='url' href=post.url target='_blank' rel='noopener')
-                    +icon('icon-bilibili-line')
-                    span=post.title
-                else
+                if !post.type
                   a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
+                else
+                  - var typeColor = theme.types.link.color
+                  - var typeIcon = theme.types.link.icon
+                  if post.type in theme.types
+                    - typeColor = theme.types[post.type].color
+                    - typeIcon = theme.types[post.type].icon
+                  a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + typeColor)
+                    +icon(typeIcon)
+                    span=post.title
+
               include ../_partial/post/post-meta.pug
           .post-card-content.text-center
-            .post-card-excerpt!=post.excerpt
+            .post-card-excerpt.post-markdown!=post.excerpt
 
           .hty-card__actions.post-card__actions
             .post-card-category

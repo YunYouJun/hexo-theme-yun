@@ -144,6 +144,36 @@ tags:
 categories:
   笔记: dimgray
 
+# post type
+types:
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+  link:
+    color: blue
+    icon: icon-external-link-line
+
 # link
 # -------
 preload:
@@ -158,7 +188,7 @@ prefetch:
   style:
     - /css/prism.css
   script:
-    - /js/toc.js
+    - /js/sidebar.js
 
 dns_prefetch:
   - https://cos.yunyoujun.cn
@@ -201,7 +231,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_h3ruvprb06.js
+      iconfont: //at.alicdn.com/t/font_1140697_0dirpsgctup9.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -214,7 +244,7 @@ vendors:
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
   search: /js/search/index.js
-  toc: /js/toc.js
+  sidebar: /js/sidebar.js
 
 # UI
 # custom your color in colors

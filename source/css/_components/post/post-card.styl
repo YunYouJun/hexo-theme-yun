@@ -30,6 +30,10 @@
   }
 
   &__actions {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    border-top: 1px solid rgba($colors.primary, 0.05);
     padding-left: 1rem;
     padding-right: 1rem;
     justify-content: space-between;
@@ -50,24 +54,6 @@
 
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
-    }
-  }
-
-  .yuque {
-    &-link {
-      color: $color-yuque;
-    }
-  }
-
-  .bilibili {
-    &-link {
-      color: $color-bilibili;
-
-      .icon {
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: -0.2rem;
-      }
     }
   }
 }

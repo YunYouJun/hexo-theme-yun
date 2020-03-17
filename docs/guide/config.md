@@ -110,6 +110,15 @@ cdn:
     defer:
 ```
 
+覆盖 iconfont
+
+```yml
+cdn:
+  js:
+    async:
+      iconfont: 你的 iconfont 自定义资源
+```
+
 ### 预加载
 
 通过 `preload`， `prefetch`，`preconnect`，`dns-prefetch`来优化网页记载速度。
@@ -134,7 +143,7 @@ prefetch:
   style:
     - /css/prism.css
   script:
-    - /js/toc.js
+    - /js/sidebar.js
 
 dns_prefetch:
   - https://cos.yunyoujun.cn
@@ -147,6 +156,8 @@ preconnect:
 ## 图标 Icon
 
 本主题默认使用 Remix Icon 的部分图标，并通过 iconfont 生成的 cdn 加载。
+
+> 你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。
 
 如您想要使用其他图标，推荐以下几种图标。
 
@@ -483,6 +494,103 @@ pages:
 ```
 
 ## 文章
+
+### 首页卡片
+
+#### type
+
+为文章设置 `type` 属性，即可将其转为其他类型卡片，并跳转 `url` 设置的链接。
+
+譬如：
+
+```md
+---
+title: xxx
+type: bilibili
+url: https://www.bilibili.com/video/av8153395/
+---
+```
+
+在文章标题前将会出现 bilibili 的图标，点击标题会跳转至对应的链接。
+
+目前默认支持以下类型：
+
+```yml
+types:
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+  link:
+    color: blue
+    icon: icon-external-link-line
+```
+
+你也可以自己在 `yun.yml` 设置你跳转不同链接专属的图标和颜色。
+
+```yml
+type:
+  google:
+    color: xxx
+    icon: xxx
+```
+
+当你指定的 `type` 不存在于默认支持中，也没有进行自定义，将默认使用蓝色的额外链接图标。
+
+如果你想在你的外链卡片上显示一些信息，你可以写在 `<!-- more -->` 前，它会被当作摘要显示。
+
+譬如：
+
+```md
+---
+title: hexo-theme-yun
+type: github
+url: https://github.com/YunYouJun/hexo-theme-yun
+---
+
+Hexo 主题 Yun
+
+<!-- more -->
+```
+
+#### hide
+
+你可以在文章头部添加 `hide` 属性，来临时隐藏某篇文章。
+
+```md
+---
+title: xxx
+hide: true
+---
+```
+
+该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片中。
+
+> 题外话，这个功能是我当初应付备案临时加的。
+> 我更改备案信息时，客服通知我首页不能用跳转其他页面链接的内容（有一个和文章混在一起直接跳转 bilibili 的卡片），所以我就加了这个功能临时隐藏掉了。
+> 也许还挺实用的，你可以放一些只是自己看看，暂时还不打算发到主页显示的页面。
+
+注意：其他文章末尾上一篇或下一篇文章里还是会出现该文章的链接。
 
 ### 信息
 

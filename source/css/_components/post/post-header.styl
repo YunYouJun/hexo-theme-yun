@@ -13,13 +13,19 @@
       position: relative;
       padding: 0.7rem 1.2rem;
 
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.4rem;
+      }
+
       &::before, &::after {
         content: '';
         position: absolute;
         width: 10px;
         height: 10px;
         opacity: 0;
-        border: 2px solid #d94f5c;
+        border: 2px solid;
         transition: 0.3s;
         transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
       }
