@@ -256,57 +256,78 @@ preconnect:
 ## 社交图标
 
 默认提供以下几种社交图标，您可以通过在头部引入自定义图标资源来获取更多图标。
+为了更好的展示效果，会显示我的默认链接。
 
+- `name`: 链接名称
 - `link`: 链接
 - `icon`: 图标 Class
 - `color`: 图标颜色（前提是您引入的图标支持 SVG 自定义颜色）当前默认色彩采用官方图标的品牌主色。
 
 ```yml
 social:
-  QQ:
+  - name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: QQ
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: http://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
     color: "#12B7F5"
-  GitHub:
+  - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
     color: "#181717"
-  E-Mail:
+  - name: E-Mail
     link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
     color: "#8E71C1"
-  微博:
+  - name: 微博
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
     color: "#E6162D"
-  豆瓣:
+  - name: 豆瓣
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
     color: "#007722"
-  网易云音乐:
+  - name: 网易云音乐
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
     color: "#C10D0C"
-  知乎:
+  - name: 知乎
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
     color: "#0084FF"
-  哔哩哔哩动画:
+  - name: 哔哩哔哩动画
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "#FF8EB3"
+  - name: POPI
+    link: https://www.popiask.cn/elpsycn
+    icon: icon-questionnaire-line
+    color: "#525252"
+  - name: 微信公众号
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
 ```
 
-默认使用对象名称作为图标提示的标题。譬如您想要显示提示为 `bilibili` 而非 `哔哩哔哩动画`。
-
-则修改如下：
+您只需要在 `yun.yml` 中设置 `social` 来覆盖即可（这时即可只显示你的邮箱图标，而没有其他图标）：
 
 ```yml
-bilibili:
-  link: https://space.bilibili.com/1579790
-  icon: icon-bilibili-line
-  color: "#FF8EB3"
+social:
+  - name: E-Mail
+    link: mailto:你的邮箱
+    icon: icon-mail-line
+    color: "#8E71C1"
+```
+
+如果您不想放置任何链接，仅需在 `yun.yml` 中设置：
+
+```yml
+social:
 ```
 
 ## 首页标语
@@ -449,10 +470,16 @@ categories:
 
 ```yml
 pages:
-  我的小伙伴们:
+  - name: 我的小伙伴们
     url: /links/
-    icon: icon-men-line
+    icon: icon-genderless-line
     color: dodgerblue
+```
+
+如果您不想放置任何链接，仅需在 `yun.yml` 中设置：
+
+```yml
+pages:
 ```
 
 ## 文章
@@ -554,24 +581,43 @@ reward_settings:
 您也可以在某篇文章的首部单独设置是否开启打赏。
 
 ```yml
-reward: true | false
+reward: true
+# reward: false
 ```
 
 ### 打赏二维码
 
 默认支持 QQ、微信、支付宝打赏图标，`color` 为自定义图标颜色。
 
+- `name`: 打赏方式
+- `path`: 图片路径
+- `color`: 图标颜色
+- `icon`: 图标名称
+
 ```yml
 reward:
-  alipay:
-    path: /img/donate/alipay-qrcode.jpg
+  - name: 支付宝
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
-  qq:
-    path: /img/donate/qqpay-qrcode.jpg
+    icon: icon-alipay-line
+  - name: QQ 支付
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
     color: "#12B7F5"
-  wechat-pay:
-    path: /img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100" #7BB32E
+    icon: icon-qq-line
+  - name: 微信支付
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+    color: "#2DC100"
+    icon: icon-wechat-pay-line
+```
+
+你可以在 `yun.yml` 中进行覆盖。
+
+```yml
+reward:
+  - name: 支付宝
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+    color: "#00A3EE"
+    icon: icon-alipay-line
 ```
 
 ## 页脚

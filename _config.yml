@@ -28,64 +28,60 @@ site_state: true
 
 # Social Links.
 social:
-  # RSS:
-  #   # set rss in your root config
-  #   # https://github.com/hexojs/hexo-generator-feed
-  #   link: atom.xml # config.feed.path
-  #   icon: icon-rss-line
-  #   color: orange
-  # QQ:
-  #   # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-  #   link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-  #   icon: icon-qq-line
-  #   color: "#12B7F5"
-  # GitHub:
-  #   link: https://github.com/YunYouJun
-  #   icon: icon-github-line
-  #   color: "#181717"
-  # E-Mail:
-  #   link: mailto:me@yunyoujun.cn
-  #   icon: icon-mail-line
-  #   color: "#8E71C1"
-  # 微博:
-  #   link: https://weibo.com/jizhideyunyoujun
-  #   icon: icon-weibo-line
-  #   color: "#E6162D"
-  # 豆瓣:
-  #   link: https://www.douban.com/people/yunyoujun/
-  #   icon: icon-douban-line
-  #   color: "#007722"
-  # 网易云音乐:
-  #   link: https://music.163.com/#/user/home?id=247102977
-  #   icon: icon-netease-cloud-music-line
-  #   color: "#C10D0C"
-  # 知乎:
-  #   link: https://www.zhihu.com/people/yunyoujun/
-  #   icon: icon-zhihu-line
-  #   color: "#0084FF"
-  # 哔哩哔哩动画:
-  #   link: https://space.bilibili.com/1579790
-  #   icon: icon-bilibili-line
-  #   color: "#FF8EB3"
-  # POPI:
-  #   link: https://www.popiask.cn/elpsycn
-  #   icon: icon-questionnaire-line
-  #   color: "#525252"
-  # 微信公众号:
-  #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-  #   icon: icon-wechat-2-line
-  #   color: "#1AAD19"
+  - name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: QQ
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/YunYouJun
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:me@yunyoujun.cn
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 微博
+    link: https://weibo.com/jizhideyunyoujun
+    icon: icon-weibo-line
+    color: "#E6162D"
+  - name: 豆瓣
+    link: https://www.douban.com/people/yunyoujun/
+    icon: icon-douban-line
+    color: "#007722"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=247102977
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: 知乎
+    link: https://www.zhihu.com/people/yunyoujun/
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/1579790
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: POPI
+    link: https://www.popiask.cn/elpsycn
+    icon: icon-questionnaire-line
+    color: "#525252"
+  - name: 微信公众号
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
 
 # Extra links
 pages:
-  # 我的小伙伴们:
-  #   url: /links/
-  #   icon: icon-genderless-line
-  #   color: dodgerblue
-  # 喜欢的女孩子:
-  #   url: /girls/
-  #   icon: icon-women-line
-  #   color: hotpink
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
 
 # pages
 # -------
@@ -252,19 +248,19 @@ reward_settings:
   url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
 
 reward:
-  alipay:
+  - name: 支付宝
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
     color: "#00A3EE"
     icon: icon-alipay-line
-  qq:
+  - name: QQ 支付
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
     color: "#12B7F5"
     icon: icon-qq-line
-  wechat-pay:
+  - name: 微信支付
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
     color: "#2DC100"
     icon: icon-wechat-pay-line
-  # paypal:
+  # - name: paypal
   #   link: https://paypal.com
   #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
   #   color: "#2D70B5"

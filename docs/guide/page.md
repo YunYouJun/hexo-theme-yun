@@ -148,15 +148,7 @@ placeholder: 还没想好说些什么 # 默认对友链的描述
 
 ```
 
-友链显示在侧边栏中
-
-```yml
-pages:
-  我的小伙伴们:
-    url: /links/
-    icon: icon-men-line
-    color: dodgerblue
-```
+让友链显示在侧边栏中 [侧边栏 - 页面链接](/guide/config.html#页面链接)
 
 ## Girls
 

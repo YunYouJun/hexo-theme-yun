@@ -58,8 +58,8 @@ aside.sidebar
 
     if theme.social
       .links-of-author
-        for social, name in theme.social
-          a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=name, target='_blank' style='color:' + social.color)
+        for social in theme.social
+          a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=social.name, target='_blank' style='color:' + social.color)
             +icon(social.icon)
 
 
@@ -67,8 +67,8 @@ aside.sidebar
     if theme.pages
       hr
       .links
-        for link, name in theme.pages
-          a.links-item.hty-icon-button(href=url_for(link.url), title=name, style='color:' + link.color)
+        for link in theme.pages
+          a.links-item.hty-icon-button(href=url_for(link.url), title=link.name, style='color:' + link.color)
             +icon(link.icon)
 
 
