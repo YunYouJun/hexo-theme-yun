@@ -42,5 +42,12 @@ footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
         <sub>神崎日照の小窝</sub>
       </a>
     </td>
+    <td>
+      <a href="https://blog.hehejun.cn">
+        <img width="80px" src="https://blog.hehejun.cn/img.jpg"/>
+        <br />
+        <sub>呵呵君的博客</sub>
+      </a>
+    </td>
   </tr>
 </table>
