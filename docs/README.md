@@ -25,28 +25,35 @@ footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
       <a href="https://www.yunyoujun.cn">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg"/>
         <br />
-        <sub>云游君的小站</sub>  
+        <sub title="希望能成为一个有趣的人">云游君的小站</sub>  
       </a>
     </td>
     <td>
       <a href="https://yuexiaoya.info">
-        <img width="80px" src="https://yuexiaoya.info/photo.jpg"/>
+        <img width="80px" src="https://yuexiaoya.info/photo.jpg" alt/>
         <br />
-        <sub>落梅听风雪</sub>
+        <sub title="当然是用来记录历程啊，不好看怎么行！">落梅听风雪</sub>
       </a>
     </td>
     <td>
-      <a href="https://sernikki.github.io">
+      <a href="https://blog.sernikki.cn/">
         <img width="80px" src="https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg"/>
         <br />
-        <sub>神崎日照の小窝</sub>
+        <sub title="有瑕人无玉">神崎日照の小窝</sub>
       </a>
     </td>
     <td>
       <a href="https://blog.hehejun.cn">
         <img width="80px" src="https://blog.hehejun.cn/img.jpg"/>
         <br />
-        <sub>呵呵君的博客</sub>
+        <sub title="世界に忘れられた~">呵呵君的博客</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://ddindex.github.io/">
+        <img width="80px" src="https://ddindex.github.io/images/avatar.jpg"/>
+        <br />
+        <sub title="双手抓楼上的大胸">多酱的部落格</sub>
       </a>
     </td>
   </tr>
