@@ -34,5 +34,7 @@ function generateBanner(banner) {
   lineTop.style.animationName = "extend-line";
   lineBottom.style.animationName = "extend-line";
 }
-// execute
-generateBanner(CONFIG.title);
+
+document.addEventListener("DOMContentLoaded", function() {
+  generateBanner(CONFIG.title);
+})
