@@ -334,10 +334,18 @@ bg_image:
 
 ### 烟花
 
-点击页面效果
+点击页面的烟花效果
+
+- `enable`: 是否开启，默认开启
+- `colors`：包含的颜色，默认为几种蓝色配色（请仿照下方使用 RGB 数值）
 
 ```yml
-fireworks: true
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
 ```
 
 > 参考自：[anime.js](https://animejs.com/) [fireworks](https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/third-party-support.html#%E7%83%9F%E8%8A%B1)

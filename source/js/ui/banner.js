@@ -35,6 +35,6 @@ function generateBanner(banner) {
   lineBottom.style.animationName = "extend-line";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+setTimeout(() => {
   generateBanner(CONFIG.title);
-})
+}, 100);
