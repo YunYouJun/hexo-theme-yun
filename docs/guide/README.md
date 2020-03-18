@@ -42,7 +42,13 @@ yarn add hexo-render-pug hexo-renderer-stylus
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
-如果你想体验新版 `hexo-theme-yun`。
+> 如果你使用了持续集成，并希望每次构建的版本保持稳定。你可以 fork 本项目，然后克隆你 fork 的项目。
+>
+> ```sh
+> git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
+> ```
+
+如果你想体验新版 `hexo-theme-yun`。（[云游君的小站](https://www.yunyoujun.cn) 将始终使用最新版作为示例。）
 
 ```sh
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
@@ -101,8 +107,10 @@ git pull
 
 > [头部资源](/guide/config.html#头部资源)
 
-譬如，你想为网站全局添加一个 Aplayer 播放器挂件。（目前并不推荐，本主题尚未支持 PJAX，所以当你跳转页面时，音乐会产生中断。未来将添加 PJAX 支持。）
+譬如，你想为网站全局添加一个 Aplayer 播放器挂件。
 
+> 目前并不推荐，本主题尚未支持 PJAX，所以当你跳转页面时，音乐会产生中断。
+> 未来将考虑添加 PJAX 支持（可自行配置决定是否开启），但短期内未必实现。
 > 文章内你可以考虑使用 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
 你可以在 Hexo 根目录的 `source/js` 文件夹下新建 `load-aplayer.js` 文件。
@@ -140,5 +148,5 @@ head:
   js:
     defer:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
-      loadAplayer: /js/loadAplayer.js
+      loadAplayer: /js/load-aplayer.js
 ```

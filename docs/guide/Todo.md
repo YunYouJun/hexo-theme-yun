@@ -22,7 +22,7 @@ categories:
   - [x] main
 - [ ] Post
   - [x] markdown
-  - [ ] sticky (wait for [hexo-generator-index](https://github.com/hexojs/hexo-generator-index))
+  - [ ] sticky (wait for [hexo-generator-index](https://github.com/hexojs/hexo-generator-index)) temp use `pop` [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
   - [x] donate
   - [x] share
     - [x] addthis

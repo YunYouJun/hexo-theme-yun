@@ -44,7 +44,13 @@ github_issues:
 
 ### Valine
 
-参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随本主题语言设置。
+参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。
+
+即 Hexo 根目录下的 `_config.yml`。（注意与主题的 `_config.yml` 相区分）
+
+```yml
+language: zh-CN
+```
 
 实际上，你只需要参考下方页面获取配置所需的 appId 和 appKey 即可。（不需要安装，主题默认使用 CDN。模版也已经内置。）
 
@@ -65,7 +71,7 @@ valine:
   visitor: true
 ```
 
-Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)
+Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)，可以对具体的评论进行邮件提醒。
 
 <!-- ## 分享
 

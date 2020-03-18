@@ -817,11 +817,11 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 
 ## Say
 
-随机在网站主页显示一句~~中二~~的话。
+随机在网站主页显示一句~~中二的~~话。
 
 - `enable`: 是否开启
 - `api`: 远程 JSON API
-- `src`: 调用的 js 文件，最好不要修改（你也可以自己写，来加载想要的 JSON 格式。）
+- `src`: 调用的 js 文件，最好不要修改（你也可以仿照其结构自己写，来加载想要的 JSON 格式。）
 
 ```yml
 say:
@@ -833,7 +833,7 @@ say:
 > [say.elpsy.cn](https://say.elpsy.cn) 是我收藏中二语句的地方。= =，自动导出 JSON 用来拉取。  
 > 可以自定义，不介意的话，也可以用我的。
 
-如果不使用默认 JSON，则需要自定义语句.
+如果不使用默认 JSON，则需要自定义语句。
 
 你可以根目录的 `source` 文件夹下新建 `data/sentences.json`。（注意是 `data` 不是 `_data`，当然你新建别的文件夹也可以。）
 

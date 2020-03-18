@@ -52,3 +52,44 @@ social:
     color: orange
   QQ: ...
 ```
+
+## 置顶
+
+在 Hexo 根目录下运行一下命令，以移除默认索引生成器，并使用具有置顶功能的索引生成器。
+
+原插件的置顶功能等了很久还没有合并。[#26](https://github.com/hexojs/hexo-generator-index/pull/26)
+
+```sh
+npm uninstall hexo-generator-index --save
+npm install hexo-generator-index-pin-top --save
+```
+
+> 你可以参见 [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
+
+通过设置文章 Front Matter 中的 `top` 属性。
+设置置顶后，文章卡片右上角将出现置顶图标。
+
+```md
+---
+title: xxx
+top: true
+---
+```
+
+你也可以通过设置权重来实现多篇置顶文章的顺序。
+
+```md
+---
+title: xxx
+top: 1
+---
+```
+
+```md
+---
+title: xxx
+top: 2
+---
+```
+
+此时 `top: 2` 的文章将排列在 `top: 1` 的文章上面。

@@ -1,4 +1,4 @@
-# 关于
+# 关于 ![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)
 
 本主题是基于 [Hexo](https://hexo.io) 的自定义主题。
 
@@ -43,7 +43,7 @@
 
 ![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
 
-尽可能使用 CDN，提高访问速度。
+尽可能使用 CDN，提高访问速度。也算是符合了 云 ☁️ 的名字。
 
 虽然很想用 WebP，奈何万恶的 Safari 与 iOS 不支持，故又都切回了 JPG。
 
