@@ -1,10 +1,10 @@
 footer#footer.sidebar-translate
-  - var nowYear = date(Date.now(), "YYYY")
   if theme.footer.beian.enable
     .beian
       a(rel='noopener' href='http://www.beian.miit.gov.cn' target='_blank') #{theme.footer.beian.icp}
 
   .copyright
+    - var nowYear = date(Date.now(), "YYYY")
     span
       | &copy; 
       if theme.footer.since && theme.footer.since != nowYear
@@ -23,11 +23,33 @@ footer#footer.sidebar-translate
           span Yun
         |  v#{yun_env('version')}
 
-  if theme.footer.custom_text
-    .footer_custom_text!=`${theme.footer.custom_text}`
+  if theme.footer.live_time.enable
+    .live_time
+      span!=theme.footer.live_time.prefix
+      span#display_live_time
+      span.moe-text!=theme.footer.live_time.suffix
+      script.
+        function blog_live_time() {
+          window.setTimeout(blog_live_time, 1000);
+          const start = new Date('#{theme.footer.live_time.start_time}');
+          const now = new Date();
+          const timeDiff = (now.getTime() - start.getTime());
+          const msPerMinute = 60 * 1000;
+          const msPerHour = 60 * msPerMinute;
+          const msPerDay = 24 * msPerHour;
+          const passDay = Math.floor(timeDiff / msPerDay);
+          const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+          const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+          const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+          display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+        }
+        blog_live_time();
 
   if theme.busuanzi.enable
     include ../_third-party/analytics/busuanzi.pug
 
   if theme.valine.enable && theme.valine.visitor
     include ../_third-party/analytics/valine-visitor.pug
+
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`

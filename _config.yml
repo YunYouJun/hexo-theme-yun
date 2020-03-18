@@ -342,6 +342,12 @@ footer:
     enable: false
     # icp: 苏ICP备xxxxxxxx号
 
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: 2019-01-01T00:00:00
+
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 

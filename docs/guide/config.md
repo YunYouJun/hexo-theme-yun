@@ -826,6 +826,20 @@ beian:
   icp: 苏ICP备xxxxxxxx号
 ```
 
+### 运行时间
+
+默认关闭。
+
+`本博客已萌萌哒地运行 442 天 19 小时 28 分 40 秒(●'◡'●)`
+
+```yml
+live_time:
+  enable: false
+  prefix: 本博客已萌萌哒地运行
+  suffix: (●'◡'●)
+  start_time: 2019-01-01T00:00:00
+```
+
 ### 自定义文本
 
 `custom_text` 为自定义页脚，可以包含 HTML。
@@ -842,7 +856,7 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 - `enable`: 是否开启 Say
 - `api`: 远程 JSON API
 - `src`: 调用的 js 文件，最好不要修改（你也可以仿照其结构自己写，来加载想要的 JSON 格式。）
-- `hitokoto.enable`: 是否开启 [一言](https://hitokoto.cn/)
+- `hitokoto.enable`: 是否开启 [一言](https://hitokoto.cn/)，开启一言时，将默认覆盖 `say.api`
 - `hitokoto.api`: 你可以参考 [语句接口｜一言](https://developer.hitokoto.cn/sentence/) 来根据你的想法使用一言 API
 
 ```yml
@@ -860,9 +874,11 @@ say:
 
 > [say.elpsy.cn](https://say.elpsy.cn) 是我自己收藏中二语句的地方。= =，自动导出 JSON 用来拉取。
 
-譬如你想要使用自定义的话语。
+### 自定义
 
-你可以根目录的 `source` 文件夹下新建 `data/sentences.json`。（注意是 `data` 不是 `_data`，当然你新建别的文件夹也可以。）
+你也可以使用自定义的话语。
+
+你可以在根目录的 `source` 文件夹下新建 `data/sentences.json`。（注意是 `data` 不是 `_data`，当然你新建别的文件夹也可以。）
 
 格式如下：
 
