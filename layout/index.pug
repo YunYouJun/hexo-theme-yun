@@ -2,8 +2,11 @@ extends _partial/layout.pug
 
 block content
   if is_home() && page.current == 1
-    include ./_partial/banner.pug
+    if theme.banner.enable
+      include ./_partial/banner.pug
     if theme.say.enable
       include ./_widget/say.pug
+    if theme.notice.enable
+      include ./_widget/notice.pug
   include _partial/recent-posts.pug
   include _partial/pagination.pug

@@ -108,7 +108,7 @@ npm install --save hexo-helper-live2d
 
 在 Hexo 根目录的 `_config.yml` 中进行配置：
 
-> 更多选项含义请参见 https://github.com/EYHN/hexo-helper-live2d/
+> 更多选项含义请参见 [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
 ```yml
 live2d:

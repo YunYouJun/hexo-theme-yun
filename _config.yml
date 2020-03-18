@@ -90,6 +90,7 @@ girls:
   enable: false
 
 banner:
+  enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
 
@@ -351,6 +352,11 @@ post_meta:
   updated_at: true
   categories: true
   tags: true
+
+# notice pin board
+notice:
+  enable: false
+  content: Thanks for playing my game.
 
 # third party
 # ----------------

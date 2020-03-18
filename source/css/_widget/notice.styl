@@ -1,0 +1,18 @@
+.notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-serif;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: $border-width solid black;
+  max-width: calc(900px - 2rem);
+  background-color: rgba(white, 0.3);
+
+  +mobile() {
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+}

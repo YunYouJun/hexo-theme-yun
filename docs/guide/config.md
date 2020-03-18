@@ -341,16 +341,36 @@ social:
 social:
 ```
 
-## 首页标语
+## 首页
 
-首页的垂直交错排列文字效果。您可以访问 <https://yunyoujun.cn> 查看效果。（每次刷新，随机字体大小）
+### 标语动画
 
-如果您未定义 `banner`，将默认使用您为 Hexo 配置的标题。
+首页的垂直交错排列文字效果。默认开启。
+
+您可以访问 <https://yunyoujun.cn> 查看效果。（每次刷新，随机字体大小）
+
+> 这是本主题开发时，最早实现的功能，期间因为 Safari 等浏览器的兼容性问题重构了几次，也提高了加载速度。
+> 算是三朝元老，笑。
+
+- `enable`: 是否开启
+- `title`: 设置文字内容
 
 ```yml
 banner:
+  enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
+```
+
+### 公告
+
+你可以如下配置来开启公告。
+它将显示在所有文章卡片的最上方，标语的下方。
+
+```yml
+notice:
+  enable: true
+  content: Thanks for playing my game.
 ```
 
 ## UI
