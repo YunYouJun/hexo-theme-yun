@@ -1,16 +1,23 @@
+function say(content, author, from) {
+  document.querySelector("#say-content").innerText = content;
+  if (author) {
+    document.querySelector("#say-author").innerText = author;
+  }
+  if (from) {
+    document.querySelector("#say-from").innerText = "「" + from + "」";
+  }
+}
+
 if (CONFIG.say.api) {
   fetch(new Request(CONFIG.say.api))
     .then(function(res) {
       if (res.ok) {
         res.json().then(function(data) {
-          let sentence = data[Math.floor(Math.random() * data.length)];
-          document.querySelector("#say-content").innerText = sentence.content;
-          if (sentence.author) {
-            document.querySelector("#say-author").innerText = sentence.author;
-          }
-          if (sentence.from) {
-            document.querySelector("#say-from").innerText =
-              "「" + sentence.from + "」";
+          if (CONFIG.say.hitokoto) {
+            say(data.hitokoto, data.from_who, data.from);
+          } else {
+            let sentence = data[Math.floor(Math.random() * data.length)];
+            say(sentence.content, sentence.author, sentence.from);
           }
         });
       } else {

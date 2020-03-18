@@ -12,9 +12,16 @@ hexo.extend.helper.register("yun_config", function() {
   }
   // say
   if (theme.say.enable) {
-    exportConfig.say = {
-      api: theme.say.api
-    };
+    if (theme.say.hitokoto.enable) {
+      exportConfig.say = {
+        api: theme.say.hitokoto.api,
+        hitokoto: true
+      };
+    } else {
+      exportConfig.say = {
+        api: theme.say.api
+      };
+    }
   }
 
   // algolia
@@ -73,7 +80,7 @@ hexo.extend.helper.register("yun_config", function() {
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
       colors: theme.fireworks.colors
-    }
+    };
   }
   return `<script id="yun-config">
     let Yun = window.Yun || {};

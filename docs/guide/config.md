@@ -837,27 +837,32 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 
 ## Say
 
-随机在网站主页显示一句~~中二的~~话。
+随机在网站主页显示一句~~中二的~~话。（默认使用 [一言](https://hitokoto.cn/) 作为 API）
 
-- `enable`: 是否开启
+- `enable`: 是否开启 Say
 - `api`: 远程 JSON API
 - `src`: 调用的 js 文件，最好不要修改（你也可以仿照其结构自己写，来加载想要的 JSON 格式。）
+- `hitokoto.enable`: 是否开启 [一言](https://hitokoto.cn/)
+- `hitokoto.api`: 你可以参考 [语句接口｜一言](https://developer.hitokoto.cn/sentence/) 来根据你的想法使用一言 API
 
 ```yml
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
   src: /js/say.js
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
 ```
 
-> [say.elpsy.cn](https://say.elpsy.cn) 是我收藏中二语句的地方。= =，自动导出 JSON 用来拉取。  
-> 可以自定义，不介意的话，也可以用我的。
+当你关闭一言时，将默认使用 `say.api` 处的数据。
 
-如果不使用默认 JSON，则需要自定义语句。
+> [say.elpsy.cn](https://say.elpsy.cn) 是我自己收藏中二语句的地方。= =，自动导出 JSON 用来拉取。
+
+譬如你想要使用自定义的话语。
 
 你可以根目录的 `source` 文件夹下新建 `data/sentences.json`。（注意是 `data` 不是 `_data`，当然你新建别的文件夹也可以。）
-
-并设置 `say.api` 为 `/data/sentences.json`。
 
 格式如下：
 
@@ -882,6 +887,19 @@ say:
     "from": "万叶集·雷神短歌"
   }
 ]
+```
+
+以及设置 `say.api` 为 `/data/sentences.json`，并关闭一言。
+
+譬如：
+
+```yml
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: false
 ```
 
 ## 更多配置
