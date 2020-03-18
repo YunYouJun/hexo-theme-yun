@@ -42,7 +42,7 @@ npm install hexo-generator-feed --save
 
 配置默认图标为 `icon-rss-line`，如需自定义，进入 `source/_data/yun.yml` 进行配置。
 
-可配置在 `social` 字段里，如：
+可配置在 `yun.yml` 的 `social` 字段里，如：
 
 ```yml
 social:
@@ -65,6 +65,7 @@ npm install hexo-generator-index-pin-top --save
 ```
 
 > 你可以参见 [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
+> 注意，我发现使用 hexo-generator-index-pin-top 时，根据 `updated` 进行排序的功能将失效。（只能看官方的那个什么时候能合并了。）
 
 通过设置文章 Front Matter 中的 `top` 属性。
 设置置顶后，文章卡片右上角将出现置顶图标。
@@ -93,3 +94,46 @@ top: 2
 ```
 
 此时 `top: 2` 的文章将排列在 `top: 1` 的文章上面。
+
+## live2d
+
+其实添加 live2d 并不需要修改主题，也不需要对主题进行配置，它是 Hexo 的插件，你在根目录的 `_config.yml` 中配置即可。
+在这里出现是为了说明一下推荐的设置（简而言之，就是最好使用 CDN 啦）。
+
+安装 [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
+
+```sh
+npm install --save hexo-helper-live2d
+```
+
+在 Hexo 根目录的 `_config.yml` 中进行配置：
+
+> 更多选项含义请参见 https://github.com/EYHN/hexo-helper-live2d/
+
+```yml
+live2d:
+  enable: true
+  # 推荐使用 jsdelivr 的 CDN 来加载
+  scriptFrom: jsdelivr
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    # 推荐使用 CDN 来加载模型
+    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+  # dialog:
+  #   # 是否开启对话框
+  #   enable: true
+  #   # 是否使用一言
+  #   hitokoto: true
+```
