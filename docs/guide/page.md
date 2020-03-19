@@ -2,6 +2,18 @@
 
 本主题默认支持并使用以下页面类型。
 
+## 文章
+
+### 图片注释
+
+你可以遵循如下写法来对图片进行注释。
+
+```md
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)_谷歌浏览器 Audits - Lighthouse 检测分数_
+```
+
+![img-caption-example.png](https://i.loli.net/2020/03/19/2bOIPC3Wv4Gxetm.png)
+
 ## 标签 tags
 
 如果您尚未安装 `hexo-generator-tag`，请输入 `npm install hexo-generator-tag`。

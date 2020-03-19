@@ -34,19 +34,6 @@ function throttle(func, wait, mustRun) {
 }
 
 Yun.utils = {
-  wrapImage: function() {
-    let images = document.querySelectorAll(
-      ".post-card-excerpt img, .post-content img, .post-excerpt img"
-    );
-    // center & lazy
-    if (images && images.length > 0) {
-      images.forEach(image => {
-        image.loading = "lazy";
-        image.parentNode.style.textAlign = "center";
-      });
-    }
-  },
-
   /**
    * Transform embedded video to support responsive layout.
    * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js

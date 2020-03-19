@@ -196,6 +196,10 @@ dns_prefetch:
 preconnect:
   - https://cdn.jsdelivr.net
 
+# img loading="lazy"
+lazyload:
+  enable: true
+
 # stylesheets loaded in the <head>
 css:
   - /css/hexo-theme-yun.css

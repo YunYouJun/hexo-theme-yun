@@ -89,15 +89,23 @@
   }
 
   img {
-    margin: 0.5rem;
+    display: flex;
+    margin: 0.5rem auto;
     max-width: 92%;
     max-height: 500px;
     border-radius: 0.2rem;
-    // box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     transition: 0.4s;
 
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
     }
+  }
+
+  img + em {
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
   }
 }

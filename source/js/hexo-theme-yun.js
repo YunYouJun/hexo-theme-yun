@@ -3,7 +3,6 @@ function initPage() {
   if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal(".post-card");
   }
-  Yun.utils.wrapImage();
   Yun.utils.embeddedVideoTransformer();
 
   // open sidebar

@@ -729,6 +729,18 @@ creative_commons:
   language: deed.zh
 ```
 
+### 图片懒加载
+
+开启后，将会为 Markdown 的图片 `img` 加上 `loading="lazy"` 属性。
+
+> [<img> loading](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img#attr-loading)
+> 当前仍有许多浏览器不支持该特性 https://caniuse.com/#search=loading
+
+```yml
+lazyload:
+  enable: true
+```
+
 ## 打赏
 
 开启后，将在每篇文章或页面末尾显示打赏按钮。
