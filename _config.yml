@@ -190,7 +190,7 @@ prefetch:
     - /js/sidebar.js
 
 dns_prefetch:
-  - https://cos.yunyoujun.cn
+  # - https://xxx
 
 # do more(TCP handshake...) than dns-fetch
 preconnect:
@@ -216,7 +216,8 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  # you need change it to yourself
+  pre:
+  # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
   # font
   # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
@@ -362,7 +363,7 @@ post_meta:
 # notice pin board
 notice:
   enable: false
-  content: Thanks for playing my game.
+  content: Thanks for watchng my blog.
 
 # third party
 # ----------------

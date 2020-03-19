@@ -95,12 +95,11 @@ Content Delivery Network，统一加载网络资源，有利于提高网页加�
 - GitHub CDN: `https://cdn.jsdelivr.net/gh/user/repo@version/file`
 - npm: `https://cdn.jsdelivr.net/npm/package@version/file`
 
-`cdn` 为主题目前默认引入的 CDN 资源，结构与 `head` 类似，请尽量不要覆盖：
-
-> 实际上就引入了一个图标资源，其他都放到配置里了，会根据是否开启。自动决定是否引入。
+`cdn` 为主题目前默认引入的 CDN 资源，结构与 `head` 类似。
 
 ```yml
 cdn:
+  pre:
   css:
   js:
     base:
@@ -110,7 +109,32 @@ cdn:
     defer:
 ```
 
-覆盖 iconfont
+- `pre`: 默认为空，你的加载资源前缀。譬如我想要使全站静态资源使用 `jsdelivr` 加速（~~又白嫖~~），则可以在 `yun,yml` 中这样设置。
+
+> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名。
+
+```yml
+cdn:
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
+```
+
+::: tip
+如果你自己对主题使用到的资源进行了自定义，并想要更方便地在本地预览调试。
+
+你可以在 Hexo 的工作目录下 `package.json` 中 `scripts` 字段添加 `"dev": "export NODE_ENV=dev && hexo s"`。
+
+```json
+{
+  "scripts": {
+    "dev": "export NODE_ENV=dev && hexo s"
+  }
+}
+```
+
+并通过 `npm run dev` 来启动，则此时处于开发模式下，默认不使用 `cdn.pre`。
+:::
+
+### 覆盖 iconfont
 
 ```yml
 cdn:
@@ -127,6 +151,10 @@ cdn:
 - `prefetch`：跳转页面可能会用到的资源
 - `dns-prefetch`：解析将要用到的域名的 DNS 地址
 - `preconnect`：提前与指定域名建立链接，相比 `dns-prefetch` 多了 TCP 连接
+
+`preload` 与 `prefetch` 只用来加载本地的资源（且一般使用默认），不要使用带有协议头（`http://`）的资源。
+
+CDN 可以去 `head` 处添加。
 
 > [\<link\> ：外部资源链接元素 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
 
@@ -220,8 +248,8 @@ preconnect:
 
 ```html
 <!-- 比 unpkg 快 -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/ionicons.js -->
-<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js -->
+<script src="https://unpkg.com/ionicons/dist/ionicons.js"></script>
 ```
 
 ```html
@@ -234,9 +262,9 @@ preconnect:
 
 ```html
 <!-- 比 unpkg 快 -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons@4.5.6/dist/css/ionicons.min.css -->
+<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css -->
 <link
-  href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+  href="https://unpkg.com/ionicons/dist/css/ionicons.min.css"
   rel="stylesheet"
 />
 ```

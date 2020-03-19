@@ -6,7 +6,7 @@ else
   a#search.popup-trigger.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
     span.site-state-item-icon
       +icon('icon-search-line')
-  script(defer, src=url_for(theme.vendors.search))
+  script(defer, src=url_for(theme.cdn.pre + theme.vendors.search))
 
   if theme.algolia_search && theme.algolia_search.enable
     include algolia-search.pug

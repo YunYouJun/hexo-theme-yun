@@ -3,4 +3,4 @@ if theme.vendors.algolia_search
 if theme.vendors.instant_search
   script(defer, src=theme.vendors.instant_search)
 
-script(defer, src=url_for(theme.algolia_search.src))
+script(defer, src=url_for(theme.cdn.pre + theme.algolia_search.src))
