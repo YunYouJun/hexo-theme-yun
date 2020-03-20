@@ -220,7 +220,7 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre:
+  pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
   # font
