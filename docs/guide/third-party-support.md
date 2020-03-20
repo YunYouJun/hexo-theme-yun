@@ -112,6 +112,8 @@ engine_search:
 
 > 格式只支持 XML
 
+启用它之前，记得先关闭默认的引擎搜索。
+
 ```yml
 # search
 # https://github.com/wzpan/hexo-generator-search

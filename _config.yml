@@ -61,7 +61,7 @@ social:
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
     color: "#0084FF"
-  - name: 哔哩哔哩动画
+  - name: 哔哩哔哩
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "#FF8EB3"
@@ -184,8 +184,8 @@ preload:
     - /js/hexo-theme-yun.js
 
 prefetch:
-  style:
-    - /css/prism.css
+  # style:
+  #   - /css/prism.css
   script:
     - /js/sidebar.js
 
@@ -271,6 +271,7 @@ bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg # recomend image related to your mode
   blur: 30px
+  opacity: 0.8
 
 # Reward (Donate)
 reward_settings:

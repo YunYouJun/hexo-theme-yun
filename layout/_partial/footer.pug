@@ -27,7 +27,8 @@ footer#footer.sidebar-translate
     .live_time
       span!=theme.footer.live_time.prefix
       span#display_live_time
-      span.moe-text!=theme.footer.live_time.suffix
+      if theme.footer.live_time.suffix
+        span.moe-text!=theme.footer.live_time.suffix
       script.
         function blog_live_time() {
           window.setTimeout(blog_live_time, 1000);

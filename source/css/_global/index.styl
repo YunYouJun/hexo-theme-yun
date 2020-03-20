@@ -17,8 +17,8 @@ html {
 
 // background
 $bg-image-url = hexo-config('bg_image.url');
-$bg-opacity = 0.8;
 $bg-blur = convert(hexo-config('bg_image.blur'));
+$bg-opacity = hexo-config('bg_image.opacity');
 
 body {
   background-color: var(--hty-bg-color, #f5f5f5);
@@ -39,6 +39,7 @@ body {
       animation-name: bgFadeIn;
       animation-duration: 2s;
       filter: blur($bg-blur);
+      opacity: $bg-opacity;
     }
   }
 }
