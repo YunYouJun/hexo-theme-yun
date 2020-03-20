@@ -78,18 +78,22 @@ document.addEventListener("DOMContentLoaded", function() {
   // ol.toc > (li.toc-item, ...)
   // li.toc-item > (a.toc-link, ol.toc-child > (li.toc-item, ...))
   function findHeadPosition(top) {
-    // we are not in the post page if no TOC link be found
     if (!document.querySelectorAll(".toc-link").length) return;
 
     let list = document
       .querySelector(".post-content")
       .querySelectorAll("h1, h2, h3, h4, h5, h6");
     let curId = "";
-    list.forEach(el => {
+    for (let i = 0; i < list.length; i++) {
+      const el = list[i];
       if (top > el.offsetTop - 25) {
         curId = "#" + el.attributes.id.value;
+        // break;
+      } else {
+        break;
       }
-    });
+      console.log(el);
+    }
 
     let curActiveLink = document.querySelector(".toc-link.active");
     if (curId) {

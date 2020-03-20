@@ -111,11 +111,11 @@ cdn:
 
 - `pre`: 默认为空，你的加载资源前缀。譬如我想要使全站静态资源使用 `jsdelivr` 加速（~~又白嫖~~），则可以在 `yun,yml` 中这样设置。
 
-> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名。
+> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名及所在分支。
 
 ```yml
 cdn:
-  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@master
 ```
 
 ::: tip
@@ -734,7 +734,7 @@ creative_commons:
 开启后，将会为 Markdown 的图片 `img` 加上 `loading="lazy"` 属性。
 
 > [<img> loading](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img#attr-loading)
-> 当前仍有许多浏览器不支持该特性 https://caniuse.com/#search=loading
+> 当前仍有许多浏览器不支持该特性 [Can I use loading?](https://caniuse.com/#search=loading)
 
 ```yml
 lazyload:
