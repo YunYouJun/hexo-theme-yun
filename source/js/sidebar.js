@@ -5,20 +5,30 @@ document.addEventListener("DOMContentLoaded", function() {
   // main of scroll
   window.addEventListener(
     "scroll",
-    throttle(
-      function() {
-        const curTop = window.scrollY;
-        scrollPercent(curTop);
-        // head position
-        findHeadPosition(curTop);
-      },
-      50,
-      100
-    ),
+    debounce(function() {
+      const curTop = window.scrollY;
+      scrollPercent(curTop);
+    }, 200),
     {
       passive: true
     }
   );
+
+  if (document.querySelectorAll(".toc-link").length) {
+    let tocList = document
+      .querySelector(".post-content")
+      .querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+    window.addEventListener(
+      "scroll",
+      debounce(function() {
+        findHeadPosition(tocList, window.scrollY);
+      }, 200),
+      {
+        passive: true
+      }
+    );
+  }
 
   // toggle sidebar nav and panel
   document.querySelectorAll(".sidebar-nav li").forEach(el => {
@@ -72,36 +82,28 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // write with vanilla js
   // add active class for cur toc
   // DOM Hierarchy:
   // ol.toc > (li.toc-item, ...)
   // li.toc-item > (a.toc-link, ol.toc-child > (li.toc-item, ...))
-  function findHeadPosition(top) {
-    if (!document.querySelectorAll(".toc-link").length) return;
-
-    let list = document
-      .querySelector(".post-content")
-      .querySelectorAll("h1, h2, h3, h4, h5, h6");
+  function findHeadPosition(tocList, top) {
     let curId = "";
-    for (let i = 0; i < list.length; i++) {
-      const el = list[i];
-      if (top > el.offsetTop - 25) {
+    for (let i = 0; i < tocList.length; i++) {
+      const el = tocList[i];
+      if (top > el.offsetTop - 64) {
         curId = "#" + el.attributes.id.value;
-        // break;
       } else {
         break;
       }
-      console.log(el);
     }
 
     let curActiveLink = document.querySelector(".toc-link.active");
-    if (curId) {
-      if (!curActiveLink || curActiveLink.attributes.href !== curId) {
-        let curLink = document.querySelector(".toc-link[href='" + curId + "']");
-        activeLink(curLink);
-        updateAnchor(curId);
-      }
+
+    if (!curId) curId = "#" + document.querySelector("h2").id;
+    if (!curActiveLink || curActiveLink.attributes.href !== curId) {
+      let curLink = document.querySelector(".toc-link[href='" + curId + "']");
+      activeLink(curLink);
+      updateAnchor(curId);
     }
   }
 });
