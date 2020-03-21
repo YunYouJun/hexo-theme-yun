@@ -884,7 +884,7 @@ live_time:
   enable: false
   prefix: 本博客已萌萌哒地运行
   suffix: (●'◡'●)
-  start_time: 2019-01-01T00:00:00
+  start_time: "2019-04-12T00:00:00"
 ```
 
 ### 自定义文本

@@ -1,9 +1,7 @@
-// wrap
 function initPage() {
   if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal(".post-card");
   }
-  Yun.utils.embeddedVideoTransformer();
 
   // open sidebar
   document.querySelectorAll(".sidebar-toggle").forEach(el => {

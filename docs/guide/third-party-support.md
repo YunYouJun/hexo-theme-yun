@@ -56,6 +56,8 @@ language: zh-CN
 
 > [快速开始 - 获取 APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
+- `visitor`: 文章阅读量统计（请最后不要与 [不蒜子](#busuanzi) 同时启用）
+
 ```yml
 valine:
   enable: false
@@ -154,6 +156,8 @@ google_analytics:
 
 使用说明：<http://ibruce.info/2015/04/04/busuanzi>
 
+> 请最后不要与 [Valine](#valine) 的 `visitor` 同时启用。
+
 - `site_uv`: 是否显示站点用户访问量 Unique Visitor（\_icon 为对应图标，以下同理）
 - `site_pv`: 是否显示站点页面访问量 Page View
 - `page_pv`: 是否显示文章页面访问量 Page View
@@ -179,4 +183,61 @@ busuanzi:
 google_adsense:
   enable: false
   client: ca-pub-2245427233262012
+```
+
+## 播放器
+
+### [hexo-tag-aplayer](<(https://github.com/MoePlayer/hexo-tag-aplayer)>)
+
+自己去看[文档](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)就好了。
+
+推荐的配置（在 Hexo 的根目录下的 `_config.yml` 中）：
+
+```yml
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  meting: true
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+```
+
+插入某首网易云音乐的歌
+
+```md
+{% meting "497572729" "netease" "song" "theme:#C20C0C"%}
+```
+
+由于 `hexo-tag-aplayer` 太香了，我决定移除原先的媒体包裹脚本。实在有需要的同学，可以自行外挂添加。
+
+```js
+/**
+ * Transform embedded video to support responsive layout.
+ * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
+ */
+embeddedVideoTransformer: function() {
+  let iframes = document.getElementsByTagName("iframe");
+  let SUPPORTED_PLAYERS = [
+    "www.youtube.com",
+    "player.vimeo.com",
+    "music.163.com"
+  ];
+  for (let i = 0; i < iframes.length; i++) {
+    let iframe = iframes[i];
+    if (iframe.src.search(SUPPORTED_PLAYERS.join("|")) !== -1) {
+      let videoRatio = (iframe.height / iframe.width) * 100;
+      iframe.width = "100%";
+
+      let wrap = document.createElement("div");
+      wrap.className = "fluid-vids";
+      wrap.style.width = "100%";
+      wrap.style.minHeight = "90px";
+      wrap.style.height = iframe.height;
+      wrap.style.position = "relative";
+
+      let iframeParent = iframe.parentNode;
+      iframeParent.insertBefore(wrap, iframe);
+      wrap.appendChild(iframe);
+    }
+  }
+}
 ```
