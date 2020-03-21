@@ -163,8 +163,7 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/yun-boot.js
-    - /js/utils.js
+    - /js/yun-utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
