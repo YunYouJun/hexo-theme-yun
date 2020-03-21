@@ -1,11 +1,10 @@
 .post-comment
-  if theme.comment.enable
-    .comment-tooltip.text-center
-      each tip in theme.comment.tips
-        span!=tip
-        br
-      if theme.github_issues.enable
-        include github-issues.pug
+  .comment-tooltip.text-center
+    each tip in theme.comment.tips
+      span!=tip
+      br
+    if theme.github_issues.enable
+      include github-issues.pug
 
   if theme.valine && theme.valine.enable
     include valine.pug

@@ -26,5 +26,6 @@ block content
     article.post-block
       section.post-body(itemprop='articleBody')
         .post-content(class='post-markdown')!= page.content
-  if page.comments
+        
+  if page.comments && theme.comment.enable
     include ./_third-party/comments/index.pug

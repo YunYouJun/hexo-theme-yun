@@ -29,7 +29,7 @@ social:
   - name: RSS
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
-    link: atom.xml # config.feed.path
+    link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
   - name: QQ
@@ -272,6 +272,7 @@ bg_image:
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg # recomend image related to your mode
   blur: 30px
   opacity: 0.8
+  # scale: 1.12
 
 # Reward (Donate)
 reward_settings:
