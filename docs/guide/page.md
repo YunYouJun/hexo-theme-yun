@@ -113,7 +113,7 @@ Example: <https://www.yunyoujun.cn/404.html>
 hexo new page links
 ```
 
-进入 `source/links/index.md`
+进入 `source/links/index.md`，设置 `links` 字段。
 
 - `url`: 博客链接
 - `avatar`: 头像图片链接
@@ -146,6 +146,28 @@ placeholder: 还没想好说些什么 # 默认对友链的描述
 ```
 
 让友链显示在侧边栏中 [侧边栏 - 页面链接](/guide/config.html#页面链接)
+
+### 随机友链
+
+想要启用随机友链，你必须将其改为外置的 JSON 加载方式。
+
+譬如：<https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json>
+
+你可以参考我的 [YunYouJun/friends](https://github.com/YunYouJun/friends) 来自动生成你友链的 JSON 数据格式。
+（当然你自己手写存放在本地也可以。）
+
+- `random`: 随机友链顺序，默认未开启
+
+```yml
+layout: links
+title: 我的小伙伴们
+date: 2019-06-21 13:06:06
+keywords: 链接
+description: 云游的小伙伴们
+comments: true
+links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
+random: true
+```
 
 ## Girls
 
