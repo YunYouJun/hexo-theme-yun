@@ -241,3 +241,40 @@ embeddedVideoTransformer: function() {
   }
 }
 ```
+
+## KaTeX
+
+在文章中显示一些简单的数学公式，使用 [KaTeX](katex.or) 实现。具体方法请参见[官方文档](https://katex.org/)。
+
+- `copy_tex`: 复制 katex 文本，默认开启
+
+```yml
+katex:
+  copy_tex: true
+```
+
+只有在使用了 `katex` 的文章或页面才会加载 KaTeX 的库，所以你需要在使用 KaTeX 的文章或头部进行设置。
+
+```md
+---
+title: xxx
+katex: true
+---
+```
+
+你可以使用如下方式包裹公式。
+
+如下包裹，公式将被居中展示。
+
+```latex
+$$ E = mc^2 $$
+\\[ E = mc^2 \\]
+```
+
+如下包裹，将不会居中展示。
+
+```latex
+\\( E = mc^2 \\)
+```
+
+> 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/) 来查看实际效果。

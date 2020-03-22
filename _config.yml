@@ -13,7 +13,7 @@ colors:
 
 # Favicon
 # ---------------
-favicon: /favicon.ico
+favicon: /yun-favicon.ico
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -243,7 +243,13 @@ vendors:
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
-  katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+  katex:
+    js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+    auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+    copy_tex:
+      css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
+      js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
   fireworks: /js/ui/fireworks.js
   rymd: /js/ui/rymd.js
   search: /js/search/index.js
@@ -501,5 +507,6 @@ google_analytics:
   id: UA-XXXXXXXXX-X
 
 # math fomula
+# https://katex.org/
 katex:
-  enable: true
+  copy_tex: true

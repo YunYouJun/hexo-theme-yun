@@ -1,0 +1,7 @@
+link(rel="stylesheet" type="text/css" href=theme.vendors.katex.css)
+script(defer, src=theme.vendors.katex.js)
+if theme.katex.copy_tex
+  link(rel="stylesheet" type="text/css" href=theme.vendors.katex.copy_tex.css)
+  script(defer, src=theme.vendors.katex.copy_tex.js)
+
+script(defer src=theme.vendors.katex.auto_render onload="renderMathInElement(document.body);")

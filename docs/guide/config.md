@@ -80,7 +80,7 @@ head:
 设置网站图标
 
 ```yml
-favicon: /favicon.ico
+favicon: /yun-favicon.ico
 ```
 
 ## CDN

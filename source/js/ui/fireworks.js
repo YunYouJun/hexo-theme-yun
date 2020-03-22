@@ -20,16 +20,15 @@ let ctx = canvasEl.getContext("2d");
 let pointerX = 0;
 let pointerY = 0;
 
-let tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown'
+let tap =
+  "ontouchstart" in window || navigator.msMaxTouchPoints
+    ? "touchstart"
+    : "mousedown";
 
 // sky blue
-let colors = [
-  "102, 167, 221",
-  "62, 131, 225",
-  "33, 78, 194"
-];
+let colors = ["102, 167, 221", "62, 131, 225", "33, 78, 194"];
 
-if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors
+if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors;
 
 let setCanvasSize = function() {
   canvasEl.width = window.innerWidth;
