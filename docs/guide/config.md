@@ -112,7 +112,7 @@ cdn:
 - `pre`: 默认为空，你的加载资源前缀。譬如我想要使全站静态资源使用 `jsdelivr` 加速（~~又白嫖~~），则可以在 `yun.yml` 中这样设置。
 
 > 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。
-> `@latest` 为使用最新版本
+> `@latest` 为使用最新版本（它仍然会被缓存，且可能需要 12 h 才能更新，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
 
 ```yml
 cdn:
@@ -563,6 +563,13 @@ pages:
 ## 文章
 
 ### 首页卡片
+
+- `opacity`: 自定义首页卡片透明度，默认为 `0.8`
+
+```yml
+post_card:
+  opacity: 0.8
+```
 
 #### type
 

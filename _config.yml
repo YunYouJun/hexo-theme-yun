@@ -173,6 +173,10 @@ types:
     color: blue
     icon: icon-external-link-line
 
+# post_card
+post_card:
+  opacity: 0.8
+
 # link
 # -------
 preload:

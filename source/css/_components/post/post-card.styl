@@ -1,9 +1,11 @@
+$post-card-opacity = hexo-config('post_card.opacity');
+
 .post-card {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
   the-transition();
-  background-color: rgba(white, 0.8);
+  background-color: rgba(white, $post-card-opacity);
   box-shadow: 0 1px 8px rgba(white, 0.1);
 
   &:hover {

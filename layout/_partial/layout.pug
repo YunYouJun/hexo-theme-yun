@@ -23,6 +23,9 @@ html(lang=config.language)
     include ../_third-party/cdn.pug
     block preconnect
   body(class= is_home() ? 'is-home' : '')
+    //- background
+    include background.pug
+    !=search_form(options)
     .container
       //- global
       include ../_third-party/icon.pug
@@ -30,8 +33,6 @@ html(lang=config.language)
       main#content.sidebar-translate
         block content
       include footer.pug
-      //- background
-      include background.pug
       //- widget
       include ../_widget/index.pug
     if theme.js

@@ -169,6 +169,9 @@ links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
 random: true
 ```
 
+> 注意：你使用 jsdelivr 可能会因为 CDN 有所延迟。
+> 你也可以像我一样使用自定义域名。<https://friends.yunyoujun.cn/links.json>
+
 ## Girls
 
 记录喜欢的女孩子们
