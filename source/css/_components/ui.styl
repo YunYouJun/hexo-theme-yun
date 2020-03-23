@@ -10,6 +10,62 @@
   overflow: hidden;
 }
 
+// bg
+if (hexo-config('bg_image.enable')) {
+  // background
+  $bg-image-url = hexo-config('bg_image.url');
+  $bg-blur = convert(hexo-config('bg_image.blur'));
+  $bg-opacity = hexo-config('bg_image.opacity');
+  $bg-scale = hexo-config('bg_image.scale');
+
+  .bg-img-container {
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+
+    if ($bg-scale) {
+      transform: scale($bg-scale);
+    }
+  }
+
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    opacity: $bg-opacity;
+    background-image: url($bg-image-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    if (!$bg-scale) {
+      animation-name: bgFadeIn;
+      animation-duration: 2.5s;
+    } else {
+      animation: grayScale 2.5s;
+    }
+
+    filter: blur($bg-blur);
+  }
+
+  if (!$bg-scale) {
+    @keyframes bgFadeIn {
+      from {
+        opacity: 0;
+        filter: blur($bg-blur) grayscale(1);
+      }
+
+      to {
+        opacity: $bg-opacity;
+        filter: blur($bg-blur);
+      }
+    }
+  }
+}
+
 if (hexo-config('fireworks')) {
   .fireworks {
     position: fixed;
