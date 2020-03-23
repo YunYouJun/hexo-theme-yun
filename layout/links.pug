@@ -20,6 +20,7 @@ block content
                     - link.desc = page.placeholder
                   .link-desc!=link.desc
           else
+            h3#tip(style="width: 100%")!=page.tip
             script.
               fetch("#{page.links}")
                 .then(res => {
@@ -64,6 +65,7 @@ block content
                     li.append(a, info);
                     document.querySelector(".link-items").append(li);
                   });
+                  tip.remove();
                 });
 
     article.post-block

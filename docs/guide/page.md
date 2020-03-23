@@ -124,6 +124,8 @@ hexo new page links
 
 你可以进入 [我的小伙伴们](https://www.yunyoujun.cn/links/) 查看效果
 
+- `tip`: 友链未加载成功时的文字提示，加载完后会被移除。（仅当通过 JSON 加载友链时生效。）
+
 ```yml
 ---
 layout: links
@@ -141,6 +143,7 @@ links:
     color: "#0078e7" # 代表色
     email: # 非必须
 placeholder: 还没想好说些什么 # 默认对友链的描述
+tip: 友链加载中～如失败请刷新重试～
 ---
 
 ```
