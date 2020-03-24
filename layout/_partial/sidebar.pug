@@ -16,11 +16,12 @@ aside.sidebar
       if theme.avatar && theme.avatar.url
         a.site-author-avatar(href=url_for('about'), title=config.author)
           img(loading='lazy', src=theme.cdn.pre + theme.avatar.url, alt=author)
-        p.site-author-name
+        .site-author-name
           a(href=url_for('about'))
             | #{author}
         a.site-name(href=url_for('about/site.html'))
           | #{config.title}
+        sub.site-subtitle!=config.subtitle
         .site-desciption!=config.description
 
     nav.site-state
@@ -54,24 +55,19 @@ aside.sidebar
           span.site-state-item-icon
             +icon('icon-search-line')
 
-    hr
-
+    hr(style="margin-bottom:0.5rem")
     if theme.social
       .links-of-author
         for social in theme.social
           a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=social.name, target='_blank' style='color:' + social.color)
             +icon(social.icon)
 
-
-
     if theme.pages
-      hr
+      hr(style="margin:0.5rem 1rem")
       .links
         for link in theme.pages
           a.links-item.hty-icon-button(href=url_for(link.url), title=link.name, style='color:' + link.color)
             +icon(link.icon)
-
-
 
   if is_post()
     script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))

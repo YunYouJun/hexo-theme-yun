@@ -2,11 +2,18 @@
   padding-top: 2rem;
 
   &.mickey-mouse {
-    margin-top: -2.7rem;
+    margin-top: -3.7rem;
   }
 }
 
+.site-info {
+  margin-top: 1rem;
+}
+
 .site-author-avatar {
+  display: inline-block;
+  line-height: 0;
+
   img {
     height: 96px;
     width: 96px;
@@ -30,13 +37,18 @@ if (hexo-config('avatar.rounded')) {
 }
 
 .site-author-name {
-  margin: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
 }
 
 .site-name {
   color: $dark;
   font-family: $font-family-serif;
   font-weight: bold;
+}
+
+.site-subtitle {
+  display: block;
 }
 
 .site-desciption {
@@ -51,7 +63,7 @@ if (hexo-config('avatar.rounded')) {
   line-height: 1.5;
   white-space: nowrap;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .site-state-item {
