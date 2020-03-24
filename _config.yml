@@ -1,12 +1,13 @@
-# Todo: mode: ligh | dark | Todo: auto
-mode: light
+# ---------------
+# Todo: mode: light | dark | auto
+mode: light # now only light
 
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
-# ---------------
 colors:
   primary: "#0078E7"
   # primary: "#6200ee"
+  # bg: "#EEEEEE"
   selection_bg: "#8e71c1"
   # tag_start_color:
   # tag_end_color:
@@ -73,6 +74,18 @@ social:
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "#1AAD19"
+  - name: Twitter
+    link: https://twitter.com/YunYouJun
+    icon: icon-twitter-line
+    color: "#1da1f2"
+  - name: Telegram
+    link: https://t.me/YunYouJun
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: Telegram Channel
+    link: https://t.me/yyjlife
+    icon: icon-telegram-fill
+    color: "#0088CC"
 
 # Extra links
 pages:
@@ -237,7 +250,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_1mmutpa6wvwi.js
+      iconfont: //at.alicdn.com/t/font_1140697_rxsxx5yskz.js
     defer:
 
 # cdn for third-party library (alternative include)

@@ -15,9 +15,14 @@
 
 自定义主题的主色调。
 
+- `bg`: 背景色（选取与你的背景图片主色调更贴近的颜色来使其更协调）
+
+> [color-dust](https://www.yunyoujun.cn/color-dust) 此前写的一个可以分析图片配色的小工具。
+
 ```yml
 colors:
   primary: "#6200ee"
+  # bg: "#F5F5F5"
   selection_bg: "#8e71c1" # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
   # tag_start_color:

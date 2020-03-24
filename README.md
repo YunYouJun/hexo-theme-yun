@@ -122,8 +122,8 @@ git pull
 
 ## Feedback
 
-有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)。（在此之前，请确保你已仔细阅读[文档](https://yun.yunyoujun.cn)。）
+有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)。（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
 
-你也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
+您也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
 
-> 如果是通用的问题（如 BUG 反馈，新功能建议），最好在 Issue 中进行反馈，这样别的朋友也能看到并参与讨论，减少重复。
+> 如果是通用的问题（如 BUG 反馈，新功能建议），最好在 Issue 中进行反馈，以便其他朋友参与讨论，减少重复。

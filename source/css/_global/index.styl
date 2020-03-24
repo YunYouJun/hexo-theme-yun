@@ -1,10 +1,10 @@
 @import 'reset.styl';
 
+$bg-color = convert(hexo-config('colors.bg'));
+
 :root {
-  if (hexo-config('mode') == 'light') {
-    --hty-bg-color: #f5f5f5;
-  } else {
-    --hty-bg-color: #141516;
+  if ($bg-color) {
+    --hty-bg-color: $bg-color;
   }
 
   --hty-primary: $colors.primary;
