@@ -118,23 +118,12 @@ cd themes/yun
 git pull
 ```
 
-## Inspiration
+## [About](https://yun.yunyoujun.cn/guide/about.html)
 
-### Theme
+## Feedback
 
-- [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
-- [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
-- [hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)
+有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)。（在此之前，请确保你已仔细阅读[文档](https://yun.yunyoujun.cn)。）
 
-### PV
+你也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
 
-- [【洛天依原创】异样的风暴中心【杉田朗】](https://www.bilibili.com/video/av4018008)
-- [【洛天依原创】星宿计时【杉田朗】](https://www.bilibili.com/video/av7036967)
-
-### Article
-
-- [Hexo 主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
-
-### Other
-
-- [明日方舟](https://ak.hypergryph.com/)
+> 如果是通用的问题（如 BUG 反馈，新功能建议），最好在 Issue 中进行反馈，这样别的朋友也能看到并参与讨论，减少重复。
