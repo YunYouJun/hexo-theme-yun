@@ -120,9 +120,13 @@ git pull
 
 ## [About](https://yun.yunyoujun.cn/guide/about.html)
 
+本主题采用 [SATA License](https://github.com/zTrix/sata-license)。
+
+> 你不知道这代表什么？简单来说，就是如果你使用了该主题，你需要马不停蹄地点一个 Star，接下来你便可以随意使用它。
+
 ## Feedback
 
-有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)。（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
+有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
 
 您也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
 

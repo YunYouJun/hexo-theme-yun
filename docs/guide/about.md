@@ -8,6 +8,9 @@
 
 如果您喜欢我的主题，请给一颗 [![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)](https://github.com/YunYouJun/hexo-theme-yun) 鼓励我。
 
+> 因为我使用了 [SATA License](https://github.com/zTrix/sata-license)，笑。
+> 你不知道这代表什么？简单来说，就是如果你使用了该主题，你需要马不停蹄地点一个 Star，接下来你便可以随意使用它。
+
 ## 关键词
 
 简洁、优雅、自适应、快速、CDN、有趣、功能齐全

@@ -1,13 +1,17 @@
 #site-overview-wrap {
   padding-top: 2rem;
-
-  &.mickey-mouse {
-    margin-top: -3.7rem;
-  }
 }
 
 .site-info {
-  margin-top: 1rem;
+  if (hexo-config('avatar.mickey_mouse')) {
+    &.mickey-mouse {
+      margin-top: -2.8rem;
+    }
+  } else {
+    &.fix-top {
+      margin-top: -1.5rem;
+    }
+  }
 }
 
 .site-author-avatar {
@@ -38,7 +42,8 @@ if (hexo-config('avatar.rounded')) {
 
 .site-author-name {
   margin-top: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .site-name {

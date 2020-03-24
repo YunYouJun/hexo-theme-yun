@@ -3,7 +3,6 @@
   width: 2rem;
   height: 2rem;
   margin: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: alpha($white, 0.5);
   transition: 0.2s;
 }
@@ -22,19 +21,18 @@
     text-decoration: none;
 
     &:hover {
-      background: lighten($colors.primary, 90%);
+      background: rgba(lighten($colors.primary, 90%), 0.9);
     }
 
     &:active {
-      background: lighten($colors.primary, 20%);
+      background: rgba(lighten($colors.primary, 20%), 0.9);
       color: $white;
     }
 
     &.current {
-      background: $colors.primary;
+      background: rgba($colors.primary, 0.9);
       color: $white;
       cursor: default;
-      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset
     }
   }
 }

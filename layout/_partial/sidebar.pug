@@ -11,8 +11,8 @@ aside.sidebar
       li.sidebar-nav-item.sidebar-nav-overview.hty-icon-button(data-target='site-overview-wrap', title=__('sidebar.overview'))
         +icon('icon-passport-line')
 
-  #site-overview-wrap.sidebar-panel(class= is_post() ? 'mickey-mouse' : 'sidebar-panel-active')
-    .site-info
+  #site-overview-wrap.sidebar-panel(class= is_post() ? '' : 'sidebar-panel-active')
+    .site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
       if theme.avatar && theme.avatar.url
         a.site-author-avatar(href=url_for('about'), title=config.author)
           img(loading='lazy', src=theme.cdn.pre + theme.avatar.url, alt=author)

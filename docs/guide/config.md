@@ -482,6 +482,7 @@ sidebar:
 - `url`: 头像图片链接
 - `rounded`: 是否显示圆形
 - `opacity`: 透明度
+- `mickey_mouse`: 默认关闭，开启后文章页面侧边栏的头像将向上移动（迪士尼警告）
 
 ```yml
 avatar:
@@ -489,13 +490,12 @@ avatar:
   url: /images/avatar.jpg
   rounded: true
   opacity: 1
+  mickey_mouse: false
 ```
 
-话说这里是米老鼠，有人发现吗？
+`mickey_mouse` 开启后效果：
 
-![mickey.png](https://i.loli.net/2020/03/10/fPn637T98lA2wJ4.png)
-
-> 哪有彩蛋自己说出来的道理！
+![mickey-mouse](https://i.loli.net/2020/03/10/fPn637T98lA2wJ4.png)
 
 ### 导航
 
