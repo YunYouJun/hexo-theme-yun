@@ -11,6 +11,8 @@
 > 因为我使用了 [SATA License](https://github.com/zTrix/sata-license)，笑。
 > 你不知道这代表什么？简单来说，就是如果你使用了该主题，你需要马不停蹄地点一个 Star，接下来你便可以随意使用它。
 
+- [hexo-theme-yun 制作笔记](https://www.yunyoujun.cn/note/make-hexo-theme-yun/)
+
 ## 关键词
 
 简洁、优雅、自适应、快速、CDN、有趣、功能齐全
@@ -23,7 +25,7 @@
 - 因为还没什么人用，所以基本不用担心撞衫！
 - 一些奇怪的功能（譬如生成老婆名单？）
 
-> 我发现大部分的 Hexo 主题都引入了 jQuery 以方便开发。
+> 我发现许多 Hexo 主题都引入了 jQuery 以方便开发。
 > 而现今 jQuery 的 API 已经逐渐融入现代浏览器的标准，所以本主题移除了 jQuery 并全部使用原生 JavaScript 来实现以提升速度。
 
 ## 设计原则

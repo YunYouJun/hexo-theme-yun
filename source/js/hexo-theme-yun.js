@@ -4,14 +4,10 @@ function initPage() {
   }
 
   // open sidebar
-  document.querySelectorAll(".sidebar-toggle").forEach(el => {
-    el.onclick = function() {
-      document
-        .querySelector(".sidebar-toggle .hamburger")
-        .classList.toggle("is-active");
-      document.querySelector(".container").classList.toggle("sidebar-open");
-    };
-  });
+  document.querySelector(".sidebar-toggle").onclick = function() {
+    this.querySelector(".hamburger").classList.toggle("is-active");
+    document.querySelector(".container").classList.toggle("sidebar-open");
+  };
 
   window.addEventListener(
     "scroll",
