@@ -86,6 +86,10 @@ social:
     link: https://t.me/yyjlife
     icon: icon-telegram-fill
     color: "#0088CC"
+  - name: Travelling
+    link: https://travellings.now.sh/
+    icon: icon-send-plane-2-line
+    color: black
 
 # Extra links
 pages:
@@ -251,7 +255,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_rxsxx5yskz.js
+      iconfont: //at.alicdn.com/t/font_1140697_pa6cswvjpq.js
     defer:
 
 # cdn for third-party library (alternative include)
