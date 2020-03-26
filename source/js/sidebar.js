@@ -3,31 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
    * display TOC
    */
   // main of scroll
-  window.addEventListener(
-    "scroll",
-    debounce(function() {
-      const curTop = window.scrollY;
-      scrollPercent(curTop);
-    }, 200),
-    {
-      passive: true
-    }
-  );
+  window.addEventListener("scroll", () => {
+    scrollPercent(window.scrollY);
+  });
 
   if (document.querySelectorAll(".toc-link").length) {
     let tocList = document
       .querySelector(".post-content")
       .querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-    window.addEventListener(
-      "scroll",
-      debounce(function() {
-        findHeadPosition(tocList, window.scrollY);
-      }, 200),
-      {
-        passive: true
-      }
-    );
+    window.addEventListener("scroll", function() {
+      findHeadPosition(tocList, window.scrollY);
+    });
   }
 
   // toggle sidebar nav and panel

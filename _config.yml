@@ -201,7 +201,7 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/yun-utils.js
+    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
@@ -227,7 +227,7 @@ css:
 
 # scripts loaded in the end of the body
 js:
-  - /js/yun-utils.js
+  - /js/utils.js
   - /js/hexo-theme-yun.js
 
 # custom your assets in head
@@ -291,13 +291,15 @@ fireworks:
 # https://codepen.io/hakimel/pen/bzrZGo
 rymd: false
 
+smoothScroll: true
+
 # You can see effect in https://scrollrevealjs.org/
 scrollreveal: true
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg # recomend image related to your mode
-  blur: 30px
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
+  # blur: 30px
   opacity: 0.8
   # scale: 1.12
 

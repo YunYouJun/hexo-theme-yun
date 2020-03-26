@@ -48,10 +48,12 @@ if (hexo-config('bg_image.enable')) {
       animation: grayScale 2.5s;
     }
 
-    filter: blur($bg-blur);
+    if ($bg-blur) {
+      filter: blur($bg-blur);
+    }
   }
 
-  if (!$bg-scale) {
+  if (!$bg-scale && $bg-blur) {
     @keyframes bgFadeIn {
       from {
         opacity: 0;
@@ -72,7 +74,6 @@ if (hexo-config('fireworks')) {
     left: 0;
     top: 0;
     z-index: -1;
-    pointer-events: none;
   }
 }
 

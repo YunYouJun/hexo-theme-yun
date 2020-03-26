@@ -1,3 +1,9 @@
+console.log(
+  "%c ☁️ hexo-theme-yun %c https://github.com/YunYouJun/hexo-theme-yun",
+  "color: white; background: #0078E7; padding:5px 0;",
+  "padding:4px;border:1px solid #0078E7;"
+);
+
 function initPage() {
   if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal(".post-card");
@@ -9,21 +15,11 @@ function initPage() {
     document.querySelector(".container").classList.toggle("sidebar-open");
   };
 
-  window.addEventListener(
-    "scroll",
-    debounce(function() {
-      const curTop = window.scrollY;
-      const goUp = document.querySelector("#go-up");
-      if (curTop > 64 && !goUp.style.opacity) {
-        goUp.classList.add("show");
-      } else {
-        goUp.classList.remove("show");
-      }
-    }, 200),
-    {
-      passive: true
-    }
-  );
+  window.addEventListener("scroll", function() {
+    goUp.classList.toggle("show", window.scrollY > 64);
+  });
 }
 
-document.addEventListener("DOMContentLoaded", initPage);
+document.addEventListener("DOMContentLoaded", () => {
+  initPage();
+});

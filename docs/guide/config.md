@@ -169,7 +169,7 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/yun-utils.js
+    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
@@ -415,11 +415,15 @@ notice:
 
 > 如果你开启缩放，将会自动关闭背景淡入效果，因为当背景淡入时，缩放无法消除白边，且动画结束后缩放将立刻消除白边会产生闪烁。
 
+::: tip
+注意，现背景模糊已默认关闭。更建议用户通过图像处理工具来模糊图片作为背景。因为 filter blur 滤镜在滚动时会影响性能，产生些许卡顿。
+:::
+
 ```yml
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
-  blur: 30px # 设置背景模糊程度
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  # blur: 30px # 设置背景模糊程度
   opacity: 0.8
   # scale: 1.12
 ```

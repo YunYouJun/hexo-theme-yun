@@ -11,10 +11,13 @@ $bg-color = convert(hexo-config('colors.bg'));
 }
 
 html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+  if (hexo-config('smoothScroll')) {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: var(--hty-bg-color, #f5f5f5);
 }
