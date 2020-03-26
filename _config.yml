@@ -23,7 +23,7 @@ favicon: /yun-favicon.ico
 # Posts / Categories / Tags in sidebar.
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
-  bg_position: bottom 3rem center
+  bg_position: bottom 1rem center
 
 # Social Links.
 social:

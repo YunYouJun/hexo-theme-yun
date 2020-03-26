@@ -1,6 +1,6 @@
 - var title = __('title') !== 'title' && __('title') || config.title
 - var description = page.description || page.title || config.description || ''
-- var keywords = (config.keywords || []).join(',')
+- var keywords = Array.isArray(config.keywords) ? config.keywords.join(',') : config.keywords
 - if (page.tags && page.tags.data) keywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
 - var author = config.email ? config.author + ',' + config.email : config.author
 - var copyright = config.copyright || config.author
