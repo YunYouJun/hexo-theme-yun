@@ -247,13 +247,16 @@ embeddedVideoTransformer: function() {
 在文章中显示一些简单的数学公式，使用 [KaTeX](katex.or) 实现。具体方法请参见[官方文档](https://katex.org/)。
 
 - `copy_tex`: 复制 katex 文本，默认开启
+- `global`: 如果你想要在全局页面使用 `KaTex`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
 
 ```yml
 katex:
   copy_tex: true
+  global: false
 ```
 
 只有在使用了 `katex` 的文章或页面才会加载 KaTeX 的库，所以你需要在使用 KaTeX 的文章或头部进行设置。
+（当你开启全局加载时，将不再需要设置此选项。）
 
 ```md
 ---

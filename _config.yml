@@ -532,3 +532,4 @@ google_analytics:
 # https://katex.org/
 katex:
   copy_tex: true
+  global: false

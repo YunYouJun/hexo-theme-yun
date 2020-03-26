@@ -39,6 +39,6 @@ block content
   if page.comments && theme.comment.enable
     include ./_third-party/comments/index.pug
 
-  if page.katex
+  if page.katex && !theme.katex.global
     include _third-party/katex.pug
 
