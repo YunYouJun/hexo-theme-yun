@@ -212,3 +212,5 @@ girls:
 ```
 
 可参考我的[配置](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md)。
+
+> 如果想要让其显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)

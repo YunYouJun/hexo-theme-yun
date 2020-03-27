@@ -692,6 +692,12 @@ post_meta:
   tags: true
 ```
 
+### 目录
+
+你只要遵循 [Markdown 语法](https://segmentfault.com/markdown)，就会自动生成目录！
+
+> 没什么人会要关这个功能的吧，hhh
+
 ### 编辑链接
 
 若开启，则会在文章页面标题旁显示一个编辑图标。
@@ -754,7 +760,7 @@ creative_commons:
 
 ### 图片懒加载
 
-开启后，将会为 Markdown 的图片 `img` 加上 `loading="lazy"` 属性。
+默认开启，将会为 Markdown 的图片 `img` 加上 `loading="lazy"` 属性。
 
 > [<img> loading](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img#attr-loading)
 > 当前仍有许多浏览器不支持该特性 [Can I use loading?](https://caniuse.com/#search=loading)

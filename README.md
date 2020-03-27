@@ -7,7 +7,7 @@
   <img width="128" src="docs/.vuepress/public/logo.gif">
 </p>
 
-> A simple and fast hexo theme.
+> A light & fast & lovely hexo theme.
 
 - Docs: <https://yun.yunyoujun.cn>
 
