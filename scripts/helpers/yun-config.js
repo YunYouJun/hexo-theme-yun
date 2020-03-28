@@ -76,7 +76,20 @@ hexo.extend.helper.register("yun_config", function() {
       visitor: theme.valine.visitor
     };
   }
-
+  
+  // minivaline
+  if (theme.minivaline.enable) {
+    exportConfig.minivaline = {
+      el: '#minivaline-container',
+      appId: theme.minivaline.appId,
+      appKey: theme.minivaline.appKey,
+      placeholder: theme.minivaline.placeholder,
+      lang: theme.minivaline.lang,
+      adminEmailMd5: theme.minivaline.adminEmailMd5,
+      math: theme.minivaline.math
+    };
+  }
+  
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
       colors: theme.fireworks.colors

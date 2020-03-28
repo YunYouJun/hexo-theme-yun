@@ -264,6 +264,7 @@ vendors:
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
   katex:
     js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
@@ -476,6 +477,18 @@ valine:
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
+
+# MiniValine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://github.com/MiniValine/MiniValine
+minivaline:
+  enable: false
+  appId: # Your leancloud application appid
+  appKey: # Your leancloud application appkey
+  placeholder: Write a Comment # Comment box placeholder
+  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
+  math: true # Support MathJax.
+  lang: en # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
