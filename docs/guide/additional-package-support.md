@@ -34,7 +34,7 @@ symbols_count_time:
 
 ## RSS
 
-安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，参见官方文档进行配置。
+安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)。
 
 ```sh
 npm install hexo-generator-feed --save
@@ -46,12 +46,13 @@ npm install hexo-generator-feed --save
 
 ```yml
 social:
-  RSS:
-    link: atom.xml # config.feed.path
+  - name: RSS
+    link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
-  QQ: ...
 ```
+
+更多配置请参见[官方文档](https://github.com/hexojs/hexo-generator-feed)（在 Hexo 工作目录下的 `_config.yml` 中进行）。
 
 ## 置顶
 
