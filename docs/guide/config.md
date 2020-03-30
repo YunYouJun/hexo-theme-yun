@@ -729,6 +729,8 @@ post_edit:
 npm install hexo-prism-plugin
 ```
 
+在 Hexo 工作目录下的 `_config.yml` 中配置：
+
 ```yml
 # https://github.com/ele828/hexo-prism-plugin
 prism_plugin:

@@ -6,12 +6,9 @@ hexo.extend.filter.register("template_locals", function(locals) {
 // img lazyload
 hexo.extend.filter.register("after_post_render", function(data) {
   if (hexo.theme.config.lazyload && hexo.theme.config.lazyload.enable) {
-    data.content = data.content.replace(
-      /<img(\s*?)src="(.*?)"(.*?)>/gi,
-      (str, p1, p2, p3) => {
-        return str.replace(p3, `${p3} loading="lazy"`);
-      }
-    );
+    data.content = data.content.replace(/<img(.*?)>/gi, (str, p1) => {
+      return str.replace(p1, `${p1} loading="lazy"`);
+    });
   }
   return data;
 });
