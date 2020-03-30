@@ -1,58 +1,87 @@
+#page, #archive, #tag, #category {
+  margin: 0 1rem 1rem 1rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  +mobile() {
+    margin: 0 0 1rem 0;
+  }
+}
+
 // archive
-.archive-title
-  padding: 1rem
-  text-align: center
+.archive-title {
+  padding: 1rem;
+  text-align: center;
+}
 
 // tag
 // category
-.category-lists, .tag-cloud
-  text-align: center
-  padding: 1rem 2rem
+.category-lists, .tag-cloud {
+  text-align: center;
+  padding: 1rem 2rem;
 
-  a
-    display: inline-block
-    margin: 0 0.4rem
-    text-decoration: none
-    cursor: pointer
+  a {
+    display: inline-block;
+    margin: 0 0.4rem;
+    text-decoration: none;
+    cursor: pointer;
 
-    &:hover
-      color: $black !important
-  
-  &__title
-    color: $gray
-    font-size: 1rem
-    margin: 0.5rem
+    &:hover {
+      color: $black !important;
+    }
+  }
 
-.category-lists
-  &-container
-    text-align: left
+  &__title {
+    color: $gray;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+}
 
-  .category-list
-    padding-inline-start: 0px
-    
-    &-item
-      list-style: none
+.category-lists {
+  &-container {
+    text-align: left;
+  }
 
-      &:hover
-        &::before
-          color: $blue
+  .category-list {
+    padding-inline-start: 0px;
 
-      &::before
-        content: '📂'
+    &-item {
+      list-style: none;
 
-    &-child
-      .category-list-item
-        &::before
-          content: '📁'
-        
-        
+      &:hover {
+        &::before {
+          color: $blue;
+        }
+      }
 
-    &-link
-      color: $dark
-      border-bottom: 1px dotted $gray
+      &::before {
+        content: '📂';
+      }
+    }
 
-    &-count
-      &::before
-        content: " [ "
-      &::after
-        content: " ] "
+    &-child {
+      .category-list-item {
+        &::before {
+          content: '📁';
+        }
+      }
+    }
+
+    &-link {
+      color: $dark;
+      border-bottom: 1px dotted $gray;
+    }
+
+    &-count {
+      &::before {
+        content: ' [ ';
+      }
+
+      &::after {
+        content: ' ] ';
+      }
+    }
+  }
+}

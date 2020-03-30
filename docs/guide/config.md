@@ -414,8 +414,11 @@ notice:
 
 ::: tip
 注意，现背景模糊已默认关闭。更建议用户通过图像处理工具来模糊图片作为背景。
+
+> 你也可以直接使用一些在线图像模糊工具。譬如[高斯模糊](https://www.anooc.com/ts/gs)（这只是我 Google 搜到的第一个，你可以寻找喜欢的工具进行处理。）
+
 这也能消除彩色图片应用 `blur` 滤镜时产生的白边。
-同时也能缩小图片背景，加快载入速度。
+同时也能缩小图片背景，提高载入与渲染速度。
 :::
 
 ```yml
@@ -443,18 +446,6 @@ fireworks:
 ```
 
 > 参考自：[anime.js](https://animejs.com/) [fireworks](https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/third-party-support.html#%E7%83%9F%E8%8A%B1)
-
-### rymd
-
-群星移动效果，默认关闭。（可能会影响性能。）
-
-```yml
-rymd: false
-```
-
-![rymd.jpg](https://i.loli.net/2020/03/09/89pi5L2PjcmulyK.jpg)
-
-> 参考自: [rymd](https://codepen.io/hakimel/pen/bzrZGo)
 
 ### ScrollReveal
 

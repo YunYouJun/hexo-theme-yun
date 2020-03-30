@@ -273,7 +273,6 @@ vendors:
       css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
       js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
   fireworks: /js/ui/fireworks.js
-  rymd: /js/ui/rymd.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js
 
@@ -287,9 +286,6 @@ fireworks:
     - "33, 78, 194"
     # - '3, 28, 95'
     # - '0, 8, 55'
-
-# https://codepen.io/hakimel/pen/bzrZGo
-rymd: false
 
 smoothScroll: true
 
