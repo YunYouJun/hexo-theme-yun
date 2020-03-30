@@ -416,7 +416,8 @@ notice:
 > 如果你开启缩放，将会自动关闭背景淡入效果，因为当背景淡入时，缩放无法消除白边，且动画结束后缩放将立刻消除白边会产生闪烁。
 
 ::: tip
-注意，现背景模糊已默认关闭。更建议用户通过图像处理工具来模糊图片作为背景。因为 filter blur 滤镜在滚动时会影响性能，产生些许卡顿。
+注意，现背景模糊已默认关闭。更建议用户通过图像处理工具来模糊图片作为背景。
+因为 filter blur 滤镜在滚动时会影响性能，产生些许卡顿。同时也能缩小图片背景，加快载入速度。
 :::
 
 ```yml
@@ -735,6 +736,13 @@ prism_plugin:
   theme: default
   line_number: false # default false
   # custom_css: "path/to/your/custom.css" # optional
+```
+
+关闭 Hexo 自带的 `highlight`（此处在 Hexo 工作目录的 `_config.yml` 中）
+
+```yml
+highlight:
+  enable: true
 ```
 
 > 建议关闭行号，[这里](https://highlightjs.readthedocs.io/en/latest/line-numbers.html)是 highlight 作者写的为什么 highlight 不支持行号。
