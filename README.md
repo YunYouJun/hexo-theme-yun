@@ -78,6 +78,15 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
   </tr>
+  <tr align="center">
+    <td>
+      <a href="https://hellsakura.github.io/">
+        <img width="80px" src="https://hellsakura.github.io/images/avatar.jpg"/>
+        <br />
+        <sub title="我只是一条咸鱼">琉的小窝</sub>
+      </a>
+    </td>
+  </tr>
 </table>
 
 ## Install

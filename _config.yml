@@ -301,7 +301,6 @@ bg_image:
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
   # blur: 30px
   opacity: 0.8
-  # scale: 1.12
 
 # Reward (Donate)
 reward_settings:
