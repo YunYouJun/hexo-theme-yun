@@ -118,6 +118,7 @@ cdn:
 
 > 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。
 > `@latest` 为使用最新版本（它仍然会被缓存，且可能需要 12 h 才能更新，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
+> 此外，请确保你的头像图片链接使用 `/images/xxx.jpg` 而非 `https://xxx/xxx,jpg` 的形式。
 
 ```yml
 cdn:
@@ -428,6 +429,8 @@ bg_image:
   # blur: 30px # 设置背景模糊程度
   opacity: 0.8
 ```
+
+> 如果你想要使用自定义的图片背景，你只需要将其置于 `source/images` 文件夹下，并用 `/images/xxx.jpg` 来引入它。
 
 ### 烟花
 
