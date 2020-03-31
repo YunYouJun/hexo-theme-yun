@@ -448,7 +448,7 @@ fireworks:
     - "33, 78, 194"
 ```
 
-> 参考自：[anime.js](https://animejs.com/) [fireworks](https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/third-party-support.html#%E7%83%9F%E8%8A%B1)
+> 参考自：[Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
 
 ### ScrollReveal
 
