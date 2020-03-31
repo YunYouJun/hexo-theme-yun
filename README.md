@@ -90,7 +90,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       <a href="https://nancheng58.github.io/">
         <img width="80px" src="https://nancheng58.github.io/images/nancheng58.jpg"/>
         <br />
-        <sub title="我好菜啊啊啊啊啊">nancheng58的博客</sub>
+        <sub title="我好菜啊啊啊啊啊">nancheng58</sub>
       </a>
     </td>
   </tr>

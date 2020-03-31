@@ -1,1 +1,10 @@
 #valine-container.comment-container
+if !theme.valine.visitor
+  script(defer, src=theme.vendors.valine_js)
+  script.
+    function initValine() {
+      new Valine(CONFIG.valine);
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      initValine();
+    });

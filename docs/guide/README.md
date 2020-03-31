@@ -107,7 +107,7 @@ git pull
 
 如果你想对主题进行一些定制，你可以在 `head` 配置项中引入你的资源。
 
-> [头部资源](/guide/config.html#头部资源)
+> [head 头部资源](/guide/config.html#head-头部资源)
 
 譬如，你想为网站全局添加一个 Aplayer 播放器挂件。
 
