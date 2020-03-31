@@ -16,7 +16,7 @@ html {
   }
 }
 
-$bg-image-url = hexo-config('bg_image.url');
+$bg-image-url = hexo-config('cdn.pre') + hexo-config('bg_image.url');
 $bg-blur = convert(hexo-config('bg_image.blur'));
 $bg-opacity = hexo-config('bg_image.opacity');
 

@@ -4,7 +4,7 @@ if (hexo-config('local_search') && hexo-config('local_search.enable')) {
   @import 'algolia-search.styl';
 }
 
-$search-bg-image = hexo-config('search.bg_image');
+$search-bg-image = hexo-config('cdn.pre') + hexo-config('search.bg_image');
 
 .search-popup {
   background-image: url($search-bg-image);
