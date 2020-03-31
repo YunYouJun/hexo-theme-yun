@@ -86,6 +86,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="我只是一条咸鱼">琉的小窝</sub>
       </a>
     </td>
+    <td>
+      <a href="https://nancheng58.github.io/">
+        <img width="80px" src="https://nancheng58.github.io/images/nancheng58.jpg"/>
+        <br />
+        <sub title="我好菜啊啊啊啊啊">nancheng58的博客</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
