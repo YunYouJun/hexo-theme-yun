@@ -5,11 +5,11 @@ if !is_post()
       |  
       span.leancloud-visitors-count
 
-  script(defer, src=theme.vendors.valine_js)
-  script.
-    function initValine() {
-      new Valine(CONFIG.valine);
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-      initValine();
-    });
+script(defer, src=theme.vendors.valine_js)
+script.
+  function initValine() {
+    new Valine(CONFIG.valine);
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    initValine();
+  });
