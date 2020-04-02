@@ -93,5 +93,12 @@ footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
         <sub title="我好菜啊啊啊啊啊">nancheng58</sub>
       </a>
     </td>
+    <td>
+      <a href="https://alexzou14.github.io/">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/AlexZou14/CDN/img/touxiang.jpg"/>
+        <br />
+        <sub title="笔记记录，自我激励">秩同道合的博客</sub>
+      </a>
+    </td>
   </tr>
 </table>
