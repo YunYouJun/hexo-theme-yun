@@ -100,6 +100,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="笔记记录，自我激励">秩同道合的博客</sub>
       </a>
     </td>
+    <td>
+      <a href="https://yenpou.github.io/">
+        <img width="80px" src="https://yenpou.github.io/images/timg.jpg"/>
+        <br />
+        <sub title="今朝有酒今朝醉，明日愁来明日愁">道之遠兮</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
