@@ -3,3 +3,6 @@ include back-to-top.pug
 //- search
 if theme.local_search.enable || theme.algolia_search.enable
   include search/index.pug
+//- mourn
+if theme.mourn.enable
+  include mourn.pug

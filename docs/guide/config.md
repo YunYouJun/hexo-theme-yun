@@ -988,6 +988,24 @@ say:
     enable: false
 ```
 
+## Special
+
+### 默哀
+
+在每年的指定日期，开启灰色默哀模式。
+
+- `enable`: 默认关闭。
+
+> 4 月 4 日，全国哀悼。
+> 为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院发布公告，决定 2020 年 4 月 4 日举行全国性哀悼活动。
+
+```yml
+mourn:
+  enable: true
+  days:
+    - "4-4"
+```
+
 ## 更多配置
 
 你可以直接查看 [themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。

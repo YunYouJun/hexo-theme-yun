@@ -1,0 +1,6 @@
+script.
+  let date = new Date();
+  let today = (date.getMonth() + 1) + "-" + date.getDate()
+  if ("#{theme.mourn.days.toString()}".indexOf(today) !== -1) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }

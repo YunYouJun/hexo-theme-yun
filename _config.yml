@@ -530,3 +530,10 @@ google_analytics:
 katex:
   copy_tex: true
   global: false
+
+# special
+mourn:
+  enable: false
+  days:
+    - "4-4"
+    - "9-18"
