@@ -31,6 +31,8 @@ root: /
 - `hexo g`：生成新的静态文件
 - `hexo s`：本地查看效果
 
+检查是否为最新版本。
+
 如果仍然存在问题，你可以将你的项目代码作为 Hexo 分支推送到 GitHub 上。
 
 > [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
