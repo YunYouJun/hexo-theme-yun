@@ -13,6 +13,30 @@
 
 ---
 
+## 自查通用问题解决方案
+
+检查 `Hexo` 工作目录下 `_config.yml` 中 `url` 是否设置正确。（此部分为 Hexo 初始化时自动生成）
+
+```yml
+# URL
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://www.yunyoujun.cn
+root: /
+```
+
+检查是否在 `yun.yml` 文件中进行主题配置，且已经保存。
+检查是否已经执行如下几步：
+
+- `hexo clean`：清除本地缓存
+- `hexo g`：生成新的静态文件
+- `hexo s`：本地查看效果
+
+如果仍然存在问题，你可以将你的项目代码作为 Hexo 分支推送到 GitHub 上。
+
+> [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
+
+使用 GitHub 源文件地址到群内提问。
+
 ## `hexo server` 文章只渲染部分内容 <Badge text="dev"/>
 
 开发主题的过程中，发现长篇文章只能渲染出一部分，后半部分无法正常显示。
