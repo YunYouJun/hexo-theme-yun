@@ -505,6 +505,14 @@ avatar:
 
 设置导航对应图标及链接
 
+分别为：
+
+- 主页
+- 归档
+- 标签
+- 分类
+- 自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为搜索按钮以保持整体的对称）
+
 ```yml
 menu:
   home:
@@ -519,9 +527,10 @@ menu:
   categories:
     path: /categories
     icon: icon-folder-2-line
-  about:
-    path: /about
-    icon: icon-information-line
+  # custom:
+  #   title: 留言板
+  #   path: /about/#comment
+  #   icon: icon-clipboard-line
 ```
 
 ::: tip
@@ -786,14 +795,14 @@ lazyload:
 - `enable`: 开启打赏
 - `icon`: 打赏图标
 - `comment`: 在打赏按钮下显示你想说的话
-- `url`: 你的打赏链接
+- `url`: 你的打赏链接（当你开启打赏链接时，将自动跳转你的外部链接而不是展开二维码）
 
 ```yml
 reward_settings:
   enable: true
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
-  url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
 ```
 
 您也可以在某篇文章的首部单独设置是否开启打赏。

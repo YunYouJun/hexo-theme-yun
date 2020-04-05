@@ -135,9 +135,10 @@ menu:
   categories:
     path: /categories
     icon: icon-folder-2-line
-  about:
-    path: /about
-    icon: icon-information-line
+  # custom:
+  #   title: 留言板
+  #   path: /about/#comment
+  #   icon: icon-clipboard-line
 
 # archive
 archive:
@@ -255,7 +256,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_pa6cswvjpq.js
+      iconfont: //at.alicdn.com/t/font_1140697_erhigcfzavr.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -305,7 +306,7 @@ reward_settings:
   enable: true
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
-  url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
 
 reward:
   - name: 支付宝
