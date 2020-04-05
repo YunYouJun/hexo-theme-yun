@@ -47,7 +47,7 @@ aside.sidebar
               +icon(theme.menu.tags.icon)
             span.site-state-item-count!=site.tags.length
       if theme.reward_settings && theme.reward_settings.url
-        a.site-state-item.hty-icon-button(href=url_for(theme.reward_settings.url), title=__('reward.comment'))
+        a.site-state-item.hty-icon-button(href=url_for(theme.reward_settings.url), title=__('reward.donate'))
           span.site-state-item-icon
             +icon(theme.reward_settings.icon)
       else

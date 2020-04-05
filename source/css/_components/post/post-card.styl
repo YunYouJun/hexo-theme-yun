@@ -49,14 +49,30 @@ $post-card-opacity = hexo-config('post_card.opacity');
 
 .tag, .category {
   font-size: 0.8rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    right: 0;
+    background: rgba($colors.primary, 0.1);
+    border-radius: 4px;
+    transition: width 0.2s ease;
+  }
+
+  &:hover {
+    &::before {
+      width: 105%;
+      left: -2px;
+    }
+  }
 
   span {
     color: var(--text-color, black);
     letter-spacing: 1px;
-
-    &:hover {
-      text-shadow: 0 0 1px var(--text-color, black);
-    }
   }
 
   .icon {

@@ -4,8 +4,13 @@
 
 约定 ＞ 配置
 
+::: danger
 请在 `source/_data/yun.yml` 中定义您所需要的配置，其余将自动使用主题的默认配置。
+
 如未特殊说明，皆默认在 `yun.yml` 文件中配置。
+
+请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力且此后将不会对主题进行升级。
+:::
 
 ## 语言
 
@@ -82,10 +87,10 @@ head:
 
 ### favicon
 
-设置网站图标
+设置网站图标（确保你的 `favicon.ico` 文件已放置于 `source` 文件夹下），如下设置：
 
 ```yml
-favicon: /yun-favicon.ico
+favicon: /favicon.ico
 ```
 
 ## CDN
@@ -114,11 +119,11 @@ cdn:
     defer:
 ```
 
-- `pre`: 默认为空，你的加载资源前缀。譬如我想要使全站静态资源使用 `jsdelivr` 加速（~~又白嫖~~），则可以在 `yun.yml` 中这样设置。
+- `pre`: 默认为空，你的加载资源前缀。譬如你如果想要使用 `jsdelivr` 加速全站静态资源（~~又白嫖~~），则可以在 `yun.yml` 中这样设置。
 
-> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。
-> `@latest` 为使用最新版本（它仍然会被缓存，且可能需要 12 h 才能更新，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
-> 此外，请确保你的头像图片链接使用 `/images/xxx.jpg` 而非 `https://xxx/xxx,jpg` 的形式。
+> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。  
+> `@latest` 为使用最新版本（但它仍然会被缓存，**且需要 12 h 才能更新**，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
+> 此外，请确保你的头像图片链接使用 `/images/xxx.jpg` 而非 `https://xxx/xxx.jpg` 的形式。
 
 ```yml
 cdn:
@@ -191,8 +196,6 @@ preconnect:
 
 本主题默认使用 Remix Icon 的部分图标，并通过 iconfont 生成的 cdn 加载。
 
-> 你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。
-
 如您想要使用其他图标，推荐以下几种图标。
 
 - 推荐方式零：只下载必要的 svg 存储为 CDN ，只在必要时使用（不引入 css 以尽可能提高速度）。
@@ -201,7 +204,8 @@ preconnect:
 - 推荐方式三：`ionicons` 加载与 `iconfont` 自定义搭配使用。
 
 ::: tip
-请先选择你想要的图标类型 CDN 添加至 `head` 配置。其他类型图标您同样可以在头部引入 CDN 来使用。
+你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。  
+如果你只是想增添额外几个图标，你最好在 [head](#head-头部资源) 处引入，而不是直接覆盖。  
 :::
 
 下面给出了一些基础图标的使用方法。
@@ -214,10 +218,14 @@ preconnect:
 
 多色图标需采用文章中 `symbol` 引用方式。
 
-为统一与方便切换，仍采用 `font-class` 方式引入。
+随后如下在 `yun.yml` 中设置。
 
-```html
-<i class="iconfont icon-xxx"></i>
+```yml
+head:
+  js:
+    async:
+      # 这里是你从 iconfont 处获得的图标链接。
+      iconfont: //at.alicdn.com/t/font_1623879_a03x3er7qur.js
 ```
 
 ### [Remix Icon](https://remixicon.com/)
@@ -230,7 +238,7 @@ preconnect:
 ### [Font-Awesome](https://fontawesome.com)
 
 - GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
-- CDN: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.1/css/all.min.css>
+- CDN: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css>
 
 图标多而全，含各类商标图标，但部分收费，且文件较大。
 
