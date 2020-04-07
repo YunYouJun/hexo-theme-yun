@@ -1,0 +1,8 @@
+if page.comments && theme.comment.enable
+  include comments/index.pug
+
+if page.katex && !theme.katex.global
+  include katex.pug
+
+if page.aplayer && !theme.aplayer.global
+  include aplayer.pug

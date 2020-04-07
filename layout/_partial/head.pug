@@ -62,6 +62,3 @@ if theme.head.js.async
 if theme.head.js.defer
   each item in theme.head.js.defer
     script(src=url_for(item), defer)
-
-if theme.katex.global
-  include ../_third-party/katex.pug

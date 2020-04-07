@@ -199,9 +199,9 @@ google_adsense:
 
 ## 播放器
 
-### [hexo-tag-aplayer](<(https://github.com/MoePlayer/hexo-tag-aplayer)>)
+### [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
-自己去看[文档](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)就好了。
+> 可参见[官方文档](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)就好了。
 
 推荐的配置（在 Hexo 的根目录下的 `_config.yml` 中）：
 
@@ -212,6 +212,35 @@ aplayer:
   meting: true
   meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 ```
+
+::: tip
+如果你发现 Aplayer 有时会在无关紧要的文件里也重复引入头文件。记得关闭自动脚本插入。
+
+> [重复载入 Aplayer.js 资源脚本问题](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md#%E9%87%8D%E5%A4%8D%E8%BD%BD%E5%85%A5-aplayerjs-%E8%B5%84%E6%BA%90%E8%84%9A%E6%9C%AC%E9%97%AE%E9%A2%98)
+
+```yml
+aplayer:
+  asset_inject: false
+```
+
+然后在文章头部决定是否开启 `aplayer`:
+
+```yml
+---
+title: xxx
+aplayer: true
+---
+
+```
+
+你也可以在 `yun.yml` 中设置全局开启。（当你设置了全局的播放器时，可以使用它。）
+
+```yml
+aplayer:
+  global: true
+```
+
+:::
 
 插入某首网易云音乐的歌
 

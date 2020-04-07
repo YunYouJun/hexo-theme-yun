@@ -36,9 +36,5 @@ block content
     if theme.reward_settings.enable
       include _partial/post/reward.pug
 
-  if page.comments && theme.comment.enable
-    include ./_third-party/comments/index.pug
-
-  if page.katex && !theme.katex.global
-    include _third-party/katex.pug
+  include _third-party/index.pug
 

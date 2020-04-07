@@ -273,6 +273,10 @@ vendors:
     copy_tex:
       css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
       js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  aplayer:
+    css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+    js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+    meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js
@@ -531,6 +535,10 @@ google_analytics:
 # https://katex.org/
 katex:
   copy_tex: true
+  global: false
+
+# plugins
+aplayer:
   global: false
 
 # special
