@@ -1,9 +1,9 @@
-hexo.extend.helper.register("yun_config", function() {
+hexo.extend.helper.register("yun_config", function () {
   let { config, theme, yun_version, __ } = this;
   let exportConfig = {
     root: config.root,
     title: theme.banner.title || config.title,
-    version: yun_version
+    version: yun_version,
   };
 
   // anonymous_image
@@ -15,11 +15,11 @@ hexo.extend.helper.register("yun_config", function() {
     if (theme.say.hitokoto.enable) {
       exportConfig.say = {
         api: theme.say.hitokoto.api,
-        hitokoto: true
+        hitokoto: true,
       };
     } else {
       exportConfig.say = {
-        api: theme.say.api
+        api: theme.say.api,
       };
     }
   }
@@ -35,10 +35,11 @@ hexo.extend.helper.register("yun_config", function() {
       indexName: process.env.ALGOLIA_INDEX_NAME || config.algolia.indexName,
       hits: theme.algolia_search.hits,
       labels: {
-        input_placeholder: __("algolia_search.input_placeholder"),
+        input_placeholder:
+          theme.search.placeholder || __("algolia_search.input_placeholder"),
         hits_empty: __("algolia_search.hits_empty"),
-        hits_stats: __("algolia_search.hits_stats")
-      }
+        hits_stats: __("algolia_search.hits_stats"),
+      },
     };
   }
 
@@ -49,7 +50,7 @@ hexo.extend.helper.register("yun_config", function() {
       search_path = "search.xml";
     }
     exportConfig.local_search = {
-      path: config.root + search_path
+      path: config.root + search_path,
     };
   }
 
@@ -58,7 +59,7 @@ hexo.extend.helper.register("yun_config", function() {
     let valine_lang = config.language || "zh-cn";
     let GUEST_INFO = ["nick", "mail", "link"];
     let meta = theme.valine.meta;
-    meta = meta.split(",").filter(function(item) {
+    meta = meta.split(",").filter(function (item) {
       return GUEST_INFO.indexOf(item) > -1;
     });
     exportConfig.valine = {
@@ -73,13 +74,13 @@ hexo.extend.helper.register("yun_config", function() {
       meta: meta,
       pageSize: theme.valine.pageSize,
       lang: valine_lang.toLowerCase(),
-      visitor: theme.valine.visitor
+      visitor: theme.valine.visitor,
     };
   }
 
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
-      colors: theme.fireworks.colors
+      colors: theme.fireworks.colors,
     };
   }
   return `<script id="yun-config">

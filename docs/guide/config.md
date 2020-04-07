@@ -440,6 +440,18 @@ bg_image:
 
 > 如果你想要使用自定义的图片背景，你只需要将其置于 `source/images` 文件夹下，并用 `/images/xxx.jpg` 来引入它。
 
+#### 搜索背景
+
+- `placeholder`: 搜索框提示文字（如果不设置，将自动根据 Hexo 语言配置选取对应的文本）
+
+```yml
+search:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  # placeholder:
+```
+
+> 更多搜索设置参见：[搜索 - 第三方支持](/guide/third-party-support.html#搜索)
+
 ### 烟花
 
 点击页面的烟花效果
@@ -725,13 +737,15 @@ post_edit:
 
 ### 代码高亮
 
-设置代码高亮主题
+设置代码高亮
 
 由于性能问题，抛弃 `highlight.js` ，使用 [prism](https://github.com/PrismJS/prism)。
 
 请参考 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 使用。
 
 等待 [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) 原生支持 Prism 。
+
+> 当前 Prism 支持的语言：<https://prismjs.com/#supported-languages>
 
 ```sh
 npm install hexo-prism-plugin

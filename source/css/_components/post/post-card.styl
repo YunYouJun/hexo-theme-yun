@@ -50,6 +50,8 @@ $post-card-opacity = hexo-config('post_card.opacity');
 .tag, .category {
   font-size: 0.8rem;
   position: relative;
+  color: var(--text-color, black);
+  letter-spacing: 1px;
 
   &::before {
     content: '';
@@ -65,19 +67,15 @@ $post-card-opacity = hexo-config('post_card.opacity');
 
   &:hover {
     &::before {
-      width: 105%;
-      left: -2px;
+      width: 104%;
+      left: -2%;
     }
-  }
-
-  span {
-    color: var(--text-color, black);
-    letter-spacing: 1px;
   }
 
   .icon {
     width: 0.8rem;
     height: 0.8rem;
+    padding-left: 0.1rem;
   }
 }
 
