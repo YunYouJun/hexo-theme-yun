@@ -523,7 +523,9 @@ avatar:
 - 归档
 - 标签
 - 分类
-- 自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为搜索按钮以保持整体的对称）
+- 自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为文档导航按钮以保持整体的对称）
+
+> 顺带提醒你遇到问题先看看文档
 
 ```yml
 menu:
@@ -539,10 +541,10 @@ menu:
   categories:
     path: /categories
     icon: icon-folder-2-line
-  # custom:
-  #   title: 留言板
-  #   path: /about/#comment
-  #   icon: icon-clipboard-line
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: icon-settings-line
 ```
 
 ::: tip

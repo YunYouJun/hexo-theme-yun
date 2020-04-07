@@ -51,10 +51,6 @@ aside.sidebar
         a.site-state-item.hty-icon-button(href=url_for(theme.menu.custom.path), title=theme.menu.custom.title)
           span.site-state-item-icon
             +icon(theme.menu.custom.icon)
-      else
-        a.popup-trigger.site-state-item.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
-          span.site-state-item-icon
-            +icon('icon-search-line')
 
     hr(style="margin-bottom:0.5rem")
     if theme.social

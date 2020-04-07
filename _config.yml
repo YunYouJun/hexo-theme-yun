@@ -135,10 +135,10 @@ menu:
   categories:
     path: /categories
     icon: icon-folder-2-line
-  # custom:
-  #   title: 留言板
-  #   path: /about/#comment
-  #   icon: icon-clipboard-line
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: icon-settings-line
 
 # archive
 archive:
@@ -256,7 +256,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_erhigcfzavr.js
+      iconfont: //at.alicdn.com/t/font_1140697_9juba7x0cw.js
     defer:
 
 # cdn for third-party library (alternative include)

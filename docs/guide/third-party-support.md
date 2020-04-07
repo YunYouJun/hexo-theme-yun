@@ -114,23 +114,35 @@ engine_search:
 
 > 格式只支持 XML
 
+::: tip
 启用它之前，记得先关闭默认的引擎搜索。
+
+```yml
+engine_search:
+  enable: false
+```
+
+:::
 
 ```yml
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   src: /js/search/local-search.js
 ```
 
 ### Algolia
 
+[Algolia](https://www.algolia.com/) 是一家第三方搜索服务商。（更多信息请自行查看官网，或拜托搜索引擎。）
+
 您需要先安装 [hexo-algolia](https://github.com/oncletom/hexo-algolia) 或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，并根据它们的说明文档进行相应的配置。
+
+再开启它。
 
 ```yml
 algolia_search:
-  enable: false
+  enable: true
   src: /js/search/algolia-search.js
   hits:
     per_page: 10 # the number of search results per page
