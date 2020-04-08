@@ -478,6 +478,22 @@ fireworks:
 scrollreveal: true
 ```
 
+### Cursor 光标
+
+替换鼠标光标，默认关闭。开启时默认使用 [Material Design Cursors](https://www.deviantart.com/rosea92/art/Material-Design-Cursors-Dark-756850032)。
+
+你也可以使用你喜欢的图标来替代。
+
+- `default`: 默认状态下图标。
+- `pointer`: 指针（即链接状态下）图标。
+
+```yml
+cursor:
+  enable: false
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/link.cur
+```
+
 ## 侧边栏
 
 ### 侧边栏背景

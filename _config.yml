@@ -292,6 +292,11 @@ fireworks:
     # - '3, 28, 95'
     # - '0, 8, 55'
 
+cursor:
+  enable: false
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/link.cur
+
 smoothScroll: true
 
 # You can see effect in https://scrollrevealjs.org/

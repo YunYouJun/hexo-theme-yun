@@ -59,3 +59,24 @@ body {
     }
   }
 }
+
+if (hexo-config('cursor.enable')) {
+  $cursor-default = hexo-config('cursor.default');
+  $cursor-pointer = hexo-config('cursor.pointer');
+
+  body {
+    cursor: url($cursor-default), auto;
+  }
+
+  a {
+    cursor: url($cursor-pointer), auto;
+
+    &:hover {
+      cursor: url($cursor-pointer), auto;
+    }
+  }
+
+  .hty-icon-button {
+    cursor: url($cursor-pointer), auto;
+  }
+}

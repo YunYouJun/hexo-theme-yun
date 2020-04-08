@@ -132,6 +132,8 @@ local_search:
   src: /js/search/local-search.js
 ```
 
+> 如果你发现本地正常，部署后点击搜索按钮却会跳转至页面底部，可能单纯只是缓存问题。
+
 ### Algolia
 
 [Algolia](https://www.algolia.com/) 是一家第三方搜索服务商。（更多信息请自行查看官网，或拜托搜索引擎。）
