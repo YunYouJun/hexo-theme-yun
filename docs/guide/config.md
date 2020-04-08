@@ -490,8 +490,9 @@ scrollreveal: true
 ```yml
 cursor:
   enable: false
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md_cursors/link.cur
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
 ```
 
 ## 侧边栏

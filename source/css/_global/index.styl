@@ -63,6 +63,7 @@ body {
 if (hexo-config('cursor.enable')) {
   $cursor-default = hexo-config('cursor.default');
   $cursor-pointer = hexo-config('cursor.pointer');
+  $cursor-text = hexo-config('cursor.text');
 
   body {
     cursor: url($cursor-default), auto;
@@ -78,5 +79,9 @@ if (hexo-config('cursor.enable')) {
 
   .hty-icon-button {
     cursor: url($cursor-pointer), auto;
+  }
+
+  input {
+    cursor: url($cursor-text), auto;
   }
 }
