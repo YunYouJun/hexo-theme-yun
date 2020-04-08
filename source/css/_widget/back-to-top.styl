@@ -1,4 +1,5 @@
 #goUp {
+  position: relative;
   position: fixed;
   right: -0.9rem;
   bottom: 1.1rem;
@@ -16,5 +17,15 @@
   .icon {
     width: 2.5rem;
     height: 2.5rem;
+  }
+}
+
+.progress-circle {
+  transition: 0.3s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+  &-container {
+    position: absolute;
   }
 }
