@@ -93,6 +93,34 @@ head:
 favicon: /favicon.ico
 ```
 
+现在的 Yun Logo 可以根据浏览器的亮暗主题，采用对应的相反色。
+
+譬如：亮色浏览器 LOGO 为黑色描边，暗色浏览器 LOGO 为白色描边。
+
+你的图标须为 `svg` 文件，并为其添加对应样式。
+
+> 你可以参考我的 LOGO SVG 代码。[yun.svg](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
+
+Example:
+
+```html
+<svg id="yun-logo">
+  <style>
+    #yun-logo {
+      stroke: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #yun-logo {
+        stroke: white;
+      }
+    }
+  </style>
+</svg>
+```
+
+> [Dark Mode Favicons](https://css-tricks.com/dark-mode-favicons/)
+
 ## CDN
 
 Content Delivery Network，统一加载网络资源，有利于提高网页加载速度。

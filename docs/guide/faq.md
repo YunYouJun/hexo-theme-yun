@@ -41,7 +41,7 @@ root: /
 
 > [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
 
-使用 GitHub 源文件地址到群内提问。
+使用 GitHub 源文件地址到群（389401003）内提问，或发起 [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues)。
 
 ## `hexo server` 文章只渲染部分内容 <Badge text="dev"/>
 

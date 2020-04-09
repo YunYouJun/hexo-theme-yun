@@ -75,6 +75,29 @@ valine:
 
 Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)，可以对具体的评论进行邮件提醒。
 
+### MiniValine
+
+A simple and minimalist comment system based on Leancloud.
+
+- GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
+- Demo: <https://minivaline.github.io/>
+
+```yml
+minivaline:
+  enable: false
+  appId: # Your leancloud application appid
+  appKey: # Your leancloud application appkey
+  placeholder: Write a Comment # Comment box placeholder
+  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
+  math: true # Support MathJax.
+  md: true # Support Markdown.
+  # MiniValine's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
+  lang:
+```
+
 <!-- ## 分享
 
 ### AddThis
@@ -355,7 +378,7 @@ $$ E = mc^2 $$
 
 谷歌为用户提供了五种验证方法。
 
-- 域名提供商：添加 DNS 的 TXT 解析。（这个可能算是最为麻烦，但也是对站点本身影响最小的一个。）也是我此前使用的方式。
+- 域名提供商：添加 DNS 的 TXT 解析。（这个可能算是最麻烦（其实也不麻烦），但也是对站点本身影响最小的一个。）也是我此前使用的方式。
 - HTML 文件：将 HTML 文件上传至您的网站。（您只需下载并将其拷贝至 Hexo 工作目录的 `source` 文件夹下。并设置 `skip_render`，见下文。）也是推荐的方式之一。
 - HTML 标记：向您网站的首页添加元标记。这也是大部分主题通过配置实现站点验证的方法，但我并不推荐这种做法，所以并没有将其内置。
   - 我之所以没有添加这种方式，是因为这个 meta 部分信息，只对验证 google 站点有用，对于用户来说完全是多余的。

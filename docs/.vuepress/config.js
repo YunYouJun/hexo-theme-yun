@@ -1,6 +1,6 @@
 module.exports = {
   head: [
-    ["link", { rel: "icon", href: "/logo.png" }],
+    ["link", { rel: "icon", href: "/yun.svg" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ["meta", { name: "theme-color", content: "#6200ee" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -25,14 +25,6 @@ module.exports = {
       },
     ],
     ["meta", { name: "msapplication-TileColor", content: "#6200ee" }],
-    [
-      ("script",
-      {
-        "data-ad-client": "ca-pub-2245427233262012",
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-      }),
-    ],
   ],
   title: "Hexo-Theme-Yun",
   locales: {
