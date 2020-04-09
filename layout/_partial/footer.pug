@@ -52,5 +52,8 @@ footer#footer.sidebar-translate
   if theme.valine.enable && theme.valine.visitor
     include ../_third-party/analytics/valine-visitor.pug
 
+  if theme.minivaline.enable
+    include ../_third-party/analytics/minivaline-visitor.pug
+
   if theme.footer.custom_text
     .footer-custom-text!=`${theme.footer.custom_text}`
