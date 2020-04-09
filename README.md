@@ -154,6 +154,12 @@ git pull
 
 > 你不知道这代表什么？简单来说，就是如果你使用了该主题，你需要马不停蹄地点一个 Star，接下来你便可以随意使用它。
 
+## Contribue
+
+如果你想要为 Yun 添加你想要的功能，你可以先开启 `Feature Request` 类型 Issue，描述你想要添加的功能。
+
+在确定该功能值得加入后，再进行开发工作，提交 PR。
+
 ## Feedback
 
 有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）

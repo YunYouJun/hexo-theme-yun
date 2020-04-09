@@ -154,11 +154,13 @@ algolia_search:
 
 ### 谷歌分析
 
-前往[谷歌分析](https://analytics.google.com/) 获取您的 ID。
+前往[谷歌分析](https://analytics.google.com/) 获取您的 ID。（科学上网）
+
+- `enable`: 是否开启
 
 ```yml
 google_analytics:
-  enable: false
+  enable: true
   id: UA-XXXXXXXXX-X
 ```
 
@@ -227,7 +229,7 @@ aplayer:
 
 然后在文章头部决定是否开启 `aplayer`:
 
-```yml
+```yml {3}
 ---
 title: xxx
 aplayer: true
@@ -301,7 +303,7 @@ katex:
 只有在使用了 `katex` 的文章或页面才会加载 KaTeX 的库，所以你需要在使用 KaTeX 的文章或头部进行设置。
 （当你开启全局加载时，将不再需要设置此选项。）
 
-```md
+```md {3}
 ---
 title: xxx
 katex: true
@@ -311,7 +313,7 @@ katex: true
 你可以使用如下方式包裹公式。
 
 ::: tip
-注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `(` 或 `[`。
+注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `\`。
 
 使用 `\\[ E = mc^2 \\]` 而不是 `\[ E = mc^2 \]`。
 
