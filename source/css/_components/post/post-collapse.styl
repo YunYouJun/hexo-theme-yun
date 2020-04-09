@@ -6,16 +6,6 @@
     margin: 0 1.5rem;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    width: 4px;
-    height: 95%;
-    background: alpha($colors.primary, 0.3);
-  }
-
   &-title {
     text-align: center;
   }
@@ -23,42 +13,64 @@
   .collection-title {
     position: relative;
     margin: 0;
-    border-bottom: 1px dotted $colors.primary;
-
-    .archive-year {
-      font-family: monospace;
-      color: darken($colors.primary, 60%);
-      margin-left: 1.5rem;
-      margin: 0 1.5rem;
-    }
+    border-bottom: 1px solid rgba($colors.primary, 0.9);
 
     &::before {
       content: '';
       position: absolute;
-      left: 0;
-      top: 35%;
-      margin-left: -0.65rem;
-      margin-top: -4px;
-      width: 1.5rem;
-      height: 1.5rem;
-      background: $colors.primary;
-      border-radius: 50%;
+      top: 50%;
+      width: 2px;
+      height: 50%;
+      background: rgba($colors.primary, 0.3);
+    }
+
+    .archive-year {
+      font-family: $font-family-monospace;
+      color: darken($colors.primary, 60%);
+      margin: 0 1.5rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 35%;
+        margin-left: -11px;
+        margin-top: -4px;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $colors.primary;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .post-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: rgba($colors.primary, 0.3);
     }
   }
 
   .post-header {
     position: relative;
     text-align: left;
-    border-bottom: 1px dotted $colors.primary;
+    border-bottom: 1px solid rgba($colors.primary, 0.3);
+    display: flex;
+    justify-content: end;
 
     &::before {
-      content: ' ';
+      content: '';
       position: absolute;
       left: 0;
-      top: 8px;
+      top: 1.6rem;
       width: 0.5rem;
       height: 0.5rem;
-      margin-left: -0.2rem;
+      margin-left: -4px;
       border-radius: 50%;
       border: 1px solid $colors.primary;
       background-color: white;
@@ -74,16 +86,26 @@
     }
 
     .post-title {
-      margin: 15px 0 15px 75px;
+      margin-left: 0.1rem;
       padding: 0;
-      line-height: 1.5;
       font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+
+      .post-title-link {
+        .icon {
+          width: 1.1rem;
+          height: 1.1rem;
+          margin-right: 0.3rem;
+        }
+      }
     }
 
     .post-meta {
-      position: absolute;
-      top: 0;
-      left: 20px;
+      font-family: $font-family-monospace;
+      font-size: 1rem;
+      margin: 1rem 0 0.9rem 1.2rem;
+      white-space: nowrap;  
     }
   }
 }

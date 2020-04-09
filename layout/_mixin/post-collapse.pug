@@ -1,6 +1,5 @@
 mixin post_collapse(posts)
   .post-collapse
-    span.archive-move-on
     for post in posts.data
       - var year
       - var post_year = date(post.date, 'YYYY')
@@ -9,16 +8,24 @@ mixin post_collapse(posts)
         - var year = post_year
         .collection-title
           h2.archive-year(id='archive-year-' + year)=year
-      
-      article.post(class='post-type-' + (post.type || 'normal'),itemscope, itemtype='http://schema.org/Article')
-        header.post-header
-          h3.post-title
-            a.post-title-link(href=url_for(post.path), itemprop='url')
-              span(itemprop='name')=post.title
 
+      article.post-item(itemscope, itemtype='http://schema.org/Article')
+        header.post-header
           .post-meta
             time.post-time(itemprop='dateCreated', datetime=moment(post.date).format(), content=date(post.date, config.date_format))=date(post.date, 'MM-DD')
-  
+          h2.post-title(itemprop='name headline')
+            if !post.type
+              a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
+            else
+              - var typeColor = theme.types.link.color
+              - var typeIcon = theme.types.link.icon
+              if post.type in theme.types
+                - typeColor = theme.types[post.type].color
+                - typeIcon = theme.types[post.type].icon
+              a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + typeColor)
+                +icon(typeIcon)
+                span=post.title
+
   if page.current == page.total
     h5.last-word.text-center!=theme.archive.last_word
 
