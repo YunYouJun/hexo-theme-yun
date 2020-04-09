@@ -1,0 +1,15 @@
+if !is_post()
+  span.leancloud_visitors(id='/', data-flag-title=config.title)
+    span.post-meta-item-icon(title=__('footer.total_views'))
+      +icon(theme.busuanzi.site_uv_icon, 14)
+      |  
+      span.leancloud-visitors-count
+
+script(defer, src=theme.vendors.valine_js)
+script.
+  function initValine() {
+    new Valine(CONFIG.valine);
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    initValine();
+  });
