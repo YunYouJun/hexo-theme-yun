@@ -56,7 +56,8 @@ language: zh-CN
 
 > [快速开始 - 获取 APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
-- `visitor`: 文章阅读量统计（请最后不要与 [不蒜子](#busuanzi) 同时启用）
+- `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
+- `visitor_index`: 是否开启站点主页访问量统计（主题额外添加的配置项，默认关闭）
 
 ```yml
 valine:
@@ -71,6 +72,7 @@ valine:
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
+  visitor_index: false
 ```
 
 Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)，可以对具体的评论进行邮件提醒。

@@ -36,5 +36,6 @@ block content
     if theme.reward_settings.enable
       include _partial/post/reward.pug
 
-  include _third-party/index.pug
+  if page.comments && theme.comment.enable
+    include ./_third-party/comments/index.pug
 

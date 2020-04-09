@@ -34,4 +34,5 @@ block content
     if post.prev || post.next
       include _partial/post/post-nav.pug
 
-    include _third-party/index.pug
+  if page.comments && theme.comment.enable
+    include ./_third-party/comments/index.pug

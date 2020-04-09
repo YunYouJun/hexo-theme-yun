@@ -38,6 +38,8 @@
 
 在大部分浏览器已经支持的情况下，优先使用最新的 API。（可以减少冗余代码，提高速度。）
 
+> IE: 你们都看我干嘛？
+
 ### 速度
 
 谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)

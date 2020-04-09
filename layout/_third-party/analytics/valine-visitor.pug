@@ -1,15 +1,16 @@
-if !is_post()
+if theme.valine.visitor_index
   span.leancloud_visitors(id='/', data-flag-title=config.title)
     span.post-meta-item-icon(title=__('footer.total_views'))
       +icon(theme.busuanzi.site_uv_icon, 14)
       |  
       span.leancloud-visitors-count
 
-script(defer, src=theme.vendors.valine_js)
-script.
-  function initValine() {
-    new Valine(CONFIG.valine);
-  }
-  document.addEventListener("DOMContentLoaded", function() {
-    initValine();
-  });
+if theme.valine.visitor_index || is_post()
+  script(defer, src=theme.vendors.valine_js)
+  script.
+    function initValine() {
+      new Valine(CONFIG.valine);
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      initValine();
+    });

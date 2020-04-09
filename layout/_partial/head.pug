@@ -39,12 +39,6 @@ if theme.css !== undefined && theme.css.length > 0
 if config.feed && config.feed.path
   != feed_tag(config.feed.path)
 
-if process.env.NODE_ENV !== 'dev'
-  if theme.google_analytics && theme.google_analytics.enable
-    include ../_third-party/analytics/google-analytics.pug
-  if theme.google_adsense && theme.google_adsense.enable
-    include ../_third-party/google-adsense.pug
-
 //- config
 !=yun_config()
 

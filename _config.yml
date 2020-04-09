@@ -483,6 +483,7 @@ valine:
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
+  visitor_index: false
 
 # MiniValine
 # You can get your appid and appkey from https://leancloud.cn
@@ -571,3 +572,7 @@ mourn:
   days:
     - "4-4"
     - "9-18"
+
+# SEO
+# https://ziyuan.baidu.com/linksubmit/index
+baidu_push: false
