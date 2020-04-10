@@ -92,5 +92,12 @@
                   +icon('icon-price-tag-3-line')
                 span.tag-name!=tag.name
 
+  if post.author
+    .post-author
+      if post.email
+        .author-avatar
+          img(src=gravatar(post.email, {s: 20, d: theme.anonymous_image}))
+      span.author-name=post.author
+
   if post.description
-    .post-description=post.desciption
+    .post-description=post.description

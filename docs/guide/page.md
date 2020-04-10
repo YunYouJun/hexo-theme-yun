@@ -4,6 +4,19 @@
 
 ## 文章
 
+额外的头部字段
+
+- `author`: 设置作者则会显示
+- `email`: 自动根据邮箱获取 [Gravatar](https://en.gravatar.com/site/implement/images/) 头像
+
+```md
+---
+title: xxx
+author: 云游君
+email: me@yunyoujun.cn
+---
+```
+
 ### 图片注释
 
 你可以遵循如下写法来对图片进行注释。
