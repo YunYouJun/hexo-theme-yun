@@ -1,5 +1,5 @@
 .post-meta
-  span.post-time
+  .post-time(style=config.symbols_count_time && !post.type ? "display:block" : "display:inline-block")
     - var date_diff = date(post.date) != date(post.updated)
     - var time_diff = time(post.date) != time(post.updated)
     - var datetime_diff = date_diff || time_diff
@@ -28,7 +28,7 @@
           time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
 
   if config.symbols_count_time && !post.type
-    .post-count
+    span.post-count
       if config.symbols_count_time.symbols || config.symbols_count_time.time
         span.post-symbolcount
           if config.symbols_count_time.symbols
@@ -44,20 +44,21 @@
             |  
             span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
 
-    if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
-      span.post-busuanzi
-        span.post-meta-divider='-'
-        span.post-meta-item-icon(title=__('post.views'))
-          +icon(theme.busuanzi.page_pv_icon)
-          |  
-          span#busuanzi_value_page_pv
+  if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
+    span.post-busuanzi
+      span.post-meta-divider='-'
+      span.post-meta-item-icon(title=__('post.views'))
+        +icon(theme.busuanzi.page_pv_icon)
+        |  
+        span#busuanzi_value_page_pv
 
-    if is_post() && theme.valine.enable && theme.valine.visitor
-      span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
-        span.post-meta-item-icon(title=__('post.views'))
-          +icon(theme.busuanzi.page_pv_icon)
-          |  
-          span.leancloud-visitors-count
+  if is_post() && theme.valine.enable && theme.valine.visitor
+    span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
+      span.post-meta-divider='-'
+      span.post-meta-item-icon(title=__('post.views'))
+        +icon(theme.busuanzi.page_pv_icon)
+        |  
+        span.leancloud-visitors-count
 
   if is_post()
     .post-classify

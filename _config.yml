@@ -482,7 +482,7 @@ valine:
   avatar: # gravatar style
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  visitor: true
+  visitor: false
   visitor_index: false
 
 # MiniValine
