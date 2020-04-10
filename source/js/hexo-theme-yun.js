@@ -9,13 +9,8 @@ function scrollPercent(curTop) {
   const bodyHeight = document.body.clientHeight;
   const windowHeight = window.innerHeight;
   const circumference = progressCircle.r.baseVal.value * 2 * Math.PI;
-  let percent = 0;
-  if (bodyHeight > windowHeight) {
-    percent = Math.floor((curTop / (bodyHeight - windowHeight)) * 100);
-  } else {
-    percent = 100;
-  }
-  const offset = circumference - (percent / 100) * circumference;
+  const offset =
+    circumference - (curTop / (bodyHeight - windowHeight)) * circumference;
   progressCircle.setAttribute(
     "stroke-dasharray",
     `${circumference} ${circumference}`

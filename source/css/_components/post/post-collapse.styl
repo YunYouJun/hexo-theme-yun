@@ -1,9 +1,13 @@
 .post-collapse {
   position: relative;
-  margin: 0 2rem;
+  margin: 0 5rem;
+
+  +tablet() {
+    margin: 0 2rem;
+  }
 
   +mobile() {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
   }
 
   &-title {
@@ -13,7 +17,7 @@
   .collection-title {
     position: relative;
     margin: 0;
-    border-bottom: 1px solid rgba($colors.primary, 0.9);
+    border-bottom: 2px solid rgba($colors.primary, 0.6);
 
     &::before {
       content: '';
@@ -59,7 +63,7 @@
   .post-header {
     position: relative;
     text-align: left;
-    border-bottom: 1px solid rgba($colors.primary, 0.3);
+    border-bottom: 2px solid rgba($colors.primary, 0.3);
     display: flex;
     justify-content: end;
 
@@ -104,8 +108,8 @@
     .post-meta {
       font-family: $font-family-monospace;
       font-size: 1rem;
-      margin: 1rem 0 0.9rem 1.2rem;
-      white-space: nowrap;  
+      margin: 1rem 0 1rem 1.2rem;
+      white-space: nowrap;
     }
   }
 }

@@ -73,7 +73,10 @@ module.exports = {
       "/en/": {
         label: "English",
         lastUpdated: "Last Updated",
-        nav: [{ text: "Guide", link: "/guide/" }],
+        nav: [
+          { text: "Guide", link: "/guide/" },
+          { text: "Demo", link: "https://www.yunyoujun.cn" },
+        ],
       },
     },
   },
