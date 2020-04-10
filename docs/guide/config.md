@@ -445,7 +445,7 @@ notice:
 
 ## UI
 
-### 背景
+### 图片背景
 
 - `opacity`: 背景透明度
 
@@ -479,6 +479,27 @@ search:
 ```
 
 > 更多搜索设置参见：[搜索 - 第三方支持](/guide/third-party-support.html#搜索)
+
+### 随机多边形背景
+
+> [trianglify - GitHub](https://github.com/qrohlf/trianglify)
+
+- `enable`: 默认关闭
+- `cell_size`: 多边形网格尺寸
+- `palette`: 调色盘，请参考文档配置
+- `opacity`: 透明度
+
+> 因为背景采用拉伸，更大的 `width` 与 `height` 会获得更高的清晰度。（请与性能进行取舍）
+
+```yml
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+```
 
 ### 烟花
 

@@ -19,3 +19,29 @@ if (hexo-config('fireworks')) {
     pointer-events: none;
   }
 }
+
+if (hexo-config('trianglify.enable')) {
+  $tri-opacity = hexo-config('trianglify.opacity');
+
+  #trianglify {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: $tri-opacity;
+    animation: triFadeIn 2s;
+  }
+
+  @keyframes triFadeIn {
+    from {
+      opacity: 0;
+      filter: grayscale(1);
+    }
+
+    to {
+      opacity: $tri-opacity;
+    }
+  }
+}

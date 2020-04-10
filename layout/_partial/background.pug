@@ -2,3 +2,17 @@ if theme.fireworks && theme.fireworks.enable
   script(defer, src=theme.vendors.anime)
   script(defer, src=theme.cdn.pre + theme.vendors.fireworks)
   canvas.fireworks
+
+if theme.trianglify && theme.trianglify.enable
+  canvas#trianglify
+  script(defer, src=theme.vendors.trianglify)
+  script.
+    document.addEventListener("DOMContentLoaded", () => {
+      const pattern = Trianglify({
+        width: #{theme.trianglify.width},
+        height: #{theme.trianglify.height},
+        cell_size: #{theme.trianglify.cell_size},
+        palette: !{theme.trianglify.palette},
+      });
+      document.body.appendChild(pattern.canvas(trianglify));
+    });

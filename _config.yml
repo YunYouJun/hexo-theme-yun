@@ -278,6 +278,7 @@ vendors:
     css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+  trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js
@@ -292,6 +293,15 @@ fireworks:
     - "33, 78, 194"
     # - '3, 28, 95'
     # - '0, 8, 55'
+
+# https://github.com/qrohlf/trianglify
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
 
 cursor:
   enable: false
