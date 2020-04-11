@@ -71,6 +71,9 @@ theme: yun
 
 采用约定大于配置的方式，您仅需在 `yun.yml` 中自定义您想要覆盖的配置，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
 
+> 你可以参考我的配置文件 [yun.yml - yunyoujun.github.io](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml)，是不是很短。  
+> 这勉强也算本主题的一个优化功能，当然你选择全部覆盖也是没问题的。
+
 ::: tip
 如：
 
@@ -154,3 +157,13 @@ head:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
       loadAplayer: /js/load-aplayer.js
 ```
+
+### 自动升级
+
+你想要完全自动更新，时刻保持最新主题，可以采用持续集成（如 GitHub Actions, [Travis](https://travis-ci.com/) 等）。
+
+你可以参考我的 GitHub Action 配置文件 [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml)。
+
+> 我采用的是这种做法，但我从良心上并不推荐你也如此，因为这是我自己的主题，所以对其 BUG 自然拥有一定的容忍度。  
+> 时刻保持与仓库版本相同，可能会遇到新引入的 BUG。  
+> 当然你愿意当小白鼠的话，可以一试。顺便给咱反馈问题。个人角度上，是十分欢迎的。
