@@ -72,3 +72,6 @@ aside.sidebar
       .post-toc
         .post-toc-content
           != toc(page.content).length > 1 ? toc(page.content) : '很遗憾，咱没写啥目录' 
+
+  if theme.tag_cloud.enable
+    include ../_widget/tag-cloud.pug

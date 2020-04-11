@@ -142,3 +142,33 @@ live2d:
   #   # 是否使用一言
   #   hitokoto: true
 ```
+
+## 标签云
+
+安装 [hexo-tag-cloud](https://github.com/MikeCoder/hexo-tag-cloud)
+
+```sh
+npm install hexo-tag-cloud
+```
+
+在 `yun.yml` 中开启在侧边栏下方显示
+
+```yml
+tag_cloud:
+  enable: true
+  width: 300
+  height: 300
+```
+
+在 Hexo 工作目录中的 `_config.yml` 里添加更多自定义配置（请参见[插件文档](https://github.com/MikeCoder/hexo-tag-cloud/blob/master/README.ZH.md)）：
+
+```yml
+# hexo-tag-cloud
+tag_cloud:
+  textFont: Trebuchet MS, Helvetica
+  textColor: "#333"
+  textHeight: 25
+  outlineColor: "#E2E1D1"
+  maxSpeed: 0.5
+  pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动
+```

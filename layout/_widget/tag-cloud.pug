@@ -1,0 +1,6 @@
+if site.tags.length
+  script(type="text/javascript" charset="utf-8" src="/js/tagcloud.js")
+  script(type="text/javascript" charset="utf-8" src="/js/tagcanvas.js")
+  #myCanvasContainer.widget.tagcloud(align='center')
+    canvas#resCanvas(width=theme.tag_cloud.width height=theme.tag_cloud.height)
+      != tagcloud()

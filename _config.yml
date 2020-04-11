@@ -144,6 +144,12 @@ menu:
 archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
 
+# https://github.com/MikeCoder/hexo-tag-cloud
+tag_cloud:
+  enable: false
+  width: 300
+  height: 300
+
 # You can set color for every tag or category.
 tags:
   Vue: "#4fc08d"
