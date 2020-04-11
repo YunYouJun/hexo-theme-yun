@@ -543,8 +543,10 @@ search:
   # placeholder: 想要搜些什么？
 
 engine_search:
-  enable: true
+  enable: false
   href: "https://www.google.com/search?q=site:"
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn
 
 # https://github.com/wzpan/hexo-generator-search

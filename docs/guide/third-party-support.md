@@ -120,7 +120,7 @@ add_this_id:
 
 🌰：<https://www.google.com/search?q=site:yunyoujun.cn%20云游君>
 
-- `enable`: 开启搜索引擎（因为另外两种搜索都需要额外配置，所以默认开启引擎搜索）
+- `enable`: 开启搜索引擎（因为另外两种搜索都需要额外配置，所以默认开启引擎搜索）科学上网，谷歌最佳
 - `href`: 搜索引擎前缀
 - `domain`: 你网站的域名
 
@@ -128,6 +128,8 @@ add_this_id:
 engine_search:
   enable: true
   href: "https://www.google.com/search?q=site:"
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn
 ```
 
