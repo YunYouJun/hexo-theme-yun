@@ -834,7 +834,7 @@ prism_plugin:
 
 ```yml
 highlight:
-  enable: true
+  enable: false
 ```
 
 > 建议关闭行号，[这里](https://highlightjs.readthedocs.io/en/latest/line-numbers.html)是 highlight 作者写的为什么 highlight 不支持行号。

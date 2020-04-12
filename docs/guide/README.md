@@ -163,6 +163,7 @@ head:
 你想要完全自动更新，时刻保持最新主题，可以采用持续集成（如 GitHub Actions, [Travis](https://travis-ci.com/) 等）。
 
 你可以参考我的 GitHub Action 配置文件 [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml)。(照抄配置，放在对应文件夹下即可，GitHub Actions 为 GitHub 自带的服务。)
+若你没有使用 `algolia_search`，请删除 `algolia` 相关部分。
 
 > 我采用的是这种做法，但我从良心上并不推荐你也如此，因为这是我自己的主题，自然对潜在的 BUG 拥有一定的容忍度。  
 > 时刻保持与仓库版本相同，可能会遇到新引入的 BUG。  
