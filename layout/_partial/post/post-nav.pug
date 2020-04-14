@@ -1,11 +1,11 @@
 .post-nav
   .post-nav-item
-    if post.prev
+    if post.prev && !post.prev.hide
       a.post-nav-prev(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
         +icon('icon-arrow-left-s-line')
         span.post-nav-text=post.prev.title
   .post-nav-item
-    if post.next
+    if post.next && !post.next.hide
       a.post-nav-next(href=url_for(post.next.path), rel='next', title=post.next.title)
         span.post-nav-text=post.next.title
         +icon('icon-arrow-right-s-line')
