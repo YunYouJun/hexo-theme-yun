@@ -53,17 +53,17 @@ footer:
 
 counter:
   tag_cloud:
-    zero: No tags
+    zero: No tag
     one: 1 tag in total
     other: "%d tags in total"
   categories:
-    zero: No categories
+    zero: No category
     one: 1 category in total
     other: "%d categories in total"
   archive_posts:
-    zero: No posts.
-    one: 1 post.
-    other: "%d posts in total."
+    zero: No post
+    one: 1 post
+    other: "%d posts in total"
 
 search:
   placeholder: Searching...
@@ -89,8 +89,6 @@ symbol:
 
 reward:
   donate: Donate
-
-# gitmentbutton: Show comments from Gitment
 
 # accessibility:
 #   nav_toggle: Toggle navigation bar
