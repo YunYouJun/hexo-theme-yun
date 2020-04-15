@@ -15,7 +15,7 @@ aside.sidebar
     .site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
       if theme.avatar && theme.avatar.url
         a.site-author-avatar(href=url_for('about'), title=config.author)
-          img(loading='lazy', src=theme.cdn.pre + theme.avatar.url, alt=author)
+          img(loading='lazy', src=url_for(theme.cdn.pre + theme.avatar.url), alt=author)
         .site-author-name
           a(href=url_for('about'))
             | #{author}
@@ -71,7 +71,7 @@ aside.sidebar
     #post-toc-wrap.sidebar-panel.sidebar-panel-active
       .post-toc
         .post-toc-content
-          != toc(page.content).length > 1 ? toc(page.content) : '很遗憾，咱没写啥目录' 
+          != toc(page.content).length > 1 ? toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth}) : theme.toc.placeholder
 
   if theme.tag_cloud.enable
     include ../_widget/tag-cloud.pug
