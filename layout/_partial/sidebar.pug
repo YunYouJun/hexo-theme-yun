@@ -17,7 +17,7 @@ aside.sidebar
         a.site-author-avatar(href=url_for('about'), title=config.author)
           img(loading='lazy', src=url_for(theme.cdn.pre + theme.avatar.url), alt=author)
         .site-author-name
-          a(href=url_for('about'))
+          a(href=url_for('about/'))
             | #{author}
         a.site-name(href=url_for('about/site.html'))
           | #{config.title}

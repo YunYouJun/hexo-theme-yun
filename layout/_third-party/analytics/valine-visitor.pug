@@ -5,7 +5,7 @@ if theme.valine.visitor_index
       |  
       span.leancloud-visitors-count
 
-if theme.valine.visitor_index || is_post()
+if theme.valine.visitor_index || is_post() || is_page()
   script(defer, src=theme.vendors.valine_js)
   script.
     function initValine() {

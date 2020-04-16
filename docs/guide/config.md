@@ -785,7 +785,22 @@ post_meta:
 
 你只要遵循 [Markdown 语法](https://segmentfault.com/markdown)，就会自动生成目录！
 
-> 没什么人会要关这个功能的吧，hhh
+> 没什么人会要关这个功能的吧，hhh（所以我根本没加关闭的功能）
+
+- `list_number`: 显示编号
+- `max_depth`: 生成 TOC 的最大深度
+- `min_depth`: 生成 TOC 的最小深度
+- `placeholder`: 当目录不存在时，显示的话。
+
+```yml
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+```
+
+> [辅助函数 ｜ Hexo](https://hexo.io/zh-cn/docs/helpers#toc)
 
 ### 编辑链接
 

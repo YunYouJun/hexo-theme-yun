@@ -1,10 +1,1 @@
 #valine-container.comment-container
-if !theme.valine.visitor_index
-  script(defer, src=theme.vendors.valine_js)
-  script.
-    function initValine() {
-      new Valine(CONFIG.valine);
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-      initValine();
-    });
