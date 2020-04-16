@@ -9,9 +9,12 @@ $hty ?= {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 };
 // font-family
-$font-family-sans-serif = Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
-$font-family-serif = 'Noto Serif SC', '宋体-简', '华文楷体', KaiTi, Roboto, serif;
-$font-family-monospace = 'Courier New', Courier, Consolas, Monaco, monospace;
+$font-family-serif = convert(hexo-config('font.serif.family'));
+$font-family-sans-serif = convert(hexo-config('font.sans_serif.family'));
+$font-family-monospace = convert(hexo-config('font.monosapce.family'));
+// weight
+$font-family-serif-weight = hexo-config('font.serif.weight');
+$font-family-sans-serif-weight = hexo-config('font.sans_serif.weight');
 $border-width = 1px;
 // z-index
 $search-popup-z-index = 30;

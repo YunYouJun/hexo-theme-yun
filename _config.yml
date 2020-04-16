@@ -296,7 +296,18 @@ vendors:
   sidebar: /js/sidebar.js
 
 # UI
-# custom your color in colors
+# You can import the font you want in the head.
+font:
+  serif:
+    family: "'Noto Serif SC', 'Songti SC', STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 300
+  monospace:
+    family: "'Courier New', Courier, Consolas, Monaco, monospace"
+
+# custom your color in fireworks
 fireworks:
   enable: true
   colors:

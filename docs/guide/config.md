@@ -445,6 +445,45 @@ notice:
 
 ## UI
 
+### 字体
+
+你可以设置你的自定义字体，并调节为你喜欢的自重。
+
+:::tip
+如果你使用了非系统自带字体，你还需要前往 [head](#head-头部资源) 处引入。
+
+譬如引入字重 900 的 `Noto Serif SC` 字体。
+
+> 本主题为了保证足够轻量，默认不引入任何字体，均使用系统自带的默认字体。你可以自行决定是否引入。
+
+```yml
+head:
+  css:
+    fonts: https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+```
+
+:::
+
+本主题的字体主要分为以下三大类。
+
+- 衬线字体（Serif）：较粗表强调，通常用于首页标语（Banner）、Say、站点与文章标题（以及 links、girls 等页面的作品名称）等处。
+- 无衬线字体（Sans Serif）：较细以营造轻盈之感，通常为普通文本内容。
+- 等宽字体（monospace）：字符均具有相同宽度，通常用于代码等处。
+
+> 你可以仅覆盖你想覆盖的字体族。
+
+```yml
+font:
+  serif:
+    family: "'Noto Serif SC', 'Songti SC', STKaiti, KaiTi, Roboto, serif"
+    weight: 300
+  sans_serif:
+    family: "Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 900
+  monospace:
+    family: "'Courier New', Courier, Consolas, Monaco, monospace"
+```
+
 ### 图片背景
 
 - `opacity`: 背景透明度
@@ -947,12 +986,16 @@ reward:
 ## 页脚
 
 ::: tip 注意
-以下配置均写在 `footer` 字段下。
+以下配置均写在 `footer` 字段下，请同时放到 `footer` 下。（只保留一个 `footer`。）
 如：
 
 ```yml
 footer:
   since: 1997
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
 ```
 
 :::
@@ -960,7 +1003,8 @@ footer:
 ### 起始年份
 
 ```yml
-since: 2016
+footer:
+  since: 2016
 ```
 
 ### 图标
@@ -972,10 +1016,11 @@ since: 2016
 - `color`: 图标颜色
 
 ```yml
-icon:
-  name: icon-cloud-line
-  animated: true
-  color: "#0078E7"
+footer:
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
 ```
 
 ### 驱动
@@ -990,9 +1035,10 @@ icon:
 - `version`: 显示版本
 
 ```yml
-powered:
-  enable: true
-  version: true
+footer:
+  powered:
+    enable: true
+    version: true
 ```
 
 ### 备案
@@ -1005,9 +1051,10 @@ powered:
 - `icp`: 备案号
 
 ```yml
-beian:
-  enable: true
-  icp: 苏ICP备xxxxxxxx号
+footer:
+  beian:
+    enable: true
+    icp: 苏ICP备xxxxxxxx号
 ```
 
 ### 运行时间
@@ -1017,20 +1064,22 @@ beian:
 `本博客已萌萌哒地运行 442 天 19 小时 28 分 40 秒(●'◡'●)`
 
 ```yml
-live_time:
-  enable: false
-  prefix: 本博客已萌萌哒地运行
-  suffix: (●'◡'●)
-  start_time: "2019-04-12T00:00:00"
+footer:
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: "2019-04-12T00:00:00"
 ```
 
 ### 自定义文本
 
 `custom_text` 为自定义页脚，可以包含 HTML。
-譬如有时使用其他服务商进行托管页面。
+譬如有时使用其他服务商进行托管页面，或一些 ICP 之外的备案信息。
 
 ```yml
-custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+footer:
+  custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 ```
 
 ## Say
