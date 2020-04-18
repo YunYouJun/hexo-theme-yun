@@ -64,6 +64,14 @@ counter:
     zero: No post
     one: 1 post
     other: "%d posts in total"
+  albums:
+    zero: No album
+    one: 1 album
+    other: "%d albums in total"
+  photos:
+    zero: No photo
+    one: 1 photo
+    other: "%d photos in total"
 
 search:
   placeholder: Searching...

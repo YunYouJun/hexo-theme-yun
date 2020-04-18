@@ -13,6 +13,10 @@
 @import '_widget';
 
 // extend page
+if (hexo-config('albums.enable')) {
+  @import '_extend/albums';
+}
+
 if (hexo-config('girls.enable')) {
   @import '_extend/girls';
 }

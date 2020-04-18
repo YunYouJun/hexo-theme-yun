@@ -7,6 +7,7 @@ prepend title
 block content
   #archive.hty-card
     include _mixin/post-collapse.pug
-    .archive-title= _p('counter.archive_posts', site.posts.length)
+    +page_header(__('title.archive'), theme.menu.archives.icon)
+    .page-subtitle= _p('counter.archive_posts', site.posts.length)
     +post_collapse(page.posts)
   include _partial/pagination.pug

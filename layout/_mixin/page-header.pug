@@ -1,0 +1,8 @@
+mixin page_header(title, icon)
+  header.post-header
+    h1.post-title
+      if page.icon
+        - icon = page.icon
+      if icon
+        +icon(icon)
+      !=title

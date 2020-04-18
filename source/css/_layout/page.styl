@@ -8,10 +8,14 @@
   }
 }
 
-// archive
-.archive-title {
-  padding: 1rem;
-  text-align: center;
+// page
+.page {
+  &-subtitle {
+    text-align: center;
+    color: $gray;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
 }
 
 // tag
@@ -29,18 +33,10 @@
       color: $black !important;
     }
   }
-
-  &__title {
-    color: $gray;
-    font-size: 1rem;
-    margin: 0.5rem;
-  }
 }
 
 .category-lists {
-  &-container {
-    text-align: left;
-  }
+  text-align: left;
 
   .category-list {
     padding-inline-start: 0px;

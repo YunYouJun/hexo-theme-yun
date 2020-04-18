@@ -5,7 +5,7 @@ prepend title
 
 block content
   #page
-    include _partial/page/page-header.pug
+    +page_header(page.title)
     .not-found 404
     style.
       .not-found {

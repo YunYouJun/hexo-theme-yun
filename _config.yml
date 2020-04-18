@@ -109,6 +109,10 @@ pages:
 # friend
 anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 
+albums:
+  enable: false
+  icon: icon-gallery-line
+
 girls:
   enable: false
 
@@ -268,7 +272,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_9juba7x0cw.js
+      iconfont: //at.alicdn.com/t/font_1140697_d8477pk71a.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -291,6 +295,7 @@ vendors:
     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
   trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
+  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js
@@ -299,7 +304,7 @@ vendors:
 # You can import the font you want in the head.
 font:
   serif:
-    family: "'Noto Serif SC', 'Songti SC', STKaiti, KaiTi, Roboto, serif"
+    family: "'Noto Serif SC', 'Songti SC', STZhonngSong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
   sans_serif:
     family: "Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"

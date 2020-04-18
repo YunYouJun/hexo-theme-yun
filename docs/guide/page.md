@@ -2,6 +2,8 @@
 
 本主题默认支持并使用以下页面类型。
 
+如果想要让页面链接显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
+
 ## 文章
 
 额外的头部字段
@@ -26,6 +28,23 @@ email: me@yunyoujun.cn
 ```
 
 ![img-caption-example.png](https://i.loli.net/2020/03/19/2bOIPC3Wv4Gxetm.png)
+
+## 页面
+
+通用页面的配置。
+
+- `icon`: 页面标题前的图标
+
+譬如：
+
+```md
+---
+title: xxx
+icon: icon-women-line
+---
+```
+
+> 效果可见: [Lovely Girls](https://www.yunyoujun.cn/girls/)
 
 ## 标签 tags
 
@@ -209,7 +228,7 @@ hexo new page girls
 
 进入 `source/girls/index.md`
 
-```yml
+```yml {2}
 ---
 layout: girls
 title: 可爱的女孩子
@@ -224,6 +243,86 @@ girls:
 
 ```
 
+> 当你不输入 `url` 人物百科链接时，会自动将人物名与[萌娘百科](https://zh.moegirl.org/)前缀拼接以获得人物百科链接。
+
 可参考我的[配置](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md)。
 
-> 如果想要让其显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)
+## 相册 albums
+
+存在一个相册主页，放置多个相册，点击进入相册查看更多照片。
+
+在 `yun.yml` 中开启相册功能。
+
+```yml
+albums:
+  enable: true
+```
+
+[相册示例](https://www.yunyoujun.cn/albums/)
+
+[配置示例](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
+
+### 相册集
+
+相册集是相册的导航页面，你可以在此放置多个相册。
+
+新建相册集页面
+
+```sh
+hexo new page albums
+```
+
+进入 `source/albums/index.md`，设置 `type`，和添加相册链接、封面等。
+
+- `caption`: 相册标题
+- `url`: 相册链接
+- `cover`: 相册封面
+- `desc`: 相册描述
+
+```yml {3}
+---
+title: 相册集
+type: albums
+albums:
+  - caption: 夕阳西下
+    url: /albums/sunset.html
+    cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
+    desc: 我想起那天夕阳下的奔跑
+---
+
+```
+
+### 相册页
+
+相册页，才是你真正存放照片的地方。
+
+新建相册页面。
+
+你只需在上面新建好的 `albums` 文件夹中，继续创建 `md` 文件，譬如新建 `sunset.md`。
+
+或通过命令行新建：
+
+```sh
+hexo new page --path albums/sunset "夕阳"
+```
+
+进入 `sunset.md` 文件，进行修改。
+
+> 注意：这里是 `layout` 而不是 `type`，是 `album` 而不是 `albums`。
+
+```yml {5}
+---
+title: 夕阳
+date: 2020-04-18 16:27:24
+updated: 2020-04-18 16:27:24
+layout: album
+photos:
+  - caption: 我
+    src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
+    desc: 我想起那天夕阳下的奔跑
+  - caption: 想起
+    src: https://i.picsum.photos/id/198/510/300.jpg
+    desc: 那是我逝去的青春
+---
+
+```

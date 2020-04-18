@@ -38,7 +38,7 @@
 
   pre, code {
     overflow: auto;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: $font-family-monospace;
     font-size: 0.85rem;
     line-height: 1.6;
     border-radius: 3px;
@@ -91,6 +91,7 @@
     display: flex;
     margin: 0.5rem auto;
     max-width: 92%;
+    min-height: 10px;
     max-height: 500px;
     border-radius: 0.2rem;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -98,6 +99,10 @@
 
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &::before {
+      content: 'LOADING';
     }
   }
 

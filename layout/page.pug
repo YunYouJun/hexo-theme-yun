@@ -13,20 +13,31 @@ prepend title
 
 block content
   #page
-    include _partial/page/page-header.pug
     if page.type === 'tags'
+      +page_header(page.title, theme.menu.tags.icon)
+      .page-subtitle=_p('counter.tag_cloud', site.tags.length)
       .tag-cloud
-        .tag-cloud__title= _p('counter.tag_cloud', site.tags.length)
         - var start_color = theme.color ? (theme.color.tag_start_color || '#333'): '#999999'
         - var end_color = theme.color ? (theme.color.tag_end_color || theme.colors.primary) : '#1B9EF3'
         .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
     else if page.type === 'categories'
-      .category-lists
-        .category-lists__title= _p('counter.categories', site.categories.length)
-        .category-lists-container!= list_categories()
+      +page_header(page.title, theme.menu.categories.icon)
+      .page-subtitle=_p('counter.categories', site.categories.length)
+      .category-lists!= list_categories()
+
+    else if page.type === 'albums'
+      +page_header(page.title, theme.albums.icon)
+      .page-subtitle= _p('counter.albums', page.albums.length)
+      .album-list
+        for album in page.albums
+          a.album-list-item(href=url_for(album.url))
+            figure(title=album.desc)
+              img.album-list-cover(src=album.cover, loading="lazy", alt=album.caption, οnlοad="this.src=CONFIG.anonymous_image")
+              figcaption=album.caption
 
     else
+      +page_header(page.title)
       article#page
         section.post-body(itemprop='articleBody')
           .post-content(class='post-markdown')!= page.content

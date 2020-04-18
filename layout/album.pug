@@ -1,0 +1,26 @@
+extends _partial/layout.pug
+
+prepend title
+  | #{page.title} | 
+
+block content
+  #page
+    +page_header(page.title, theme.albums.icon)
+    include ./_third-party/medium-zoom.pug
+    if page.photos
+      #album
+        .page-subtitle!=_p('counter.photos', page.photos.length)
+        .photo-list
+          for photo in page.photos
+            figure.photo-list-item(title=photo.desc)
+              img.photo-list-cover(data-zoomable src=photo.src, loading="lazy", alt=photo.caption)
+              figcaption=photo.caption
+
+        .hty
+
+    article.post-block
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content
+
+  if page.comments && theme.comment.enable
+    include ./_third-party/comments/index.pug

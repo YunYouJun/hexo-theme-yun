@@ -8,7 +8,7 @@ block preconnect
 
 block content
   #page
-    include _partial/page/page-header.pug
+    +page_header(page.title)
     if page.girls
       #girls
         .girls-number!=page.girls.length
@@ -26,6 +26,6 @@ block content
     article.post-block
       section.post-body(itemprop='articleBody')
         .post-content(class='post-markdown')!= page.content
-        
+
   if page.comments && theme.comment.enable
     include ./_third-party/comments/index.pug
