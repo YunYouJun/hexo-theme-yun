@@ -4,7 +4,7 @@ prepend title
   | #{page.title} | 
 
 block content
-  #page
+  article#page
     +page_header(page.title, theme.albums.icon)
     include ./_third-party/medium-zoom.pug
     if page.photos
@@ -16,11 +16,8 @@ block content
               img.photo-list-cover(data-zoomable src=photo.src, loading="lazy", alt=photo.caption)
               figcaption=photo.caption
 
-        .hty
-
-    article.post-block
-      section.post-body(itemprop='articleBody')
-        .post-content(class='post-markdown')!= page.content
+    section.post-body(itemprop='articleBody')
+      .post-content(class='post-markdown')!= page.content
 
   if page.comments && theme.comment.enable
     include ./_third-party/comments/index.pug

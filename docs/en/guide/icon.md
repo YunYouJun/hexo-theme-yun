@@ -2,4 +2,4 @@
 
 The currently used icon
 
-<template> </ template>
+<template></template>

@@ -1,6 +1,6 @@
-# 赞助名单
+# 赞助名单 Sponsor
 
-[骑兵链接](https://www.yunyoujun.cn/about/#Donate)
+[骑兵链接｜ Patron Link](https://www.yunyoujun.cn/about/#Donate)
 
 | 老板                                       | 金额(CNY) | 日期       | 寄语           |
 | ------------------------------------------ | --------- | ---------- | -------------- |

@@ -1,7 +1,11 @@
 .post-nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 0 1rem;
+
+  +mobile() {
+    margin: 0;
+  }
 
   &-item {
     display: inline-block;
@@ -11,13 +15,19 @@
     text-transform: uppercase;
     height: 3rem;
     line-height: 2.9rem;
-    padding: 0 0.5rem;
     transition: 0.4s;
 
     &:hover {
       background-color: rgba($colors.primary, 0.1);
-      border-radius: 0.2rem;
     }
+  }
+
+  &-prev {
+    padding-right: 0.5rem;
+  }
+
+  &-next {
+    padding-left: 0.5rem;
   }
 
   &-prev, &-next {

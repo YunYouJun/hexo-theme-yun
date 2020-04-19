@@ -107,7 +107,7 @@ git pull
 如果您修改了主题的 `themes/yun/_config.yml` 配置文件，那么您升级时可能会遭遇冲突，需要自行调整。
 
 ::: danger
-请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力且此后将不会对主题进行升级。
+请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力或此后将不会对主题进行升级。
 :::
 
 如果你想对主题进行一些定制，你可以在 `head` 配置项中引入你的资源。
@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", function() {
         name: "name",
         artist: "artist",
         url: "url.mp3",
-        cover: "cover.jpg"
-      }
-    ]
+        cover: "cover.jpg",
+      },
+    ],
   });
 });
 ```

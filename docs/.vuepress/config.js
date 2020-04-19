@@ -45,18 +45,6 @@ module.exports = {
     docsDir: "docs",
     editLinks: true,
     smoothScroll: true,
-    sidebar: {
-      "/guide/": [
-        "about",
-        "",
-        "config",
-        "page",
-        "third-party-support",
-        "additional-package-support",
-        "faq",
-        "sponsor",
-      ],
-    },
     sidebarDepth: 2,
     locales: {
       "/": {
@@ -67,16 +55,40 @@ module.exports = {
         editLinkText: "帮助改善此页面！( ￣□￣)/",
         nav: [
           { text: "使用指南", link: "/guide/" },
-          { text: "示例站点", link: "https://www.yunyoujun.cn" },
+          { text: "示例站点", link: "/demo.html" },
+          { text: "赞助名单", link: "/sponsor.html" },
         ],
+        sidebar: {
+          "/": [
+            "about.html",
+            "guide/",
+            "guide/config",
+            "guide/page",
+            "guide/third-party-support",
+            "guide/additional-package-support",
+            "guide/faq",
+          ],
+        },
       },
       "/en/": {
         label: "English",
         lastUpdated: "Last Updated",
         nav: [
           { text: "Guide", link: "/guide/" },
-          { text: "Demo", link: "https://www.yunyoujun.cn" },
+          { text: "Demo", link: "/demo.html" },
+          { text: "Sponsor", link: "/sponsor.html" },
         ],
+        sidebar: {
+          "/en/": [
+            "about.html",
+            "guide/",
+            "guide/config",
+            "guide/page",
+            "guide/third-party-support",
+            "guide/additional-package-support",
+            "guide/faq",
+          ],
+        },
       },
     },
   },
