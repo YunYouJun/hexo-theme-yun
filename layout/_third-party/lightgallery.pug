@@ -1,0 +1,6 @@
+link(rel='stylesheet', href=url_for(theme.vendors.lightgallery.css))
+script(defer, src=url_for(theme.vendors.lightgallery.js))
+script.
+  document.addEventListener("DOMContentLoaded", () => {
+    lightGallery(document.getElementById('lightgallery'));
+  });

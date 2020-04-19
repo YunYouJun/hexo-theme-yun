@@ -296,6 +296,8 @@ albums:
 
 相册页，才是你真正存放照片的地方。
 
+> 使用 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/) 实现，仅在相册页才会加载该类库。
+
 新建相册页面。
 
 你只需在上面新建好的 `albums` 文件夹中，继续创建 `md` 文件，譬如新建 `sunset.md`。
@@ -308,14 +310,14 @@ hexo new page --path albums/sunset "夕阳"
 
 进入 `sunset.md` 文件，进行修改。
 
-> 注意：这里是 `layout` 而不是 `type`，是 `album` 而不是 `albums`。
+> 注意：这里是 `layout` 而不是 `type`。
 
 ```yml {5}
 ---
 title: 夕阳
 date: 2020-04-18 16:27:24
 updated: 2020-04-18 16:27:24
-layout: album
+layout: gallery
 photos:
   - caption: 我
     src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg

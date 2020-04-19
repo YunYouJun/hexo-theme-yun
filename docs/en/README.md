@@ -12,6 +12,7 @@ features:
     details: Optimize useless code as much as possible, and use CDN to increase access speed.
   - title: Lovely
     details: Self-righteous and cute, with strange features. But don't worry about increasing the final size of your blog.
+# footer: MIT Licensed | Copyright © 2019-2020 YunYouJun
 ---
 
 <hr/>

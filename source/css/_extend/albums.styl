@@ -59,13 +59,14 @@
   position: relative;
   width: 15rem;
   margin: 2rem;
+  cursor: url($cursor-pointer), auto;
 
   img {
+    box-sizing: border-box;
     vertical-align: bottom;
     display: inline-flex;
     border: 0.25rem solid white;
     box-shadow: 0 8px 10px rgba(#000000, 0.1);
-    padding: 0;
     width: 100%;
     height: 10rem;
     object-fit: cover;
@@ -74,7 +75,7 @@
 
   figcaption {
     position: absolute;
-    bottom: -2.2rem;
+    bottom: -2rem;
     display: block;
     text-align: center;
     width: 100%;

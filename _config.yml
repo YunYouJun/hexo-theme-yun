@@ -295,7 +295,9 @@ vendors:
     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
   trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
-  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js
+  lightgallery:
+    css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
+    js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js

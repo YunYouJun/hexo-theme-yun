@@ -34,7 +34,7 @@ block content
           a.album-list-item(href=url_for(album.url))
             figure(title=album.desc)
               img.album-list-cover(src=album.cover, loading="lazy", alt=album.caption, οnlοad="this.src=CONFIG.anonymous_image")
-              figcaption=album.caption
+              figcaption='「'+album.caption+'」'
 
     else
       +page_header(page.title)
