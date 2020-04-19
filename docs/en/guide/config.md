@@ -20,9 +20,9 @@ The default language is Chinese `zh-CN`.
 
 The main color of the custom theme.
 
--`bg`: background color (choose a color closer to the main color of your background image in order to make it more coordinated)
+- `bg`: background color (choose a color closer to the main color of your background image in order to make it more coordinated)
 
-> [color-dust] (https://www.yunyoujun.cn/color-dust) I wrote a small tool that can analyze the color in pictures.
+> [color-dust](https://www.yunyoujun.cn/color-dust) I wrote a small tool that can analyze the color in pictures.
 
 ```yml
 colors:
@@ -71,9 +71,7 @@ Follow the example below to customize the `css` and `js` resources you want to a
 
 JavaScript resource type description:
 
--`base`: must be loaded and executed in advance.
--`async`: Asynchronous loading, executed immediately after loading.
--`defer`: load the resource asynchronously, but execute it last.
+-`base`: must be loaded and executed in advance. -`async`: Asynchronous loading, executed immediately after loading. -`defer`: load the resource asynchronously, but execute it last.
 
 ```yml
 head:
@@ -99,12 +97,12 @@ For example, the bright browser LOGO has a black stroke, and the dark browser LO
 
 Your icon must be an `svg` file, and add a corresponding style to it.
 
-> You can refer to my LOGO SVG code. [yun.svg] (https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
+> You can refer to my LOGO SVG code. [yun.svg](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
 
 i.e.:
 
 ```html
-<svg id = "yun-logo">
+<svg id="yun-logo">
   <style>
     #yun-logo {
       stroke: black;
@@ -115,15 +113,15 @@ i.e.:
         stroke: white;
       }
     }
-  </ style>
-</ svg>
+  </style>
+</svg>
 ```
 
 > [Dark Mode Favicons](https://css-tricks.com/dark-mode-favicons/)
 
 ## CDN
 
-Content Delivery Network unifies the loading of network resources;  it is conducive to improving the speed of web page loading.
+Content Delivery Network unifies the loading of network resources; it is conducive to improving the speed of web page loading.
 
 [jsDelivr – Open Source CDN](https://www.jsdelivr.com) is a free and open-source CDN, with good domestic speed performance, and a unified CDN source which is also conducive to loading speed.
 Therefore, this theme's CDN defaults to jsDelivr and uses `dns-prefetch` to pre-parse jsDelivr.
@@ -150,7 +148,7 @@ cdn:
 -`pre`: empty by default, your loading resource prefix. For example, if you want to use `jsdelivr` to accelerate the static resources of the whole station, you can set it in `yun.yml` like this.
 
 > Replace `https://cdn.jsdelivr.net/gh/` with your GitHub username and repository name (you can also add the current branch, such as `@master`).
-> `@latest` is to use the latest version (but it will still be cached, **and it will take 12 hours to update**, if you need to force a refresh, please refer to [Purge Cache] (https://github.com/jsdelivr/sdelivr#purge-cache)
+> `@latest` is to use the latest version (but it will still be cached, **and it will take 12 hours to update**, if you need to force a refresh, please refer to [Purge Cache](https://github.com/jsdelivr/sdelivr#purge-cache)
 > In addition, please make sure that your avatar image link uses `/images/xxx.jpg` instead of `https://xxx/xxx.jpg`.
 
 ```yml
@@ -159,7 +157,7 @@ cdn:
 ```
 
 ::: tip
-If you customize the resources used by the theme and want to preview and debug locally more conveniently, 
+If you customize the resources used by the theme and want to preview and debug locally more conveniently,
 
 you can add `" dev ":" export NODE_ENV = dev && hexo s "` in the `scripts` field of `package.json` in the Hexo working directory.
 
@@ -187,10 +185,7 @@ cdn:
 
 Use `preload`, `prefetch`, `preconnect`, `dns-prefetch` to optimize the speed of webpage recording.
 
--`preload`: resources that will be used after this page
--`prefetch`: resources that may be used after jump to the page
--`dns-prefetch`: resolve the DNS address of the domain name that will be used
--`preconnect`: establish a link with the specified domain name in advance; it has more TCP connections than` dns-prefetch`
+-`preload`: resources that will be used after this page -`prefetch`: resources that may be used after jump to the page -`dns-prefetch`: resolve the DNS address of the domain name that will be used -`preconnect`: establish a link with the specified domain name in advance; it has more TCP connections than`dns-prefetch`
 
 `preload` and `prefetch` are only used to load local resources (and generally use by default). Do not use resources with a protocol header (`http://`).
 
@@ -200,24 +195,18 @@ CDN can be added at `head`.
 
 ```yml
 preload:
-  style:
-    -/css/hexo-theme-yun.css
-  script:
-    -/js/utils.js
+  style: -/css/hexo-theme-yun.css
+  script: -/js/utils.js
     -/js/hexo-theme-yun.js
 
 prefetch:
-  style:
-    -/css/prism.css
-  script:
-    -/js/sidebar.js
+  style: -/css/prism.css
+  script: -/js/sidebar.js
 
-dns_prefetch:
-  -https://cos.yunyoujun.cn
+dns_prefetch: -https://cos.yunyoujun.cn
 
 # do more (TCP handshake ...) than dns-fetch
-preconnect:
-  -https://cdn.jsdelivr.net
+preconnect: -https://cdn.jsdelivr.net
 ```
 
 ## Icon
@@ -232,17 +221,17 @@ If you want to use other icons, the following icons are recommended.
 - Customize the use of `ionicons` load with `iconfont`.
 
 ::: tip
-You can go to [iconfont] (https://www.iconfont.cn/) to customize a set of icons and cover the icon resources introduced by [CDN] (# CDN).
+You can go to [iconfont](https://www.iconfont.cn/) to customize a set of icons and cover the icon resources introduced by [CDN] (# CDN).
 If you just want to add a few extra icons, you'd better introduce it at [head](# head-header resource) instead of directly overwriting it.
 :::
 
 Here are some ways to use basic icons.
 
-### [iconfont] (https://www.iconfont.cn/)
+### [iconfont](https://www.iconfont.cn/)
 
 Under Alibaba, you can customize your own icon set. Domestic speed is decent in China. (recommend)
 
-[Instructions] (https://www.iconfont.cn/help/detail?helptype=code)
+[Instructions](https://www.iconfont.cn/help/detail?helptype=code)
 
 Multi-color icons need to be quoted in the `symbol` of the article.
 
@@ -256,28 +245,29 @@ head:
       iconfont: //at.alicdn.com/t/font_1623879_a03x3er7qur.js
 ```
 
-### [Remix Icon] (https://remixicon.com/)
+### [Remix Icon](https://remixicon.com/)
 
 -GitHub: <https://github.com/Remix-Design/remixicon>
 -CDN: <https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css>
 
 Simple, elegant and open source.
 
-### [Font-Awesome] (https://fontawesome.com)
+### [Font-Awesome](https://fontawesome.com)
 
--GitHub: [Font-Awesome] (https://github.com/FortAwesome/Font-Awesome)
+-GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
 -CDN: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css>
 
 There are many and complete icons, including all kinds of trademark icons, but some are charged and the files are large.
 
 ```html
-<i class = "fas fa-home"> </ i>
+<i class="fas fa-home"> </i>
 ```
+
 If you are using `Font-Awesome`, please fill in the icon configuration as follows: `fas fa-home`.
 
-### [Ionicons] (https://ionicons.com)
+### [Ionicons](https://ionicons.com)
 
--GitHub: [ionicons] (https://github.com/ionic-team/ionicons)
+-GitHub: [ionicons](https://github.com/ionic-team/ionicons)
 -CDN CSS: <https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css>
 -CDN JS: <https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js>
 
@@ -294,7 +284,7 @@ It can automatically switch the suitable style `Material/ iOS` according to the 
 ```
 
 ```html
-<ion-icon name = "heart"> </ion-icon>
+<ion-icon name="heart"> </ion-icon>
 ```
 
 If you use Web Component `ion-icon`, please fill in the icon-related configuration as follows: `ion-icon heart`.
@@ -305,26 +295,25 @@ If you use Web Component `ion-icon`, please fill in the icon-related configurati
 <!-- Faster than unpkg -->
 <!-- https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css -->
 <link
-  href = "https://unpkg.com/ionicons/dist/css/ionicons.min.css"
-  rel = "stylesheet"
+  href="https://unpkg.com/ionicons/dist/css/ionicons.min.css"
+  rel="stylesheet"
 />
 ```
 
 ```html
-<i class = "icon ion-md-heart"> </ i>
+<i class="icon ion-md-heart"> </i>
 ```
 
 If you use the `font-class` method, please fill in the icon-related configuration as follows: `icon ion-md-heart`.
 
-### [Material Design icons] (https://google.github.io/material-design-icons/)
+### [Material Design icons](https://google.github.io/material-design-icons/)
 
--GitHub: [material-design-icons] (https://github.com/google/material-design-icons)
--[Material Design icons](https://material.io/tools/icons)
+-GitHub: [material-design-icons](https://github.com/google/material-design-icons) -[Material Design icons](https://material.io/tools/icons)
 
-Uniform style, no trademark icon. Produced by Google, due to domestic policies, loading may not be stable if using in China. 
+Uniform style, no trademark icon. Produced by Google, due to domestic policies, loading may not be stable if using in China.
 
 ```html
-<i class ="material-icons">face </i>
+<i class="material-icons">face </i>
 ```
 
 If you use `ionicon`, please fill in the icon-related configuration as follows: `material-icons face`.
@@ -335,70 +324,70 @@ Similar to the use of the above icons fill in the corresponding icon `class` in 
 
 ## Social Icons
 
-The following social icons are provided by default. You can obtain more icons by introducing custom icon resources in [head] (#head-head resource)
+The following social icons are provided by default. You can obtain more icons by introducing custom icon resources in [head](#head-head resource)
 For better display, my default link will be displayed.
 
--`name`: link name
--`link`: link
--`icon`: Icon Class
--`color`: Icon color (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
+- `name`: link name
+- `link`: link
+- `icon`: Icon Class
+- `color`: Icon color (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
 
 ```yml
 social:
-  -name: RSS
+  - name: RSS
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
-  -name: QQ
+  - name: QQ
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
     color: "# 12B7F5"
-  -name: GitHub
+  - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
     color: "# 181717"
-  -name: E-Mail
+  - name: E-Mail
     link: mailto: me@yunyoujun.cn
     icon: icon-mail-line
     color: "# 8E71C1"
-  -name: Weibo
+  - name: Weibo
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
     color: "# E6162D"
-  -name: Douban
+  - name: Douban
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
     color: "# 007722"
-  -name: NetEase Cloud Music
+  - name: NetEase Cloud Music
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
     color: "# C10D0C"
-  -name: Zhihu
+  - name: Zhihu
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
     color: "# 0084FF"
-  -name: Bilibili Animation
+  - name: Bilibili Animation
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "# FF8EB3"
-  -name: POPI
+  - name: POPI
     link: https://www.popiask.cn/elpsycn
     icon: icon-questionnaire-line
     color: "# 525252"
-  -name: WeChat official account
+  - name: WeChat official account
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "# 1AAD19"
 ```
 
-You only need to set `social` in` yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
+You only need to set `social` in`yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
 
 ```yml
 social:
-  -name: E-Mail
+  - name: E-Mail
     link: mailto: your email
     icon: icon-mail-line
     color: "#8E71C1"
@@ -421,8 +410,7 @@ You can visit <https://yunyoujun.cn> to see the effect. (Each refresh will displ
 > This is the earliest function implemented during the development of this theme. During the period, it was refactored several times due to compatibility issues of browsers such as Safari, and the loading speed was also improved.
 > It was a function that went through three dynasties, lol.
 
--`enable`: whether to enable
--`title`: set text content
+-`enable`: whether to enable -`title`: set text content
 
 ```yml
 banner:
@@ -469,7 +457,7 @@ bg_image:
 
 #### Search Background
 
--`placeholder`: search box prompt text (if not set, the corresponding text will be automatically selected according to Hexo language configuration)
+- `placeholder`: search box prompt text (if not set, the corresponding text will be automatically selected according to Hexo language configuration)
 
 ```yml
 search:
@@ -483,14 +471,13 @@ search:
 
 Click on the fireworks effect on the page
 
--`enable`: whether to enable, enable by default
--`colors`: the included colors, the default is several levels of blue colors (please follow the RGB values ​​below)
+- `enable`: whether to enable, enable by default
+- `colors`: the included colors, the default is several levels of blue colors (please follow the RGB values ​​below)
 
 ```yml
 fireworks:
   enable: true
-  colors:
-    -"102, 167, 221"
+  colors: -"102, 167, 221"
     -"62, 131, 225"
     -"33, 78, 194"
 ```
@@ -511,8 +498,8 @@ Replace the mouse cursor, which is off by default. By default, [Material Design 
 
 You can also use your favorite icon instead.
 
--`default`: Icon in the default state.
--`pointer`: pointer (that is, in the link state) icon.
+- `default`: Icon in the default state.
+- `pointer`: pointer (that is, in the link state) icon.
 
 ```yml
 cursor:
@@ -534,15 +521,15 @@ sidebar:
 
 `bottom 3rem center` means it is centered and `3rem` from the bottom.
 
-You can refer to [background-position] (https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position) to set the position of the background image.
+You can refer to [background-position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position) to set the position of the background image.
 
 ### Avatar
 
--`enable`: whether to show avatar
--`url`: avatar image link
--`rounded`: whether to be circled
--`opacity`: transparency
--`mickey_mouse`: Closed by default. When ON, the avatar of the sidebar of the article page will move upwards (Disney copyright alert)
+- `enable`: whether to show avatar
+- `url`: avatar image link
+- `rounded`: whether to be circled
+- `opacity`: transparency
+- `mickey_mouse`: Closed by default. When ON, the avatar of the sidebar of the article page will move upwards (Disney copyright alert)
 
 ```yml
 avatar:
@@ -742,11 +729,11 @@ Note: A link to the article will still appear in the previous or next article at
 
 ### Information
 
--`item_text`: whether to display text (for example: posted on, updated on. If disabled, it will only display icon and time)
--`created_at`: whether to show the creation time
--`updated_at`: whether to show updated time
--`categories`: whether to display categories
--`tags`: whether to display tags
+- `item_text`: whether to display text (for example: posted on, updated on. If disabled, it will only display icon and time)
+- `created_at`: whether to show the creation time
+- `updated_at`: whether to show updated time
+- `categories`: whether to display categories
+- `tags`: whether to display tags
 
 ```yml
 post_meta:
@@ -768,7 +755,7 @@ As long as you follow [Markdown syntax](https://segmentfault.com/markdown), the 
 If enabled, an edit icon will be displayed next to the article page title.
 Click to jump to the editing page.
 
--`url`: the address of the article (you can refer to the default link when setting your warehouse jump link)
+- `url`: the address of the article (you can refer to the default link when setting your warehouse jump link)
 
 If I use `GitHub` as the hosting warehouse for the blog, the warehouse name is `yunyoujun.github.io`, under the `hexo` branch, in the `source` folder,
 where my link will be <https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/>.
@@ -806,7 +793,7 @@ prism_plugin:
   # custom_css: "path / to / your / custom.css" # optional
 ```
 
-Close the `highlight` that comes with Hexo (locates in ` _config.yml` in the Hexo working directory)
+Close the `highlight` that comes with Hexo (locates in `_config.yml` in the Hexo working directory)
 
 ```yml
 highlight:
@@ -823,9 +810,9 @@ Set the shared copyright of your article
 
 [Creative Commons 4.0 International License](https://creativecommons.org/share-your-work/licensing-types-examples) is used by default
 
--`license`: set certificate (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
--`language`: set language (deed.zh | deed.fr | deed.de)
--`post`: displayed at the end of each post
+- `license`: set certificate (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
+- `language`: set language (deed.zh | deed.fr | deed.de)
+- `post`: displayed at the end of each post
 
 ```yml
 creative_commons:
@@ -874,22 +861,22 @@ reward: true
 
 QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a custom icon color.
 
--`name`: donating method
--`path`: image path
--`color`: icon color
--`icon`: icon name
+- `name`: donating method
+- `path`: image path
+- `color`: icon color
+- `icon`: icon name
 
 ```yml
 reward:
-  -name: Alipay
+  - name: Alipay
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
     color: "# 00A3EE"
     icon: icon-alipay-line
-  -name: QQ pay
+  - name: QQ pay
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
     color: "# 12B7F5"
     icon: icon-qq-line
-  -name: WeChat Pay
+  - name: WeChat Pay
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
     color: "# 2DC100"
     icon: icon-wechat-pay-line
@@ -928,9 +915,9 @@ since: 2016
 
 The icon between the year and the name.
 
--`name`: icon name (i.e. `class`)
--`animated`: whether to enable animation
--`color`: icon color
+- `name`: icon name (i.e. `class`)
+- `animated`: whether to enable animation
+- `color`: icon color
 
 ```yml
 icon:
@@ -947,8 +934,8 @@ For example: `Driven by Hexo v4.2.0 | Theme-Yun v0.0.2`.
 
 Let more people know Hexo and the theme Yun, which is conducive to the further development of the open-source community.
 
--`enable`: enable
--`version`: display version
+- `enable`: enable
+- `version`: display version
 
 ```yml
 powered:
@@ -962,8 +949,8 @@ Domestic users in China can provide the record number to enable the record displ
 
 The default link for record information is: <http://www.beian.miit.gov.cn>
 
--`enable`: enable the record
--`icp`: record number
+- `enable`: enable the record
+- `icp`: record number
 
 ```yml
 beian:
@@ -996,13 +983,13 @@ custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="
 
 ## Say
 
-Randomly display a sentence on the homepage of the website ~~eighth-grade syndrome. (By default, [hitokoto] (https://hitokoto.cn/) is used as the API)
+Randomly display a sentence on the homepage of the website ~~eighth-grade syndrome. (By default, [hitokoto](https://hitokoto.cn/) is used as the API)
 
 - `enable`: whether to enable hitokoto
 - `api`: Remote JSON API
 - `src`: the called js file, it is best not to modify it (you can also write it yourself according to its structure to load the desired JSON format.)
 - `hitokoto.enable`: Whether to enable [hitokoto](https://hitokoto.cn/), when you enable hitokoto, it will override `say.api` by default
-- `hitokoto.api`: You can refer to [Statement Interface ｜hitokoto] (https://developer.hitokoto.cn/sentence/) to use the koto API according to your thoughts
+- `hitokoto.api`: You can refer to [Statement Interface ｜ hitokoto](https://developer.hitokoto.cn/sentence/) to use the koto API according to your thoughts
 
 ```yml
 say:
@@ -1017,7 +1004,7 @@ say:
 
 When you close hitokoto, the data at `say.api` will be used by default.
 
-> [say.elpsy.cn] (https://say.elpsy.cn) is where I have stored my eighthgrade syndrome hitokoto collections. = =, automatically export JSON for pulling.
+> [say.elpsy.cn](https://say.elpsy.cn) is where I have stored my eighthgrade syndrome hitokoto collections. = =, automatically export JSON for pulling.
 
 ### Customize
 
@@ -1077,8 +1064,7 @@ On the designated day of the year, the gray mourning mode is enabled.
 ```yml
 mourn:
   enable: true
-  days:
-    -"4-4"
+  days: -"4-4"
 ```
 
 ## More Configuration

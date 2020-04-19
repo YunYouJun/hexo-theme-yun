@@ -21,7 +21,7 @@ You can also join [QQ Group](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb
 ## Quickstart
 
 ::: tip renderer
-If you don’t have renderers for `pug` and` stylus`, please install:
+If you don’t have renderers for `pug` and`stylus`, please install:
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
 (This is Hexo official maintenance, but it seems that there are not many stars, or have a diligent update as the one below.)
 Or [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
@@ -124,22 +124,22 @@ You can create a new `load-aplayer.js` file under the `source/js` folder in the 
 Through the `createElement` method, `append` into the `body` container.
 
 ```js
-document.addEventListener ("DOMContentLoaded", function () {
-  let apContainer = document.createElement ("div");
-  apContainer.id = "aplayer";
-  document.body.append (apContainer);
-  const ap = new APlayer ({
-    container: document.getElementById ("aplayer"),
-    fixed: true,
-    audio: [
-      {
-        name: "name",
-        artist: "artist",
-        url: "url.mp3",
-        cover: "cover.jpg"
-      }
-    ]
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  let apContainer = document.createElement("div");
+  apContainer.id = "aplayer";
+  document.body.append(apContainer);
+  const ap = new APlayer({
+    container: document.getElementById("aplayer"),
+    fixed: true,
+    audio: [
+      {
+        name: "name",
+        artist: "artist",
+        url: "url.mp3",
+        cover: "cover.jpg",
+      },
+    ],
+  });
 });
 ```
 

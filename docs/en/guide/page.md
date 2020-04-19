@@ -9,7 +9,7 @@ This theme supports and uses the following page types by default.
 You can annotate the images as follows.
 
 ```md
-![Audits-Lighthouse] (https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png) _Google Chrome Audits-Lighthouse detection score_
+![Audits-Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png) _Google Chrome Audits-Lighthouse detection score_
 ```
 
 ![img-caption-example.png](https://i.loli.net/2020/03/19/2bOIPC3Wv4Gxetm.png)
@@ -95,7 +95,7 @@ reward: false
 ---
 ```
 
-Your custom 404 page will only be displayed after you deploy it to GitHub Pages. 
+Your custom 404 page will only be displayed after you deploy it to GitHub Pages.
 
 Example: <https://www.yunyoujun.cn/404.html>
 
@@ -111,7 +111,7 @@ New Friends Link Page
 hexo new page links
 ```
 
-Go to `source/links/index.md` and set the` links` field.
+Go to `source/links/index.md` and set the`links` field.
 
 - `url`: blog link
 - `avatar`: avatar image link

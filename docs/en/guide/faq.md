@@ -2,7 +2,7 @@
 
 ::: tip
 
--<Badge text ="dev" vertical="middle"/>  Only related to development.
+- <Badge text ="dev" vertical="middle"/> Only related to development.
   :::
 
 Questions and suggestions are welcome at [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues).
