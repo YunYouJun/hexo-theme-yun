@@ -23,6 +23,8 @@ section#recent-posts.hty-layout-grid
                     span=post.title
 
               include ../_partial/post/post-meta.pug
+              if post.description
+                .post-description=post.description
           .post-card-content.text-center
             .post-card-excerpt.post-markdown!=post.excerpt
 

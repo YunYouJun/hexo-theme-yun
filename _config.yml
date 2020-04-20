@@ -260,6 +260,7 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
+  # Todo:
   # font
   # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
   # font: https://fonts.loli.net/css?family=Montserrat
@@ -272,7 +273,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_d8477pk71a.js
+      iconfont: //at.alicdn.com/t/font_1140697_n3htx7s57pp.js
     defer:
 
 # cdn for third-party library (alternative include)

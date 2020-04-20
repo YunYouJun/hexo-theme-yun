@@ -1,6 +1,8 @@
-!=favicon_tag(url_for(config.favicon || theme.favicon || '/favicon.ico'))
+- var favicon = config.favicon || theme.favicon || '/favicon.ico'
+//- favicon
+link(rel='shortcut icon', href=url_for(favicon))
 //- Safari
-link(rel="mask-icon" href=url_for(config.favicon || theme.favicon || '/favicon.ico'), color=theme.colors.primary)
+link(rel="mask-icon" href=url_for(favicon), color=theme.colors.primary)
 
 //- not use cdn.pre in dev
 if process.env.NODE_ENV === 'dev'

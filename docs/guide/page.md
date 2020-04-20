@@ -2,6 +2,8 @@
 
 本主题默认支持并使用以下页面类型。
 
+> 你可能需要先了解 Hexo 的 [Front-matter](https://hexo.io/zh-cn/docs/front-matter.html)
+
 如果想要让页面链接显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
 
 ## 文章
@@ -17,6 +19,22 @@ title: xxx
 author: 云游君
 email: me@yunyoujun.cn
 ---
+```
+
+- `description`: 描述（只出现在预览卡片上，不出现在正文中）（默认使用 `400` 字重以表强调，略细于加粗字体）
+- `excerpt`: 摘要（不需要在 `Front-matter` 中设置，通过 `<!-- more -->` 截断实现，预览卡片与正文中均出现）
+
+```md
+---
+title: xxx
+description: xxxxxxx
+---
+
+这里是摘要
+
+<!-- more -->
+
+这里是更多内容
 ```
 
 ### 图片注释
@@ -293,6 +311,8 @@ albums:
 ```
 
 ### 相册页
+
+[相册页示例](https://www.yunyoujun.cn/albums/sunset.html)
 
 相册页，才是你真正存放照片的地方。
 
