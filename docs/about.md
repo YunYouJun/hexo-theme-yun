@@ -75,6 +75,7 @@
 
 - [Hexo](https://github.com/hexojs/hexo)
 - [RemixIcon](https://github.com/Remix-Design/remixicon)
+- [iconfont](https://www.iconfont.cn/)
 - [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/)
 
 ### Theme

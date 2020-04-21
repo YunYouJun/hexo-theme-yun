@@ -22,56 +22,56 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
 <table align="center">
   <tr align="center">
     <td>
-      <a href="https://www.yunyoujun.cn">
+      <a href="https://www.yunyoujun.cn" target="_blank">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg"/>
         <br />
         <sub title="希望能成为一个有趣的人">云游君的小站</sub>  
       </a>
     </td>
     <td>
-      <a href="https://yuexiaoya.info">
+      <a href="https://yuexiaoya.info" target="_blank">
         <img width="80px" src="https://yuexiaoya.info/photo.jpg" alt/>
         <br />
         <sub title="当然是用来记录历程啊，不好看怎么行！">落梅听风雪</sub>
       </a>
     </td>
     <td>
-      <a href="https://blog.sernikki.cn/">
+      <a href="https://blog.sernikki.cn/" target="_blank">
         <img width="80px" src="https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg"/>
         <br />
         <sub title="有瑕人无玉">神崎日照の小窝</sub>
       </a>
     </td>
     <td>
-      <a href="https://blog.hehejun.cn">
+      <a href="https://blog.hehejun.cn" target="_blank">
         <img width="80px" src="https://blog.hehejun.cn/img.jpg"/>
         <br />
         <sub title="世界に忘れられた~">呵呵君的博客</sub>
       </a>
     </td>
     <td>
-      <a href="https://ddindex.github.io/">
+      <a href="https://ddindex.github.io/" target="_blank">
         <img width="80px" src="https://ddindex.github.io/images/avatar.jpg"/>
         <br />
         <sub title="双手抓楼上的大胸">多酱的部落格</sub>
       </a>
     </td>
     <td>
-      <a href="https://spreadwings-sky.github.io/">
+      <a href="https://spreadwings-sky.github.io/" target="_blank">
         <img width="80px" src="https://spreadwings-sky.github.io/Yun.png"/>
         <br />
         <sub title="浊以静之徐清，安以动之徐生">俺たちに翼はない</sub>
       </a>
     </td>
     <td>
-      <a href="https://www.nbamax.com/">
+      <a href="https://www.nbamax.com/" target="_blank">
         <img width="80px" src="https://www.nbamax.com/images/avatar.png"/>
         <br />
         <sub title="YouTube NBA精彩视频分享博客!">NBA·Max</sub>
       </a>
     </td>
     <td>
-      <a href="https://www.addesp.com/">
+      <a href="https://www.addesp.com/" target="_blank">
         <img width="80px" src="https://www.addesp.com/avatar.jpg"/>
         <br />
         <sub title="记录回忆，分享笔记。">ADD-SP的博客</sub>
@@ -80,38 +80,45 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
   </tr>
   <tr align="center">
     <td>
-      <a href="https://hellsakura.github.io/">
+      <a href="https://hellsakura.github.io/" target="_blank">
         <img width="80px" src="https://hellsakura.github.io/images/avatar.jpg"/>
         <br />
         <sub title="我只是一条咸鱼">琉的小窝</sub>
       </a>
     </td>
     <td>
-      <a href="https://nancheng58.github.io/">
+      <a href="https://nancheng58.github.io/" target="_blank">
         <img width="80px" src="https://nancheng58.github.io/images/nancheng58.jpg"/>
         <br />
         <sub title="我好菜啊啊啊啊啊">nancheng58</sub>
       </a>
     </td>
     <td>
-      <a href="https://alexzou14.github.io/">
+      <a href="https://alexzou14.github.io/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/AlexZou14/CDN/img/touxiang.jpg"/>
         <br />
         <sub title="笔记记录，自我激励">秩同道合的博客</sub>
       </a>
     </td>
     <td>
-      <a href="https://yenpou.github.io/">
+      <a href="https://yenpou.github.io/" target="_blank">
         <img width="80px" src="https://yenpou.github.io/images/timg.jpg"/>
         <br />
         <sub title="今朝有酒今朝醉，明日愁来明日愁">道之遠兮</sub>
       </a>
     </td>
     <td>
-      <a href="https://gloomym.github.io/">
+      <a href="https://gloomym.github.io/" target="_blank">
         <img width="80px" src="https://personalblog-1301685299.cos.ap-nanjing.myqcloud.com/MyBlog-Images/Personal-Info/Avatar.jpg"/>
         <br />
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="http://www.kumybryce.work" target="_blank">
+        <img width="80px" src="https://wx2.sbimg.cn/2020/04/17/favicon.jpg"/>
+        <br />
+        <sub title="努力一点，再努力一点">山山的掉发历程</sub>
       </a>
     </td>
   </tr>
