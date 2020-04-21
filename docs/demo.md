@@ -110,5 +110,12 @@ If you have already used this theme, you are welcome to leave your site at [Demo
         <sub title="努力一点，再努力一点">山山的掉发历程</sub>
       </a>
     </td>
+    <td>
+      <a href="https://hexo.cool" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg"/>
+        <br />
+        <sub title="待我熬尽一日苦，喂你一口甜！">陌上花的小栈</sub>
+      </a>
+    </td>
   </tr>
 </table>
