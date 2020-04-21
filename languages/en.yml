@@ -62,15 +62,15 @@ counter:
     other: "%d categories in total"
   archive_posts:
     zero: No post
-    one: 1 post
+    one: 1 post in total
     other: "%d posts in total"
   albums:
     zero: No album
-    one: 1 album
+    one: 1 album in total
     other: "%d albums in total"
   photos:
     zero: No photo
-    one: 1 photo
+    one: 1 photo in total
     other: "%d photos in total"
 
 search:

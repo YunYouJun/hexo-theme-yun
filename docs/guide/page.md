@@ -13,7 +13,7 @@
 - `author`: 设置作者则会显示
 - `email`: 自动根据邮箱获取 [Gravatar](https://en.gravatar.com/site/implement/images/) 头像
 
-```md
+```md {3,4}
 ---
 title: xxx
 author: 云游君
@@ -24,7 +24,7 @@ email: me@yunyoujun.cn
 - `description`: 描述（只出现在预览卡片上，不出现在正文中）（默认使用 `400` 字重以表强调，略细于加粗字体）
 - `excerpt`: 摘要（不需要在 `Front-matter` 中设置，通过 `<!-- more -->` 截断实现，预览卡片与正文中均出现）
 
-```md
+```md {3,8}
 ---
 title: xxx
 description: xxxxxxx
@@ -55,7 +55,7 @@ description: xxxxxxx
 
 譬如：
 
-```md
+```md {3}
 ---
 title: xxx
 icon: icon-women-line
@@ -138,7 +138,7 @@ hexo new page about
 
 你需要先新建 404 页面。可以直接在 `source` 目录下新建 `404.md`。
 
-```md
+```md {2}
 ---
 layout: 404
 title: 四大皆空
@@ -176,7 +176,7 @@ hexo new page links
 
 - `tip`: 友链未加载成功时的文字提示，加载完后会被移除。（仅当通过 JSON 加载友链时生效。）
 
-```yml
+```yml {2}
 ---
 layout: links
 title: 我的小伙伴们
@@ -211,7 +211,8 @@ tip: 友链加载中～如失败请刷新重试～
 
 - `random`: 随机友链顺序，默认未开启
 
-```yml
+```yml {8-9}
+---
 layout: links
 title: 我的小伙伴们
 date: 2019-06-21 13:06:06
@@ -220,6 +221,8 @@ description: 云游的小伙伴们
 comments: true
 links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
 random: true
+---
+
 ```
 
 > 注意：你使用 jsdelivr 可能会因为 CDN 有所延迟。
