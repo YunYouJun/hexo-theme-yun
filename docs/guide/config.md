@@ -508,6 +508,7 @@ bg_image:
 ```
 
 > 如果你想要使用自定义的图片背景，你只需要将其置于 `source/images` 文件夹下，并用 `/images/xxx.jpg` 来引入它。
+> 注意：如果你使用子目录来放置你的博客，如 `xxx.github.io/blog/`，你的图片链接需要设置为 `/blog/xxx`，或者直接使用图床。
 
 #### 搜索背景
 
@@ -594,6 +595,8 @@ sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
 ```
+
+> 注意：如果你使用子目录来放置你的博客，如 `xxx.github.io/blog/`，你的图片链接需要设置为 `/blog/xxx`，或者直接使用图床。
 
 `bottom 3rem center` 代表居中并且距离底部 `3rem`。
 

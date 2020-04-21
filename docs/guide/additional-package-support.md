@@ -216,6 +216,7 @@ aplayer: true
 ```yml
 aplayer:
   global: true
+  meting: true
 ```
 
 :::

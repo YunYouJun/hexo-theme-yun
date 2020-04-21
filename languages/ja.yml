@@ -54,30 +54,30 @@ footer:
 counter:
   tag_cloud:
     zero: 見つかりませんでした
-    one: 1件のタグが見つかりました
+    one: 1 件のタグが見つかりました
     other: "%d 件のタグが見つかりました"
   categories:
     zero: 見つかりませんでした
-    one: 1件のカテゴリーが見つかりました
+    one: 1 件のカテゴリーが見つかりました
     other: "%d 件のカテゴリーが見つかりました"
   archive_posts:
     zero: 見つかりませんでした
-    one: 1件のポストが見つかりました
+    one: 1 件のポストが見つかりました
     other: "%d 件のポストが見つかりました"
   albums:
     zero: 見つかりませんでした
-    one: 1件のギャラリーが見つかりました
+    one: 1 件のギャラリーが見つかりました
     other: "%d 件のギャラリーが見つかりました"
   photos:
     zero: 見つかりませんでした
-    one: 1件のイメージが見つかりました
+    one: 1 件のイメージが見つかりました
     other: "%d 件のイメージが見つかりました"
 
 search:
   placeholder: 検索...
 algolia_search:
   input_placeholder: 検索...
-  hits_empty: "${query}が見つかりませんでした."
+  hits_empty: "${query} が見つかりませんでした."
   hits_stats: "${hits} 件見つかりました, ${time} ミリ秒"
 
 # cheers:
