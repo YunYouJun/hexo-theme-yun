@@ -69,8 +69,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!curId) curId = "#" + document.querySelector("h2").id;
     if (!curActiveLink || curActiveLink.attributes.href !== curId) {
       let curLink = document.querySelector(".toc-link[href='" + curId + "']");
-      activeLink(curLink);
-      updateAnchor(curId);
+      if (curLink) {
+        activeLink(curLink);
+        updateAnchor(curId);
+      }
     }
   }
 });

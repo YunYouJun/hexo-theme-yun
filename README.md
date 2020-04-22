@@ -116,7 +116,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
     </td>
     <td>
       <a href="http://www.kumybryce.work" target="_blank">
-        <img width="80px" src="https://wx2.sbimg.cn/2020/04/17/favicon.jpg"/>
+        <img width="80px" src="https://kumybryce.gitee.io/myblog/img/favicon.png"/>
         <br />
         <sub title="努力一点，再努力一点">山山的掉发历程</sub>
       </a>
