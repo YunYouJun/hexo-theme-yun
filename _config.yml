@@ -517,6 +517,7 @@ valine:
   appKey: # your leancloud application appkey
   serverURLs:
   # another choice: https://github.com/DesertsP/Valine-Admin
+  # lang: zh-CN
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
