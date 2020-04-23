@@ -16,7 +16,8 @@ block content
           - typeIcon = theme.types[post.type].icon
       header.post-header
         h1.post-title(itemprop='name headline', style=`color: ${typeColor}`)
-          +icon(typeIcon)
+          if post.type
+            +icon(typeIcon)
           | #{post.title}
 
           if theme.post_edit.enable
