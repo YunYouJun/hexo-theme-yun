@@ -71,7 +71,7 @@ aside.sidebar
     #post-toc-wrap.sidebar-panel.sidebar-panel-active
       .post-toc
         .post-toc-content
-          != toc(page.content).length > 1 ? toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth}) : theme.toc.placeholder
+          != toc(page.content).length > 1 ? toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth}) : theme.toc.placeholder || __('post.toc_empty')
 
   if theme.tag_cloud.enable
     include ../_widget/tag-cloud.pug
