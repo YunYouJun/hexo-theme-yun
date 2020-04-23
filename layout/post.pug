@@ -7,18 +7,25 @@ block content
   - var post = page
   #post
     article.post-block(itemscope, itemtype='http://schema.org/Article')
-      if post.url
-        script.
-          window.location.href = "#{post.url}";
-
       include _partial/post/post-schema.pug
-
+      if post.type
+        - var typeColor = theme.types.link.color
+        - var typeIcon = theme.types.link.icon
+        if post.type in theme.types
+          - typeColor = theme.types[post.type].color
+          - typeIcon = theme.types[post.type].icon
       header.post-header
-        h1.post-title(itemprop='name headline')
+        h1.post-title(itemprop='name headline', style=`color: ${typeColor}`)
+          +icon(typeIcon)
           | #{post.title}
+
           if theme.post_edit.enable
             include _partial/post/post-edit.pug
+
         include _partial/post/post-meta.pug
+
+        if post.url
+          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${typeColor}`)=__('post.view_link')
 
       section.post-body(itemprop='articleBody')
         .post-content(class='post-markdown')!=post.content

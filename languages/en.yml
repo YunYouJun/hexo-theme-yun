@@ -2,7 +2,6 @@ title:
   archive: Archive
   category: Category
   tag: Tag
-#   schedule: Schedule
 
 menu:
   home: Home
@@ -11,9 +10,6 @@ menu:
   tags: Tags
   about: About
   search: Search
-#   schedule: Schedule
-#   sitemap: Sitemap
-#   commonweal: Commonweal 404
 
 sidebar:
   overview: Overview
@@ -26,15 +22,12 @@ post:
   modified: Modified
   edit: Edit this post
   more: more
-  read_more: Read more
   untitled: Untitled
   toc_empty: This post does not have a Table of Contents
   views: Views
   comments_count: Comments
   related_posts: Related Posts
-  copy_button: Copy
-  copy_success: Copied
-  copy_failure: Copy failed
+  view_link: View Link
   copyright:
     author: Post author
     link: Post link

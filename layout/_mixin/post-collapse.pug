@@ -22,9 +22,15 @@ mixin post_collapse(posts)
                 if post.type in theme.types
                   - typeColor = theme.types[post.type].color
                   - typeIcon = theme.types[post.type].icon
-                a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + typeColor)
-                  +icon(typeIcon)
-                  span=post.title
+
+                if post.excerpt
+                  a.post-title-link(itemprop='url', href=url_for(post.path), style= "color:" + typeColor)
+                    +icon(typeIcon)
+                    span=post.title
+                else
+                  a.post-title-link(itemprop='url', href=url_for(post.url), target='_blank' rel='noopener', style= "color:" + typeColor)
+                    +icon(typeIcon)
+                    span=post.title
 
   if page.current == page.total
     h5.last-word.text-center!=theme.archive.last_word

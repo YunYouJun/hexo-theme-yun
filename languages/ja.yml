@@ -2,7 +2,6 @@ title:
   archive: アーカイブ
   category: カテゴリ
   tag: タグ
-#   schedule: スケジュール
 
 menu:
   home: ホーム
@@ -11,9 +10,6 @@ menu:
   tags: タグ
   about: プロフィール
   search: 検索
-#   schedule: スケジュール
-#   sitemap: サイトマップ
-#   commonweal: 公益 404
 
 sidebar:
   overview: 概要
@@ -26,15 +22,12 @@ post:
   modified: 修正日
   edit: この記事を編集する
   more: 詳細
-  read_more: 続きを読む...
   untitled: 無題
   toc_empty: には見出しがない
   views: 閲覧数
   comments_count: コメント数
   related_posts: 関連記事
-  copy_button: コピー
-  copy_success: コピー成功
-  copy_failure: コピー失敗
+  view_link: リンクを表示
   copyright:
     author: 著者
     link: 記事へのリンク
