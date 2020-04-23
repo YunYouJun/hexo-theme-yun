@@ -29,7 +29,7 @@ toc:
   list_number: true
   max_depth: 3
   min_depth: 1
-  placeholder: 很遗憾，咱没写啥目录
+  # placeholder: 很遗憾，咱没写啥目录
 
 # Social Links.
 social:
