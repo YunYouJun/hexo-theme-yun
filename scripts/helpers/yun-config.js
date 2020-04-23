@@ -56,7 +56,7 @@ hexo.extend.helper.register("yun_config", function () {
 
   // valine
   if (theme.valine.enable) {
-    let valine_lang = config.language || "zh-cn";
+    let valine_lang = theme.valine.lang || config.language || "zh-cn";
     let GUEST_INFO = ["nick", "mail", "link"];
     let meta = theme.valine.meta;
     meta = meta.split(",").filter(function (item) {
