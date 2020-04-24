@@ -238,6 +238,10 @@ preconnect:
 lazyload:
   enable: true
 
+# pjax
+pjax:
+  enable: true
+
 # stylesheets loaded in the <head>
 css:
   - /css/hexo-theme-yun.css
@@ -299,6 +303,7 @@ vendors:
   lightgallery:
     css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
     js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
+  pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js

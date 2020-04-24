@@ -6,6 +6,18 @@
 
 ## 评论
 
+- `enable`: 默认开启
+- `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话
+
+```yml
+comment:
+  enable: true
+  tips:
+    - 若您无 GitHub 账号，可直接在下方匿名评论。
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+```
+
 ### GitHub Issue 与 Gitalk
 
 最终我还是决定移除 [Gitalk](https://github.com/gitalk/gitalk)。

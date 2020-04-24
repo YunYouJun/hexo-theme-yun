@@ -337,7 +337,7 @@ head:
 ## 社交图标
 
 默认提供以下几种社交图标，您可以通过在[头部](#head-头部资源)引入自定义图标资源来获取更多图标。
-为了更好的展示效果，会显示我的默认链接。
+为了更好的展示效果，会显示我的默认链接，作为你设置图标的参考。
 
 - `name`: 链接名称
 - `link`: 链接
@@ -393,6 +393,22 @@ social:
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "#1AAD19"
+  - name: Twitter
+    link: https://twitter.com/YunYouJun
+    icon: icon-twitter-line
+    color: "#1da1f2"
+  - name: Telegram
+    link: https://t.me/YunYouJun
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: Telegram Channel
+    link: https://t.me/elpsycn
+    icon: icon-telegram-fill
+    color: "#0088CC"
+  - name: Travelling
+    link: https://travellings.now.sh/
+    icon: icon-send-plane-2-line
+    color: black
 ```
 
 您只需要在 `yun.yml` 中设置 `social` 来覆盖即可（这时即可只显示你的邮箱图标，而没有其他图标）：
