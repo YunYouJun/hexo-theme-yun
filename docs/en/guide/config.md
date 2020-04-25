@@ -935,12 +935,10 @@ For example: `Driven by Hexo v4.2.0 | Theme-Yun v0.0.2`.
 Let more people know Hexo and the theme Yun, which is conducive to the further development of the open-source community.
 
 - `enable`: enable
-- `version`: display version
 
 ```yml
 powered:
   enable: true
-  version: true
 ```
 
 ### Filing

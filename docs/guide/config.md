@@ -1072,7 +1072,6 @@ footer:
 footer:
   powered:
     enable: true
-    version: true
 ```
 
 ### 备案

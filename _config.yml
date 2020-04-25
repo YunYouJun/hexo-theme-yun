@@ -422,8 +422,6 @@ footer:
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
