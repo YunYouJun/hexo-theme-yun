@@ -1,7 +1,7 @@
 mixin post_collapse(posts)
   .post-collapse
     for post in posts.data
-      if !post.hide
+      if !post.hide || post.hide === 'index'
         - var year
         - var post_year = date(post.date, 'YYYY')
 

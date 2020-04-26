@@ -2,6 +2,7 @@
 
 ![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/Docs/badge.svg)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun)
 
 <p align="center">
   <img width="128" src="docs/.vuepress/public/logo.gif">
@@ -126,6 +127,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg"/>
         <br />
         <sub title="待我熬尽一日苦，喂你一口甜！">陌上花的小栈</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://awslnotbad.gitee.io/" target="_blank">
+        <img width="80px" src="https://awslnotbad.gitee.io/Yun.gif"/>
+        <br />
+        <sub title="姑苏城外一茅屋，万树梅花月满天">夏末随风的小站</sub>
       </a>
     </td>
   </tr>
