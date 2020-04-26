@@ -18,6 +18,8 @@ hexo server
 
 你也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
 
+- [更新日志](https://github.com/YunYouJun/hexo-theme-yun/releases)
+
 ## 快速开始
 
 ::: tip 渲染器
