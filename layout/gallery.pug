@@ -21,7 +21,8 @@ block content
           script(defer, src=theme.albums.src)
           #decryptContainer
             input#decrypt-password(type="password")
-            button#decryptButton.hty-button.hty-button--raised!='解密'
+            button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
+              +icon('icon-fingerprint-line')
           #lightgallery.photo-list(style='display: none')
             for photo in page.photos
               - photo.src = aes(photo.src, page.password)

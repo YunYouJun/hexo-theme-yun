@@ -112,7 +112,7 @@ anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 albums:
   enable: false
   icon: icon-gallery-line
-  src: /js/gallery-encrypt.js
+  src: /js/gallery-decrypt.js
 
 girls:
   enable: false
@@ -278,7 +278,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_n3htx7s57pp.js
+      iconfont: //at.alicdn.com/t/font_1140697_o7f8g4h1607.js
     defer:
 
 # cdn for third-party library (alternative include)
