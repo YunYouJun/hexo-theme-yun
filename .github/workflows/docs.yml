@@ -17,6 +17,9 @@ jobs:
       - run: yarn install
       - run: yarn docs:build
 
+      - name: trigger yunyoujun.github.io
+        run: sh trigger.sh
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
