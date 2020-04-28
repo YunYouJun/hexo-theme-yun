@@ -335,12 +335,23 @@ hexo new page --path albums/sunset "夕阳"
 
 > 注意：这里是 `layout` 而不是 `type`。
 
+::: tip
+你还可以设置 `password` 来对相册进行加密。（记得将你的仓库设置为私有。）
+
+> 因为使用了 [crypto-js](https://github.com/brix/crypto-js)，所以你还需要 `npm install crypto-js`。
+
+测试页面：<https://www.yunyoujun.cn/albums/sunset.html>
+测试密码：test
+
+:::
+
 ```yml {5}
 ---
 title: 夕阳
 date: 2020-04-18 16:27:24
 updated: 2020-04-18 16:27:24
 layout: gallery
+password: test
 photos:
   - caption: 我
     src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg

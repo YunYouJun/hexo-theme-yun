@@ -809,17 +809,34 @@ Hexo 主题 Yun
 
 你可以在文章头部添加 `hide` 属性，来临时隐藏某篇文章。
 
-- `hide`: 你也可以将其设置为 `index`，来只在首页隐藏，归档中仍然展示。（譬如放一些没有必要放在首页的笔记，并在归档中方便自己的查看。）
+- `hide`:
+  - `index`: 设置为 `index` 时，将只在首页隐藏，归档中仍然展示。（譬如放一些没有必要放在首页的笔记，并在归档中方便自己查看。）
+  - `true`: 当设置为 `true` 时，该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片与归档中。
 
-```md
+> 什么你想完全不渲染不显示，那你为何不将其放在 `_drafts` 文件夹下，或干脆不提交这篇文章。
+
+```yml {3}
 ---
 title: xxx
 hide: true
 # hide: index
+sitemap: false
+indexing: false
 ---
+
 ```
 
-该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片中。
+::: tip
+
+如果你开启了站点地图，那它还会出现在 `sitemap.xml` 中，你还需要在 front matter 处设置 `sitemap: false` 来排除它。
+
+> [excluding-posts | hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap#excluding-posts)
+
+如果你开启了本地搜索，那它还会出现在 `search.xml` 中，你还需要设置 `indexing: false` 来排除它。
+
+> [exclude-indexing | hexo-generator-search](https://github.com/wzpan/hexo-generator-search#exclude-indexing)
+
+:::
 
 > 题外话，这个功能是我当初应付备案临时加的。
 > 我更改备案信息时，客服通知我首页不能用跳转其他页面链接的内容（有一个和文章混在一起直接跳转 bilibili 的卡片），所以我就加了这个功能临时隐藏掉了。

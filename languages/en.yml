@@ -16,6 +16,7 @@ sidebar:
   toc: Table of Contents
 
 post:
+  decrypt: DECRYPT
   posted: Posted on
   edited: Edited on
   created: Created
@@ -41,8 +42,8 @@ post:
 footer:
   powered: "Powered by %s"
   theme: Theme
-#   total_views: Total Views
-#   total_visitors: Total Visitors
+  total_views: Total Views
+  total_visitors: Total Visitors
 
 counter:
   tag_cloud:
@@ -72,16 +73,6 @@ algolia_search:
   input_placeholder: Search for Posts
   hits_empty: "We didn't find any results for the search: ${query}."
   hits_stats: "${hits} results found in ${time} ms"
-
-# cheers:
-#   um: Um..
-#   ok: OK
-#   nice: Nice
-#   good: Good
-#   great: Great
-#   excellent: Excellent
-
-# keep_on: Keep on posting.
 
 symbol:
   comma: ", "

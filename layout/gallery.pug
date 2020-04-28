@@ -10,11 +10,26 @@ block content
     if page.photos
       #gallery
         .page-subtitle!=_p('counter.photos', page.photos.length)
-        #lightgallery.photo-list
-          for photo in page.photos
-            figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
-              img.photo-list-cover(src=photo.src, loading="lazy", alt=photo.caption)
-              figcaption=photo.caption
+        if !page.password
+          #lightgallery.photo-list
+            for photo in page.photos
+              figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
+                img.photo-list-cover(src=photo.src, loading="lazy", alt=photo.caption)
+                figcaption=photo.caption
+        else
+          script(defer, src=theme.vendors.crypto_js.all)
+          script(defer, src=theme.albums.src)
+          #decryptContainer
+            input#decrypt-password(type="password")
+            button#decryptButton.hty-button.hty-button--raised!='解密'
+          #lightgallery.photo-list(style='display: none')
+            for photo in page.photos
+              - photo.src = aes(photo.src, page.password)
+              - photo.caption = aes(photo.caption, page.password)
+              - photo.desc = aes(photo.desc, page.password)
+              figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
+                img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
+                figcaption=photo.caption
 
     section.post-body(itemprop='articleBody')
       .post-content(class='post-markdown')!= page.content

@@ -718,6 +718,7 @@ You can add a `hide` attribute at the head of the article to temporarily hide an
 ---
 title: xxx
 hide: true
+# hide: index
 ---
 ```
 

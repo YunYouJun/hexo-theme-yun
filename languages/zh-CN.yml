@@ -17,6 +17,7 @@ sidebar:
   toc: 文章目录
 
 post:
+  decrypt: 解密
   posted: 发表于
   edited: 更新于
   created: 创建时间
@@ -42,7 +43,7 @@ footer:
   powered: "由 %s 驱动"
   theme: 主题
   total_views: 总访问量
-#   total_visitors: 总访客量
+  total_visitors: 总访客量
 
 counter:
   tag_cloud:
@@ -72,15 +73,6 @@ algolia_search:
   input_placeholder: 搜索文章
   hits_empty: "找不到您查询的内容: ${query}"
   hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒"
-
-# cheers:
-#   um: 嗯..
-#   ok: 还行
-#   nice: 不错
-#   good: 很好
-#   great: 非常好
-#   excellent: 太棒了
-# keep_on: 继续努力。
 
 symbol:
   comma: "，"

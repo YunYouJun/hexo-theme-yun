@@ -177,9 +177,13 @@ tag_cloud:
 
 ## 播放器
 
-### [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
+安装 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
-> 可参见[官方文档](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)就好了。
+```sh
+npm install hexo-tag-aplayer
+```
+
+> 可参见[官方文档](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)。
 
 推荐的配置（在 Hexo 的根目录下的 `_config.yml` 中）：
 
@@ -224,7 +228,7 @@ aplayer:
 插入某首网易云音乐的歌
 
 ```md
-{% meting "497572729" "netease" "song" "theme:#C20C0C"%}
+{% meting "497572729" "netease" "song" "theme:#C20C0C" %}
 ```
 
 由于 `hexo-tag-aplayer` 太香了，我决定移除原先的媒体包裹脚本。实在有需要的同学，可以自行外挂添加。

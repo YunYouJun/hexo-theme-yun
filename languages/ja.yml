@@ -16,6 +16,7 @@ sidebar:
   toc: 見出し
 
 post:
+  decrypt: 解読する
   posted: 投稿日
   edited: 編集日
   created: 作成日
@@ -41,8 +42,8 @@ post:
 footer:
   powered: "Powered by %s"
   theme: Theme
-#   total_views: 閲覧合計数
-#   total_visitors: 合計閲覧者数
+  total_views: 閲覧合計数
+  total_visitors: 合計閲覧者数
 
 counter:
   tag_cloud:
@@ -72,16 +73,6 @@ algolia_search:
   input_placeholder: 検索...
   hits_empty: "${query} が見つかりませんでした."
   hits_stats: "${hits} 件見つかりました, ${time} ミリ秒"
-
-# cheers:
-#   um: うーん
-#   ok: はい
-#   nice: まあまあ
-#   good: いいね
-#   great: すごい
-#   excellent: 最高
-
-# keep_on: もっと書こう！
 
 symbol:
   comma: "，"

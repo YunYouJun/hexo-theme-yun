@@ -112,6 +112,7 @@ anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 albums:
   enable: false
   icon: icon-gallery-line
+  src: /js/gallery-encrypt.js
 
 girls:
   enable: false
@@ -304,6 +305,8 @@ vendors:
     css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
     js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
   pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
+  crypto_js:
+    all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js
@@ -472,27 +475,7 @@ say:
 # you can new JSON file in your blog root folder
 # example: source/data/sentences.json
 # then set say.api: /data/sentences.json
-# https://say.elpsy.cn
-# [
-#   {
-#     "content": "Hello, World!",
-#     "author": "Brian Kernighan",
-#     "from": "The C Programming Language"
-#   },
-#   {
-#     "content": "我们一日日度过的所谓日常，实际上可能是接连不断的奇迹。",
-#     "from": "日常"
-#   },
-#   {
-#     "content": "是啊，我所爱的，即非群星，也非银河。",
-#     "author": "云游君",
-#     "from": "yunyoujun.cn"
-#   },
-#   {
-#     "content": "隐约雷鸣 阴霾天空 但盼风雨来 能留你在此",
-#     "from": "万叶集·雷神短歌"
-#   }
-# ]
+# Example: https://say.elpsy.cn/sentences.json
 
 # Comments
 # -------
