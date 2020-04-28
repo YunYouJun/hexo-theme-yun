@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  decryptButton.onclick = decryptAll();
+  decryptButton.onclick = decryptAll;
   document
     .getElementById("decrypt-password")
     .addEventListener("keydown", (e) => {
