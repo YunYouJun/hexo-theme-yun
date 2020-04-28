@@ -18,7 +18,14 @@ jobs:
       - run: yarn docs:build
 
       - name: trigger yunyoujun.github.io
-        run: sh trigger.sh
+        run: |
+          curl --location --request POST 'https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches' \
+          --header 'Content-Type: application/json' \
+          --header 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+            "event_type": "on-demand-test"
+          }'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
