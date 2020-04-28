@@ -14,9 +14,6 @@ jobs:
         with:
           node-version: "12.x"
 
-      - run: yarn install
-      - run: yarn docs:build
-
       - name: trigger yunyoujun.github.io
         run: |
           curl --location --request POST 'https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches' \
@@ -26,6 +23,9 @@ jobs:
           --data-raw '{
             "event_type": "on-demand-test"
           }'
+
+      - run: yarn install
+      - run: yarn docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

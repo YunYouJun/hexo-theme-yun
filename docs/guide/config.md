@@ -151,7 +151,7 @@ cdn:
 
 > 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。  
 > `@latest` 为使用最新版本（但它仍然会被缓存，**且需要 12 h 才能更新**，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
-> 此外，请确保你的头像图片链接使用 `/images/xxx.jpg` 而非 `https://xxx/xxx.jpg` 的形式。
+> ~~请记住，白嫖是有代价的~~
 
 ```yml
 cdn:

@@ -1,4 +1,4 @@
-hexo.extend.helper.register("yun_config", function () {
+hexo.extend.helper.register("yun_config", function() {
   let { config, theme, yun_version, __ } = this;
   let exportConfig = {
     root: config.root,
@@ -59,7 +59,7 @@ hexo.extend.helper.register("yun_config", function () {
     let valine_lang = theme.valine.lang || config.language || "zh-cn";
     let GUEST_INFO = ["nick", "mail", "link"];
     let meta = theme.valine.meta;
-    meta = meta.split(",").filter(function (item) {
+    meta = meta.split(",").filter(function(item) {
       return GUEST_INFO.indexOf(item) > -1;
     });
     exportConfig.valine = {
@@ -81,14 +81,14 @@ hexo.extend.helper.register("yun_config", function () {
   // minivaline
   if (theme.minivaline.enable) {
     exportConfig.minivaline = {
-      el: '#minivaline-container',
+      el: "#minivaline-container",
       appId: theme.minivaline.appId,
       appKey: theme.minivaline.appKey,
       placeholder: theme.minivaline.placeholder,
       lang: theme.minivaline.lang,
       adminEmailMd5: theme.minivaline.adminEmailMd5,
       math: theme.minivaline.math,
-      md: theme.minivaline.md
+      md: theme.minivaline.md,
     };
   }
 
