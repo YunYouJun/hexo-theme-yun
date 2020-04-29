@@ -113,3 +113,92 @@ if (hexo-config('mode') == 'light') {
     border-left-width: var(--banner-char-size, 1rem);
   }
 }
+
+if (hexo-config('banner.cloud')) {
+  .cloud {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-sizing: border-box;
+
+    .waves {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100px;
+
+      @media (max-width: 768px) {
+        height: 40px;
+      }
+    }
+
+    .parallax {
+      > use {
+        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+      }
+
+      > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+      }
+
+      > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+      }
+
+      > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+      }
+
+      > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+      }
+    }
+  }
+
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+}
+
+if (hexo-config('banner.go_down.enable')) {
+  #goDown {
+    display: inline-flex;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 20;
+    animation: float 2s linear infinite;
+
+    .icon {
+      color: $colors.primary;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
