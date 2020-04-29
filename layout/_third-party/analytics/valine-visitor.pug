@@ -6,10 +6,11 @@ if theme.valine.visitor_index
       span.leancloud-visitors-count
 
 if theme.valine.visitor_index || is_post() || is_page()
+  - var valineConfig = valine_config()
   script(defer, src=theme.vendors.valine_js)
   script.
     function initValine() {
-      new Valine(CONFIG.valine);
+      new Valine(!{valineConfig});
     }
     document.addEventListener("DOMContentLoaded", function() {
       initValine();

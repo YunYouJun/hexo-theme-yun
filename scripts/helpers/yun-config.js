@@ -54,44 +54,6 @@ hexo.extend.helper.register("yun_config", function() {
     };
   }
 
-  // valine
-  if (theme.valine.enable) {
-    let valine_lang = theme.valine.lang || config.language || "zh-cn";
-    let GUEST_INFO = ["nick", "mail", "link"];
-    let meta = theme.valine.meta;
-    meta = meta.split(",").filter(function(item) {
-      return GUEST_INFO.indexOf(item) > -1;
-    });
-    exportConfig.valine = {
-      el: "#valine-container",
-      verify: theme.valine.verify,
-      notify: theme.valine.notify,
-      appId: theme.valine.appId,
-      appKey: theme.valine.appKey,
-      serverURLs: theme.valine.serverURLs,
-      placeholder: theme.valine.placeholder,
-      avatar: theme.valine.avatar,
-      meta: meta,
-      pageSize: theme.valine.pageSize,
-      lang: valine_lang.toLowerCase(),
-      visitor: theme.valine.visitor,
-    };
-  }
-
-  // minivaline
-  if (theme.minivaline.enable) {
-    exportConfig.minivaline = {
-      el: "#minivaline-container",
-      appId: theme.minivaline.appId,
-      appKey: theme.minivaline.appKey,
-      placeholder: theme.minivaline.placeholder,
-      lang: theme.minivaline.lang,
-      adminEmailMd5: theme.minivaline.adminEmailMd5,
-      math: theme.minivaline.math,
-      md: theme.minivaline.md,
-    };
-  }
-
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
       colors: theme.fireworks.colors,
@@ -101,4 +63,44 @@ hexo.extend.helper.register("yun_config", function() {
     let Yun = window.Yun || {};
     let CONFIG = ${JSON.stringify(exportConfig)};
   </script>`;
+});
+
+hexo.extend.helper.register("valine_config", function() {
+  let { config, theme } = this;
+  let valine_lang = theme.valine.lang || config.language || "zh-cn";
+  const valineConfig = {
+    el: "#valine-container",
+    appId: theme.valine.appId,
+    appKey: theme.valine.appKey,
+    placeholder: theme.valine.placeholder,
+    avatar: theme.valine.avatar,
+    meta: Array.isArray(theme.valine.meta)
+      ? theme.valine.meta
+      : ["nick", "mail", "link"],
+    pageSize: theme.valine.pageSize,
+    lang: valine_lang.toLowerCase(),
+    visitor: theme.valine.visitor,
+    highlight: theme.valine.highlight,
+    recordIP: theme.valine.recordIP,
+    serverURLs: theme.valine.serverURLs,
+    emojiCDN: theme.valine.emojiCDN,
+    emojiMaps: theme.valine.emojiMaps,
+    enableQQ: theme.valine.enableQQ,
+    requiredFields: theme.valine.requiredFields,
+  };
+  return JSON.stringify(valineConfig);
+});
+
+hexo.extend.helper.register("minivaline_config", function() {
+  const minivalineConfig = {
+    el: "#minivaline-container",
+    appId: theme.minivaline.appId,
+    appKey: theme.minivaline.appKey,
+    placeholder: theme.minivaline.placeholder,
+    lang: theme.minivaline.lang,
+    adminEmailMd5: theme.minivaline.adminEmailMd5,
+    math: theme.minivaline.math,
+    md: theme.minivaline.md,
+  };
+  return JSON.stringify(minivalineConfig);
 });

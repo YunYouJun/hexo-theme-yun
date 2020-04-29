@@ -15,7 +15,7 @@ aside.sidebar
     .site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
       if theme.avatar && theme.avatar.url
         a.site-author-avatar(href=url_for('about'), title=config.author)
-          img(loading='lazy', src=is_url(theme.avatar.url) ? theme.avatar.url : url_for(theme.cdn.pre + theme.avatar.url), alt=author)
+          img(width=96, loading='lazy', src=is_url(theme.avatar.url) ? theme.avatar.url : url_for(theme.cdn.pre + theme.avatar.url), alt=author)
         .site-author-name
           a(href=url_for('about/'))
             | #{author}

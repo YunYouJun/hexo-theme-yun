@@ -1,6 +1,7 @@
 #minivaline-container.comment-container
 script(defer, src=theme.vendors.minivaline_js)
+- var minivalineConfig = minivaline_config()
 script.
-  document.addEventListener("DOMContentLoaded", function(event) {
-    new MiniValine(CONFIG.minivaline);
+  document.addEventListener("DOMContentLoaded", function() {
+    new MiniValine(!{minivalineConfig});
   });

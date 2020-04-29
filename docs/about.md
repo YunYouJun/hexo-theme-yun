@@ -75,8 +75,9 @@
 
 ## Thanks
 
-### Open Source Project
+### Project
 
+- [jsDelivr – Open Source CDN](https://www.jsdelivr.com/)
 - [Hexo](https://github.com/hexojs/hexo)
 - [RemixIcon](https://github.com/Remix-Design/remixicon)
 - [iconfont](https://www.iconfont.cn/)

@@ -4,7 +4,7 @@
 
 > 你可能需要先了解 Hexo 的 [Front-matter](https://hexo.io/zh-cn/docs/front-matter.html)
 
-如果想要让页面链接显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
+如果想要让扩展页面链接（如：Girls, 相册等）显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
 
 ## 文章
 
@@ -111,6 +111,10 @@ type: categories
 ## 归档 archives
 
 Hexo 默认支持
+
+本主题采用时间轴的形式重写
+
+> 示例：<https://www.yunyoujun.cn/archives>
 
 ## 关于 About
 
@@ -268,6 +272,8 @@ girls:
 
 可参考我的[配置](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md)。
 
+如果想要让 Girls 显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
+
 ## 相册 albums
 
 存在一个相册主页，放置多个相册，点击进入相册查看更多照片。
@@ -282,6 +288,8 @@ albums:
 [相册示例](https://www.yunyoujun.cn/albums/)
 
 [配置示例](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
+
+如果想要让相册显示在侧边栏中，你还需要配置一下导航 [侧边栏 - 页面链接](/guide/config.html#页面链接)。
 
 ### 相册集
 
