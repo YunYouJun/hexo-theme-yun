@@ -2,7 +2,7 @@ title:
   archive: 归档
   category: 分类
   tag: 标签
-#   schedule: 日程表
+  album: 相册
 
 menu:
   home: 首页
@@ -39,6 +39,7 @@ post:
 # page:
 #   totally: 共有
 #   tags: 标签
+
 footer:
   powered: "由 %s 驱动"
   theme: 主题
