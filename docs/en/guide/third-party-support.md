@@ -85,9 +85,9 @@ google_analytics:
 
 No garlic is a light and minimal website counter.
 
-Go to [不蒜子](http://busuanzi.ibruce.info/) to view related information.
+Go to [不蒜子](https://busuanzi.ibruce.info/) to view related information.
 
-Instructions for use: <http://ibruce.info/2015/04/04/busuanzi>
+Instructions for use: <https://ibruce.info/2015/04/04/busuanzi>
 
 > Please do not enable it at the same time as [Valine] (# valine) 's `visitor`.
 

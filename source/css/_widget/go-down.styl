@@ -1,0 +1,27 @@
+#goDown {
+  display: inline-flex;
+  position: absolute;
+  bottom: 1rem;
+  z-index: 20;
+  animation: float 2s linear infinite;
+
+  .icon {
+    color: $colors.primary;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

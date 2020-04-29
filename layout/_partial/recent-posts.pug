@@ -2,7 +2,7 @@ section#recent-posts.hty-layout-grid
   each post in page.posts.data
     if !post.hide
       .hty-layout-grid__cell.hty-layout-grid__cell--span-12
-        article.hty-card.post-card(itemscope, itemtype='http://schema.org/Article')
+        article.hty-card.post-card(itemscope, itemtype='https://schema.org/Article')
           include ../_partial/post/post-schema.pug
           if post.top
             .post-top-icon

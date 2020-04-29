@@ -195,18 +195,23 @@ CDN can be added at `head`.
 
 ```yml
 preload:
-  style: -/css/hexo-theme-yun.css
-  script: -/js/utils.js
-    -/js/hexo-theme-yun.js
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/hexo-theme-yun.js
 
 prefetch:
-  style: -/css/prism.css
-  script: -/js/sidebar.js
+  style:
+    - /css/prism.css
+  script:
+    - /js/sidebar.js
 
-dns_prefetch: -https://cos.yunyoujun.cn
+dns_prefetch:
+  - https://cos.yunyoujun.cn
 
 # do more (TCP handshake ...) than dns-fetch
-preconnect: -https://cdn.jsdelivr.net
+preconnect:
+  - https://cdn.jsdelivr.net
 ```
 
 ## Icon

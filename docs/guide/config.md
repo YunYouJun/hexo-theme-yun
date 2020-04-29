@@ -203,7 +203,6 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
@@ -440,12 +439,18 @@ social:
 
 - `enable`: 是否开启
 - `title`: 设置文字内容
+- `cloud`: 在首页下方显示流动的云
+- `go_down`: 向下箭头按钮（点击翻页）
 
 ```yml
 banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
+  cloud: true
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
 ```
 
 ### 公告

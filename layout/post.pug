@@ -6,7 +6,7 @@ prepend title
 block content
   - var post = page
   #post
-    article.post-block(itemscope, itemtype='http://schema.org/Article')
+    article.post-block(itemscope, itemtype='https://schema.org/Article')
       include _partial/post/post-schema.pug
       if post.type
         - var typeColor = theme.types.link.color

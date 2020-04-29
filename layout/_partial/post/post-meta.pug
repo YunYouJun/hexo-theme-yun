@@ -68,7 +68,7 @@
             +icon('icon-folder-line')
           |  
           for category, index in post.categories.data
-            span(itemprop='about', itemscope, itemtype='http://schema.org/Thing')
+            span(itemprop='about', itemscope, itemtype='https://schema.org/Thing')
               if category.name in theme.categories
                 - var categoryColor = theme.categories[category.name]
               a.category(href=url_for(category.path), style= categoryColor ? `--text-color:${categoryColor}`:'' itemprop='url' rel='index')

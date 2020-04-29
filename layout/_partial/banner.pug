@@ -1,5 +1,10 @@
 .banner
   .banner-line.vertical-line-top
   .banner-line.vertical-line-bottom
+  if theme.banner.cloud
+    include ../_widget/cloud.pug
+  if theme.banner.go_down.enable
+    a#goDown(href=theme.say.enable ? '#say' : '#recent-posts')
+      +icon(theme.banner.go_down.icon)
 
 script(src=url_for(theme.cdn.pre + theme.banner.src))
