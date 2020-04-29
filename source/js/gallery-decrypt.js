@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         lightgallery.style.display = "flex";
         photos.forEach((photo) => {
           const src = decrypt(photo.dataset.src, password);
-          console.log(src);
           photo.dataset.src = src;
           const img = photo.querySelector(".photo-list-cover");
           const caption = decrypt(img.alt, password);

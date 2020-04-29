@@ -51,18 +51,23 @@ description: xxxxxxx
 
 通用页面的配置。
 
+- `title`: 设置页面标题（可以对默认标题进行覆盖）
 - `icon`: 页面标题前的图标
+
+> 标签、分类、相册等页面未设置标题时将默认使用语言包中的翻译（显示对应语言的 `标签`/`分类`/`相册` 等。）
+> 你可以通过设置 `title` 来覆盖这些页面的标题。
 
 譬如：
 
-```md {3}
+```yml {3}
 ---
 title: xxx
 icon: icon-women-line
 ---
+
 ```
 
-> 效果可见: [Lovely Girls](https://www.yunyoujun.cn/girls/)
+> 图标效果可见: [Lovely Girls](https://www.yunyoujun.cn/girls/)
 
 ## 标签 tags
 
@@ -76,9 +81,8 @@ hexo new page tags
 
 修改 `source/tags/index.md` 的 `Front Matter`
 
-```yml {5}
+```yml {4}
 ---
-title: 标签
 date: 2017-10-09 19:11:58
 comments: false
 type: tags
@@ -98,9 +102,8 @@ hexo new page categories
 
 修改 `source/categories/index.md` 的 `Front Matter`
 
-```yml {5}
+```yml {4}
 ---
-title: 分类
 date: 2017-10-12 10:47:16
 comments: false
 type: categories
@@ -308,9 +311,8 @@ hexo new page albums
 - `cover`: 相册封面
 - `desc`: 相册描述
 
-```yml {3}
+```yml {2}
 ---
-title: 相册集
 type: albums
 albums:
   - caption: 夕阳西下

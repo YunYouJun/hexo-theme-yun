@@ -1,15 +1,17 @@
 extends _partial/layout.pug
 
 prepend title
+  - var pageTitle = ''
   if page.title
-    | #{page.title}
+    - pageTitle = page.title
   else
     if page.type === 'categories'
-      | #{__('title.category')}
+      - pageTitle = __('title.category')
     else if page.type === 'tags'
-      | #{__('title.tag')}
+      - pageTitle = __('title.tag')
     else if page.type === 'albums'
-      | #{__('title.album')}
+      - pageTitle = __('title.album')
+  | #{pageTitle}
   |
   | |
   |
@@ -17,7 +19,7 @@ prepend title
 block content
   #page
     if page.type === 'tags'
-      +page_header(page.title, theme.menu.tags.icon)
+      +page_header(pageTitle, theme.menu.tags.icon)
       .page-subtitle=_p('counter.tag_cloud', site.tags.length)
       .tag-cloud
         - var start_color = theme.color ? (theme.color.tag_start_color || '#333'): '#999999'
@@ -25,12 +27,12 @@ block content
         .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
     else if page.type === 'categories'
-      +page_header(page.title, theme.menu.categories.icon)
+      +page_header(pageTitle, theme.menu.categories.icon)
       .page-subtitle=_p('counter.categories', site.categories.length)
       .category-lists!= list_categories()
 
     else if page.type === 'albums'
-      +page_header(page.title, theme.albums.icon)
+      +page_header(pageTitle, theme.albums.icon)
       .page-subtitle= _p('counter.albums', page.albums.length)
       .album-list
         for album in page.albums
@@ -40,7 +42,7 @@ block content
               figcaption='「'+album.caption+'」'
 
     else
-      +page_header(page.title)
+      +page_header(page.title, page.icon)
       article#page
         section.post-body(itemprop='articleBody')
           .post-content(class='post-markdown')!= page.content
