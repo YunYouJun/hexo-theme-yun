@@ -1,12 +1,10 @@
 extends _partial/layout.pug
 
-prepend title
-  | #{page.title} | 
-
 block content
   #page
     +page_header(page.title)
-    .not-found 404
+    a(href='javascript:history.back()')
+      .not-found 404
     style.
       .not-found {
         text-align: center;
@@ -28,9 +26,9 @@ block content
           text-shadow: 0 5px 10px rgba(0,0,0,0), 
         }
       }
-    article.post-block
+    article
       section.post-body(itemprop='articleBody')
-        .post-content(class='post-markdown')!= page.content
+        .post-content.post-markdown!= page.content
 
   if page.comments && theme.comment.enable
     include ./_third-party/comments/index.pug

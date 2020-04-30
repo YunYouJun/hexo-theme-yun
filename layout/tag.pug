@@ -1,8 +1,5 @@
 extends _partial/layout.pug
 
-prepend title
-  | #{__('title.tag') + ' - ' + page.tag + ' | '}
-
 block content
   include _mixin/post-collapse.pug
   #tag

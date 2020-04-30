@@ -1,4 +1,4 @@
-- var title = __('title') !== 'title' && __('title') || config.title
+- var title = (__('title') !== 'title' && __('title')) || config.title
 - var description = page.description || page.title || config.description || ''
 - var keywords = Array.isArray(config.keywords) ? config.keywords.join(',') : config.keywords
 - if (page.tags && page.tags.data) keywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
@@ -16,9 +16,11 @@ html(lang=config.language)
     meta(name="author" content=author)
     meta(name="copyright" content=copyright)
     meta(name='theme-color', content=theme.colors.primary)
-    title
-      block title
-        | #{title}
+    - page_title(page)
+    if page.title
+      title=page.title + ' | ' + title
+    else
+      title=title
     include head.pug
     include ../_third-party/cdn.pug
     block preconnect

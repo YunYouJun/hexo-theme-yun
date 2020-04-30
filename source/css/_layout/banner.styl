@@ -121,7 +121,7 @@ if (hexo-config('banner.cloud')) {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: $cloud-z-index;
     box-sizing: border-box;
 
     .waves {
@@ -178,7 +178,7 @@ if (hexo-config('banner.go_down.enable')) {
     display: inline-flex;
     position: absolute;
     bottom: 1rem;
-    z-index: 20;
+    z-index: $go-down-z-index;
     animation: float 2s linear infinite;
 
     .icon {

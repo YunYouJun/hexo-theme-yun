@@ -346,7 +346,9 @@ hexo new page --path albums/sunset "夕阳"
 > 注意：这里是 `layout` 而不是 `type`。
 
 ::: tip
-你还可以设置 `password` 来对相册进行加密。（记得将你的仓库设置为私有。）
+你还可以设置 `gallery_password` 来对相册进行加密。（记得将你的仓库设置为私有。）
+
+没有直接命名为 `password` 以防止与 [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt) 插件关键字 `password` 冲突。
 
 > 因为使用了 [crypto-js](https://github.com/brix/crypto-js)，所以你还需要 `npm install crypto-js`。
 
@@ -372,3 +374,6 @@ photos:
 ---
 
 ```
+
+> 为什么使用相册集作为 `albums`，`gallery` 作为相册 ？
+> [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
