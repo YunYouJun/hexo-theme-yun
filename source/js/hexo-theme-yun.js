@@ -33,17 +33,6 @@ function initPage() {
     goUp.classList.toggle("show", window.scrollY > 64);
     scrollPercent(window.scrollY);
   });
-
-  let wheeling = false;
-  window.addEventListener("wheel", function(e) {
-    if (window.scrollY < banner.clientHeight && e.deltaY > 0 && !wheeling) {
-      wheeling = true;
-      window.scrollTo(0, banner.clientHeight);
-      setTimeout(function() {
-        wheeling = false;
-      }, 200);
-    }
-  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
