@@ -34,9 +34,14 @@ function initPage() {
     scrollPercent(window.scrollY);
   });
 
+  let wheeling = false;
   window.addEventListener("wheel", function(e) {
-    if (window.scrollY < banner.clientHeight && e.deltaY > 0) {
+    if (window.scrollY < banner.clientHeight && e.deltaY > 0 && !wheeling) {
+      wheeling = true;
       window.scrollTo(0, banner.clientHeight);
+      setTimeout(function() {
+        wheeling = false;
+      }, 200);
     }
   });
 }
