@@ -33,6 +33,12 @@ function initPage() {
     goUp.classList.toggle("show", window.scrollY > 64);
     scrollPercent(window.scrollY);
   });
+
+  window.addEventListener("wheel", function(e) {
+    if (window.scrollY < banner.clientHeight && e.deltaY > 0) {
+      window.scrollTo(0, banner.clientHeight);
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
