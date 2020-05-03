@@ -41,7 +41,7 @@ colors:
 ```yml
 tags:
   Vue: "#4fc08d"
-  Hexo: "0E834D"
+  Hexo: "#0E834D"
   CSS: "#5298d1"
   Node.js: "#026E00"
   Git: "#F14E32"
@@ -490,21 +490,27 @@ head:
 > 你可以仅覆盖你想覆盖的字体族。
 
 - 衬线字体（Serif）：较粗表强调，通常用于首页标语（Banner）、Say、站点与文章标题（以及 links、girls 等页面的作品名称）等处。
-- 无衬线字体（Sans Serif）：较细以营造轻盈之感，通常为普通文本内容。
+- 无衬线字体（Sans Serif）：较细以营造轻盈之感，通常为普通文本内容。（如果你的字体显示较粗，可能是你在 Windows 系统上安装了 `PingFang SC` 字体，却没有安装对应字重。）
 - 等宽字体（monospace）：字符均具有相同宽度，通常用于需要相同宽度以对齐之处（如日期、序号）。
+
+将 `font.cdn.enable` 设置为 `false` 以全部使用系统默认字体，达到最佳访问速度。（默认开启时，使用 `media="none" onload="this.media='all'"` 实现 css 样式的异步加载。）
 
 > 代码处的等宽字体始终使用 prism.css 设置的字体 `Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace`。
 
 ```yml
 font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
   serif:
-    family: "'Noto Serif SC', 'Songti SC', STKaiti, KaiTi, Roboto, serif"
-    weight: 300
-  sans_serif:
-    family: "Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 300
   monospace:
-    family: "'Courier New', Courier, Consolas, Monaco, monospace"
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
 
 ### 图片背景

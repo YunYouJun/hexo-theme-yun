@@ -159,7 +159,7 @@ tag_cloud:
 # You can set color for every tag or category.
 tags:
   Vue: "#4fc08d"
-  Hexo: "0E834D"
+  Hexo: "#0E83CD"
   CSS: "#5298d1"
   Node.js: "#026E00"
   Git: "#F14E32"
@@ -259,9 +259,6 @@ cdn:
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
   # Todo:
-  # font
-  # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
-  # font: https://fonts.loli.net/css?family=Montserrat
   # icon
   # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
   # markdown
@@ -316,14 +313,18 @@ banner:
 
 # You can import the font you want in the head.
 font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
   serif:
-    family: "'Noto Serif SC', 'Songti SC', STZhonngSong, STKaiti, KaiTi, Roboto, serif"
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
   sans_serif:
-    family: "Lato, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 300
   monospace:
-    family: "'Courier New', Courier, Consolas, Monaco, monospace"
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 
 # custom your color in fireworks
 fireworks:

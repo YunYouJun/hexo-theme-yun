@@ -41,7 +41,7 @@ You can specify the color for your label, the default color is `#333`.
 ```yml
 tags:
   Vue: "#4fc08d"
-  Hexo: "0E834D"
+  Hexo: "#0E834D"
   CSS: "#5298d1"
   Node.js: "#026E00"
   Git: "#F14E32"
