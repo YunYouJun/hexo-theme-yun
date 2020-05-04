@@ -67,7 +67,8 @@ aside.sidebar
             +icon(link.icon)
 
   if is_post()
-    script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
+    .js-Pjax
+      script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
     #post-toc-wrap.sidebar-panel.sidebar-panel-active
       .post-toc
         .post-toc-content

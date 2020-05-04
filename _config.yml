@@ -235,7 +235,7 @@ lazyload:
 
 # pjax
 pjax:
-  enable: true
+  enable: false
   src: /js/pjax.js
 
 # stylesheets loaded in the <head>

@@ -333,3 +333,20 @@ $$ E = mc^2 $$
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 你可以使用它来加密一些私密的文章页面。
+
+## pjax
+
+使用 [pjax](https://github.com/MoOx/pjax) 实现。
+
+> 正处在开发……
+
+```yml
+pjax:
+  enable: true
+```
+
+- [ ] pjax 适配
+  - [x] Valine
+  - [x] TOC
+  - [x] aplayer
+  - [ ] ...
