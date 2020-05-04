@@ -45,3 +45,7 @@ if is_page() || is_post()
 
   if page.aplayer && !theme.aplayer.global
     include aplayer.pug
+
+//- pjax
+if theme.pjax.enable
+  include ./pjax.pug

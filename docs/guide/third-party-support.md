@@ -106,6 +106,8 @@ valine:
 
 Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)，可以对具体的评论进行邮件提醒。
 
+> pjax: [请问如何在带有 pjax 的页面下使用 - Issue #138](https://github.com/xCss/Valine/issues/138)
+
 ### MiniValine
 
 A simple and minimalist comment system based on Leancloud.

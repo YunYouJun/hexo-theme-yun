@@ -236,6 +236,7 @@ lazyload:
 # pjax
 pjax:
   enable: true
+  src: /js/pjax.js
 
 # stylesheets loaded in the <head>
 css:
@@ -505,18 +506,18 @@ valine:
   enable: false
   appId: # your leancloud application appid
   appKey: # your leancloud application appkey
-  # placeholder: Just go go # comment box placeholder
+  placeholder: Just go go # comment box placeholder
   avatar: # gravatar style
   # meta:
   #   - nick
   #   - mail
   #   - link
-  # pageSize: 10 # pagination size
+  pageSize: 10 # pagination size
   # lang: zh-CN
   visitor: false
   visitor_index: false
-  # highlight: true
-  # recordIP: false
+  highlight: true
+  recordIP: false
   # serverURLs:
   # Emoji See: https://valine.js.org/emoji.html
   # emojiCDN: //i0.hdslb.com/bfs/emote/
