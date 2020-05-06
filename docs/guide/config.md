@@ -18,7 +18,7 @@
 
 ### 个性化语言包
 
-在 Hexo 工作目录下新建 `source/_data/languages.yml`。（若 source/_data 目录不存在，请新建。）
+在 Hexo 工作目录下新建 `source/_data/languages.yml`。（若 `source/_data` 目录不存在，请新建。）
 
 采用约定大于配置的方式，您仅需在 `languages.yml` 中自定义您想要覆盖的语言，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
 
