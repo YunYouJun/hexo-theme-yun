@@ -25,15 +25,15 @@ With the convention greater than the configuration, you only need to customize t
 Here follows a configuration example,
 
 ```yml
-en: # the language need to be override
+en: # the language need to be overridden
   menu:
     home: My Index
 
-ja: # the language need to be override
+ja: # the language need to be overridden
   menu:
     home: マイインデックス
 
-zh-CN: # the language need to be override
+zh-CN: # the language need to be overridden
   menu:
     home: 我的主页
 ```
