@@ -28,4 +28,21 @@ module.exports = hexo => {
   } else {
     merge(hexo.theme.config, hexo.config.theme_config);
   }
+
+  if (data.languages) {
+    let { language } = hexo.config;
+    let { i18n } = hexo.theme;
+
+    const mergeLang = lang => {
+      i18n.set(lang, merge(i18n.get([lang]), data.languages[lang]));
+    };
+
+    if (Array.isArray(language)) {
+      for (let lang of language) {
+        mergeLang(lang);
+      }
+    } else {
+      mergeLang(language);
+    }
+  }
 };
