@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+function initSidebar() {
   // toggle sidebar nav and panel
   document.querySelectorAll(".sidebar-nav li").forEach((el) => {
     el.onclick = function() {
@@ -75,4 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }
-});
+}
+document.addEventListener("DOMContentLoaded", initSidebar);
+document.addEventListener("pjax:success", initSidebar);

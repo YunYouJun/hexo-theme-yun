@@ -6,12 +6,32 @@ if theme.valine.visitor_index
       span.leancloud-visitors-count
 
 if theme.valine.visitor_index || is_post() || is_page()
-  - var valineConfig = valine_config()
   script(defer, src=theme.vendors.valine_js)
+  //- not use valine_config() for window.location.pathname
+  - var valine_meta = Array.isArray(theme.valine.meta) ? theme.valine.meta : ["nick", "mail", "link"]
+  - var valine_lang = theme.valine.lang || config.language || "zh-cn"
+  - var valine_requireFields = JSON.stringify(theme.valine.requiredFields) || '[]'
   script.
     function initValine() {
-      new Valine(!{valineConfig});
+      new Valine({
+        el: "#valine-container",
+        appId: '!{theme.valine.appId}',
+        appKey: '!{theme.valine.appKey}',
+        placeholder: '!{theme.valine.placeholder}',
+        path: window.location.pathname,
+        avatar: '!{theme.valine.avatar}',
+        meta: !{JSON.stringify(valine_meta)},
+        pageSize: !{theme.valine.pageSize},
+        lang: '!{valine_lang.toLowerCase()}',
+        visitor: !{theme.valine.visitor},
+        highlight: !{theme.valine.highlight},
+        recordIP: !{theme.valine.recordIP},
+        serverURLs: '!{theme.valine.serverURLs}',
+        emojiCDN: '!{theme.valine.emojiCDN}',
+        emojiMaps: !{JSON.stringify(theme.valine.emojiMaps) || 'null'},
+        enableQQ: !{theme.valine.enableQQ},
+        requiredFields: !{valine_requireFields},
+      });
     }
-    document.addEventListener("DOMContentLoaded", function() {
-      initValine();
-    });
+    document.addEventListener("DOMContentLoaded", initValine);
+    document.addEventListener("pjax:success", initValine);

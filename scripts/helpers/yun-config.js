@@ -45,10 +45,7 @@ hexo.extend.helper.register("yun_config", function() {
 
   // local search
   if (theme.local_search.enable) {
-    let search_path = config.search.path;
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    }
+    let search_path = config.search.path || "search.xml";
     exportConfig.local_search = {
       path: config.root + search_path,
     };
@@ -60,35 +57,8 @@ hexo.extend.helper.register("yun_config", function() {
     };
   }
   return `<script id="yun-config">
-    let Yun = window.Yun || {};
-    let CONFIG = ${JSON.stringify(exportConfig)};
+    window.CONFIG = ${JSON.stringify(exportConfig)};
   </script>`;
-});
-
-hexo.extend.helper.register("valine_config", function() {
-  let { config, theme } = this;
-  let valine_lang = theme.valine.lang || config.language || "zh-cn";
-  const valineConfig = {
-    el: "#valine-container",
-    appId: theme.valine.appId,
-    appKey: theme.valine.appKey,
-    placeholder: theme.valine.placeholder,
-    avatar: theme.valine.avatar,
-    meta: Array.isArray(theme.valine.meta)
-      ? theme.valine.meta
-      : ["nick", "mail", "link"],
-    pageSize: theme.valine.pageSize,
-    lang: valine_lang.toLowerCase(),
-    visitor: theme.valine.visitor,
-    highlight: theme.valine.highlight,
-    recordIP: theme.valine.recordIP,
-    serverURLs: theme.valine.serverURLs,
-    emojiCDN: theme.valine.emojiCDN,
-    emojiMaps: theme.valine.emojiMaps,
-    enableQQ: theme.valine.enableQQ,
-    requiredFields: theme.valine.requiredFields,
-  };
-  return JSON.stringify(valineConfig);
 });
 
 hexo.extend.helper.register("minivaline_config", function() {

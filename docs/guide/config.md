@@ -121,8 +121,7 @@ favicon: /favicon.ico
 
 譬如：亮色浏览器 LOGO 为黑色描边，暗色浏览器 LOGO 为白色描边。
 
-你的图标须为 `svg` 文件，并为其添加对应样式。
-
+> 如果你想要为自己的图标添加该特性，你的图标须为 `svg` 文件，并为其添加对应样式。
 > 你可以参考我的 LOGO SVG 代码。[yun.svg](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
 
 Example:

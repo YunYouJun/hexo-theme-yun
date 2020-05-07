@@ -40,8 +40,13 @@ if theme.aplayer.global
   include ./aplayer.pug
 
 if is_page() || is_post()
-  if page.katex && !theme.katex.global
-    include katex.pug
+  .js-Pjax
+    if page.katex && !theme.katex.global
+      include katex.pug
 
-  if page.aplayer && !theme.aplayer.global
-    include aplayer.pug
+    if page.aplayer && !theme.aplayer.global
+      include aplayer.pug
+
+//- pjax
+if theme.pjax.enable
+  include ./pjax.pug
