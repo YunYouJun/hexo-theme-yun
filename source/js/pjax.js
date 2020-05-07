@@ -1,9 +1,8 @@
 const pjax = new Pjax({
-  selectors: ["title", ".js-Pjax", "aside", "#yun-config"],
+  selectors: ["title", ".js-Pjax", "main", "aside", "#yun-config"],
 });
 
 document.addEventListener("pjax:send", function() {
-  console.log("yes");
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       window.aplayers[i].destroy();

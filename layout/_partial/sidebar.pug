@@ -4,14 +4,15 @@ a.sidebar-toggle.sidebar-toggle-fixed.hty-icon-button
       span.hamburger-inner
 
 aside.sidebar
+  - var toc_content = toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth})
   if is_post()
     ul.sidebar-nav
-      li.sidebar-nav-item.sidebar-nav-toc.sidebar-nav-active.hty-icon-button(data-target='post-toc-wrap', title=__('sidebar.toc'))
+      li.sidebar-nav-item.sidebar-nav-toc.hty-icon-button(data-target='post-toc-wrap', title=__('sidebar.toc'), class=toc_content ? 'sidebar-nav-active' : '')
         +icon('icon-list-ordered')
-      li.sidebar-nav-item.sidebar-nav-overview.hty-icon-button(data-target='site-overview-wrap', title=__('sidebar.overview'))
+      li.sidebar-nav-item.sidebar-nav-overview.hty-icon-button(data-target='site-overview-wrap', title=__('sidebar.overview'), class=toc_content ? '' : 'sidebar-nav-active')
         +icon('icon-passport-line')
 
-  #site-overview-wrap.sidebar-panel(class= is_post() ? '' : 'sidebar-panel-active')
+  #site-overview-wrap.sidebar-panel(class= is_post() && toc_content.length > 1 ? '' : 'sidebar-panel-active')
     .site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
       if theme.avatar && theme.avatar.url
         a.site-author-avatar(href=url_for('about'), title=config.author)
@@ -67,12 +68,11 @@ aside.sidebar
             +icon(link.icon)
 
   if is_post()
-    .js-Pjax
-      script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
-    #post-toc-wrap.sidebar-panel.sidebar-panel-active
+    script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
+    #post-toc-wrap.sidebar-panel(class=toc_content.length > 1 ? 'sidebar-panel-active' : '')
       .post-toc
         .post-toc-content
-          != toc(page.content).length > 1 ? toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth}) : theme.toc.placeholder || __('post.toc_empty')
+          != toc_content.length > 1 ? toc_content : theme.toc.placeholder || __('post.toc_empty')
 
   if theme.tag_cloud.enable
     include ../_widget/tag-cloud.pug

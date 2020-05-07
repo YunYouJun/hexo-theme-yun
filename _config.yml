@@ -317,7 +317,7 @@ font:
   cdn:
     enable: true
     lib:
-      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Source+Code+Pro&display=swap
   serif:
     family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900

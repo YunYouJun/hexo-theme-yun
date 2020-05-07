@@ -45,10 +45,7 @@ hexo.extend.helper.register("yun_config", function() {
 
   // local search
   if (theme.local_search.enable) {
-    let search_path = config.search.path;
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    }
+    let search_path = config.search.path || "search.xml";
     exportConfig.local_search = {
       path: config.root + search_path,
     };
@@ -64,7 +61,7 @@ hexo.extend.helper.register("yun_config", function() {
   </script>`;
 });
 
-hexo.extend.helper.register("minivaline_config", function(path) {
+hexo.extend.helper.register("minivaline_config", function() {
   const minivalineConfig = {
     el: "#minivaline-container",
     appId: theme.minivaline.appId,
