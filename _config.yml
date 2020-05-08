@@ -524,7 +524,7 @@ valine:
   # emojiMaps:
   #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
   #   more...
-  # enableQQ: false
+  enableQQ: true
   # requiredFields:
   #   - nick
   #   - mail
