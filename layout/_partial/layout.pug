@@ -33,6 +33,11 @@ html(lang=config.language)
       include sidebar.pug
       main#content.sidebar-translate
         block content
+
+        if is_post() || is_page()
+          if page.comments && theme.comment.enable
+            include ../_third-party/comments/index.pug
+
       include footer.pug
       //- widget
       include ../_widget/index.pug

@@ -72,22 +72,22 @@ social:
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
     color: "#FF8EB3"
-  - name: POPI
-    link: https://www.popiask.cn/elpsycn
-    icon: icon-questionnaire-line
-    color: "#525252"
-  - name: 微信公众号
-    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-    icon: icon-wechat-2-line
-    color: "#1AAD19"
+  # - name: POPI
+  #   link: https://www.popiask.cn/elpsycn
+  #   icon: icon-questionnaire-line
+  #   color: "#525252"
+  # - name: 微信公众号
+  #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+  #   icon: icon-wechat-2-line
+  #   color: "#1AAD19"
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
     color: "#1da1f2"
-  - name: Telegram
-    link: https://t.me/YunYouJun
-    icon: icon-telegram-line
-    color: "#0088CC"
+  # - name: Telegram
+  #   link: https://t.me/YunYouJun
+  #   icon: icon-telegram-line
+  #   color: "#0088CC"
   - name: Telegram Channel
     link: https://t.me/elpsycn
     icon: icon-telegram-fill
@@ -515,7 +515,6 @@ valine:
   pageSize: 10 # pagination size
   # lang: zh-CN
   visitor: false
-  visitor_index: false
   highlight: true
   recordIP: false
   # serverURLs:
@@ -612,6 +611,24 @@ katex:
 aplayer:
   global: false
   meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: false
+    option:
+      id: 308168565
+      server: netease
+      type: playlist
+      autoplay: false
+      # theme: "#2980b9"
+      loop: all
+      order: list
+      preload: auto
+      volume: 0.7
+      mutex: true
+      lrctype: 0
+      listfolded: false
+      listmaxheight: 340px
+      storagename: metingjs
 
 # special
 mourn:

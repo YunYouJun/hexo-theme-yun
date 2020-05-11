@@ -39,14 +39,28 @@ if theme.katex.global
 if theme.aplayer.global
   include ./aplayer.pug
 
-if is_page() || is_post()
-  .js-Pjax
+//- pjax
+if theme.pjax.enable
+  include ./pjax.pug
+
+.js-Pjax
+  if is_page() || is_post()
     if page.katex && !theme.katex.global
       include katex.pug
 
     if page.aplayer && !theme.aplayer.global
       include aplayer.pug
 
-//- pjax
-if theme.pjax.enable
-  include ./pjax.pug
+    if page.aplayer
+      script.
+        document.addEventListener(
+          "pjax:success",
+          function() {
+            if (window.aplayers) {
+              loadMeting();
+            }
+          },
+          !1
+        );
+
+

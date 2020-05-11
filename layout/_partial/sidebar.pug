@@ -3,6 +3,7 @@ a.sidebar-toggle.sidebar-toggle-fixed.hty-icon-button
     span.hamburger-box
       span.hamburger-inner
 
+script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
 aside.sidebar
   - var toc_content = toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth})
   if is_post()
@@ -68,7 +69,6 @@ aside.sidebar
             +icon(link.icon)
 
   if is_post()
-    script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
     #post-toc-wrap.sidebar-panel(class=toc_content.length > 1 ? 'sidebar-panel-active' : '')
       .post-toc
         .post-toc-content

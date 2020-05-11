@@ -217,10 +217,33 @@ aplayer: true
 
 你也可以在 `yun.yml` 中设置全局开启。（当你设置了全局的播放器时，可以使用它。）
 
+- `widget`: 你可以将 `widget.enable` 设置为 `true` 来打开全局播放器。（`aplayer.global` 必须为 `true`）
+- `option`: 参考 [Option | MetingJS](https://github.com/metowolf/MetingJS/tree/v1.2#option)
+
+开启 [pjax](#pjax)，可以实现切换页面时，不中断音乐播放器。（为了正确加载音乐播放器，当切换到的文章页面也存在音乐播放器时，`Meting` 会重新加载。）
+
 ```yml
 aplayer:
   global: true
   meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: true
+    option:
+      id: 308168565
+      server: netease
+      type: playlist
+      autoplay: false
+      # theme: "#2980b9"
+      loop: all
+      order: list
+      preload: auto
+      volume: 0.7
+      mutex: true
+      lrctype: 0
+      listfolded: false
+      listmaxheight: 340px
+      storagename: metingjs
 ```
 
 :::
@@ -349,4 +372,4 @@ pjax:
   - [x] Valine
   - [x] TOC
   - [x] aplayer
-  - [ ] ...
+  - [ ] gallery
