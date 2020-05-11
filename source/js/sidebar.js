@@ -1,4 +1,18 @@
+function scrollToLink() {
+  const links = document.querySelectorAll(".toc a");
+  links.forEach((link) => {
+    link.onclick = () => {
+      window.scrollTo(
+        0,
+        document.querySelector(link.getAttribute("href")).offsetTop
+      );
+    };
+  });
+}
+
 function initSidebar() {
+  scrollToLink();
+
   // toggle sidebar nav and panel
   document.querySelectorAll(".sidebar-nav li").forEach((el) => {
     el.onclick = function() {

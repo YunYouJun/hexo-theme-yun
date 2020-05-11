@@ -215,6 +215,16 @@ aplayer: true
 
 ```
 
+:::
+
+插入某首网易云音乐的歌
+
+```md
+{% meting "497572729" "netease" "song" "theme:#C20C0C" %}
+```
+
+### 全局音乐播放器
+
 你也可以在 `yun.yml` 中设置全局开启。（当你设置了全局的播放器时，可以使用它。）
 
 - `widget`: 你可以将 `widget.enable` 设置为 `true` 来打开全局播放器。（`aplayer.global` 必须为 `true`）
@@ -244,14 +254,6 @@ aplayer:
       listfolded: false
       listmaxheight: 340px
       storagename: metingjs
-```
-
-:::
-
-插入某首网易云音乐的歌
-
-```md
-{% meting "497572729" "netease" "song" "theme:#C20C0C" %}
 ```
 
 由于 `hexo-tag-aplayer` 太香了，我决定移除原先的媒体包裹脚本。实在有需要的同学，可以自行外挂添加。

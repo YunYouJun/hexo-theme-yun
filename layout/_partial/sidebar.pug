@@ -3,8 +3,8 @@ a.sidebar-toggle.sidebar-toggle-fixed.hty-icon-button
     span.hamburger-box
       span.hamburger-inner
 
-script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
 aside.sidebar
+  script(defer, src=url_for(theme.cdn.pre + theme.vendors.sidebar))
   - var toc_content = toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth})
   if is_post()
     ul.sidebar-nav
