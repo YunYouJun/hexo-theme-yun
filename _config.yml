@@ -156,6 +156,9 @@ tag_cloud:
   width: 300
   height: 300
 
+wordcloud:
+  enable: false
+
 # You can set color for every tag or category.
 tags:
   Vue: "#4fc08d"
@@ -298,6 +301,7 @@ vendors:
   pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
   crypto_js:
     all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
+  wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
   fireworks: /js/ui/fireworks.js
   search: /js/search/index.js
   sidebar: /js/sidebar.js

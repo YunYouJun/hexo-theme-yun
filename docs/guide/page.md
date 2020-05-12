@@ -90,6 +90,17 @@ type: tags
 
 ```
 
+你可以在 `yun.yml` 中设置：
+
+```yml
+wordcloud:
+  enable: true
+```
+
+来使用彩色的词云替代原生的标签云。
+
+> 仅在标签页引入 [wordcloud2.js](https://github.com/timdream/wordcloud2.js)
+
 ## 分类 categories
 
 如果您尚未安装 `hexo-generator-category`，请输入 `npm install hexo-generator-category`。

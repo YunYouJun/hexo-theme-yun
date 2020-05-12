@@ -74,3 +74,19 @@ hexo.extend.helper.register("minivaline_config", function() {
   };
   return JSON.stringify(minivalineConfig);
 });
+
+hexo.extend.helper.register("wordcloud_config", function() {
+  let { config, theme } = this;
+  const wordcloud_config = {};
+  let list = [];
+  const tags = hexo.locals.get("tags");
+  tags.forEach((tag) => {
+    list.push([tag.name, tag.length / 10 + 1, config.root + tag.path]);
+  });
+  wordcloud_config.list = list;
+  wordcloud_config.fontFamily = theme.font.serif.family;
+  wordcloud_config.fontWeight = theme.font.serif.weight;
+  wordcloud_config.gridSize = 10;
+  wordcloud_config.weightFactor = 13;
+  return wordcloud_config;
+});
