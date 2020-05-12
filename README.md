@@ -130,10 +130,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://awslnotbad.gitee.io/" target="_blank">
-        <img width="80px" src="https://awslnotbad.gitee.io/Yun.gif"/>
+      <a href="https://misaki.page/" target="_blank">
+        <img width="80px" src="https://misaki.page/avatar-512x512.png"/>
         <br />
-        <sub title="姑苏城外一茅屋，万树梅花月满天">夏末随风的小站</sub>
+        <sub title="疲惫生活中总要有些温暖梦想">西地兰的忧郁</sub>
       </a>
     </td>
   </tr>

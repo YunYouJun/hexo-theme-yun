@@ -97,3 +97,21 @@
 ### Article
 
 - [Hexo 主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
+
+## Hexo VS WordPress VS Typecho
+
+正所谓存在即合理。
+
+本主题为 Hexo 主题，Hexo 更适合愿意花时间折腾学习或有一定基础知识的人群（当然也还有追求静态速度与绝对安全，没有钱买服务器等理由）。
+
+如果你更想专注于内容生产，并想要快速搭建上手（前提是你得有个服务器），便可以考虑直接使用 [WordPress](https://wordpress.org/) 或 [Typecho](https://typecho.org/)。
+
+我懵懂之时的第一个站点正是使用 WordPress 搭建，并使用了有相当长一段时间。倘若直接使用 Hexo 搭建，便可能因为姿势水平不足遇到一些坑，打击到自己的热情。
+
+WordPress 作为世界上市场占比最大的博客软件和内容管理系统，功能最为强大，生态丰富。
+
+Typecho 则似乎在 WordPress 的强大和 Hexo 的简洁快速中取了个中间点。
+
+你可以根据自己的真正需求来选择最适合自己的博客框架。
+
+至于主题方面，则不妨试试小伙伴 [染川瞳](https://asuhe.jp/) 的 WordPress 主题 [Sakurairo](https://github.com/mirai-mamori/Sakurairo) 和 [阔落](https://guhub.cn/) 的 Typecho 主题 [miracles](https://github.com/BigCoke233/miracles)，都是很漂亮的主题。
