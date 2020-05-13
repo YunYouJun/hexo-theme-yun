@@ -88,5 +88,6 @@ hexo.extend.helper.register("wordcloud_config", function() {
   wordcloud_config.fontWeight = theme.font.serif.weight;
   wordcloud_config.gridSize = 10;
   wordcloud_config.weightFactor = 13;
+  wordcloud_config.backgroundColor = "transparent";
   return wordcloud_config;
 });
