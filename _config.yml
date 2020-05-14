@@ -309,7 +309,9 @@ banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
-  cloud: true
+  cloud:
+    enable: true
+    color: "black"
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
