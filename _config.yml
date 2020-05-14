@@ -311,7 +311,7 @@ banner:
   src: /js/ui/banner.js
   cloud:
     enable: true
-    color: "black"
+    color: "white"
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
