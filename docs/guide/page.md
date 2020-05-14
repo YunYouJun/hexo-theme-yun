@@ -99,7 +99,7 @@ wordcloud:
 
 来使用彩色的词云替代原生的标签云。
 
-> 仅在标签页引入 [wordcloud2.js](https://github.com/timdream/wordcloud2.js)
+> 同样仅会在标签页引入 [wordcloud2.js](https://github.com/timdream/wordcloud2.js)
 
 ## 分类 categories
 

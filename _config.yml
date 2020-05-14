@@ -22,6 +22,7 @@ favicon: /yun.svg
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
+  src: /js/sidebar.js
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 1rem center
 
@@ -302,9 +303,6 @@ vendors:
   crypto_js:
     all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
   wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
-  fireworks: /js/ui/fireworks.js
-  search: /js/search/index.js
-  sidebar: /js/sidebar.js
 
 # UI
 banner:
@@ -334,6 +332,7 @@ font:
 # custom your color in fireworks
 fireworks:
   enable: true
+  src: /js/ui/fireworks.js
   colors:
     - "102, 167, 221"
     - "62, 131, 225"

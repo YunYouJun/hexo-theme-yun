@@ -37,7 +37,9 @@ root: /
 
 检查是否为最新版本。
 
-如果仍然存在问题，你可以将你的项目代码作为 Hexo 分支推送到 GitHub 上。
+检查是否因为 CDN 缓存造成的问题，（关闭 `cdn.pre`）。
+
+如果仍然存在问题，你可以将你的项目代码作为 `hexo` 分支推送到 GitHub 上。
 
 > [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
 
@@ -60,3 +62,7 @@ server:
 ```
 
 > <https://github.com/hexojs/hexo-browsersync/issues/15#issuecomment-573492492>
+
+## 标签与分类页面不显示？
+
+标签与分类页面需要参考 [页面配置](https://yun.yunyoujun.cn/guide/page.html#标签-tags) 安装对应插件并自行生成页面。

@@ -371,7 +371,7 @@ social:
   - name: RSS
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
-    link: atom.xml # config.feed.path
+    link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
   - name: QQ
@@ -491,7 +491,7 @@ notice:
 
 ### 字体
 
-你可以设置你的自定义字体，并调节为你喜欢的自重。
+你可以设置你的自定义字体，并调节为你喜欢的字重。
 
 :::tip
 如果你使用了非系统自带字体，你还需要前往 [head](#head-头部资源) 处引入。
