@@ -4,9 +4,13 @@ block content
   article#page
     +page_header(page.title, theme.albums.icon)
     include ./_third-party/lightgallery.pug
+
     if page.photos
       #gallery
         .page-subtitle!=_p('counter.photos', page.photos.length)
+        .page-action.text-center
+          a.hty-icon-button(href="./" style="width:2.5rem;height:2.5rem;", title=__('accessibility.back'))
+            +icon('icon-arrow-go-back-line')
         if !page.gallery_password
           #lightgallery.photo-list
             for photo in page.photos

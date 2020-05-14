@@ -83,7 +83,8 @@ symbol:
 reward:
   donate: Donate
 
-# accessibility:
+accessibility:
+  back: Back
 #   nav_toggle: Toggle navigation bar
 #   prev_page: Previous page
 #   next_page: Next page

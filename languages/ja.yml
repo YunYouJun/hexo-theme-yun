@@ -83,7 +83,8 @@ symbol:
 reward:
   donate: 寄付
 
-# accessibility:
+accessibility:
+  back: 返す
 #   nav_toggle: ナビゲーションバーの切り替え
 #   prev_page: 前のページ
 #   next_page: 次のページ

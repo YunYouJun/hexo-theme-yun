@@ -273,7 +273,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_rtqh36oinzl.js
+      iconfont: //at.alicdn.com/t/font_1140697_gmlcj7aotr6.js
     defer:
 
 # cdn for third-party library (alternative include)

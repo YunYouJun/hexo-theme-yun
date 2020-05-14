@@ -244,21 +244,23 @@ preconnect:
 
 ## 图标 Icon
 
-本主题默认使用 Remix Icon 的部分图标，并通过 iconfont 生成的 cdn 加载。
+本主题默认使用 [Remix Icon](https://remixicon.com/) 的部分图标，并通过 [iconfont](https://www.iconfont.cn/) 生成的 cdn 加载。
 
-如您想要使用其他图标，推荐以下几种图标。
+> 默认支持的图标列表见 [/guide/icon.html]
 
-- 推荐方式零：只下载必要的 svg 存储为 CDN ，只在必要时使用（不引入 css 以尽可能提高速度）。
-- 推荐方式一：使用 `font-awesome`，省时省力。
-- 推荐方式二：全部使用自定义 `iconfont` 图标集。（速度快，但需自行配置）
-- 推荐方式三：`ionicons` 加载与 `iconfont` 自定义搭配使用。
+如您想要使用其他图标，可以采用以下几种图标和使用方式。
+
+- 方式一：最为推荐，全部使用自定义 `iconfont` 图标集。（速度快，但需自行配置）
+- 方式二：自由在 [head](#head-头部资源) 引入字体图标的 css 样式文件，直接传入对应 `class` 名称即可。（往往会引入全部的图标资源，虽然一次性引入很方便，但很多图标其实用不到。）
 
 ::: tip
 你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。  
-如果你只是想增添额外几个图标，你最好在 [head](#head-头部资源) 处引入，而不是直接覆盖。  
+如果你只是想额外增添几个图标，你最好在 [head](#head-头部资源) 处引入，而不是直接覆盖。  
 :::
 
 下面给出了一些基础图标的使用方法。
+
+本主题对以下几种图标的使用进行了适配。
 
 ### [iconfont](https://www.iconfont.cn/)
 
@@ -285,19 +287,6 @@ head:
 
 简洁、优雅、开源。
 
-### [Font-Awesome](https://fontawesome.com)
-
-- GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
-- CDN: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css>
-
-图标多而全，含各类商标图标，但部分收费，且文件较大。
-
-```html
-<i class="fas fa-home"></i>
-```
-
-如使用 `Font-Awesome`，图标相关配置中请如下填写：`fas fa-home`。
-
 ### [Ionicons](https://ionicons.com)
 
 - GitHub: [ionicons](https://github.com/ionic-team/ionicons)
@@ -310,51 +299,88 @@ head:
 
 可根据 `Android/iOS` 平台自动切换适合的风格 `Material/iOS`。
 
-```html
-<!-- 比 unpkg 快 -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js -->
-<script src="https://unpkg.com/ionicons/dist/ionicons.js"></script>
+本主题已对 `ion-icon` 标签引入的方式进行了适配，如下配置即可。
+
+```yml
+head:
+  js:
+    async: https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js
 ```
 
-```html
-<ion-icon name="heart"></ion-icon>
+```yml
+icon: ion-icon heart
 ```
-
-如使用 Web Component `ion-icon`，图标相关配置中请如下填写：`ion-icon heart`。
 
 #### 加载方式二： CSS 引入
 
-```html
-<!-- 比 unpkg 快 -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css -->
-<link
-  href="https://unpkg.com/ionicons/dist/css/ionicons.min.css"
-  rel="stylesheet"
-/>
+与其他 CSS 引入字体图标的方式相同。
+
+```yml
+head:
+  css:
+    ionicons: https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css
 ```
 
-```html
-<i class="icon ion-md-heart"></i>
+```yml
+icon: icon ion-md-heart
 ```
-
-如使用 `font-class` 方式，图标相关配置中请如下填写：`icon ion-md-heart`。
 
 ### [Material Design icons](https://google.github.io/material-design-icons/)
 
 - GitHub: [material-design-icons](https://github.com/google/material-design-icons)
 - [Material Design icons](https://material.io/tools/icons)
 
-样式统一，无商标图标。谷歌出品，因国内行情，加载未必稳定。
+样式统一，无商标图标。谷歌出品，因国内行情，加载未必稳定，你可以寻找一些镜像源替代。
+
+主题同样进行了适配。
+
+::: tip 为何需要适配？
+
+原本的使用方式
+
+`face` 为 `<i></i>` 内部内容，而非 `class`。
 
 ```html
 <i class="material-icons">face</i>
 ```
 
-如使用 `ionicon`，图标相关配置中请如下填写：`material-icons face`。
+:::
+
+引入对应 CDN 资源：
+
+```yml
+head:
+  css:
+    material: https://fonts.googleapis.com/icon?family=Material+Icons
+```
+
+```yml
+icon: material-icons face
+```
 
 ### 其他图标
 
-与上述几种图标使用方式类似，图标相关配置中填写对应图标 `class` 即可。
+在 [`head`](#head-头部资源) 中引入相关资源，图标相关配置 `icon` 中填写对应图标 `class` 即可。
+
+譬如常见的 [Font-Awesome](https://fontawesome.com)
+
+> GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
+引入它的 CSS 资源：
+
+```yml
+head:
+  css:
+    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+```
+
+对应 `icon` 字段中填写对应 `class` 名称即可。
+
+```yml
+icon: fas fa-home
+```
+
+> 其实并不推荐引入全部的 `font-awesome`，因为它真的很大。
 
 ## 社交图标
 
