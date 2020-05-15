@@ -44,6 +44,13 @@
             |  
             span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
 
+          if theme.disqus.count
+            span.post-meta-divider='-'
+            span.post-meta-item-icon(title=__('post.comments_count'))
+              +icon(theme.comment.icon)
+            |  
+            a(href=url_for(page.path) + '#disqus_thread')
+
   if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
     span.post-busuanzi
       span.post-meta-divider='-'

@@ -273,7 +273,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_gmlcj7aotr6.js
+      iconfont: //at.alicdn.com/t/font_1140697_4i778vmn3jg.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -490,9 +490,9 @@ say:
 # -------
 comment:
   enable: true
+  icon: icon-chat-3-line
   tips:
-    - 若您无 GitHub 账号，可直接在下方匿名评论。
-    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 点击按钮跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
 
 # GitHub Issues Link Button
@@ -549,6 +549,11 @@ minivaline:
   # Available values: en  | zh-CN | (and many more)
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   lang:
+
+disqus:
+  enable: false
+  name: yunyoujun
+  count: false
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
