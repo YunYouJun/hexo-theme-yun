@@ -32,19 +32,19 @@ aside.sidebar
           +icon(theme.menu.home.icon)
       if site.posts.length > 0
         .site-state-item.site-state-posts
-          a(href=url_for(config.archive_dir), title=__('menu.archives'))
+          a(href=url_for(theme.menu.archives.path), title=__('menu.archives'))
             span.site-state-item-icon
               +icon(theme.menu.archives.icon)
             span.site-state-item-count!=site.posts.length
       if site.categories.length > 0
         .site-state-item.site-state-categories
-          a(href=url_for(config.category_dir), title=__('menu.categories'))
+          a(href=url_for(theme.menu.categories.path), title=__('menu.categories'))
             span.site-state-item-icon
               +icon(theme.menu.categories.icon)
             span.site-state-item-count!=site.categories.length
       if site.tags.length > 0
         .site-state-item.site-state-tags
-          a(href=url_for(config.tag_dir), title=__('menu.tags'))
+          a(href=url_for(theme.menu.tags.path), title=__('menu.tags'))
             span.site-state-item-icon
               +icon(theme.menu.tags.icon)
             span.site-state-item-count!=site.tags.length

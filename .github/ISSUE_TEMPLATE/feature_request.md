@@ -1,10 +1,12 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ""
+name: Feature Request
+about: 功能建议
+title: "[Feature Request]"
 labels: ""
 assignees: ""
 ---
+
+<!-- 请在标题中简要概括。 -->
 
 咱也不废话，你可以不用完全按照以下格式来填写，尽可能描述清楚即可。有配图更好。
 

@@ -1,8 +1,11 @@
 # Hexo-Theme-Yun
 
-![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/Docs/badge.svg)
+[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/docs/badge.svg)](https://yun.yunyoujun.cn)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo)](https://hexo.io)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun)
+[![QQ Group](https://img.shields.io/badge/qq%20group-389401003-12B7F5)](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
+[![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 <p align="center">
   <img width="128" src="docs/.vuepress/public/logo.gif">

@@ -134,13 +134,13 @@ menu:
     path: /
     icon: icon-home-4-line
   archives:
-    path: /archives
+    path: /archives/
     icon: icon-archive-line
   tags:
-    path: /tags
+    path: /tags/
     icon: icon-price-tag-3-line
   categories:
-    path: /categories
+    path: /categories/
     icon: icon-folder-2-line
   custom:
     title: 文档

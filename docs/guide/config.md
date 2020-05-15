@@ -398,6 +398,8 @@ icon: fas fa-home
 - `icon`: 图标 Class
 - `color`: 图标颜色（前提是您引入的图标支持 SVG 自定义颜色）当前默认色彩采用官方图标的品牌主色。
 
+> 如果你想使用 QQ 跳转链接，你可能还需要到 [QQ 推广](https://shang.qq.com/) 开通。
+
 ```yml
 social:
   - name: RSS
@@ -729,13 +731,13 @@ menu:
     path: /
     icon: icon-home-4-line
   archives:
-    path: /archives
+    path: /archives/
     icon: icon-archive-line
   tags:
-    path: /tags
+    path: /tags/
     icon: icon-price-tag-3-line
   categories:
-    path: /categories
+    path: /categories/
     icon: icon-folder-2-line
   custom:
     title: 文档

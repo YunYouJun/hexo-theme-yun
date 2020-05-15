@@ -1,10 +1,12 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ""
+name: Bug Report
+about: 缺陷报告
+title: "[Bug Report]"
 labels: ""
-assignees: ""
+assignees: YunYouJun
 ---
+
+<!-- 请在标题中简要概括。 -->
 
 咱也不废话，你可以不用完全按照以下格式来填写，尽可能描述清楚即可。有配图更好。
 上 GitHub 代码链接最佳。
