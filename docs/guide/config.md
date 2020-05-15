@@ -16,6 +16,12 @@
 
 默认语言为中文 `zh-CN`。
 
+> 站点的语言需要自己在 Hexo 目录下的 `_config.yml` 中设置。
+
+```yml
+language: zh-CN
+```
+
 ### 个性化语言包
 
 在 Hexo 工作目录下新建 `source/_data/languages.yml`。（若 `source/_data` 目录不存在，请新建。）
