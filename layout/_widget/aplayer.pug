@@ -1,2 +1,15 @@
-- var meting_option = theme.aplayer.widget.option
-#aplayer.aplayer.no-destroy(data-id=meting_option.id, data-server=meting_option.server, data-type=meting_option.type, data-fixed="true", data-autoplay=meting_option.autoplay, data-theme=meting_option.theme || theme.colors.primary, data-loop=meting_option.loop, data-order=meting_option.order, data-preload=meting_option.preload, data-volume=meting_option.volume, data-mutex=meting_option.mutex, data-lrctype=meting_option.lrctype, data-listfolded=meting_option.listfolded, data-listmaxheight=meting_option.listmaxheight, data-storagename=meting_option.storagename)
+if theme.aplayer.widget.meting
+  - var meting_option = theme.aplayer.widget.option
+  #aplayer.aplayer.no-destroy(data-id=meting_option.id, data-server=meting_option.server, data-type=meting_option.type, data-fixed="true", data-autoplay=meting_option.autoplay, data-theme=meting_option.theme || theme.colors.primary, data-loop=meting_option.loop, data-order=meting_option.order, data-preload=meting_option.preload, data-volume=meting_option.volume, data-mutex=meting_option.mutex, data-lrctype=meting_option.lrctype, data-listfolded=meting_option.listfolded, data-listmaxheight=meting_option.listmaxheight, data-storagename=meting_option.storagename)
+else
+  #aplayer
+  - var ap_audio = JSON.stringify(theme.aplayer.widget.audio)
+  script.
+    window.addEventListener("DOMContentLoaded", () => {
+      const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: true,
+        theme: '!{theme.colors.primary}',
+        audio: !{ap_audio}
+      });
+    });
