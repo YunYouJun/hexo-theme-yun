@@ -56,6 +56,39 @@ github_issues:
 
 > 如果您实在觉得 Gitalk 有必要使用，可以在 Issue 里提出有力的理由来说服我或自行添加。
 
+### [Disqus](https://disqus.com/)
+
+Disqus 可以说是全球最流行的第三方评论系统，但其在国内缺点也很明显，需要科学上网。
+
+- `shortname`: 修改为你的用户名
+- `count`: 是否开启评论数统计（将会显示在文章的评论数）
+
+```yml
+disqus:
+  enable: true
+  shortname: yunyoujun
+  count: false
+```
+
+#### [DisqusJS](https://github.com/SukkaW/DisqusJS)
+
+> 纯前端、超轻量级的「评论基础模式」实现：使用 Disqus API 渲染评论列表
+
+相比原生集成的 Disqus，解决的痛点就是在需要科学上网的地方，可以通过 Disqus API 渲染出一份基础的评论列表。
+让无法科学上网的用户可以直接看到评论。
+
+> 当然，想要真正评论，你仍然需要科学上网。
+
+- `apikey`: 必须，请参考 DisqusJS 文档 [配置 Disqus Application](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqus-application)
+
+```yml
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  count: false
+  apikey:
+```
+
 ### Valine
 
 参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。

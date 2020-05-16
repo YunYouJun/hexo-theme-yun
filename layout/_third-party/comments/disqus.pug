@@ -1,19 +1,31 @@
 #disqus_thread
-script.
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  var disqus_config = function () {
-    this.page.url = "!{page.permalink}";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "!{page.path}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    this.page.title = "!{page.title}"
-  };
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://#{theme.disqus.name}.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
+.js-Pjax
+  script.
+    var disqus_config = function () {
+      this.page.url = "!{page.permalink}";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "!{page.path}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.title = "!{page.title}"
+    };
+    // here we will only load the disqus <script> if not already loaded
+    if (!window.DISQUS) {
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://#{theme.disqus.shortname}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    }
+    // if disqus <script> is already loaded, we just reset disqus the right way
+    // see https://help.disqus.com/developer/using-disqus-on-ajax-sites
+    else {
+      DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.identifier = disqus_config.page.identifier
+          this.page.url = disqus_config.page.url
+        }
+      })
+    }
 
 if theme.disqus.count
-  script#dsq-count-scr(src=`//${theme.disqus.name}.disqus.com/count.js` async)
+  script#dsq-count-scr(src=`//${theme.disqus.shortname}.disqus.com/count.js` async)

@@ -303,6 +303,10 @@ vendors:
   crypto_js:
     all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
   wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
+  # https://github.com/SukkaW/DisqusJS
+  disqusjs:
+    css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
+    js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 
 # UI
 banner:
@@ -552,8 +556,15 @@ minivaline:
 
 disqus:
   enable: false
-  name: yunyoujun
+  shortname: yunyoujun
   count: false
+
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  count: false
+  apikey:
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi

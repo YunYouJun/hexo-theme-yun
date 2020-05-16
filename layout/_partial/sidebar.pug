@@ -16,11 +16,11 @@ aside.sidebar
   #site-overview-wrap.sidebar-panel(class= is_post() && toc_content.length > 1 ? '' : 'sidebar-panel-active')
     .site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
       if theme.avatar && theme.avatar.url
-        a.site-author-avatar(href=url_for('about'), title=config.author)
-          img(width=96, loading='lazy', src=is_url(theme.avatar.url) ? theme.avatar.url : url_for(theme.cdn.pre + theme.avatar.url), alt=author)
+        a.site-author-avatar(href=url_for('about/'), title=config.author)
+          img(width=96, loading='lazy', src=is_url(theme.avatar.url) ? theme.avatar.url : url_for(theme.cdn.pre + theme.avatar.url), alt=config.author)
         .site-author-name
           a(href=url_for('about/'))
-            | #{author}
+            | #{config.author}
         a.site-name(href=url_for('about/site.html'))
           | #{config.title}
         sub.site-subtitle!=config.subtitle

@@ -1,0 +1,12 @@
+#disqus_thread
+link(rel="stylesheet" href=theme.vendors.disqusjs.css)
+script(src=theme.vendors.disqusjs.js)
+script.
+  var dsqjs = new DisqusJS({
+    shortname: '!{theme.disqusjs.shortname}',
+    apikey: '!{theme.disqusjs.apikey}',
+    url: '!{page.permalink}'
+  })
+
+if theme.disqusjs.count
+  script#dsq-count-scr(src=`//${theme.disqus.shortname}.disqus.com/count.js` async)
