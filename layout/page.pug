@@ -7,7 +7,7 @@ block content
       .page-subtitle=_p('counter.tag_cloud', site.tags.length)
 
       if theme.wordcloud.enable
-        #wordcloud
+        .wordcloud
           canvas#wordcloud-canvas
           #wordbox(hidden)
         script(src=theme.vendors.wordcloud)
@@ -15,8 +15,8 @@ block content
           function initWordCloud() {
             const wordcloud_canvas = document.getElementById('wordcloud-canvas')
             wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
-            wordcloud_canvas.height = 350
-            let wordcloud_config = !{JSON.stringify(wordcloud_config())}
+            wordcloud_canvas.height = !{theme.wordcloud.height}
+            let wordcloud_config = !{JSON.stringify(wordcloud_config('random-dark'))}
             wordcloud_config.hover = function(item, dimension){
               if (!dimension) {
                 wordbox.hidden = true
@@ -32,8 +32,8 @@ block content
           document.addEventListener('pjax:success', initWordCloud)
       else
         .tag-cloud
-          - var start_color = theme.color ? (theme.color.tag_start_color || '#333'): '#999999'
-          - var end_color = theme.color ? (theme.color.tag_end_color || theme.colors.primary) : '#1B9EF3'
+          - var start_color = theme.colors.tag_start_color || '#333'
+          - var end_color = theme.colors.tag_end_color || theme.colors.primary
           .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
     else if page.type === 'categories'

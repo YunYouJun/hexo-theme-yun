@@ -74,5 +74,8 @@ aside.sidebar
         .post-toc-content
           != toc_content.length > 1 ? toc_content : theme.toc.placeholder || __('post.toc_empty')
 
-  if theme.tag_cloud.enable
-    include ../_widget/tag-cloud.pug
+  if theme.sidebar.tagcloud.enable
+    .tag-cloud
+      - var start_color = theme.colors.tag_start_color || '#333'
+      - var end_color = theme.colors.tag_end_color || theme.colors.primary
+      .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: theme.sidebar.tagcloud.amount, color: true, start_color, end_color})

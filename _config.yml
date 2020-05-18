@@ -9,8 +9,8 @@ colors:
   # primary: "#6200ee"
   # bg: "#EEEEEE"
   selection_bg: "#8e71c1"
-  # tag_start_color:
-  # tag_end_color:
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
 
 # Favicon
 # ---------------
@@ -25,6 +25,9 @@ sidebar:
   src: /js/sidebar.js
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 1rem center
+  tagcloud:
+    enable: true
+    amount: 20
 
 toc:
   list_number: true
@@ -91,7 +94,8 @@ social:
   #   color: "#0088CC"
   - name: Telegram Channel
     link: https://t.me/elpsycn
-    icon: icon-telegram-fill
+    # icon: icon-telegram-fill
+    icon: icon-telegram-line
     color: "#0088CC"
   - name: Travelling
     link: https://travellings.now.sh/
@@ -151,14 +155,9 @@ menu:
 archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
 
-# https://github.com/MikeCoder/hexo-tag-cloud
-tag_cloud:
-  enable: false
-  width: 300
-  height: 300
-
 wordcloud:
-  enable: false
+  enable: true
+  height: 350
 
 # You can set color for every tag or category.
 tags:

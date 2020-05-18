@@ -679,10 +679,16 @@ cursor:
 
 ### 侧边栏背景
 
+- `tagcloud`: 在侧边栏显示 Hexo 原生标签页
+  - `amount`: 显示的标签数量
+
 ```yml
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
 ```
 
 > 注意：如果你使用子目录来放置你的博客，如 `xxx.github.io/blog/`，你的图片链接需要设置为 `/blog/xxx`，或者直接使用图床。
