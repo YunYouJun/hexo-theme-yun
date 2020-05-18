@@ -14,6 +14,7 @@
 > A light & fast & lovely hexo theme.
 
 - Docs: <https://yun.yunyoujun.cn>
+- CI 测试站: <https://yunyoujun.netlify.app/>
 
 ![index-preview.jpg](https://i.loli.net/2020/03/23/bTmpQe6tgf35nj2.jpg)
 

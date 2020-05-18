@@ -26,7 +26,7 @@ sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 1rem center
   tagcloud:
-    enable: true
+    enable: false
     amount: 20
 
 toc:
