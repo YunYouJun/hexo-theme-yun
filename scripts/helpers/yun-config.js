@@ -57,6 +57,7 @@ hexo.extend.helper.register("yun_config", function() {
     };
   }
   return `<script id="yun-config">
+    const Yun = window.Yun || {};
     window.CONFIG = ${JSON.stringify(exportConfig)};
   </script>`;
 });

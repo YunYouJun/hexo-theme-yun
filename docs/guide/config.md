@@ -232,6 +232,7 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
+    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:

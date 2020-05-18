@@ -218,6 +218,7 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
+    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
@@ -248,6 +249,7 @@ css:
 
 # scripts loaded in the end of the body
 js:
+  - /js/utils.js
   - /js/hexo-theme-yun.js
 
 # custom your assets in head

@@ -33,6 +33,9 @@ function initPage() {
     goUp.classList.toggle("show", window.scrollY > 64);
     scrollPercent(window.scrollY);
   });
+
+  // wrap
+  Yun.utils.wrapTable();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
