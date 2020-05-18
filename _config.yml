@@ -283,6 +283,9 @@ vendors:
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
   minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+  gitalk:
+    css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
+    js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
   katex:
     js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
@@ -554,6 +557,7 @@ minivaline:
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   lang:
 
+# http://disqus.com/
 disqus:
   enable: false
   shortname: yunyoujun
@@ -565,6 +569,22 @@ disqusjs:
   shortname: yunyoujun
   count: false
   apikey:
+
+# https://livere.com/
+livere:
+  enable: false
+  uid:
+
+# https://gitalk.github.io/
+gitalk:
+  enable: false
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  admin:
+  id:
+  distractionFreeMode:
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi

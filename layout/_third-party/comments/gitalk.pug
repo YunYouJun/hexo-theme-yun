@@ -1,0 +1,12 @@
+#gitalk-container
+script.
+  const gitalk = new Gitalk({
+    clientID: '!{theme.gitalk.clientID}',
+    clientSecret: '!{theme.gitalk.clientSecret}',
+    repo: '!{theme.gitalk.repo}',
+    owner: '!{theme.gitalk.owner}',
+    admin: !{JSON.stringify(theme.gitalk.admin)},
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')

@@ -7,11 +7,15 @@
     if theme.github_issues.enable
       include github-issues.pug
 
-  if theme.valine && theme.valine.enable
-    include valine.pug
-  if theme.minivaline && theme.minivaline.enable
-    include minivaline.pug
   if theme.disqus && theme.disqus.enable
     include disqus.pug
   if theme.disqusjs && theme.disqusjs.enable
     include disqusjs.pug
+  if theme.gitalk && theme.gitalk.enable
+    include gitalk.pug
+  if theme.livere && theme.livere.enable
+    include livere.pug
+  if theme.minivaline && theme.minivaline.enable
+    include minivaline.pug
+  if theme.valine && theme.valine.enable
+    include valine.pug

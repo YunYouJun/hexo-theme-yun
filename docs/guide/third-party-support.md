@@ -7,36 +7,22 @@
 ## 评论
 
 - `enable`: 默认开启
-- `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话
+- `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
 
 ```yml
 comment:
   enable: true
   tips:
-    - 若您无 GitHub 账号，可直接在下方匿名评论。
     - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
 ```
 
-### GitHub Issue 与 Gitalk
+关于评论系统我简单进行过一些对比，希望能起到一些参考。
 
-最终我还是决定移除 [Gitalk](https://github.com/gitalk/gitalk)。
+> [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)
 
-首先肯定与感谢作者的开源精神与贡献，此前我一直开启 `Gitalk` 作为默认评论。（从弃坑的 Gitment 转来。）
-只是后来因为 GitHub API 的安全策略改变，每次进入文章都会调用 Gitalk 而收到了一大堆的安全警告邮件。
-于是我临时将其关闭，当然现在已经修复。但也因此觉得，Gitalk 对于我的小站点来说未必有开启的必要。（~~没什么人是一个要素~~）
+### GitHub Issue
 
-首先，Gitalk 提供的功能其实只要多个链接跳转到 GitHub Issue 页面即可，而且相对来说直接在 GitHub Issue 页面使用。拥有更好的显示和编辑体验。
-其次。我希望我的主题能够成为一个轻量迅速的主题，Gitalk 需要加载额外的 JS 与 CSS，一定程度会影响网页加载速度，并且本身也会有 API 请求数量限制。
-至于直接在文章末尾显示评论，我打算使用 Valine 进行补充，期望便捷的朋友，自身也可能更希望使用 Valine 无需登陆的评论。
-而想要收到回复提醒、及不介意使用自己 GitHub 账号参与讨论，自然也不会过于介意多跳转一个页面。
-
-- 因为 Gitalk 自身定位问题，本身就可能存在些许安全隐患，以及开发不是十分活跃，也堆积了不少 ISSUE。
-- Gitalk 通过 label 来搜索，Issues 里自动创建来一堆 label，本强迫症有点难受。
-- 当自己访问不存在的链接时，也会自动初始化一些无用的 Issue。
-- 用户需要先授权第三方 OAuth。
-
-综上，本主题移除 Gitalk 评论。
 并内置实现跳转相关 Issue 的链接按钮与如何使用 GitHub Issue 进行评论的说明。
 可自行配置开启或关闭。
 
@@ -53,8 +39,6 @@ github_issues:
 在项目 `Settings -> Options -> Features -> Issues -> Set up templates` 中为 GitHub Issues 设置 Comment 模版，第一个创建评论的人可以根据这个模版创建 Issue。
 
 也可以参考我的 [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md)。
-
-> 如果您实在觉得 Gitalk 有必要使用，可以在 Issue 里提出有力的理由来说服我或自行添加。
 
 ### [Disqus](https://disqus.com/)
 
@@ -89,6 +73,24 @@ disqusjs:
   apikey:
 ```
 
+### [Gitalk](https://github.com/gitalk/gitalk)
+
+Gitalk 是一个基于 GitHub Issue 的评论插件。（有安全隐患，慎重使用，详情见上方文章）
+
+> 不支持 PJAX：[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
+
+```yml
+gitalk:
+  enable: true
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  admin:
+  id:
+  distractionFreeMode:
+```
+
 ### Valine
 
 参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。
@@ -121,7 +123,6 @@ valine:
   pageSize: 10 # pagination size
   # lang: zh-CN
   # visitor: false
-  visitor_index: false
   # highlight: true
   # recordIP: false
   # serverURLs:
@@ -161,6 +162,21 @@ minivaline:
   # Available values: en  | zh-CN | (and many more)
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   lang:
+```
+
+### LiveRe 来必力
+
+[LiveRe 来必力](https://livere.com/)是一家来自韩国的评论系统，支持多种 SNS 账号连接（QQ、微信、GitHub、百度、微博、豆瓣、Twitter 等等）。
+好处是**不**需要科学上网。（不知为何，始终不温不火。）
+
+> 注意：我反复尝试后，发现其无法兼容 PJAX，虽然的确可以在不同文章里显示不同的评论，但不知为何，后台通知里的文章链接仍旧来自于同一篇文章。
+
+- `uid`: 安装代码中 `data-uid` 字段
+
+```yml
+livere:
+  enable: true
+  uid:
 ```
 
 <!-- ## 分享

@@ -1038,6 +1038,15 @@ creative_commons:
   language: deed.zh
 ```
 
+> 你的 `url` 请在 Hexo 工作目录下的 `_config.yml` 中设置。
+> [配置｜ Hexo](https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80)
+
+```yml
+# URL
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://www.yunyoujun.cn
+```
+
 ### 图片懒加载
 
 默认开启，将会为 Markdown 的图片 `img` 加上 `loading="lazy"` 属性。
