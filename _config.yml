@@ -265,8 +265,6 @@ cdn:
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
   # Todo:
-  # icon
-  # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
   # markdown
   # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
   # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/planet/planet-markdown.min.css
