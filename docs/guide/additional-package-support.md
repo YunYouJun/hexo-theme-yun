@@ -211,40 +211,40 @@ aplayer: true
 
 - `meting`: 是否开启 [meting](https://github.com/metowolf/MetingJS)，决定是否引入 meting 资源。（注意与 `widget` 下的 `meting` 相区分）
 - `widget`: 你可以将 `widget.enable` 设置为 `true` 来打开全局播放器。（`aplayer.global` 必须为 `true`）
-  - `meting`: 此处的 `meting` 控制是否打开全局播放器挂件的 meting。打开时，将加载 `option`；关闭时，将使用自定义的 `audio`。
+  - `meting.enable`: 此处的 `meting` 控制是否打开全局播放器挂件的 meting。打开时，将加载 `option`；关闭时，将使用自定义的 `audio`。
   - `audio`: 给出了加载自定义音乐的默认参考配置，更多请参见 [官方文档](https://aplayer.js.org/#/home)。
-  - `option`: 参考 [Option | MetingJS](https://github.com/metowolf/MetingJS/tree/v1.2#option)
+
+更多选项: 参考 [Option | Aplayer](https://aplayer.js.org/#/home?id=options)
 
 开启 [pjax](#pjax)，可以实现切换页面时，不中断音乐播放器。（为了正确加载音乐播放器，当切换到的文章页面也存在音乐播放器时，`Meting` 会重新加载。）
 
 ```yml
 aplayer:
-  global: true
+  global: false
   meting: true
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
   widget:
-    enable: true
-    meting: true
+    enable: false
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
         url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
         cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
-    option:
+    meting:
+      enable: true
       id: 308168565
       server: netease
       type: playlist
-      autoplay: false
-      # theme: "#2980b9"
-      loop: all
-      order: list
-      preload: auto
-      volume: 0.7
-      mutex: true
-      lrctype: 0
-      listfolded: false
-      listmaxheight: 340px
-      storagename: metingjs
 ```
 
 由于 `hexo-tag-aplayer` 太香了，我决定移除原先的媒体包裹脚本。实在有需要的同学，可以自行外挂添加。

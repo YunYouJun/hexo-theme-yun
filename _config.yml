@@ -654,27 +654,26 @@ aplayer:
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
   widget:
     enable: false
-    meting: true
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
         url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
         cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
-    option:
+    meting:
+      enable: true
       id: 308168565
       server: netease
       type: playlist
-      autoplay: false
-      # theme: "#2980b9"
-      loop: all
-      order: list
-      preload: auto
-      volume: 0.7
-      mutex: true
-      lrctype: 0
-      listfolded: false
-      listmaxheight: 340px
-      storagename: metingjs
 
 # special
 mourn:

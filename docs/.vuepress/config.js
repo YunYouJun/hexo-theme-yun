@@ -56,7 +56,7 @@ module.exports = {
         nav: [
           { text: "使用指南", link: "/guide/" },
           { text: "示例站点", link: "/demo.html" },
-          { text: "赞助名单", link: "/sponsor.html" },
+          { text: "赞助名单", link: "https://sponsors.yunyoujun.cn" },
         ],
         sidebar: {
           "/": [
@@ -76,7 +76,7 @@ module.exports = {
         nav: [
           { text: "Guide", link: "/guide/" },
           { text: "Demo", link: "/demo.html" },
-          { text: "Sponsor", link: "/sponsor.html" },
+          { text: "Sponsor", link: "https://sponsors.yunyoujun.cn" },
         ],
         sidebar: {
           "/en/": [
