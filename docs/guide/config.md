@@ -253,7 +253,7 @@ preconnect:
 
 本主题默认使用 [Remix Icon](https://remixicon.com/) 的部分图标，并通过 [iconfont](https://www.iconfont.cn/) 生成的 cdn 加载。
 
-> 默认支持的图标列表见 [默认图标](/icon.html)
+> 默认支持的图标列表见 [默认图标](/guide/icon.html)
 
 如您想要使用其他图标，可以采用以下几种图标和使用方式。
 
