@@ -164,7 +164,7 @@ head:
 
 ### 自动升级
 
-你想要完全自动更新，时刻保持最新主题，可以采用持续集成（如 GitHub Actions, [Travis](https://travis-ci.com/) 等）。
+你想要完全自动更新，时刻保持最新主题，可以采用持续集成（如 [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/) 等）。
 
 你可以参考我的 GitHub Action 配置文件 [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml)。(照抄配置，放在对应文件夹下即可，GitHub Actions 为 GitHub 自带的服务。)
 若你没有使用 `algolia_search`，请删除 `algolia` 相关部分。

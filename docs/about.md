@@ -82,6 +82,9 @@
 - [RemixIcon](https://github.com/Remix-Design/remixicon)
 - [iconfont](https://www.iconfont.cn/)
 - [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/)
+- [VuePress](https://github.com/vuejs/vuepress)
+- [KaTeX](https://github.com/KaTeX/KaTeX)
+- [Pjax](https://github.com/MoOx/pjax)
 
 ### Theme
 
