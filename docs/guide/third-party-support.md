@@ -9,7 +9,7 @@
 - `enable`: 默认开启
 - `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
 
-```yml
+```yaml
 comment:
   enable: true
   tips:
@@ -28,7 +28,7 @@ comment:
 
 - `filters`: 为 GitHub Issue 搜索规则，可参见 [searching-issues-and-pull-requests](https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)。
 
-```yml
+```yaml
 github_issues:
   enable: true
   username: YunYouJun
@@ -47,7 +47,7 @@ Disqus 可以说是全球最流行的第三方评论系统，但其在国内缺�
 - `shortname`: 修改为你的用户名
 - `count`: 是否开启评论数统计（将会显示在文章的评论数）
 
-```yml
+```yaml
 disqus:
   enable: true
   shortname: yunyoujun
@@ -65,7 +65,7 @@ disqus:
 
 - `apikey`: 必须，请参考 DisqusJS 文档 [配置 Disqus Application](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqus-application)
 
-```yml
+```yaml
 disqusjs:
   enable: false
   shortname: yunyoujun
@@ -79,7 +79,7 @@ Gitalk 是一个基于 GitHub Issue 的评论插件。（有安全隐患，慎�
 
 > 不支持 PJAX：[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
 
-```yml
+```yaml
 gitalk:
   enable: true
   clientID:
@@ -97,7 +97,7 @@ gitalk:
 
 即 Hexo 根目录下的 `_config.yml`。（注意与主题的 `_config.yml` 相区分）
 
-```yml
+```yaml
 language: zh-CN
 ```
 
@@ -109,7 +109,7 @@ language: zh-CN
 
 > [更多配置项](https://valine.js.org/configuration.html)
 
-```yml
+```yaml
 valine:
   enable: false
   appId: # your leancloud application appid
@@ -148,7 +148,7 @@ A simple and minimalist comment system based on Leancloud.
 - GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
 - Demo: <https://minivaline.github.io/>
 
-```yml
+```yaml
 minivaline:
   enable: false
   appId: # Your leancloud application appid
@@ -173,7 +173,7 @@ minivaline:
 
 - `uid`: 安装代码中 `data-uid` 字段
 
-```yml
+```yaml
 livere:
   enable: true
   uid:
@@ -185,7 +185,7 @@ livere:
 
 AddThis 提供多种社交分享挂件，请先前往 [AddThis](https://www.addthis.com/) 获取您的 ID。
 
-```yml
+```yaml
 add_this_id:
 ``` -->
 
@@ -203,7 +203,7 @@ add_this_id:
 - `href`: 搜索引擎前缀
 - `domain`: 你网站的域名
 
-```yml
+```yaml
 engine_search:
   enable: true
   href: "https://www.google.com/search?q=site:"
@@ -223,14 +223,14 @@ engine_search:
 ::: tip
 启用它之前，记得先关闭默认的引擎搜索。
 
-```yml
+```yaml
 engine_search:
   enable: false
 ```
 
 :::
 
-```yml
+```yaml
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
@@ -248,7 +248,7 @@ local_search:
 
 再开启它。
 
-```yml
+```yaml
 algolia_search:
   enable: true
   src: /js/search/algolia-search.js
@@ -264,7 +264,7 @@ algolia_search:
 
 - `enable`: 是否开启
 
-```yml
+```yaml
 google_analytics:
   enable: true
   id: UA-XXXXXXXXX-X
@@ -284,7 +284,7 @@ google_analytics:
 - `site_pv`: 是否显示站点页面访问量 Page View
 - `page_pv`: 是否显示文章页面访问量 Page View
 
-```yml
+```yaml
 busuanzi:
   enable: false
   site_uv: true
@@ -301,7 +301,7 @@ busuanzi:
 
 前往[Google Adsense](https://www.google.com/adsense) 获取您的 client id。
 
-```yml
+```yaml
 google_adsense:
   enable: false
   client: ca-pub-2245427233262012
@@ -335,7 +335,7 @@ google_adsense:
 
 示例：
 
-```yml
+```yaml
 skip_render:
   - README.md
   - googlexxxxxxxxxxxxxxx.html
@@ -353,8 +353,22 @@ skip_render:
 
 > 即每次页面被访问时，将自动向百度提交该页面链接。（有利于百度的 SEO）
 
-```yml
+```yaml
 baidu_push: true
 ```
 
 > 注意：当国外用户访问时，百度推送可能无法正常工作会导致 `http` 与 `https` 混合，从而致使 `https` 在浏览器中的小锁消失。
+
+## Tag Manager
+
+### [Google 跟踪代码管理器](https://tagmanager.google.com/)
+
+> Google 跟踪代码管理器是一个跟踪代码管理系统 (TMS)，可以帮助您快速轻松地更新网站或移动应用上的跟踪代码及相关代码段（统称为“代码”）。将一小段跟踪代码管理器代码添加到项目后，您可以通过网页界面安全轻松地部署 Google Analytics（分析）和衡量代码配置。
+
+如果你真的需要用到它，那么自然会明白它是干什么的。
+
+```yaml
+google_tagmanager:
+  enable: true
+  id: GTM-XXXXXXX
+```

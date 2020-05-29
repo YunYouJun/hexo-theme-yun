@@ -641,6 +641,11 @@ google_analytics:
   enable: false
   id: UA-XXXXXXXXX-X
 
+# Google Tagmanager
+google_tagmanager:
+  enable: false
+  id:
+
 # math fomula
 # https://katex.org/
 katex:

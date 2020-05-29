@@ -1,0 +1,14 @@
+//- dev
+if process.env.NODE_ENV !== 'dev'
+  //- google
+  if theme.google_analytics && theme.google_analytics.enable
+    include ./analytics/google-analytics.pug
+  if theme.google_adsense && theme.google_adsense.enable
+    include ./adsense/google-adsense.pug
+
+  //- baidu
+  if theme.baidu_push
+    include ./seo/baidu-push.pug
+
+if theme.google_tagmanager.enable
+  include ../_third-party/google-tagmanager.pug
