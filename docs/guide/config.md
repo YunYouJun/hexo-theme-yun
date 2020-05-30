@@ -652,10 +652,16 @@ fireworks:
 
 ### ScrollReveal
 
-首页文章卡片的滚动浮现效果，可见[官网](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js)，默认开启。
+首页卡片与文章内部图片的滚动浮现效果，可见[官网](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js)，默认开启。
+
+- `targets`: 为元素选择器对应的元素添加滚动浮现效果
 
 ```yaml
-scrollreveal: true
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - img
 ```
 
 ### Cursor 光标

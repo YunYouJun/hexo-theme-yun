@@ -63,9 +63,7 @@ function listennSidebarTOC() {
   }
 
   function createIntersectionObserver(marginTop) {
-    console.log(marginTop);
     marginTop = Math.floor(marginTop + 10000);
-    console.log(marginTop);
     let intersectionObserver = new IntersectionObserver(
       (entries, observe) => {
         let scrollHeight = document.documentElement.scrollHeight + 100;

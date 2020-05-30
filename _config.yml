@@ -367,7 +367,11 @@ cursor:
 smoothScroll: true
 
 # You can see effect in https://scrollrevealjs.org/
-scrollreveal: true
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - img
 
 bg_image:
   enable: true
