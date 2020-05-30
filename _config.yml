@@ -371,7 +371,7 @@ scrollreveal:
   enable: true
   targets:
     - .post-card
-    - img
+    - .post-content img
 
 bg_image:
   enable: true

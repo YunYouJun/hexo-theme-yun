@@ -661,7 +661,7 @@ scrollreveal:
   enable: true
   targets:
     - .post-card
-    - img
+    - .post-content img
 ```
 
 ### Cursor 光标

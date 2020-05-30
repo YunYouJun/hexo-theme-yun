@@ -34,19 +34,6 @@ function generateBanner(title) {
   lineBottom.style.animationName = "extend-line";
 }
 
-window.wheeling = false;
-window.addEventListener("wheel", function(e) {
-  if (window.banner) {
-    if (window.scrollY < banner.clientHeight && e.deltaY > 0 && !wheeling) {
-      wheeling = true;
-      window.scrollTo(0, banner.clientHeight);
-      setTimeout(function() {
-        wheeling = false;
-      }, 200);
-    }
-  }
-});
-
 function initBanner() {
   if (window.banner) {
     setTimeout(() => {
