@@ -23,7 +23,9 @@ function listennSidebarTOC() {
   const navItems = document.querySelectorAll(".post-toc li");
   const sections = [...navItems].map((element) => {
     const link = element.querySelector(".toc-link");
-    const target = document.querySelector(link.getAttribute("href"));
+    const target = document.getElementById(
+      decodeURI(link.getAttribute("href")).replace("#", "")
+    );
     link.addEventListener("click", (event) => {
       event.preventDefault();
       window.scrollTo(0, target.offsetTop + 1);
