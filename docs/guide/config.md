@@ -616,8 +616,8 @@ search:
 > [trianglify - GitHub](https://github.com/qrohlf/trianglify)
 
 - `enable`: 默认关闭
-- `cell_size`: 多边形网格尺寸
-- `palette`: 调色盘，请参考文档配置
+- `cellSize`: 多边形网格尺寸
+- `palette`: 调色盘，请参考文档配置（[更多色彩](https://github.com/qrohlf/trianglify/blob/master/src/utils/colorbrewer.js)）
 - `opacity`: 透明度
 
 > 因为背景采用拉伸，更大的 `width` 与 `height` 会获得更高的清晰度。（请与性能进行取舍）
@@ -625,7 +625,7 @@ search:
 ```yaml
 trianglify:
   enable: false
-  cell_size: 75
+  cellSize: 75
   width: 800
   height: 600
   palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'

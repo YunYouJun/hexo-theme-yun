@@ -297,7 +297,7 @@ vendors:
     css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
-  trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
+  trianglify: https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js
   lightgallery:
     css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
     js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
@@ -354,6 +354,7 @@ trianglify:
   cell_size: 75
   width: 800
   height: 600
+  # https://github.com/qrohlf/trianglify/blob/master/src/utils/colorbrewer.js
   palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
   opacity: 0.5
 
