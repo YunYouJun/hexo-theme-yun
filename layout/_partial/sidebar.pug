@@ -58,6 +58,8 @@ aside.sidebar
     if theme.social
       .links-of-author
         for social in theme.social
+          if social.color === 'black'
+            - social.color = 'var(--hty-text-color)'
           a.links-of-author-item.hty-icon-button(rel='noopener' href=social.link, title=social.name, target='_blank' style='color:' + social.color)
             +icon(social.icon)
 
@@ -67,6 +69,11 @@ aside.sidebar
         for link in theme.pages
           a.links-item.hty-icon-button(href=url_for(link.url), title=link.name, style='color:' + link.color)
             +icon(link.icon)
+
+    if theme.mode !== 'light'
+      br
+      a#toggle-mode-btn.links-item.hty-icon-button(href='javascript:;' title="Mode" style='color: #f1cb64')
+        +icon('icon-contrast-2-line')
 
   if is_post()
     #post-toc-wrap.sidebar-panel(class=toc_content.length > 1 ? 'sidebar-panel-active' : '')

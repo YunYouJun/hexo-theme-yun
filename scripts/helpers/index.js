@@ -23,3 +23,20 @@ hexo.extend.helper.register("page_title", function(page) {
     page.title = __("title.tag") + " - " + page.tag;
   }
 });
+
+hexo.extend.helper.register("getPropertyByType", function(type) {
+  const { theme } = this;
+  let typeColor = theme.types.link.color;
+  let typeIcon = theme.types.link.icon;
+  if (type in theme.types) {
+    typeColor = theme.types[type].color;
+    typeIcon = theme.types[type].icon;
+  }
+  if (typeColor === "black") {
+    typeColor = "var(--hty-text-color)";
+  }
+  return {
+    color: typeColor,
+    icon: typeIcon,
+  };
+});

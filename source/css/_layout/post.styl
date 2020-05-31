@@ -3,7 +3,7 @@
   &-block {
     margin: 0 1rem;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--post-block-bg-color);
 
     +mobile() {
       margin: 0;
@@ -30,7 +30,7 @@
 
 .post-meta {
   font-size: 14px;
-  color: $dark;
+  color: var(--hty-secondary-text-color);
 
   .icon {
     margin-bottom: -1px;
@@ -69,12 +69,12 @@
 
 .post-meta-item-icon {
   display: inline-block;
-  color: var(--text-color, #333);
+  color: var(--text-color, --hty-secondary-text-color);
 }
 
 .post-meta-divider {
   height: 25px;
-  color: $dark;
+  color: var(--hty-secondary-text-color);
   margin: 0 0.5rem;
 }
 
@@ -91,7 +91,7 @@
   margin: 2rem 0;
   padding: 0.5rem 1rem;
   border-left: 3px solid #f8722a;
-  background-color: $light;
+  background-color: var(--hty-bg-color);
   list-style: none;
 }
 

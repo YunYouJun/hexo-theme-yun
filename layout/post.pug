@@ -6,15 +6,11 @@ block content
     article.post-block(itemscope, itemtype='https://schema.org/Article')
       include _partial/post/post-schema.pug
       if post.type
-        - var typeColor = theme.types.link.color
-        - var typeIcon = theme.types.link.icon
-        if post.type in theme.types
-          - typeColor = theme.types[post.type].color
-          - typeIcon = theme.types[post.type].icon
+        - post_type = getPropertyByType(post.type)
       header.post-header
-        h1.post-title(itemprop='name headline', style=`color: ${typeColor}`)
+        h1.post-title(itemprop='name headline', style=post.type ? `color: ${post_type.color}` : '')
           if post.type
-            +icon(typeIcon)
+            +icon(post_type.icon)
           | #{post.title}
 
           if theme.post_edit.enable

@@ -63,3 +63,17 @@ if theme.head.js.defer
     script(src=url_for(item), defer)
 
 include ../_third-party/index.pug
+
+//- open graph
+//- to avoid conflict
+if page.photos
+  - var page_photos = page.photos
+  - page.photos = page_photos.map(photo=>{return photo.src})
+
+!=open_graph()
+
+if page.photos
+  - page.photos = page_photos
+
+if theme.mode !== 'light'
+  script(src='/js/ui/mode.js')

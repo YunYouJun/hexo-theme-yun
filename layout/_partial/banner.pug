@@ -1,7 +1,7 @@
 #banner
   .banner-line.vertical-line-top
   .banner-line.vertical-line-bottom
-  if theme.banner.cloud
+  if theme.banner.cloud.enable
     include ../_widget/cloud.pug
   if theme.banner.go_down.enable
     a#goDown(aria-label='go-down' href="javascript:window.scrollTo(0, banner.clientHeight);")

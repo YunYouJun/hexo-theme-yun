@@ -13,13 +13,9 @@ section#recent-posts.hty-layout-grid
                 if !post.type
                   a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
                 else
-                  - var typeColor = theme.types.link.color
-                  - var typeIcon = theme.types.link.icon
-                  if post.type in theme.types
-                    - typeColor = theme.types[post.type].color
-                    - typeIcon = theme.types[post.type].icon
-                  a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + typeColor)
-                    +icon(typeIcon)
+                  - post_type = getPropertyByType(post.type)
+                  a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + post_type.color)
+                    +icon(post_type.icon)
                     span=post.title
 
               include ../_partial/post/post-meta.pug
@@ -35,8 +31,9 @@ section#recent-posts.hty-layout-grid
               |  
               if post.categories && post.categories.length && theme.post_meta.categories
                 for category, index in post.categories.data
+                  - var categoryColor = "var(--hty-text-color)"
                   if category.name in theme.categories
-                    - var categoryColor = theme.categories[category.name]
+                    - categoryColor = theme.categories[category.name]
                   a.category(href=url_for(category.path), style= categoryColor ? `--text-color:${categoryColor}`:'')
                     span(itemprop='text')=category.name
                     - var categoryColor = null
@@ -47,8 +44,9 @@ section#recent-posts.hty-layout-grid
             .post-card-tag
               if post.tags && post.tags.length && theme.post_meta.tags
                 for tag in post.tags.data
+                  - var tagColor = "var(--hty-text-color)"
                   if tag.name in theme.tags
-                    - var tagColor = theme.tags[tag.name]
+                    - tagColor = theme.tags[tag.name]
                   a.tag(href=url_for(tag.path, rel='tag'), style= tagColor ? `--text-color:${tagColor}`:'')
                     - tagColor = null
                     span.post-meta-item-icon

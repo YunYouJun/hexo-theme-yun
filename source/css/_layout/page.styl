@@ -1,6 +1,6 @@
 #page, #archive, #tag, #category {
   margin: 0 1rem 1rem 1rem;
-  background-color: white;
+  background-color: var(--post-block-bg-color);
   padding: 1rem 0.5rem;
 
   +mobile() {
@@ -12,7 +12,7 @@
 .page {
   &-subtitle {
     text-align: center;
-    color: $gray;
+    color: var(--hty-secondary-text-color);
     font-size: 1rem;
     margin: 0.5rem;
   }
@@ -28,10 +28,6 @@
     display: inline-block;
     margin: 0 0.4rem;
     text-decoration: none;
-
-    &:hover {
-      color: $black !important;
-    }
   }
 }
 
@@ -43,6 +39,7 @@
 
     &-item {
       list-style: none;
+      color: var(--hty-text-color);
 
       &:hover {
         &::before {
@@ -64,7 +61,7 @@
     }
 
     &-link {
-      color: $dark;
+      color: var(--hty-text-color);
       border-bottom: 1px dotted $gray;
     }
 

@@ -17,19 +17,14 @@ mixin post_collapse(posts)
               if !post.type
                 a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
               else
-                - var typeColor = theme.types.link.color
-                - var typeIcon = theme.types.link.icon
-                if post.type in theme.types
-                  - typeColor = theme.types[post.type].color
-                  - typeIcon = theme.types[post.type].icon
-
+                - var post_type = getPropertyByType(post.type)
                 if post.excerpt
-                  a.post-title-link(itemprop='url', href=url_for(post.path), style= "color:" + typeColor)
-                    +icon(typeIcon)
+                  a.post-title-link(itemprop='url', href=url_for(post.path), style= "color:" + post_type.color)
+                    +icon(post_type.icon)
                     span=post.title
                 else
-                  a.post-title-link(itemprop='url', href=url_for(post.url), target='_blank' rel='noopener', style= "color:" + typeColor)
-                    +icon(typeIcon)
+                  a.post-title-link(itemprop='url', href=url_for(post.url), target='_blank' rel='noopener', style= "color:" + post_type.color)
+                    +icon(post_type.icon)
                     span=post.title
 
   if page.current == page.total

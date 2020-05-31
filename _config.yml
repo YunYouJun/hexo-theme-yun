@@ -11,6 +11,8 @@ colors:
   selection_bg: "#8e71c1"
   tag_start_color: "#999999"
   tag_end_color: "#0078E7"
+  # dark:
+  #   primary: "#92b4f2"
 
 # Favicon
 # ---------------
@@ -51,11 +53,7 @@ social:
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: "#181717"
-  - name: E-Mail
-    link: mailto:me@yunyoujun.cn
-    icon: icon-mail-line
-    color: "#8E71C1"
+    color: "#6e5494"
   - name: 微博
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
@@ -97,6 +95,10 @@ social:
     # icon: icon-telegram-fill
     icon: icon-telegram-line
     color: "#0088CC"
+  - name: E-Mail
+    link: mailto:me@yunyoujun.cn
+    icon: icon-mail-line
+    color: "#8E71C1"
   - name: Travelling
     link: https://travellings.now.sh/
     icon: icon-send-plane-2-line
@@ -156,7 +158,7 @@ archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
 
 wordcloud:
-  enable: true
+  enable: false
   height: 350
 
 # You can set color for every tag or category.
@@ -221,8 +223,6 @@ preload:
     - /js/hexo-theme-yun.js
 
 prefetch:
-  # style:
-  #   - /css/prism.css
   script:
     - /js/sidebar.js
 
@@ -272,7 +272,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_4i778vmn3jg.js
+      iconfont: //at.alicdn.com/t/font_1140697_pem9yni52s.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -376,6 +376,7 @@ scrollreveal:
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
+  # dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/strange-storm-center.jpg
   # blur: 30px
   opacity: 0.8
 
@@ -612,6 +613,7 @@ symbols_count_time:
 # search
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: https://i.loli.net/2020/05/31/OxlvJGLbPD85hua.jpg
   # placeholder: 想要搜些什么？
 
 engine_search:

@@ -236,8 +236,6 @@ preload:
     - /js/hexo-theme-yun.js
 
 prefetch:
-  style:
-    - /css/prism.css
   script:
     - /js/sidebar.js
 
@@ -528,6 +526,16 @@ notice:
 
 ## UI
 
+### 亮暗模式
+
+v0.8.1 新增，测试中...
+
+开启后，将根据系统亮暗模式自动切换，侧边栏将显示亮暗切换按钮，可自由切换。
+
+```yaml
+mode: auto
+```
+
 ### 字体
 
 你可以设置你的自定义字体，并调节为你喜欢的字重。
@@ -556,8 +564,6 @@ head:
 - 等宽字体（monospace）：字符均具有相同宽度，通常用于需要相同宽度以对齐之处（如日期、序号）。
 
 将 `font.cdn.enable` 设置为 `false` 以全部使用系统默认字体，达到最佳访问速度。（默认开启时，使用 `media="none" onload="this.media='all'"` 实现 css 样式的异步加载。）
-
-> 代码处的等宽字体始终使用 prism.css 设置的字体 `Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace`。
 
 ```yaml
 font:

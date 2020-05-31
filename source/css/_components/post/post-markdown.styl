@@ -64,8 +64,8 @@
   code {
     overflow-wrap: break-word;
     padding: 3px 6px;
-    color: $dark;
-    background: #eee;
+    color: var(--hty-secondary-text-color);
+    background: var(--hty-bg-color, #eee);
     border-radius: 3px;
   }
 
@@ -81,8 +81,8 @@
   blockquote {
     margin: 1rem 0;
     padding: 0 1rem;
-    color: $dark;
-    border-left: 0.25rem solid $gray;
+    color: var(--hty-secondary-text-color, #333);
+    border-left: 0.25rem solid var(--hty-secondary-text-color, #999);
   }
 
   hr {
@@ -115,7 +115,7 @@
   img + em {
     display: block;
     text-align: center;
-    color: #666;
+    color: var(--hty-secondary-text-color, #333);
     font-size: 0.9rem;
   }
 

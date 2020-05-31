@@ -357,7 +357,7 @@ hexo new page --path albums/sunset "夕阳"
 > 注意：这里是 `layout` 而不是 `type`。
 
 ::: tip
-你还可以设置 `gallery_password` 来对相册进行加密。（记得将你的仓库设置为私有。）
+你还可以设置 `gallery_password` 来对相册进行加密（不支持 PJAX）。（记得将你的仓库设置为私有。）
 
 没有直接命名为 `password` 以防止与 [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt) 插件关键字 `password` 冲突。
 

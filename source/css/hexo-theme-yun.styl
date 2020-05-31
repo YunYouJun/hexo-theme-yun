@@ -12,6 +12,39 @@
 // widget
 @import '_widget';
 
+// dark
+if (hexo-config('mode') == 'dark') {
+  @import '_global/dark';
+} else if (hexo-config('mode') == 'auto') {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-mode: 'dark';
+    }
+
+    :root:not([data-user-color-scheme]) {
+      --hty-bg-color: #303030;
+      --hty-text-color: #f2f2f2;
+      --hty-secondary-text-color: #EEE;
+      --banner-line-color: white;
+      --banner-char-color: white;
+      --post-block-bg-color: #17202A;
+
+      @import '_global/dark';
+    }
+  }
+
+  [data-user-color-scheme='dark'] {
+    --hty-bg-color: #303030;
+    --hty-text-color: #f2f2f2;
+    --hty-secondary-text-color: #EEE;
+    --banner-line-color: white;
+    --banner-char-color: white;
+    --post-block-bg-color: #17202A;
+
+    @import '_global/dark';
+  }
+}
+
 // extend page
 if (hexo-config('albums.enable')) {
   @import '_extend/albums';

@@ -13,14 +13,13 @@ html(lang=config.language)
     meta(name="copyright" content=copyright)
     !=meta_generator()
     meta(name='theme' content="hexo-theme-yun")
-    !=open_graph()
     - page_title(page)
     if page.title
       title=page.title + ' | ' + title
     else
       title=title
-    include head.pug
     include ../_third-party/cdn.pug
+    include head.pug
     block preconnect
   body(class= is_home() ? 'is-home' : '')
     //- background

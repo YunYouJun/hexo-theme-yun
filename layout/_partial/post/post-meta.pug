@@ -78,9 +78,10 @@
           |  
           for category, index in post.categories.data
             span(itemprop='about', itemscope, itemtype='https://schema.org/Thing')
+              - var categoryColor = "var(--hty-text-color)"
               if category.name in theme.categories
-                - var categoryColor = theme.categories[category.name]
-              a.category(href=url_for(category.path), style= categoryColor ? `--text-color:${categoryColor}`:'' itemprop='url' rel='index')
+                - categoryColor = theme.categories[category.name]
+              a.category(href=url_for(category.path), style=`--text-color:${categoryColor}` itemprop='url' rel='index')
                 span(itemprop='text')=category.name
                 - var categoryColor = null
 
@@ -93,9 +94,10 @@
           if post.categories && post.categories.length && theme.post_meta.categories
             span.post-meta-divider='-'
           for tag in post.tags.data
+            - var tagColor = "var(--hty-text-color)"
             if tag.name in theme.tags
-              - var tagColor = theme.tags[tag.name]
-            a.tag(href=url_for(tag.path, rel='tag'), style= tagColor ? `--text-color:${tagColor}`:'')
+              - tagColor = theme.tags[tag.name]
+            a.tag(href=url_for(tag.path, rel='tag'), style=`--text-color:${tagColor}`)
               - tagColor = null
               span.post-meta-item-icon
                 +icon('icon-price-tag-3-line')

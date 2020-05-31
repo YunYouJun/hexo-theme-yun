@@ -8,7 +8,7 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   bottom: 0;
   left: 0;
   width: 20rem;
-  background: white;
+  background-color: rgba(white, 0.9);
   background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
@@ -19,6 +19,7 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   the-box-shadow();
 
   +mobile() {
+    background-color: white;
     left: -20rem;
     transform: translateX(0);
   }

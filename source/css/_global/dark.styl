@@ -1,0 +1,92 @@
+$dark-primary-color = #17202A;
+$bg-image-url = hexo-config('bg_image.dark');
+
+body {
+  color: var(--hty-text-color);
+
+  &::before {
+    background-image: url($bg-image-url);
+  }
+}
+
+a {
+  color: lighten($colors.primary, 30%);
+
+  &:hover {
+    color: $colors.primary;
+  }
+}
+
+// banner
+$banner-char-bg-color = black;
+
+.char {
+  background-color: rgba($banner-char-bg-color, 0.5);
+
+  &:hover {
+    color: $banner-char-bg-color;
+  }
+}
+
+// sidebar
+$sidebar-bg-image = hexo-config('sidebar.dark_bg_image');
+$background-image = url($sidebar-bg-image);
+
+.sidebar {
+  background-color: rgba(23, 32, 42, 0.95);
+  background-image: $background-image;
+}
+
+// search
+$search-bg-image = hexo-config('search.dark_bg_image');
+
+.search-popup {
+  background-image: url($search-bg-image);
+}
+
+// post-card
+$post-card-bg-color = #17202A;
+
+.post-card {
+  color: white;
+  background-color: rgba($post-card-bg-color, $bg-opacity);
+  box-shadow: 0 1px 8px rgba($post-card-bg-color, 0.1);
+}
+
+.post-block {
+  color: var(--hty-text-color);
+  background-color: rgba($post-card-bg-color, 0.95);
+}
+
+// pagination
+.page-number-basic {
+  background-color: alpha(black, 0.5);
+}
+
+.pagination {
+  .prev, .next, .page-number, .space {
+    background-color: alpha(black, 0.5);
+
+    &:hover {
+      background: $colors.primary;
+    }
+
+    &:active {
+      background: $colors.primary;
+    }
+
+    &.current {
+      background: rgba(lighten($colors.primary, 50%), 0.9);
+      cursor: default;
+    }
+  }
+}
+
+#footer {
+  color: #eee;
+}
+
+// aplayer
+.aplayer {
+  color: black;
+}

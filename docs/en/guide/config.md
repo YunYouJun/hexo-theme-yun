@@ -226,8 +226,6 @@ preload:
     - /js/hexo-theme-yun.js
 
 prefetch:
-  style:
-    - /css/prism.css
   script:
     - /js/sidebar.js
 

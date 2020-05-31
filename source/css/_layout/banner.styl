@@ -2,15 +2,12 @@ $char-size-1 = 1.5rem;
 $banner-animation-duration = 1s;
 $line-animation-duration = 0.4s;
 $char-animation-duration = 0.4s;
+// light
+$banner-char-bg-color = white;
 
-if (hexo-config('mode') == 'light') {
-  $banner-line-color = $black;
-  $banner-char-color = $banner-line-color;
-  $banner-char-bg-color = $white;
-} else {
-  $banner-line-color = $white;
-  $banner-char-color = $banner-line-color;
-  $banner-char-bg-color = $black;
+:root {
+  --banner-line-color: black;
+  --banner-char-color: black;
 }
 
 #banner {
@@ -24,7 +21,7 @@ if (hexo-config('mode') == 'light') {
 .vertical-line {
   &-top, &-bottom {
     display: flex;
-    background-color: $banner-line-color;
+    background-color: var(--banner-line-color);
     width: $border-width;
     height: 0;
     // animation-name: extend-line;
@@ -59,17 +56,17 @@ if (hexo-config('mode') == 'light') {
 
   &:hover {
     color: $banner-char-bg-color;
-    background-color: rgba($banner-char-color, 0.9);
+    background-color: var(--banner-char-color);
   }
 
   &-left, &-right {
     display: flex;
-    color: $banner-char-color;
+    color: var(--banner-char-color);
     opacity: 0;
   }
 
   &-left {
-    border-left: $border-width solid $banner-line-color;
+    border-left: $border-width solid var(--banner-line-color);
     border-right: 0px solid rgba($colors.primary, 0.1);
     border-right-width: 0px;
     // animation-name: char-move-left;
@@ -81,7 +78,7 @@ if (hexo-config('mode') == 'light') {
 
   &-right {
     border-left: 0px solid rgba($colors.primary, 0.1);
-    border-right: $border-width solid $banner-line-color;
+    border-right: $border-width solid var(--banner-line-color);
     border-left-width: 0px;
     // animation-name: char-move-right;
     animation-duration: $char-animation-duration;
@@ -125,6 +122,7 @@ if (hexo-config('banner.cloud')) {
     right: 0;
     z-index: $cloud-z-index;
     box-sizing: border-box;
+    mix-blend-mode: overlay;
 
     .waves {
       display: flex;
