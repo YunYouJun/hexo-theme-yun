@@ -1,31 +1,14 @@
-#valine-container.comment-container
-script(src=theme.vendors.valine_js)
-//- not use valine_config() for window.location.pathname
-- var valine_meta = Array.isArray(theme.valine.meta) ? theme.valine.meta : ["nick", "mail", "link"]
-- var valine_lang = theme.valine.lang || config.language || "zh-cn"
-- var valine_requireFields = JSON.stringify(theme.valine.requiredFields) || '[]'
-script.
-  function initValine() {
-    setTimeout(() => {
-      new Valine({
-        el: "#valine-container",
-        appId: '!{theme.valine.appId}',
-        appKey: '!{theme.valine.appKey}',
-        placeholder: '!{theme.valine.placeholder}',
-        path: window.location.pathname,
-        avatar: '!{theme.valine.avatar}',
-        meta: !{JSON.stringify(valine_meta)},
-        pageSize: !{theme.valine.pageSize},
-        lang: '!{valine_lang.toLowerCase()}',
-        visitor: !{theme.valine.visitor},
-        highlight: !{theme.valine.highlight},
-        recordIP: !{theme.valine.recordIP},
-        serverURLs: '!{theme.valine.serverURLs}',
-        emojiCDN: '!{theme.valine.emojiCDN}',
-        emojiMaps: !{JSON.stringify(theme.valine.emojiMaps) || 'null'},
-        enableQQ: !{theme.valine.enableQQ},
-        requiredFields: !{valine_requireFields},
-      });
-    }, 1000);
-  }
-  initValine();
+.js-Pjax
+  #valine-container
+  script(src=theme.vendors.valine_js)
+  //- not use valine_config() for window.location.pathname
+  - var valine_meta = Array.isArray(theme.valine.meta) ? theme.valine.meta : ["nick", "mail", "link"]
+  - theme.valine.el = "#valine-container"
+  - theme.valine.lang = (theme.valine.lang || config.language || "zh-cn").toLowerCase()
+  script.
+    function initValine() {
+      const valineConfig = !{JSON.stringify(theme.valine)}
+      valineConfig.path = window.location.pathname
+      new Valine(valineConfig)
+    }
+    setTimeout(initValine, 1000)

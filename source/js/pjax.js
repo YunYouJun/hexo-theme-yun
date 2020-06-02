@@ -1,5 +1,5 @@
 const pjax = new Pjax({
-  selectors: ["title", ".js-Pjax", "main", "aside", "#yun-config"],
+  selectors: ["title", ".js-Pjax", "main", "aside"],
 });
 
 // for sidebar

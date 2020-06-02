@@ -1,4 +1,5 @@
-$dark-primary-color = #17202A;
+$dark-primary-color = convert(hexo-config('colors.dark.block'));
+// $dark-primary-color = #0b0f1e;
 $bg-image-url = hexo-config('bg_image.dark');
 
 body {
@@ -33,7 +34,7 @@ $sidebar-bg-image = hexo-config('sidebar.dark_bg_image');
 $background-image = url($sidebar-bg-image);
 
 .sidebar {
-  background-color: rgba(23, 32, 42, 0.95);
+  background-color: rgba($dark-primary-color, 0.95);
   background-image: $background-image;
 }
 
@@ -45,7 +46,7 @@ $search-bg-image = hexo-config('search.dark_bg_image');
 }
 
 // post-card
-$post-card-bg-color = #17202A;
+$post-card-bg-color = $dark-primary-color;
 
 .post-card {
   color: white;

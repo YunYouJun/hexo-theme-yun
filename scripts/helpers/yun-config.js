@@ -62,20 +62,7 @@ hexo.extend.helper.register("yun_config", function() {
   </script>`;
 });
 
-hexo.extend.helper.register("minivaline_config", function() {
-  const minivalineConfig = {
-    el: "#minivaline-container",
-    appId: theme.minivaline.appId,
-    appKey: theme.minivaline.appKey,
-    placeholder: theme.minivaline.placeholder,
-    lang: theme.minivaline.lang,
-    adminEmailMd5: theme.minivaline.adminEmailMd5,
-    math: theme.minivaline.math,
-    md: theme.minivaline.md,
-  };
-  return JSON.stringify(minivalineConfig);
-});
-
+// wordcloud
 hexo.extend.helper.register("wordcloud_config", function(color) {
   let { config, theme } = this;
   const wordcloud_config = {};
