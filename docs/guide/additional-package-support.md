@@ -354,15 +354,7 @@ $$ E = mc^2 $$
 
 使用 [pjax](https://github.com/MoOx/pjax) 实现。
 
-> 正处在开发……
-
 ```yml
 pjax:
   enable: true
 ```
-
-- [ ] pjax 适配
-  - [x] Valine
-  - [x] TOC
-  - [x] aplayer
-  - [ ] gallery

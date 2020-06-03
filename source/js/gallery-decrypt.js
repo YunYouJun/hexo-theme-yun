@@ -24,20 +24,24 @@ function decryptAll() {
         img.title = desc;
         photo.querySelector("figcaption").innerText = caption;
       });
+    } else {
+      alert("Decrypt Error!");
+      window.location.reload();
     }
   }
 }
 
 function initGalleryDecrypt() {
-  decryptButton.onclick = decryptAll;
-  document
-    .getElementById("decrypt-password")
-    .addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        decryptAll();
-      }
-    });
+  if (decryptButton) {
+    decryptButton.onclick = decryptAll;
+    document
+      .getElementById("decrypt-password")
+      .addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          decryptAll();
+        }
+      });
+  }
 }
 
-window.addEventListener("DOMContentLoaded", initGalleryDecrypt);
-window.addEventListener("pjax:complete", initGalleryDecrypt);
+document.addEventListener("DOMContentLoaded", initGalleryDecrypt);
