@@ -141,6 +141,15 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
   </tr>
+  <tr align="center">
+    <td>
+      <a href="https://qingxu.ga" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.jpg"/>
+        <br />
+        <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
+      </a>
+    </td>
+  </tr>
 </table>
 
 ## Install

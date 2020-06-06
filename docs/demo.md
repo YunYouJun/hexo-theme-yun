@@ -125,4 +125,13 @@ If you have already used this theme, you are welcome to leave your site at [Demo
       </a>
     </td>
   </tr>
+  <tr align="center">
+    <td>
+      <a href="https://qingxu.ga" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.jpg"/>
+        <br />
+        <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
+      </a>
+    </td>
+  </tr>
 </table>
