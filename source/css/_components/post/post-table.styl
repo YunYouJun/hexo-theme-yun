@@ -8,8 +8,6 @@ $table-th-font-weight = 700;
 $table-cell-padding = 8px;
 $table-cell-border-right-color = $gray;
 $table-cell-border-bottom-color = $light-gray;
-$table-row-odd-bg-color = #fafafa;
-$table-row-hover-bg-color = #f5f5f5;
 
 .table-container {
   overflow: auto;
@@ -25,11 +23,12 @@ table {
 
 table > tbody > tr {
   &:nth-of-type(odd) {
-    background-color: $table-row-odd-bg-color;
+    background-color: var(--hty-bg-color);
   }
 
   &:hover {
-    background-color: $table-row-hover-bg-color;
+    border-color: black;
+    background-color: var(--hty-bg-color);
   }
 }
 

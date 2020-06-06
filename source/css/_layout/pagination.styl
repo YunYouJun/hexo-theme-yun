@@ -16,7 +16,7 @@
 
   .prev, .next, .page-number, .space {
     @extend .page-number-basic;
-    color: var(--hty-text-color);
+    color: var(--hty-text-color) !important;
     text-decoration: none;
 
     &:hover {
@@ -32,8 +32,8 @@
 
     &.current {
       font-weight: normal;
-      background: rgba($colors.primary, 0.9);
-      color: var(--hty-bg-color);
+      background: rgba(lighten($colors.primary, 20%), 0.9);
+      color: var(--hty-bg-color) !important;
       cursor: default;
     }
   }

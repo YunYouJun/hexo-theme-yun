@@ -13,8 +13,8 @@ colors:
   tag_start_color: "#999999"
   tag_end_color: "#0078E7"
   dark:
-    block: "#17202A"
-    # block: "#0b0f1e"
+    block: "#1b1f2e"
+    # block: "#17202A"
 
 # Favicon
 # ---------------
@@ -621,7 +621,7 @@ symbols_count_time:
 
 # search
 search:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
   dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
   # placeholder: 想要搜些什么？
 
