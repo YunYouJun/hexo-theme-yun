@@ -21,13 +21,13 @@
 
     &:hover {
       font-weight: normal;
-      color: var(--hty-bg-color);
+      color: var(--hty-bg-color) !important;
       background: rgba($colors.primary, 0.7);
     }
 
     &:active {
+      color: var(--hty-bg-color) !important;
       background: rgba(lighten($colors.primary, 20%), 0.9);
-      color: var(--hty-bg-color);
     }
 
     &.current {
