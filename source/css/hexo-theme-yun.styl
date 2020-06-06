@@ -42,3 +42,8 @@ if (hexo-config('albums.enable')) {
 if (hexo-config('girls.enable')) {
   @import '_extend/girls';
 }
+
+// custom style
+if (hexo-config('custom.style')) {
+  @import '../../../' + hexo-config('custom.style');
+}

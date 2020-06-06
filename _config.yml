@@ -380,7 +380,7 @@ bg_image:
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
   dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
   # blur: 30px
-  opacity: 0.8
+  opacity: 1
 
 # Reward (Donate)
 reward_settings:
@@ -706,3 +706,8 @@ mourn:
 # SEO
 # https://ziyuan.baidu.com/linksubmit/index
 baidu_push: false
+
+# custom (You can use variables.)
+custom:
+  style: # source/_data/style/*
+
