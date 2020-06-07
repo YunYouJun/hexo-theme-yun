@@ -552,43 +552,43 @@ valine:
 # More info available at https://github.com/MiniValine/MiniValine
 minivaline:
   enable: false
-  appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
-  appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
+  appId:  # Your leancloud application appId
+  appKey:  # Your leancloud application appKey
   mode: DesertsP # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
-  math: true # Support MathJax.
-  md: true # Support Markdown.
-  enableQQ: false # Enable QQ avatar API.
-  NoRecordIP: false # Do not record commenter IP.
-  visitor: true # Article reading statistics.
-  maxNest: 6 # Sub-comment maximum nesting depth.
-  pageSize: 6 # Pagination size.
-  adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
-  tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
-    - 管理员
-    - 小伙伴
-    - 访客
-  master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
-    - de8a7aa53d07e6b6bceb45c64027763d
-  friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
-    - b5bd5d836c7a0091aa8473e79ed4c25e
-    - adb7d1cd192658a55c0ad22a3309cecf
-    - 3ce1e6c77b4910f1871106cb30dc62b0
-    - cfce8dc43725cc14ffcd9fb4892d5bfc
+  #math: true # Support MathJax.
+  #md: true # Support Markdown.
+  #enableQQ: false # Enable QQ avatar API.
+  #NoRecordIP: false # Do not record commenter IP.
+  #visitor: true # Article reading statistics.
+  #maxNest: 6 # Sub-comment maximum nesting depth.
+  #pageSize: 6 # Pagination size.
+  #adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode] 示例： Admin 邮箱的小写 MD5
+  #tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
+  #  - 管理员 # 示例: master tag
+  #  - 小伙伴 # 示例: friends tag
+  #  - 访客   # 示例: 访客 tag
+  #master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
+  #  - de8a7aa53d07e6b6bceb45c64027763d # 示例： master 邮箱的小写 MD5
+  #friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
+  #  - b5bd5d836c7a0091aa8473e79ed4c25e # 示例： friend1 邮箱的小写 MD5
+  #  - adb7d1cd192658a55c0ad22a3309cecf # 示例： friend2 邮箱的小写 MD5
+  #  - 3ce1e6c77b4910f1871106cb30dc62b0 # 示例： friend3 邮箱的小写 MD5
+  #  - cfce8dc43725cc14ffcd9fb4892d5bfc # 示例： friend4 邮箱的小写 MD5
   # MiniValine's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en  | zh-CN | (and many more)
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
+  #lang:
   # Expression Url.
   # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
-  emoticonUrl:
-    - https://cdn.jsdelivr.net/npm/alus@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+  #emoticonUrl:
+  #  - https://cdn.jsdelivr.net/npm/alus@latest
+  #  - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+  #  - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+  #  - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+  #  - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+  #  - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
 
 # http://disqus.com/
 disqus:
