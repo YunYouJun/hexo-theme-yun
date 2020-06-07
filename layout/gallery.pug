@@ -18,8 +18,8 @@ block content
                 img.photo-list-cover(src=photo.src, loading="lazy", alt=photo.caption)
                 figcaption=photo.caption
         else
-          script(defer, src=theme.vendors.crypto_js.all)
-          script(defer, src=url_for(theme.albums.src))
+          script(src=theme.vendors.crypto_js.all)
+          script(src=url_for(theme.albums.src))
           #decryptContainer
             input#decrypt-password(type="password")
             button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
@@ -32,6 +32,10 @@ block content
               figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
                 img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
                 figcaption=photo.caption
+
+          if theme.pjax.enable
+            script.
+              setTimeout(()=>{initGalleryDecrypt()}, 1000)
 
     section.post-body(itemprop='articleBody')
       .post-content(class='post-markdown')!= page.content

@@ -1260,7 +1260,7 @@ say:
 
 > [say.elpsy.cn](https://say.elpsy.cn) 是我自己收藏中二语句的地方。= =，自动导出 JSON 用来拉取。
 
-### 自定义
+### 自定义语句
 
 你也可以使用自定义的话语。
 
@@ -1321,6 +1321,19 @@ mourn:
   enable: true
   days:
     - "4-4"
+```
+
+## 自定义样式
+
+相比 `head` 引入，你可以在此处编写 `stylus` 文件，并使用主题已有的变量，且将编译进 `hexo-theme-yun.css` 中。
+
+> 新建 `source/_data/style` 文件夹，并在新建 `xxx.styl`，开始编写你的自定义样式。
+
+譬如通过以下方式将导入你的 `source/_data/style` 下所有的 `.styl` 文件。
+
+```yaml
+custom:
+  style: source/_data/style/*
 ```
 
 ## 更多配置

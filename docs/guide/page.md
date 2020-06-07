@@ -357,7 +357,7 @@ hexo new page --path albums/sunset "夕阳"
 > 注意：这里是 `layout` 而不是 `type`。
 
 ::: tip
-你还可以设置 `gallery_password` 来对相册进行加密（不支持 PJAX）。（记得将你的仓库设置为私有。）
+你还可以设置 `gallery_password` 来对相册进行加密。（记得将你的仓库设置为私有。）
 
 没有直接命名为 `password` 以防止与 [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt) 插件关键字 `password` 冲突。
 
@@ -365,6 +365,8 @@ hexo new page --path albums/sunset "夕阳"
 
 测试页面：<https://www.yunyoujun.cn/albums/sunset.html>
 测试密码：test
+
+> 如果你发现在 `hexo s` 并开启了 PJAX 时，无法正常解密相册，不用担心，这是 Hexo 作为服务器时，对链接又重新加密了一遍，生成静态文件部署时是没有问题的。
 
 :::
 

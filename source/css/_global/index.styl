@@ -1,11 +1,13 @@
 @import 'reset.styl';
 
+$bg-color = convert(hexo-config('colors.bg'));
+
 :root {
   --hty-mode: 'light';
-  --hty-bg-color: #eee;
+  --hty-primary-color: $colors.primary;
+  --hty-bg-color: $bg-color;
   --hty-text-color: black;
   --hty-secondary-text-color: #303133;
-  --hty-primary: $colors.primary;
   --post-block-bg-color: white;
 }
 
@@ -15,20 +17,13 @@ html {
   }
 }
 
-$bg-color = convert(hexo-config('colors.bg'));
 $bg-image-url = hexo-config('bg_image.url');
 $bg-blur = convert(hexo-config('bg_image.blur'));
 $bg-opacity = hexo-config('bg_image.opacity');
 
 body {
   overflow-y: scroll;
-
-  // force bg
-  if ($bg-color) {
-    background-color: $bg-color;
-  } else {
-    background-color: var(--hty-bg-color, #f5f5f5);
-  }
+  background-color: var(--hty-bg-color, #f5f5f5);
 
   if (hexo-config('bg_image.enable')) {
     &::before {

@@ -12,7 +12,6 @@
 // widget
 @import '_widget';
 
-// dark
 if (hexo-config('mode') == 'dark') {
   @import '_global/dark';
 } else if (hexo-config('mode') == 'auto') {
@@ -22,24 +21,14 @@ if (hexo-config('mode') == 'dark') {
     }
 
     :root:not([data-user-color-scheme]) {
-      --hty-bg-color: #303030;
-      --hty-text-color: #f2f2f2;
-      --hty-secondary-text-color: #EEE;
-      --banner-line-color: white;
-      --banner-char-color: white;
-      --post-block-bg-color: #17202A;
+      dark();
 
       @import '_global/dark';
     }
   }
 
   [data-user-color-scheme='dark'] {
-    --hty-bg-color: #303030;
-    --hty-text-color: #f2f2f2;
-    --hty-secondary-text-color: #EEE;
-    --banner-line-color: white;
-    --banner-char-color: white;
-    --post-block-bg-color: #17202A;
+    dark();
 
     @import '_global/dark';
   }
@@ -52,4 +41,9 @@ if (hexo-config('albums.enable')) {
 
 if (hexo-config('girls.enable')) {
   @import '_extend/girls';
+}
+
+// custom style
+if (hexo-config('custom.style')) {
+  @import '../../../' + hexo-config('custom.style');
 }

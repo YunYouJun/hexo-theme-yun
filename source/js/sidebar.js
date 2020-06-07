@@ -21,6 +21,7 @@ function toggleSidebarNav() {
 
 function listennSidebarTOC() {
   const navItems = document.querySelectorAll(".post-toc li");
+  if (!navItems.length) return;
   const sections = [...navItems].map((element) => {
     const link = element.querySelector(".toc-link");
     const target = document.getElementById(
@@ -94,5 +95,6 @@ function initSidebar() {
   toggleSidebarNav();
   listennSidebarTOC();
 }
+
 document.addEventListener("DOMContentLoaded", initSidebar);
 document.addEventListener("pjax:success", initSidebar);

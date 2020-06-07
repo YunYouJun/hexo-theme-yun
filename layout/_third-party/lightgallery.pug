@@ -1,6 +1,10 @@
 link(rel='stylesheet', href=url_for(theme.vendors.lightgallery.css))
-script(defer, src=url_for(theme.vendors.lightgallery.js))
+script(src=url_for(theme.vendors.lightgallery.js))
 script.
-  document.addEventListener("DOMContentLoaded", () => {
+  function initLightGallery() {
     lightGallery(document.getElementById('lightgallery'));
-  });
+  }
+  document.addEventListener("DOMContentLoaded", initLightGallery)
+  document.addEventListener("pjax:success", ()=>{
+    setTimeout(()=>{initLightGallery()}, 1000)
+  })
