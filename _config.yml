@@ -554,8 +554,8 @@ minivaline:
   enable: false
   appId:  # Your leancloud application appId
   appKey:  # Your leancloud application appKey
-  mode: DesertsP # DesertsP or xCss
-  placeholder: Write a Comment # Comment box placeholder
+  #mode: DesertsP # DesertsP or xCss
+  #placeholder: Write a Comment # Comment box placeholder
   #math: true # Support MathJax.
   #md: true # Support Markdown.
   #enableQQ: false # Enable QQ avatar API.
