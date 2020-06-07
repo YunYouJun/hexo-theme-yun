@@ -554,7 +554,7 @@ minivaline:
   enable: false
   appId:  # Your leancloud application appId
   appKey:  # Your leancloud application appKey
-  #mode: DesertsP # DesertsP or xCss
+  #mode: DesertsP # DesertsP or xCss # xCss Style mode needs to import fontawesome@5 https://github.com/YunYouJun/hexo-theme-yun/blob/dev/docs/guide/config.md#其他图标
   #placeholder: Write a Comment # Comment box placeholder
   #math: true # Support MathJax.
   #md: true # Support Markdown.
