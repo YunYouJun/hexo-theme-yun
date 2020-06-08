@@ -76,7 +76,7 @@ Such as:
 
 The complete configuration of `avatar` is as follows
 
-```yml
+```yaml
 avatar:
   url: /images/avatar.jpg
   rounded: true
@@ -85,7 +85,7 @@ avatar:
 
 You can just define it in `yun.yml` (it is also possible to cover it all)
 
-```yml
+```yaml
 avatar:
   url: /images/avatar.jpg
 ```
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 And set the `head` option in `yun.yml` to introduce css or js.
 
-```yml
+```yaml
 head:
   css:
     aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css

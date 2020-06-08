@@ -19,7 +19,7 @@ Check if the file or warehouse name is right.
 
 Check if the `url` under `_config.yml` in the `Hexo` working directory is set correctly. (This part is automatically generated when Hexo is initialized)
 
-```yml
+```yaml
 # If your site is put in a subdirectory
 # set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
@@ -54,7 +54,7 @@ Related Issue: [Problem with long pages](https://github.com/hexojs/hexo-browsers
 
 Set the following in the root directory of `_config.yml`
 
-```yml
+```yaml
 server:
   compress: true
 ```

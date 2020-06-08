@@ -172,7 +172,7 @@ Deprecated highlight.js in Hexo.
 
 ## Usage
 
-```yml
+```yaml
 # root/_config.yml
 theme: yun
 ```

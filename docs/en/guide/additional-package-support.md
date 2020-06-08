@@ -12,7 +12,7 @@ npm install hexo-symbols-count-time
 
 Enter the configuration file `_config.yml` in the root directory of the blog
 
-```yml
+```yaml
 symbols_count_time:
   symbols: true
   time: true
@@ -22,7 +22,7 @@ symbols_count_time:
 
 Enter the configuration file `source/_data/yun.yml` in the root directory of the blog
 
-```yml
+```yaml
 symbols_count_time:
   item_text_post: true
   item_text_total: true
@@ -44,7 +44,7 @@ Configure the default icon as `icon-rss-line`. If you need to customize, enter `
 
 It can be configured in the `social` field of `yun.yml`, such as:
 
-```yml
+```yaml
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
@@ -115,7 +115,7 @@ Configure in `_config.yml` in Hexo root directory:
 
 > For more options, please refer to [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
-```yml
+```yaml
 live2d:
   enable: true
   # recommend to use the CDN of jsdelivr to load
@@ -151,7 +151,7 @@ live2d:
 
 Recommended configuration (in `_config.yml` in the root directory of Hexo):
 
-```yml
+```yaml
 aplayer:
   cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
@@ -164,14 +164,14 @@ If you find that Aplayer sometimes introduces header files repeatedly in irrelev
 
 > [Question of repeatedly loading Aplayer.js resource script] (https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md#%E9%87%8D%E5% A4% 8D% E8% BD% BD% E5% 85% A5-aplayerjs-% E8% B5% 84% E6% BA% 90% E8% 84% 9A% E6% 9C% AC% E9% 97% AE% E9 % A2% 98)
 
-```yml
+```yaml
 aplayer:
   asset_inject: false
 ```
 
 Then decide at the head of the article whether to enable `aplayer`:
 
-```yml {3}
+```yaml {3}
 ---
 title: xxx
 aplayer: true
@@ -181,7 +181,7 @@ aplayer: true
 
 You can also set it globally in `yun.yml`. (When you set up a global player, you can use it.)
 
-```yml
+```yaml
 aplayer:
   global: true
 ```
@@ -236,7 +236,7 @@ Some simple mathematical formulas are shown in the article, using [KaTeX](katex.
 - `copy_tex`: copy katex text, enabled by default
 - `global`: If you want to use `KaTex` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
 
-```yml
+```yaml
 katex:
   copy_tex: true
   global: false

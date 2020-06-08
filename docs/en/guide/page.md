@@ -26,7 +26,7 @@ hexo new page tags
 
 Modify `Front Matter` of `source/tags/index.md`
 
-```yml {5}
+```yaml {5}
 ---
 title: tag
 date: 2017-10-09 19:11:58
@@ -48,7 +48,7 @@ hexo new page categories
 
 Modify `Front Matter` of `source/categories/index.md`
 
-```yml {5}
+```yaml {5}
 ---
 title: Category
 date: 2017-10-12 10:47:16
@@ -124,7 +124,7 @@ You can enter [My Friends](https://www.yunyoujun.cn/links/) to see the effect
 
 - `tip`: a text reminder when FriendChain is not loaded successfully and will be removed after loading. (This only takes effect after successfully loaded FriendChain via JSON.)
 
-```yml
+```yaml
 ---
 layout: links
 title: My friends
@@ -159,7 +159,7 @@ You can refer to my [YunYouJun/friends](https://github.com/YunYouJun/friends) to
 
 - `random`: random friend chain order, not enabled by default
 
-```yml
+```yaml
 layout: links
 title: My friends
 date: 2019-06-21 13:06:06
@@ -183,7 +183,7 @@ Set to enable first. (I know most people may not use this feature, so it is set 
 
 > When disabled, the CSS file of the page will not be packed into the final CSS file. So no need to worry about this if the feature will affect the loading speed.
 
-```yml
+```yaml
 girls:
   enable: true
 ```
@@ -194,7 +194,7 @@ hexo new page girls
 
 Enter `source/girls/index.md`
 
-```yml
+```yaml
 ---
 layout: girls
 title: kawaii girls

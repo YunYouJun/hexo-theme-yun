@@ -19,7 +19,7 @@
 
 检查 `Hexo` 工作目录下 `_config.yml` 中 `url` 是否设置正确。（此部分为 Hexo 初始化时自动生成）
 
-```yml
+```yaml
 # If your site is put in a subdirectory
 # set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
@@ -56,7 +56,7 @@ root: /
 
 在根目录的 `_config.yml` 中设置
 
-```yml
+```yaml
 server:
   compress: true
 ```

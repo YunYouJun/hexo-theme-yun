@@ -16,7 +16,7 @@ You can search by `site: yunyoujun.cn what you want to search`
 - `href`: search engine prefix
 - `domain`: the domain name of your website
 
-```yml
+```yaml
 engine_search:
   enable: true
   href: "https://www.google.com/search?q=site:"
@@ -34,14 +34,14 @@ This theme is implemented using native JavaScript, without jQuery dependency.
 ::: tip
 Before enabling it, remember to turn off the default engine search.
 
-```yml
+```yaml
 engine_search:
   enable: false
 ```
 
 :::
 
-```yml
+```yaml
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
@@ -59,7 +59,7 @@ You need to install [hexo-algolia](https://github.com/oncletom/hexo-algolia) or 
 
 Turn it on again.
 
-```yml
+```yaml
 algolia_search:
   enable: true
   src: /js/search/algolia-search.js
@@ -75,7 +75,7 @@ Go to [Google Analytics](https://analytics.google.com/) to get your ID. (Science
 
 - `enable`: whether to enable
 
-```yml
+```yaml
 google_analytics:
   enable: true
   id: UA-XXXXXXXXX-X
@@ -95,7 +95,7 @@ Instructions for use: <https://ibruce.info/2015/04/04/busuanzi>
 - `site_pv`: whether to display site page views Page View
 - `page_pv`: whether to display page views of article pages
 
-```yml
+```yaml
 busuanzi:
   enable: false
   site_uv: true
@@ -112,7 +112,7 @@ busuanzi:
 
 Go to [Google Adsense](https://www.google.com/adsense) to get your client id.
 
-```yml
+```yaml
 google_adsense:
   enable: false
   client: ca-pub-2245427233262012
@@ -146,7 +146,7 @@ So you also need to find the `skip_render` selection in the site configuration f
 
 Examples:
 
-```yml
+```yaml
 skip_render:
   - README.md
   - googlexxxxxxxxxxxxxxx.html

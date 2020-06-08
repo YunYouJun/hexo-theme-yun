@@ -59,7 +59,7 @@ description: xxxxxxx
 
 譬如：
 
-```yml {3}
+```yaml {3}
 ---
 title: xxx
 icon: icon-women-line
@@ -81,7 +81,7 @@ hexo new page tags
 
 修改 `source/tags/index.md` 的 `Front Matter`
 
-```yml {4}
+```yaml {4}
 ---
 date: 2017-10-09 19:11:58
 comments: false
@@ -92,7 +92,7 @@ type: tags
 
 你可以在 `yun.yml` 中设置：
 
-```yml
+```yaml
 wordcloud:
   enable: true
 ```
@@ -113,7 +113,7 @@ hexo new page categories
 
 修改 `source/categories/index.md` 的 `Front Matter`
 
-```yml {4}
+```yaml {4}
 ---
 date: 2017-10-12 10:47:16
 comments: false
@@ -194,7 +194,7 @@ hexo new page links
 
 - `tip`: 友链未加载成功时的文字提示，加载完后会被移除。（仅当通过 JSON 加载友链时生效。）
 
-```yml {2}
+```yaml {2}
 ---
 layout: links
 title: 我的小伙伴们
@@ -229,7 +229,7 @@ tip: 友链加载中～如失败请刷新重试～
 
 - `random`: 随机友链顺序，默认未开启
 
-```yml {8-9}
+```yaml {8-9}
 ---
 layout: links
 title: 我的小伙伴们
@@ -256,7 +256,7 @@ random: true
 
 > 当关闭时，该页面的 CSS 文件也不会被打包进最后的 CSS 文件。所以不用担心本主题该功能会影响加载速度。
 
-```yml
+```yaml
 girls:
   enable: true
 ```
@@ -267,7 +267,7 @@ hexo new page girls
 
 进入 `source/girls/index.md`
 
-```yml {2}
+```yaml {2}
 ---
 layout: girls
 title: 可爱的女孩子
@@ -294,7 +294,7 @@ girls:
 
 在 `yun.yml` 中开启相册功能。
 
-```yml
+```yaml
 albums:
   enable: true
 ```
@@ -322,7 +322,7 @@ hexo new page albums
 - `cover`: 相册封面
 - `desc`: 相册描述
 
-```yml {2}
+```yaml {2}
 ---
 type: albums
 albums:
@@ -370,7 +370,7 @@ hexo new page --path albums/sunset "夕阳"
 
 :::
 
-```yml {5}
+```yaml {5}
 ---
 title: 夕阳
 date: 2020-04-18 16:27:24

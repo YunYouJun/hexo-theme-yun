@@ -83,7 +83,7 @@ theme: yun
 
 `avatar` 的完整配置如下
 
-```yml
+```yaml
 avatar:
   url: /images/avatar.jpg
   rounded: true
@@ -92,7 +92,7 @@ avatar:
 
 你可以在 `yun.yml` 中仅定义（当然，全部覆盖也是可以的）
 
-```yml
+```yaml
 avatar:
   url: /images/avatar.jpg
 ```
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 并在 `yun.yml` 中设置 `head` 选项来引入 css 或 js。
 
-```yml
+```yaml
 head:
   css:
     aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
@@ -175,7 +175,7 @@ head:
 
 如果你想要克隆稳定版本的主题，你可以自行 fork，然后修改源项目地址为你 fork 后的项目地址即可。
 
-```yml
+```yaml
 run: |
   git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
 ```

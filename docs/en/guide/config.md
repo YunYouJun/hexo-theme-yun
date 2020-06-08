@@ -24,7 +24,7 @@ With the convention greater than the configuration, you only need to customize t
 
 Here follows a configuration example,
 
-```yml
+```yaml
 en: # the language need to be overridden
   menu:
     home: My Index
@@ -48,7 +48,7 @@ The main color of the custom theme.
 
 > [color-dust](https://www.yunyoujun.cn/color-dust) I wrote a small tool that can analyze the color in pictures.
 
-```yml
+```yaml
 colors:
   primary: "#6200ee"
   # bg: "# F5F5F5"
@@ -62,7 +62,7 @@ colors:
 
 You can specify the color for your label, the default color is `#333`.
 
-```yml
+```yaml
 tags:
   Vue: "#4fc08d"
   Hexo: "#0E834D"
@@ -82,7 +82,7 @@ tags:
 
 You can specify the color for your category, the default color is `#333`.
 
-```yml
+```yaml
 categories:
   Notes: dimgray
 ```
@@ -97,7 +97,7 @@ JavaScript resource type description:
 
 -`base`: must be loaded and executed in advance. -`async`: Asynchronous loading, executed immediately after loading. -`defer`: load the resource asynchronously, but execute it last.
 
-```yml
+```yaml
 head:
   css:
     example: //example.min.js
@@ -111,7 +111,7 @@ head:
 
 Set the website icon (make sure your `favicon.ico` file is placed under the `source` folder), set as follows:
 
-```yml
+```yaml
 favicon: /favicon.ico
 ```
 
@@ -157,7 +157,7 @@ You can also obtain the CDN you want according to the naming rules, and introduc
 
 `cdn` is the CDN resource currently introduced by the theme by default, and its structure is similar to `head`.
 
-```yml
+```yaml
 cdn:
   pre: ""
   css:
@@ -175,7 +175,7 @@ cdn:
 > `@latest` is to use the latest version (but it will still be cached, **and it will take 12 hours to update**, if you need to force a refresh, please refer to [Purge Cache](https://github.com/jsdelivr/sdelivr#purge-cache)
 > In addition, please make sure that your avatar image link uses `/images/xxx.jpg` instead of `https://xxx/xxx.jpg`.
 
-```yml
+```yaml
 cdn:
   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
 ```
@@ -198,7 +198,7 @@ And start it through `npm run dev`; it is now in development mode.`cdn.pre` is n
 
 ### Overwrite Icon Font
 
-```yml
+```yaml
 cdn:
   js:
     async:
@@ -217,7 +217,7 @@ CDN can be added at `head`.
 
 > [\<link\> : External resource link element-MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
 
-```yml
+```yaml
 preload:
   style:
     - /css/hexo-theme-yun.css
@@ -267,7 +267,7 @@ Multi-color icons need to be quoted in the `symbol` of the article.
 
 Then set as follow in `yun.yml`.
 
-```yml
+```yaml
 head:
   js:
     async:
@@ -362,7 +362,7 @@ For better display, my default link will be displayed.
 - `icon`: Icon Class
 - `color`: Icon color (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
 
-```yml
+```yaml
 social:
   - name: RSS
     # set rss in your root config
@@ -415,7 +415,7 @@ social:
 
 You only need to set `social` in`yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
 
-```yml
+```yaml
 social:
   - name: E-Mail
     link: mailto: your email
@@ -425,7 +425,7 @@ social:
 
 If you don't want to put any links, just set the following in `yun.yml`:
 
-```yml
+```yaml
 social:
 ```
 
@@ -442,7 +442,7 @@ You can visit <https://yunyoujun.cn> to see the effect. (Each refresh will displ
 
 -`enable`: whether to enable -`title`: set text content
 
-```yml
+```yaml
 banner:
   enable: true
   title: 云游君的小站
@@ -454,7 +454,7 @@ banner:
 You can configure the announcement as follows.
 It will be displayed at the top of all article cards, below the tagline.
 
-```yml
+```yaml
 notice:
   enable: true
   content: Thanks for playing my game.
@@ -475,7 +475,7 @@ This also eliminates the white borders produced during the application of `blur`
 At the same time, it can also reduce the background of the image and improve the loading and rendering speed.
 :::
 
-```yml
+```yaml
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
@@ -489,7 +489,7 @@ bg_image:
 
 - `placeholder`: search box prompt text (if not set, the corresponding text will be automatically selected according to Hexo language configuration)
 
-```yml
+```yaml
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
   # placeholder:
@@ -504,7 +504,7 @@ Click on the fireworks effect on the page
 - `enable`: whether to enable, enable by default
 - `colors`: the included colors, the default is several levels of blue colors (please follow the RGB values ​​below)
 
-```yml
+```yaml
 fireworks:
   enable: true
   colors: -"102, 167, 221"
@@ -518,7 +518,7 @@ fireworks:
 
 The scrolling effect of the card on the home page can be seen in [Official Website](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js), which is enabled by default.
 
-```yml
+```yaml
 scrollreveal: true
 ```
 
@@ -531,7 +531,7 @@ You can also use your favorite icon instead.
 - `default`: Icon in the default state.
 - `pointer`: pointer (that is, in the link state) icon.
 
-```yml
+```yaml
 cursor:
   enable: false
   default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
@@ -543,7 +543,7 @@ cursor:
 
 ### Sidebar Background
 
-```yml
+```yaml
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
@@ -561,7 +561,7 @@ You can refer to [background-position](https://developer.mozilla.org/zh-CN/docs/
 - `opacity`: transparency
 - `mickey_mouse`: Closed by default. When ON, the avatar of the sidebar of the article page will move upwards (Disney copyright alert)
 
-```yml
+```yaml
 avatar:
   enable: true
   url: /images/avatar.jpg
@@ -588,7 +588,7 @@ They are:
 
 > By the way, read the documentation first when encountering an issue
 
-```yml
+```yaml
 menu:
   home:
     path: /
@@ -639,7 +639,7 @@ e.g.:
 
 > [Theme page](/guide/page.html#友链-links)
 
-```yml
+```yaml
 pages:
   -name: my friends
     url: / links /
@@ -649,7 +649,7 @@ pages:
 
 If you don't want to put any links, just set the following in `yun.yml`:
 
-```yml
+```yaml
 pages:
 ```
 
@@ -659,7 +659,7 @@ pages:
 
 -`opacity`: customize the transparency of the homepage card, the default is set to `0.8`
 
-```yml
+```yaml
 post_card:
   opacity: 0.8
 ```
@@ -682,7 +682,7 @@ The bilibili icon will appear in front of the article title. Clicking on the tit
 
 Currently, the following types are supported by default (Bilibili, Douban, GitHub, NetEase Cloud Music, WeChat Official Account, Weibo, Yuque, Zhihu, and Outer Links):
 
-```yml
+```yaml
 types:
   bilibili:
     color: "#FF8EB3"
@@ -715,7 +715,7 @@ types:
 
 You can also set your icon and color for different links in `yun.yml`.
 
-```yml
+```yaml
 type:
   google:
     color: xxx
@@ -766,7 +766,7 @@ Note: A link to the article will still appear in the previous or next article at
 - `categories`: whether to display categories
 - `tags`: whether to display tags
 
-```yml
+```yaml
 post_meta:
   item_text: false
   created_at: true
@@ -791,7 +791,7 @@ Click to jump to the editing page.
 If I use `GitHub` as the hosting warehouse for the blog, the warehouse name is `yunyoujun.github.io`, under the `hexo` branch, in the `source` folder,
 where my link will be <https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/>.
 
-```yml
+```yaml
 post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
@@ -815,7 +815,7 @@ npm install hexo-prism-plugin
 
 Configure in `_config.yml` under Hexo working directory:
 
-```yml
+```yaml
 # https://github.com/ele828/hexo-prism-plugin
 prism_plugin:
   mode: preprocess # realtime / preprocess
@@ -826,7 +826,7 @@ prism_plugin:
 
 Close the `highlight` that comes with Hexo (locates in `_config.yml` in the Hexo working directory)
 
-```yml
+```yaml
 highlight:
   enable: true
 ```
@@ -845,7 +845,7 @@ Set the shared copyright of your article
 - `language`: set language (deed.zh | deed.fr | deed.de)
 - `post`: displayed at the end of each post
 
-```yml
+```yaml
 creative_commons:
   license: by-nc-sa
   post: true
@@ -859,7 +859,7 @@ Enable by default, it will add `loading ="lazy"` attribute to the Markdown image
 > [<img> loading](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img#attr-loading)
 > There are still many browsers that do not support this feature [Can I use loading?](Https://caniuse.com/#search=loading)
 
-```yml
+```yaml
 lazyload:
   enable: true
 ```
@@ -873,7 +873,7 @@ After enabled, a donating button will be displayed at the end of each article or
 - `comment`: show what you want to say under the reward button
 - `url`: your reward link (when you enable the reward link, it will automatically jump to your external link instead of expanding the QR code)
 
-```yml
+```yaml
 reward_settings:
   enable: true
   icon: icon-hand-coin-line
@@ -883,7 +883,7 @@ reward_settings:
 
 You can also set whether to enable rewards at the top of an article.
 
-```yml
+```yaml
 reward: true
 # reward: false
 ```
@@ -897,7 +897,7 @@ QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a c
 - `color`: icon color
 - `icon`: icon name
 
-```yml
+```yaml
 reward:
   - name: Alipay
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
@@ -915,7 +915,7 @@ reward:
 
 You can override it in `yun.yml`.
 
-```yml
+```yaml
 reward:
   -name: Alipay
     path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
@@ -929,7 +929,7 @@ reward:
 The following configurations are written under the `footer` field.
 Such as:
 
-```yml
+```yaml
 footer:
   since: 1997
 ```
@@ -938,7 +938,7 @@ footer:
 
 ### Starting Year
 
-```yml
+```yaml
 since: 2016
 ```
 
@@ -950,7 +950,7 @@ The icon between the year and the name.
 - `animated`: whether to enable animation
 - `color`: icon color
 
-```yml
+```yaml
 icon:
   name: icon-cloud-line
   animated: true
@@ -967,7 +967,7 @@ Let more people know Hexo and the theme Yun, which is conducive to the further d
 
 - `enable`: enable
 
-```yml
+```yaml
 powered:
   enable: true
 ```
@@ -981,7 +981,7 @@ The default link for record information is: <http://www.beian.miit.gov.cn>
 - `enable`: enable the record
 - `icp`: record number
 
-```yml
+```yaml
 beian:
   enable: true
   icp: 苏 ICP 备 xxxxxxxx 号
@@ -993,7 +993,7 @@ Disabled by default.
 
 `This blog has been running 442 days, 19 hours, 28 minutes and 40 seconds (● '◡' ●)`
 
-```yml
+```yaml
 live_time:
   enable: false
   prefix: This blog has been run cutely
@@ -1006,7 +1006,7 @@ live_time:
 `custom_text` is a custom footer and can contain HTML.
 For example, sometimes it can use other service providers to host pages.
 
-```yml
+```yaml
 custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank"> Coding Pages </a>
 ```
 
@@ -1020,7 +1020,7 @@ Randomly display a sentence on the homepage of the website ~~eighth-grade syndro
 - `hitokoto.enable`: Whether to enable [hitokoto](https://hitokoto.cn/), when you enable hitokoto, it will override `say.api` by default
 - `hitokoto.api`: You can refer to [Statement Interface ｜ hitokoto](https://developer.hitokoto.cn/sentence/) to use the koto API according to your thoughts
 
-```yml
+```yaml
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
@@ -1070,7 +1070,7 @@ Then set `say.api` to `/data/sentences.json`, and close it.
 
 i.e.:
 
-```yml
+```yaml
 say:
   enable: true
   api: /data/sentences.json
@@ -1090,7 +1090,7 @@ On the designated day of the year, the gray mourning mode is enabled.
 > On April 4, the nation mourned.
 > In order to express the deep condolences of the people of all ethnic groups in the country in the fight against the Coronavirus Pandemic, at the expense of martyrs and deceased compatriots, the State Council issued an announcement and decided to hold a national mourning event on April 4, 2020.
 
-```yml
+```yaml
 mourn:
   enable: true
   days: -"4-4"

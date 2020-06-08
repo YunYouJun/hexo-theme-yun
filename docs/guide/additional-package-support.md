@@ -14,7 +14,7 @@ npm install hexo-symbols-count-time
 
 进入博客根目录的配置文件 `_config.yml`
 
-```yml
+```yaml
 symbols_count_time:
   symbols: true
   time: true
@@ -24,7 +24,7 @@ symbols_count_time:
 
 进入博客根目录的配置文件 `source/_data/yun.yml`
 
-```yml
+```yaml
 symbols_count_time:
   item_text_post: true
   item_text_total: true
@@ -46,7 +46,7 @@ npm install hexo-generator-feed --save
 
 可配置在 `yun.yml` 的 `social` 字段里，如：
 
-```yml
+```yaml
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
@@ -117,7 +117,7 @@ npm install --save hexo-helper-live2d
 
 > 更多选项含义请参见 [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
-```yml
+```yaml
 live2d:
   enable: true
   # 推荐使用 jsdelivr 的 CDN 来加载
@@ -151,7 +151,7 @@ live2d:
 
 - `enable`: 开启后，将在标签页显示彩色词云
 
-```yml
+```yaml
 wordcloud:
   enable: true
   height: 350
@@ -169,7 +169,7 @@ npm install hexo-tag-aplayer
 
 推荐的配置（在 Hexo 的根目录下的 `_config.yml` 中）：
 
-```yml
+```yaml
 aplayer:
   cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
@@ -182,14 +182,14 @@ aplayer:
 
 > [重复载入 Aplayer.js 资源脚本问题](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md#%E9%87%8D%E5%A4%8D%E8%BD%BD%E5%85%A5-aplayerjs-%E8%B5%84%E6%BA%90%E8%84%9A%E6%9C%AC%E9%97%AE%E9%A2%98)
 
-```yml
+```yaml
 aplayer:
   asset_inject: false
 ```
 
 然后在文章头部决定是否开启 `aplayer`:
 
-```yml {3}
+```yaml {3}
 ---
 title: xxx
 aplayer: true
@@ -218,7 +218,7 @@ aplayer: true
 
 开启 [pjax](#pjax)，可以实现切换页面时，不中断音乐播放器。（为了正确加载音乐播放器，当切换到的文章页面也存在音乐播放器时，`Meting` 会重新加载。）
 
-```yml
+```yaml
 aplayer:
   global: false
   meting: true
@@ -289,7 +289,7 @@ embeddedVideoTransformer: function() {
 - `copy_tex`: 复制 katex 文本，默认开启
 - `global`: 如果你想要在全局页面使用 `KaTex`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
 
-```yml
+```yaml
 katex:
   copy_tex: true
   global: false
@@ -354,7 +354,7 @@ $$ E = mc^2 $$
 
 使用 [pjax](https://github.com/MoOx/pjax) 实现。
 
-```yml
+```yaml
 pjax:
   enable: true
 ```

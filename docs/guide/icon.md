@@ -2,6 +2,18 @@
 
 当前主题默认使用的图标（对应 [`_config.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/_config.yml#L277) 文件中 `cdn.js.async.iconfont` 的链接 ）
 
+大部分图标取自 [Remix Icon](https://remixicon.com/)，并保持其原命名。
+
+> 只提供默认最常用的图标，有利于在满足使用的前提下，并减少加载的资源。如果您想要使用更多图标，推荐自行前往 [iconfont](https://www.iconfont.cn/) 定制你的图标集。并在 [head](/guide/config.html#head-头部资源) 引入。
+
+在 `_config,yml` 中书写你的图标名称时，记得加上 `icon-` 的前缀。这可以将 iconfont 的 SVG 图标与其他字体图标区分开来。
+
+如：
+
+```yaml
+icon: icon-github-line
+```
+
 ## 辅助图标
 
 > 通用的 UI 辅助图标
@@ -27,7 +39,6 @@ export default {
   data() {
     return {
       arias: [
-        'arrow-down-s-line',
         'arrow-up-s-line',
         'arrow-down-s-line',
         'arrow-left-s-line',
@@ -37,7 +48,6 @@ export default {
         'arrow-right-line',
         'arrow-go-back-line',
         'chat-3-line',
-        'share-line',
         'close-line',
         'contrast-2-line',
         'edit-line',
@@ -66,6 +76,7 @@ export default {
         'folder-2-line',
         'folder-line',
         'gallery-line',
+        'hand-coin-line',
         'heart-line',
         'home-4-line',
         'list-ordered',
@@ -86,7 +97,6 @@ export default {
         'bilibili-line',
         'douban-line',
         'github-line',
-        'hand-coin-line',
         'netease-cloud-music-line',
         'paypal-line',
         'qq-line',
