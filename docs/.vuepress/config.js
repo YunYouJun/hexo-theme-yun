@@ -25,6 +25,13 @@ module.exports = {
       },
     ],
     ["meta", { name: "msapplication-TileColor", content: "#6200ee" }],
+    [
+      "script",
+      {
+        async: true,
+        src: "//at.alicdn.com/t/font_1140697_pem9yni52s.js",
+      },
+    ],
   ],
   title: "Hexo-Theme-Yun",
   locales: {
@@ -66,6 +73,7 @@ module.exports = {
             "guide/page",
             "guide/third-party-support",
             "guide/additional-package-support",
+            "guide/icon",
             "guide/faq",
           ],
         },
