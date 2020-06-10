@@ -738,11 +738,14 @@ avatar:
 
 - 主页
 - 归档
-- 标签
-- 分类
+- 标签（文章无标签时，默认不显示）
+- 分类（文章无分类时，默认不显示）
 - 自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为文档导航按钮以保持整体的对称）
 
 > 顺带提醒你遇到问题先看看文档
+
+- `display`: 设置为 `true`，将会强制显示（即便你的文章还没有标签、分类）
+- `title`: 覆盖默认标题
 
 ```yaml
 menu:
@@ -753,9 +756,11 @@ menu:
     path: /archives/
     icon: icon-archive-line
   tags:
+    # display: true
     path: /tags/
     icon: icon-price-tag-3-line
   categories:
+    # display: true
     path: /categories/
     icon: icon-folder-2-line
   custom:
@@ -1044,10 +1049,10 @@ highlight:
 
 设置您的文章的分享版权
 
-默认使用 [Creative Commons 4.0 International License](https://creativecommons.org/share-your-work/licensing-types-examples)
+> [关于许可协议](https://creativecommons.org/licenses/)
 
 - `license`: 设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
-- `language`: 设置语言 (deed.zh | deed.fr | deed.de)
+- `language`: 设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
 - `post`: 在每篇文章末尾显示
 
 ```yaml

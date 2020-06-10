@@ -144,9 +144,11 @@ menu:
     path: /archives/
     icon: icon-archive-line
   tags:
+    # display: true
     path: /tags/
     icon: icon-price-tag-3-line
   categories:
+    # display: true
     path: /categories/
     icon: icon-folder-2-line
   custom:
@@ -414,7 +416,7 @@ reward:
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 # You can set a language value if you prefer a translated version of CC license.
 # CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
-# Valid values of language: deed.zh, deed.fr, deed.de, etc.
+# Valid values of language: deed.zh, deed.en, deed.ja, etc.
 creative_commons:
   license: by-nc-sa
   language: deed.zh
