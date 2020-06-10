@@ -737,58 +737,45 @@ avatar:
 分别为：
 
 - 主页
-- 归档
-- 标签（文章无标签时，默认不显示）
-- 分类（文章无分类时，默认不显示）
+- 列表
+  - 归档
+  - 标签
+  - 分类
 - 自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为文档导航按钮以保持整体的对称）
 
 > 顺带提醒你遇到问题先看看文档
 
-- `display`: 设置为 `true`，将会强制显示（即便你的文章还没有标签、分类）
-- `title`: 覆盖默认标题
+list
+
+- `type`: 是否为 archives/categories/tags 等类型，会自动匹配此类型标题及显示对应数量。留空则为其他普通链接。
+- `title`: 可以覆盖默认标题
+- `icon`: 自定义你的图标
+- `path`: 自定义路径
+- `count`: 默认为对应类型的数量，你也可以使用自定义文本覆盖（如注释部分）
 
 ```yaml
 menu:
   home:
     path: /
     icon: icon-home-4-line
-  archives:
-    path: /archives/
-    icon: icon-archive-line
-  tags:
-    # display: true
-    path: /tags/
-    icon: icon-price-tag-3-line
-  categories:
-    # display: true
-    path: /categories/
-    icon: icon-folder-2-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: 你猜
   custom:
     title: 文档
     path: https://yun.yunyoujun.cn
     icon: icon-settings-line
 ```
-
-::: tip
-侧边栏的标签与分类，只有当你真正有文章使用了它们时才会被展示出来。
-
-例如：
-
-```md
----
-title: 教你如何从零开始搭建一个属于自己的网站
-date: 2020-03-05 01:31:08
-updated: 2020-03-13 01:31:08
-tags:
-  - 教程
-  - Hexo
-  - 分享
-categories:
-  - 云游的小安利
----
-```
-
-:::
 
 ### 页面链接
 

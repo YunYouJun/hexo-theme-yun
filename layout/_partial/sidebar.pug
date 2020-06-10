@@ -30,29 +30,29 @@ aside.sidebar
       a.site-state-item.hty-icon-button.icon-home(href=url_for(theme.menu.home.path), title=theme.menu.home.title || __('menu.home'))
         span.site-state-item-icon
           +icon(theme.menu.home.icon)
-      if site.posts.length > 0
-        .site-state-item.site-state-posts
-          a(href=url_for(theme.menu.archives.path), title=theme.menu.archives.title || __('menu.archives'))
+
+      for item in theme.menu.list
+        if item.type === 'archives'
+          - item.title = item.title || __('menu.archives')
+          - item.count = site.posts.length
+        else if item.type === 'categories'
+          - item.title = item.title || __('menu.categories')
+          - item.count = site.categories.length
+        else if item.type === 'tags'
+          - item.title = item.title || __('menu.tags')
+          - item.count = site.tags.length
+        .site-state-item
+          a(href=url_for(item.path), title=item.title)
             span.site-state-item-icon
-              +icon(theme.menu.archives.icon)
-            span.site-state-item-count!=site.posts.length
-      if theme.menu.categories.display || site.categories.length > 0
-        .site-state-item.site-state-categories
-          a(href=url_for(theme.menu.categories.path), title=theme.menu.categories.title || __('menu.categories'))
-            span.site-state-item-icon
-              +icon(theme.menu.categories.icon)
-            span.site-state-item-count!=site.categories.length
-      if theme.menu.tags.display || site.tags.length > 0
-        .site-state-item.site-state-tags
-          a(href=url_for(theme.menu.tags.path), title=theme.menu.tags.title || __('menu.tags'))
-            span.site-state-item-icon
-              +icon(theme.menu.tags.icon)
-            span.site-state-item-count!=site.tags.length
+              +icon(item.icon)
+            if item.count !== undefined
+              span.site-state-item-count!=item.count
 
       if theme.menu.custom
         a.site-state-item.hty-icon-button(href=url_for(theme.menu.custom.path), title=theme.menu.custom.title)
           span.site-state-item-icon
             +icon(theme.menu.custom.icon)
+
 
     hr(style="margin-bottom:0.5rem")
     if theme.social

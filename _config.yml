@@ -140,17 +140,16 @@ menu:
   home:
     path: /
     icon: icon-home-4-line
-  archives:
-    path: /archives/
-    icon: icon-archive-line
-  tags:
-    # display: true
-    path: /tags/
-    icon: icon-price-tag-3-line
-  categories:
-    # display: true
-    path: /categories/
-    icon: icon-folder-2-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
   custom:
     title: 文档
     path: https://yun.yunyoujun.cn
