@@ -42,7 +42,7 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。
 
-> 你也可以考虑加上 `--depth 1` 的参数来只克隆当前版本（体积更下，速度更快）。
+> 你也可以考虑加上 `--depth 1` 的参数来只克隆当前版本（体积更小，速度更快）。
 
 ```sh
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun

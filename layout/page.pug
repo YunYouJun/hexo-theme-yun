@@ -3,7 +3,7 @@ extends _partial/layout.pug
 block content
   #page
     if page.type === 'tags'
-      +page_header(page.title, theme.menu.tags.icon)
+      +page_header(page.title, 'icon-price-tag-3-line')
       .page-subtitle=_p('counter.tag_cloud', site.tags.length)
 
       if theme.wordcloud.enable
@@ -37,7 +37,7 @@ block content
           .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
     else if page.type === 'categories'
-      +page_header(page.title, theme.menu.categories.icon)
+      +page_header(page.title, 'icon-folder-2-line')
       .page-subtitle=_p('counter.categories', site.categories.length)
       .category-lists!= list_categories()
 

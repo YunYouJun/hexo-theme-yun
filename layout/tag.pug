@@ -3,6 +3,6 @@ extends _partial/layout.pug
 block content
   include _mixin/post-collapse.pug
   #tag
-    +page_header(page.tag, theme.menu.tags.icon)
+    +page_header(page.tag, 'icon-price-tag-3-line')
     +post_collapse(page.posts)
   include _partial/pagination.pug
