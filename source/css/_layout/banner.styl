@@ -179,7 +179,7 @@ if (hexo-config('banner.go_down.enable')) {
     position: absolute;
     bottom: 1rem;
     z-index: $go-down-z-index;
-    animation: float 2s linear infinite;
+    animation: float 2s ease-in-out infinite;
 
     .icon {
       color: $colors.primary;
@@ -190,14 +190,17 @@ if (hexo-config('banner.go_down.enable')) {
 
   @keyframes float {
     0% {
+      opacity: 1;
       transform: translateY(0);
     }
 
     50% {
-      transform: translateY(-6px);
+      opacity: 0.8;
+      transform: translateY(-0.8rem);
     }
 
     100% {
+      opacity: 1;
       transform: translateY(0);
     }
   }
