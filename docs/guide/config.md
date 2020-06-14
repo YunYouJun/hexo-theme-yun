@@ -528,12 +528,17 @@ notice:
 
 ### 亮暗模式
 
-v0.8.1 新增，测试中...
+- `light`: 始终为亮色模式，不打包暗色样式资源
+- `dark`: 始终为暗色模式
+- `auto`: 根据系统亮暗模式自动切换，侧边栏将显示亮暗切换按钮，可自由切换。
 
-开启后，将根据系统亮暗模式自动切换，侧边栏将显示亮暗切换按钮，可自由切换。
+> 暗色模式下纯黑图标，将变为白色。
+
+你可以为暗色模式，设置独立的背景和搜索背景，参见对应配置项。
 
 ```yaml
 mode: auto
+# 可选 light | dark | auto
 ```
 
 ### 字体
@@ -588,16 +593,19 @@ font:
 ::: tip
 注意，现背景模糊已默认关闭。更建议用户通过图像处理工具来模糊图片作为背景。
 
-> 你也可以直接使用一些在线图像模糊工具。譬如[高斯模糊](https://www.anooc.com/ts/gs)（这只是我 Google 搜到的第一个，你可以寻找喜欢的工具进行处理。）
+> 你也可以直接使用一些在线图像模糊工具。
 
 这也能消除彩色图片应用 `blur` 滤镜时产生的白边。
 同时也能缩小图片背景，提高载入与渲染速度。
 :::
 
+- `dark`: 暗色背景图片链接，仅在开启暗色模式时有效。
+
 ```yaml
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  # dark:
   # blur: 30px # 设置背景模糊程度
   opacity: 0.8
 ```
@@ -608,10 +616,12 @@ bg_image:
 #### 搜索背景
 
 - `placeholder`: 搜索框提示文字（如果不设置，将自动根据 Hexo 语言配置选取对应的文本）
+- `dark_bg_image`：暗色模式下的背景，仅在你开启暗色模式时有效
 
 ```yaml
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: xxx
   # placeholder:
 ```
 
