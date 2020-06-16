@@ -13,6 +13,11 @@
 @import '_widget';
 
 if (hexo-config('mode') == 'dark') {
+  :root {
+    dark();
+    --color-mode: 'dark';
+  }
+
   @import '_global/dark';
 } else if (hexo-config('mode') == 'auto') {
   @media (prefers-color-scheme: dark) {
