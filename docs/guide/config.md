@@ -1051,12 +1051,14 @@ highlight:
 - `license`: 设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
 - `language`: 设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
 - `post`: 在每篇文章末尾显示
+- `clipboard`: 是否在复制文章时，在剪贴板中追加版权信息（默认关闭）
 
 ```yaml
 creative_commons:
   license: by-nc-sa
   post: true
   language: deed.zh
+  clipboard: false
 ```
 
 > 你的 `url` 请在 Hexo 工作目录下的 `_config.yml` 中设置。

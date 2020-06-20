@@ -420,6 +420,7 @@ creative_commons:
   license: by-nc-sa
   language: deed.zh
   post: true
+  clipboard: false
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.

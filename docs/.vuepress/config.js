@@ -94,6 +94,7 @@ module.exports = {
             "guide/page",
             "guide/third-party-support",
             "guide/additional-package-support",
+            "guide/icon",
             "guide/faq",
           ],
         },
