@@ -149,6 +149,20 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
       </a>
     </td>
+    <td>
+      <a href="https://myperfect.work" target="_blank">
+        <img width="80px" src="https://myperfect.work/image/20161015094748_YFfPV.jpeg"/>
+        <br />
+        <sub title="记录学习历程，每天进步一点点！">南楼画角的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://copur.xyz/" target="_blank">
+        <img width="80px" src="https://q1.qlogo.cn/g?b=qq&nk=1935576264&s=100"/>
+        <br />
+        <sub title="记录学习历程，每天进步一点点！">乐得自在的小破站</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
