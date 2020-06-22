@@ -1,7 +1,9 @@
 $sidebar-bg-image = hexo-config('sidebar.bg_image');
 $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
+// 只在主页显示
 #menu-btn {
+  display: none;
   position: fixed;
   left: 0.8rem;
   top: 0.6rem;
@@ -11,6 +13,38 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
   +mobile() {
     display: flex;
+  }
+}
+
+.is-home {
+  #menu-btn {
+    display: flex;
+  }
+
+  .sidebar {
+    left: -20rem;
+    transform: translateX(0);
+    visibility: hidden;
+  }
+
+  .sidebar-translate {
+    the-transition();
+    padding-left: 0;
+  }
+
+  .sidebar-open {
+    .sidebar {
+      transform: translateX(20rem);
+      visibility: visible;
+    }
+
+    .sidebar-translate {
+      padding-left: 20rem;
+
+      +mobile() {
+        padding-left: 0;
+      }
+    }
   }
 }
 
@@ -96,34 +130,6 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
         height: 100vh;
         z-index: $sidebar-z-index - 1;
         transition: 0.4s;
-      }
-    }
-  }
-}
-
-.is-home {
-  .sidebar {
-    left: -20rem;
-    transform: translateX(0);
-    visibility: hidden;
-  }
-
-  .sidebar-translate {
-    the-transition();
-    padding-left: 0;
-  }
-
-  .sidebar-open {
-    .sidebar {
-      transform: translateX(20rem);
-      visibility: visible;
-    }
-
-    .sidebar-translate {
-      padding-left: 20rem;
-
-      +mobile() {
-        padding-left: 0;
       }
     }
   }
