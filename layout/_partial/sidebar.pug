@@ -1,7 +1,9 @@
-a.sidebar-toggle.sidebar-toggle-fixed.hty-icon-button
+a#menu-btn.sidebar-toggle.hty-icon-button
   .hamburger(class='hamburger--spin' type='button')
     span.hamburger-box
       span.hamburger-inner
+
+.sidebar-toggle.sidebar-overlay
 
 aside.sidebar
   script(defer, src=url_for(theme.cdn.pre + theme.sidebar.src))

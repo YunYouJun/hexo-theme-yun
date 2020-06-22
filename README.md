@@ -163,6 +163,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="记录学习历程，每天进步一点点！">乐得自在的小破站</sub>
       </a>
     </td>
+    <td>
+      <a href="https://blog.zjgsujz.cn" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/Pakchoi1/image-host/blog/avatar.jpg"/>
+        <br />
+        <sub title="it萌新的进阶之路">小白菜的博客</sub>
+      </a>
+    </td>
   </tr>
 </table>
 

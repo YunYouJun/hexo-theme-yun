@@ -1,6 +1,19 @@
 $sidebar-bg-image = hexo-config('sidebar.bg_image');
 $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
+#menu-btn {
+  position: fixed;
+  left: 0.8rem;
+  top: 0.6rem;
+  line-height: 1;
+  z-index: $menu-btn-z-index;
+  cursor: pointer;
+
+  +mobile() {
+    display: flex;
+  }
+}
+
 .sidebar {
   position: fixed;
   overflow-y: auto;
@@ -8,7 +21,7 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   bottom: 0;
   left: 0;
   width: 20rem;
-  background-color: rgba(white, 0.95);
+  background-color: white;
   background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
@@ -19,7 +32,6 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   the-box-shadow();
 
   +mobile() {
-    background-color: white;
     left: -20rem;
     transform: translateX(0);
   }
@@ -29,23 +41,6 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
     +mobile() {
       padding-left: 0;
-    }
-  }
-
-  &-toggle {
-    display: none;
-
-    +mobile() {
-      display: flex;
-    }
-
-    &-fixed {
-      position: fixed;
-      left: 0.8rem;
-      top: 0.6rem;
-      line-height: 1;
-      z-index: $menu-btn-z-index;
-      cursor: pointer;
     }
   }
 
@@ -93,6 +88,15 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
     .sidebar {
       transform: translateX(20rem);
       visibility: visible;
+
+      &-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: $sidebar-z-index - 1;
+        transition: 0.4s;
+      }
     }
   }
 }
@@ -102,10 +106,6 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
     left: -20rem;
     transform: translateX(0);
     visibility: hidden;
-  }
-
-  .sidebar-toggle {
-    display: flex;
   }
 
   .sidebar-translate {

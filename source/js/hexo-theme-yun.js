@@ -20,10 +20,13 @@ function scrollPercent(curTop) {
 
 function initPage() {
   // open sidebar
-  document.querySelector(".sidebar-toggle").onclick = function() {
-    this.querySelector(".hamburger").classList.toggle("is-active");
-    document.querySelector(".container").classList.toggle("sidebar-open");
-  };
+  const toggleBtns = document.querySelectorAll(".sidebar-toggle");
+  toggleBtns.forEach((el) => {
+    el.addEventListener("click", () => {
+      document.querySelector(".hamburger").classList.toggle("is-active");
+      document.querySelector(".container").classList.toggle("sidebar-open");
+    });
+  });
 
   window.addEventListener("scroll", function() {
     goUp.classList.toggle("show", window.scrollY > 64);
