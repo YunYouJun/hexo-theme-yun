@@ -117,13 +117,6 @@ If you have already used this theme, you are welcome to leave your site at [Demo
         <sub title="待我熬尽一日苦，喂你一口甜！">陌上花的小栈</sub>
       </a>
     </td>
-    <td>
-      <a href="https://misaki.page/" target="_blank">
-        <img width="80px" src="https://misaki.page/avatar-512x512.png"/>
-        <br />
-        <sub title="疲惫生活中总要有些温暖梦想">西地兰的忧郁</sub>
-      </a>
-    </td>
   </tr>
   <tr align="center">
     <td>
