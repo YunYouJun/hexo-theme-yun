@@ -838,10 +838,13 @@ url: https://www.bilibili.com/video/av8153395/
 
 在文章标题前将会出现 bilibili 的图标，点击标题会跳转至对应的链接。
 
-目前默认支持以下类型（哔哩哔哩、豆瓣、GitHub、网易云音乐、微信公众号、微博、语雀、知乎、外链）：
+目前默认支持以下类型（哔哩哔哩、豆瓣、GitHub、网易云音乐、微信公众号、微博、语雀、知乎、Notion、外链）：
 
 ```yaml
 types:
+  link:
+    color: blue
+    icon: icon-external-link-line
   bilibili:
     color: "#FF8EB3"
     icon: icon-bilibili-line
@@ -854,6 +857,9 @@ types:
   netease-cloud-music:
     color: "#C10D0C"
     icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
   wechat:
     color: "#1AAD19"
     icon: icon-wechat-2-line
@@ -866,9 +872,6 @@ types:
   zhihu:
     color: "#0084FF"
     icon: icon-zhihu-line
-  link:
-    color: blue
-    icon: icon-external-link-line
 ```
 
 你也可以自己在 `yun.yml` 设置你跳转不同链接专属的图标和颜色。
