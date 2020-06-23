@@ -390,3 +390,7 @@ photos:
 
 > 为什么使用相册集作为 `albums`，`gallery` 作为相册 ？
 > [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
+
+### Slides 幻灯片
+
+加上 `#/1` 或其他数字，跳转指定页。

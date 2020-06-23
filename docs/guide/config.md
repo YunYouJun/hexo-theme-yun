@@ -108,12 +108,34 @@ JavaScript 资源类型说明：
 ```yaml
 head:
   css:
-    example: //example.min.js
+    example: //example.min.css
   js:
     base:
     async:
     defer:
 ```
+
+::: tip
+
+譬如想要自定义 css，先设置 `yun.yml`:
+
+```yaml
+head:
+  css:
+    custom: /css/custom.css
+```
+
+对应的文件路径为 `source/css/custom.css`（愣着干啥，自己新建去）
+
+写你自定义的 CSS 就可以了。
+
+```css
+.char {
+  background-color: transparent;
+}
+```
+
+:::
 
 ### favicon
 
@@ -132,7 +154,9 @@ favicon: /favicon.ico
 
 Example:
 
-```html
+<!-- html formatOnSave 出错 -->
+
+```svg
 <svg id="yun-logo">
   <style>
     #yun-logo {

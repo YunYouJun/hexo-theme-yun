@@ -100,7 +100,7 @@ JavaScript resource type description:
 ```yaml
 head:
   css:
-    example: //example.min.js
+    example: //example.min.css
   js:
     base:
     async:

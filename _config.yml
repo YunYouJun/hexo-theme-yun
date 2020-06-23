@@ -319,6 +319,10 @@ vendors:
     js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
     plugin:
       markdown: https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js
+      notes: https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js
+      highlight:
+        js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
+        monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
 
 # UI
 banner:
@@ -739,7 +743,8 @@ custom:
 # slide
 slide:
   separator: ---
-  separator_vertical: --
+  separator_vertical: ~~
   theme: white
   config:
+    history: true
     mouseWheel: false

@@ -29,15 +29,18 @@ html(lang=config.language)
   body
     .reveal
       .slides
-        section(data-markdown data-separator=theme.slide.separator)
+        section(data-markdown data-separator=theme.slide.separator data-separator-vertical=theme.slide.separator_vertical data-separator-notes="^Note:")
           script(type="text/template")!=page._content
 
     script(src=theme.vendors.revealjs.js)
     script(src=theme.vendors.revealjs.plugin.markdown)
+    script(src=theme.vendors.revealjs.plugin.notes)
+    script(src=theme.vendors.revealjs.plugin.highlight.js)
+    link(rel="stylesheet", href=theme.vendors.revealjs.plugin.highlight.monokai)
     - var revealConfig = JSON.stringify(slide.config || theme.slide.config)
     script.
       document.addEventListener("DOMContentLoaded", function() {
         const revealConfig = !{revealConfig}
-        revealConfig.plugins = [ RevealMarkdown ]
+        revealConfig.plugins = [ RevealMarkdown, RevealNotes, RevealHighlight ]
         Reveal.initialize(revealConfig);
       })
