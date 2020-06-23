@@ -314,6 +314,11 @@ vendors:
   disqusjs:
     css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
     js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
+  revealjs:
+    css: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css
+    js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
+    plugin:
+      markdown: https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js
 
 # UI
 banner:
@@ -731,3 +736,10 @@ baidu_push: false
 custom:
   style: # source/_data/style/*
 
+# slide
+slide:
+  separator: ---
+  separator_vertical: --
+  theme: white
+  config:
+    mouseWheel: false

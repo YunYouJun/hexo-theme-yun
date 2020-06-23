@@ -1,0 +1,43 @@
+- var title = (__('title') !== 'title' && __('title')) || config.title
+- var author = config.author + (config.email ? ',' + config.email : '')
+- var copyright = config.copyright || config.author
+
+doctype html
+html(lang=config.language)
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name='theme-color', content=theme.colors.primary)
+    meta(name='author' content=author)
+    meta(name="copyright" content=copyright)
+    !=meta_generator()
+    meta(name='theme' content="hexo-theme-yun")
+    - page_title(page)
+    if page.title
+      title=page.title + ' | ' + title
+    else
+      title=title
+    block preconnect
+
+    - var slide = page.slide || theme.slide
+    link(rel="stylesheet", href=theme.vendors.revealjs.css)
+    link(rel="stylesheet" href=`https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/${slide.theme ||theme.slide.theme}.css`)
+    //- other todo
+    //- slides list
+
+  body
+    .reveal
+      .slides
+        section(data-markdown data-separator=theme.slide.separator)
+          script(type="text/template")!=page._content
+
+    script(src=theme.vendors.revealjs.js)
+    script(src=theme.vendors.revealjs.plugin.markdown)
+    - var revealConfig = JSON.stringify(slide.config || theme.slide.config)
+    script.
+      document.addEventListener("DOMContentLoaded", function() {
+        const revealConfig = !{revealConfig}
+        revealConfig.plugins = [ RevealMarkdown ]
+        Reveal.initialize(revealConfig);
+      })

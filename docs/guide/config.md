@@ -497,7 +497,7 @@ social:
 - `title`: 设置文字内容
 - `cloud`: 在首页下方显示流动的云
   - `enable`: 是否开启
-  - `ccolor`: 自定义色彩
+  - `color`: 自定义色彩
 - `go_down`: 向下箭头按钮（点击翻页）
 
 ```yaml
@@ -1334,7 +1334,7 @@ mourn:
 
 相比 `head` 引入，你可以在此处编写 `stylus` 文件，并使用主题已有的变量，且将编译进 `hexo-theme-yun.css` 中。
 
-> 新建 `source/_data/style` 文件夹，并在新建 `xxx.styl`，开始编写你的自定义样式。
+> 新建 `source/_data/style` 文件夹，并再新建 `xxx.styl`，开始编写你的自定义样式。
 
 譬如通过以下方式将导入你的 `source/_data/style` 下所有的 `.styl` 文件。
 
