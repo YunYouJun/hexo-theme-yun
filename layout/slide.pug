@@ -23,13 +23,11 @@ html(lang=config.language)
     - var slide = page.slide || theme.slide
     link(rel="stylesheet", href=theme.vendors.revealjs.css)
     link(rel="stylesheet" href=`https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/${slide.theme ||theme.slide.theme}.css`)
-    //- other todo
-    //- slides list
 
   body
     .reveal
       .slides
-        section(data-markdown data-separator=theme.slide.separator data-separator-vertical=theme.slide.separator_vertical data-separator-notes="^Note:")
+        section(data-markdown data-separator=theme.slide.separator data-separator-vertical=theme.slide.separator_vertical data-separator-notes=theme.slide.data_separator_notes)
           script(type="text/template")!=page._content
 
     script(src=theme.vendors.revealjs.js)

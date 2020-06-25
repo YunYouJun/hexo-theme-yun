@@ -743,7 +743,8 @@ custom:
 # slide
 slide:
   separator: ---
-  separator_vertical: ~~
+  separator_vertical: "~~"
+  data_separator_notes: "^Note:"
   theme: white
   config:
     history: true

@@ -391,6 +391,75 @@ photos:
 > 为什么使用相册集作为 `albums`，`gallery` 作为相册 ？
 > [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
 
-### Slides 幻灯片
+## Slides 幻灯片
 
-加上 `#/1` 或其他数字，跳转指定页。
+> 使用 [reveal.js](https://revealjs.com/) 实现，更多信息请参见[文档](https://revealjs.com/markdown/)。
+
+你可以使用 Markdown 混合 Html 来快速编写你的幻灯片。
+
+`source` 下新建 `slides/test.md`。
+
+或者命令：
+
+```sh
+hexo new page --path slides/test "测试 Slides"
+```
+
+进入 `test.md`，修改头部如下（遵循对应语法即可开始编辑你的 Slides 文件）
+
+```yaml
+---
+title: Color Dust
+date: 2020-06-23 16:27:24
+updated: 2020-06-23 16:27:24
+layout: slide
+slide:
+  theme: white
+  config:
+    history: true
+    mouseWheel: true
+---
+
+```
+
+接着直接在下方用 Markdown 开始编写你的 Slides 文件吧。
+
+```md
+## Slide 1
+
+## A paragraph with some text and a [link](http://hakim.se).
+
+## Slide 2
+
+---
+
+## Slide 3
+```
+
+我的一个 Slides 示例:
+
+- [color-dust.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/slides/color-dust.md)
+- [预览](https://www.yunyoujun.cn/slides/color-dust.html#/)
+
+### 通用配置
+
+默认水平分页分隔符为 `---`，垂直分页分隔符为 `~~`，笔记开始关键字为 `Note:`。
+
+> 按 <kbd>S</kbd> 开启演讲者模式。
+
+主题为 `white`，[更多主题名称](https://revealjs.com/themes/)。
+
+`config` 对应[更多配置](https://revealjs.com/config/)。
+
+```yaml
+slide:
+  separator: ---
+  separator_vertical: "~~"
+  data_separator_notes: "^Note:"
+  theme: white
+  config:
+    history: true
+    mouseWheel: false
+```
+
+> 至于想要 Slides 的列表嘛，自己建个 `source/slides/index.md` 在里面列吧。

@@ -147,5 +147,12 @@ If you have already used this theme, you are welcome to leave your site at [Demo
         <sub title="it萌新的进阶之路">小白菜的博客</sub>
       </a>
     </td>
+    <td>
+      <a href="https://edenjohnson.me" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/MEMZSONBILI/PicGoBed@master/images/20200625174516.jpg"/>
+        <br />
+        <sub title="去探索，去发现">Eden瞎写小屋</sub>
+      </a>
+    </td>
   </tr>
 </table>
