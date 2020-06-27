@@ -10,6 +10,12 @@ $banner-char-bg-color = white;
   --banner-char-color: black;
 }
 
+if (hexo-config('banner.border')) {
+  $char-border-width = 1px;
+} else {
+  $char-border-width = 0;
+}
+
 #banner {
   position: relative;
   display: flex;
@@ -48,7 +54,7 @@ $banner-char-bg-color = white;
 
 .char {
   font-family: $font-family-serif;
-  font-size: var(--banner-char-size);
+  font-size: var(--banner-char-size, 1rem);
   font-weight: $font-family-serif-weight;
   background-color: rgba($banner-char-bg-color, 0.5);
   line-height: 1;
@@ -66,7 +72,7 @@ $banner-char-bg-color = white;
   }
 
   &-left {
-    border-left: $border-width solid var(--banner-line-color);
+    border-left: $char-border-width solid var(--banner-line-color);
     border-right: 0px solid rgba($colors.primary, 0.1);
     border-right-width: 0px;
     // animation-name: char-move-left;
@@ -78,7 +84,7 @@ $banner-char-bg-color = white;
 
   &-right {
     border-left: 0px solid rgba($colors.primary, 0.1);
-    border-right: $border-width solid var(--banner-line-color);
+    border-right: $char-border-width solid var(--banner-line-color);
     border-left-width: 0px;
     // animation-name: char-move-right;
     animation-duration: $char-animation-duration;
@@ -96,7 +102,7 @@ $banner-char-bg-color = white;
 
   to {
     opacity: 1;
-    border-right-width: var(--banner-char-size, 1rem);
+    border-right-width: var(--banner-empty-border-size, var(--banner-char-size));
   }
 }
 
@@ -108,7 +114,7 @@ $banner-char-bg-color = white;
 
   to {
     opacity: 1;
-    border-left-width: var(--banner-char-size, 1rem);
+    border-left-width: var(--banner-empty-border-size, var(--banner-char-size));
   }
 }
 

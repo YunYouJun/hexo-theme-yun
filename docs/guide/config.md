@@ -519,6 +519,7 @@ social:
 
 - `enable`: 是否开启
 - `title`: 设置文字内容
+- `banner`: 是否开启标语中字符的左右边框
 - `cloud`: 在首页下方显示流动的云
   - `enable`: 是否开启
   - `color`: 自定义色彩
@@ -529,12 +530,24 @@ banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
+  banner: true
   cloud:
     enable: true
     color: "white"
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
+```
+
+你可以通过数组形式来自定义字符的分割，例如：
+
+```yaml
+banner:
+  title:
+    - Yun
+    - You
+    - Jun
+    - Blog
 ```
 
 ### 公告

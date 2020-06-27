@@ -177,6 +177,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="D.C.Forever">琴社迷思</sub>
       </a>
     </td>
+    <td>
+      <a href="https://chi-tang-github.github.io/" target="_blank">
+        <img width="80px" src="https://s1.ax1x.com/2020/06/27/N63K8e.jpg"/>
+        <br />
+        <sub title="只是一个普通的初中生罢了">池某的小博客</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
