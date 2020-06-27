@@ -170,6 +170,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="去探索，去发现">Eden瞎写小屋</sub>
       </a>
     </td>
+    <td>
+      <a href="https://justwb.me" target="_blank">
+        <img width="80px" src="https://justwb.me/avatar.jpeg"/>
+        <br />
+        <sub title="D.C.Forever">琴社迷思</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
