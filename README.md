@@ -113,7 +113,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://gloomym.github.io/" target="_blank">
+      <a href="http://www.romastar.cn/" target="_blank">
         <img width="80px" src="https://personalblog-1301685299.cos.ap-nanjing.myqcloud.com/MyBlog-Images/Personal-Info/Avatar.jpg"/>
         <br />
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
@@ -131,6 +131,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg"/>
         <br />
         <sub title="待我熬尽一日苦，喂你一口甜！">陌上花的小栈</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://lymtics.top" target="_blank">
+        <img width="80px" src="https://gitee.com/Renen/blogpic/raw/master/sources/BlogAvatar.jpg"/>
+        <br />
+        <sub title="Love You More Than I Can Say.">Lymtics</sub>
       </a>
     </td>
   </tr>
@@ -182,6 +189,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://s1.ax1x.com/2020/06/27/N63K8e.jpg"/>
         <br />
         <sub title="只是一个普通的初中生罢了">池某的小博客</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://bei-gui.gitee.io" target="_blank">
+        <img width="80px" src="https://s1.ax1x.com/2020/06/28/Ncv0Bt.jpg"/>
+        <br />
+        <sub title="记录学网安日常百坑">北轨的小破站</sub>
       </a>
     </td>
   </tr>

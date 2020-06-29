@@ -1,14 +1,14 @@
 #reward-container
-  if theme.reward_settings.url
-    a#reward-button.hty-icon-button.button-glow(href=url_for(theme.reward_settings.url) title=__('reward.donate'))
+  if theme.reward.url
+    a#reward-button.hty-icon-button.button-glow(href=url_for(theme.reward.url) title=__('reward.donate'))
       +icon('icon-hand-coin-line')
   else
     span#reward-button.hty-icon-button.button-glow(title=__('reward.donate'), onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";')
       +icon('icon-hand-coin-line')
-  if theme.reward_settings.comment
-    #reward-comment!=theme.reward_settings.comment
+  if theme.reward.comment
+    #reward-comment!=theme.reward.comment
   #qr(style='display:none;')
-    for method in theme.reward
+    for method in theme.reward.methods
       div(style='display:inline-block')
         if method.path
           a(href= method.link ? method.link : method.path)

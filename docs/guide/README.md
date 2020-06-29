@@ -108,6 +108,10 @@ cd themes/yun
 git pull
 ```
 
+::: tip
+当主题配置出现不兼容更新时，请参见 [迁移指南](/guide/migrate)。
+:::
+
 如果您修改了主题的 `themes/yun/_config.yml` 配置文件，那么您升级时可能会遭遇冲突，需要自行调整。
 
 ::: danger

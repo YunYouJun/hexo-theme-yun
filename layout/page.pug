@@ -58,7 +58,7 @@ block content
           .post-content(class='post-markdown')!= page.content
 
     if page.reward !== undefined
-      - theme.reward_settings.enable = page.reward
-    if theme.reward_settings.enable
+      - theme.reward.enable = page.reward
+    if theme.reward.enable
       include _partial/post/reward.pug
 

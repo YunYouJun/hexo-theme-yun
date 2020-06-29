@@ -874,7 +874,7 @@ After enabled, a donating button will be displayed at the end of each article or
 - `url`: your reward link (when you enable the reward link, it will automatically jump to your external link instead of expanding the QR code)
 
 ```yaml
-reward_settings:
+reward:
   enable: true
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
@@ -899,18 +899,19 @@ QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a c
 
 ```yaml
 reward:
-  - name: Alipay
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "# 00A3EE"
-    icon: icon-alipay-line
-  - name: QQ pay
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-    color: "# 12B7F5"
-    icon: icon-qq-line
-  - name: WeChat Pay
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-    color: "# 2DC100"
-    icon: icon-wechat-pay-line
+  methods:
+    - name: Alipay
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      color: "# 00A3EE"
+      icon: icon-alipay-line
+    - name: QQ pay
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      color: "# 12B7F5"
+      icon: icon-qq-line
+    - name: WeChat Pay
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      color: "# 2DC100"
+      icon: icon-wechat-pay-line
 ```
 
 You can override it in `yun.yml`.

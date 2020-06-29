@@ -1130,21 +1130,7 @@ lazyload:
 - `icon`: 打赏图标
 - `comment`: 在打赏按钮下显示你想说的话
 - `url`: 你的打赏链接（当你开启打赏链接时，将自动跳转你的外部链接而不是展开二维码）
-
-```yaml
-reward_settings:
-  enable: true
-  icon: icon-hand-coin-line
-  comment: I'm so cute. Please give me money.
-  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
-```
-
-您也可以在某篇文章的首部单独设置是否开启打赏。
-
-```yaml
-reward: true
-# reward: false
-```
+- `methods`: 数组，打赏方式
 
 ### 打赏二维码
 
@@ -1155,30 +1141,38 @@ reward: true
 - `color`: 图标颜色
 - `icon`: 图标名称
 
+在 `yun.yml` 中进行覆盖。
+
+::: warning
+v0.9.2 将原先的 `reward_settings` 与 `reward` 配置合并。
+:::
+
 ```yaml
 reward:
-  - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
-  - name: QQ 支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-    color: "#12B7F5"
-    icon: icon-qq-line
-  - name: 微信支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100"
-    icon: icon-wechat-pay-line
+  enable: true
+  icon: icon-hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
 ```
 
-你可以在 `yun.yml` 中进行覆盖。
+您也可以在某篇文章的首部单独设置是否开启打赏。
 
 ```yaml
-reward:
-  - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
+reward: true
+# reward: false
 ```
 
 ## 页脚
