@@ -97,7 +97,6 @@ module.exports = {
             "guide/additional-package-support",
             "guide/icon",
             "guide/faq",
-            "guide/migrate",
           ],
         },
       },
