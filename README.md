@@ -192,10 +192,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://bei-gui.gitee.io" target="_blank">
-        <img width="80px" src="https://s1.ax1x.com/2020/06/28/Ncv0Bt.jpg"/>
+      <a href="https://xmuli.tech" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/xmuli_yj_256px.png"/>
         <br />
-        <sub title="记录学网安日常百坑">北轨的小破站</sub>
+        <sub title="与子偕臧">偕臧的小站</sub>
       </a>
     </td>
   </tr>

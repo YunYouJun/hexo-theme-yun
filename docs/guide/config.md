@@ -30,6 +30,8 @@ language: zh-CN
 
 配置方式参考下例：
 
+> 各语言对应属性和内容见 `themes/yun/languages`，覆盖对应项即可。
+
 ```yaml
 en: # 将要覆盖的语言
   menu:
