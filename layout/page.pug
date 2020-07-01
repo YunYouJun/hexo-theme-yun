@@ -55,7 +55,7 @@ block content
       +page_header(page.title, page.icon)
       article#page
         section.post-body(itemprop='articleBody')
-          .post-content(class='post-markdown')!= page.content
+          .post-content.markdown-body!= page.content
 
     if page.reward !== undefined
       - theme.reward.enable = page.reward

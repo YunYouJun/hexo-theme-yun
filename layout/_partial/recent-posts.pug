@@ -22,7 +22,7 @@ section#recent-posts.hty-layout-grid
               if post.description
                 .post-description=post.description
           .post-card-content.text-center
-            .post-card-excerpt.post-markdown!=post.excerpt
+            .post-card-excerpt.markdown-body!=post.excerpt
 
           .hty-card__actions.post-card__actions
             .post-card-category

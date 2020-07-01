@@ -269,6 +269,7 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.7/dist/yun/yun-markdown.min.css
   # Todo:
   # markdown
   # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
@@ -343,7 +344,7 @@ font:
   cdn:
     enable: true
     lib:
-      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Source+Code+Pro&display=swap
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
     family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
