@@ -269,7 +269,7 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.8/dist/yun/yun-markdown.min.css
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.10/dist/yun/yun-markdown.min.css
   # Todo:
   # markdown
   # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
