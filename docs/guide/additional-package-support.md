@@ -145,6 +145,33 @@ live2d:
   #   hitokoto: true
 ```
 
+## 文章优化为短链接
+
+将文章链接优化为短链接，需要安装 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件；具体例子 参考 [#39](https://github.com/YunYouJun/hexo-theme-yun/issues/39) 
+
+- 需要额外设置，执行： `npm install hexo-abbrlink --save` 安装插件，由于插件官网前几天更新， 需要额外做一些设置
+
+> 在 `hexo/_config.yml` 找到 和 `permalink:` 相关代码片， 修改为如下：
+
+```yaml
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+# permalink: :year/:month/:day/:title/  # 旧的注释掉
+# permalink_defaults:                   # 旧的注释掉
+permalink: posts/:abbrlink/
+abbrlink:
+  alg: crc32  #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+  drafts: false #(true)Process draft,(false)Do not process draft
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: false                      #默认为 true， 手改改为 false
+     depth: 
+```
+
 ## 标签云（词云）
 
 在 `yun.yml` 中开启在侧边栏下方显示
