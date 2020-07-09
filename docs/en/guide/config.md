@@ -165,7 +165,7 @@ cdn:
     base:
     async:
       # Icon resources introduced by default, use iconfont
-      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
+      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
     defer:
 ```
 

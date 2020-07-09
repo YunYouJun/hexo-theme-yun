@@ -198,7 +198,7 @@ cdn:
     base:
     async:
       # 默认引入的图标资源，使用 iconfont
-      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
+      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
     defer:
 ```
 
@@ -308,7 +308,7 @@ head:
   js:
     async:
       # 这里是你从 iconfont 处获得的图标链接。
-      iconfont: //at.alicdn.com/t/font_1623879_a03x3er7qur.js
+      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
 ```
 
 ### [Remix Icon](https://remixicon.com/)

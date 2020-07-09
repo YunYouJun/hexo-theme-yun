@@ -29,7 +29,7 @@ module.exports = {
       "script",
       {
         async: true,
-        src: "//at.alicdn.com/t/font_1140697_pem9yni52s.js",
+        src: "//at.alicdn.com/t/font_1140697_stqaphw3j4.js",
       },
     ],
   ],

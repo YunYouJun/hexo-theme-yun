@@ -60,7 +60,7 @@ If you have already used this theme, you are welcome to leave your site at [Demo
       </a>
     </td>
     <td>
-      <a href="https://www.addesp.com/" target="_blank">
+      <a href="https://sblog.addesp.com/" target="_blank">
         <img width="80px" src="https://www.addesp.com/avatar.jpg"/>
         <br />
         <sub title="记录回忆，分享笔记。">ADD-SP的博客</sub>
