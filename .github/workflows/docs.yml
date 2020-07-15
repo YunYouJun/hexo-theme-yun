@@ -16,13 +16,12 @@ jobs:
 
       - name: trigger yunyoujun.github.io
         run: |
-          curl --location --request POST 'https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches' \
-          --header 'Content-Type: application/json' \
-          --header 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
-          --header 'Content-Type: application/json' \
-          --data-raw '{
-            "event_type": "on-demand-test"
-          }'
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches \
+            -H 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
+            -d '{"event_type":"on-demand-test"}'
 
       - run: yarn install
       - run: yarn docs:build
