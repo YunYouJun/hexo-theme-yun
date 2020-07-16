@@ -16,8 +16,12 @@ npm install hexo-wordcount
 
 在配置文件 `source/_data/yun.yml` 中：
 
+- `count`: 字数统计
+- `time`: 阅读时间
+
 ```yaml
 wordcount:
+  enable: true
   count: true
   time: true
 ```
@@ -133,7 +137,7 @@ live2d:
   #   hitokoto: true
 ```
 
-## 文章优化为短链接
+## 文章短链接
 
 将文章链接优化为短链接，需要安装 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件；具体例子 参考 [#39](https://github.com/YunYouJun/hexo-theme-yun/issues/39)
 

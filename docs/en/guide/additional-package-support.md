@@ -12,8 +12,12 @@ npm install hexo-wordcount
 
 Enter the configuration file `source/_data/yun.yml` in the root directory of the blog
 
+- `count`: Word Count
+- `time`: Read Time
+
 ```yaml
 wordcount:
+  enable: true
   count: true
   time: true
 ```
