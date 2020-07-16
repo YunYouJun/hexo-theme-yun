@@ -4,35 +4,23 @@
 
 ## 字数统计
 
-安装 [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+> v0.9.4 使用 [hexo-wordcount](https://github.com/willin/hexo-wordcount) 替代 [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+
+安装 [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
 ```sh
-npm install hexo-symbols-count-time
+npm install hexo-wordcount
 # or
-# yarn add hexo-symbols-count-time
+# yarn add hexo-wordcount
 ```
 
-进入博客根目录的配置文件 `_config.yml`
+在配置文件 `source/_data/yun.yml` 中：
 
 ```yaml
-symbols_count_time:
-  symbols: true
+wordcount:
+  count: true
   time: true
-  total_symbols: true
-  total_time: true
 ```
-
-进入博客根目录的配置文件 `source/_data/yun.yml`
-
-```yaml
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 250
-```
-
-> 更多信息及使用方法请参见 [hexo-symbols-count-time | GitHub](https://github.com/theme-next/hexo-symbols-count-time)。
 
 ## RSS
 
@@ -147,7 +135,7 @@ live2d:
 
 ## 文章优化为短链接
 
-将文章链接优化为短链接，需要安装 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件；具体例子 参考 [#39](https://github.com/YunYouJun/hexo-theme-yun/issues/39) 
+将文章链接优化为短链接，需要安装 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件；具体例子 参考 [#39](https://github.com/YunYouJun/hexo-theme-yun/issues/39)
 
 - 需要额外设置，执行： `npm install hexo-abbrlink --save` 安装插件，由于插件官网前几天更新， 需要额外做一些设置
 
@@ -162,14 +150,14 @@ root: /
 # permalink_defaults:                   # 旧的注释掉
 permalink: posts/:abbrlink/
 abbrlink:
-  alg: crc32  #support crc16(default) and crc32
-  rep: hex    #support dec(default) and hex
+  alg: crc32 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
   drafts: false #(true)Process draft,(false)Do not process draft
   # Generate categories from directory-tree
   # depth: the max_depth of directory-tree you want to generate, should > 0
   auto_category:
-     enable: false                      #默认为 true， 手改改为 false
-     depth: 
+    enable: false #默认为 true， 手改改为 false
+    depth:
 ```
 
 ## 标签云（词云）

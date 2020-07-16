@@ -1,5 +1,5 @@
 .post-meta
-  .post-time(style=config.symbols_count_time && !post.type ? "display:block" : "display:inline-block")
+  .post-time(style=theme.wordcount.enable && !post.type ? "display:block" : "display:inline-block")
     - var date_diff = date(post.date) != date(post.updated)
     - var time_diff = time(post.date) != time(post.updated)
     - var datetime_diff = date_diff || time_diff
@@ -27,24 +27,23 @@
           - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
           time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
 
-  if config.symbols_count_time && !post.type
+  //- wordcount
+  if theme.wordcount.enable && !post.type
     span.post-count
-      if config.symbols_count_time.symbols || config.symbols_count_time.time
+      if theme.wordcount.count || theme.wordcount.time
         span.post-symbolcount
-          if config.symbols_count_time.symbols
-            span.post-meta-item-icon(title=__('symbols_count_time.count'))
+          if theme.wordcount.count
+            span.post-meta-item-icon(title=__('wordcount.count'))
               +icon('icon-file-word-line')
             |  
-            span(title=__('symbols_count_time.count'))=symbolsCount(post.content)
-          if config.symbols_count_time.symbols && config.symbols_count_time.time
+            span(title=__('wordcount.count'))=wordcount(post.content)
+          if theme.wordcount.count && theme.wordcount.time
             span.post-meta-divider='-'
-          if config.symbols_count_time.time
-            span.post-meta-item-icon(title=__('symbols_count_time.time'))
+          if theme.wordcount.time
+            span.post-meta-item-icon(title=__('wordcount.time'))
               +icon('icon-timer-line')
             |  
-            span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
-
-
+            span(title=__('wordcount.time'))=min2read(post.content) + 'm'
 
   if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
     span.post-busuanzi

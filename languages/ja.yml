@@ -89,9 +89,8 @@ accessibility:
 #   prev_page: 前のページ
 #   next_page: 次のページ
 
-symbols_count_time:
+wordcount:
   count: 単語数
   count_total: 単語の総数
   time: 読書の時間
   time_total: 読書の合計時間
-  time_minutes: 分

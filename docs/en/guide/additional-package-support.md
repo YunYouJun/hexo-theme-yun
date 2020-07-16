@@ -2,35 +2,21 @@
 
 ## Word Count
 
-Install [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+Install [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
 ```sh
-npm install hexo-symbols-count-time
+npm install hexo-wordcount
 # or
-# yarn add hexo-symbols-count-time
-```
-
-Enter the configuration file `_config.yml` in the root directory of the blog
-
-```yaml
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
+# yarn add hexo-wordcount
 ```
 
 Enter the configuration file `source/_data/yun.yml` in the root directory of the blog
 
 ```yaml
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 250
+wordcount:
+  count: true
+  time: true
 ```
-
-> For more information and usage, please refer to [hexo-symbols-count-time | GitHub](https://github.com/theme-next/hexo-symbols-count-time).
 
 ## RSS
 

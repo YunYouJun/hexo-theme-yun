@@ -640,13 +640,12 @@ busuanzi:
   page_pv: true
   page_pv_icon: icon-eye-line
 
-# Post wordcount display settings
-# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 275
+# Post wordcount
+# https://github.com/willin/hexo-wordcount
+wordcount:
+  enable: false
+  count: true
+  time: true
 
 # search
 search:
