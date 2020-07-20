@@ -144,7 +144,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
   <tr align="center">
     <td>
       <a href="https://qingxu.ga" target="_blank">
-        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.jpg"/>
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.png"/>
         <br />
         <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
       </a>

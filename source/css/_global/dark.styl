@@ -13,14 +13,6 @@ body {
   }
 }
 
-a {
-  color: lighten($colors.primary, 30%);
-
-  &:hover {
-    color: $colors.primary;
-  }
-}
-
 // banner
 $banner-char-bg-color = black;
 
@@ -47,6 +39,11 @@ $search-bg-image = hexo-config('search.dark_bg_image');
 
 .search-popup {
   background-image: url($search-bg-image);
+}
+
+// post
+.post-title-link {
+  color: lighten($colors.primary, 30%);
 }
 
 // post-card
