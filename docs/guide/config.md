@@ -521,7 +521,7 @@ social:
 
 - `enable`: 是否开启
 - `title`: 设置文字内容
-- `banner`: 是否开启标语中字符的左右边框
+- `border`: 是否开启标语中字符的左右边框
 - `cloud`: 在首页下方显示流动的云
   - `enable`: 是否开启
   - `color`: 自定义色彩
@@ -532,7 +532,7 @@ banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
-  banner: true
+  border: true
   cloud:
     enable: true
     color: "white"
@@ -604,7 +604,7 @@ head:
 > 你可以仅覆盖你想覆盖的字体族。
 
 - 衬线字体（Serif）：较粗表强调，通常用于首页标语（Banner）、Say、站点与文章标题（以及 links、girls 等页面的作品名称）等处。
-- 无衬线字体（Sans Serif）：较细以营造轻盈之感，通常为普通文本内容。（如果你的字体显示较粗，可能是你在 Windows 系统上安装了 `PingFang SC` 字体，却没有安装对应字重。）
+- 无衬线字体（Sans Serif）：通常为普通文本内容。（如果你的字体显示较粗，可能是你在 Windows 系统上安装了 `PingFang SC` 字体，却没有安装对应字重。）
 - 等宽字体（monospace）：字符均具有相同宽度，通常用于需要相同宽度以对齐之处（如日期、序号）。
 
 将 `font.cdn.enable` 设置为 `false` 以全部使用系统默认字体，达到最佳访问速度。（默认开启时，使用 `media="none" onload="this.media='all'"` 实现 css 样式的异步加载。）
@@ -620,7 +620,7 @@ font:
     weight: 900
   sans_serif:
     family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
-    weight: 300
+    weight: 400
   monospace:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
@@ -1089,6 +1089,7 @@ highlight:
 设置您的文章的分享版权
 
 > [关于许可协议](https://creativecommons.org/licenses/)
+> 默认使用 署名-非商业性使用-相同方式共享 4.0，即 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。
 
 - `license`: 设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
 - `language`: 设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
