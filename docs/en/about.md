@@ -4,14 +4,16 @@ This theme is a custom theme based on [Hexo](https://hexo.io).
 
 Please be familiarized with the relative use of [Hexo](https://hexo.io/en-us/docs/).
 
-Are you a newbie? Not a problem! Here's a tutorial I made just for you[Tutorial on how to build your website from scratch-Yunyoujun's small station](https://www.yunyoujun.cn/share/how-to-build-your-site/).
+Are you a newbie? Not a problem! Here's a tutorial I made just for you[Tutorial on how to build your website from scratch-Yunyoujun's small site](https://www.yunyoujun.cn/share/how-to-build-your-site/)(In Chinese).
+
+Yeah, you can read hexo docs directly.
 
 If you like my theme, please give me a [![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)](https://github.com/YunYouJun/hexo-theme-yun) to show me your appreciation.
 
 > Since I've used [SATA License](https://github.com/zTrix/sata-license), lol.
 > Don't you know what this means? To put it simply, you can use my theme in however ways you decide by just a click of the Star.
 
--[hexo-theme-yun constructing notes](https://www.yunyoujun.cn/note/make-hexo-theme-yun/)
+- [hexo-theme-yun constructing notes](https://www.yunyoujun.cn/note/make-hexo-theme-yun/)
 
 ## Keywords
 
@@ -22,7 +24,7 @@ Simple, elegant, adaptive, fast, CDN, fun, full-featured
 - Documentation! (By no means, I don't think there are themes out there with such detailed documentation like mine)
 - High level of customization, and easy to configure on-demand (convention > configuration)
 - Light and fast (no jQuery dependencies, I use CDN and the latest API whenever possible)
-- Since it is not yet popular, it is no need to worry about others having the same theme!
+- ~~Since it is not yet popular, it is no need to worry about others having the same theme!~~
 - Some weird features (such as generating a Waifu list?)
 
 > I realized that many Hexo themes introduce jQuery for easy development.
@@ -36,7 +38,7 @@ Buttons are preferentially represented by simple and easy-to-understand icons in
 
 ### Novel
 
-Using the latest API as a priority under the circumstances where most browsers already support it(Reduce redundant codes and increase speed.)
+Using the latest API as a priority under the circumstances where most browsers already support it. (Reduce redundant codes and increase speed.)
 
 > IE: Stop staring at me!
 
@@ -68,7 +70,18 @@ Previously, I wandered between the choice of bright and dark themes, so I though
 > People with astigmatism (according to various data, approximately 50% of the population has this) feel that text on a black background is more difficult to perceive than black text on a white background, which is related to the brightness level. On a bright display (white background), the iris will be slightly closed, reducing the effect of "anamorphic" lenses; on a darker display (black background), the iris will open and receive more light, and then the distortion of the lens will make the focal length of the eyes more blurred.
 > Therefore, if there is a large amount of text on the interface, and the user needs to read for a long time, then using a lighter background will make the user feel more comfortable.
 
-## Inspiration
+## Thanks
+
+### Project
+
+- [jsDelivr – Open Source CDN](https://www.jsdelivr.com/)
+- [Hexo](https://github.com/hexojs/hexo)
+- [RemixIcon](https://github.com/Remix-Design/remixicon)
+- [iconfont](https://www.iconfont.cn/)
+- [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/)
+- [VuePress](https://github.com/vuejs/vuepress)
+- [KaTeX](https://github.com/KaTeX/KaTeX)
+- [Pjax](https://github.com/MoOx/pjax)
 
 ### Theme
 
@@ -84,3 +97,11 @@ Previously, I wandered between the choice of bright and dark themes, so I though
 ### Article
 
 -[Hexo theme development experience talk](https://molunerfinn.com/make-a-hexo-theme/)
+
+## Hexo VS WordPress VS Typecho
+
+The so-called existence is reasonable.
+
+This theme is a theme of Hexo. Hexo is more suitable for people who are willing to spend time studying or have a certain basic knowledge (of course, there are also reasons to pursue static speed and absolute security, and no money to buy a server).
+
+If you want to focus more on content production and want to get started quickly (you must have a server), you can consider using [WordPress](https://wordpress.org/).

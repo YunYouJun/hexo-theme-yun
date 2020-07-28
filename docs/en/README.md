@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.gif
 heroText: hexo-theme-yun
-tagline: A powerful & simple & fast theme for Hexo.
+tagline: A light & fast & lovely theme for Hexo.
 actionText: Quick Start →
 actionLink: /en/guide/
 features:

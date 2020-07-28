@@ -77,3 +77,7 @@ if page.photos
 
 if theme.mode !== 'light'
   script(src=url_for('/js/ui/mode.js'))
+
+//- no-referer
+if page.type === 'albums' || page.layout === 'gallery'
+  meta(name="referrer" content="no-referrer")
