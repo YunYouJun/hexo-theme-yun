@@ -1019,6 +1019,7 @@ title: 一级标题
 - `max_depth`: 生成 TOC 的最大深度
 - `min_depth`: 生成 TOC 的最小深度
 - `placeholder`: 当目录不存在时，显示的话。
+- `collapse`: 是否折叠目录（默认折叠，即隐藏次级目录，滚到到相关位置时才展开）
 
 ```yaml
 toc:
@@ -1026,6 +1027,7 @@ toc:
   max_depth: 6
   min_depth: 1
   placeholder: 很遗憾，咱没写啥目录
+  collapse: false
 ```
 
 > [辅助函数 ｜ Hexo](https://hexo.io/zh-cn/docs/helpers#toc)

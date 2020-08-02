@@ -37,6 +37,7 @@ toc:
   max_depth: 6
   min_depth: 1
   # placeholder: 很遗憾，咱没写啥目录
+  collapse: true
 
 # Social Links.
 social:

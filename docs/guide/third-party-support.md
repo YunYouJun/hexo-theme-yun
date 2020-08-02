@@ -6,7 +6,7 @@
 
 ## 评论
 
-- `enable`: 默认开启
+- `enable`: 默认开启（代表整体的评论区块，你开启任意类型评论系统都须保持其开启）
 - `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
 
 ```yaml
@@ -107,7 +107,7 @@ language: zh-CN
 
 - `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
 
-> [更多配置项](https://valine.js.org/configuration.html)
+> [更多配置项](https://valine.js.org/configuration.html) 写在 `yun.yml` 中。
 
 ```yaml
 valine:

@@ -24,9 +24,12 @@
 
     .toc-child {
       font-size: 1rem;
-      overflow: hidden;
-      transition: max-height 0.6s ease-in;
-      max-height: 0;
+
+      if (hexo-config("toc.collapse")) {
+        overflow: hidden;
+        transition: max-height 0.6s ease-in;
+        max-height: 0;
+      }
     }
 
     .toc-item {
