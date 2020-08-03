@@ -213,12 +213,6 @@ If you don't have jade & stylus renderer:
 npm install hexo-render-pug hexo-renderer-stylus
 ```
 
-### Plugins
-
-Deprecated highlight.js in Hexo.
-
-> More info [here](https://yun.yunyoujun.cn/guide/config.html#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE).
-
 ## Usage
 
 ```yaml
