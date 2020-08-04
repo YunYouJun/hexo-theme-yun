@@ -10,14 +10,18 @@ function say(content, author, from) {
 
 if (CONFIG.say.api) {
   fetch(new Request(CONFIG.say.api))
-    .then(function(res) {
+    .then((res) => {
       if (res.ok) {
-        res.json().then(function(data) {
+        res.json().then((data) => {
           if (CONFIG.say.hitokoto) {
             say(data.hitokoto, data.from_who, data.from);
           } else {
             let sentence = data[Math.floor(Math.random() * data.length)];
-            say(sentence.content, sentence.author, sentence.from);
+            if (sentence.content) {
+              say(sentence.content, sentence.author, sentence.from);
+            } else {
+              say(sentence);
+            }
           }
         });
       } else {
@@ -26,7 +30,7 @@ if (CONFIG.say.api) {
         );
       }
     })
-    .catch(function(e) {
-      console.log("error: " + e.toString());
+    .catch((err) => {
+      console.log("error: " + err.message);
     });
 }

@@ -15,11 +15,11 @@ let searchFunc = function(path, search_id, content_id) {
     if (xhr.readyState === xhr.DONE && xhr.status === 200) {
       let xml = xhr.responseXML;
       let datas = [];
-      xml.querySelectorAll("entry").forEach(entry => {
+      xml.querySelectorAll("entry").forEach((entry) => {
         datas.push({
           title: entry.querySelector("title").innerHTML,
           content: entry.querySelector("content").innerHTML,
-          url: entry.querySelector("url").innerHTML
+          url: entry.querySelector("url").innerHTML,
         });
       });
       let $input = document.getElementById(search_id);
@@ -65,7 +65,7 @@ let searchFunc = function(path, search_id, content_id) {
                   if (index_content < 0) {
                     index_content = 0;
                   }
-                  if (i == 0) {
+                  if (i === 0) {
                     first_occur = index_content;
                   }
                   // content_index.push({index_content:index_content, keyword_len:keyword_len});
@@ -92,7 +92,7 @@ let searchFunc = function(path, search_id, content_id) {
                   start = 0;
                 }
 
-                if (start == 0) {
+                if (start === 0) {
                   end = 100;
                 }
 

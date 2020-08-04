@@ -17,7 +17,7 @@ function generateBanner(title) {
     let charSize = rn + "rem";
     banner.insertBefore(charBox, lineBottom);
     charBox.classList.add("char-box");
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
       charBox.classList.add("char-left");
       charBox.style.animationName = "char-move-left";
     } else {
