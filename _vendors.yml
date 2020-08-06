@@ -8,6 +8,7 @@ gitalk:
   css: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
   js: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
 scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
+mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 katex:
   js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
   css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css

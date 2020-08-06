@@ -1,0 +1,18 @@
+link(rel="stylesheet" type="text/css" href=theme.vendors.katex.css)
+script(defer, src=theme.vendors.katex.js)
+if theme.katex.copy_tex
+  link(rel="stylesheet" type="text/css" href=theme.vendors.katex.copy_tex.css)
+  script(defer, src=theme.vendors.katex.copy_tex.js)
+
+script(defer src=theme.vendors.katex.auto_render)
+script.
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ]
+    });
+  });

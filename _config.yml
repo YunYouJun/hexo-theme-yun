@@ -275,10 +275,8 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.17/dist/yun/yun-markdown.min.css
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.19/dist/yun/yun-markdown.min.css
     # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
-    # planet-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/planet/planet-markdown.min.css
-    # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/blood/blood-common.min.css
   js:
     base:
     async:
@@ -655,6 +653,7 @@ google_tagmanager:
   enable: false
   id:
 
+# That is it only render those page which has `katex: true` in Front-matter.
 # math fomula
 # https://katex.org/
 katex:

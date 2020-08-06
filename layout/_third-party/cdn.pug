@@ -27,8 +27,8 @@ if theme.scrollreveal.enable
       })
     });
 
-if theme.katex.global
-  include ./katex.pug
+//- math support
+include ./math/index.pug
 
 if theme.aplayer.global
   include ./aplayer.pug
@@ -38,9 +38,6 @@ if theme.pjax.enable
   include ./pjax.pug
 
 if is_page() || is_post()
-  if page.katex && !theme.katex.global
-    include katex.pug
-
   if page.aplayer && !theme.aplayer.global
     include aplayer.pug
 

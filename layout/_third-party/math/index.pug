@@ -1,0 +1,8 @@
+- var is_index_has_math = false
+if is_home() && theme.global
+  for post in page.posts.toArray()
+    if post.mathjax && !is_index_has_math
+      - is_index_has_math = true
+
+if !theme.katex.global || is_index_has_math  || page.katex
+  include ./katex.pug
