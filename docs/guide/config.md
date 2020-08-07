@@ -1054,6 +1054,8 @@ post_edit:
 
 由于性能及定位问题，且 [Hexo 5.0](https://blog.skk.moe/post/hexo-5/) 已原生支持 prism，本主题更推荐使用 [prismjs](https://github.com/PrismJS/prism) 而非 `highlight.js`。
 
+> 请升级 Hexo 至 5.0。`npm install hexo@latest`
+
 PrismJS 是一个轻量级的代码高亮库，相比 highlight.js，prismjs 可以在 Node.js 环境执行（即：可在 Hexo 生成页面时进行代码高亮）。
 
 我们可以通过 CDN 快速切换主题，本主题也支持为亮暗模式设置不同的代码高亮主题。

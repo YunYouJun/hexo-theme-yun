@@ -54,6 +54,8 @@ social:
 
 原插件的置顶功能等了很久还没有合并。[#26](https://github.com/hexojs/hexo-generator-index/pull/26)
 
+（[1.1](https://github.com/hexojs/hexo-generator-index/pull/56) 快了）
+
 ```sh
 npm uninstall hexo-generator-index --save
 npm install hexo-generator-index-pin-top --save
@@ -166,9 +168,10 @@ abbrlink:
 
 ## 标签云（词云）
 
-在 `yun.yml` 中开启在侧边栏下方显示
+在 `yun.yml` 中设置，在标签页中使用彩色词云替代原生标签云。
 
-- `enable`: 开启后，将在标签页显示彩色词云
+- `enable`: 是否开启
+- `height`: 词云高度
 
 ```yaml
 wordcloud:
@@ -360,6 +363,15 @@ $E = mc^2$
 > 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
 
+## pjax
+
+使用 [pjax](https://github.com/MoOx/pjax) 实现。
+
+```yaml
+pjax:
+  enable: true
+```
+
 ## 其他可用插件推荐
 
 以下的插件配置与使用均与主题无关，你可以自行参考其文档配置。
@@ -369,12 +381,3 @@ $E = mc^2$
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 你可以使用它来加密一些私密的文章页面。
-
-## pjax
-
-使用 [pjax](https://github.com/MoOx/pjax) 实现。
-
-```yaml
-pjax:
-  enable: true
-```

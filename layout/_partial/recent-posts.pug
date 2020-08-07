@@ -4,7 +4,7 @@ section#recent-posts.hty-layout-grid
       .hty-layout-grid__cell.hty-layout-grid__cell--span-12
         article.hty-card.post-card(itemscope, itemtype='https://schema.org/Article')
           include ../_partial/post/post-schema.pug
-          if post.top
+          if post.top || post.sticky
             .post-top-icon
               +icon("icon-pushpin-line")
           .post-card-header

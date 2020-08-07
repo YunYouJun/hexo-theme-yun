@@ -1,28 +1,28 @@
 # Icons
 
-当前主题默认使用的图标（对应 [`_config.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/_config.yml#L277) 文件中 `cdn.js.async.iconfont` 的链接 ）
+The default icon used by the current theme (corresponding to the `cdn.js.async` in the file [`_config.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/_config.yml#L277) .iconfont` link)
 
-大部分图标取自 [Remix Icon](https://remixicon.com/)，并保持其原命名。
+Most of the icons are taken from [Remix Icon](https://remixicon.com/) and keep their original names.
 
-> 只提供默认最常用的图标，有利于在满足使用的前提下，并减少加载的资源。如果您想要使用更多图标，推荐自行前往 [iconfont](https://www.iconfont.cn/) 定制你的图标集。并在 [head](/guide/config.html#head-头部资源) 引入。
+> Only the most commonly used icons are provided by default, which is conducive to satisfying the use of the premise and reducing the loaded resources. If you want to use more icons, it is recommended to go to [iconfont](https://www.iconfont.cn/) to customize your icon set. It is introduced in [head](/guide/config.html#head-head resources).
 
-在 `_config,yml` 中书写你的图标名称时，记得加上 `icon-` 的前缀。这可以将 iconfont 的 SVG 图标与其他字体图标区分开来。
+When writing your icon name in `_config,yml`, remember to prefix it with `icon-`. This distinguishes iconfont’s SVG icons from other font icons.
 
-如：
+For Example：
 
 ```yaml
 icon: icon-github-line
 ```
 
-## 辅助图标
+## Auxiliary icon
 
-> 通用的 UI 辅助图标
+> Universal UI auxiliary icons
 
 <display-icon v-for="aria in arias" :icon="aria"></display-icon>
 
-## 表意图标
+## Ideogram icon
 
-> 通常有现实中对应物体
+> Usually there are corresponding objects in reality
 
 <display-icon v-for="object in objects" :icon="object"></display-icon>
 
@@ -31,8 +31,9 @@ icon: icon-github-line
 <display-icon v-for="logo in logos" :icon="logo"></display-icon>
 
 <div class="toast" id="toast">
-  复制成功
+  Copy Sucessfully.
 </div>
+
 
 <script>
 import icons from "../../.vuepress/assets/icons.json"

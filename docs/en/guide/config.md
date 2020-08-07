@@ -16,6 +16,14 @@ It is best not to modify any of the theme's files unless you have certain develo
 
 The default language is Chinese `zh-CN`.
 
+> The language of the site needs to be set in `_config.yml` under the Hexo directory.
+
+```yaml
+language: en
+```
+
+
+
 ### Customized Language
 
 Create a new `source/_data/language.yml` in the Hexo working directory. (If the `source/_data` directory does not exist, please create a new one.)
@@ -95,7 +103,9 @@ Follow the example below to customize the `css` and `js` resources you want to a
 
 JavaScript resource type description:
 
--`base`: must be loaded and executed in advance. -`async`: Asynchronous loading, executed immediately after loading. -`defer`: load the resource asynchronously, but execute it last.
+- `base`: must be loaded and executed in advance.
+- `async`: Asynchronous loading, executed immediately after loading.
+- `defer`: load the resource asynchronously, but execute it last.
 
 ```yaml
 head:
@@ -107,7 +117,29 @@ head:
     defer:
 ```
 
-### Favicon
+::: tip
+
+If you want to custom css，please set `yun.yml`:
+
+```yaml
+head:
+  css:
+    custom: /css/custom.css
+```
+
+file is `source/css/custom.css` (Just new it yourself!)
+
+Then write you custom css.
+
+```css
+.char {
+  background-color: transparent;
+}
+```
+
+:::
+
+### favicon
 
 Set the website icon (make sure your `favicon.ico` file is placed under the `source` folder), set as follows:
 
@@ -123,7 +155,7 @@ Your icon must be an `svg` file, and add a corresponding style to it.
 
 > You can refer to my LOGO SVG code. [yun.svg](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
 
-i.e.:
+For Example:
 
 ```html
 <svg id="yun-logo">
@@ -152,8 +184,8 @@ Therefore, this theme's CDN defaults to jsDelivr and uses `dns-prefetch` to pre-
 
 You can also obtain the CDN you want according to the naming rules, and introduce it in the `head`:
 
--GitHub CDN: `https://cdn.jsdelivr.net/gh/user/repo@version/file`
--npm: `https://cdn.jsdelivr.net/npm/package@version/file`
+- GitHub CDN: `https://cdn.jsdelivr.net/gh/user/repo@version/file`
+- npm: `https://cdn.jsdelivr.net/npm/package@version/file`
 
 `cdn` is the CDN resource currently introduced by the theme by default, and its structure is similar to `head`.
 
@@ -169,7 +201,7 @@ cdn:
     defer:
 ```
 
--`pre`: empty by default, your loading resource prefix. For example, if you want to use `jsdelivr` to accelerate the static resources of the whole station, you can set it in `yun.yml` like this.
+- `pre`: empty by default, your loading resource prefix. For example, if you want to use `jsdelivr` to accelerate the static resources of the whole station, you can set it in `yun.yml` like this.
 
 > Replace `https://cdn.jsdelivr.net/gh/` with your GitHub username and repository name (you can also add the current branch, such as `@master`).
 > `@latest` is to use the latest version (but it will still be cached, **and it will take 12 hours to update**, if you need to force a refresh, please refer to [Purge Cache](https://github.com/jsdelivr/sdelivr#purge-cache)
@@ -209,7 +241,10 @@ cdn:
 
 Use `preload`, `prefetch`, `preconnect`, `dns-prefetch` to optimize the speed of webpage recording.
 
--`preload`: resources that will be used after this page -`prefetch`: resources that may be used after jump to the page -`dns-prefetch`: resolve the DNS address of the domain name that will be used -`preconnect`: establish a link with the specified domain name in advance; it has more TCP connections than`dns-prefetch`
+- `preload`: resources that will be used after this page
+- `prefetch`: resources that may be used after jump to the page 
+- `dns-prefetch`: resolve the DNS address of the domain name that will be used 
+- `preconnect`: establish a link with the specified domain name in advance; it has more TCP connections than`dns-prefetch`
 
 `preload` and `prefetch` are only used to load local resources (and generally use by default). Do not use resources with a protocol header (`http://`).
 
@@ -245,10 +280,8 @@ This theme uses some of Remix Icon's icons by default and loads through cdn gene
 
 If you want to use other icons, the following icons are recommended.
 
-- Only download the necessary svg and store it as a CDN, and only use it when necessary (do not introduce css in order to increase the speed as much as possible).
-- Use `font-awesome`, saving time and effort.
-- Use only custom `iconfont` icon sets. (Fast speed, but need to configure)
-- Customize the use of `ionicons` load with `iconfont`.
+- Method 1: Most recommended, all use custom `iconfont` icon set. (Fast speed, but need to be configured by yourself)
+- Method 2: Freely import the css style file of the font icon in [head](#head-head resource), and directly input the corresponding `class` name. (Often all icon resources are introduced. Although it is convenient to introduce them at once, many icons are not practical.)
 
 ::: tip
 You can go to [iconfont](https://www.iconfont.cn/) to customize a set of icons and cover the icon resources introduced by [CDN] (# CDN).
@@ -256,6 +289,8 @@ If you just want to add a few extra icons, you'd better introduce it at [head](#
 :::
 
 Here are some ways to use basic icons.
+
+This theme is adapted to the use of the following icons.
 
 ### [iconfont](https://www.iconfont.cn/)
 
@@ -277,29 +312,16 @@ head:
 
 ### [Remix Icon](https://remixicon.com/)
 
--GitHub: <https://github.com/Remix-Design/remixicon>
--CDN: <https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css>
+- GitHub: <https://github.com/Remix-Design/remixicon>
+- CDN: <https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css>
 
 Simple, elegant and open source.
 
-### [Font-Awesome](https://fontawesome.com)
-
--GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
--CDN: <https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css>
-
-There are many and complete icons, including all kinds of trademark icons, but some are charged and the files are large.
-
-```html
-<i class="fas fa-home"> </i>
-```
-
-If you are using `Font-Awesome`, please fill in the icon configuration as follows: `fas fa-home`.
-
 ### [Ionicons](https://ionicons.com)
 
--GitHub: [ionicons](https://github.com/ionic-team/ionicons)
--CDN CSS: <https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css>
--CDN JS: <https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js>
+- GitHub: [ionicons](https://github.com/ionic-team/ionicons)
+- CDN CSS: <https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css>
+- CDN JS: <https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js>
 
 There is no trademark icon, you can use Web Component and load it on demand.
 
@@ -307,50 +329,88 @@ There is no trademark icon, you can use Web Component and load it on demand.
 
 It can automatically switch the suitable style `Material/ iOS` according to the `Android/iOS` platform.
 
-```html
-<!-- 比 unpkg 快 -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js -->
-<script src="https://unpkg.com/ionicons/dist/ionicons.js"></script>
+This theme has adapted the way the `ion-icon` tag is introduced, just configure it as follows.
+
+```yaml
+head:
+  js:
+    async: https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons.js
 ```
 
-```html
-<ion-icon name="heart"> </ion-icon>
+```yaml
+icon: ion-icon heart
 ```
-
-If you use Web Component `ion-icon`, please fill in the icon-related configuration as follows: `ion-icon heart`.
 
 #### Loading Method 2: CSS Introduction
 
-```html
-<!-- Faster than unpkg -->
-<!-- https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css -->
-<link
-  href="https://unpkg.com/ionicons/dist/css/ionicons.min.css"
-  rel="stylesheet"
-/>
+```yaml
+head:
+  css:
+    ionicons: https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css
 ```
 
-```html
-<i class="icon ion-md-heart"> </i>
+```yaml
+icon: icon ion-md-heart
 ```
-
-If you use the `font-class` method, please fill in the icon-related configuration as follows: `icon ion-md-heart`.
 
 ### [Material Design icons](https://google.github.io/material-design-icons/)
 
--GitHub: [material-design-icons](https://github.com/google/material-design-icons) -[Material Design icons](https://material.io/tools/icons)
+- GitHub: [material-design-icons](https://github.com/google/material-design-icons) 
+- [Material Design icons](https://material.io/tools/icons)
 
 Uniform style, no trademark icon. Produced by Google, due to domestic policies, loading may not be stable if using in China.
 
+The theme has also been adapted.
+
+::: tip
+
+Why do we need to adapt?
+
+Original way of use
+
+`face` is the internal content of `<i></i>`, not `class`.
+
 ```html
-<i class="material-icons">face </i>
+<i class="material-icons">face</i>
 ```
 
-If you use `ionicon`, please fill in the icon-related configuration as follows: `material-icons face`.
+:::
+
+引入对应 CDN 资源：
+
+```yaml
+head:
+  css:
+    material: https://fonts.googleapis.com/icon?family=Material+Icons
+```
+
+```yaml
+icon: material-icons face
+```
 
 ### Other Icons
 
 Similar to the use of the above icons fill in the corresponding icon `class` in the icon-related configuration.
+
+Such as [Font-Awesome](https://fontawesome.com)
+
+> GitHub: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
+Introduce CSS：
+
+```yaml
+head:
+  css:
+    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+```
+
+Write class name:
+
+```yaml
+icon: fas fa-home
+```
+
+> In fact, it is not recommended to introduce all `font-awesome`, because it is really big.
 
 ## Social Icons
 
@@ -360,7 +420,7 @@ For better display, my default link will be displayed.
 - `name`: link name
 - `link`: link
 - `icon`: Icon Class
-- `color`: Icon color (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
+- `color`: Icon color  (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
 
 ```yaml
 social:
@@ -411,9 +471,21 @@ social:
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "# 1AAD19"
+    - name: Twitter
+    link: https://twitter.com/YunYouJun
+    icon: icon-twitter-line
+    color: "#1da1f2"
+  - name: Telegram
+    link: https://t.me/YunYouJun
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: Telegram Channel
+    link: https://t.me/elpsycn
+    icon: icon-telegram-fill
+    color: "#0088CC"
 ```
 
-You only need to set `social` in`yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
+You only need to set `social` in `yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
 
 ```yaml
 social:
@@ -440,13 +512,37 @@ You can visit <https://yunyoujun.cn> to see the effect. (Each refresh will displ
 > This is the earliest function implemented during the development of this theme. During the period, it was refactored several times due to compatibility issues of browsers such as Safari, and the loading speed was also improved.
 > It was a function that went through three dynasties, lol.
 
--`enable`: whether to enable -`title`: set text content
+- `enable`: whether to enable -`title`: set text content
+- `title`: Text content
+- `border`: display the left and right border of char
+- `cloud`: Display float cloud
+  - `enable`: enable it
+  - `color`: custom cloud color
+- `go_down`: go down arrow button (click it to go down)
 
 ```yaml
 banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+```
+
+You can customize the character segmentation in the form of an array, for example:
+
+```yaml
+banner:
+  title:
+    - Yun
+    - You
+    - Jun
+    - Blog
 ```
 
 ### Announcement
@@ -462,9 +558,70 @@ notice:
 
 ## UI
 
+### Light and Dark Mode
+
+- `light`: always light mode without dark style assets
+- `dark`: always dark mode
+- `auto`: switch mode by system mode, display toggle button in sidebar
+
+> Black icon will be white in dark mode.
+
+You can set isolate background for dark mode, please see corresponding config.
+
+```yaml
+# light | dark | auto
+mode: auto
+```
+
+### Font
+
+You can set your font family and font-weight.
+
+:::tip
+
+If you use non-system-built fonts, you also need to go to [head](#head-头资源) to import them.
+
+For example, the “Noto Serif SC” font with a weight of 900 is introduced.
+
+> In order to ensure that this theme is light enough, no fonts are introduced by default, and the default fonts that come with the system are used. You can decide whether to introduce it.
+
+```yaml
+head:
+  css:
+    fonts: https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+```
+
+:::
+
+The fonts of this theme are mainly divided into the following three categories.
+
+> You can only cover the font family you want to cover.
+
+- `Serif`: The bolder form is emphasized, and is usually used in homepage banners, Say, site and article titles (and the names of works on pages such as links and girls).
+- `Sans Serif`: Usually normal text content. (If your font is bold, it may be that you installed the `PingFang SC` font on the Windows system, but did not install the corresponding font weight.)
+- `monospace`: The characters all have the same width and are usually used where the same width is required for alignment (such as dates, serial numbers).
+
+Set `font.cdn.enable` to `false` to use all system default fonts to achieve the best access speed. (When enabled by default, use `media="none" onload="this.media='all'"` to achieve css style asynchronous loading.)
+
+```yaml
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+```
+
 ### Background
 
--`opacity`: background transparency
+- `opacity`: background transparency
 
 ::: tip
 Note that the background blur is now disabled by default. It is also recommended that users use image processing tools to blur images for the background.
@@ -475,27 +632,55 @@ This also eliminates the white borders produced during the application of `blur`
 At the same time, it can also reduce the background of the image and improve the loading and rendering speed.
 :::
 
+- `dark`: the image url for dark mode
+
 ```yaml
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  # dark:
   # blur: 30px # Set the blurry degree of background
   opacity: 0.8
 ```
 
 > If you want to use a custom image background, just put it in the `source/images` folder and use `/images/xxx.jpg` to import it.
+>
+> Note: If you use a subdirectory to place your blog, such as `xxx.github.io/blog/`, your picture link needs to be set to `/blog/xxx`, or you can directly use the image hosting.
 
 #### Search Background
 
 - `placeholder`: search box prompt text (if not set, the corresponding text will be automatically selected according to Hexo language configuration)
+- `dark_bg_image`: background for dark mode
 
 ```yaml
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: xxx
   # placeholder:
 ```
 
 > For more search settings, please refer to [Search-Third Party Support](/guide/third-party-support.html#search)
+
+### Random Trianglify Background
+
+> [trianglify - GitHub](https://github.com/qrohlf/trianglify)
+
+- `enable`: default is false
+- `cellSize`: the size of polygon
+- `palette`: Palette，（[More colors](https://github.com/qrohlf/trianglify/blob/master/src/utils/colorbrewer.js)）
+- `opacity`: Opacity of background
+
+> Because the background is stretched, larger `width` and `height` will get higher definition. (Please make a trade-off with performance)
+
+```yaml
+trianglify:
+  enable: false
+  cellSize: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+```
 
 ### Fireworks
 
@@ -507,7 +692,8 @@ Click on the fireworks effect on the page
 ```yaml
 fireworks:
   enable: true
-  colors: -"102, 167, 221"
+  colors:
+  	-"102, 167, 221"
     -"62, 131, 225"
     -"33, 78, 194"
 ```
@@ -518,8 +704,14 @@ fireworks:
 
 The scrolling effect of the card on the home page can be seen in [Official Website](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js), which is enabled by default.
 
+- `targets`: set targets for scrolling effect
+
 ```yaml
-scrollreveal: true
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
 ```
 
 ### Cursor Cursor
@@ -543,11 +735,19 @@ cursor:
 
 ### Sidebar Background
 
+- `tagcloud`: display it in sidebar
+  - `amount`: the amount of tags
+
 ```yaml
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
 ```
+
+> Notice: If you use a sub-directory to place your blog, such as `xxx.github.io/blog/`, your image link needs to be set to `/blog/xxx`, or you can directly use the image bed.
 
 `bottom 3rem center` means it is centered and `3rem` from the bottom.
 
@@ -581,53 +781,45 @@ Set navigation corresponding icons and links
 They are:
 
 - Home
-- Archive
-- Label
-- Classification
+- List
+  - Archives
+  - Tags
+  - Categories
 - Custom (You can set any icon and link. When you do not set a custom icon link, it will automatically become a document navigation button to maintain the overall symmetry)
 
 > By the way, read the documentation first when encountering an issue
+
+list
+
+- `type`: archives/categories/tags, it will automatically match this type of title and display the corresponding quantity. Leave blank for other normal links.
+- `title`: override default title
+- `icon`: custom your icon
+- `path`: custom path or url
+- `count`: the amount of type, you can set custom text
 
 ```yaml
 menu:
   home:
     path: /
     icon: icon-home-4-line
-  archives:
-    path: / archives
-    icon: icon-archive-line
-  tags:
-    path: / tags
-    icon: icon-price-tag-3-line
-  categories:
-    path: / categories
-    icon: icon-folder-2-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: guess it
   custom:
     title: Document
     path: https://yun.yunyoujun.cn
     icon: icon-settings-line
 ```
-
-::: tip
-The labels and categories of the sidebar will only be displayed if you have articles that are using them.
-
-e.g.:
-
-```md
----
-title: Tutorial on how to build your website from scratch
-date: 2020-03-05 01:31:08
-updated: 2020-03-13 01:31:08
-tags:
-  - Tutorial
-  - Hexo
-  - share
-categories:
-  - Little Amway from Yun
----
-```
-
-:::
 
 ### Page Link
 
@@ -684,6 +876,9 @@ Currently, the following types are supported by default (Bilibili, Douban, GitHu
 
 ```yaml
 types:
+  link:
+    color: blue
+    icon: icon-external-link-line
   bilibili:
     color: "#FF8EB3"
     icon: icon-bilibili-line
@@ -696,6 +891,9 @@ types:
   netease-cloud-music:
     color: "#C10D0C"
     icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
   wechat:
     color: "#1AAD19"
     icon: icon-wechat-2-line
@@ -708,9 +906,6 @@ types:
   zhihu:
     color: "#0084FF"
     icon: icon-zhihu-line
-  link:
-    color: blue
-    icon: icon-external-link-line
 ```
 
 You can also set your icon and color for different links in `yun.yml`.
@@ -744,19 +939,33 @@ Hexo theme Yun
 
 You can add a `hide` attribute at the head of the article to temporarily hide an article.
 
+- `hide`:
+  - `index`: only hide in index, display in archives
+  - `true`: not display in index and archives, but rendered. You can visit the link to view.
+
+> What? Do you want to not render or display at all? Then why don't you put it in the `_drafts` folder, or simply not submit this article.
+
 ```md
 ---
 title: xxx
 hide: true
 # hide: index
+sitemap: false
+indexing: false
 ---
 ```
 
-The article will still be rendered, and you can directly view the link by yourself, but it will not be displayed in the displayed article card.
+::: tip
 
-> (Here are a bunch of nonsense about why the author added this function that I don't want to translate)
+If you use sitemap, it will display in `sitemap.xml`. You need set `sitemap: false` in front matter to exclude it.
 
-Note: A link to the article will still appear in the previous or next article at the end of other articles.
+> [excluding-posts | hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap#excluding-posts)
+
+If you use local-search, it will show in `search.xml`. You need set `indexing: false` in front matter to exclude it.
+
+> [exclude-indexing | hexo-generator-search](https://github.com/wzpan/hexo-generator-search#exclude-indexing)
+
+:::
 
 ### Information
 
@@ -779,7 +988,40 @@ post_meta:
 
 As long as you follow [Markdown syntax](https://segmentfault.com/markdown), the directory will be automatically generated!
 
+::: tip
+
+An HTML page with good SEO has and should have only one `h1` as the first level heading.
+This theme uses the `title` you set as the first-level title by default.
+In the content of the following article, you should only start using the secondary heading.
+
+```md
+---
+title: Level 1 Heading
+---
+
+## Level 2 Heading
+```
+
+:::
+
 > No one will disable this feature, lol
+
+- `list_number`:Displays list number
+- `max_depth`: Maximum heading depth of generated toc
+- `min_depth`:  Minimum heading depth of generated toc
+- `placeholder`: Display Text when toc is empty.
+- `collapse`: Whether to collapse the directory (folded by default, that is, the secondary directory is hidden, and only expanded when it is rolled to the relevant position)
+
+```yaml
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: Sorry, it is empty.
+  collapse: false
+```
+
+> [Helpers | Hexo](https://hexo.io/docs/helpers#toc)
 
 ### Edit Link
 
@@ -801,34 +1043,37 @@ post_edit:
 
 Set code highlight
 
-Due to performance issues, I abandoned `highlight.js` and used [prism](https://github.com/PrismJS/prism).
+Due to performance and positioning issues, and [Hexo 5.0](https://blog.skk.moe/post/hexo-5/) has native support for prism, this topic is more recommended to use [prismjs](https://github.com /PrismJS/prism) instead of `highlight.js`.
 
-Please refer to [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) to use.
+> Please upgrade hexo to 5.0.0. `npm install hexo@latest`
 
-Waiting for [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) to support Prism natively.
+PrismJS is a lightweight code highlighting library. Compared with highlight.js, prismjs can be executed in the Node.js environment (that is, code highlighting can be performed when Hexo generates a page).
+
+We can quickly switch themes through the CDN. This theme also supports setting different code highlight themes for light and dark modes.
 
 > Languages ​​currently supported by Prism: <https://prismjs.com/#supported-languages>
 
-```sh
-npm install hexo-prism-plugin
-```
-
-Configure in `_config.yml` under Hexo working directory:
+Configure in `_config.yml` in the working directory of Hexo (must be upgraded to version 5.0 or higher):
 
 ```yaml
-# https://github.com/ele828/hexo-prism-plugin
-prism_plugin:
-  mode: preprocess # realtime / preprocess
-  theme: default
-  line_number: false # default false
-  # custom_css: "path / to / your / custom.css" # optional
-```
-
-Close the `highlight` that comes with Hexo (locates in `_config.yml` in the Hexo working directory)
-
-```yaml
+# disable highlight
 highlight:
+  enable: false
+# enable prism
+prismjs:
   enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: ""
+```
+
+In `yun.yml`:
+
+```yaml
+codeblock:
+  prismjs:
+    light: default
+    dark: tomorrow
 ```
 
 > It is recommended to close the line number, [here](https://highlightjs.readthedocs.io/en/latest/line-numbers.html) is the where the author wrote why highlight does not support line numbers.
@@ -839,17 +1084,31 @@ highlight:
 
 Set the shared copyright of your article
 
-[Creative Commons 4.0 International License](https://creativecommons.org/share-your-work/licensing-types-examples) is used by default
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) is used by default.
+
+> [About Licenses]((https://creativecommons.org/licenses/))
 
 - `license`: set certificate (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
 - `language`: set language (deed.zh | deed.fr | deed.de)
 - `post`: displayed at the end of each post
+- `clipboard`: Append copyright information to the clipboard
 
 ```yaml
 creative_commons:
   license: by-nc-sa
   post: true
   language: deed.zh
+  clipboard: false
+```
+
+> Please set your `url` in `_config.yml` in the Hexo working directory.
+>
+> [Configuration | Hexo](https://hexo.io/docs/configuration.html#URL)
+
+```yaml
+# URL
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://www.yunyoujun.cn
 ```
 
 ### Image Lazy Loading
@@ -864,7 +1123,7 @@ lazyload:
   enable: true
 ```
 
-## Patreon
+## Reward
 
 After enabled, a donating button will be displayed at the end of each article or page.
 
@@ -872,6 +1131,18 @@ After enabled, a donating button will be displayed at the end of each article or
 - `icon`: reward icon
 - `comment`: show what you want to say under the reward button
 - `url`: your reward link (when you enable the reward link, it will automatically jump to your external link instead of expanding the QR code)
+- `methods`: Array, the methods of reward
+
+### QR Code for Reward
+
+QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a custom icon color.
+
+- `name`: donating method
+- `path`: image path
+- `color`: icon color
+- `icon`: icon name
+
+You can override it in `yun.yml`.
 
 ```yaml
 reward:
@@ -879,6 +1150,19 @@ reward:
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
 ```
 
 You can also set whether to enable rewards at the top of an article.
@@ -888,51 +1172,19 @@ reward: true
 # reward: false
 ```
 
-### Patreon QR Code
-
-QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a custom icon color.
-
-- `name`: donating method
-- `path`: image path
-- `color`: icon color
-- `icon`: icon name
-
-```yaml
-reward:
-  methods:
-    - name: Alipay
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "# 00A3EE"
-      icon: icon-alipay-line
-    - name: QQ pay
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "# 12B7F5"
-      icon: icon-qq-line
-    - name: WeChat Pay
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "# 2DC100"
-      icon: icon-wechat-pay-line
-```
-
-You can override it in `yun.yml`.
-
-```yaml
-reward:
-  -name: Alipay
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
-```
-
 ## Footer
 
 ::: tip
-The following configurations are written under the `footer` field.
+The following configurations are written under the `footer` field. (Only a option called `footer`)
 Such as:
 
 ```yaml
 footer:
   since: 1997
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
 ```
 
 :::
@@ -940,7 +1192,8 @@ footer:
 ### Starting Year
 
 ```yaml
-since: 2016
+footer:
+  since: 2016
 ```
 
 ### Icon
@@ -952,10 +1205,11 @@ The icon between the year and the name.
 - `color`: icon color
 
 ```yaml
-icon:
-  name: icon-cloud-line
-  animated: true
-  color: "#0078E7"
+footer:
+	icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
 ```
 
 ### Driver
@@ -966,40 +1220,28 @@ For example: `Driven by Hexo v4.2.0 | Theme-Yun v0.0.2`.
 
 Let more people know Hexo and the theme Yun, which is conducive to the further development of the open-source community.
 
-- `enable`: enable
+- `enable`: Enable
+- `version`: Display version
 
 ```yaml
-powered:
-  enable: true
+footer:
+	powered:
+    enable: true
 ```
 
-### Filing
-
-Domestic users in China can provide the record number to enable the record display.
-
-The default link for record information is: <http://www.beian.miit.gov.cn>
-
-- `enable`: enable the record
-- `icp`: record number
-
-```yaml
-beian:
-  enable: true
-  icp: 苏 ICP 备 xxxxxxxx 号
-```
-
-### Operation Time
+### Run Time
 
 Disabled by default.
 
 `This blog has been running 442 days, 19 hours, 28 minutes and 40 seconds (● '◡' ●)`
 
 ```yaml
-live_time:
-  enable: false
-  prefix: This blog has been run cutely
-  suffix: (● '◡' ●)
-  start_time: "2019-04-12T00: 00: 00"
+footer:
+	live_time:
+    enable: false
+    prefix: This blog has been run cutely
+    suffix: (● '◡' ●)
+    start_time: "2019-04-12T00: 00: 00"
 ```
 
 ### Custom Text
@@ -1008,7 +1250,8 @@ live_time:
 For example, sometimes it can use other service providers to host pages.
 
 ```yaml
-custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank"> Coding Pages </a>
+footer:
+	custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank"> Coding Pages </a>
 ```
 
 ## Say
@@ -1086,7 +1329,7 @@ say:
 
 On the designated day of the year, the gray mourning mode is enabled.
 
--`enable`: Disabled by default.
+- `enable`: Disabled by default.
 
 > On April 4, the nation mourned.
 > In order to express the deep condolences of the people of all ethnic groups in the country in the fight against the Coronavirus Pandemic, at the expense of martyrs and deceased compatriots, the State Council issued an announcement and decided to hold a national mourning event on April 4, 2020.
@@ -1096,6 +1339,21 @@ mourn:
   enable: true
   days: -"4-4"
 ```
+
+## Custom Style
+
+Compared with the introduction of `head`, you can write a `stylus` file here, use the existing variables of the theme, and compile it into `hexo-theme-yun.css`.
+
+> Create a new `source/_data/style` folder, and then create a new `xxx.styl` to start writing your custom style.
+
+For example, import all the `.styl` files under your `source/_data/style` in the following way.
+
+```yaml
+custom:
+  style: source/_data/style/*
+```
+
+
 
 ## More Configuration
 

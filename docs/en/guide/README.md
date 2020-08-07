@@ -154,3 +154,22 @@ head:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
       loadAplayer: /js/load-aplayer.js
 ```
+
+### Auto Update
+
+If you want to update automatically and keep the latest themes at all times, you can use continuous integration (such as [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/ )).
+
+You can refer to my GitHub Action configuration file [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml). (Copy the configuration and put it in the corresponding folder. GitHub Actions is a service that comes with GitHub.)
+If you are not using `algolia_search`, please delete the relevant part of `algolia`.
+
+> I have adopted this approach, but I do not recommend it to you from the conscience, because this is my own theme, and naturally I have a certain tolerance for potential bugs.
+> Always keep the same as the warehouse version, you may encounter newly introduced BUG.
+> Of course you can give it a try if you are willing to be a guinea pig. By the way, give us feedback. From a personal point of view, it is very welcome.
+
+If you want to clone a stable version of the theme, you can fork it yourself, and then modify the source project address to the project address after fork.
+
+```yaml
+run: |
+  git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
+```
+

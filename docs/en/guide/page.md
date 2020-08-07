@@ -1,3 +1,5 @@
+
+
 # Theme page
 
 This theme supports and uses the following page types by default.
@@ -60,7 +62,11 @@ type: categories
 
 ## Archives
 
-Hexo support by default
+Hexo support by default.
+
+It is rewritten in the form of a timeline.
+
+> Example: <https://www.yunyoujun.cn/archives>
 
 ## About
 
@@ -89,7 +95,7 @@ You will need to create a new 404 page first. You can do it by creating a new `4
 ```md
 ---
 layout: 404
-title: 四大皆空
+title: Nothing
 permalink: /404.html
 reward: false
 ---
@@ -212,3 +218,177 @@ girls:
 Please refer to my [configuration](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md).
 
 > If you want it to be displayed on the sidebar, you also need to configure the navigation [sidebar-pagelink](/guide/config.html#页面链接)
+
+## Albums
+
+There is an album homepage, place multiple albums, click to enter the album to view more photos.
+
+In `yun.yml`:
+
+```yaml
+albums:
+	enable: true
+```
+
+[Albums Example](https://www.yunyoujun.cn/albums/)
+
+[Config Example](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
+
+### albums
+
+The album collection is the navigation page of the album, you can place multiple albums here.
+
+New page for albums:
+
+```sh
+hexo new page albums
+```
+
+Enter `source/albums/index.md`, set `type`, and add album link, cover, etc.
+
+- `caption`: album title
+- url`: album link`
+- cover`: album cover`
+- `desc`: album description
+
+```yaml {2}
+---
+type: albums
+albums:
+  - caption: 夕阳西下
+    url: /albums/sunset.html
+    cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
+    desc: 我想起那天夕阳下的奔跑
+---
+```
+
+### Gallery
+
+[Gallery Example](https://www.yunyoujun.cn/albums/sunset.html)
+
+The photo album page is where you actually store your photos.
+
+> Use [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/), the library will only be loaded on the album page.
+
+New page.
+
+You just need to create the md file in the newly created albums folder above, for example, create a new sunset.md.
+
+Or create new via command line:
+
+```sh
+hexo new page --path albums/sunset "夕阳"
+```
+
+Enter the `sunset.md` file and modify it.
+
+> Note: This is `layout` instead of `type`.
+
+::: tip
+You can also set `gallery_password` to encrypt the album. (Remember to set your repo as private.)
+
+It is not directly named `password` to prevent conflicts with [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt) plugin keyword `password`.
+
+> Because [crypto-js](https://github.com/brix/crypto-js) is used, you also need `npm install crypto-js`.
+
+Test page: <https://www.yunyoujun.cn/albums/sunset.html>
+Test password: test
+
+> If you find that the album cannot be decrypted normally when PJAX is turned on in `hexo s`, don't worry, this is that when Hexo is used as a server, the link is re-encrypted again, and there is no problem when generating static files for deployment.
+
+:::
+
+```yaml {5}
+---
+title: Sunset
+date: 2020-04-18 16:27:24
+updated: 2020-04-18 16:27:24
+layout: gallery
+password: test
+photos:
+  - caption: me
+    src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
+    desc: I think of running under the sunset that day.
+  - caption: Remember
+    src: https://i.picsum.photos/id/198/510/300.jpg
+    desc: That is my lost youth
+---
+
+```
+
+> Why use album collection as `albums` and `gallery` as album?
+> [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
+
+## Slides
+
+> Use [reveal.js](https://revealjs.com/) to achieve, see [document](https://revealjs.com/markdown/) for more information.
+
+You can use Markdown to mix Html to quickly write your slides.
+
+Create a new `slides/test.md` under `source`.
+
+Or command:
+
+```sh
+hexo new page --path slides/test "Test Slides"
+```
+
+Enter `test.md`, modify the header as follows (follow the corresponding syntax to start editing your Slides file)
+
+```yaml
+---
+title: Color Dust
+date: 2020-06-23 16:27:24
+updated: 2020-06-23 16:27:24
+layout: slide
+slide:
+  theme: white
+  config:
+    history: true
+    mouseWheel: true
+---
+
+```
+
+Then start writing your Slides file with Markdown directly below.
+
+```md
+## Slide 1
+
+## A paragraph with some text and a [link](http://hakim.se).
+
+## Slide 2
+
+---
+
+## Slide 3
+```
+
+An example of my Slides:
+
+- [color-dust.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/slides/color-dust.md)
+- [Preview](https://www.yunyoujun.cn/slides/color-dust.html#/)
+
+### General configuration
+
+The default horizontal page separator is `---`, the vertical page separator is `~~`, and the start keyword of the note is `Note:`.
+
+> Press <kbd>S</kbd> to turn on the speaker mode.
+
+The theme is `white`, [more theme names](https://revealjs.com/themes/).
+
+`config` corresponds to [More Configuration](https://revealjs.com/config/).
+
+```yaml
+slide:
+  separator: ---
+  separator_vertical: "~~"
+  data_separator_notes: "^Note:"
+  theme: white
+  config:
+    history: true
+    mouseWheel: false
+```
+
+> As for the list of Slides, create your own `source/slides/index.md` and list it.
+
