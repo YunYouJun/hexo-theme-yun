@@ -24,9 +24,7 @@ block content
       section.post-body(itemprop='articleBody')
         .post-content.markdown-body(style=`--smc-primary:${theme.colors.primary};`)!=post.content
 
-        if page.reward !== undefined
-          - theme.reward.enable = page.reward
-        if theme.reward.enable
+        if theme.reward.enable && page.reward !== false
           include _partial/post/reward.pug
 
         if theme.creative_commons.license && theme.creative_commons.post

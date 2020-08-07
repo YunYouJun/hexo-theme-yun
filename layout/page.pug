@@ -57,8 +57,7 @@ block content
         section.post-body(itemprop='articleBody')
           .post-content.markdown-body!= page.content
 
-    if page.reward !== undefined
-      - theme.reward.enable = page.reward
-    if theme.reward.enable
+    //- default not display reward
+    if page.reward
       include _partial/post/reward.pug
 

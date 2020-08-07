@@ -22,8 +22,6 @@ The default language is Chinese `zh-CN`.
 language: en
 ```
 
-
-
 ### Customized Language
 
 Create a new `source/_data/language.yml` in the Hexo working directory. (If the `source/_data` directory does not exist, please create a new one.)
@@ -242,8 +240,8 @@ cdn:
 Use `preload`, `prefetch`, `preconnect`, `dns-prefetch` to optimize the speed of webpage recording.
 
 - `preload`: resources that will be used after this page
-- `prefetch`: resources that may be used after jump to the page 
-- `dns-prefetch`: resolve the DNS address of the domain name that will be used 
+- `prefetch`: resources that may be used after jump to the page
+- `dns-prefetch`: resolve the DNS address of the domain name that will be used
 - `preconnect`: establish a link with the specified domain name in advance; it has more TCP connections than`dns-prefetch`
 
 `preload` and `prefetch` are only used to load local resources (and generally use by default). Do not use resources with a protocol header (`http://`).
@@ -355,7 +353,7 @@ icon: icon ion-md-heart
 
 ### [Material Design icons](https://google.github.io/material-design-icons/)
 
-- GitHub: [material-design-icons](https://github.com/google/material-design-icons) 
+- GitHub: [material-design-icons](https://github.com/google/material-design-icons)
 - [Material Design icons](https://material.io/tools/icons)
 
 Uniform style, no trademark icon. Produced by Google, due to domestic policies, loading may not be stable if using in China.
@@ -420,7 +418,7 @@ For better display, my default link will be displayed.
 - `name`: link name
 - `link`: link
 - `icon`: Icon Class
-- `color`: Icon color  (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
+- `color`: Icon color (If the icon you introduced supports SVG custom colors in advance) The current default color adopts the official icon brand color.
 
 ```yaml
 social:
@@ -1008,7 +1006,7 @@ title: Level 1 Heading
 
 - `list_number`:Displays list number
 - `max_depth`: Maximum heading depth of generated toc
-- `min_depth`:  Minimum heading depth of generated toc
+- `min_depth`: Minimum heading depth of generated toc
 - `placeholder`: Display Text when toc is empty.
 - `collapse`: Whether to collapse the directory (folded by default, that is, the secondary directory is hidden, and only expanded when it is rolled to the relevant position)
 
@@ -1086,7 +1084,7 @@ Set the shared copyright of your article
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) is used by default.
 
-> [About Licenses]((https://creativecommons.org/licenses/))
+> [About Licenses](<(https://creativecommons.org/licenses/)>)
 
 - `license`: set certificate (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
 - `language`: set language (deed.zh | deed.fr | deed.de)
@@ -1125,7 +1123,7 @@ lazyload:
 
 ## Reward
 
-After enabled, a donating button will be displayed at the end of each article or page.
+After enabled, a donating button will be displayed at the end of each article `post`. (The `page` is not displayed by default, you need to set `reward: true` to force it to open.)
 
 - `enable`: enable rewards
 - `icon`: reward icon
@@ -1206,10 +1204,10 @@ The icon between the year and the name.
 
 ```yaml
 footer:
-	icon:
-    name: icon-cloud-line
-    animated: true
-    color: "#0078E7"
+icon:
+  name: icon-cloud-line
+  animated: true
+  color: "#0078E7"
 ```
 
 ### Driver
@@ -1225,8 +1223,8 @@ Let more people know Hexo and the theme Yun, which is conducive to the further d
 
 ```yaml
 footer:
-	powered:
-    enable: true
+powered:
+  enable: true
 ```
 
 ### Run Time
@@ -1237,11 +1235,11 @@ Disabled by default.
 
 ```yaml
 footer:
-	live_time:
-    enable: false
-    prefix: This blog has been run cutely
-    suffix: (● '◡' ●)
-    start_time: "2019-04-12T00: 00: 00"
+live_time:
+  enable: false
+  prefix: This blog has been run cutely
+  suffix: (● '◡' ●)
+  start_time: "2019-04-12T00: 00: 00"
 ```
 
 ### Custom Text
@@ -1251,7 +1249,7 @@ For example, sometimes it can use other service providers to host pages.
 
 ```yaml
 footer:
-	custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank"> Coding Pages </a>
+custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank"> Coding Pages </a>
 ```
 
 ## Say
@@ -1352,8 +1350,6 @@ For example, import all the `.styl` files under your `source/_data/style` in the
 custom:
   style: source/_data/style/*
 ```
-
-
 
 ## More Configuration
 
