@@ -235,6 +235,10 @@ git pull
 
 ## [About](https://yun.yunyoujun.cn/guide/about.html)
 
+We uses [SATA License](https://github.com/zTrix/sata-license).
+
+> You don’t know what this means? In short, if you use this theme, you need to Star this repo non-stop, and then you can use it as you like.
+
 本主题采用 [SATA License](https://github.com/zTrix/sata-license)。
 
 > 你不知道这代表什么？简单来说，就是如果你使用了该主题，你需要马不停蹄地点一个 Star，接下来你便可以随意使用它。

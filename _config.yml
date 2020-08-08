@@ -592,6 +592,14 @@ gitalk:
   id:
   distractionFreeMode:
 
+# https://github.com/utterance/utterances
+utterances:
+  enable: false
+  repo:
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi:

@@ -91,6 +91,21 @@ gitalk:
   distractionFreeMode:
 ```
 
+### [utterances](https://utteranc.es/)
+
+A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
+
+More convenient, less authority. (than gitalk)
+
+```yaml
+utterances:
+  enable: false
+  repo: owner/repo
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+```
+
 ### Valine
 
 Refer to [Valine](https://valine.js.org) official document for configuration. The language defaults to follow Hexo's language setting.
@@ -116,8 +131,7 @@ valine:
   appKey: # your leancloud application appkey
   placeholder: Just go go # comment box placeholder
   avatar: # gravatar style
-  meta:
-    -nick
+  meta: -nick
     -mail
     -link
   pageSize: 10 # pagination size
@@ -178,8 +192,6 @@ livere:
   enable: true
   uid:
 ```
-
-
 
 ## Search
 

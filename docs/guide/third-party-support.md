@@ -91,6 +91,19 @@ gitalk:
   distractionFreeMode:
 ```
 
+### [utterances](https://utteranc.es/)
+
+一个轻量的基于 GitHub Issue 的评论插件。请求更少的权限，使用起来更为方便。（如果你打算使用 Gitalk，不妨尝试一下 utterances。）
+
+```yaml
+utterances:
+  enable: false
+  repo: owner/repo
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+```
+
 ### Valine
 
 参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。
