@@ -6,7 +6,8 @@ a#menu-btn.sidebar-toggle.hty-icon-button
 .sidebar-toggle.sidebar-overlay
 
 aside.sidebar
-  script(async, src=url_for(theme.cdn.pre + theme.sidebar.src))
+  //- can not be async
+  script(src=url_for(theme.cdn.pre + theme.sidebar.src))
   - var toc_content = toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth})
   if is_post()
     ul.sidebar-nav

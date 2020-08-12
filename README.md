@@ -14,7 +14,12 @@
 
 > A light & fast & lovely hexo theme.
 
-- Docs | 一份详细的使用文档: <https://yun.yunyoujun.cn>
+## Docs
+
+一份详细的使用文档
+
+- 最新文档（dev）: <https://yun.yunyoujun.cn>
+- 主分支文档（master）: <https://hexo-theme-yun.vercel.app/>
 
 ![index-preview.jpg](https://i.loli.net/2020/03/23/bTmpQe6tgf35nj2.jpg)
 
