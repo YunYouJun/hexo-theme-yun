@@ -581,17 +581,6 @@ livere:
   enable: false
   uid:
 
-# https://gitalk.github.io/
-gitalk:
-  enable: false
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin:
-  id:
-  distractionFreeMode:
-
 # https://github.com/utterance/utterances
 utterances:
   enable: false

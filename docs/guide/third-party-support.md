@@ -40,6 +40,40 @@ github_issues:
 
 也可以参考我的 [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md)。
 
+### [Gitalk](https://github.com/gitalk/gitalk)
+
+Gitalk 是一个基于 GitHub Issue 的评论插件。
+
+::: danger
+
+本主题不支持 Gitalk ，如果你真的想用，不妨自行添加或尝试一下 [utterances](https://utteranc.es/)。
+
+:::
+
+基于以下理由，v0.9.7 将移除 Gitalk。
+
+- 存在安全隐患，须授予公开项目读**写**权限
+- CSS 无独立命名空间（甚至覆盖了主题的 markdown 样式）
+- 无亮暗模式
+- 部分 z-index 过高不合理，超过 sidebar
+- 不支持重载以实现 pjax，[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
+- ...
+
+最后我发现了 [utterances](https://utteranc.es/)，基本可以完美取代，所以决定彻底移除，今后大概也不会再加回来。
+
+### [utterances](https://utteranc.es/)
+
+一个轻量的基于 GitHub Issue 的评论插件。请求更少的权限，使用起来更为方便。（如果你打算使用 Gitalk，不妨尝试一下 utterances。）
+
+```yaml
+utterances:
+  enable: false
+  repo: owner/repo
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+```
+
 ### [Disqus](https://disqus.com/)
 
 Disqus 可以说是全球最流行的第三方评论系统，但其在国内缺点也很明显，需要科学上网。
@@ -71,37 +105,6 @@ disqusjs:
   shortname: yunyoujun
   count: false
   apikey:
-```
-
-### [Gitalk](https://github.com/gitalk/gitalk)
-
-Gitalk 是一个基于 GitHub Issue 的评论插件。（有安全隐患，慎重使用，详情见上方文章）
-
-> 不支持 PJAX：[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
-
-```yaml
-gitalk:
-  enable: true
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin:
-  id:
-  distractionFreeMode:
-```
-
-### [utterances](https://utteranc.es/)
-
-一个轻量的基于 GitHub Issue 的评论插件。请求更少的权限，使用起来更为方便。（如果你打算使用 Gitalk，不妨尝试一下 utterances。）
-
-```yaml
-utterances:
-  enable: false
-  repo: owner/repo
-  issue-term: pathname
-  # label: comment
-  theme: github-light
 ```
 
 ### Valine

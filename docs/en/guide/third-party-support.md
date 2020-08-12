@@ -73,29 +73,11 @@ disqusjs:
   apikey:
 ```
 
-### [Gitalk](https://github.com/gitalk/gitalk)
-
-Gitalk is a comment plugin based on GitHub Issue. (There are potential safety hazards, use with caution, see the article above for details)
-
-> Does not support PJAX: [How to support pjax](https://github.com/gitalk/gitalk/issues/205)
-
-```yaml
-gitalk:
-  enable: true
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin:
-  id:
-  distractionFreeMode:
-```
-
 ### [utterances](https://utteranc.es/)
 
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
 
-More convenient, less authority. (than gitalk)
+More convenient, less authority. (You do not need gitalk.)
 
 ```yaml
 utterances:
