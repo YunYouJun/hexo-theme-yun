@@ -81,8 +81,22 @@ applyCustomDarkModeSettings();
 
 function bindToggleButton() {
   document.getElementById("toggle-mode-btn").addEventListener("click", () => {
-    applyCustomDarkModeSettings(toggleCustomDarkMode());
+    const mode = toggleCustomDarkMode();
+    applyCustomDarkModeSettings(mode);
+    toggleCodeblockCss(mode);
   });
+}
+
+/**
+ * toggle prism css for light and dark
+ * @param {*} mode 模式
+ */
+function toggleCodeblockCss(mode) {
+  const invertMode = invertDarkModeObj[mode];
+  document
+    .getElementById(`${invertMode}-prism-css`)
+    .setAttribute("media", "(prefers-color-scheme: no-preference)");
+  document.getElementById(`${mode}-prism-css`).removeAttribute("media");
 }
 
 document.addEventListener("DOMContentLoaded", bindToggleButton);
