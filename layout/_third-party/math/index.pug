@@ -1,8 +1,9 @@
+//- 首页是否加载
 - var is_index_has_math = false
 if is_home() && theme.global
   for post in page.posts.toArray()
-    if post.mathjax && !is_index_has_math
+    if post.katex && !is_index_has_math
       - is_index_has_math = true
 
-if !theme.katex.global || is_index_has_math  || page.katex
+if theme.katex.global || page.math || page.katex || (!theme.katex.global && is_index_has_math) 
   include ./katex.pug
