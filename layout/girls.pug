@@ -1,13 +1,34 @@
 extends _partial/layout.pug
 
-block preconnect
-  link(rel='preconnect' href='https://img.moegirl.org/', crossorigin)
-
 block content
   #page
     +page_header(page.title)
-    if page.girls
-      #girls
+    #girls
+      if typeof page.girls === "string"
+        .girls-number!="{{girls.length}}"
+        .girl-banner!=page.banner
+        ul.girl-items
+          li.girl-item(v-for="girl in girls", :id="girl.name")
+            a.girl-url(:href="'https://zh.moegirl.org/' + girl.name", :title="girl.reason", alt='portrait' target='_blank' rel='noopener')
+              figure.girl-info
+                img.girl-avatar(loading='lazy', :src="girl.avatar", :alt="girl.name", onerror='this.src=CONFIG.anonymous_image')
+                figcaption.girl-name!="{{girl.name}}"
+                figcaption.girl-from!="{{girl.from}}"
+        script(src=theme.vendors.vue)
+        script.
+          const app = new Vue({
+            el: "#girls",
+            data: {
+              girls: [],
+            },
+            async mounted() {
+              this.girls = await fetch("#{page.girls}")
+                .then(res => {
+                  return res.json();
+                })
+            }
+          })
+      else
         .girls-number!=page.girls.length
         .girl-banner!=page.banner
         ul.girl-items
@@ -20,6 +41,7 @@ block content
                   img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror='this.src=CONFIG.anonymous_image')
                   figcaption.girl-name!=girl.name
                   figcaption.girl-from!=girl.from
+
     article.post-block
       section.post-body(itemprop='articleBody')
         .post-content.markdown-body!= page.content

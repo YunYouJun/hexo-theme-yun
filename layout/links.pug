@@ -4,7 +4,7 @@ block content
   #page
     +page_header(page.title)
     if page.links
-      .links
+      #links
         ul.link-items
           if Array.isArray(page.links)
             for link in page.links
@@ -13,58 +13,29 @@ block content
                   img.link-avatar(loading='lazy', src=link.avatar, alt=link.name, onerror='this.src=CONFIG.anonymous_image')
                 .link-info
                   .link-blog!=link.blog
-                  if !link.desc
-                    - link.desc = page.placeholder
-                  .link-desc!=link.desc
+                  .link-desc!=link.desc || page.placeholder
           else
-            h3#tip(style="width: 100%")!=page.tip
+            li.link-item(v-for="link in links", :id="link.name", :style="link.color ? `--primary-color:${link.color}` : ''")
+              a.link-url(:href="link.url", :title="link.name", alt='portrait' target='_blank' rel='friend')
+                img.link-avatar(loading='lazy', :src="link.avatar", :alt="link.name", onerror='this.src=CONFIG.anonymous_image')
+              .link-info
+                .link-blog!="{{link.blog}}"
+                .link-desc!="{{link.desc || placeholder}}"
+            script(src=theme.vendors.vue)
             script.
-              fetch("#{page.links}")
-                .then(res => {
-                  return res.json();
-                })
-                .then(links => {
-                  if ("#{page.random}" === "true") {
-                    links.sort(() => 0.5 - Math.random());
-                  }
-                  links.forEach(link => {
-                    let li = document.createElement("li");
-                    li.className = "link-item";
-                    li.id = link.name;
-                    if (link.color) {
-                      li.style.setProperty("--primary-color", link.color);
-                    }
-                    let a = document.createElement("a");
-                    a.className = "link-url";
-                    a.href = link.url;
-                    a.alt = "portrait";
-                    a.target = "_blank";
-                    a.rel = "friend";
-                    a.title = link.name;
-                    let img = document.createElement("img");
-                    img.className = "link-avatar";
-                    img.loading = "lazy";
-                    img.src = link.avatar;
-                    img.alt = link.name;
-                    img.onerror = function() {
-                      this.src = CONFIG.anonymous_image;
-                    };
-                    let info = document.createElement("div");
-                    info.className = "link-info";
-                    let blog = document.createElement("div");
-                    blog.className = "link-blog";
-                    blog.textContent = link.blog;
-                    let desc = document.createElement("div");
-                    desc.className = "link-desc";
-                    desc.textContent = link.desc;
-                    // insert
-                    info.append(blog, desc);
-                    a.append(img);
-                    li.append(a, info);
-                    document.querySelector(".link-items").append(li);
-                  });
-                  tip.remove();
-                });
+              const app = new Vue({
+                el: "#links",
+                data: {
+                  links: [],
+                  placeholder: "#{page.placeholder}"
+                },
+                async mounted() {
+                  this.links = await fetch("#{page.links}")
+                    .then(res => {
+                      return res.json();
+                    })
+                }
+              })
 
     article.post-block
       section.post-body(itemprop='articleBody')
