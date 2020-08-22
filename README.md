@@ -1,11 +1,11 @@
 # Hexo-Theme-Yun
 
 [![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/docs/badge.svg)](https://yun.yunyoujun.cn)
-[![Netlify](https://img.shields.io/netlify/4acb3c9b-fbcd-488e-be70-18942eb2669f)](https://yunyoujun.netlify.app)
-[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo)](https://hexo.io)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun)
-[![QQ Group](https://img.shields.io/badge/qq%20group-389401003-12B7F5)](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
+[![Gitter](https://badges.gitter.im/YunYouJun/hexo-theme-yun.svg)](https://gitter.im/YunYouJun/hexo-theme-yun?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 <p align="center">
@@ -18,12 +18,14 @@
 
 一份详细的使用文档
 
-- 最新文档（dev）: <https://yun.yunyoujun.cn>
-- 主分支文档（master）: <https://hexo-theme-yun.vercel.app/>
+- Docs for `dev`: <https://yun.yunyoujun.cn>
+- Docs for `master`: <https://hexo-theme-yun.vercel.app/>
 
 ![index-preview.jpg](https://i.loli.net/2020/03/23/bTmpQe6tgf35nj2.jpg)
 
 ## Demo Sites
+
+[![Netlify](https://img.shields.io/netlify/4acb3c9b-fbcd-488e-be70-18942eb2669f?logo=netlify)](https://yunyoujun.netlify.app)
 
 If you are using this theme, welcome to leave your site in [Demo Sites | Example Site](https://github.com/YunYouJun/hexo-theme-yun/issues/3), and I will add it to the sample site below.
 
@@ -250,14 +252,11 @@ We uses [SATA License](https://github.com/zTrix/sata-license).
 
 ## Contribue
 
-如果你想要为 Yun 添加你想要的功能，你可以先开启 `Feature Request` 类型 Issue，描述你想要添加的功能。
-
-在确定该功能值得加入后，再进行开发工作，提交 PR。
+Welcome! However, if the job is heavy, you should use an Issue called Feature Request to ask if the feature should be implemented.
 
 ## Feedback
 
+You are welcome to use [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues) to ask any questions and suggestions.
+Of course, you need to read the [documentation](https://yun.yunyoujun.cn/en/) firstly.
+
 有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
-
-您也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
-
-> 如果是通用的问题（如 BUG 反馈，新功能建议），最好在 Issue 中进行反馈，以便其他朋友参与讨论，减少重复。

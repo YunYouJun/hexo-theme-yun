@@ -55,7 +55,6 @@ module.exports = {
     sidebarDepth: 2,
     locales: {
       "/": {
-        selectText: "选择语言",
         label: "简体中文",
         editLinkText: "在 GitHub 上编辑此页",
         lastUpdated: "上次更新",
