@@ -26,7 +26,8 @@ favicon: /yun.svg
 # Posts / Categories / Tags in sidebar.
 sidebar:
   src: /js/sidebar.js
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
+  # dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
   bg_position: bottom 1rem center
   tagcloud:
     enable: false

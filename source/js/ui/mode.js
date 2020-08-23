@@ -62,6 +62,9 @@ const invertDarkModeObj = {
   light: "dark",
 };
 
+/**
+ * get target mode
+ */
 const toggleCustomDarkMode = () => {
   let currentSetting = getLS(darkModeStorageKey);
 
@@ -73,12 +76,14 @@ const toggleCustomDarkMode = () => {
     return;
   }
   setLS(darkModeStorageKey, currentSetting);
-
   return currentSetting;
 };
 
 applyCustomDarkModeSettings();
 
+/**
+ * bind click event for toggle button
+ */
 function bindToggleButton() {
   document.getElementById("toggle-mode-btn").addEventListener("click", () => {
     const mode = toggleCustomDarkMode();
