@@ -14,6 +14,8 @@
 
 > A light & fast & lovely hexo theme.
 
+PV: [Yun v1.0 - Strato | bilibili](https://www.bilibili.com/video/BV17t4y1S7tz)
+
 ## Docs
 
 一份详细的使用文档
