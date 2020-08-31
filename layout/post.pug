@@ -19,7 +19,7 @@ block content
         include _partial/post/post-meta.pug
 
         if post.url
-          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${typeColor}`)=__('post.view_link')
+          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${post_type.color}`)=__('post.view_link')
 
       section.post-body(itemprop='articleBody')
         .post-content.markdown-body(style=`--smc-primary:${theme.colors.primary};`)!=post.content
