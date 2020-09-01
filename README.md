@@ -212,6 +212,8 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
 
 ## Install
 
+In your hexo folder:
+
 ```sh
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
@@ -254,7 +256,7 @@ We uses [SATA License](https://github.com/zTrix/sata-license).
 
 ## Contribue
 
-Welcome! However, if the job is heavy, you should use an Issue called Feature Request to ask if the feature should be implemented.
+Welcome! However, if the job is heavy, you should use an Issue called 「Feature Request」 to ask if the feature should be implemented.
 
 ## Feedback
 
