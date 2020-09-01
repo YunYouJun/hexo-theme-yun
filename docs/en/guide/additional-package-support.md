@@ -167,7 +167,7 @@ aplayer:
 ::: tip
 If you find that Aplayer sometimes introduces header files repeatedly in irrelevant files. Remember to turn off automatic script insertion.
 
-> [Duplicate APlayer.JS loading] (https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/README.md#duplicate-aplayerjs-loading)
+> [Duplicate APlayer.JS loading](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/README.md#duplicate-aplayerjs-loading)
 
 ```yaml
 aplayer:
@@ -208,7 +208,7 @@ You can set it global enable in `yun.yml`.
   - `meting.enable`: whether to open meting for global widget. When open, it will load `option`; When close, will use cutsom `audio`.
   - `audio`: default config can be referred. More info see [Official Documentation](https://aplayer.js.org/#/home)。
 
-Open [pjax](#pjax),  it can realize that the music player is not interrupted when switching pages. (In order to load the music player correctly, when there is a music player in the article page that you switch to, `Meting` will reload.)
+Open [pjax](#pjax), it can realize that the music player is not interrupted when switching pages. (In order to load the music player correctly, when there is a music player in the article page that you switch to, `Meting` will reload.)
 
 ```yaml
 aplayer:
@@ -364,4 +364,3 @@ The following plug-in configuration and usage have nothing to do with the theme,
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 You can use it to encrypt some private article pages.
-
