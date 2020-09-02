@@ -20,11 +20,6 @@ let ctx = canvasEl.getContext("2d");
 let pointerX = 0;
 let pointerY = 0;
 
-let tap =
-  "ontouchstart" in window || navigator.msMaxTouchPoints
-    ? "touchstart"
-    : "mousedown";
-
 // sky blue
 let colors = ["102, 167, 221", "62, 131, 225", "33, 78, 194"];
 if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors;
@@ -36,9 +31,17 @@ function setCanvasSize() {
   canvasEl.style.height = window.innerHeight + "px";
 }
 
+/**
+ * update pointer
+ * @param {TouchEvent} e
+ */
 function updateCoords(e) {
-  pointerX = e.clientX || e.touches[0].clientX;
-  pointerY = e.clientY || e.touches[0].clientY;
+  pointerX =
+    e.clientX ||
+    (e.touches[0] ? e.touches[0].clientX : e.changedTouches[0].clientX);
+  pointerY =
+    e.clientY ||
+    (e.touches[0] ? e.touches[0].clientY : e.changedTouches[0].clientY);
 }
 
 function setParticuleDirection(p) {
@@ -47,7 +50,7 @@ function setParticuleDirection(p) {
   let radius = [-1, 1][anime.random(0, 1)] * value;
   return {
     x: p.x + radius * Math.cos(angle),
-    y: p.y + radius * Math.sin(angle)
+    y: p.y + radius * Math.sin(angle),
   };
 }
 
@@ -117,7 +120,7 @@ function animateParticules(x, y) {
       radius: 0.1,
       duration: anime.random(minAnimeDuration, maxAnimeDuration),
       easing: "easeOutExpo",
-      update: renderParticule
+      update: renderParticule,
     })
     .add({
       targets: circle,
@@ -126,25 +129,25 @@ function animateParticules(x, y) {
       alpha: {
         value: 0,
         easing: "linear",
-        duration: anime.random(600, 800)
+        duration: anime.random(600, 800),
       },
       duration: anime.random(1200, 1800),
       easing: "easeOutExpo",
       update: renderParticule,
-      offset: 0
+      offset: 0,
     });
 }
 
 let render = anime({
   duration: Infinity,
-  update: function() {
+  update: () => {
     ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
-  }
+  },
 });
 
 document.addEventListener(
-  tap,
-  function(e) {
+  "mousedown",
+  (e) => {
     render.play();
     updateCoords(e);
     animateParticules(pointerX, pointerY);

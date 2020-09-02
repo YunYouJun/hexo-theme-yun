@@ -51,6 +51,7 @@ hexo.extend.helper.register("yun_config", function() {
     };
   }
 
+  // 点击效果
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
       colors: theme.fireworks.colors,
