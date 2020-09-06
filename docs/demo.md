@@ -179,7 +179,7 @@ If you have already used this theme, you are welcome to leave your site at [Demo
       <a href="https://xmuli.tech" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/xmuli_yj_256px.png"/>
         <br />
-        <sub title="与子偕臧">偕臧的小站</sub>
+        <sub title="偕臧">偕臧</sub>
       </a>
     </td>
   </tr>
