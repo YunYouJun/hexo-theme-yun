@@ -5,8 +5,8 @@ block content
     +page_header(page.title)
     if page.links
       #links
-        ul.link-items
-          if Array.isArray(page.links)
+        if Array.isArray(page.links)
+          ul.link-items
             for link in page.links
               li.link-item(id=link.name, style= link.color ? `--primary-color:${link.color}` : '')
                 a.link-url(href=link.url, title=link.name, alt='portrait' target='_blank' rel='friend')
@@ -14,7 +14,9 @@ block content
                 .link-info
                   .link-blog!=link.blog
                   .link-desc!=link.desc || page.placeholder
-          else
+        else
+          .spinner(v-if="!links.length")
+          ul.link-items
             li.link-item(v-for="link in links", :id="link.name", :style="link.color ? `--primary-color:${link.color}` : ''")
               a.link-url(:href="link.url", :title="link.name", alt='portrait' target='_blank' rel='friend')
                 img.link-avatar(loading='lazy', :src="link.avatar", :alt="link.name", onerror='this.src=CONFIG.anonymous_image')
@@ -29,11 +31,14 @@ block content
                   links: [],
                   placeholder: "#{page.placeholder}"
                 },
-                async mounted() {
+                async beforeCreate() {
                   this.links = await fetch("#{page.links}")
                     .then(res => {
-                      return res.json();
+                      return res.json()
                     })
+                  if (#{page.random || false}) {
+                    this.links.sort(() => Math.random() - 0.5);
+                  }
                 }
               })
 

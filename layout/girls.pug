@@ -5,6 +5,7 @@ block content
     +page_header(page.title)
     #girls
       if typeof page.girls === "string"
+        .spinner(v-if="!girls.length")
         .girls-number!="{{girls.length}}"
         .girl-banner!=page.banner
         ul.girl-items
@@ -26,6 +27,9 @@ block content
                 .then(res => {
                   return res.json();
                 })
+              if (#{page.random || false}) {
+                this.girls.sort(() => Math.random() - 0.5);
+              }
             }
           })
       else
