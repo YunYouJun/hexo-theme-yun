@@ -85,11 +85,13 @@ applyCustomDarkModeSettings();
  * bind click event for toggle button
  */
 function bindToggleButton() {
-  document.getElementById("toggle-mode-btn").addEventListener("click", () => {
-    const mode = toggleCustomDarkMode();
-    applyCustomDarkModeSettings(mode);
-    toggleCodeblockCss(mode);
-  });
+  if (window["toggle-mode-btn"]) {
+    window["toggle-mode-btn"].addEventListener("click", () => {
+      const mode = toggleCustomDarkMode();
+      applyCustomDarkModeSettings(mode);
+      toggleCodeblockCss(mode);
+    });
+  }
 }
 
 /**

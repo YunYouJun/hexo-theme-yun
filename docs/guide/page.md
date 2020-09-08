@@ -71,6 +71,8 @@ icon: icon-women-line
 
 ## 标签 tags
 
+> 示例: <https://www.yunyoujun.cn/tags/>
+
 如果您尚未安装 `hexo-generator-tag`，请输入 `npm install hexo-generator-tag`。
 
 新建 `tags` 页面，在博客根目录下输入：
@@ -102,6 +104,8 @@ wordcloud:
 > 仅会在标签页自动引入 [wordcloud2.js](https://github.com/timdream/wordcloud2.js)
 
 ## 分类 categories
+
+> 示例： <https://www.yunyoujun.cn/categories/>
 
 如果您尚未安装 `hexo-generator-category`，请输入 `npm install hexo-generator-category`。
 
