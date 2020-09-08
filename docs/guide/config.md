@@ -765,6 +765,10 @@ sidebar:
 - `rounded`: 是否显示圆形
 - `opacity`: 透明度
 - `mickey_mouse`: 默认关闭，开启后文章页面侧边栏的头像将向上移动（迪士尼警告）
+- `status`
+  - `enable`: 是否显示状态
+  - `emoji`: emoji
+  - `message`: 内容
 
 ```yaml
 avatar:
@@ -773,6 +777,10 @@ avatar:
   rounded: true
   opacity: 1
   mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😭
+    message: 不想上学
 ```
 
 `mickey_mouse` 开启后效果：
