@@ -36,6 +36,7 @@ if theme.aplayer.global
 //- pjax
 if theme.pjax.enable
   include ./pjax.pug
+  script(src=theme.vendors.vue)
 
 if is_page() || is_post()
   if page.aplayer && !theme.aplayer.global

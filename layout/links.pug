@@ -15,32 +15,34 @@ block content
                   .link-blog!=link.blog
                   .link-desc!=link.desc || page.placeholder
         else
+          if !theme.pjax.enable
+            script(src=theme.vendors.vue)
           .spinner(v-if="!links.length")
-          ul.link-items
+          ul.link-items(v-else)
             li.link-item(v-for="link in links", :id="link.name", :style="link.color ? `--primary-color:${link.color}` : ''")
               a.link-url(:href="link.url", :title="link.name", alt='portrait' target='_blank' rel='friend')
                 img.link-avatar(loading='lazy', :src="link.avatar", :alt="link.name", onerror='this.src=CONFIG.anonymous_image')
               .link-info
                 .link-blog!="{{link.blog}}"
                 .link-desc!="{{link.desc || placeholder}}"
-            script(src=theme.vendors.vue)
-            script.
-              const app = new Vue({
-                el: "#links",
-                data: {
-                  links: [],
-                  placeholder: "#{page.placeholder}"
-                },
-                async beforeCreate() {
-                  this.links = await fetch("#{page.links}")
-                    .then(res => {
-                      return res.json()
-                    })
-                  if (#{page.random || false}) {
-                    this.links.sort(() => Math.random() - 0.5);
-                  }
+          script.
+            new Vue({
+              el: "#links",
+              data: {
+                links: [],
+                placeholder: "#{page.placeholder}"
+              },
+              async beforeCreate() {
+                this.links = await fetch("#{page.links}")
+                  .then(res => {
+                    return res.json()
+                  })
+                if (#{page.random || false}) {
+                  this.links.sort(() => Math.random() - 0.5);
                 }
-              })
+              }
+            })
+              
 
     article.post-block
       section.post-body(itemprop='articleBody')

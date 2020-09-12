@@ -15,9 +15,10 @@ block content
                 img.girl-avatar(loading='lazy', :src="girl.avatar", :alt="girl.name", onerror='this.src=CONFIG.anonymous_image')
                 figcaption.girl-name!="{{girl.name}}"
                 figcaption.girl-from!="{{girl.from}}"
-        script(src=theme.vendors.vue)
+        if !theme.pjax.enable
+          script(src=theme.vendors.vue)
         script.
-          const app = new Vue({
+          new Vue({
             el: "#girls",
             data: {
               girls: [],
