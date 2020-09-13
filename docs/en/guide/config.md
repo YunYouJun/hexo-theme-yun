@@ -878,7 +878,7 @@ url: https://www.bilibili.com/video/av8153395/
 
 The bilibili icon will appear in front of the article title. Clicking on the title will jump to the corresponding link.
 
-Currently, the following types are supported by default (Bilibili, Douban, GitHub, NetEase Cloud Music, WeChat Official Account, Weibo, Yuque, Zhihu, and Outer Links):
+Currently, the following types are supported by default (Bilibili, Douban, GitHub, NetEase Cloud Music, WeChat Official Account, Weibo, Yuque, Twitter, Zhihu, and Outer Links):
 
 ```yaml
 types:
@@ -900,6 +900,9 @@ types:
   notion:
     color: black
     icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
   wechat:
     color: "#1AAD19"
     icon: icon-wechat-2-line

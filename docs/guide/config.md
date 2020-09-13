@@ -885,7 +885,7 @@ url: https://www.bilibili.com/video/av8153395/
 
 在文章标题前将会出现 bilibili 的图标，点击标题会跳转至对应的链接。
 
-目前默认支持以下类型（哔哩哔哩、豆瓣、GitHub、网易云音乐、微信公众号、微博、语雀、知乎、Notion、外链）：
+目前默认支持以下类型（哔哩哔哩、豆瓣、GitHub、网易云音乐、推特、微信公众号、微博、语雀、知乎、Notion、外链）：
 
 ```yaml
 types:
@@ -907,6 +907,9 @@ types:
   notion:
     color: black
     icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
   wechat:
     color: "#1AAD19"
     icon: icon-wechat-2-line
