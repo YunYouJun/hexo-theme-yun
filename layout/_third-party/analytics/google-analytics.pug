@@ -2,7 +2,21 @@ link(rel='preconnect' href='https://www.google-analytics.com' crossorigin)
 link(rel='preconnect' href='https://stats.g.doubleclick.net' crossorigin)
 script(async, src="https://www.googletagmanager.com/gtag/js?id=" + theme.google_analytics.id)
 script.
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '#{theme.google_analytics.id}');
+  if (CONFIG.hostname === location.hostname) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '#{theme.google_analytics.id}');
+  }
+if theme.pjax.enable
+  script.
+    //- only for pjax
+    function sendPageView() {
+      if (CONFIG.hostname !== location.hostname) return;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('event', 'page_view', {
+        page_path: encodeURIComponent(location.pathname),
+      })
+    }
+    document.addEventListener("pjax:success", sendPageView);
