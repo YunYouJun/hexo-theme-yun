@@ -1,6 +1,6 @@
 if theme.font.cdn.enable
   each item in theme.font.cdn.lib
-    link(rel='stylesheet', href=item, media="none" onload="this.media='all'")
+    link(rel='stylesheet', href=item, media="print" onload="this.media='all'")
 
 if theme.cdn.css
   each item in theme.cdn.css

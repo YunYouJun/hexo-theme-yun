@@ -4,7 +4,13 @@
 // '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>';
 //- local-search
 
-let searchFunc = function(path, search_id, content_id) {
+/**
+ * 本地搜索函数
+ * @param {*} path xml 文件路径
+ * @param {*} search_id 搜索框元素 ID
+ * @param {*} content_id 结果框元素 ID
+ */
+const localSearch = (path, search_id, content_id) => {
   "use strict";
   const req = new Request(path);
   let xhr = new XMLHttpRequest();
@@ -125,8 +131,11 @@ let searchFunc = function(path, search_id, content_id) {
   xhr.send();
 };
 
-searchFunc(
-  CONFIG.local_search.path,
-  "local-search-input",
-  "local-search-result"
+document.addEventListener(
+  "DOMContentLoaded",
+  localSearch(
+    CONFIG.local_search.path,
+    "local-search-input",
+    "local-search-result"
+  )
 );

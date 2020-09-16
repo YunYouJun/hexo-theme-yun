@@ -1,7 +1,7 @@
 {
   "name": "hexo-theme-yun",
   "version": "1.1.0",
-  "description": "A starry sky theme for hexo.",
+  "description": "☁️ A fast & light & lovely theme for Hexo.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
@@ -24,9 +24,9 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.5.2",
-    "@vuepress/plugin-google-analytics": "^1.5.2",
-    "@vuepress/plugin-pwa": "^1.5.2",
-    "vuepress": "^1.5.2"
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "@vuepress/plugin-google-analytics": "^1.5.4",
+    "@vuepress/plugin-pwa": "^1.5.4",
+    "vuepress": "^1.5.4"
   }
 }

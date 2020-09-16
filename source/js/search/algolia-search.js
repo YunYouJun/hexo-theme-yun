@@ -1,24 +1,24 @@
 /* global instantsearch, algoliasearch, CONFIG */
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const algoliaSettings = CONFIG.algolia;
   const { indexName, appID, apiKey } = algoliaSettings;
 
-  let search = instantsearch({
+  const search = instantsearch({
     indexName,
     searchClient: algoliasearch(appID, apiKey),
-    searchFunction: helper => {
+    searchFunction: (helper) => {
       let searchInput = document.querySelector(".search-input");
       if (searchInput.value) {
         helper.search();
       }
-    }
+    },
   });
 
   // Registering Widgets
   search.addWidgets([
     instantsearch.widgets.configure({
-      hitsPerPage: algoliaSettings.hits.per_page || 8
+      hitsPerPage: algoliaSettings.hits.per_page || 8,
     }),
 
     instantsearch.widgets.searchBox({
@@ -29,14 +29,14 @@ window.addEventListener("DOMContentLoaded", () => {
       showSubmit: false,
       showLoadingIndicator: false,
       cssClasses: {
-        input: "search-input"
-      }
+        input: "search-input",
+      },
     }),
 
     instantsearch.widgets.stats({
       container: "#algolia-stats",
       templates: {
-        text: data => {
+        text: (data) => {
           let stats = algoliaSettings.labels.hits_stats
             .replace(/\$\{hits}/, data.nbHits)
             .replace(/\$\{time}/, data.processingTimeMS);
@@ -45,29 +45,29 @@ window.addEventListener("DOMContentLoaded", () => {
               <img src="https://algolia.com/icons/icon-48x48.png" alt="Algolia">
             </span>
             <hr>`;
-        }
-      }
+        },
+      },
     }),
 
     instantsearch.widgets.hits({
       container: "#algolia-hits",
       templates: {
-        item: data => {
+        item: (data) => {
           let link = data.permalink ? data.permalink : CONFIG.root + data.path;
           return `<a href="${link}" class="algolia-hit-item-link">${data._highlightResult.title.value}</a>`;
         },
-        empty: data => {
+        empty: (data) => {
           return `<div id="algolia-hits-empty">
               ${algoliaSettings.labels.hits_empty.replace(
                 /\$\{query}/,
                 data.query
               )}
             </div>`;
-        }
+        },
       },
       cssClasses: {
-        item: "algolia-hit-item"
-      }
+        item: "algolia-hit-item",
+      },
     }),
 
     instantsearch.widgets.pagination({
@@ -83,16 +83,16 @@ window.addEventListener("DOMContentLoaded", () => {
         previous:
           '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
         next:
-          '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>'
+          '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
       },
       cssClasses: {
         root: "pagination",
         item: "pagination-item",
         link: "page-number",
         selectedItem: "current",
-        disabledItem: "disabled-item"
-      }
-    })
+        disabledItem: "disabled-item",
+      },
+    }),
   ]);
 
   search.start();
