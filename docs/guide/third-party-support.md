@@ -74,6 +74,8 @@ utterances:
   theme: github-light
 ```
 
+> 记得配置成自己的仓库。
+
 ### [Disqus](https://disqus.com/)
 
 Disqus 可以说是全球最流行的第三方评论系统，但其在国内缺点也很明显，需要科学上网。

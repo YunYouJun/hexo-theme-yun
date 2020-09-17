@@ -7,10 +7,10 @@
 /**
  * 本地搜索函数
  * @param {*} path xml 文件路径
- * @param {*} search_id 搜索框元素 ID
- * @param {*} content_id 结果框元素 ID
+ * @param {*} searchId 搜索框元素 ID
+ * @param {*} contentId 结果框元素 ID
  */
-const localSearch = (path, search_id, content_id) => {
+const localSearch = (path, searchId, contentId) => {
   "use strict";
   const req = new Request(path);
   let xhr = new XMLHttpRequest();
@@ -28,9 +28,9 @@ const localSearch = (path, search_id, content_id) => {
           url: entry.querySelector("url").innerHTML,
         });
       });
-      let $input = document.getElementById(search_id);
+      let $input = document.getElementById(searchId);
       if (!$input) return;
-      let $resultContent = document.getElementById(content_id);
+      let $resultContent = document.getElementById(contentId);
       if (document.querySelectorAll("#local-search-input").length > 0) {
         $input.addEventListener("input", function() {
           let str = '<ul class="search-result-list">';
@@ -46,7 +46,7 @@ const localSearch = (path, search_id, content_id) => {
           // perform local searching
           datas.forEach(function(data) {
             let isMatch = true;
-            let content_index = [];
+            // let content_index = [];
             if (!data.title || data.title.trim() === "") {
               data.title = "Untitled";
             }
