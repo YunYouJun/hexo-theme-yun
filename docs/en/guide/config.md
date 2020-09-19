@@ -647,11 +647,13 @@ bg_image:
 
 #### Search Background
 
+- `modal` If you enable `modal`, the search background will be the blurred underlying content, and the background image will no longer be used.
 - `placeholder`: search box prompt text (if not set, the corresponding text will be automatically selected according to Hexo language configuration)
 - `dark_bg_image`: background for dark mode
 
 ```yaml
 search:
+  modal: true
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
   dark_bg_image: xxx
   # placeholder:

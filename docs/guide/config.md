@@ -654,11 +654,13 @@ bg_image:
 
 #### 搜索背景
 
+- `modal`: 启用模态框时，搜索背景将为模糊后的下层内容，不再使用背景图片
 - `placeholder`: 搜索框提示文字（如果不设置，将自动根据 Hexo 语言配置选取对应的文本）
 - `dark_bg_image`：暗色模式下的背景，仅在你开启暗色模式时有效
 
 ```yaml
 search:
+  modal: true
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
   dark_bg_image: xxx
   # placeholder:

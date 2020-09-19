@@ -7,7 +7,12 @@ if (hexo-config('local_search') && hexo-config('local_search.enable')) {
 $search-bg-image = hexo-config('search.bg_image');
 
 .search-popup {
-  background-image: url($search-bg-image);
+  if (hexo-config('search.modal')) {
+    backdrop-filter: blur(30px);
+  } else {
+    background-image: url($search-bg-image);
+  }
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

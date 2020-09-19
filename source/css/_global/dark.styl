@@ -39,10 +39,13 @@ $sidebar-bg-image = hexo-config('sidebar.dark_bg_image');
 }
 
 // search
-$search-bg-image = hexo-config('search.dark_bg_image');
+// if you enable modal, do not need bg_image
+if (!hexo-config('search.modal')) {
+  $search-bg-image = hexo-config('search.dark_bg_image');
 
-.search-popup {
-  background-image: url($search-bg-image);
+  .search-popup {
+    background-image: url($search-bg-image);
+  }
 }
 
 // post
