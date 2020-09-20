@@ -108,6 +108,7 @@ social:
     color: black
 
 codeblock:
+  copy_btn: true
   prismjs:
     light: default
     dark: tomorrow
@@ -288,7 +289,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
+      iconfont: //at.alicdn.com/t/font_1140697_ed8vp4atwoj.js
     defer:
 
 # cdn for third-party library (alternative include)

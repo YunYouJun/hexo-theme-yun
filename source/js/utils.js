@@ -12,4 +12,53 @@ Yun.utils = {
       el.wrap(container);
     });
   },
+
+  /**
+   * click btn to copy codeblock
+   */
+  insertCopyCodeBtn: () => {
+    const codeblocks = document.querySelectorAll("pre[class*='language-']");
+
+    codeblocks.forEach((codeblock) => {
+      if (!CONFIG.copycode) return;
+      codeblock.insertAdjacentHTML(
+        "beforeend",
+        '<div class="copy-btn"><svg class="icon"><use xlink:href="#icon-file-copy-line" aria-label="copy"></use></svg></div>'
+      );
+      const copyBtn = codeblock.querySelector(".copy-btn");
+      copyBtn.addEventListener("click", () => {
+        const lines =
+          codeblock.querySelector("code[class*='language-']") ||
+          codeblock.querySelector(".token");
+        const code = lines.innerText;
+        const ta = document.createElement("textarea");
+        ta.style.top = window.scrollY + "px"; // Prevent page scrolling
+        ta.style.position = "absolute";
+        ta.style.opacity = "0";
+        ta.readOnly = true;
+        ta.value = code;
+        document.body.append(ta);
+        ta.select();
+        ta.setSelectionRange(0, code.length);
+        ta.readOnly = false;
+        // copy success
+        const result = document.execCommand("copy");
+        const iconName = result ? "#icon-check-line" : "#icon-timer-line";
+        const iconSvg = copyBtn.querySelector("svg use");
+        iconSvg.setAttribute("xlink:href", iconName);
+        iconSvg.setAttribute("color", result ? "green" : "red");
+
+        ta.blur(); // For iOS
+        copyBtn.blur();
+        document.body.removeChild(ta);
+      });
+      codeblock.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+          const iconSvg = copyBtn.querySelector("svg use");
+          iconSvg.setAttribute("xlink:href", "#icon-file-copy-line");
+          iconSvg.setAttribute("color", "gray");
+        }, 200);
+      });
+    });
+  },
 };

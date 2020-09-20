@@ -1,0 +1,26 @@
+pre[class*='language-'] {
+  position: relative;
+
+  &:hover {
+    .copy-btn {
+      opacity: 1;
+    }
+  }
+}
+
+.copy-btn {
+  opacity: 0;
+  color: gray;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1px 4px;
+  transition: opacity 0.2s;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

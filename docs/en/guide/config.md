@@ -1080,8 +1080,16 @@ prismjs:
 
 In `yun.yml`:
 
+- `copy_btn`: enable copy button in codeblock
+- `prismjs`
+  - `light`: code highlight style for light
+  - `dark`: code highlight style for dark
+
+(You can set the corresponding suitable highlight styles for the light and dark modes.)
+
 ```yaml
 codeblock:
+  copy_btn: true
   prismjs:
     light: default
     dark: tomorrow

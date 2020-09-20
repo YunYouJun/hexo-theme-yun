@@ -1091,8 +1091,16 @@ prismjs:
 
 在 `yun.yml` 中：
 
+- `copy_btn`: 开启一键复制按钮
+- `prismjs`
+  - `light`: 亮模式下，代码高亮主题
+  - `dark`: 暗模式下，代码高亮主题
+
+（可以为亮暗模式分别设置对应适合的高亮样式。）
+
 ```yaml
 codeblock:
+  copy_btn: true
   prismjs:
     light: default
     dark: tomorrow
