@@ -127,10 +127,10 @@ If you have already used this theme, you are welcome to leave your site at [Demo
   </tr>
   <tr align="center">
     <td>
-      <a href="https://qingxu.ga" target="_blank">
-        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.png"/>
+      <a href="https://qingxu.live" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/QingxuMo/PicGoBed/blog/ass/avatar.png"/>
         <br />
-        <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
+        <sub title="人生如逆旅，我亦是行人">泠汐阁</sub>
       </a>
     </td>
     <td>
