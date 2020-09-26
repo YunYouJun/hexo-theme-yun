@@ -79,8 +79,6 @@ const toggleCustomDarkMode = () => {
   return currentSetting;
 };
 
-applyCustomDarkModeSettings();
-
 /**
  * bind click event for toggle button
  */
@@ -100,11 +98,31 @@ function bindToggleButton() {
  */
 function toggleCodeblockCss(mode) {
   const invertMode = invertDarkModeObj[mode];
-  document
-    .getElementById(`${invertMode}-prism-css`)
-    .setAttribute("media", "(prefers-color-scheme: no-preference)");
+  const invertModePrismCss = document.getElementById(`${invertMode}-prism-css`);
+  if (!invertModePrismCss) return;
+
+  invertModePrismCss.setAttribute(
+    "media",
+    "(prefers-color-scheme: no-preference)"
+  );
   document.getElementById(`${mode}-prism-css`).removeAttribute("media");
 }
 
+applyCustomDarkModeSettings();
 document.addEventListener("DOMContentLoaded", bindToggleButton);
 document.addEventListener("pjax:success", bindToggleButton);
+
+// judge by time
+if (CONFIG.mode === "time") {
+  const now = new Date();
+  const hour = now.getHours();
+  if (hour < 7 && hour >= 19) {
+    setTimeout(() => {
+      toggleCodeblockCss("dark");
+    }, 200);
+    const mode = toggleCustomDarkMode();
+    if (mode === "dark") {
+      applyCustomDarkModeSettings(mode);
+    }
+  }
+}

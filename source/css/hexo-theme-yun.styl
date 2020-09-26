@@ -19,7 +19,7 @@ if (hexo-config('mode') == 'dark') {
   }
 
   @import '_global/dark';
-} else if (hexo-config('mode') == 'auto') {
+} else if (hexo-config('mode') == 'auto' || hexo-config('mode') == 'time') {
   @media (prefers-color-scheme: dark) {
     :root {
       --color-mode: 'dark';

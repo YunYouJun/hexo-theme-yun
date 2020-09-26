@@ -1,6 +1,6 @@
 # ---------------
-# mode: light | dark | auto
-mode: light
+# mode: light | dark | auto | time
+mode: auto
 
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"

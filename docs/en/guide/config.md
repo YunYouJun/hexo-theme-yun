@@ -561,13 +561,14 @@ notice:
 - `light`: always light mode without dark style assets
 - `dark`: always dark mode
 - `auto`: switch mode by system mode, display toggle button in sidebar
+- `time`: switch light and dark mode by time, `07:00-19:00` is light mode, and the remaining time is dark mode
 
 > Black icon will be white in dark mode.
 
 You can set isolate background for dark mode, please see corresponding config.
 
 ```yaml
-# light | dark | auto
+# light | dark | auto | time
 mode: auto
 ```
 
