@@ -8,6 +8,7 @@
 
 - `enable`: 默认开启（代表整体的评论区块，你开启任意类型评论系统都须保持其开启）
 - `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
+- `candidates`: 候选评论系统，默认不启用。配置后可切换多个评论系统，默认第一位为默认显示的评论。（你须确保 `candidates` 中的评论对应 `enable` 已开启）
 
 ```yaml
 comment:
@@ -15,6 +16,9 @@ comment:
   tips:
     - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+    - valine
+    - utterances
 ```
 
 关于评论系统我简单进行过一些对比，希望能起到一些参考。

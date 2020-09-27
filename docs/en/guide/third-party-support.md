@@ -8,6 +8,7 @@ The difference from the additional packagfe support, here is mainly to use the s
 
 - `enable`: enabled by default (representing the overall comment block, you must keep it enabled when you enable any type of comment system)
 - `tips`: Tips above the comment, you can use the form of an array to modify it to anything (if you don't want to display it, you can leave it blank)
+- -`candidates`: Candidate comment system, not enabled by default. After configuration, multiple comment systems can be switched, and the default first is the comment system displayed by default. (You must ensure that the `enable` of comment system in `candidates` is `true`.)
 
 ```yaml
 comment:
@@ -26,7 +27,7 @@ Regarding the comment system, I have briefly made some comparisons, hoping to se
 It also has a built-in link button for redirecting related issues and instructions on how to use GitHub Issue to comment.
 It can be turned on or off by itself.
 
-- `filters`: search rules for GitHub Issues, see [searching-issues-and-pull-requests](https://help.github.com/en/github/searching-for-information-on-github/searching -issues-and-pull-requests).
+- `filters`: search rules for GitHub Issues, see [searching-issues-and-pull-requests](https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests).
 
 ```yaml
 github_issues:
@@ -100,7 +101,7 @@ language: zh-CN
 
 In fact, you only need to refer to the page below to get the appId and appKey required for configuration. (No need to install, the theme uses CDN by default. The template is also built-in.)
 
-> [Quick Start-Get APP ID and APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP -Key)
+> [Quick Start-Get APP ID and APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
 - `visitor`: Article reading statistics (please do not enable it at the same time with [不蒜子](#busuanzi))
 
