@@ -99,13 +99,13 @@ function bindToggleButton() {
 function toggleCodeblockCss(mode) {
   const invertMode = invertDarkModeObj[mode];
   const invertModePrismCss = document.getElementById(`${invertMode}-prism-css`);
-  if (!invertModePrismCss) return;
-
-  invertModePrismCss.setAttribute(
-    "media",
-    "(prefers-color-scheme: no-preference)"
-  );
-  document.getElementById(`${mode}-prism-css`).removeAttribute("media");
+  if (invertModePrismCss) {
+    invertModePrismCss.setAttribute(
+      "media",
+      "(prefers-color-scheme: no-preference)"
+    );
+    document.getElementById(`${mode}-prism-css`).removeAttribute("media");
+  }
 }
 
 applyCustomDarkModeSettings();

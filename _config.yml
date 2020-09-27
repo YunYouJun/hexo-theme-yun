@@ -493,6 +493,9 @@ comment:
   tips:
     - 点击按钮跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  # candidates:
+  #   - valine
+  #   - utterances
 
 # GitHub Issues Link Button
 # https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
