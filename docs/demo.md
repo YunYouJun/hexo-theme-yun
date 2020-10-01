@@ -127,13 +127,6 @@ If you have already used this theme, you are welcome to leave your site at [Demo
   </tr>
   <tr align="center">
     <td>
-      <a href="https://qingxu.live" target="_blank">
-        <img width="80px" src="https://cdn.jsdelivr.net/gh/QingxuMo/PicGoBed/blog/ass/avatar.png"/>
-        <br />
-        <sub title="人生如逆旅，我亦是行人">泠汐阁</sub>
-      </a>
-    </td>
-    <td>
       <a href="https://myperfect.work" target="_blank">
         <img width="80px" src="https://myperfect.work/image/20161015094748_YFfPV.jpeg"/>
         <br />
@@ -180,6 +173,13 @@ If you have already used this theme, you are welcome to leave your site at [Demo
         <img width="80px" src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/xmuli_yj_256px.png"/>
         <br />
         <sub title="偕臧">偕臧</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.rogeroger.net" target="_blank">
+        <img width="80px" src="https://rogeroger.net/img/rogeryu.jpeg"/>
+        <br />
+        <sub title="啊啊啊啊啊啊啊啊">ROGEROGER</sub>
       </a>
     </td>
   </tr>
