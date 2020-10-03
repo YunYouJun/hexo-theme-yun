@@ -284,7 +284,7 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.20/dist/yun/yun-markdown.min.css
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.21/dist/yun/yun-markdown.min.css
     # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   js:
     base:
@@ -322,7 +322,7 @@ font:
     family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 400
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: "'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace"
 
 # custom your color in fireworks
 fireworks:
