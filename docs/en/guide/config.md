@@ -1264,6 +1264,8 @@ live_time:
   start_time: "2019-04-12T00: 00: 00"
 ```
 
+> Remember to add 0, such as `2019-04-01` instead of `2019-4-1`.
+
 ### Custom Text
 
 `custom_text` is a custom footer and can contain HTML.
@@ -1288,7 +1290,6 @@ Randomly display a sentence on the homepage of the website ~~eighth-grade syndro
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
-  src: /js/say.js
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true
