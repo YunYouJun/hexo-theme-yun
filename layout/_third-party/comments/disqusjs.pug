@@ -2,11 +2,8 @@
 link(rel="stylesheet" href=theme.vendors.disqusjs.css)
 script(src=theme.vendors.disqusjs.js)
 script.
-  const dsqjs = new DisqusJS({
-    shortname: '!{theme.disqusjs.shortname}',
-    apikey: '!{theme.disqusjs.apikey}',
-    url: '!{page.permalink}'
-  })
-
-if theme.disqusjs.count
-  script#dsq-count-scr(src=`//${theme.disqus.shortname}.disqus.com/count.js` async)
+  const disqusjsConfig = !{JSON.stringify(theme.disqusjs)}
+  function loadDisqus() {
+    const dsqjs = new DisqusJS(disqusjsConfig)
+  }
+script(src=url_for('/js/comments/disqus.js'))

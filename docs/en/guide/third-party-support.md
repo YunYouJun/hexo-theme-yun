@@ -70,8 +70,16 @@ Let users who can't get online scientifically see comments directly.
 disqusjs:
   enable: false
   shortname: yunyoujun
-  count: false
-  apikey:
+  # siteName:
+  # identifier:
+  # url:
+  # title:
+  # api:
+  # apikey:
+  # nesting: 4
+  # nocomment:
+  # admin:
+  # adminLabel:
 ```
 
 ### [utterances](https://utteranc.es/)

@@ -378,6 +378,14 @@ pjax:
 
 > 因为当你想要一些主题并未提供的功能时，它们实际上可以直接通过插件来实现。
 
+### [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common)
+
+扩展的 hexo 标签语法。
+
+譬如实现 Tabs 功能。（[Demo](https://www.yunyoujun.cn/yun/tag-common.html)）
+
+后续可能会添加更多常用标签。
+
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 你可以使用它来加密一些私密的文章页面。

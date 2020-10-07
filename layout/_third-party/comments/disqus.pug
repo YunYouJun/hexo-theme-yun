@@ -1,18 +1,20 @@
 #disqus_thread
-.js-Pjax
-  script.
-    const disqusConfig = function () {
-      this.page.url = "!{page.permalink}";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "!{page.path}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      this.page.title = "!{page.title}"
-    };
+script.
+  const disqusConfig = function() {
+    this.page.url = "!{page.permalink}"; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "!{page.path}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.title = "!{page.title}";
+  };
+  function loadDisqus() {
     // here we will only load the disqus <script> if not already loaded
     if (!window.DISQUS) {
-      (function() { // DON'T EDIT BELOW THIS LINE
-      const d = document, s = d.createElement('script');
-      s.src = 'https://#{theme.disqus.shortname}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      (function() {
+        // DON'T EDIT BELOW THIS LINE
+        const d = document,
+          s = d.createElement("script");
+        s.src = "https://#{theme.disqus.shortname}.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
       })();
     }
     // if disqus <script> is already loaded, we just reset disqus the right way
@@ -20,12 +22,14 @@
     else {
       DISQUS.reset({
         reload: true,
-        config: function () {
-          this.page.identifier = disqusConfig.page.identifier
-          this.page.url = disqusConfig.page.url
-        }
-      })
+        config: function() {
+          this.page.identifier = disqusConfig.page.identifier;
+          this.page.url = disqusConfig.page.url;
+        },
+      });
     }
+  }
+script(src=url_for('/js/comments/disqus.js'))
 
 if theme.disqus.count
   script#dsq-count-scr(src=`//${theme.disqus.shortname}.disqus.com/count.js` async)

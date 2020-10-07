@@ -105,12 +105,22 @@ disqus:
 
 - `apikey`: 必须，请参考 DisqusJS 文档 [配置 Disqus Application](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqus-application)
 
+> 注释部分为非必须参数。
+
 ```yaml
 disqusjs:
   enable: false
   shortname: yunyoujun
-  count: false
-  apikey:
+  # siteName:
+  # identifier:
+  # url:
+  # title:
+  # api:
+  # apikey:
+  # nesting: 4
+  # nocomment:
+  # admin:
+  # adminLabel:
 ```
 
 ### Valine
