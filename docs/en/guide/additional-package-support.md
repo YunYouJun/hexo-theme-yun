@@ -1,6 +1,6 @@
 # Additional Dependency Library Support
 
-The difference with third-party support is that most of the functions here are implemented by installing plug-ins or introducing CDN, and are simply adapted by themes.
+The difference with third-party support is that most of the functions here are implemented by installing plug-ins or introducing CDN, and they are simply adapted by themes.
 
 ## Word Count
 
@@ -89,13 +89,13 @@ top: 2
 At this time, the articles of `top: 2` will be arranged above the articles of `top: 1`.
 
 ::: tip
-You can also set the sorting according to `updated`, and then set the date of `updated` to a future date to achieve the sticky effect.
+You can also set the sorting according to `updated`, and then set the date of `updated` to a future time to achieve the sticky effect.
 :::
 
 ## live2d
 
-There is no need to modify the theme to adding live2d, nor does it need to configure the theme. It is just a plug-in for Hexo. You can configure it in `_config.yml` in the root directory.
-The reason it appears here is to illustrate the recommended settings (in short, it is best to use CDN).
+There is no need to modify the theme to adding live2d, nor does it need to to be configured. It is just a plug-in for Hexo. You can configure it in `_config.yml` in the root directory.
+The reason it appears here is to illustrate the recommended settings (in short, it is the best to use CDN).
 
 Install [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
@@ -140,7 +140,7 @@ live2d:
 Config in `yun.yml, use colorful word cloud instead of native tag cloud.
 
 - `enable`: enable word cloud
-- `height`: set height of word cloud
+- `height`: set the height for word cloud
 
 ## player
 
@@ -165,7 +165,7 @@ aplayer:
 ```
 
 ::: tip
-If you find that Aplayer sometimes introduces header files repeatedly in irrelevant files. Remember to turn off automatic script insertion.
+If you find that the Aplayer sometimes introduces header files repeatedly in irrelevant files, remember to turn off the automatic script insertion.
 
 > [Duplicate APlayer.JS loading](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/README.md#duplicate-aplayerjs-loading)
 
@@ -174,7 +174,7 @@ aplayer:
   asset_inject: false
 ```
 
-Then decide at the head of the article whether to enable `aplayer`:
+Then decide whether to enable `aplayer` at the head of the article:
 
 ```yaml {3}
 ---
@@ -318,7 +318,7 @@ Note that when writing directly in a Markdown file, you need an extra `\` to tra
 
 Use `\\[E = mc ^ 2 \\]` instead of `\[E = mc ^ 2 \]`.
 
-If you have too many characters that need to be translated, you can directly wrap it with HTML tags (internal characters will not be parsed as Markdown), without using multiple `\` to translate. (Or use `$E=mc^2$`)
+If you have too many characters that need to be translated, you can directly wrap it with HTML tags (internal characters will not be parsed as Markdown) without using multiple `\` to translate. (Or use `$E=mc^2$`)
 
 For example:
 
