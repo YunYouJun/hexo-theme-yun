@@ -1,6 +1,6 @@
 # User's Guidance
 
-This is a Hexo theme, please make sure you acknowledge the basic usage of Hexo.
+This is a Hexo theme. Please make sure you acknowledge the basic usage of Hexo.
 
 You can also refer to the newbie tutorial I wrote [Tutorial on how to build your website from scratch-Yunyoujun's small station](https://www.yunyoujun.cn/share/how-to-build-your-site/).
 
@@ -25,7 +25,7 @@ If you don’t have renderers for `pug` and`stylus`, please install:
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
 (This is Hexo official maintenance, but it seems that there are not many stars, or have a diligent update as the one below.)
 Or [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
-(The former one does not yet support frequently update during development, but the latter does.)
+(The former one does not support frequently update during development, but the latter does.)
 And [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
 
 ```sh
@@ -44,7 +44,7 @@ Go to the root directory of your Hexo blog. Clone or download the `hexo-theme-yu
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
-> If you are using continuous integration and wanting to build a stable version each time, you can fork this project, and then clone your fork project.
+> If you are using continuous integration and wanting to build a stable version each time, you can first fork this project and then clone your fork project.
 >
 > ```sh
 > git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
@@ -101,10 +101,10 @@ cd themes/yun
 git pull
 ```
 
-If you modify the theme's `themes/yun/_config.yml` configuration file, you may encounter conflicts during the upgrade and need to adjust it yourself.
+If you modify the theme's `themes/yun/_config.yml` configuration file, you may encounter conflicts during the upgrade and need to adjust it by yourself.
 
 ::: danger
-It is best not to modify any of the theme's files unless you have certain development capabilities, or else the theme can not be upgraded afterward.
+It is best not to modify any of the theme's files unless you have certain development capabilities, or else the theme can not be upgraded afterwards.
 :::
 
 If you want to customize the theme, you can include your resources in the `head` configuration item.
@@ -162,11 +162,11 @@ If you want to update automatically and keep the latest themes at all times, you
 You can refer to my GitHub Action configuration file [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml). (Copy the configuration and put it in the corresponding folder. GitHub Actions is a service that comes with GitHub.)
 If you are not using `algolia_search`, please delete the relevant part of `algolia`.
 
-> I have adopted this approach, but I do not recommend it to you from the conscience, because this is my own theme, and naturally I have a certain tolerance for potential bugs.
-> Always keep the same as the warehouse version, you may encounter newly introduced BUG.
-> Of course you can give it a try if you are willing to be a guinea pig. By the way, give us feedback. From a personal point of view, it is very welcome.
+> I have adopted this approach. But I do not recommend it to you from the conscience because this is my own theme, and naturally I have a certain degree of tolerance for potential bugs.
+> You may encounter newly introduced BUG by keeping up with the warehouse version.
+> Of course you can give it a try if you are willing to be a guinea pig. By the way, give us feedback. I'll be very appriciate it.
 
-If you want to clone a stable version of the theme, you can fork it yourself, and then modify the source project address to the project address after fork.
+If you want to clone a stable version of the theme, you can fork it yourself, and then modify the source project address to the project address after forking it.
 
 ```yaml
 run: |

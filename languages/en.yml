@@ -34,7 +34,7 @@ post:
     author: Post author
     link: Post link
     license_title: Copyright Notice
-    license_content: "All articles in this blog are licensed under %s unless stating additionally."
+    license_content: "All articles in this blog are licensed under %s unless otherwise stated."
 
 # page:
 #   totally: Totally
@@ -90,7 +90,7 @@ accessibility:
 #   next_page: Next page
 
 wordcount:
-  count: Words count in article
-  count_total: Words count total
+  count: Word count in article
+  count_total: Word count total
   time: Reading time
-  time_total: Reading time total
+  time_total: Total reading time
