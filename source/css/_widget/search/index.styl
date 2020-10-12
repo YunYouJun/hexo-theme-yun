@@ -9,6 +9,7 @@ $search-bg-image = hexo-config('search.bg_image');
 .search-popup {
   if (hexo-config('search.modal')) {
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   } else {
     background-image: url($search-bg-image);
   }

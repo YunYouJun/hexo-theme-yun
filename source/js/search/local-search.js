@@ -55,7 +55,8 @@ const localSearch = (path, searchId, contentId) => {
               .trim()
               .replace(/<[^>]+>/g, "")
               .toLowerCase();
-            let data_url = data.url;
+            // absolute path
+            let data_url = CONFIG.root + data.url;
             let index_title = -1;
             let index_content = -1;
             let first_occur = -1;

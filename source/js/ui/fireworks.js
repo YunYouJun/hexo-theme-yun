@@ -15,8 +15,6 @@ const maxAnimeDuration = 1500;
 const minDiffuseRadius = 50;
 const maxDiffuseRadius = 100;
 
-let canvasEl = document.querySelector(".fireworks");
-let ctx = canvasEl.getContext("2d");
 let pointerX = 0;
 let pointerY = 0;
 
@@ -138,22 +136,27 @@ function animateParticules(x, y) {
     });
 }
 
-let render = anime({
-  duration: Infinity,
-  update: () => {
-    ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
-  },
+const canvasEl = document.querySelector(".fireworks");
+setCanvasSize();
+const ctx = canvasEl.getContext("2d");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const render = anime({
+    duration: Infinity,
+    update: () => {
+      ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+    },
+  });
+
+  document.addEventListener(
+    "mousedown",
+    (e) => {
+      render.play();
+      updateCoords(e);
+      animateParticules(pointerX, pointerY);
+    },
+    false
+  );
 });
 
-document.addEventListener(
-  "mousedown",
-  (e) => {
-    render.play();
-    updateCoords(e);
-    animateParticules(pointerX, pointerY);
-  },
-  false
-);
-
-setCanvasSize();
 window.addEventListener("resize", setCanvasSize, false);

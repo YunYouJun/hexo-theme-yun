@@ -1,39 +1,23 @@
-function isObject(item) {
-  return item && typeof item === "object" && !Array.isArray(item);
-}
-
-function merge(target, source) {
-  for (const key in source) {
-    if (isObject(target[key]) && isObject(source[key])) {
-      merge(target[key], source[key]);
-    } else {
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
+const { merge } = require("./utils");
 
 module.exports = (hexo) => {
-  if (!hexo.locals.get) return;
-
-  let data = hexo.locals.get("data");
-  if (!data) return;
+  const data = hexo.locals.get("data");
 
   /**
    * Merge configs from _data/yun.yml into hexo.theme.config.
    */
   if (data.yun) {
-    merge(hexo.config, data.yun);
-    merge(hexo.theme.config, data.yun);
-  } else {
-    merge(hexo.theme.config, hexo.config.theme_config);
+    hexo.config = merge(hexo.config, data.yun);
+    hexo.theme.config = merge(hexo.theme.config, data.yun);
+    // hexo auto merge theme.config & config.theme_config
   }
 
   // config for test
   if (data.test && process.env.NODE_ENV === "test") {
-    merge(hexo.theme.config, data.test);
+    hexo.theme.config = merge(hexo.theme.config, data.test);
   }
 
+  // merge languages
   if (data.languages) {
     let { language } = hexo.config;
     let { i18n } = hexo.theme;

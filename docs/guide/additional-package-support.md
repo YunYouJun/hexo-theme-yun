@@ -386,6 +386,12 @@ pjax:
 
 后续可能会添加更多常用标签。
 
+### [hexo-widget-tree](https://github.com/YunYouJun/hexo-tag-tree)
+
+挂件形式，通过树状菜单查看文章。
+
+> 如果需要 PJAX 效果，开启主题 PJAX 即可。
+
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 你可以使用它来加密一些私密的文章页面。

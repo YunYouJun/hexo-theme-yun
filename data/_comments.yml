@@ -1,0 +1,121 @@
+# Comments
+comment:
+  enable: true
+  icon: icon-chat-3-line
+  tips:
+    - 点击按钮跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  # candidates:
+  #   - valine
+  #   - utterances
+
+# GitHub Issues Link Button
+# https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
+github_issues:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+  filters: is:issue
+
+# Valine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://valine.js.org
+# extend: https://github.com/DesertsP/Valine-Admin
+valine:
+  enable: false
+  appId: # your leancloud application appid
+  appKey: # your leancloud application appkey
+  placeholder: Just go go # comment box placeholder
+  avatar: # gravatar style
+  # meta:
+  #   - nick
+  #   - mail
+  #   - link
+  pageSize: 10 # pagination size
+  # lang: zh-CN
+  visitor: false
+  highlight: true
+  recordIP: false
+  # serverURLs:
+  # Emoji See: https://valine.js.org/emoji.html
+  # emojiCDN: //i0.hdslb.com/bfs/emote/
+  # emojiMaps:
+  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+  #   more...
+  enableQQ: true
+  # requiredFields:
+  #   - nick
+  #   - mail
+
+# MiniValine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://github.com/MiniValine/MiniValine
+minivaline:
+  enable: false
+  appId: # Your leancloud application appId
+  appKey: # Your leancloud application appKey
+  # mode: DesertsP # DesertsP or xCss # xCss Style mode needs to import fontawesome@5 https://github.com/YunYouJun/hexo-theme-yun/blob/dev/docs/guide/config.md#其他图标
+  # placeholder: Write a Comment # Comment box placeholder
+  # math: true # Support MathJax.
+  # md: true # Support Markdown.
+  # NoRecordIP: false # Do not record commenter IP.
+  # visitor: true # Article reading statistics.
+  # maxNest: 6 # Sub-comment maximum nesting depth.
+  # pageSize: 6 # Pagination size.
+  # adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode] 示例： Admin 邮箱的小写 MD5
+  # tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
+  #   - 管理员 # 示例: master tag
+  #   - 小伙伴 # 示例: friends tag
+  #   - 访客   # 示例: 访客 tag
+  # master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
+  #   - de8a7aa53d07e6b6bceb45c64027763d # 示例： master 邮箱的小写 MD5
+  # friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
+  #   - b5bd5d836c7a0091aa8473e79ed4c25e # 示例： friend 邮箱的小写 MD5
+  # MiniValine's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
+  # lang:
+  # Expression Url.
+  # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
+  # emoticonUrl:
+  #   - https://cdn.jsdelivr.net/npm/alus@latest
+  #   - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+  #   - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+  #   - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+  #   - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+  #   - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+
+# http://disqus.com/
+disqus:
+  enable: false
+  shortname: yunyoujun
+  count: false
+
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  # siteName:
+  # identifier:
+  # url:
+  # title:
+  # api:
+  # apikey:
+  # nesting: 4
+  # nocomment:
+  # admin:
+  # adminLabel:
+
+# https://livere.com/
+livere:
+  enable: false
+  uid:
+
+# https://github.com/utterance/utterances
+utterances:
+  enable: false
+  repo:
+  issue-term: pathname
+  # label: comment
+  theme: github-light
