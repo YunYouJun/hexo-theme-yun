@@ -386,7 +386,7 @@ pjax:
 
 后续可能会添加更多常用标签。
 
-### [hexo-widget-tree](https://github.com/YunYouJun/hexo-tag-tree)
+### [hexo-widget-tree](https://github.com/YunYouJun/hexo-widget-tree)
 
 挂件形式，通过树状菜单查看文章。
 

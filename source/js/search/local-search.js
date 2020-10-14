@@ -83,12 +83,7 @@ const localSearch = (path, searchId, contentId) => {
             }
             // show search results
             if (isMatch) {
-              str +=
-                "<li><a href='" +
-                data_url +
-                "' class='search-result-title'>" +
-                data_title +
-                "</a>";
+              str += `<li><a href="${data_url}" class="search-result-title">${data_title}</a>`;
               let content = data.content.trim().replace(/<[^>]+>/g, "");
               if (first_occur >= 0) {
                 // cut out 100 characters
@@ -134,9 +129,11 @@ const localSearch = (path, searchId, contentId) => {
 
 document.addEventListener(
   "DOMContentLoaded",
-  localSearch(
-    CONFIG.local_search.path,
-    "local-search-input",
-    "local-search-result"
-  )
+  ()=>{
+    localSearch(
+      CONFIG.local_search.path,
+      "local-search-input",
+      "local-search-result"
+    )
+  }
 );

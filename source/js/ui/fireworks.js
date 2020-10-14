@@ -141,6 +141,7 @@ setCanvasSize();
 const ctx = canvasEl.getContext("2d");
 
 document.addEventListener("DOMContentLoaded", () => {
+  /* global anime */
   const render = anime({
     duration: Infinity,
     update: () => {
