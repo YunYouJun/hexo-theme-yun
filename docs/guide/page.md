@@ -126,6 +126,16 @@ type: categories
 
 ```
 
+::: tip
+
+> [分类和标签](https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE)
+
+尽管 Hexo 支持了为一篇文章设置多个分类，但我个人更建议你一篇文章只放在一个分类下，而使用标签来为它进行多个描述。
+
+同时太多的分类与标签，既不方便整理，也不利于移动端的展示。
+
+:::
+
 ## 归档 archives
 
 Hexo 默认支持

@@ -137,6 +137,15 @@ language: zh-CN
 
 > [快速开始 - 获取 APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
 
+::: warning
+
+因为国内行情，建议直接使用 [LeanCloud 国际版](https://leancloud.app/)。
+如果你打算使用国内版，你需要绑定你的自定义域名并配置下方 `serverURLs` 字段。
+
+> https://leancloudblog.com/mandatory-domain-config/
+
+:::
+
 - `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
 
 > [更多配置项](https://valine.js.org/configuration.html) 写在 `yun.yml` 中。

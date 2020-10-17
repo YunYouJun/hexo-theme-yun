@@ -1,0 +1,14 @@
+for category, index in post.categories.data
+  if category.parent
+    |  > 
+  else
+    |  
+    span.post-meta-item-icon(style="margin-right:3px;")
+      +icon('icon-folder-line')
+  span(itemprop='about', itemscope, itemtype='https://schema.org/Thing')
+    - var categoryColor = "var(--hty-text-color)"
+    if category.name in theme.categories
+      - categoryColor = theme.categories[category.name]
+    a.category(href=url_for(category.path), style=`--text-color:${categoryColor}` itemprop='url' rel='index')
+      span(itemprop='text')=category.name
+      - categoryColor = null

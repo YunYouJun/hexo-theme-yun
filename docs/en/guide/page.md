@@ -1,5 +1,3 @@
-
-
 # Theme page
 
 This theme supports and uses the following page types by default.
@@ -59,6 +57,16 @@ type: categories
 ---
 
 ```
+
+::: tip
+
+> [Categories & Tags](https://hexo.io/docs/front-matter.html#Categories-amp-Tags)
+
+Although Hexo supports multiple categories for an article, I personally recommend you to put an article under one category only and use tags for multiple descriptions for it.
+
+Also, too many categories and tags are not easy to organize and not good for mobile display.
+
+:::
 
 ## Archives
 
@@ -227,7 +235,7 @@ In `yun.yml`:
 
 ```yaml
 albums:
-	enable: true
+enable: true
 ```
 
 [Albums Example](https://www.yunyoujun.cn/albums/)
@@ -260,6 +268,7 @@ albums:
     cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
     desc: 我想起那天夕阳下的奔跑
 ---
+
 ```
 
 ### Gallery
@@ -391,4 +400,3 @@ slide:
 ```
 
 > As for the list of Slides, create your own `source/slides/index.md` and list it.
-
