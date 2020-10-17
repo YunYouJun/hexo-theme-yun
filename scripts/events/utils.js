@@ -8,7 +8,7 @@ function isObject(item) {
 }
 
 /**
- * Merge with override array
+ * Merge with override array (modify target object)
  * @param {*} target
  * @param {*} source
  */

@@ -11,7 +11,7 @@
     margin: 0;
 
     .toc-link {
-      color: $colors.primary;
+      color: var(--smc-link-color);
 
       &:hover {
         color: $colors.danger;
@@ -25,7 +25,7 @@
     .toc-child {
       font-size: 1rem;
 
-      if (hexo-config("toc.collapse")) {
+      if (hexo-config('toc.collapse')) {
         overflow: hidden;
         transition: max-height 0.6s ease-in;
         max-height: 0;

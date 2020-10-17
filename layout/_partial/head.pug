@@ -81,8 +81,3 @@ if theme.mode !== 'light'
 //- no-referer
 if page.type === 'albums' || page.layout === 'gallery'
   meta(name="referrer" content="no-referrer")
-
-//- prism
-if config.prismjs && config.prismjs.enable
-  link(id="light-prism-css", rel="stylesheet", href=theme.vendors.prismjs.themes[theme.codeblock.prismjs.light], media="(prefers-color-scheme: light)")
-  link(id="dark-prism-css", rel="stylesheet", href=theme.vendors.prismjs.themes[theme.codeblock.prismjs.dark], media="(prefers-color-scheme: dark)")

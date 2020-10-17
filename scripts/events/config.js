@@ -7,14 +7,14 @@ module.exports = (hexo) => {
    * Merge configs from _data/yun.yml into hexo.theme.config.
    */
   if (data.yun) {
-    hexo.config = merge(hexo.config, data.yun);
-    hexo.theme.config = merge(hexo.theme.config, data.yun);
+    merge(hexo.config, data.yun);
+    merge(hexo.theme.config, data.yun);
     // hexo auto merge theme.config & config.theme_config
   }
 
   // config for test
   if (data.test && process.env.NODE_ENV === "test") {
-    hexo.theme.config = merge(hexo.theme.config, data.test);
+    merge(hexo.theme.config, data.test);
   }
 
   // merge languages
