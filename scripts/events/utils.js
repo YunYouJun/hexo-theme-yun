@@ -1,5 +1,11 @@
-const deepmerge = require("deepmerge");
-const overwriteMerge = (destinationArray, sourceArray, options) => sourceArray;
+/**
+ * Is a object?
+ * typeof [] === "object"
+ * @param {*} item
+ */
+function isObject(item) {
+  return item && typeof item === "object" && !Array.isArray(item);
+}
 
 /**
  * Merge with override array
@@ -7,7 +13,14 @@ const overwriteMerge = (destinationArray, sourceArray, options) => sourceArray;
  * @param {*} source
  */
 function merge(target, source) {
-  return deepmerge(target, source, overwriteMerge);
+  for (const key in source) {
+    if (isObject(target[key]) && isObject(source[key])) {
+      merge(target[key], source[key]);
+    } else {
+      target[key] = source[key];
+    }
+  }
+  return target;
 }
 
 module.exports = {

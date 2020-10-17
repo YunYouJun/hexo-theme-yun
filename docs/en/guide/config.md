@@ -842,7 +842,7 @@ e.g.:
 
 ```yaml
 pages:
-  -name: my friends
+  - name: my friends
     url: / links /
     icon: icon-genderless-line
     color: dodgerblue
