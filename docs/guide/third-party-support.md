@@ -165,7 +165,7 @@ Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/De
 
 ### MiniValine
 
-A simple and minimalist comment system based on Leancloud.
+简单且简约的评论系统，基于LeanCloud。
 
 - GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
 - Demo: <https://minivaline.github.io/>
@@ -290,6 +290,7 @@ algolia_search:
 google_analytics:
   enable: true
   id: UA-XXXXXXXXX-X
+  // 注意：最近新建的谷歌分析账号ID已经修改，格式如：G-XXXXXXXXXX，可以直接填入id一项，功能正常。
 ```
 
 ### busuanzi
