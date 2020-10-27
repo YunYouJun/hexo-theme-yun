@@ -142,7 +142,7 @@ language: zh-CN
 因为国内行情，建议直接使用 [LeanCloud 国际版](https://leancloud.app/)。
 如果你打算使用国内版，你需要绑定你的自定义域名并配置下方 `serverURLs` 字段。
 
-> https://leancloudblog.com/mandatory-domain-config/
+> [请各位用户在 10 月 1 日前绑定自己的域名 | LeanCloud](https://leancloudblog.com/mandatory-domain-config/)
 
 :::
 

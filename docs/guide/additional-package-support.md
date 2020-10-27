@@ -304,9 +304,13 @@ embeddedVideoTransformer: function() {
 }
 ```
 
-## KaTeX
+## 数学公式
+
+### KaTeX
 
 在文章中显示一些简单的数学公式，使用 [KaTeX](katex.or) 实现。具体方法请参见[官方文档](https://katex.org/)。
+
+> 其主要采用 CDN 的方式实现。
 
 - `copy_tex`: 复制 katex 文本，默认开启
 - `global`: 如果你想要在全局页面使用 `KaTex`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
@@ -362,6 +366,32 @@ $E = mc^2$
 
 > 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
+
+### [hexo-math](https://github.com/hexojs/hexo-math)
+
+此外你还可以使用 [hexo-math](https://github.com/hexojs/hexo-math) 此类的插件进行预处理。
+
+hexo-math 支持 [KaTeX](https://katex.org/) 与 [MathJax](https://www.mathjax.org/)，使用方式如下。（更多请参见官方文档）
+
+> 与主题自身支持的 KaTeX 区别是，主题采用 CDN 在页面加载的时候才开始解析，而此插件则预先解析生成为对应的静态文档。
+
+```md
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+```
+
+### [hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
+
+与 hexo-math 相比你可以使用 `$...$` 的方式来使用公式。默认支持的渲染器为 [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)。
+
+```md
+$$
+i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
+$$
+```
+
+> Hexo 默认安装的渲染器一般为[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked)，因此你可能需要注意一些转译问题。（如 `*` 需要使用 `\*` 等。）
 
 ## pjax
 

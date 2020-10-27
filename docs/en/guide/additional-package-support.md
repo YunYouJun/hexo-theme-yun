@@ -274,7 +274,9 @@ embeddedVideoTransformer: function () {
 }
 ```
 
-## KaTeX
+## Math Formula
+
+### KaTeX
 
 Some simple mathematical formulas are shown in the article, using [KaTeX](katex.or). For details, please refer to [Official Document](https://katex.org/).
 
@@ -346,6 +348,32 @@ As shown in the following package, the formula will be displayed in line.
 > You can visit [Yun Test](https://www.yunyoujun.cn/yun/) to see the actual effect.
 > You may need some time to wait for the `KaTeX` library to load, or refresh and try again.
 
+### [hexo-math](https://github.com/hexojs/hexo-math)
+
+You can also use plugins like [hexo-math](https://github.com/hexojs/hexo-math) for preprocessing.
+
+hexo-math supports [KaTeX](https://katex.org/) and [MathJax](https://www.mathjax.org/) and is used as follows. (See official documentation for more)
+
+> The difference with the theme's own support for KaTeX is that the theme uses a CDN that only starts parsing when the page is loaded, whereas this plugin pre-generates the content into a static document.
+
+```md
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+```
+
+### [hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
+
+Compared with hexo-math, you can use the formula `$...$`. The default supported renderer is [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc).
+
+```md
+$$
+i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
+$$
+```
+
+> Hexo's default installed renderer is generally [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked), so you may need to be aware of some translation issues. (e.g. `*` needs to be used for \*` etc.)
+
 ## pjax
 
 Use [pjax](https://github.com/MoOx/pjax)。
@@ -360,6 +388,20 @@ pjax:
 The following plug-in configuration and usage have nothing to do with the theme, you can refer to its documentation configuration yourself.
 
 > Because when you want some features that the theme does not provide, they can actually be implemented directly through plugins.
+
+### [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common)
+
+Extended hexo tag syntax.
+
+For example, Tabs function.（[Demo](https://www.yunyoujun.cn/yun/tag-common.html)）
+
+More common tags may be added later.
+
+### [hexo-widget-tree](https://github.com/YunYouJun/hexo-widget-tree)
+
+Widget, view articles through the tree menu.
+
+> If you need a PJAX effect, enable theme PJAX.
 
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
