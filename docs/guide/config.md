@@ -1292,6 +1292,8 @@ footer:
     start_time: "2019-04-12T00:00:00"
 ```
 
+> 注意记得补 0，譬如 `2019-04-01` 而不是 `2019-4-1`。
+
 ### 自定义文本
 
 `custom_text` 为自定义页脚，可以包含 HTML。
@@ -1366,7 +1368,6 @@ say:
 say:
   enable: true
   api: /data/sentences.json
-  src: /js/say.js
   hitokoto:
     enable: false
 ```
@@ -1389,6 +1390,8 @@ mourn:
   days:
     - "4-4"
 ```
+
+> 注意这里不用补 0，因为直接获取月日判断时，可以直接判断，逻辑代码最少。
 
 ## 自定义样式
 

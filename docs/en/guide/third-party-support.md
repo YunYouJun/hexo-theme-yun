@@ -261,6 +261,7 @@ Go to [Google Analytics](https://analytics.google.com/) to get your ID. (Science
 google_analytics:
   enable: true
   id: UA-XXXXXXXXX-X
+  // Note : Google Analytics abandoned the measurement ID of "UA-XXXXXXXXX-X" and used the measurement ID of "G-XXXXXXXXXX". You can fill in the new measurement ID directly in the "id:" item, which will not affect the analysis .
 ```
 
 ### busuanzi
