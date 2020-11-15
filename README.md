@@ -14,7 +14,8 @@
 
 > A light & fast & lovely hexo theme.
 
-PV: [Yun v1.0 - Strato | bilibili](https://www.bilibili.com/video/BV17t4y1S7tz)
+- PV: [Yun v1.0 - Strato | bilibili](https://www.bilibili.com/video/BV17t4y1S7tz)
+- Coding 镜像: [hexo-theme-yun](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files)
 
 ## Docs
 
@@ -57,10 +58,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://blog.hehejun.cn" target="_blank">
-        <img width="80px" src="https://blog.hehejun.cn/img.jpg"/>
+      <a href="https://mesmerxx.github.io/" target="_blank">
+        <img width="80px" src="https://mesmerxx.github.io/girl.jpeg"/>
         <br />
-        <sub title="世界に忘れられた~">呵呵君的博客</sub>
+        <sub title="ヾ(❀╹◡╹)ﾉ~">mesmerxx</sub>
       </a>
     </td>
     <td>
@@ -180,13 +181,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://justwb.me" target="_blank">
-        <img width="80px" src="https://justwb.me/avatar.jpeg"/>
-        <br />
-        <sub title="D.C.Forever">琴社迷思</sub>
-      </a>
-    </td>
-    <td>
       <a href="https://chitang233.github.io/" target="_blank">
         <img width="80px" src="https://s1.ax1x.com/2020/06/27/N63K8e.jpg"/>
         <br />
@@ -202,9 +196,16 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
     </td>
     <td>
       <a href="https://www.rogeroger.net" target="_blank">
-        <img width="80px" src="https://rogeroger.net/img/rogeryu.jpeg"/>
+        <img width="80px" src="https://rogeroger.oss-cn-beijing.aliyuncs.com/img/rogeryu.jpeg"/>
         <br />
         <sub title="啊啊啊啊啊啊啊啊">ROGEROGER</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://leostudiooo.github.io" target="_blank">
+        <img width="80px" src="https://avatars0.githubusercontent.com/u/35419343"/>
+        <br />
+        <sub title="恰同学少年，风华正茂；书生意气，挥斥方遒。">LeoStudio</sub>
       </a>
     </td>
   </tr>
