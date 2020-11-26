@@ -20,14 +20,14 @@ html(lang=config.language)
       title=title
     block preconnect
 
-    - var slide = page.slide || theme.slide
+    - var slide = Object.assign({}, theme.slide, page.slide)
     link(rel="stylesheet", href=theme.vendors.revealjs.css)
-    link(rel="stylesheet" href=`https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/${slide.theme ||theme.slide.theme}.css`)
+    link(rel="stylesheet" href=`https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/${slide.theme}.css`)
 
   body
     .reveal
       .slides
-        section(data-markdown data-separator=theme.slide.separator data-separator-vertical=theme.slide.separator_vertical data-separator-notes=theme.slide.data_separator_notes)
+        section(data-markdown data-separator=slide.separator data-separator-vertical=slide.separator_vertical data-separator-notes=slide.data_separator_notes)
           script(type="text/template")!=page._content
 
     script(src=theme.vendors.revealjs.js)
@@ -35,7 +35,7 @@ html(lang=config.language)
     script(src=theme.vendors.revealjs.plugin.notes)
     script(src=theme.vendors.revealjs.plugin.highlight.js)
     link(rel="stylesheet", href=theme.vendors.revealjs.plugin.highlight.monokai)
-    - var revealConfig = JSON.stringify(slide.config || theme.slide.config)
+    - var revealConfig = JSON.stringify(slide.config)
     script.
       document.addEventListener("DOMContentLoaded", function() {
         const revealConfig = !{revealConfig}
