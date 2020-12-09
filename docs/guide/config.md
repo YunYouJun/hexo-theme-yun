@@ -1265,7 +1265,7 @@ footer:
 
 国内用户可以提供备案号，开启备案显示。
 
-备案信息默认链接为：<http://www.beian.miit.gov.cn>
+备案信息默认链接为：<https://beian.miit.gov.cn/>
 
 - `enable`: 开启备案
 - `icp`: 备案号

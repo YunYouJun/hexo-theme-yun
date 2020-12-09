@@ -1,3 +1,6 @@
+/**
+ * 是否为 url 链接
+ */
 hexo.extend.helper.register("is_url", function(path) {
   return new RegExp(/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/).test(
     path
@@ -39,4 +42,17 @@ hexo.extend.helper.register("getPropertyByType", function(type) {
     color: typeColor,
     icon: typeIcon,
   };
+});
+
+/**
+ * 获取默认语言
+ * not used
+ */
+hexo.extend.helper.register("getLanguage", function() {
+  const { config } = this;
+  if (Array.isArray(config.language)) {
+    return config.language[0];
+  } else {
+    return config.language;
+  }
 });
