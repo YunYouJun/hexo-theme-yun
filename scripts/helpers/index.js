@@ -1,3 +1,5 @@
+/*global hexo*/
+
 /**
  * 是否为 url 链接
  */
