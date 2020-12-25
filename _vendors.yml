@@ -3,7 +3,7 @@ algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-
 instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
 anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
-minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@latest
 scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 katex:
   js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
