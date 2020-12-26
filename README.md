@@ -249,7 +249,7 @@ git pull
 
 We use [SATA License](https://github.com/zTrix/sata-license).
 
-> You don’t know what this means? To be short, if you use this theme, you need to Star this repo non-stop, and then you can use it anyway you like.
+> You don’t know what this means? In short, if you use this theme, you need to Star this repo non-stop, and then you can use it anyway you like.
 
 本主题采用 [SATA License](https://github.com/zTrix/sata-license)。
 
@@ -261,7 +261,7 @@ Welcome! However, if the job is heavy, you should use an Issue called 「Feature
 
 ## Feedback
 
-You are welcome to use [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues) to ask questions and to give suggestions.
+You are welcome to use [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues) to ask questions and give suggestions.
 Of course, you need to read the [documentation](https://yun.yunyoujun.cn/en/) firstly.
 
 有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
