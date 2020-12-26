@@ -184,7 +184,7 @@ Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/De
 
 ### MiniValine
 
-简单且简约的评论系统，基于LeanCloud。
+简单且简约的评论系统。
 
 - GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
 - Demo: <https://minivaline.github.io/>
@@ -192,17 +192,12 @@ Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/De
 ```yaml
 minivaline:
   enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
-  placeholder: Write a Comment # Comment box placeholder
-  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
-  math: true # Support MathJax.
-  md: true # Support Markdown.
-  # MiniValine's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en  | zh-CN | (and many more)
-  # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
+  md: true
+  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）  
+  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
+  # 下面是一个例子：
+  backend: waline
+  serverURL: https://waline.vercel.app
 ```
 
 ### LiveRe 来必力

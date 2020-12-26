@@ -148,7 +148,7 @@ For Valine's extensions and enhancements, please refer to [Valine-Admin](https:/
 
 ### MiniValine
 
-A simple and minimalist comment system based on Leancloud.
+A simple and minimalist comment system.
 
 - GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
 - Demo: <https://minivaline.github.io/>
@@ -156,17 +156,12 @@ A simple and minimalist comment system based on Leancloud.
 ```yaml
 minivaline:
   enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
-  placeholder: Write a Comment # Comment box placeholder
-  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
-  math: true # Support MathJax.
-  md: true # Support Markdown.
-  # MiniValine's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en | zh-CN | (and many more)
-  # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
+  md: true
+  # More options https://minivaline.js.org/docs/cn/#/Options Continue to fill in the YML format (except for the [el] option)  
+  # List options such as emoticonUrl  see: https://github.com/MiniValine/hexo-next-minivaline
+  # Here is an example:
+  backend: waline
+  serverURL: https://waline.vercel.app
 ```
 
 ### LiveRe
