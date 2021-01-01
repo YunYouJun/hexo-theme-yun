@@ -2,8 +2,6 @@
 algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
 instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
 anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
-minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@latest
 scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 katex:
   js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
@@ -24,10 +22,6 @@ pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
 crypto_js:
   all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
 wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
-# https://github.com/SukkaW/DisqusJS
-disqusjs:
-  css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
-  js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 revealjs:
   css: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css
   js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
@@ -48,3 +42,12 @@ prismjs:
     tomorrow: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css
     twilight: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-twilight.css
 vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
+
+# comment
+valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
+minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@latest
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
+  js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
+twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js

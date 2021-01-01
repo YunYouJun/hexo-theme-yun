@@ -193,7 +193,7 @@ Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/De
 minivaline:
   enable: false
   md: true
-  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）  
+  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
   # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
   # 下面是一个例子：
   backend: waline
@@ -213,6 +213,21 @@ minivaline:
 livere:
   enable: true
   uid:
+```
+
+### Twikoo
+
+一个简洁、安全、免费的静态网站评论系统，基于[腾讯云开发](https://curl.qcloud.com/KnnJtUom)。
+
+> 后端部署请参见[官方文档](https://twikoo.js.org/)。
+> [快速上手](https://twikoo.js.org/quick-start.html)
+
+```yaml
+twikoo:
+  enable: true
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+  region: # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+  option: # 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
 ```
 
 <!-- ## 分享
