@@ -28,8 +28,17 @@ block content
             wordcloud_config.click = function(tag){ window.location.href=tag[2] }
             WordCloud(wordcloud_canvas, wordcloud_config);
           }
-          initWordCloud();
-          document.addEventListener('pjax:success', initWordCloud)
+
+          function loadWordcloud() {
+            const script = document.createElement('script')
+            script.src = "#{theme.vendors.wordcloud}"
+            document.body.appendChild(script)
+            script.onload = () => {
+              initWordCloud()
+            }
+          }
+          
+          loadWordcloud();
       else
         .tag-cloud
           - var start_color = theme.colors.tag_start_color || '#333'
