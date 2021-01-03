@@ -1,4 +1,7 @@
+/* global hexo */
+
 const pkg = require("../../package.json");
+
 hexo.on("generateBefore", () => {
   require("./data")(hexo);
   // Merge config.

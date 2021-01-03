@@ -127,13 +127,10 @@ const localSearch = (path, searchId, contentId) => {
   xhr.send();
 };
 
-document.addEventListener(
-  "DOMContentLoaded",
-  ()=>{
-    localSearch(
-      CONFIG.local_search.path,
-      "local-search-input",
-      "local-search-result"
-    )
-  }
-);
+document.addEventListener("DOMContentLoaded", () => {
+  localSearch(
+    CONFIG.local_search.path,
+    "local-search-input",
+    "local-search-result"
+  );
+});

@@ -31,6 +31,6 @@ if (CONFIG.say.api) {
       }
     })
     .catch((err) => {
-      console.log("error: " + err.message);
+      console.error(err.message);
     });
 }

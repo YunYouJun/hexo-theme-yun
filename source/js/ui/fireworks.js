@@ -1,6 +1,8 @@
 // https://codepen.io/juliangarnier/pen/gmOwJX
 // custom by hexo-theme-yun
 
+// global CONFIG
+
 const numberOfParticules = 20;
 
 const minOrbitRadius = 50;
@@ -20,9 +22,19 @@ let pointerY = 0;
 
 // sky blue
 let colors = ["102, 167, 221", "62, 131, 225", "33, 78, 194"];
-if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors;
+if (CONFIG.fireworks.colors) {
+  colors = CONFIG.fireworks.colors;
+}
 
-function setCanvasSize() {
+const canvasEl = document.querySelector(".fireworks");
+setCanvasSize(canvasEl);
+// global ctx
+const ctx = canvasEl.getContext("2d");
+
+/**
+ * 设置画布尺寸
+ */
+function setCanvasSize(canvasEl) {
   canvasEl.width = window.innerWidth;
   canvasEl.height = window.innerHeight;
   canvasEl.style.width = window.innerWidth + "px";
@@ -109,10 +121,10 @@ function animateParticules(x, y) {
     .timeline()
     .add({
       targets: particules,
-      x: function(p) {
+      x(p) {
         return p.endPos.x;
       },
-      y: function(p) {
+      y(p) {
         return p.endPos.y;
       },
       radius: 0.1,
@@ -135,10 +147,6 @@ function animateParticules(x, y) {
       offset: 0,
     });
 }
-
-const canvasEl = document.querySelector(".fireworks");
-setCanvasSize();
-const ctx = canvasEl.getContext("2d");
 
 document.addEventListener("DOMContentLoaded", () => {
   /* global anime */

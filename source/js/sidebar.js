@@ -4,7 +4,9 @@ function toggleSidebarNav() {
   const activePanelClass = "sidebar-panel-active";
   document.querySelectorAll(".sidebar-nav li").forEach((el) => {
     el.onclick = function() {
-      if (this.classList.contains(activeTabClass)) return;
+      if (this.classList.contains(activeTabClass)) {
+        return;
+      }
       document
         .querySelector("." + activePanelClass)
         .classList.remove(activePanelClass);
@@ -19,7 +21,28 @@ function toggleSidebarNav() {
   });
 }
 
-function listennSidebarTOC() {
+/**
+ * 根据目标激活索引
+ * @param {*} target
+ */
+function activateNavByIndex(target) {
+  if (target.classList.contains("active-current")) return;
+
+  document.querySelectorAll(".post-toc .active").forEach((element) => {
+    element.classList.remove("active", "active-current");
+  });
+  target.classList.add("active", "active-current");
+  let parent = target.parentNode;
+  while (!parent.matches(".post-toc")) {
+    if (parent.matches("li")) parent.classList.add("active");
+    parent = parent.parentNode;
+  }
+}
+
+/**
+ * 监听侧边栏目录
+ */
+function listenSidebarTOC() {
   const navItems = document.querySelectorAll(".post-toc li");
   if (!navItems.length) return;
   const sections = [...navItems].map((element) => {
@@ -33,20 +56,6 @@ function listennSidebarTOC() {
     });
     return target;
   });
-
-  function activateNavByIndex(target) {
-    if (target.classList.contains("active-current")) return;
-
-    document.querySelectorAll(".post-toc .active").forEach((element) => {
-      element.classList.remove("active", "active-current");
-    });
-    target.classList.add("active", "active-current");
-    let parent = target.parentNode;
-    while (!parent.matches(".post-toc")) {
-      if (parent.matches("li")) parent.classList.add("active");
-      parent = parent.parentNode;
-    }
-  }
 
   function findIndex(entries) {
     let index = 0;
@@ -93,7 +102,7 @@ function listennSidebarTOC() {
 
 function initSidebar() {
   toggleSidebarNav();
-  listennSidebarTOC();
+  listenSidebarTOC();
 }
 
 document.addEventListener("DOMContentLoaded", initSidebar);

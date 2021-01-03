@@ -1,3 +1,4 @@
+// global Yun
 console.log(
   `%c ☁️ hexo-theme-yun ${CONFIG.version} %c https://github.com/YunYouJun/hexo-theme-yun`,
   "color: white; background: #0078E7; padding:5px 0;",

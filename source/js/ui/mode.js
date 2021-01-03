@@ -84,19 +84,6 @@ const toggleCustomDarkMode = () => {
 };
 
 /**
- * bind click event for toggle button
- */
-function bindToggleButton() {
-  if (window["toggle-mode-btn"]) {
-    window["toggle-mode-btn"].addEventListener("click", () => {
-      const mode = toggleCustomDarkMode();
-      applyCustomDarkModeSettings(mode);
-      toggleCodeblockCss(mode);
-    });
-  }
-}
-
-/**
  * toggle prism css for light and dark
  * @param {*} mode 模式
  */
@@ -109,6 +96,19 @@ function toggleCodeblockCss(mode) {
       "(prefers-color-scheme: no-preference)"
     );
     document.getElementById(`${mode}-prism-css`).removeAttribute("media");
+  }
+}
+
+/**
+ * bind click event for toggle button
+ */
+function bindToggleButton() {
+  if (window["toggle-mode-btn"]) {
+    window["toggle-mode-btn"].addEventListener("click", () => {
+      const mode = toggleCustomDarkMode();
+      applyCustomDarkModeSettings(mode);
+      toggleCodeblockCss(mode);
+    });
   }
 }
 
