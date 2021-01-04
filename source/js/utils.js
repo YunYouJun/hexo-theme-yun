@@ -7,7 +7,7 @@ HTMLElement.prototype.wrap = function(wrapper) {
 };
 
 Yun.utils = {
-  wrapTable: () => {
+  wrapTable() {
     document.querySelectorAll("table").forEach((el) => {
       const container = document.createElement("div");
       container.className = "table-container";
@@ -16,9 +16,28 @@ Yun.utils = {
   },
 
   /**
+   * 动态获取脚本，并执行回调函数
+   * @param {*} url
+   * @param {*} callback
+   * @param {*} condition 是否存在对应实例，判断是否加载脚本
+   */
+  getScript(url, callback, condition) {
+    if (condition) {
+      callback();
+    } else {
+      const script = document.createElement("script");
+      script.onload = () => {
+        setTimeout(callback);
+      };
+      script.src = url;
+      document.head.appendChild(script);
+    }
+  },
+
+  /**
    * click btn to copy codeblock
    */
-  insertCopyCodeBtn: () => {
+  insertCopyCodeBtn() {
     const codeblocks = document.querySelectorAll("pre[class*='language-']");
 
     codeblocks.forEach((codeblock) => {

@@ -1,10 +1,5 @@
 link(rel='stylesheet', href=url_for(theme.vendors.lightgallery.css))
-script(src=url_for(theme.vendors.lightgallery.js))
 script.
-  function initLightGallery() {
+  Yun.utils.getScript("#{theme.vendors.lightgallery.js}", () => {
     lightGallery(document.getElementById('lightgallery'));
-  }
-  document.addEventListener("DOMContentLoaded", initLightGallery)
-  document.addEventListener("pjax:success", ()=>{
-    setTimeout(()=>{initLightGallery()}, 800)
-  })
+  }, window.lightGallery);

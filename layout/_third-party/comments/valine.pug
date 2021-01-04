@@ -1,14 +1,13 @@
 //- not need js-Pjax
 #valine-container
-script(src=theme.vendors.valine_js)
 //- not use valine_config() for window.location.pathname
 - var valine_meta = Array.isArray(theme.valine.meta) ? theme.valine.meta : ["nick", "mail", "link"]
 - theme.valine.el = "#valine-container"
 - theme.valine.lang = (theme.valine.lang || config.language || "zh-cn").toLowerCase()
 script.
-  function initValine() {
+  Yun.utils.getScript("#{theme.vendors.valine_js}", () => {
     const valineConfig = !{JSON.stringify(theme.valine)}
     valineConfig.path = window.location.pathname
     new Valine(valineConfig)
-  }
-  setTimeout(initValine, 800)
+  }, window.Valine);
+  

@@ -7,13 +7,13 @@ module.exports = (hexo) => {
   const vendorsFile = fs.readFileSync(
     path.join(__dirname, "../../_vendors.yml")
   );
-  hexo.theme.config.vendors = yaml.safeLoad(vendorsFile);
+  hexo.theme.config.vendors = yaml.load(vendorsFile);
 
   // read /data folder and merge all data
   const dataFiles = fs.readdirSync(path.join(__dirname, "../../data"));
   dataFiles.forEach((file) => {
     const fileText = fs.readFileSync(path.join(__dirname, "../../data", file));
-    const fileData = yaml.safeLoad(fileText);
+    const fileData = yaml.load(fileText);
     hexo.theme.config = Object.assign(hexo.theme.config, fileData);
   });
 };

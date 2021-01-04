@@ -33,9 +33,5 @@ block content
                 img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
                 figcaption=photo.caption
 
-          if theme.pjax.enable
-            script.
-              setTimeout(()=>{initGalleryDecrypt()}, 1000)
-
     section.post-body(itemprop='articleBody')
       .post-content.markdown-body!= page.content

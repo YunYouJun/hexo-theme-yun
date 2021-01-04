@@ -38,6 +38,3 @@ html(lang=config.language)
       include footer.pug
       //- widget
       include ../_widget/index.pug
-    if theme.js
-      each item in theme.js
-        script(defer, src=url_for(theme.cdn.pre + item))

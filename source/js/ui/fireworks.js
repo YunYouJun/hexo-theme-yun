@@ -27,7 +27,6 @@ if (CONFIG.fireworks.colors) {
 }
 
 const canvasEl = document.querySelector(".fireworks");
-setCanvasSize(canvasEl);
 // global ctx
 const ctx = canvasEl.getContext("2d");
 
@@ -40,6 +39,8 @@ function setCanvasSize(canvasEl) {
   canvasEl.style.width = window.innerWidth + "px";
   canvasEl.style.height = window.innerHeight + "px";
 }
+
+setCanvasSize(canvasEl);
 
 /**
  * update pointer
@@ -168,4 +169,4 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-window.addEventListener("resize", setCanvasSize, false);
+window.addEventListener("resize", setCanvasSize(canvasEl), false);

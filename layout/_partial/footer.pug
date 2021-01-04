@@ -31,7 +31,7 @@ footer#footer.sidebar-translate
         span.moe-text!=theme.footer.live_time.suffix
       script.
         function blog_live_time() {
-          window.setTimeout(blog_live_time, 1000);
+          setTimeout(blog_live_time, 1000);
           const start = new Date('#{theme.footer.live_time.start_time}');
           const now = new Date();
           const timeDiff = (now.getTime() - start.getTime());

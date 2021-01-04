@@ -266,7 +266,7 @@ pjax:
 css:
   - /css/hexo-theme-yun.css
 
-# scripts loaded in the end of the body
+# scripts loaded in the end of the <head>
 js:
   - /js/utils.js
   - /js/hexo-theme-yun.js

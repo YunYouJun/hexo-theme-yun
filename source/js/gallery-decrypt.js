@@ -45,3 +45,4 @@ function initGalleryDecrypt() {
 }
 
 document.addEventListener("DOMContentLoaded", initGalleryDecrypt);
+document.addEventListener("pjax:success", initGalleryDecrypt);

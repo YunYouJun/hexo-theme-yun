@@ -34,16 +34,20 @@ if theme.preconnect
   each item in theme.preconnect
     link(rel='preconnect', href=url_for(item), crossorigin)
 
+//- config
+!=yun_config()
+
 //- base
 if theme.css !== undefined && theme.css.length > 0
   each url in theme.css
     link(rel='stylesheet', href=url_for(theme.cdn.pre + url))
 
+if theme.js
+  each item in theme.js
+    script(src=url_for(theme.cdn.pre + item))
+
 if config.feed && config.feed.path
   != feed_tag(config.feed.path)
-
-//- config
-!=yun_config()
 
 //- head custom
 if theme.head.css
