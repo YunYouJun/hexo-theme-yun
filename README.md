@@ -58,10 +58,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://mesmerxx.github.io/" target="_blank">
-        <img width="80px" src="https://mesmerxx.github.io/girl.jpeg"/>
+      <a href="https://www.mle.moe" target="_blank">
+        <img width="80px" src="https://www.mle.moe/images/girl.jpeg"/>
         <br />
-        <sub title="ヾ(❀╹◡╹)ﾉ~">mesmerxx</sub>
+        <sub title="ヾ(❀╹◡╹)ﾉ~">MleMoe</sub>
       </a>
     </td>
     <td>

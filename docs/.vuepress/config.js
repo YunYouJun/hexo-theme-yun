@@ -53,10 +53,15 @@ module.exports = {
     editLinks: true,
     smoothScroll: true,
     sidebarDepth: 2,
+
+    algolia: {
+      apiKey: "62c0b4aa58760ed3804e4fae0457c202",
+      indexName: "yunyoujun",
+    },
+
     locales: {
       "/": {
         label: "简体中文",
-        editLinkText: "在 GitHub 上编辑此页",
         lastUpdated: "上次更新",
         editLinkText: "帮助改善此页面！( ￣□￣)/",
         nav: [
