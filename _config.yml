@@ -550,6 +550,15 @@ google_tagmanager:
   enable: false
   id:
 
+# Show number of visitors of each article.
+# You can visit https://www.leancloud.cn to get AppID and AppKey.
+leancloud_visitors:
+  enable: false
+  app_id: # <your app id>
+  app_key: # <your app key>
+  # Required for apps from CN region
+  server_url: # <your server url>
+
 # That is it only render those page which has `katex: true` in Front-matter.
 # math fomula
 # https://katex.org/

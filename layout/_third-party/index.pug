@@ -12,3 +12,8 @@ if process.env.NODE_ENV !== 'dev'
 
 if theme.google_tagmanager.enable
   include ../_third-party/google-tagmanager.pug
+
+if theme.leancloud_visitors && theme.leancloud_visitors.enable
+  script.
+    CONFIG.leancloudVisitors = !{JSON.stringify(theme.leancloud_visitors)}
+  include ../_third-party/analytics/leancloud-visitors.pug

@@ -364,6 +364,19 @@ busuanzi:
   page_pv_icon: icon-eye-line
 ```
 
+### LeanCloud Visitors
+
+基于 LeanCloud 的访问者统计，显示每篇文章的访问量。
+
+```yaml
+leancloud_visitors:
+  enable: false
+  app_id: # <your app id>
+  app_key: # <your app key>
+  # Required for apps from CN region
+  server_url: # <your server url>
+```
+
 ## 广告
 
 ### 谷歌广告

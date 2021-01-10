@@ -53,7 +53,7 @@
         |  
         span#busuanzi_value_page_pv
 
-  if is_post() && theme.valine.enable && theme.valine.visitor
+  if theme.leancloud_visitors && theme.leancloud_visitors.enable || (is_post() && theme.valine.enable && theme.valine.visitor)
     span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
       span.post-meta-divider='-'
       span.post-meta-item-icon(title=__('post.views'))

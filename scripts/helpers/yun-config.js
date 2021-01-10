@@ -9,6 +9,9 @@ hexo.extend.helper.register("yun_config", function() {
     version: yun_version,
     mode: theme.mode,
     copycode: theme.codeblock.copy_btn,
+    page: {
+      isPost: this.is_post(),
+    },
   };
 
   // anonymous_image

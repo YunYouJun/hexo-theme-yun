@@ -295,6 +295,21 @@ busuanzi:
   page_pv_icon: icon-eye-line
 ```
 
+### LeanCloud Visitors
+
+Show number of visitors of each article.
+
+You can visit https://www.leancloud.cn to get AppID and AppKey.
+
+```yaml
+leancloud_visitors:
+  enable: false
+  app_id: # <your app id>
+  app_key: # <your app key>
+  # Required for apps from CN region
+  server_url: # <your server url>
+```
+
 ## Advertising
 
 ### Google Advertising
