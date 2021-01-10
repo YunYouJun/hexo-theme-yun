@@ -44,6 +44,18 @@ github_issues:
 
 也可以参考我的 [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md)。
 
+### GitHub Discussions
+
+> GitHub Discussions 是一个围绕开源项目为社区提供协作沟通的论坛。
+> [GitHub Discussions 快速入门](https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart)
+
+```yaml
+github_discussions:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+```
+
 ### [Gitalk](https://github.com/gitalk/gitalk)
 
 Gitalk 是一个基于 GitHub Issue 的评论插件。
@@ -266,6 +278,10 @@ engine_search:
 ### 本地搜索
 
 您需要先安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)，并参考配置文档。
+
+```sh
+npm install hexo-generator-search
+```
 
 本主题使用原生 JavaScript 实现，无 jQuery 依赖。
 

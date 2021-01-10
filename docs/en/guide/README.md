@@ -16,7 +16,7 @@ hexo server
 
 If you have any questions or suggestions about the use of this theme, you can go ahead to [here](https://github.com/YunYouJun/hexo-theme-yun/issues) and initiate an issue.
 
-You can also join [QQ Group](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6) (389401003) for feedback and discussion.
+You can also join [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions) for feedback and discussion.
 
 ## Quickstart
 
@@ -157,7 +157,7 @@ head:
 
 ### Auto Update
 
-If you want to update automatically and keep the latest themes at all times, you can use continuous integration (such as [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/ )).
+If you want to update automatically and keep the latest themes at all times, you can use continuous integration (such as [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/)).
 
 You can refer to my GitHub Action configuration file [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml). (Copy the configuration and put it in the corresponding folder. GitHub Actions is a service that comes with GitHub.)
 If you are not using `algolia_search`, please delete the relevant part of `algolia`.
@@ -172,4 +172,3 @@ If you want to clone a stable version of the theme, you can fork it yourself, an
 run: |
   git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
 ```
-

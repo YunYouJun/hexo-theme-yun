@@ -4,6 +4,8 @@
 // '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>';
 //- local-search
 
+/* global CONFIG */
+
 /**
  * 本地搜索函数
  * @param {*} path xml 文件路径

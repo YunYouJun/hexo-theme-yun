@@ -17,6 +17,12 @@ github_issues:
   repository: yunyoujun.github.io
   filters: is:issue
 
+# https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart
+github_discussions:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org

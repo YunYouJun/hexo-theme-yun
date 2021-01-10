@@ -41,6 +41,17 @@ Set up a Comment template for GitHub Issues in the project `Settings -> Options 
 
 You can also refer to my [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md).
 
+### GitHub Discussions
+
+> [Quickstart for GitHub Discussions](https://docs.github.com/en/free-pro-team@latest/discussions/quickstart)
+
+```yaml
+github_discussions:
+  enable: true
+  username: YunYouJun
+  repository: yunyoujun.github.io
+```
+
 ### [Disqus](https://disqus.com/)
 
 Disqus can be said to be the most popular third-party comment system in the world, but its shortcomings in China are also obvious, requiring scientific Internet access.
@@ -157,7 +168,7 @@ A simple and minimalist comment system.
 minivaline:
   enable: false
   md: true
-  # More options https://minivaline.js.org/docs/cn/#/Options Continue to fill in the YML format (except for the [el] option)  
+  # More options https://minivaline.js.org/docs/cn/#/Options Continue to fill in the YML format (except for the [el] option)
   # List options such as emoticonUrl  see: https://github.com/MiniValine/hexo-next-minivaline
   # Here is an example:
   backend: waline

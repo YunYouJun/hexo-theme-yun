@@ -14,9 +14,9 @@ hexo server
 
 > 更多信息请参见 [Hexo 官网](https://hexo.io/)
 
-有任何关于本主题的使用问题与建议，可以前往[此处](https://github.com/YunYouJun/hexo-theme-yun/issues)发起 Issue。
+有任何关于本主题的缺陷报告与功能建议，可以发起 [Issues](https://github.com/YunYouJun/hexo-theme-yun/issues)。
 
-你也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
+如果您想要展示您的成果、或者还有其他相关的想法与问题，可前往 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions)。
 
 - [更新日志](https://github.com/YunYouJun/hexo-theme-yun/releases)
 

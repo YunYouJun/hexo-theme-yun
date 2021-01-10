@@ -7,7 +7,7 @@
 
 Questions and suggestions are welcome at [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues).
 
-You can also join [QQ Group](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6) (389401003) for feedback and discussion.
+Discussions and presentation are welcome at [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions).
 
 > If it is a general problem (such as BUG feedback, new feature suggestions), it is best to give feedback in the Issue, so that other people can participate in the discussion and reduce duplication.
 
@@ -41,7 +41,7 @@ If you still have problems, you can push your project code as a Hexo branch to G
 
 > [Associate with remote warehouse](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
 
-Use the GitHub source file address to ask questions in the group chat (389401003), or initiate [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues).
+Use the GitHub source file address to ask questions by [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues) or [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions).
 
 ## `hexo server` :The article only renders part of the content <Badge text="dev"/>
 

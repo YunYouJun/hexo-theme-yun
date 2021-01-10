@@ -5,11 +5,9 @@
 - <Badge text="dev" vertical="middle"/> 代表只和开发有关。
   :::
 
-有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)。
+有任何关于本主题的缺陷报告与功能建议，欢迎发起 [Issues](https://github.com/YunYouJun/hexo-theme-yun/issues)。
 
-你也可以加入 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）进行反馈与讨论。
-
-> 如果是通用的问题（如 BUG 反馈，新功能建议），最好在 Issue 中进行反馈，以便其他朋友参与讨论，减少重复。
+如果您想要展示您的成果、或者还有其他相关的想法与问题，可前往 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions)。
 
 ---
 
@@ -43,7 +41,7 @@ root: /
 
 > [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
 
-使用 GitHub 源文件地址到群（389401003）内提问，或发起 [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues)。
+主题相关问题请发起 [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues) ，其他讨论与展示请使用 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions)。
 
 ## `hexo server` 文章只渲染部分内容 <Badge text="dev"/>
 
