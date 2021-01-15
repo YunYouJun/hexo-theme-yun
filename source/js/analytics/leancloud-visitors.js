@@ -1,4 +1,9 @@
+// @ts-nocheck
 (function() {
+  /**
+   * @param {*} url
+   * @returns {HTMLElement}
+   */
   function leancloudSelector(url) {
     url = encodeURI(url);
     return document

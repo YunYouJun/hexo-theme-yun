@@ -50,47 +50,26 @@ For more configuration, please refer to [Official Document](https://github.com/h
 
 Run the following command in the root directory of Hexo to remove the default index generator and use the sticky index generator.
 
-The sticky feature of the original plugin has not been merged for a long time. [# 26](https://github.com/hexojs/hexo-generator-index/pull/26)
-
-```sh
-npm uninstall hexo-generator-index --save
-npm install hexo-generator-index-pin-top --save
-```
-
-> You can reference [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
-> Note that when using hexo-generator-index-pin-top, the sorting function according to `updated` will be invalid. (The only way out is to wait for the official one to be merged.)
-
-By setting the `top` property in the article Front Matter.
+By setting the `sticky` property in the article Front Matter.
 After setting sticky, the sticky icon will appear in the upper right corner of the article card.
-
-```md
----
-title: xxx
-top: true
----
-```
 
 You can also set the level of priority to achieve the order of multiple sticky articles.
 
 ```md
 ---
 title: xxx
-top: 1
+sticky: 1
 ---
 ```
 
 ```md
 ---
 title: xxx
-top: 2
+sticky: 2
 ---
 ```
 
-At this time, the articles of `top: 2` will be arranged above the articles of `top: 1`.
-
-::: tip
-You can also set the sorting according to `updated`, and then set the date of `updated` to a future time to achieve the sticky effect.
-:::
+At this time, the articles of `sticky: 2` will be arranged above the articles of `sticky: 1`.
 
 ## live2d
 

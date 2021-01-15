@@ -1,7 +1,7 @@
 # cdn for third-party library (alternative include)
 algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
 instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+anime: https://cdn.jsdelivr.net/npm/animejs@latest
 scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
 katex:
   js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js

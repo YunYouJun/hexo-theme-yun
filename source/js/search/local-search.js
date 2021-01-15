@@ -57,8 +57,6 @@ const localSearch = (path, searchId, contentId) => {
               .trim()
               .replace(/<[^>]+>/g, "")
               .toLowerCase();
-            // absolute path
-            let data_url = CONFIG.root + data.url;
             let index_title = -1;
             let index_content = -1;
             let first_occur = -1;
@@ -85,7 +83,7 @@ const localSearch = (path, searchId, contentId) => {
             }
             // show search results
             if (isMatch) {
-              str += `<li><a href="${data_url}" class="search-result-title">${data_title}</a>`;
+              str += `<li><a href="${data.url}" class="search-result-title">${data_title}</a>`;
               let content = data.content.trim().replace(/<[^>]+>/g, "");
               if (first_occur >= 0) {
                 // cut out 100 characters

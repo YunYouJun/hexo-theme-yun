@@ -1,5 +1,5 @@
 // https://codepen.io/juliangarnier/pen/gmOwJX
-// custom by hexo-theme-yun
+// custom by hexo-theme-yun @YunYouJun
 
 // global CONFIG
 
@@ -133,20 +133,22 @@ function animateParticules(x, y) {
       easing: "easeOutExpo",
       update: renderParticule,
     })
-    .add({
-      targets: circle,
-      radius: anime.random(minOrbitRadius, maxOrbitRadius),
-      lineWidth: 0,
-      alpha: {
-        value: 0,
-        easing: "linear",
-        duration: anime.random(600, 800),
+    .add(
+      {
+        targets: circle,
+        radius: anime.random(minOrbitRadius, maxOrbitRadius),
+        lineWidth: 0,
+        alpha: {
+          value: 0,
+          easing: "linear",
+          duration: anime.random(600, 800),
+        },
+        duration: anime.random(1200, 1800),
+        easing: "easeOutExpo",
+        update: renderParticule,
       },
-      duration: anime.random(1200, 1800),
-      easing: "easeOutExpo",
-      update: renderParticule,
-      offset: 0,
-    });
+      0
+    );
 }
 
 document.addEventListener("DOMContentLoaded", () => {
