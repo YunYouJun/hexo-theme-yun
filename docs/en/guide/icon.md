@@ -34,7 +34,6 @@ icon: icon-github-line
   Copy Sucessfully.
 </div>
 
-
 <script>
 import icons from "../../.vuepress/assets/icons.json"
 export default {
