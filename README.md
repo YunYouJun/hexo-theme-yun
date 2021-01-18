@@ -315,7 +315,7 @@ Welcome! However, if the job is heavy, you should use an Issue called 「Feature
 
 ## Feedback
 
-You are welcome to use [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues) to ask questions and give suggestions.
+You are welcome to use [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)(for theme) & [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions)(for everyone) to ask questions and give suggestions.
 Of course, you need to read the [documentation](https://yun.yunyoujun.cn/en/) firstly.
 
-有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues)，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
+有问题和建议欢迎提 [Issue](https://github.com/YunYouJun/hexo-theme-yun/issues) 或前往 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions) 讨论，谢谢！（在此之前，请确保您已仔细阅读[文档](https://yun.yunyoujun.cn)。）
