@@ -30,12 +30,6 @@
     "desc": "希望能成为一个有趣的人"
   },
   {
-    "name": "ADD-SP的博客",
-    "url": "https://sblog.addesp.com/",
-    "avatar": "https://www.addesp.com/avatar.jpg",
-    "desc": "记录回忆，分享笔记。"
-  },
-  {
     "name": "琉的小窝",
     "url": "https://hellsakura.github.io/",
     "avatar": "https://hellsakura.github.io/images/avatar.jpg",
@@ -83,7 +77,6 @@
     "avatar": "https://gitee.com/Renen/blogpic/raw/master/sources/BlogAvatar.jpg",
     "desc": "Love You More Than I Can Say."
   },
-
   {
     "name": "乐得自在的小破站",
     "url": "https://copur.xyz/",
@@ -143,5 +136,11 @@
     "url": "https://misaka-9936.github.io",
     "avatar": "https://misaka-9936.github.io/images/avatar/avatar.jpg",
     "desc": "后花园是自己精心培育的，大部分时候是给自己看的，不过如果有行人能够驻足欣赏，我也会很开心的！"
+  },
+  {
+    "name": "Extrader的小站",
+    "url": "https://www.extrader.top/",
+    "avatar": "https://www.extrader.top/images/avatar.png",
+    "desc": "Hello My Love"
   }
 ]
