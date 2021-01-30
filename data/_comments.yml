@@ -53,6 +53,11 @@ valine:
   #   - nick
   #   - mail
 
+# https://waline.js.org/
+waline:
+  enable: false
+  serverURL: # https://your-domain.vercel.app
+
 # MiniValine
 # More info available at https://github.com/MiniValine/MiniValine
 minivaline:

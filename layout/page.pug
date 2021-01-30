@@ -1,7 +1,7 @@
 extends _partial/layout.pug
 
 block content
-  #page
+  #page.hty-card
     if page.type === 'tags'
       +page_header(page.title, 'icon-price-tag-3-line')
       .page-subtitle=_p('counter.tag_cloud', site.tags.length)

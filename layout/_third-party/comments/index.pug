@@ -1,4 +1,4 @@
-#comment
+#comment.hty-card
   .comment-tooltip.text-center
     if theme.comment.tips
       each tip in theme.comment.tips
@@ -49,6 +49,8 @@
     include minivaline.pug
   if theme.valine && theme.valine.enable
     include valine.pug
+  if theme.waline && theme.waline.enable
+    include waline.pug
   if theme.utterances && theme.utterances.enable
     include utterances.pug
   if theme.twikoo && theme.twikoo.enable

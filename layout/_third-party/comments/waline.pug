@@ -1,0 +1,9 @@
+#waline
+- theme.waline.el = "#waline"
+- theme.waline.lang = (theme.waline.lang || config.language || "zh-CN")
+script.
+  Yun.utils.getScript("#{theme.vendors.waline_js}", () => {
+    const walineConfig = !{JSON.stringify(theme.waline)}
+    walineConfig.path = window.location.pathname
+    new Waline(walineConfig)
+  }, window.Waline);

@@ -1,5 +1,27 @@
 const { merge } = require("./utils");
 
+/**
+ * 合并语言
+ * @param {*} hexo
+ * @param {*} languages
+ */
+function mergeLanguages(hexo, languages) {
+  const { language } = hexo.config;
+  const { i18n } = hexo.theme;
+
+  const mergeLang = (lang) => {
+    i18n.set(lang, merge(i18n.get([lang]), languages[lang]));
+  };
+
+  if (Array.isArray(language)) {
+    for (let lang of language) {
+      mergeLang(lang);
+    }
+  } else {
+    mergeLang(language);
+  }
+}
+
 module.exports = (hexo) => {
   const data = hexo.locals.get("data");
 
@@ -19,19 +41,6 @@ module.exports = (hexo) => {
 
   // merge languages
   if (data.languages) {
-    let { language } = hexo.config;
-    let { i18n } = hexo.theme;
-
-    const mergeLang = (lang) => {
-      i18n.set(lang, merge(i18n.get([lang]), data.languages[lang]));
-    };
-
-    if (Array.isArray(language)) {
-      for (let lang of language) {
-        mergeLang(lang);
-      }
-    } else {
-      mergeLang(language);
-    }
+    mergeLanguages(hexo, data.languages);
   }
 };

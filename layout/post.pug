@@ -5,7 +5,7 @@ block content
   - var post_type = getPropertyByType(post.type)
 
   #post
-    article.post-block(itemscope, itemtype='https://schema.org/Article')
+    article.hty-card.post-block(itemscope, itemtype='https://schema.org/Article')
       include _partial/post/post-schema.pug
       header.post-header
         h1.post-title(itemprop='name headline', style=post.type ? `color: ${post_type.color}` : '')

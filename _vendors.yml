@@ -45,6 +45,7 @@ vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
 
 # comment
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
+waline_js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
 minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@latest
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
