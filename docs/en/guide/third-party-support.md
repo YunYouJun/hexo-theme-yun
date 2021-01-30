@@ -157,6 +157,24 @@ For Valine's extensions and enhancements, please refer to [Valine-Admin](https:/
 
 > pjax: [How do I use it on a page with pjax-Issue #138](https://github.com/xCss/Valine/issues/138)
 
+### Waline
+
+A simple comment system with backend support fork from [Valine](https://valine.js.org/).
+
+- GitHub: [Waline](https://github.com/lizheming/waline)
+- Docs: [Waline Docs](https://waline.js.org/)
+
+```yaml
+waline:
+  enable: true
+  serverURL: # https://your-waline.vercel.app
+  # visitor: true
+```
+
+`serverURL` is your deployed server url.
+
+Quick start and more details, please see [Waline Docs](https://waline.js.org/quick-start.html).
+
 ### MiniValine
 
 A simple and minimalist comment system.

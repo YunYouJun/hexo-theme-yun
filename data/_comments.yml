@@ -57,6 +57,7 @@ valine:
 waline:
   enable: false
   serverURL: # https://your-domain.vercel.app
+  # visitor: false
 
 # MiniValine
 # More info available at https://github.com/MiniValine/MiniValine

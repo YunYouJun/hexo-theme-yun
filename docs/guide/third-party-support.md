@@ -194,6 +194,24 @@ Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/De
 
 > pjax: [请问如何在带有 pjax 的页面下使用 - Issue #138](https://github.com/xCss/Valine/issues/138)
 
+### Waline
+
+Waline - 一款从 [Valine](https://valine.js.org/) 衍生的带后端评论系统。可以将 Waline 等价成 With backend Valine.
+
+- GitHub: [Waline](https://github.com/lizheming/waline)
+- Docs: [Waline Docs](https://waline.js.org/)
+
+```yaml
+waline:
+  enable: true
+  serverURL: # https://your-waline.vercel.app
+  # visitor: true
+```
+
+`serverURL` 为后端部署后的链接。
+
+如何部署与更多配置请参见[官方文档](https://waline.js.org/quick-start.html)。
+
 ### MiniValine
 
 简单且简约的评论系统。
