@@ -8,31 +8,33 @@
   }
 
   &-item {
-    display: inline-block;
+    display: inline-flex;
     outline: none;
     font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
     height: 3rem;
-    line-height: 2.9rem;
     transition: 0.4s;
 
     &:hover {
       background-color: rgba($colors.primary, 0.1);
+      box-shadow: 0 0 15px rgba(black, 0.1);
     }
   }
 
   &-prev {
-    padding-right: 0.5rem;
+    padding: 0 0.6rem 0 0.1rem;
   }
 
   &-next {
-    padding-left: 0.5rem;
+    padding: 0 0.1rem 0 0.6rem;
   }
 
   &-prev, &-next {
-    display: inline-flex;
+    display: flex;
+    height: 3rem;
     align-items: center;
+    justify-content: center;
     color: var(--smc-link-color);
     overflow: hidden;
     white-space: nowrap;
@@ -41,10 +43,6 @@
 
     +mobile() {
       max-width: 10rem;
-    }
-
-    &:active {
-      color: white;
     }
 
     .icon {

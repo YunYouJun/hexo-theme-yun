@@ -53,13 +53,24 @@
         |  
         span#busuanzi_value_page_pv
 
-  if theme.leancloud_visitors && theme.leancloud_visitors.enable || (is_post() && theme.valine.enable && theme.valine.visitor) || (is_post() && theme.waline.enable && theme.waline.visitor)
+  - var leancloud_visitor = theme.leancloud_visitors && theme.leancloud_visitors.enable
+  - var valine_visitor = is_post() && theme.valine.enable && theme.valine.visitor
+  - var waline_visitor = is_post() && theme.waline.enable && theme.waline.visitor
+  if leancloud_visitor || valine_visitor || waline_visitor
     span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
       span.post-meta-divider='-'
       span.post-meta-item-icon(title=__('post.views'))
         +icon(theme.busuanzi.page_pv_icon)
         |  
         span.leancloud-visitors-count
+
+  if is_post() && theme.waline.enable && theme.waline.comment
+    span.post-meta-divider='-'
+    a(href="#comment")
+      span.post-meta-item-icon( title=__('post.comments_count'))
+        +icon(theme.comment.icon)
+        |  
+        span.waline-comment-count(id=url_for(page.path))
 
   if theme.disqus.count
     span.post-meta-divider='-'

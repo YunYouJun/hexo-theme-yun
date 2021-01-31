@@ -58,6 +58,8 @@ waline:
   enable: false
   serverURL: # https://your-domain.vercel.app
   # visitor: false
+  # display comment count
+  comment: false
 
 # MiniValine
 # More info available at https://github.com/MiniValine/MiniValine

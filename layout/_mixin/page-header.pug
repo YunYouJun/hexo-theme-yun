@@ -1,6 +1,6 @@
-mixin page_header(title, icon)
+mixin page_header(title, icon, color)
   header.post-header
-    h1.post-title
+    h1.post-title(itemprop='name headline', style=color ? `color: ${color}` : '')
       if page.icon
         - icon = page.icon
       if icon
