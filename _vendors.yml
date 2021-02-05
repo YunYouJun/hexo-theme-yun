@@ -33,14 +33,14 @@ revealjs:
       monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
 prismjs:
   themes:
-    default: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css
-    coy: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-coy.css
-    dark: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-dark.css
-    funky: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-funky.css
-    okaidia: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-okaidia.css
-    solarizedlight: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-solarizedlight.css
-    tomorrow: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css
-    twilight: https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-twilight.css
+    default: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css
+    coy: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-coy.css
+    dark: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-dark.css
+    funky: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-funky.css
+    okaidia: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-okaidia.css
+    solarizedlight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-solarizedlight.css
+    tomorrow: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css
+    twilight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-twilight.css
 vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
 
 # comment
