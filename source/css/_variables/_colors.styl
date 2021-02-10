@@ -18,12 +18,26 @@ $colors ?= {
   success: $green,
   warning: $orange,
   danger: $red,
-  info: $light-blue
-};
-// text
-$color ?= {
-  text: $dark,
-  link: $colors.primary
+  info: $light-blue,
+  link: $blue
 };
 // selection
 $selection-bg = convert(hexo-config('colors.selection_bg'));
+
+:root {
+  for $name, $color in $colors {
+    --hty-{$name}-color: $color;
+  }
+}
+
+set-color(type, color) {
+  .{type} {
+    color: darken(color, 10);
+    --blockquote-border-left-color: convert('var(--hty-' + type + '-color)');
+    --blockquote-bg-color: rgba(color, 0.1);
+  }
+}
+
+for $name, $color in $colors {
+  set-color($name, $color);
+}

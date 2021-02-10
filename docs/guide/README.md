@@ -183,3 +183,9 @@ head:
 run: |
   git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
 ```
+
+## Markdown 样式扩展
+
+[效果预览与说明](https://www.yunyoujun.cn/yun/markdown/)
+
+- 多彩引用标签

@@ -172,3 +172,9 @@ If you want to clone a stable version of the theme, you can fork it yourself, an
 run: |
   git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
 ```
+
+## Extend Markdown Style
+
+[Preview and Descriptions](https://www.yunyoujun.cn/yun/markdown/)
+
+- Colorful Blockquote

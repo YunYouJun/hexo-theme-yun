@@ -8,4 +8,14 @@
   code, pre {
     font-family: $font-family-monospace;
   }
+
+  blockquote {
+    padding: 0.6rem 1rem;
+    border-left: 4px solid var(--blockquote-border-left-color);
+    background-color: var(--blockquote-bg-color, rgba($colors.primary, 0.05));
+
+    p {
+      margin: 0;
+    }
+  }
 }

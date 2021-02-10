@@ -257,7 +257,7 @@ embeddedVideoTransformer: function () {
 
 ### KaTeX
 
-Some simple mathematical formulas are shown in the article, using [KaTeX](katex.or). For details, please refer to [Official Document](https://katex.org/).
+Some simple mathematical formulas are shown in the article, using KaTeX. For details, please refer to [Official Document](https://katex.org/).
 
 - `copy_tex`: copy katex text, enabled by default
 - `global`: If you want to use `KaTex` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
@@ -324,7 +324,7 @@ As shown in the following package, the formula will be displayed in line.
 \(E = mc ^ 2 \)
 ```
 
-> You can visit [Yun Test](https://www.yunyoujun.cn/yun/) to see the actual effect.
+> You can visit [Yun Test](https://www.yunyoujun.cn/yun/katex/) to see the actual effect.
 > You may need some time to wait for the `KaTeX` library to load, or refresh and try again.
 
 ### [hexo-math](https://github.com/hexojs/hexo-math)
