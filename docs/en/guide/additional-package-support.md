@@ -324,7 +324,7 @@ As shown in the following package, the formula will be displayed in line.
 \(E = mc ^ 2 \)
 ```
 
-> You can visit [Yun Test](https://www.yunyoujun.cn/yun/katex/) to see the actual effect.
+> You can visit [Yun Test](https://www.yunyoujun.cn/yun/katex.html) to see the actual effect.
 > You may need some time to wait for the `KaTeX` library to load, or refresh and try again.
 
 ### [hexo-math](https://github.com/hexojs/hexo-math)

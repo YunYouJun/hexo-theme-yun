@@ -175,6 +175,6 @@ run: |
 
 ## Extend Markdown Style
 
-[Preview and Descriptions](https://www.yunyoujun.cn/yun/markdown/)
+[Preview and Descriptions](https://www.yunyoujun.cn/yun/markdown.html)
 
 - Colorful Blockquote

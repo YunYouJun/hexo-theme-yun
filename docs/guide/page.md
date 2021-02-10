@@ -12,6 +12,7 @@
 
 - `author`: 设置作者则会显示
 - `email`: 自动根据邮箱获取 [Gravatar](https://en.gravatar.com/site/implement/images/) 头像
+- `toc`: 是否显示目录（文章 `post` 默认显示，页面 `post` 默认不显示）
 
 ```md {3,4}
 ---

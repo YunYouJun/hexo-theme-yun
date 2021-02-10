@@ -186,6 +186,6 @@ run: |
 
 ## Markdown 样式扩展
 
-[效果预览与说明](https://www.yunyoujun.cn/yun/markdown/)
+[效果预览与说明](https://www.yunyoujun.cn/yun/markdown.html)
 
 - 多彩引用标签

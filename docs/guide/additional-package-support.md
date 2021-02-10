@@ -349,7 +349,7 @@ $E = mc^2$
 
 :::
 
-> 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/katex/) 来查看实际效果。
+> 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/katex.html) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
 
 ### [hexo-math](https://github.com/hexojs/hexo-math)
