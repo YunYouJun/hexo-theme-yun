@@ -13,8 +13,6 @@
  * @param {*} contentId 结果框元素 ID
  */
 const localSearch = (path, searchId, contentId) => {
-  "use strict";
-  const req = new Request(path);
   let xhr = new XMLHttpRequest();
   xhr.open("GET", path);
   xhr.responseType = "document";
@@ -83,6 +81,10 @@ const localSearch = (path, searchId, contentId) => {
             }
             // show search results
             if (isMatch) {
+              if (data.url[0] !== "/") {
+                data.url = "/" + data.url;
+              }
+
               str += `<li><a href="${data.url}" class="search-result-title">${data_title}</a>`;
               let content = data.content.trim().replace(/<[^>]+>/g, "");
               if (first_occur >= 0) {

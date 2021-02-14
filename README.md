@@ -24,7 +24,7 @@
 - Docs for `dev`: <https://yun.yunyoujun.cn>
 - Docs for `master`: <https://hexo-theme-yun.vercel.app/>
 
-![index-preview.jpg](https://i.loli.net/2020/03/23/bTmpQe6tgf35nj2.jpg)
+![index-preview.jpg](./docs/.vuepress/public/images/index-preview.jpg)
 
 ## Demo Sites
 

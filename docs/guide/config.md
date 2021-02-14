@@ -788,7 +788,7 @@ avatar:
 
 `mickey_mouse` 开启后效果：
 
-![mickey-mouse](https://i.loli.net/2020/03/10/fPn637T98lA2wJ4.png)
+![mickey-mouse](/images/mickey-mouse.jpg)
 
 ### 导航
 

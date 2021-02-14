@@ -781,7 +781,7 @@ avatar:
 
 The effect after `mickey_mouse` is enabled:
 
-![mickey-mouse](https://i.loli.net/2020/03/10/fPn637T98lA2wJ4.png)
+![mickey-mouse](/images/mickey-mouse.jpg)
 
 ### Navigation
 
