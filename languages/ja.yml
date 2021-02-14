@@ -70,10 +70,9 @@ counter:
 
 search:
   placeholder: 検索...
-algolia_search:
-  input_placeholder: 検索...
-  hits_empty: "${query} が見つかりませんでした."
-  hits_stats: "${hits} 件見つかりました, ${time} ミリ秒"
+  empty: "${query} が見つかりませんでした."
+  hits: "${hits} 件見つかりました"
+  hits_time: "${hits} 件見つかりました, ${time} ミリ秒"
 
 symbol:
   comma: "，"

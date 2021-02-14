@@ -209,21 +209,30 @@ const localSearch = (path, searchId, contentId) => {
           });
 
         if (!$input) return;
-        $input.addEventListener("input", function() {
-          let keywords = this.value;
-          keywords = keywords
-            .trim()
-            .toLowerCase()
-            .split(/[\s\-]+/);
-          $resultContent.innerHTML = "";
-          if (this.value.trim().length <= 0) {
-            return;
+        $input.addEventListener("input", () => {
+          const searchText = $input.value.trim().toLowerCase();
+          const keywords = searchText.split(/[-\s]+/);
+          let resultItems = [];
+          if (searchText.length > 0) {
+            resultItems = getResultItems(keywords);
           }
 
-          const resultItems = getResultItems(keywords);
-          $resultContent.innerHTML = `<ul class="search-result-list">${resultItems
-            .map((result) => result.item)
-            .join("")}</ul>`;
+          resultItems.sort((left, right) => {
+            if (left.includedCount !== right.includedCount) {
+              return right.includedCount - left.includedCount;
+            } else if (left.hitCount !== right.hitCount) {
+              return right.hitCount - left.hitCount;
+            }
+            return right.id - left.id;
+          });
+          const stats = CONFIG.i18n.hits.replace(
+            /\$\{hits}/,
+            resultItems.length
+          );
+          $resultContent.innerHTML = `<div class="search-stats">${stats}</div>
+            <ul class="search-result-list">${resultItems
+              .map((result) => result.item)
+              .join("")}</ul>`;
         });
       });
   };

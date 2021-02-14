@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     instantsearch.widgets.searchBox({
       container: ".search-input-container",
-      placeholder: algoliaSettings.labels.input_placeholder,
+      placeholder: CONFIG.i18n.placeholder,
       // Hide default icons of algolia search
       showReset: false,
       showSubmit: false,
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       container: "#algolia-stats",
       templates: {
         text: (data) => {
-          let stats = algoliaSettings.labels.hits_stats
+          let stats = CONFIG.i18n.hits_time
             .replace(/\$\{hits}/, data.nbHits)
             .replace(/\$\{time}/, data.processingTimeMS);
           return `${stats}
@@ -58,10 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         empty: (data) => {
           return `<div id="algolia-hits-empty">
-              ${algoliaSettings.labels.hits_empty.replace(
-                /\$\{query}/,
-                data.query
-              )}
+              ${CONFIG.i18n.empty.replace(/\$\{query}/, data.query)}
             </div>`;
         },
       },

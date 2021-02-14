@@ -12,6 +12,12 @@ hexo.extend.helper.register("yun_config", function() {
     page: {
       isPost: this.is_post(),
     },
+    i18n: {
+      placeholder: theme.search.placeholder || __("search.placeholder"),
+      empty: __("search.empty"),
+      hits: __("search.hits"),
+      hits_time: __("search.hits_time"),
+    },
   };
 
   // anonymous_image
@@ -42,12 +48,6 @@ hexo.extend.helper.register("yun_config", function() {
       apiKey: process.env.ALGOLIA_API_KEY || config.algolia.apiKey,
       indexName: process.env.ALGOLIA_INDEX_NAME || config.algolia.indexName,
       hits: theme.algolia_search.hits,
-      labels: {
-        input_placeholder:
-          theme.search.placeholder || __("algolia_search.input_placeholder"),
-        hits_empty: __("algolia_search.hits_empty"),
-        hits_stats: __("algolia_search.hits_stats"),
-      },
     };
   }
 
