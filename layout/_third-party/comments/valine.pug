@@ -6,7 +6,7 @@
 script.
   Yun.utils.getScript("#{theme.vendors.valine_js}", () => {
     const valineConfig = !{JSON.stringify(theme.valine)}
-    valineConfig.path = window.location.pathname
+    valineConfig.path = "#{url_for(page.path)}"
     new Valine(valineConfig)
   }, window.Valine);
   

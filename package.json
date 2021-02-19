@@ -25,9 +25,9 @@
     "generate:demo-sites": "node docs/.vuepress/scripts/index.js"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.8.0",
-    "@vuepress/plugin-google-analytics": "^1.8.0",
-    "@vuepress/plugin-pwa": "^1.8.0",
-    "vuepress": "^1.8.0"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "vuepress": "^1.8.2"
   }
 }

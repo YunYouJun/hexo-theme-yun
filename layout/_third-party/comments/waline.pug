@@ -4,6 +4,6 @@
 script.
   Yun.utils.getScript("#{theme.vendors.waline_js}", () => {
     const walineConfig = !{JSON.stringify(theme.waline)}
-    walineConfig.path = window.location.pathname
+    walineConfig.path = "#{url_for(page.path)}"
     new Waline(walineConfig)
   }, window.Waline);
