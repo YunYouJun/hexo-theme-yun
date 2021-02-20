@@ -39,19 +39,14 @@ RUN     set -xe \
     &&  npm install --save hexo-generator-search \
     &&  npm install --save hexo-generator-tag \
     &&  npm install --save hexo-generator-category \
-    &&  npm install --save lightgallery.js \
-    &&  npm install --save trianglify \
     &&  npm install --save wordcloud \
-    &&  npm install --save reveal.js \ 
     &&  npm install --save hexo-algoliasearch \ 
     &&  npm install --save hexo-wordcount \ 
     &&  npm install --save hexo-generator-feed \ 
     # &&  npm install --save hexo-helper-live2d \ 
     # &&  npm install --save hexo-abbrlink \ 
-    &&  npm install --save katex \ 
     &&  npm install --save hexo-math \ 
     &&  npm install --save hexo-filter-mathjax \ 
-    &&  npm install --save pjax \ 
     &&  npm install --save hexo-tag-common \ 
     &&  npm install --save hexo-widget-tree \ 
     &&  npm install --save hexo-blog-encrypt
