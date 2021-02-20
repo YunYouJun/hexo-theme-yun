@@ -3,6 +3,7 @@ ARG CHANGE_APK_SOURCE=false
 ARG CHANGE_NPM_SOURCE=false
 ENV NPM_CONFIG_LOGLEVEL=info
 ENV NODE_ENV=production
+WORKDIR /
 RUN     set -xe \
     &&  if [ ${CHANGE_APK_SOURCE} = true ]; then \
             sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories ; \
@@ -26,7 +27,6 @@ RUN     set -xe \
             python \
             libc6-compat \
     &&  npm -g config set user root \
-    &&  (cd / \
     &&  npx hexo init blog \
     &&  cd blog \
     &&  npm install --save node-pre-gyp \
@@ -54,9 +54,7 @@ RUN     set -xe \
     &&  npm install --save pjax \ 
     &&  npm install --save hexo-tag-common \ 
     &&  npm install --save hexo-widget-tree \ 
-    &&  npm install --save hexo-blog-encrypt \ 
-        ) \
-    &&  npm cache clean --force
+    &&  npm install --save hexo-blog-encrypt
 
 FROM node:12.20.2-alpine
 ENV NPM_CONFIG_LOGLEVEL=info
@@ -64,6 +62,7 @@ ENV NODE_ENV=production
 ARG CHANGE_APK_SOURCE=false
 ARG CHANGE_NPM_SOURCE=false
 COPY --from=base /blog /blog
+WORKDIR /
 RUN     set -xe \
     &&  if [ ${CHANGE_APK_SOURCE} = true ]; then \
             sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories ; \
