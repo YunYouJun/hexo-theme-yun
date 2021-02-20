@@ -60,9 +60,11 @@ git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
+***
+
 后续你可能需要安装一些插件，如果您不想偷懒不去安装这些插件，
-可以按照下面的说明构建 Docker 构建一个定制好的环境，里面包含了大部分的插件。
-这样您后续基本就不要关心插件问题了，需要关心的只有如何书写配置文件。
+可以按照下面的说明使用 Docker 构建一个定制好的环境，里面包含了大部分的插件。
+这样您后续基本就不需要关心插件问题了，需要关心的只有如何书写配置文件。
 
 请在 hexo 根目录创建名为 `docker-compose.yml` 的文件并填入下列内容。
 
