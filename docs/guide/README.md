@@ -85,7 +85,7 @@ services:
     volumes:
       - ./_config.yml:/blog/_config.yml       # 挂载根目录配置文件
       - ./themes:/blog/themes                 # 挂载主题目录
-      - ./scaffolds:/blog/scaffolds           # 挂载草稿目录
+      - ./scaffolds:/blog/scaffolds           # 挂载模板目录
       - ./source:/blog/source                 # 挂载资源目录
       - ./public:/blog/public                 # 挂载 HTML 的生成目录
     ports: 
