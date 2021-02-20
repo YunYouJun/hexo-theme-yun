@@ -29,7 +29,7 @@ RUN     set -xe \
     &&  npm -g config set user root \
     &&  npx hexo init blog \
     &&  cd blog \
-    &&  npm install --save node-pre-gyp \
+    # &&  npm install --save node-pre-gyp \
     &&  npm install --save hexo-cli \
     &&  npm install --save hexo-server \
     &&  npm install --save hexo-render-pug \

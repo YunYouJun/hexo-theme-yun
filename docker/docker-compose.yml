@@ -14,11 +14,11 @@ services:
     environment:
       - NODE_ENV=production                   # 将 node 的配置切换到生产环境
     volumes:
-      - ./_config.yml:/blog/_config.yml       # 挂在根目录配置文件
-      - ./themes:/blog/themes                 # 挂在主题目录
+      - ./_config.yml:/blog/_config.yml       # 挂载根目录配置文件
+      - ./themes:/blog/themes                 # 挂载主题目录
       - ./scaffolds:/blog/scaffolds           # 挂载草稿目录
       - ./source:/blog/source                 # 挂载资源目录
-      - ./public:/blog/public                 # 挂在 HTML 的生成目录
+      - ./public:/blog/public                 # 挂载 HTML 的生成目录
     ports: 
       - 4000:4000                             # 将 Docker 内的 4000 端口映射到主机的 4000 端口
     command: "sleep 24h"                      # 休眠 shell 24 小时防止容器自动关闭
