@@ -48,8 +48,6 @@ For more configuration, please refer to [Official Document](https://github.com/h
 
 ## Sticky
 
-Run the following command in the root directory of Hexo to remove the default index generator and use the sticky index generator.
-
 By setting the `sticky` property in the article Front Matter.
 After setting sticky, the sticky icon will appear in the upper right corner of the article card.
 

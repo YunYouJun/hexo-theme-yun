@@ -50,7 +50,7 @@ social:
 
 ## 置顶
 
-在 Hexo 根目录下运行一下命令，以移除默认索引生成器，并使用具有置顶功能的索引生成器。
+> 确保你的 [hexo-generator-index](https://github.com/hexojs/hexo-generator-index) 为 `2.0.0` 或以上
 
 通过设置文章 Front Matter 中 `sticky` 属性以进行置顶，数值越高，优先级越高。
 
