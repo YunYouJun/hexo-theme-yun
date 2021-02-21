@@ -7,7 +7,10 @@
     .site-author-name
       a(href=url_for('about/'))
         | #{config.author}
-    a.site-name(href=url_for('about/site.html'))
-      | #{config.title}
+    if theme.hasAboutSite
+      a.site-name(href=url_for('about/site.html'))
+        | #{config.title}
+    else
+      span.site-name!=config.title
     sub.site-subtitle!=config.subtitle
     .site-desciption!=config.description

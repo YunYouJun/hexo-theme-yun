@@ -92,6 +92,8 @@ Then start to introduce yourself ~
 
 ### About the site
 
+> If `source/about/site.md` is not exist, `href` will not be rendererd.
+
 Click on the site name on the sidebar to enter the About Site page.
 
 You can introduce your site by creating a new `site.md` in the `source/about` folder.

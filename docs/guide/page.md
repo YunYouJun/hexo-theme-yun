@@ -161,6 +161,8 @@ hexo new page about
 
 ### 关于站点
 
+> 当 `source/about/site.md` 时，侧边栏中也将不会渲染关于站点的超链接。
+
 此外点击侧边栏中的站点名称，会进入关于站点页面。
 
 你可以在 `source/about` 文件夹下新建 `site.md` 来介绍你的站点。
