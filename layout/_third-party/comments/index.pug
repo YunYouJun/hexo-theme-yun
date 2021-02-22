@@ -1,13 +1,13 @@
 #comment.hty-card
-  .comment-tooltip.text-center
-    if theme.comment.tips
+  if theme.comment.tips
+    .comment-tooltip.text-center
       each tip in theme.comment.tips
         span!=tip
         br
-    if theme.github_issues && theme.github_issues.enable
-      include github-issues.pug
-    if theme.github_discussions && theme.github_discussions.enable
-      include github-discussions.pug
+      if theme.github_issues && theme.github_issues.enable
+        include github-issues.pug
+      if theme.github_discussions && theme.github_discussions.enable
+        include github-discussions.pug
 
     
     if theme.comment.candidates && theme.comment.candidates.length > 1

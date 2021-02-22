@@ -3,8 +3,7 @@ comment:
   enable: true
   icon: icon-chat-3-line
   tips:
-    - 点击按钮跳转 GitHub Issues 评论。
-    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+    - 要不要和我说些什么？
   # candidates:
   #   - valine
   #   - utterances
@@ -12,14 +11,14 @@ comment:
 # GitHub Issues Link Button
 # https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
 github_issues:
-  enable: true
+  enable: false
   username: YunYouJun
   repository: yunyoujun.github.io
   filters: is:issue
 
 # https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart
 github_discussions:
-  enable: true
+  enable: false
   username: YunYouJun
   repository: yunyoujun.github.io
 
