@@ -734,7 +734,7 @@ cursor:
 
 ## Sidebar
 
-### Sidebar Background
+### Background & Tags
 
 - `tagcloud`: display it in sidebar
   - `amount`: the amount of tags

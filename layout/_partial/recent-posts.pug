@@ -23,6 +23,8 @@ section#recent-posts.hty-layout-grid
                 .post-description=post.description
           .post-card-content.text-center
             .post-card-excerpt.markdown-body!=post.excerpt
+            if post.readmore
+              a.hty-button.hty-button--raised(href=url_for(post.path), style=`margin: 1rem;background-color:${post_type.color}`)=__('post.read_more')
 
           .hty-card__actions.post-card__actions
             .post-card-category

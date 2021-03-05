@@ -30,6 +30,7 @@ post:
   comments_count: コメント数
   related_posts: 関連記事
   view_link: リンクを表示
+  read_more: READ MORE
   copyright:
     author: 著者
     link: 記事へのリンク

@@ -4,6 +4,36 @@ This theme supports and uses the following page types by default.
 
 ## Article
 
+- `author`: Set the author will show
+- `email`: Automatically obtain [Gravatar](https://en.gravatar.com/site/implement/images/) avatar based on email
+- `toc`: Whether to display the table of contents (the article `post` is displayed by default, and the page `post` is not displayed by default)
+- `readmore`: Boolean, will force a `READ MORE` button to be displayed at the end of the homepage card summary
+
+```md {3,4}
+---
+title: xxx
+author: 云游君
+email: me@yunyoujun.cn
+readmore: true
+---
+```
+
+- `description`: only appears on the preview card, not in the text (default is `400` and the weight is emphasized by the table, slightly thinner than the bold font)
+- `excerpt`: Summary (no need to set in `Front-matter`, through `<!-- more -->` truncation to achieve, appear in both the preview card and the text)
+
+```md {3,8}
+---
+title: xxx
+description: xxxxxxx
+---
+
+This is excerpt.
+
+<!-- more -->
+
+This is more content.
+```
+
 ### Image references
 
 You can annotate the images as follows.
