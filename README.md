@@ -4,7 +4,6 @@
 [![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
 [![Gitter](https://badges.gitter.im/YunYouJun/hexo-theme-yun.svg)](https://gitter.im/YunYouJun/hexo-theme-yun?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
