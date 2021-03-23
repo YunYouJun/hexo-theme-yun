@@ -6,7 +6,7 @@ link(rel="mask-icon" href=url_for(favicon), color=theme.colors.primary)
 link(rel="alternate icon" href="/yun.ico")
 
 //- not use cdn.pre in dev
-if process.env.NODE_ENV === 'dev'
+if process.env.NODE_ENV === 'development'
   - theme.cdn.pre = ''
 
 //- preload

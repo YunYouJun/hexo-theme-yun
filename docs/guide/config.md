@@ -216,12 +216,12 @@ cdn:
 ::: tip
 如果你自己对主题使用到的资源进行了自定义，并想要更方便地在本地预览调试。
 
-你可以在 Hexo 的工作目录下 `package.json` 中 `scripts` 字段添加 `"dev": "export NODE_ENV=dev && hexo s"`。
+你可以在 Hexo 的工作目录下 `package.json` 中 `scripts` 字段添加 `"dev": "export NODE_ENV=development && hexo s"`。
 
 ```json
 {
   "scripts": {
-    "dev": "export NODE_ENV=dev && hexo s"
+    "dev": "export NODE_ENV=development && hexo s"
   }
 }
 ```
@@ -1075,6 +1075,7 @@ PrismJS 是一个轻量级的代码高亮库，相比 highlight.js，prismjs 可
 我们可以通过 CDN 快速切换主题，本主题也支持为亮暗模式设置不同的代码高亮主题。
 
 > 当前 Prism 支持的语言：<https://prismjs.com/#supported-languages>
+> 你应当使用更通用的 `cpp` 替代 `c++` 以高亮 C++ 代码
 
 在 Hexo （须升级至 5.0 以上版本）工作目录下的 `_config.yml` 中配置：
 

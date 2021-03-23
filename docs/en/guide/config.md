@@ -213,12 +213,12 @@ cdn:
 ::: tip
 If you customize the resources used by the theme and want to preview and debug locally more conveniently,
 
-you can add `" dev ":" export NODE_ENV = dev && hexo s "` in the `scripts` field of `package.json` in the Hexo working directory.
+you can add `" dev ":" export NODE_ENV=development && hexo s "` in the `scripts` field of `package.json` in the Hexo working directory.
 
 ```json
 {
   "scripts": {
-    "dev": "export NODE_ENV= ev &&hexo s"
+    "dev": "export NODE_ENV=development &&hexo s"
   }
 }
 ```
