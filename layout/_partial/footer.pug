@@ -51,3 +51,9 @@ footer#footer.sidebar-translate
 
   if theme.footer.custom_text
     .footer-custom-text!=`${theme.footer.custom_text}`
+  if theme.footer.support && theme.footer.support.enable
+    .footer-support
+      span=theme.footer.support.prefix
+      a.footer-support-logo(href=theme.footer.support.link, target="blank", title=theme.footer.support.title)
+        img(height=30, src=theme.footer.support.logo alt=theme.footer.support.title)
+      span=theme.footer.support.suffix
