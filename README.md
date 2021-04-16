@@ -125,13 +125,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://lymtics.top" target="_blank">
-        <img width="80px" src="https://gitee.com/Renen/blogpic/raw/master/sources/BlogAvatar.jpg" />
-        <br />
-        <sub title="Love You More Than I Can Say.">Lymtics</sub>
-      </a>
-    </td>
-    <td>
       <a href="https://copur.xyz/" target="_blank">
         <img width="80px" src="https://q1.qlogo.cn/g?b=qq&nk=1935576264&s=100" />
         <br />
@@ -152,8 +145,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="希望能成为一个有趣的人">Eden瞎写小屋</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://chitang233.github.io/" target="_blank">
         <img width="80px" src="https://s1.ax1x.com/2020/06/27/N63K8e.jpg" />
@@ -161,6 +152,8 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="只是一个普通的初中生罢了">池某的小博客</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://xmuli.tech" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/xmuli_yj_256px.png" />
@@ -208,6 +201,13 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://www.extrader.top/images/avatar.png" />
         <br />
         <sub title="Hello My Love">Extrader的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://gentrabbit.moe/" target="_blank">
+        <img width="80px" src="https://gentrabbit.moe/images/avatar.jpg" />
+        <br />
+        <sub title="To live, but not to exist.">绅士兔の小窝</sub>
       </a>
     </td>
   </tr>

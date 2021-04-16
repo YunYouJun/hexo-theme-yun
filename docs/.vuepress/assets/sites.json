@@ -72,12 +72,6 @@
     "desc": "待我熬尽一日苦，喂你一口甜！"
   },
   {
-    "name": "Lymtics",
-    "url": "https://lymtics.top",
-    "avatar": "https://gitee.com/Renen/blogpic/raw/master/sources/BlogAvatar.jpg",
-    "desc": "Love You More Than I Can Say."
-  },
-  {
     "name": "乐得自在的小破站",
     "url": "https://copur.xyz/",
     "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1935576264&s=100",
@@ -142,5 +136,11 @@
     "url": "https://www.extrader.top/",
     "avatar": "https://www.extrader.top/images/avatar.png",
     "desc": "Hello My Love"
+  },
+  {
+    "name": "绅士兔の小窝",
+    "url": "https://gentrabbit.moe/",
+    "avatar": "https://gentrabbit.moe/images/avatar.jpg",
+    "desc": "To live, but not to exist."
   }
 ]
