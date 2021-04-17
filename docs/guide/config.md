@@ -1029,6 +1029,8 @@ title: 一级标题
 
 > 没什么人会要关这个功能的吧，hhh（所以我根本没加关闭的功能）
 
+当你开启显示编号，并切换到目录时，再次点击目录按钮，可切换隐藏目录编号。
+
 - `list_number`: 显示编号
 - `max_depth`: 生成 TOC 的最大深度
 - `min_depth`: 生成 TOC 的最小深度
@@ -1236,6 +1238,8 @@ footer:
 - `name`: 图标名称（即 `class`）
 - `animated`: 是否开启动画
 - `color`: 图标颜色
+- `url`: 链接（留空则为 `span`，存在则可自定义链接）
+- `title`: 提示
 
 ```yaml
 footer:
@@ -1243,6 +1247,8 @@ footer:
     name: icon-cloud-line
     animated: true
     color: "#0078E7"
+    url: https://sponsors.yunyoujun.cn
+    title: 云游君的赞助者们
 ```
 
 ### 驱动
@@ -1294,6 +1300,21 @@ footer:
 ```
 
 > 注意记得补 0，譬如 `2019-04-01` 而不是 `2019-4-1`。
+
+### 支持
+
+譬如在页脚显示支持，如[又拍云联盟](https://www.upyun.com/league)
+
+```yaml
+footer:
+  support:
+    enable: true
+    title: 又拍云
+    link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+    logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+    prefix: 本网站由
+    suffix: 提供 CDN 加速
+```
 
 ### 自定义文本
 

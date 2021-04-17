@@ -208,29 +208,29 @@ services:
     user: root
     image: hexo-theme-yun
     container_name: hexo
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
-      args: 
-        - CHANGE_APK_SOURCE=true              # 更换 APK 源为阿里源
-        - CHANGE_NPM_SOURCE=true              # 更换 NPM 源为腾讯源
+      args:
+        - CHANGE_APK_SOURCE=true # 更换 APK 源为阿里源
+        - CHANGE_NPM_SOURCE=true # 更换 NPM 源为腾讯源
     working_dir: /blog
     environment:
-      - NODE_ENV=production                   # 将 node 的配置切换到生产环境
+      - NODE_ENV=production # 将 node 的配置切换到生产环境
     volumes:
-      - ./_config.yml:/blog/_config.yml       # 挂载根目录配置文件
-      - ./themes:/blog/themes                 # 挂载主题目录
-      - ./scaffolds:/blog/scaffolds           # 挂载模板目录
-      - ./source:/blog/source                 # 挂载资源目录
-      - ./public:/blog/public                 # 挂载 HTML 的生成目录
-    ports: 
-      - 4000:4000                             # 将 Docker 内的 4000 端口映射到主机的 4000 端口
-    command: "sleep 24h"                      # 休眠 shell 24 小时防止容器自动关闭
+      - ./_config.yml:/blog/_config.yml # 挂载根目录配置文件
+      - ./themes:/blog/themes # 挂载主题目录
+      - ./scaffolds:/blog/scaffolds # 挂载模板目录
+      - ./source:/blog/source # 挂载资源目录
+      - ./public:/blog/public # 挂载 HTML 的生成目录
+    ports:
+      - 4000:4000 # 将 Docker 内的 4000 端口映射到主机的 4000 端口
+    command: "sleep 24h" # 休眠 shell 24 小时防止容器自动关闭
 ```
 
 然后在 hexo 根目录创建名为 `Dockerfile` 的文件并填入下列内容。
 
-```docker
+```dockerfile
 FROM node:12.20.2-alpine AS base
 ARG CHANGE_APK_SOURCE=false
 ARG CHANGE_NPM_SOURCE=false
@@ -260,15 +260,15 @@ RUN     set -xe \
     &&  npm install --save hexo-generator-search \
     &&  npm install --save hexo-generator-tag \
     &&  npm install --save hexo-generator-category \
-    &&  npm install --save hexo-algoliasearch \ 
-    &&  npm install --save hexo-wordcount \ 
-    &&  npm install --save hexo-generator-feed \ 
-    # &&  npm install --save hexo-helper-live2d \ 
-    # &&  npm install --save hexo-abbrlink \ 
-    # &&  npm install --save hexo-math \ 
-    # &&  npm install --save hexo-filter-mathjax \ 
-    &&  npm install --save hexo-tag-common \ 
-    &&  npm install --save hexo-widget-tree \ 
+    &&  npm install --save hexo-algoliasearch \
+    &&  npm install --save hexo-wordcount \
+    &&  npm install --save hexo-generator-feed \
+    # &&  npm install --save hexo-helper-live2d \
+    # &&  npm install --save hexo-abbrlink \
+    # &&  npm install --save hexo-math \
+    # &&  npm install --save hexo-filter-mathjax \
+    &&  npm install --save hexo-tag-common \
+    &&  npm install --save hexo-widget-tree \
     &&  npm install --save hexo-blog-encrypt
 
 FROM node:12.20.2-alpine
@@ -317,13 +317,13 @@ docker exec hexo npx hexo c
 出于一些考虑容器中并未提供下列插件：
 
 - [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)：此插件一旦安装便默认开启，
-故默认不予安装。
+  故默认不予安装。
 
 - [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink)：此插件一旦安装便默认开启，
-故默认不予安装。
+  故默认不予安装。
 
 - [hexo-math](https://github.com/hexojs/hexo-math)：此插件是 KaTeX 的备用项，
-如果您不打算使用 KaTeX 可以启用此插件，但此插件默认不予安装。
+  如果您不打算使用 KaTeX 可以启用此插件，但此插件默认不予安装。
 
 - [hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)：同 hexo-math。
 

@@ -10,8 +10,13 @@ footer#footer.sidebar-translate
       if theme.footer.since && theme.footer.since != nowYear
         | #{theme.footer.since} – 
       | #{nowYear} 
-    span#animate.with-love
-      +icon(theme.footer.icon.name, 20)
+    
+    if theme.footer.icon.url
+      a#animate.with-love(href=theme.footer.icon.url, title=theme.footer.icon.title)
+        +icon(theme.footer.icon.name, 20)
+    else
+      span#animate.with-love(title=theme.footer.icon.title)
+        +icon(theme.footer.icon.name, 20)
     span.author  #{config.author}
 
   if theme.footer.powered.enable
@@ -55,5 +60,8 @@ footer#footer.sidebar-translate
     .footer-support
       span=theme.footer.support.prefix
       a.footer-support-logo(href=theme.footer.support.link, target="blank", title=theme.footer.support.title)
-        img(height=30, src=theme.footer.support.logo alt=theme.footer.support.title)
+        if theme.footer.support.logo
+          img(height=30, src=theme.footer.support.logo alt=theme.footer.support.title)
+        else
+          span=theme.footer.support.title
       span=theme.footer.support.suffix

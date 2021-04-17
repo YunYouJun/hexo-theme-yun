@@ -1,7 +1,41 @@
+// toggle sidebar nav and panel
+const activeTabClass = "sidebar-nav-active";
+const activePanelClass = "sidebar-panel-active";
+
+/**
+ * 切换侧边栏目录列表数字显示
+ */
+function toggleTocNumber() {
+  const tocBtn = document.querySelector(".sidebar-nav-toc");
+  const orderedIcon = "#icon-list-ordered";
+  const unorderedIcon = "#icon-list-unordered";
+
+  if (!tocBtn) return;
+
+  tocBtn.addEventListener("click", () => {
+    // 被激活时才可切换
+    const isActived = tocBtn.classList.contains(activeTabClass);
+    if (isActived) {
+      const useTag = tocBtn.querySelector("use");
+
+      useTag.setAttribute(
+        "xlink:href",
+        useTag.getAttribute("xlink:href") === orderedIcon
+          ? unorderedIcon
+          : orderedIcon
+      );
+
+      document.querySelectorAll(".toc-number").forEach((el) => {
+        el.classList.toggle("hidden");
+      });
+    }
+  });
+}
+
+/**
+ * 切换侧边栏导航
+ */
 function toggleSidebarNav() {
-  // toggle sidebar nav and panel
-  const activeTabClass = "sidebar-nav-active";
-  const activePanelClass = "sidebar-panel-active";
   document.querySelectorAll(".sidebar-nav li").forEach((el) => {
     el.onclick = function() {
       if (this.classList.contains(activeTabClass)) {
@@ -101,6 +135,7 @@ function listenSidebarTOC() {
 }
 
 function initSidebar() {
+  toggleTocNumber();
   toggleSidebarNav();
   listenSidebarTOC();
 }
