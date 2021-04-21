@@ -10,7 +10,9 @@ function toggleTocNumber() {
   const orderedIcon = "#icon-list-ordered";
   const unorderedIcon = "#icon-list-unordered";
 
-  if (!tocBtn) return;
+  if (!tocBtn) {
+    return;
+  }
 
   tocBtn.addEventListener("click", () => {
     // 被激活时才可切换

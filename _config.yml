@@ -429,8 +429,8 @@ footer:
     animated: true
     # Change the color of icon, using Hex Code.
     color: "#0078E7"
-    url: https://sponsors.yunyoujun.cn
-    title: 云游君的赞助者们
+    # url: https://sponsors.yunyoujun.cn
+    # title: 云游君的赞助者们
 
   powered:
     # Hexo link (Powered by Hexo).

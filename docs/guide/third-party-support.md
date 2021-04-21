@@ -209,6 +209,8 @@ waline:
   comment: false
 ```
 
+> 请务必不要直接照抄我的配置！
+
 - `serverURL`: 后端部署后的链接（需自行部署）
 - `comment`: 是否显示本文评论数量
 
