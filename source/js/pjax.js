@@ -4,6 +4,11 @@ function initPjax() {
   });
 }
 
+function onPjaxSuccessed() {
+  isHome();
+  toReaderLatexAgain();
+}
+
 // for sidebar
 function isHome() {
   if (window.location.pathname === CONFIG.root) {
@@ -13,6 +18,26 @@ function isHome() {
   }
 }
 
+function toReaderLatexAgain() {
+  const post = document.querySelector("main #post");
+  if ( post != null) {
+    renderMathInElement(post, {
+      delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });
+  }
+}
+
 document.addEventListener("DOMContentLoaded", initPjax);
 document.addEventListener("DOMContentLoaded", isHome);
-document.addEventListener("pjax:success", isHome);
+document.addEventListener("pjax:success", onPjaxSuccessed);
+
+
+
+
+
