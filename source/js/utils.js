@@ -6,7 +6,13 @@ HTMLElement.prototype.wrap = function(wrapper) {
   wrapper.appendChild(this);
 };
 
+/**
+ * 公共辅助函数
+ */
 Yun.utils = {
+  /**
+   * 包裹表格，添加 class 以控制 table 样式
+   */
   wrapTable() {
     document.querySelectorAll("table").forEach((el) => {
       const container = document.createElement("div");
@@ -87,6 +93,21 @@ Yun.utils = {
           iconSvg.setAttribute("color", "gray");
         }, 200);
       });
+    });
+  },
+
+  /**
+   * 使用 KaTex 渲染公式
+   * 须已引入 KaTex CDN
+   */
+  renderKatex() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
     });
   },
 };

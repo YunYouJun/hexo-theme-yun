@@ -42,3 +42,5 @@ html(lang=config.language)
         revealConfig.plugins = [ RevealMarkdown, RevealNotes, RevealHighlight ]
         Reveal.initialize(revealConfig);
       })
+    if page.iconify
+      script(src=theme.vendors.iconify)

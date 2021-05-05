@@ -4,12 +4,17 @@ function initPjax() {
   });
 }
 
-function onPjaxSuccessed() {
+/**
+ * 使用 PJAX 成功时触发
+ */
+function onPjaxSuccess() {
   isHome();
-  toReaderLatexAgain();
+  Yun.utils.renderKatex();
 }
 
-// for sidebar
+/**
+ * 判断是否为主页，以决定是否显示侧边栏
+ */
 function isHome() {
   if (window.location.pathname === CONFIG.root) {
     document.body.classList.add("is-home");
@@ -18,26 +23,6 @@ function isHome() {
   }
 }
 
-function toReaderLatexAgain() {
-  const post = document.querySelector("main #post");
-  if ( post != null) {
-    renderMathInElement(post, {
-      delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false},
-          {left: '\\(', right: '\\)', display: false},
-          {left: '\\[', right: '\\]', display: true}
-      ],
-      throwOnError : false
-    });
-  }
-}
-
 document.addEventListener("DOMContentLoaded", initPjax);
 document.addEventListener("DOMContentLoaded", isHome);
-document.addEventListener("pjax:success", onPjaxSuccessed);
-
-
-
-
-
+document.addEventListener("pjax:success", onPjaxSuccess);
