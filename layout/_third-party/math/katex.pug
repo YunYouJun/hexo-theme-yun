@@ -6,13 +6,6 @@ if theme.katex.copy_tex
 
 script(defer src=theme.vendors.katex.auto_render)
 script.
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: "$$", right: "$$", display: true},
-        {left: "$", right: "$", display: false},
-        {left: "\\(", right: "\\)", display: false},
-        {left: "\\[", right: "\\]", display: true}
-      ]
-    });
+  document.addEventListener("DOMContentLoaded", () => {
+    Yun.utils.renderKatex();
   });
