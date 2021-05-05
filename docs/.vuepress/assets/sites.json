@@ -48,12 +48,6 @@
     "desc": "笔记记录，自我激励"
   },
   {
-    "name": "道之遠兮",
-    "url": "https://yenpou.github.io/",
-    "avatar": "https://yenpou.github.io/images/timg.jpg",
-    "desc": "今朝有酒今朝醉，明日愁来明日愁"
-  },
-  {
     "name": "柠檬君的小站",
     "url": "http://www.romastar.cn/",
     "avatar": "https://personalblog-1301685299.cos.ap-nanjing.myqcloud.com/MyBlog-Images/Personal-Info/Avatar.jpg",
@@ -142,5 +136,11 @@
     "url": "https://gentrabbit.moe/",
     "avatar": "https://gentrabbit.moe/images/avatar.jpg",
     "desc": "To live, but not to exist."
+  },
+  {
+    "name": "工藤旧二の博客",
+    "url": "http://huang_zhao.gitee.io/task/",
+    "avatar": "http://huang_zhao.gitee.io/task/Yun.png",
+    "desc": "Python 是世界上最好的语言"
   }
 ]

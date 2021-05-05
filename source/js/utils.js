@@ -1,4 +1,4 @@
-// global CONFIG
+/* global CONFIG */
 
 HTMLElement.prototype.wrap = function(wrapper) {
   this.parentNode.insertBefore(wrapper, this);
@@ -97,17 +97,71 @@ Yun.utils = {
   },
 
   /**
-   * 使用 KaTex 渲染公式
-   * 须已引入 KaTex CDN
+   * 使用 KaTeX 渲染公式
+   * 须已引入 KaTeX CDN
+   * https://github.com/KaTeX/KaTeX
    */
   renderKatex() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true },
-      ],
+    if (renderMathInElement) {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true },
+        ],
+      });
+    } else {
+      console.error(
+        "Please check if you have introduced KaTeX(https://github.com/KaTeX/KaTeX) CDN."
+      );
+    }
+  },
+
+  /**
+   * 注册监听滚动百分比事件
+   */
+  registerScrollPercent() {
+    const backToTop = document.querySelector("#back-to-top");
+    const progressCircle = document.querySelector("#progressCircle");
+
+    if (!backToTop) {
+      return;
+    }
+
+    /**
+     * 页面滚动百分比
+     * @param {number} curTop
+     */
+    function scrollPercent(curTop) {
+      const bodyHeight = document.body.clientHeight;
+      const windowHeight = window.innerHeight;
+      const circumference = progressCircle.r.baseVal.value * 2 * Math.PI;
+      const offset =
+        circumference - (curTop / (bodyHeight - windowHeight)) * circumference;
+      progressCircle.setAttribute(
+        "stroke-dasharray",
+        `${circumference} ${circumference}`
+      );
+      progressCircle.setAttribute("stroke-dashoffset", offset);
+    }
+
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("show", window.scrollY > 64);
+      scrollPercent(window.scrollY);
+    });
+  },
+
+  /**
+   * 注册切换侧边栏按钮事件
+   */
+  registerToggleSidebar() {
+    const toggleBtns = document.querySelectorAll(".sidebar-toggle");
+    toggleBtns.forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector(".hamburger").classList.toggle("is-active");
+        document.querySelector(".container").classList.toggle("sidebar-open");
+      });
     });
   },
 };

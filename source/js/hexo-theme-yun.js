@@ -1,43 +1,25 @@
-// global Yun
-console.log(
-  `%c ☁️ hexo-theme-yun ${CONFIG.version} %c https://github.com/YunYouJun/hexo-theme-yun`,
-  "color: white; background: #0078E7; padding:5px 0;",
-  "padding:4px;border:1px solid #0078E7;"
-);
+/* global Yun, CONFIG */
 
-// scroll
-function scrollPercent(curTop) {
-  const bodyHeight = document.body.clientHeight;
-  const windowHeight = window.innerHeight;
-  const circumference = progressCircle.r.baseVal.value * 2 * Math.PI;
-  const offset =
-    circumference - (curTop / (bodyHeight - windowHeight)) * circumference;
-  progressCircle.setAttribute(
-    "stroke-dasharray",
-    `${circumference} ${circumference}`
-  );
-  progressCircle.setAttribute("stroke-dashoffset", offset);
-}
+Yun.boot = {
+  /**
+   * 显示版权
+   */
+  copyright() {
+    console.log(
+      `%c ☁️ hexo-theme-yun ${CONFIG.version} %c https://github.com/YunYouJun/hexo-theme-yun`,
+      "color: white; background: #0078E7; padding:5px 0;",
+      "padding:4px;border:1px solid #0078E7;"
+    );
+  },
+};
 
 function initPage() {
-  // open sidebar
-  const toggleBtns = document.querySelectorAll(".sidebar-toggle");
-  toggleBtns.forEach((el) => {
-    el.addEventListener("click", () => {
-      document.querySelector(".hamburger").classList.toggle("is-active");
-      document.querySelector(".container").classList.toggle("sidebar-open");
-    });
-  });
-
-  window.addEventListener("scroll", function() {
-    goUp.classList.toggle("show", window.scrollY > 64);
-    scrollPercent(window.scrollY);
-  });
+  Yun.utils.registerToggleSidebar();
+  Yun.utils.registerScrollPercent();
 
   Yun.utils.insertCopyCodeBtn();
   Yun.utils.wrapTable();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initPage();
-});
+Yun.boot.copyright();
+document.addEventListener("DOMContentLoaded", initPage);

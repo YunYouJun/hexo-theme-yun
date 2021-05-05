@@ -1,4 +1,3 @@
-// @ts-nocheck
 (function() {
   /**
    * @param {*} url

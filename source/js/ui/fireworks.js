@@ -1,5 +1,7 @@
-// https://codepen.io/juliangarnier/pen/gmOwJX
-// custom by hexo-theme-yun @YunYouJun
+/**
+ * https://codepen.io/juliangarnier/pen/gmOwJX
+ * custom by hexo-theme-yun @YunYouJun
+ */
 
 /**
  * 创建烟花
@@ -188,4 +190,4 @@ function createFireworks(
   window.addEventListener("resize", setCanvasSize(canvasEl), false);
 }
 
-createFireworks();
+document.addEventListener("DOMContentLoaded", createFireworks);

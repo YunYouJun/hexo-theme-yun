@@ -1,6 +1,11 @@
 extends _partial/layout.pug
 
 block content
+  script.
+    function onAvatarError(img) {
+      img.srcset = img.src
+      img.src = CONFIG.anonymous_image
+    }
   #page
     +page_header(page.title)
     if page.links
@@ -12,7 +17,7 @@ block content
               li.link-item(id=link.name, style= link.color ? `--primary-color:${link.color}` : '')
                 a.link-url(href=link.url, title=link.name, alt='portrait' target='_blank' rel='friend')
                   .link-left
-                    img.link-avatar(loading='lazy', src=link.avatar, alt=link.name, onerror='this.src=CONFIG.anonymous_image')
+                    img.link-avatar(loading='lazy', src=link.avatar, alt=link.name, onerror='onAvatarError(this)')
                   .link-info
                     .link-blog!=link.blog
                     .link-desc!=link.desc || page.placeholder
@@ -24,7 +29,7 @@ block content
             li.link-item(v-for="link in links", :id="link.name", :style="link.color ? `--primary-color:${link.color}` : ''")
               a.link-url(:href="link.url", :title="link.name", alt='portrait' target='_blank' rel='friend')
                 .link-left
-                  img.link-avatar(loading='lazy', :src="link.avatar", :alt="link.name", onerror='this.src=CONFIG.anonymous_image')
+                  img.link-avatar(loading='lazy', :src="link.avatar", :alt="link.name", onerror='onAvatarError(this)')
                 .link-info
                   .link-blog!="{{link.blog}}"
                   .link-desc!="{{link.desc || placeholder}}"

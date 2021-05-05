@@ -1,10 +1,23 @@
-// https://github.com/YunYouJun/hexo-theme-yun
-// YunYouJun <me@yunyoujun.cn>
+/**
+ * @file 生成首页标语动画
+ * @author YunYouJun <me@yunyoujun.cn>
+ * @description https://github.com/YunYouJun/hexo-theme-yun
+ */
 
+/**
+ * 生成介于 min 与 max 之间的随机数
+ * @param {number} min
+ * @param {number} max
+ * @returns
+ */
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+/**
+ * 生成标语
+ * @param {string} title
+ */
 function generateBanner(title) {
   let sumH = 0;
   let lineTop = document.querySelector(".vertical-line-top");
@@ -42,6 +55,9 @@ function generateBanner(title) {
   lineBottom.style.animationName = "extend-line";
 }
 
+/**
+ * 初始化 banner
+ */
 function initBanner() {
   if (window.banner) {
     setTimeout(() => {
@@ -50,4 +66,4 @@ function initBanner() {
   }
 }
 
-initBanner();
+document.addEventListener("DOMContentLoaded", initBanner);
