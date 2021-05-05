@@ -1,3 +1,4 @@
+/* global hexo */
 const { parse } = require("url");
 
 hexo.extend.helper.register("yun_config", function() {

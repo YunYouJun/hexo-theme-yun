@@ -1,13 +1,17 @@
-/*global hexo*/
+/* global hexo */
 
 /**
  * 是否为 url 链接
+ * @param {string} path
+ * @returns
  */
-hexo.extend.helper.register("is_url", function(path) {
+function isUrl(path) {
   return new RegExp(/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/).test(
     path
   );
-});
+}
+
+hexo.extend.helper.register("is_url", isUrl);
 
 hexo.extend.helper.register("page_title", function(page) {
   const { __ } = this;

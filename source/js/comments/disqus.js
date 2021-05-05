@@ -18,7 +18,7 @@ function lazyloadForDisqus() {
   if (!isBot && supportsIntersectionObserver) {
     // 当前环境不是爬虫、并且浏览器兼容 IntersectionObserver API
     const disqusObserver = new IntersectionObserver(
-      function(entries) {
+      (entries) => {
         // 当前视窗中已出现 Disqus 评论框所在位置
         if (entries[0].isIntersecting) {
           // 加载 Disqus

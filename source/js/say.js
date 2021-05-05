@@ -1,3 +1,5 @@
+/* global CONFIG */
+
 /**
  * 显示一句话
  * @param {string} content
