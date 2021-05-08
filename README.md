@@ -68,7 +68,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
     </td>
     <td>
       <a href="https://spreadwings-sky.github.io/" target="_blank">
-        <img width="80px" src="https://spreadwings-sky.github.io/Yun.png" />
+        <img width="80px" src="https://spreadwings-sky.github.io/images/avatar.png" />
         <br />
         <sub title="希望能成为一个有趣的人">俺たちに翼はない</sub>
       </a>

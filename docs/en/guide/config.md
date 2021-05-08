@@ -145,6 +145,8 @@ Set the website icon (make sure your `favicon.ico` file is placed under the `sou
 favicon: /favicon.ico
 ```
 
+> When your picture is in `png` format, please make sure its size is `16*16`, `32*32`, `64*64`, `128*128`, `256*256`, etc. .
+
 Yun Logo can use the corresponding opposite colors according to the light and dark theme of the browser.
 
 For example, the bright browser LOGO has a black stroke, and the dark browser LOGO has a white stroke.
