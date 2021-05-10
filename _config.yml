@@ -50,7 +50,7 @@ social:
     color: orange
   - name: QQ 群 1050458482
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://qm.qq.com/cgi-bin/qm/qr?k=arsfouP2nC_yK4ZUc1B5zDBFo-H35pBl&jump_from=webapi
+    link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
     icon: icon-qq-line
     color: "#12B7F5"
   - name: GitHub
@@ -81,10 +81,10 @@ social:
   #   link: https://www.popiapp.cn/elpsycn
   #   icon: icon-questionnaire-line
   #   color: "#525252"
-  # - name: 微信公众号
-  #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-  #   icon: icon-wechat-2-line
-  #   color: "#1AAD19"
+  - name: 微信公众号
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
