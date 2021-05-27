@@ -20,16 +20,21 @@ function random(min, max) {
  */
 function generateBanner(title) {
   let sumH = 0;
-  let lineTop = document.querySelector(".vertical-line-top");
-  let lineBottom = document.querySelector(".vertical-line-bottom");
+  const lineTop = document.querySelector(".vertical-line-top");
+  const lineBottom = document.querySelector(".vertical-line-bottom");
+  const charContainer = document.querySelector(".banner-char-container");
+  charContainer.innerHTML = "";
+
   for (let i = 0; i < title.length; i++) {
     const char = title[i];
     let charBox = document.createElement("div");
     let rn = random(1.5, 3.5);
     charBox.innerHTML = "<span class='char'>" + char + "</span>";
     let charSize = rn + "rem";
-    banner.insertBefore(charBox, lineBottom);
+
     charBox.classList.add("char-box");
+    charContainer.appendChild(charBox);
+
     if (i % 2 === 0) {
       charBox.classList.add("char-left");
       charBox.style.animationName = "char-move-left";
@@ -67,3 +72,4 @@ function initBanner() {
 }
 
 document.addEventListener("DOMContentLoaded", initBanner);
+document.addEventListener("pjax:success", initBanner);

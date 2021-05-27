@@ -1092,6 +1092,8 @@ In `yun.yml`:
 
 (You can set the corresponding suitable highlight styles for the light and dark modes.)
 
+> Please refer to the code highlighting theme <https://cdn.jsdelivr.net/npm/prismjs@latest/themes/>.
+
 ```yaml
 codeblock:
   copy_btn: true

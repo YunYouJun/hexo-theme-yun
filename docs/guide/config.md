@@ -1104,6 +1104,8 @@ prismjs:
 
 （可以为亮暗模式分别设置对应适合的高亮样式。）
 
+> 代码高亮主题可参见 <https://cdn.jsdelivr.net/npm/prismjs@latest/themes/>。
+
 ```yaml
 codeblock:
   copy_btn: true
