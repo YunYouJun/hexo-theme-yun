@@ -20,6 +20,7 @@
     "docs"
   ],
   "scripts": {
+    "dev": "yarn docs:dev",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "generate:demo-sites": "node docs/.vuepress/scripts/index.js"
