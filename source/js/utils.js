@@ -102,7 +102,7 @@ Yun.utils = {
    * https://github.com/KaTeX/KaTeX
    */
   renderKatex() {
-    if (renderMathInElement) {
+    if (typeof renderMathInElement !== "undefined") {
       renderMathInElement(document.body, {
         delimiters: [
           { left: "$$", right: "$$", display: true },
