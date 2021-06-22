@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "types": ["@vuepress/client/types"],
+    "paths": {
+      "~/*": ["docs/.vuepress/*"]
+    }
+  }
+}

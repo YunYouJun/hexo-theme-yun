@@ -1,0 +1,45 @@
+@use "sass:map";
+
+$colors: (
+  brand: #0078e7,
+  primary: #ccc,
+);
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: opacify(map.get($colors, "primary"), 0.7);
+
+  &:window-inactive {
+    background-color: opacify(map.get($colors, "primary"), 0.6);
+  }
+
+  &:hover {
+    background-color: opacify(map.get($colors, "primary"), 0.8);
+  }
+
+  &:active {
+    background-color: opacify(map.get($colors, "primary"), 1);
+  }
+}
+
+:root {
+  --c-brand: #{map.get($colors, "brand")};
+  --c-brand-light: #{lighten(map.get($colors, "brand"), 10%)};
+
+  --content-width: 1000px;
+}
+
+html.dark {
+  --c-brand: #{lighten(map.get($colors, "brand"), 20%)};
+  --c-brand-light: #{lighten(map.get($colors, "brand"), 30%)};
+}

@@ -103,8 +103,8 @@ social:
     icon: icon-mail-line
     color: "#8E71C1"
   - name: Travelling
-    link: https://travellings.now.sh/
-    icon: icon-send-plane-2-line
+    link: https://travellings.link
+    icon: icon-train-line
     color: black
 
 codeblock:
@@ -289,7 +289,7 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_j5gk85dg4pf.js
+      iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -553,7 +553,8 @@ google_adsense:
 # ---------------
 google_analytics:
   enable: false
-  id: UA-XXXXXXXXX-X
+  # GA4
+  id: G-XXXXXXXXX
 
 # Google Tagmanager
 google_tagmanager:

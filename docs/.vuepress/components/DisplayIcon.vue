@@ -5,12 +5,14 @@
         <use :xlink:href="'#icon-' + icon"></use>
       </svg>
     </div>
-    <h6 class="icon-name">{{ icon }}</h6>
+    <span class="icon-name">{{ icon }}</span>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
   props: {
     icon: {
       type: String,
@@ -19,30 +21,30 @@ export default {
   },
   methods: {
     copyIcon() {
-      navigator.clipboard.writeText(this.icon);
+      navigator.clipboard.writeText('icon-' + this.icon);
 
-      console.log(toast);
+      const toast = document.getElementById('toast')
       toast.classList.add("show");
       setTimeout(() => {
         toast.classList.remove("show");
       }, 3000);
     },
   },
-};
+});
 </script>
 
-<style lang="stylus">
+<style lang="scss">
 .icon-box {
   cursor: pointer;
-  width: 8rem;
+  width: 6rem;
   display: inline-flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
+  padding: 0.5rem 1rem;
 
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   transition: 0.2s;
 
   &:hover {
@@ -57,10 +59,11 @@ export default {
   overflow: hidden;
 }
 .icon-body {
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
 }
 .icon-name {
   margin-top: 0.4rem;
   margin-bottom: 0.6rem;
+  font-size: 0.8rem;
 }
 </style>

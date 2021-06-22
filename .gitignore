@@ -12,3 +12,7 @@ dist/
 
 # logs
 *.log
+
+# vuepress
+.cache
+.temp

@@ -1,4 +1,15 @@
-module.exports = {
+import path from "path";
+import { defineUserConfig } from "vuepress";
+import type { DefaultThemeOptions } from "vuepress";
+
+import * as navbar from "./configs/navbar";
+import * as sidebar from "./configs/sidebar";
+
+export default defineUserConfig<DefaultThemeOptions>({
+  alias: {
+    "~": path.resolve(__dirname, "."),
+  },
+
   head: [
     ["link", { rel: "icon", href: "/yun.svg" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
@@ -29,21 +40,24 @@ module.exports = {
       "script",
       {
         async: true,
-        src: "//at.alicdn.com/t/font_1140697_j5gk85dg4pf.js",
+        src: "//at.alicdn.com/t/font_1140697_dxory92pb0h.js",
       },
     ],
   ],
+
   title: "Hexo-Theme-Yun",
   locales: {
     "/": {
       lang: "zh-CN",
-      description: "A powerful & simple & fast theme for Hexo.",
+      description:
+        "A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。",
     },
     "/en/": {
       lang: "en-US",
       description: "A powerful & simple & fast theme for Hexo.",
     },
   },
+
   themeConfig: {
     logo: "/yun.svg",
     nextLinks: true,
@@ -54,71 +68,35 @@ module.exports = {
     smoothScroll: true,
     sidebarDepth: 2,
 
-    algolia: {
-      apiKey: "62c0b4aa58760ed3804e4fae0457c202",
-      indexName: "yunyoujun",
-    },
-
     locales: {
       "/": {
-        label: "简体中文",
-        lastUpdated: "上次更新",
+        selectLanguageName: "简体中文",
+        lastUpdatedText: "上次更新",
         editLinkText: "帮助改善此页面！( ￣□￣)/",
-        nav: [
-          { text: "使用指南", link: "/guide/" },
-          { text: "示例站点", link: "/demo.html" },
-          { text: "赞助名单", link: "https://sponsors.yunyoujun.cn" },
-        ],
-        sidebar: {
-          "/": [
-            "about.html",
-            "guide/",
-            "guide/config",
-            "guide/page",
-            "guide/third-party-support",
-            "guide/additional-package-support",
-            "guide/icon",
-            "guide/faq",
-            "guide/migrate",
-          ],
-        },
+        navbar: navbar.zh,
+        sidebar: sidebar.zh,
       },
       "/en/": {
-        label: "English",
-        lastUpdated: "Last Updated",
-        nav: [
-          { text: "Guide", link: "/guide/" },
-          { text: "Demo", link: "/demo.html" },
-          { text: "Sponsor", link: "https://sponsors.yunyoujun.cn" },
-        ],
-        sidebar: {
-          "/en/": [
-            "about.html",
-            "guide/",
-            "guide/config",
-            "guide/page",
-            "guide/third-party-support",
-            "guide/additional-package-support",
-            "guide/icon",
-            "guide/faq",
-          ],
-        },
+        selectLanguageName: "English",
+        lastUpdatedText: "Last Updated",
+        navbar: navbar.en,
+        sidebar: sidebar.en,
       },
     },
   },
+
   plugins: [
-    "@vuepress/back-to-top",
     [
       "@vuepress/google-analytics",
       {
-        ga: "UA-121354150-9",
+        id: "UA-121354150-9",
       },
     ],
+    ["@vuepress/plugin-pwa"],
     [
-      "@vuepress/pwa",
+      "@vuepress/plugin-pwa-popup",
       {
-        serviceWorker: true,
-        updatePopup: {
+        locales: {
           "/": {
             message: "文档更新啦～",
             buttonText: "快点我刷新！",
@@ -130,5 +108,26 @@ module.exports = {
         },
       },
     ],
+    [
+      "@vuepress/docsearch",
+      {
+        apiKey: "62c0b4aa58760ed3804e4fae0457c202",
+        indexName: "yunyoujun",
+        locales: {
+          "/": {
+            placeholder: "Search Documentation",
+          },
+          "/zh/": {
+            placeholder: "搜索文档",
+          },
+        },
+      },
+    ],
+    [
+      "@vuepress/register-components",
+      {
+        componentsDir: path.resolve(__dirname, "./components"),
+      },
+    ],
   ],
-};
+});

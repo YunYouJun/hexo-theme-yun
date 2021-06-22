@@ -35,7 +35,7 @@ icon: icon-github-line
 </div>
 
 <script>
-import icons from "../../.vuepress/assets/icons.json"
+import icons from "~/assets/icons.json"
 export default {
   data() {
     return {
@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
 .toast {
   position: fixed;
   top: 5rem;
