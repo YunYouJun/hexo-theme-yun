@@ -48,11 +48,6 @@ if (!hexo-config('search.modal')) {
   }
 }
 
-// post
-.post-title-link {
-  color: lighten($colors.primary, 30%);
-}
-
 // post-card
 $post-card-bg-color = $dark-primary-color;
 
@@ -60,11 +55,6 @@ $post-card-bg-color = $dark-primary-color;
   color: white;
   background-color: rgba($post-card-bg-color, $post-card-opacity);
   box-shadow: 0 1px 8px rgba($post-card-bg-color, 0.1);
-}
-
-.post-block {
-  color: var(--hty-text-color);
-  background-color: rgba($post-card-bg-color, 0.95);
 }
 
 // pagination
@@ -91,22 +81,26 @@ $post-card-bg-color = $dark-primary-color;
   }
 }
 
-#footer {
-  color: #eee;
-}
-
 // aplayer
 .aplayer {
   color: black;
 }
 
-if hexo-config('minivaline.enable')
-  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before
-    background: linear-gradient(180deg, rgba(246,246,246,0), rgba(0,0,0,0.9))
-  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after
-    background: rgba(0,0,0,0.9)
-  .ohhho pre
-    background: var(--color-meta)
-    border: 1px solid var(--color-block)
-  .ohhho .vlist .vcard .vcomment-body .vhead
-    filter: brightness(85%)
+if (hexo-config('minivaline.enable')) {
+  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before {
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0), rgba(0, 0, 0, 0.9));
+  }
+
+  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .ohhho pre {
+    background: var(--color-meta);
+    border: 1px solid var(--color-block);
+  }
+
+  .ohhho .vlist .vcard .vcomment-body .vhead {
+    filter: brightness(85%);
+  }
+}

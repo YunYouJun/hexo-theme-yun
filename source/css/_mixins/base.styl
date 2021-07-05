@@ -1,13 +1,15 @@
 // mode
 dark() {
+  --hty-light-color-rgb: 0, 0, 0;
+  --hty-dark-color-rgb: 255, 255, 255;
   --hty-bg-color: #303030;
   --hty-text-color: #f2f2f2;
-  --hty-secondary-text-color: #EEE;
+  --hty-secondary-text-color: #eeeeee;
   --banner-line-color: white;
   --banner-char-color: white;
   --post-block-bg-color: convert(hexo-config('colors.dark.block'));
   // star-markdown-css
-  --smc-link-color: lighten($colors.link, 30%);
+  --smc-link-color: lighten($colors.primary, 30%);
 }
 
 // small
