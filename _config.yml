@@ -5,8 +5,7 @@ mode: auto
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
 colors:
-  # primary: "#0078E7"
-  primary: "red"
+  primary: "#0078E7"
   # primary: "#6200ee"
   bg: "#f5f5f5"
   selection_bg: "#8e71c1"
