@@ -47,10 +47,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://blog.mle.moe/" target="_blank">
-        <img width="80px" src="https://blog.mle.moe/images/girl.jpeg" />
+      <a href="https://ddindex.github.io/" target="_blank">
+        <img width="80px" src="https://ddindex.github.io/images/avatar.jpg" />
         <br />
-        <sub title="ヾ(❀╹◡╹)ﾉ~">MleMoe</sub>
+        <sub title="双手抓楼上的大胸">多酱的部落格</sub>
       </a>
     </td>
     <td>
@@ -58,13 +58,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://blog.sernikki.cn/amiya.jpg" />
         <br />
         <sub title="有瑕人无玉">神崎日照の小窝</sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://ddindex.github.io/" target="_blank">
-        <img width="80px" src="https://ddindex.github.io/images/avatar.jpg" />
-        <br />
-        <sub title="双手抓楼上的大胸">多酱的部落格</sub>
       </a>
     </td>
     <td>
@@ -95,8 +88,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="笔记记录，自我激励">秩同道合的博客</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="http://www.romastar.cn/" target="_blank">
         <img width="80px" src="https://personalblog-1301685299.cos.ap-nanjing.myqcloud.com/MyBlog-Images/Personal-Info/Avatar.jpg" />
@@ -104,6 +95,8 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.kumybryce.work" target="_blank">
         <img width="80px" src="https://kumybryce.gitee.io/myblog/img/favicon.png" />
@@ -123,13 +116,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="https://q1.qlogo.cn/g?b=qq&nk=1935576264&s=100" />
         <br />
         <sub title="乐得自在的小破站">乐得自在的小破站</sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://blog.zjgsujz.cn" target="_blank">
-        <img width="80px" src="https://cdn.jsdelivr.net/gh/Pakchoi1/image-host/blog/avatar.jpg" />
-        <br />
-        <sub title="it萌新的进阶之路">小白菜的博客</sub>
       </a>
     </td>
     <td>
@@ -153,8 +139,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="偕臧">偕臧</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://www.rogeroger.net" target="_blank">
         <img width="80px" src="https://rogeroger.oss-cn-beijing.aliyuncs.com/img/rogeryu.jpeg" />
@@ -169,6 +153,8 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="恰同学少年，风华正茂；书生意气，挥斥方遒。">LeoStudio</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.meow-2.com/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Meow-2/cdn/source/avatar.jpg" />
@@ -191,13 +177,6 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://www.extrader.top/" target="_blank">
-        <img width="80px" src="https://www.extrader.top/images/avatar.png" />
-        <br />
-        <sub title="Hello My Love">Extrader的小站</sub>
-      </a>
-    </td>
-    <td>
       <a href="https://gentrabbit.moe/" target="_blank">
         <img width="80px" src="https://gentrabbit.moe/images/avatar.jpg" />
         <br />
@@ -209,6 +188,85 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <img width="80px" src="http://huang_zhao.gitee.io/task/Yun.png" />
         <br />
         <sub title="Python 是世界上最好的语言">工藤旧二の博客</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://leiblog.wang" target="_blank">
+        <img width="80px" src="https://leiblog.wang/images/avatar_1.jpg" />
+        <br />
+        <sub title="The warehouse of LeiWang1999">LeiWang1999</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://miaoermua.github.io/" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/miaoermua/miaoermua.github.io@latest/logo/weblogo.png" />
+        <br />
+        <sub title="喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨">喵二の小博客</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.blog.yln956.top/" target="_blank">
+        <img width="80px" src="https://www.blog.yln956.top/images/tou.jpg" />
+        <br />
+        <sub title="梦想是什么，梦想是现实的延续；现实是什么，现实是梦想的终结。">yln's blog</sub>
+      </a>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <a href="http://wasteland.wifikun.top" target="_blank">
+        <img width="80px" src="http://wasteland.wifikun.top/images/avatar.jpg" />
+        <br />
+        <sub title="Heaven and earth, my guiding star.">星云荒原</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://darksheep.xyz" target="_blank">
+        <img width="80px" src="https://darksheep.xyz/images/avatar.jpg" />
+        <br />
+        <sub title="蹲一蹲">包子君的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.aranne.me" target="_blank">
+        <img width="80px" src="https://www.aranne.me/avatar.png" />
+        <br />
+        <sub title="要永远热爱生活呀">阿然君的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://willian588.github.io/" target="_blank">
+        <img width="80px" src="https://willian588.github.io/shadiao.png" />
+        <br />
+        <sub title="路漫漫其修远兮，吾将上下而求索">阿玮的小po站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="http://www.xczheergen.com/" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/xczheergen/CDN/images/avatar.jpg" />
+        <br />
+        <sub title="感谢云游君提供的主题哦">xczheergen</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.eevee.fun/" target="_blank">
+        <img width="80px" src="https://www.eevee.fun/touxiang.jpg" />
+        <br />
+        <sub title="祝家人们天天开心，天天快乐就OK了。">时前进的小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://assistest.github.io/" target="_blank">
+        <img width="80px" src="https://s.im5i.com/2021/04/03/WKnMF.jpg" />
+        <br />
+        <sub title="山有木兮木有枝,心悦君兮君不知。">林森森</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://blog.mle.moe/" target="_blank">
+        <img width="80px" src="https://blog.mle.moe/images/girl.jpeg" />
+        <br />
+        <sub title="ヾ(❀╹◡╹)ﾉ~">MleMoe</sub>
       </a>
     </td>
   </tr>

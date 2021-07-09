@@ -1,5 +1,5 @@
 <template>
-  <a :href="site.url" target="_blank">
+  <a class="site-link" :href="site.url" target="_blank">
     <img width="80" :src="site.avatar" />
     <br />
     <sub :title="site.desc">{{ site.name }}</sub>
@@ -25,3 +25,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.site-link {
+  font-size: 12px;
+}
+</style>
