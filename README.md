@@ -263,10 +263,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://blog.mle.moe/" target="_blank">
-        <img width="80px" src="https://blog.mle.moe/images/girl.jpeg" />
+      <a href="https://kuuhaku.top" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/kuuhaku-w/blogimg/intro/avatar_ai.png" />
         <br />
-        <sub title="ヾ(❀╹◡╹)ﾉ~">MleMoe</sub>
+        <sub title="永远是深夜该有多好">熊之记事本</sub>
       </a>
     </td>
   </tr>

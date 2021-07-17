@@ -12,7 +12,7 @@
     
     if theme.comment.candidates && theme.comment.candidates.length > 1
       .toggle-comment-system(style="margin: 1rem auto")
-        - var commentContainer = {valine: '#valine-container', utterances: '.utterances', livere: '#lv-container', minivaline: '#minivaline-container',  disqus: '#disqus_thread', disqusjs: '#disqus_thread'}
+        - var commentContainer = {valine: '#valine-container', waline: '#waline', utterances: '.utterances', livere: '#lv-container', minivaline: '#minivaline-container',  disqus: '#disqus_thread', disqusjs: '#disqus_thread'}
         for candidate, i in theme.comment.candidates
           if i !== 0
             style.
