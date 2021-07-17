@@ -2,6 +2,7 @@
 script(src=theme.vendors.twikoo)
 - var twikooConfig = JSON.stringify(theme.twikoo)
 script.
-  const twikooConfig = !{twikooConfig}
+  window.twikooConfig = !{twikooConfig}
   twikooConfig.el = '#tcomment'
   twikoo.init(twikooConfig)
+  document.addEventListener("pjax:success", twikoo.init(twikooConfig));

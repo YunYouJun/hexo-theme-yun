@@ -1,6 +1,7 @@
 // toggle sidebar nav and panel
-const activeTabClass = "sidebar-nav-active";
-const activePanelClass = "sidebar-panel-active";
+// use let instead of const to aviod declared
+let activeTabClass = "sidebar-nav-active";
+let activePanelClass = "sidebar-panel-active";
 
 /**
  * 切换侧边栏目录列表数字显示
