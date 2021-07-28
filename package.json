@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-yun",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
   "repository": {
     "type": "git",
@@ -27,11 +27,11 @@
     "generate:demo-sites": "node docs/.vuepress/scripts/index.js"
   },
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.19",
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.19",
-    "@vuepress/plugin-pwa": "^2.0.0-beta.19",
-    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.19",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.19",
-    "vuepress": "^2.0.0-beta.19"
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.22",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.22",
+    "@vuepress/plugin-pwa": "^2.0.0-beta.22",
+    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.22",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.22",
+    "vuepress": "^2.0.0-beta.22"
   }
 }
