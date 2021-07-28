@@ -1,62 +1,9 @@
-// toggle sidebar nav and panel
-// use let instead of const to aviod declared
-let activeTabClass = "sidebar-nav-active";
-let activePanelClass = "sidebar-panel-active";
-
 /**
- * 切换侧边栏目录列表数字显示
+ * 切换侧边栏导航面板
+ * toggle sidebar nav and panel
+ * @author YunYouJun <me@yunyoujun.cn>
+ * @description https://github.com/YunYouJun/hexo-theme-yun
  */
-function toggleTocNumber() {
-  const tocBtn = document.querySelector(".sidebar-nav-toc");
-  const orderedIcon = "#icon-list-ordered";
-  const unorderedIcon = "#icon-list-unordered";
-
-  if (!tocBtn) {
-    return;
-  }
-
-  tocBtn.addEventListener("click", () => {
-    // 被激活时才可切换
-    const isActived = tocBtn.classList.contains(activeTabClass);
-    if (isActived) {
-      const useTag = tocBtn.querySelector("use");
-
-      useTag.setAttribute(
-        "xlink:href",
-        useTag.getAttribute("xlink:href") === orderedIcon
-          ? unorderedIcon
-          : orderedIcon
-      );
-
-      document.querySelectorAll(".toc-number").forEach((el) => {
-        el.classList.toggle("hidden");
-      });
-    }
-  });
-}
-
-/**
- * 切换侧边栏导航
- */
-function toggleSidebarNav() {
-  document.querySelectorAll(".sidebar-nav li").forEach((el) => {
-    el.onclick = function() {
-      if (this.classList.contains(activeTabClass)) {
-        return;
-      }
-      document
-        .querySelector("." + activePanelClass)
-        .classList.remove(activePanelClass);
-      document
-        .querySelector("#" + this.dataset.target)
-        .classList.add(activePanelClass);
-      document
-        .querySelector("." + activeTabClass)
-        .classList.remove(activeTabClass);
-      this.classList.add(activeTabClass);
-    };
-  });
-}
 
 /**
  * 根据目标激活索引
@@ -138,6 +85,64 @@ function listenSidebarTOC() {
 }
 
 function initSidebar() {
+  const activeTabClass = "sidebar-nav-active";
+  const activePanelClass = "sidebar-panel-active";
+
+  /**
+   * 切换侧边栏目录列表数字显示
+   */
+  function toggleTocNumber() {
+    const tocBtn = document.querySelector(".sidebar-nav-toc");
+    const orderedIcon = "#icon-list-ordered";
+    const unorderedIcon = "#icon-list-unordered";
+
+    if (!tocBtn) {
+      return;
+    }
+
+    tocBtn.addEventListener("click", () => {
+      // 被激活时才可切换
+      const isActived = tocBtn.classList.contains(activeTabClass);
+      if (isActived) {
+        const useTag = tocBtn.querySelector("use");
+
+        useTag.setAttribute(
+          "xlink:href",
+          useTag.getAttribute("xlink:href") === orderedIcon
+            ? unorderedIcon
+            : orderedIcon
+        );
+
+        document.querySelectorAll(".toc-number").forEach((el) => {
+          el.classList.toggle("hidden");
+        });
+      }
+    });
+  }
+
+  /**
+   * 切换侧边栏导航
+   */
+  function toggleSidebarNav() {
+    document.querySelectorAll(".sidebar-nav li").forEach((el) => {
+      el.onclick = function () {
+        if (this.classList.contains(activeTabClass)) {
+          return;
+        }
+        document
+          .querySelector("." + activePanelClass)
+          .classList.remove(activePanelClass);
+        document
+          .querySelector("#" + this.dataset.target)
+          .classList.add(activePanelClass);
+        document
+          .querySelector("." + activeTabClass)
+          .classList.remove(activeTabClass);
+        this.classList.add(activeTabClass);
+      };
+    });
+  }
+
   toggleTocNumber();
   toggleSidebarNav();
   listenSidebarTOC();

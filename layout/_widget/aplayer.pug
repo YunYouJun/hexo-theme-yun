@@ -5,7 +5,7 @@ else
   #aplayer
   - var ap_audio = JSON.stringify(theme.aplayer.widget.audio)
   script.
-    window.addEventListener("DOMContentLoaded", () => {
+    function initAplayer() {
       const ap = new APlayer({
         container: document.getElementById('aplayer'),
         fixed: true,
@@ -22,4 +22,6 @@ else
         listMaxHeight: "!{theme.aplayer.widget.listMaxHeight}",
         storageName: "aplayer-setting"
       });
-    });
+    }
+    document.addEventListener("DOMContentLoaded", initAplayer);
+    document.addEventListener("pjax:success", initAplayer);

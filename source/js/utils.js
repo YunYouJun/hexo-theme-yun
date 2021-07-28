@@ -1,6 +1,6 @@
 /* global CONFIG */
 
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
   wrapper.appendChild(this);
@@ -10,6 +10,14 @@ HTMLElement.prototype.wrap = function(wrapper) {
  * 公共辅助函数
  */
 Yun.utils = {
+  /**
+   * 是否为主页
+   * @returns {boolean}
+   */
+  isHome() {
+    return window.location.pathname === CONFIG.root;
+  },
+
   /**
    * 包裹表格，添加 class 以控制 table 样式
    */
