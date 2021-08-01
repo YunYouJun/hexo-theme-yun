@@ -1,4 +1,4 @@
-/* global CONFIG */
+/* global Yun, CONFIG */
 
 /**
  * 显示一句话

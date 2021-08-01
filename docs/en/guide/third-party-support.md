@@ -208,6 +208,25 @@ livere:
   uid:
 ```
 
+### [Giscus](https://giscus.app/)
+
+A comments system powered by [GitHub Discussions](https://docs.github.com/en/discussions). Let visitors leave comments and reactions on your website via GitHub! Heavily inspired by [utterances](https://github.com/utterance/utterances).
+
+> Github: <https://github.com/laymonage/giscus>
+
+```yaml
+giscus:
+  enable: false
+  repo:
+  repo-id:
+  category:
+  category-id:
+  mapping: pathname
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light
+```
+
 ## Search
 
 ### Engine search

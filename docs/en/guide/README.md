@@ -56,6 +56,12 @@ If you want to experience the new version of `hexo-theme-yun`. ([云游君的小
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
+You can use `submodule` to associate your blog with theme repo, instead of uploading themes to your repo.
+
+```bash
+git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
 ### Enable Themes
 
 Modify the Hexo site configuration file `_config.yml`
@@ -124,7 +130,7 @@ You can create a new `load-aplayer.js` file under the `source/js` folder in the 
 Through the `createElement` method, `append` into the `body` container.
 
 ```js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let apContainer = document.createElement("div");
   apContainer.id = "aplayer";
   document.body.append(apContainer);

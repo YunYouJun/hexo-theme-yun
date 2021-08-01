@@ -25,8 +25,8 @@ hexo server
 ::: tip 渲染器
 如果您没有 `pug` 与 `stylus` 的渲染器，请先安装：
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
-（这个是　 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
-或[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
+（这个是 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
+或 [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
 （以及前者尚未支持开发时热更新，后者支持。）
 和 [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
 
@@ -58,6 +58,12 @@ git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 ```sh
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
+您可以采用子模块的方式将博客与主题仓库建立关联，而无需将主题一并上传至仓库。
+
+```bash
+git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 ### 启用主题
@@ -135,7 +141,7 @@ git pull
 通过 `createElement` 的方式，`append` 到 `body` 容器中。
 
 ```js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let apContainer = document.createElement("div");
   apContainer.id = "aplayer";
   document.body.append(apContainer);
