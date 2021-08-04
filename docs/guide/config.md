@@ -932,7 +932,7 @@ types:
 你也可以自己在 `yun.yml` 设置你跳转不同链接专属的图标和颜色。
 
 ```yaml
-type:
+types:
   google:
     color: xxx
     icon: xxx

@@ -925,7 +925,7 @@ types:
 You can also set your icon and color for different links in `yun.yml`.
 
 ```yaml
-type:
+types:
   google:
     color: xxx
     icon: xxx
