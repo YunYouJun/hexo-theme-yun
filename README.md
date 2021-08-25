@@ -215,9 +215,9 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
   <tr align="center">
     <td>
       <a href="http://wasteland.wifikun.top" target="_blank">
-        <img width="80px" src="http://wasteland.wifikun.top/images/avatar.jpg" />
+        <img width="80px" src="https://wifikun-1257416258.cos.ap-shanghai.myqcloud.com/NebulaStarshipServer/avatar.jpg" />
         <br />
-        <sub title="Heaven and earth, my guiding star.">星云荒原</sub>
+        <sub title="✨Chase your passions, do what you love.✨">星云荒原</sub>
       </a>
     </td>
     <td>
