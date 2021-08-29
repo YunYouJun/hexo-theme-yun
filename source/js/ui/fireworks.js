@@ -97,7 +97,7 @@ function createFireworks(
       ")";
     p.radius = anime.random(config.circleRadius.min, config.circleRadius.max);
     p.endPos = setParticuleDirection(p);
-    p.draw = function() {
+    p.draw = function () {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
       ctx.fillStyle = p.color;
@@ -114,7 +114,7 @@ function createFireworks(
     p.radius = 0.1;
     p.alpha = 0.5;
     p.lineWidth = 6;
-    p.draw = function() {
+    p.draw = function () {
       ctx.globalAlpha = p.alpha;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
@@ -192,7 +192,13 @@ function createFireworks(
   );
 
   setCanvasSize(canvasEl);
-  window.addEventListener("resize", setCanvasSize(canvasEl), false);
+  window.addEventListener(
+    "resize",
+    () => {
+      setCanvasSize(canvasEl);
+    },
+    false
+  );
 }
 
 document.addEventListener("DOMContentLoaded", () => {
