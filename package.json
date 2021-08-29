@@ -20,6 +20,7 @@
     "docs"
   ],
   "scripts": {
+    "build": "yarn docs:build",
     "dev": "yarn docs:dev",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
