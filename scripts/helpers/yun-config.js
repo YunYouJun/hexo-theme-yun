@@ -41,6 +41,8 @@ hexo.extend.helper.register("yun_config", function() {
 
   // algolia
   if (theme.algolia_search.enable) {
+    // avoid config.algolia is undefined
+    config.algolia = Object.assign({}, config.algolia)
     exportConfig.algolia = {
       appID:
         process.env.ALGOLIA_APP_ID ||
