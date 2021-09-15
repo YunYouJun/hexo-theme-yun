@@ -25,14 +25,22 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:clean": "rimraf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
-    "generate:demo-sites": "node docs/.vuepress/scripts/index.js"
+    "generate:demo-sites": "esno docs/.vuepress/scripts/index.ts",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.24",
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.24",
-    "@vuepress/plugin-pwa": "^2.0.0-beta.24",
-    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.24",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.24",
-    "vuepress": "^2.0.0-beta.24"
+    "@types/node": "^16.9.1",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.26",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.26",
+    "@vuepress/plugin-pwa": "^2.0.0-beta.26",
+    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.26",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.26",
+    "esno": "^0.9.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "vuepress": "^2.0.0-beta.26"
+  },
+  "lint-staged": {
+    "sites.json": "npm run generate:demo-sites"
   }
 }

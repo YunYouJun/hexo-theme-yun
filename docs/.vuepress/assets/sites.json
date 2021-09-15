@@ -133,7 +133,7 @@
   },
   {
     "name": "喵二の小博客",
-    "url": "https://miaoermua.github.io/",
+    "url": "https://www.miaoer.xyz",
     "avatar": "https://cdn.jsdelivr.net/gh/miaoermua/miaoermua.github.io@latest/logo/weblogo.png",
     "desc": "喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨"
   },
@@ -176,7 +176,7 @@
   {
     "name": "时前进的小站",
     "url": "https://www.eevee.fun/",
-    "avatar": "https://www.eevee.fun/touxiang.jpg",
+    "avatar": "https://www.eevee.fun/touxiang.PNG",
     "desc": "祝家人们天天开心，天天快乐就OK了。"
   },
   {
@@ -190,11 +190,5 @@
     "url": "https://kuuhaku.top",
     "avatar": "https://cdn.jsdelivr.net/gh/kuuhaku-w/blogimg/intro/avatar_ai.png",
     "desc": "永远是深夜该有多好"
-  },
-  {
-    "name": "Adkinsm BLOG",
-    "url": "https://blog.adkimsm.asia/",
-    "avatar": "https://blog.adkimsm.asia/logo.svg",
-    "desc": "Adkinsm 的小站"
   }
 ]

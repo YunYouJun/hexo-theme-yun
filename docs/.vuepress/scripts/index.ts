@@ -1,9 +1,9 @@
-const {
+import {
   injectContentBetweenTags,
   generateDemoSitesTable,
-} = require("./generate-demo");
-const markdown = require("./markdown");
-const sites = require("../assets/sites.json");
+} from "./generate-demo";
+import * as markdown from "./markdown";
+import * as sites from "../assets/sites.json";
 
 const readmeFile = "README.md";
 const content = markdown.read(readmeFile);

@@ -1,9 +1,22 @@
 /**
- * 在标签间插入内容
- * @param {string} content 原内容
- * @param {string} injectedContent 被插入的内容
+ * 站点数据
  */
-function injectContentBetweenTags(content, injectedContent) {
+interface SiteData {
+  name: string;
+  url: string;
+  avatar: string;
+  desc: string;
+}
+
+/**
+ * 在标签间插入内容
+ * @param content 原内容
+ * @param injectedContent 被插入的内容
+ */
+export function injectContentBetweenTags(
+  content: string,
+  injectedContent: string
+) {
   const namespace = "demo-sites";
   const startTag = `<!-- ${namespace}:start -->`;
   const endTag = `<!-- ${namespace}:end -->`;
@@ -27,9 +40,9 @@ function injectContentBetweenTags(content, injectedContent) {
 
 /**
  * 生成 Demo Site 模版
- * @param {Site} site
+ * @param site
  */
-function generateDemoSite(site) {
+export function generateDemoSite(site: SiteData) {
   return `<a href="${site.url}" target="_blank">
         <img width="80px" src="${site.avatar}" />
         <br />
@@ -39,9 +52,9 @@ function generateDemoSite(site) {
 
 /**
  * 生成 Demo Sites 表格
- * @param {Site[]} sites
+ * @param sites
  */
-function generateDemoSitesTable(sites) {
+export function generateDemoSitesTable(sites: SiteData[]) {
   let tableContent = "";
   const numOfRow = 8;
   const totalRows = Math.ceil(sites.length / numOfRow);
@@ -57,8 +70,3 @@ function generateDemoSitesTable(sites) {
   }
   return `<table align="center">${tableContent}\n</table>`;
 }
-
-module.exports = {
-  injectContentBetweenTags,
-  generateDemoSitesTable,
-};
