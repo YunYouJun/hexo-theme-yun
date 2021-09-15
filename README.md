@@ -198,7 +198,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://miaoermua.github.io/" target="_blank">
+      <a href="https://www.miaoer.xyz" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/miaoermua/miaoermua.github.io@latest/logo/weblogo.png" />
         <br />
         <sub title="喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨">喵二の小博客</sub>
@@ -250,7 +250,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
     </td>
     <td>
       <a href="https://www.eevee.fun/" target="_blank">
-        <img width="80px" src="https://www.eevee.fun/touxiang.jpg" />
+        <img width="80px" src="https://www.eevee.fun/touxiang.PNG" />
         <br />
         <sub title="祝家人们天天开心，天天快乐就OK了。">时前进的小站</sub>
       </a>

@@ -41,6 +41,6 @@
     "vuepress": "^2.0.0-beta.26"
   },
   "lint-staged": {
-    "sites.json": "npm run generate:demo-sites"
+    "sites.json": "npm run generate:demo-sites && git add -A"
   }
 }
