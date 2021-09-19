@@ -5,7 +5,7 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
 [![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-1050458482-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi)
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 <p align="center">
