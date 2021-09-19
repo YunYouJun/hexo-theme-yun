@@ -1,19 +1,5 @@
 @import 'reset.styl';
 
-$bg-color = convert(hexo-config('colors.bg'));
-
-:root {
-  --hty-light-color-rgb: 255, 255, 255;
-  --hty-dark-color-rgb: 0, 0, 0;
-  --hty-mode: 'light';
-  --hty-bg-color: $bg-color;
-  --hty-text-color: #333333;
-  --hty-secondary-text-color: #555555;
-  --post-block-bg-color: white;
-  // star-markdown-css
-  --smc-link-color: $colors.primary;
-}
-
 html {
   if (hexo-config('smoothScroll')) {
     scroll-behavior: smooth;
@@ -83,14 +69,5 @@ if (hexo-config('cursor.enable')) {
 
   input {
     cursor: url($cursor-text), auto;
-  }
-}
-
-if (hexo-config('minivaline.enable')) {
-  :root {
-    --ohhho-color-p: var(--hty-text-color) !important;
-    --ohhho-color-text: var(--hty-secondary-text-color) !important;
-    --ohhho-color-card: var(--post-block-bg-color) !important;
-    --ohhho-color-block: var(--hty-bg-color) !important;
   }
 }
