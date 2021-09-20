@@ -26,6 +26,11 @@ if theme.scrollreveal.enable
         ScrollReveal().reveal(target);
       })
     });
+    document.addEventListener("pjax:success", () => {
+      !{JSON.stringify(theme.scrollreveal.targets)}.forEach((target)=> {
+        ScrollReveal().reveal(target);
+      })
+    });
 
 //- math support
 include ./math/index.pug
