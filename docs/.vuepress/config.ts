@@ -67,6 +67,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     editLinks: true,
     smoothScroll: true,
     sidebarDepth: 2,
+    docsBranch: "dev",
 
     locales: {
       "/": {

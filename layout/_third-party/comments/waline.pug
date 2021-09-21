@@ -5,5 +5,6 @@ script.
   Yun.utils.getScript("#{theme.vendors.waline_js}", () => {
     const walineConfig = !{JSON.stringify(theme.waline)}
     walineConfig.path = "#{url_for(page.path)}"
+    walineConfig.dark = 'html[data-user-color-scheme="dark"]'
     new Waline(walineConfig)
   }, window.Waline);

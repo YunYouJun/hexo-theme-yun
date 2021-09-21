@@ -43,11 +43,19 @@ export function injectContentBetweenTags(
  * @param site
  */
 export function generateDemoSite(site: SiteData) {
+  if (!site) {
+    site = {
+      avatar: "https://yun.yunyoujun.cn/yun.svg",
+      url: "https://yun.yunyoujun.cn/demo/",
+      name: "虚位以待",
+      desc: "",
+    };
+  }
   return `<a href="${site.url}" target="_blank">
-        <img width="80px" src="${site.avatar}" />
-        <br />
-        <sub title="${site.desc}">${site.name}</sub>
-      </a>`;
+    <img width="80px" src="${site.avatar}" />
+    <br />
+    <sub title="${site.desc}">${site.name}</sub>
+  </a>`;
 }
 
 /**
