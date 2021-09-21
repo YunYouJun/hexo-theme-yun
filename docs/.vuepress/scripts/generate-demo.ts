@@ -52,10 +52,10 @@ export function generateDemoSite(site: SiteData) {
     };
   }
   return `<a href="${site.url}" target="_blank">
-    <img width="80px" src="${site.avatar}" />
-    <br />
-    <sub title="${site.desc}">${site.name}</sub>
-  </a>`;
+        <img width="80px" src="${site.avatar}" />
+        <br />
+        <sub title="${site.desc}">${site.name}</sub>
+      </a>`;
 }
 
 /**
