@@ -356,24 +356,24 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://yun.yunyoujun.cn/demo/" target="_blank">
-        <img width="80px" src="https://yun.yunyoujun.cn/yun.svg" />
+      <a href="https://qylh.xyz/" target="_blank">
+        <img width="80px" src="https://qylh.xyz/avatar.jpg" />
         <br />
-        <sub title="">虚位以待</sub>
+        <sub title="记录一些学习过程，主要是软硬件开发">七月流火</sub>
       </a>
     </td>
     <td>
-      <a href="https://yun.yunyoujun.cn/demo/" target="_blank">
-        <img width="80px" src="https://yun.yunyoujun.cn/yun.svg" />
+      <a href="https://shihongze001.github.io/" target="_blank">
+        <img width="80px" src="https://shihongze001.github.io/images/lfhsheng.jpg" />
         <br />
-        <sub title="">虚位以待</sub>
+        <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
       </a>
     </td>
     <td>
-      <a href="https://yun.yunyoujun.cn/demo/" target="_blank">
-        <img width="80px" src="https://yun.yunyoujun.cn/yun.svg" />
+      <a href="https://yuumi0221.github.io/" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/Yuumi0221/Yuumi0221.github.io/images/settings/favicon.png" />
         <br />
-        <sub title="">虚位以待</sub>
+        <sub title="いつか伝えに行くよ">Yuumi的烟波之路</sub>
       </a>
     </td>
     <td>

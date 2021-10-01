@@ -61,11 +61,14 @@ export function generateDemoSite(site: SiteData) {
 /**
  * 生成 Demo Sites 表格
  * @param sites
+ * @param maxLength 最大长度
  */
-export function generateDemoSitesTable(sites: SiteData[]) {
+export function generateDemoSitesTable(sites: SiteData[], maxLength = 40) {
+  const length = maxLength < sites.length ? maxLength : sites.length;
+
   let tableContent = "";
   const numOfRow = 8;
-  const totalRows = Math.ceil(sites.length / numOfRow);
+  const totalRows = Math.ceil(length / numOfRow);
   for (let row = 0; row < totalRows; row++) {
     tableContent += `\n  <tr align="center">\n`;
     for (let col = 0; col < numOfRow; col++) {

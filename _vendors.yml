@@ -53,3 +53,4 @@ disqusjs:
   js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
 iconify: https://code.iconify.design/1/1.0.7/iconify.min.js
+busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
