@@ -411,6 +411,9 @@ busuanzi:
 
 基于 LeanCloud 的访问者统计，显示每篇文章的访问量。
 
+> 建议在 `LeanCloud` 新建一个应用，并在应用中新建一个 `Class` 名字为 `Counter` 权限设置为所有用户和无限制。
+> 在应用凭证中复制 `AppID` 和 `AppKey` 并填写站点的url `server_url` (如: https://www.yunyoujun.cn)，置于 `yun.yml` 。
+
 ```yaml
 leancloud_visitors:
   enable: false
