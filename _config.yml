@@ -606,8 +606,8 @@ aplayer:
       type: playlist
 
 mermaid: ## mermaid url https://github.com/knsv/mermaid
-  enable: true  # default true
-  version: "7.1.2" # default v7.1.2
+  enable: false # default true
+  version: "latest" # default v7.1.2
   options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true  # default true
 
