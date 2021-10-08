@@ -265,11 +265,13 @@ random: true
 当你选择了手写，请保证随机友链的格式正确就会出现无法被加载的问题。
 
 模板：
+
 ```json
 [{"url":"<博客url>","avatar":"<头像地址>","name":"<昵称>","blog":"<名字>","desc":"<签名>","color":"<颜色>","email":"<邮箱>"}]
 ```
 
 正确随机友链格式如：
+
 ```json
 [{"url":"https://yunyoujun.cn","avatar":"https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg","name":"云游君","blog":"云游君的小站","desc":"All at sea.","color":"#0078e7"}]
 ```
