@@ -2,7 +2,7 @@ script.
   Yun.utils.getScript("#{theme.vendors.mermaid}", () => {
     const mermaidOptions = !{JSON.stringify(theme.mermaid.options)}
     mermaid.initialize(mermaidOptions);
-  }, window.Valine);
+  }, window.mermaid);
 
 style.
   .mermaid{background: transparent;}
