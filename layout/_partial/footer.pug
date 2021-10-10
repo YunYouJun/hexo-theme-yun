@@ -65,11 +65,3 @@ footer#footer.sidebar-translate
         else
           span=theme.footer.support.title
       span=theme.footer.support.suffix
-  if theme.mermaid.enable == true
-    script(type='text/javascript', id='maid-script' mermaidoptioins=theme.mermaid.options src='https://unpkg.com/mermaid@'+ theme.mermaid.version + '/dist/mermaid.min.js' + '?v=' + theme.version)
-    script.
-      if (window.mermaid) {
-        var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
-        mermaid.initialize(options);
-      }
-

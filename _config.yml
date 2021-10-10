@@ -606,10 +606,11 @@ aplayer:
       type: playlist
 
 mermaid: ## mermaid url https://github.com/knsv/mermaid
-  enable: false # default true
-  version: "latest" # default v7.1.2
+  enable: true # default true
+  version: "latest" # default v7.1.2, not compatible with Yun
   options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
-    startOnload: true  # default true
+    startOnload: true # default true
+  global: true #default true
 
 # special
 mourn:
