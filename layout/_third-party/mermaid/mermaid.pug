@@ -1,8 +1,8 @@
-script(type='text/javascript', id='mermaid-script' mermaidoptioins=theme.mermaid.options src='https://unpkg.com/mermaid@' + theme.mermaid.version + '/dist/mermaid.min.js' + '?vtheme.pjax.enable=' + theme.version)
 script.
-  if (window.mermaid) {
-    const options = JSON.parse(document.getElementById('mermaid-script').getAttribute('mermaidoptioins'));
-    mermaid.initialize(options);
-  }
+  Yun.utils.getScript("#{theme.vendors.mermaid}", () => {
+    const mermaidOptions = !{JSON.stringify(theme.mermaid.options)}
+    mermaid.initialize(mermaidOptions);
+  }, window.Valine);
 
-<style type="text/css">.mermaid{background: transparent;}</style>
+style.
+  .mermaid{background: transparent;}

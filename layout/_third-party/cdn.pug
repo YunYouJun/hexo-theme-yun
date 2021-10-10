@@ -30,6 +30,9 @@ if theme.scrollreveal.enable
 //- math support
 include ./math/index.pug
 
+//- mermaid
+include ./mermaid/index.pug
+
 if theme.aplayer.global
   include ./aplayer.pug
 
@@ -58,6 +61,3 @@ if is_page() || is_post()
 if config.prismjs && config.prismjs.enable
   link(id="light-prism-css", rel="stylesheet", href=theme.vendors.prismjs.themes[theme.codeblock.prismjs.light], media="(prefers-color-scheme: light)")
   link(id="dark-prism-css", rel="stylesheet", href=theme.vendors.prismjs.themes[theme.codeblock.prismjs.dark], media="(prefers-color-scheme: dark)")
-
-//- mermaid
-include ./mermaid/index.pug

@@ -360,6 +360,22 @@ pjax:
   enable: true
 ```
 
+## Mermaid
+
+Mermaid lets you create diagrams and visualizations using text and code.
+
+> Github: <https://github.com/knsv/mermaid>
+
+```yaml
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: false #default true
+```
+
+More info see [Mermaid](https://mermaidjs.github.io/).
+
 ## Other Recommended Plugins
 
 The following plug-in configuration and usage have nothing to do with the theme, you can refer to its documentation configuration yourself.

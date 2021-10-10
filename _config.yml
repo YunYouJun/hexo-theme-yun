@@ -605,12 +605,12 @@ aplayer:
       server: netease
       type: playlist
 
-mermaid: ## mermaid url https://github.com/knsv/mermaid
-  enable: true # default true
-  version: "latest" # default v7.1.2, not compatible with Yun
-  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+# mermaid url https://github.com/knsv/mermaid
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: true #default true
+  global: false #default true
 
 # special
 mourn:
