@@ -90,6 +90,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
 
 如果你已经使用了本主题，欢迎前往 [Demo Sites | 示例站点](https://github.com/YunYouJun/hexo-theme-yun/discussions/97) 留下你的站点，我将会将其添加到下方的示例站点中。
 
+您可以直接为 [docs/.vuepress/assets/sites.json](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/docs/.vuepress/assets/sites.json) 文件创建 PR，以将您的站点作为示例站点。
+
+README 中只会展示前 40 个示例站点，其余站点将会在 [示例站点 | 主题文档](https://yun.yunyoujun.cn/demo/) 中展示。
+
 <!-- demo-sites:start -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -363,8 +367,8 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://shihongze001.github.io/" target="_blank">
-        <img width="80px" src="https://shihongze001.github.io/images/lfhsheng.jpg" />
+      <a href="https://lfhsheng.github.io/" target="_blank">
+        <img width="80px" src="https://lfhsheng.github.io/images/lfhsheng.jpg" />
         <br />
         <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
       </a>
@@ -377,10 +381,10 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://yun.yunyoujun.cn/demo/" target="_blank">
-        <img width="80px" src="https://yun.yunyoujun.cn/yun.svg" />
+      <a href="https://Melanie618.github.io/" target="_blank">
+        <img width="80px" src="https://melanie618.github.io/images/avatar.jpg" />
         <br />
-        <sub title="">虚位以待</sub>
+        <sub title="可可爱爱，没有脑袋">你看起来很好吃</sub>
       </a>
     </td>
   </tr>
