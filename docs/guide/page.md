@@ -67,7 +67,6 @@ description: xxxxxxx
 title: xxx
 icon: icon-women-line
 ---
-
 ```
 
 > 图标效果可见: [Lovely Girls](https://www.yunyoujun.cn/girls/)
@@ -92,7 +91,6 @@ date: 2017-10-09 19:11:58
 comments: false
 type: tags
 ---
-
 ```
 
 你可以在 `yun.yml` 中设置：
@@ -126,7 +124,6 @@ date: 2017-10-12 10:47:16
 comments: false
 type: categories
 ---
-
 ```
 
 ::: tip
@@ -232,7 +229,6 @@ links:
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 ---
-
 ```
 
 让友链显示在侧边栏中 [侧边栏 - 页面链接](/guide/config.html#页面链接)
@@ -259,21 +255,42 @@ comments: true
 links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
 random: true
 ---
-
 ```
 
-当你选择了手写，请保证随机友链的格式正确就会出现无法被加载的问题。
+当您尝试手动自定义 JSON，请保证随机友链的格式正确。
+
+创建一个新的 JSON 文件，如 `source/links.json`。
 
 模板：
 
 ```json
-[{"url":"<博客url>","avatar":"<头像地址>","name":"<昵称>","blog":"<名字>","desc":"<签名>","color":"<颜色>","email":"<邮箱>"}]
+[
+  {
+    "url": "博客链接",
+    "avatar": "头像地址",
+    "name": "作者昵称",
+    "blog": "博客名称",
+    "desc": "描述",
+    "color": "主题色",
+    "email": "电子邮箱（非必需）"
+  }
+]
 ```
 
-正确随机友链格式如：
+例如：
 
 ```json
-[{"url":"https://yunyoujun.cn","avatar":"https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg","name":"云游君","blog":"云游君的小站","desc":"All at sea.","color":"#0078e7"}]
+[
+  {
+    "url": "https://www.yunyoujun.cn",
+    "avatar": "https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg",
+    "name": "云游君",
+    "blog": "云游君的小站",
+    "desc": "All at sea.",
+    "color": "#0078e7",
+    "email": "me@yunyoujun.cn"
+  }
+]
 ```
 
 > 注意：你使用 jsdelivr 可能会因为 CDN 有所延迟。
@@ -312,7 +329,6 @@ girls:
     url: 人物百科链接
     reason: 喜欢的理由
 ---
-
 ```
 
 > 当你不输入 `url` 人物百科链接时，会自动将人物名与[萌娘百科](https://zh.moegirl.org/)前缀拼接以获得人物百科链接。
@@ -364,7 +380,6 @@ albums:
     cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
     desc: 我想起那天夕阳下的奔跑
 ---
-
 ```
 
 ### 相册页
@@ -418,7 +433,6 @@ photos:
     src: https://i.picsum.photos/id/198/510/300.jpg
     desc: 那是我逝去的青春
 ---
-
 ```
 
 > 为什么使用相册集作为 `albums`，`gallery` 作为相册 ？
@@ -452,7 +466,6 @@ slide:
     history: true
     mouseWheel: true
 ---
-
 ```
 
 接着直接在下方用 Markdown 开始编写你的 Slides 文件吧。
