@@ -216,6 +216,42 @@ links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
 random: true
 ```
 
+When you try to customize JSON manually, make sure that the JSON file is formatted correctly.
+
+Create a new JSON file, e.g. `source/links.json`.
+
+Template:
+
+```json
+[
+  {
+    "url": "博客链接",
+    "avatar": "头像地址",
+    "name": "作者昵称",
+    "blog": "博客名称",
+    "desc": "描述",
+    "color": "主题色",
+    "email": "电子邮箱（非必需）"
+  }
+]
+```
+
+Example:
+
+```json
+[
+  {
+    "url": "https://www.yunyoujun.cn",
+    "avatar": "https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg",
+    "name": "云游君",
+    "blog": "云游君的小站",
+    "desc": "All at sea.",
+    "color": "#0078e7",
+    "email": "me@yunyoujun.cn"
+  }
+]
+```
+
 > Note: Using jsdelivr may be delayed due to the CDN.
 > You can also use a custom domain name as I did. <https://friends.yunyoujun.cn/links.json>
 
