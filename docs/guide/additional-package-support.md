@@ -401,6 +401,25 @@ mermaid:
   global: false #default true
 ```
 
+如下所示编写你的 Markdown:
+
+```md
+---
+title: Yun - Mermaid
+mermaid: true
+---
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
+
+> 示例可参考 [Yun - Mermaid](https://www.yunyoujun.cn/yun/mermaid.html)。
+
 More info see [Mermaid](https://mermaidjs.github.io/).
 
 ## 其他可用插件推荐

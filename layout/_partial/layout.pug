@@ -20,6 +20,7 @@ html(lang=config.language)
       title=title
     include ../_third-party/cdn.pug
     include head.pug
+    include extended.pug
     block preconnect
   body(class= is_home() ? 'is-home' : '')
     //- background

@@ -374,6 +374,25 @@ mermaid:
   global: false #default true
 ```
 
+Write markdown as shown below:
+
+```md
+---
+title: Yun - Mermaid
+mermaid: true
+---
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
+
+> Example see [Yun - Mermaid](https://www.yunyoujun.cn/yun/mermaid.html).
+
 More info see [Mermaid](https://mermaidjs.github.io/).
 
 ## Other Recommended Plugins
