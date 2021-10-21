@@ -387,6 +387,41 @@ pjax:
   enable: true
 ```
 
+## Mermaid
+
+Mermaid 允许您使用文本和代码创建图表和可视化。
+
+> Github: <https://github.com/knsv/mermaid>
+
+```yaml
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: false #default true
+```
+
+如下所示编写你的 Markdown:
+
+```md
+---
+title: Yun - Mermaid
+mermaid: true
+---
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
+
+> 示例可参考 [Yun - Mermaid](https://www.yunyoujun.cn/yun/mermaid.html)。
+
+More info see [Mermaid](https://mermaidjs.github.io/).
+
 ## 其他可用插件推荐
 
 以下的插件配置与使用均与主题无关，你可以自行参考其文档配置。

@@ -605,6 +605,13 @@ aplayer:
       server: netease
       type: playlist
 
+# mermaid url https://github.com/knsv/mermaid
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: false #default true
+
 # special
 mourn:
   enable: false

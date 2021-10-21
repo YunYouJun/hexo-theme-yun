@@ -14,6 +14,7 @@ aplayer:
   css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
   js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
   meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 trianglify: https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js
 lightgallery:
   css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css

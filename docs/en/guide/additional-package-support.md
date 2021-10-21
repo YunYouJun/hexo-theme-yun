@@ -360,6 +360,41 @@ pjax:
   enable: true
 ```
 
+## Mermaid
+
+Mermaid lets you create diagrams and visualizations using text and code.
+
+> Github: <https://github.com/knsv/mermaid>
+
+```yaml
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: false #default true
+```
+
+Write markdown as shown below:
+
+```md
+---
+title: Yun - Mermaid
+mermaid: true
+---
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
+
+> Example see [Yun - Mermaid](https://www.yunyoujun.cn/yun/mermaid.html).
+
+More info see [Mermaid](https://mermaidjs.github.io/).
+
 ## Other Recommended Plugins
 
 The following plug-in configuration and usage have nothing to do with the theme, you can refer to its documentation configuration yourself.

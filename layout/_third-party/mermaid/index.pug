@@ -1,0 +1,9 @@
+//- 首页是否加载
+- var is_index_has_mermaid = false
+if is_home() && theme.global
+  for post in page.posts.toArray()
+    if post.mermaid && !is_index_has_mermaid
+      - is_index_has_mermaid = true
+
+if theme.mermaid.global || page.mermaid || (!theme.mermaid.global && is_index_has_mermaid)
+  include ./mermaid.pug
