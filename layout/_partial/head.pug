@@ -1,9 +1,9 @@
-- var favicon = config.favicon || theme.favicon || '/favicon.ico'
 //- favicon
-link(rel='icon', href=url_for(favicon))
+- var favicon = config.favicon || theme.favicon || '/favicon.ico'
+- var faviconType = 'image/' + (favicon.endsWith('.svg') ? 'svg+xml' : 'png')
+link(rel='icon', type=faviconType, href=url_for(favicon))
 //- Safari
 link(rel="mask-icon", href=url_for(favicon), color=theme.colors.primary)
-link(rel="alternate icon", href=url_for("/yun.ico"))
 
 //- not use cdn.pre in dev
 if process.env.NODE_ENV === 'development'
