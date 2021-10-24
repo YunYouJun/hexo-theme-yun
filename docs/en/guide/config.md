@@ -215,12 +215,14 @@ cdn:
 ::: tip
 If you customize the resources used by the theme and want to preview and debug locally more conveniently,
 
-you can add `" dev ":" export NODE_ENV=development && hexo s "` in the `scripts` field of `package.json` in the Hexo working directory.
+you can add `"dev": "cross-env NODE_ENV=development && hexo s"` in the `scripts` field of `package.json` in the Hexo working directory.
+
+And `npm install cross-env`. See [cross-env](https://www.npmjs.com/package/cross-env).
 
 ```json
 {
   "scripts": {
-    "dev": "export NODE_ENV=development &&hexo s"
+    "dev": "cross-env NODE_ENV=development &&hexo s"
   }
 }
 ```

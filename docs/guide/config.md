@@ -218,12 +218,14 @@ cdn:
 ::: tip
 如果你自己对主题使用到的资源进行了自定义，并想要更方便地在本地预览调试。
 
-你可以在 Hexo 的工作目录下 `package.json` 中 `scripts` 字段添加 `"dev": "export NODE_ENV=development && hexo s"`。
+你可以在 Hexo 的工作目录下 `package.json` 中 `scripts` 字段添加 `"dev": "cross-env NODE_ENV=development && hexo s"`。
+
+并安装 [cross-env](https://www.npmjs.com/package/cross-env)，`npm install cross-env`。
 
 ```json
 {
   "scripts": {
-    "dev": "export NODE_ENV=development && hexo s"
+    "dev": "cross-env NODE_ENV=development && hexo s"
   }
 }
 ```
