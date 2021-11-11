@@ -47,8 +47,3 @@ function fetchApiToSay() {
       });
   }
 }
-
-document.addEventListener("DOMContentLoaded", fetchApiToSay);
-document.addEventListener("pjax:success", () => {
-  Yun.utils.isHome() ? fetchApiToSay() : null;
-});
