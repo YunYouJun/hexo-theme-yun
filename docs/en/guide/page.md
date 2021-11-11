@@ -63,7 +63,6 @@ date: 2017-10-09 19:11:58
 comments: false
 type: tags
 ---
-
 ```
 
 ## Categories
@@ -85,7 +84,6 @@ date: 2017-10-12 10:47:16
 comments: false
 type: categories
 ---
-
 ```
 
 ::: tip
@@ -189,7 +187,6 @@ links:
 placeholder: I haven't thought about what to say # The default description of YouChain
 tip: Friendchain loading in progress ~ If it fails, please refresh and try again ~
 ---
-
 ```
 
 Let the friend chain display on the sidebar [sidebar-page link](/guide/config.html#pagelink)
@@ -288,7 +285,6 @@ girls:
     url: character encyclopedia link
     reason: the reason for crushing
 ---
-
 ```
 
 Please refer to my [configuration](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md).
@@ -323,8 +319,8 @@ hexo new page albums
 Enter `source/albums/index.md`, set `type`, and add album link, cover, etc.
 
 - `caption`: album title
-- url`: album link`
-- cover`: album cover`
+- `url`: album link
+- `cover`: album cover (Use the link form that begins with 'http' or 'https')
 - `desc`: album description
 
 ```yaml {2}
@@ -336,7 +332,6 @@ albums:
     cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
     desc: 我想起那天夕阳下的奔跑
 ---
-
 ```
 
 ### Gallery
@@ -390,7 +385,6 @@ photos:
     src: https://i.picsum.photos/id/198/510/300.jpg
     desc: That is my lost youth
 ---
-
 ```
 
 > Why use album collection as `albums` and `gallery` as album?
@@ -424,7 +418,6 @@ slide:
     history: true
     mouseWheel: true
 ---
-
 ```
 
 Then start writing your Slides file with Markdown directly below.
