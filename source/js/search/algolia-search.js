@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
           let stats = CONFIG.i18n.hits_time
             .replace(/\$\{hits}/, data.nbHits)
             .replace(/\$\{time}/, data.processingTimeMS);
-          return `${stats}
+          return `<span>${stats}</span>
             <span class="algolia-powered">
-              <img src="https://algolia.com/icons/icon-48x48.png" alt="Algolia">
+              <a href="https://www.algolia.com/" target="_blank"><img src="https://simpleicons.org/icons/algolia.svg" alt="Algolia"></a>
             </span>
             <hr>`;
         },
@@ -75,12 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
       templates: {
         first:
           '<svg class="icon"><use xlink:href="#icon-arrow-left-line"></use></svg>',
-        last:
-          '<svg class="icon"><use xlink:href="#icon-arrow-right-line"></use></svg>',
+        last: '<svg class="icon"><use xlink:href="#icon-arrow-right-line"></use></svg>',
         previous:
           '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
-        next:
-          '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
+        next: '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
       },
       cssClasses: {
         root: "pagination",
