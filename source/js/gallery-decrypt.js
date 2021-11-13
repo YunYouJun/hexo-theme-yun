@@ -16,10 +16,7 @@ function decryptAll() {
   if (password) {
     const photos = document.querySelectorAll(".photo-list-item");
     const testSrc = decrypt(photos[0].dataset.src, password);
-    const objExp = new RegExp(
-      /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/
-    );
-    if (objExp.test(testSrc)) {
+    if (testSrc.startsWith("http") || testSrc.startsWith("/")) {
       decryptContainer.style.display = "none";
       lightgallery.style.display = "flex";
       photos.forEach((photo) => {

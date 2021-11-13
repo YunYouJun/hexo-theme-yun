@@ -320,7 +320,7 @@ Enter `source/albums/index.md`, set `type`, and add album link, cover, etc.
 
 - `caption`: album title
 - `url`: album link
-- `cover`: album cover (Use the link form that begins with 'http' or 'https')
+- `cover`: album cover (It's better to use the link form that begins with `http` or `https`)
 - `desc`: album description
 
 ```yaml {2}

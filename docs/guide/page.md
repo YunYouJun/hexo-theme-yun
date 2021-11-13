@@ -368,7 +368,7 @@ hexo new page albums
 
 - `caption`: 相册标题
 - `url`: 相册链接
-- `cover`: 相册封面（请使用 `http` 或 `https` 开头的链接形式）
+- `cover`: 相册封面（最好使用 `http` 或 `https` 开头的链接形式）
 - `desc`: 相册描述
 
 ```yaml {2}
