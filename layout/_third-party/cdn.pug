@@ -18,6 +18,11 @@ if theme.cdn.js.defer
   each item in theme.cdn.js.defer
     script(src=item, defer)
 
+//- try unocss
+//- https://github.com/antfu/unocss/tree/main/packages/runtime
+//- have bug with runtime https://github.com/antfu/unocss/issues/135
+//- script(src=theme.vendors.unocss.runtime)
+
 if theme.scrollreveal.enable
   script(src=theme.vendors.scrollreveal, defer)
   script.

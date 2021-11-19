@@ -55,3 +55,8 @@ disqusjs:
 twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
 iconify: https://code.iconify.design/1/1.0.7/iconify.min.js
 busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+unocss:
+  runtime: https://unpkg.com/@unocss/runtime
+  core: https://unpkg.com/@unocss/runtime/core.global.js
+  uno: https://unpkg.com/@unocss/runtime/uno.global.js
+  attributify: https://unpkg.com/@unocss/runtime/attributify.global.js
