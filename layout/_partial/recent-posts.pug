@@ -1,7 +1,7 @@
 section#recent-posts(class="flex flex-col")
   each post in page.posts.data
     if !post.hide
-      article.post-card(itemscope, itemtype='https://schema.org/Article')
+      article.post-card(class="w-full", itemscope, itemtype='https://schema.org/Article')
         include ../_partial/post/post-schema.pug
         if post.top || post.sticky
           .post-top-icon
