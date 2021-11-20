@@ -8,6 +8,14 @@ if (hexo-config('minivaline.enable')) {
   }
 }
 
+// waline
+if (hexo-config('waline.enable')) {
+  #waline {
+    --waline-theme-color: $colors.primary;
+    --waline-active-color: rgba($colors.primary, 0.8);
+  }
+}
+
 #comment {
   margin: 0 1rem;
   padding: 1rem;
