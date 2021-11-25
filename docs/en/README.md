@@ -3,8 +3,9 @@ home: true
 heroImage: /logo.gif
 heroText: hexo-theme-yun
 tagline: A light & fast & lovely theme for Hexo.
-actionText: Quick Start →
-actionLink: /en/guide/
+actions:
+  - text: Quick Start →
+  - link: /en/guide/
 features:
   - title: Simple
     details: Simple, elegant and responsive UI.
