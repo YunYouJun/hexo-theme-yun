@@ -258,7 +258,7 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://www.miaoer.xyz" target="_blank">
+      <a href="https://blog.miaoer.xyz" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/miaoermua/miaoermua.github.io@latest/logo/weblogo.png" />
         <br />
         <sub title="喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨">喵二の小博客</sub>
