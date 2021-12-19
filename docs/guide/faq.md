@@ -3,7 +3,8 @@
 ::: tip
 
 - <Badge text="dev" vertical="middle"/> 代表只和开发有关。
-  :::
+
+:::
 
 有任何关于本主题的缺陷报告与功能建议，欢迎发起 [Issues](https://github.com/YunYouJun/hexo-theme-yun/issues)。
 

@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "build": "vitepress build .",
     "dev": "vitepress dev . --host"
   },
   "devDependencies": {

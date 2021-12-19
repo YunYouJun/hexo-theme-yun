@@ -1,5 +1,7 @@
 <template>
-  <div class="toast" id="toast">复制成功</div>
+  <div class="toast" id="toast">
+    <slot />
+  </div>
 </template>
 
 <style lang="scss">

@@ -14,7 +14,7 @@
 icon: icon-github-line
 ```
 
-## 辅助图标
+<!-- ## 辅助图标
 
 > 通用的 UI 辅助图标
 
@@ -30,8 +30,8 @@ icon: icon-github-line
 
 <display-icon v-for="logo in icons.logos" :icon="logo"></display-icon>
 
-<CustomToast />
+<CustomToast>复制成功</CustomToast>
 
 <script setup>
-import icons from "~/assets/icons"
-</script>
+import icons from "../.vitepress/assets/icons"
+</script> -->

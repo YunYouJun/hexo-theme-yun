@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import DemoSite from "./DemoSite.vue";
-import sites from "~/assets/sites.json";
+import sites from "../../assets/sites.json";
 
 import {ref} from 'vue'
 

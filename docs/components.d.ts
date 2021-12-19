@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Badge: typeof import('./.vitepress/theme/components/Badge.vue')['default']
     CustomToast: typeof import('./.vitepress/theme/components/CustomToast.vue')['default']
     DemoSite: typeof import('./.vitepress/theme/components/DemoSite.vue')['default']
     DemoSites: typeof import('./.vitepress/theme/components/DemoSites.vue')['default']

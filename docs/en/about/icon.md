@@ -30,28 +30,8 @@ icon: icon-github-line
 
 <display-icon v-for="logo in icons.logos" :icon="logo"></display-icon>
 
-<div class="toast" id="toast">
-  Copy Sucessfully.
-</div>
+<CustomToast>Copy Sucessfully.</CustomToast>
 
 <script setup>
-import icons from "~/assets/icons"
+import icons from "../../.vitepress/assets/icons"
 </script>
-
-<style lang="scss">
-.toast {
-  position: fixed;
-  top: 5rem;
-  color: white;
-  background-color: #4CAF50;
-  border-radius: 2rem;
-  padding: 0.5rem 2rem;
-  box-shadow: 0 0 0.2rem #4CAF50;
-  transition: 0.4s;
-  opacity: 0;
-
-  &.show {
-    opacity: 1;
-  }
-}
-</style>
