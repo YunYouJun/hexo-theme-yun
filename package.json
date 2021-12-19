@@ -40,6 +40,6 @@
     "sites.json": "npm run generate:demo-sites"
   },
   "dependencies": {
-    "vitepress-theme-you": "^0.0.12"
+    "vitepress-theme-you": "^0.0.13"
   }
 }
