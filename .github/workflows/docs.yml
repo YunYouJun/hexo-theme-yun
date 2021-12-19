@@ -23,8 +23,8 @@ jobs:
             -H 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
             -d '{"event_type":"on-demand-test"}'
 
-      - run: yarn install
-      - run: yarn docs:build
+      - run: npm i -g pnpm && pnpm i
+      - run: pnpm docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
