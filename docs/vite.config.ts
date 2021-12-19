@@ -1,6 +1,6 @@
 import path from "path";
 import Components from "unplugin-vue-components/vite";
-import { defaultConfig } from "./node_modules/vitepress-theme-you/config";
+import { defaultConfig } from "./node_modules/vitepress-theme-you/src/config";
 
 import type { UserConfig } from "vite";
 

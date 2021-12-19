@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@iconify-json/ri": "^1.0.2",
-    "vitepress-theme-you": "^0.0.12"
+    "vitepress-theme-you": "^0.0.16"
   }
 }
