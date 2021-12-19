@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "12.x"
+          node-version: "14.x"
 
       - name: trigger yunyoujun.github.io
         run: |
@@ -24,7 +24,7 @@ jobs:
             -d '{"event_type":"on-demand-test"}'
 
       - run: npm i -g pnpm && pnpm i
-      - run: pnpm docs:build
+      - run: pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
