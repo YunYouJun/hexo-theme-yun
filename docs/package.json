@@ -7,6 +7,7 @@
   "devDependencies": {
     "sass": "^1.45.0",
     "unplugin-vue-components": "^0.17.9",
+    "vite-plugin-pwa": "^0.11.12",
     "vitepress": "^0.20.9"
   },
   "dependencies": {
