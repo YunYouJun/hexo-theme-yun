@@ -8,18 +8,11 @@
   </table>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import DemoSite from "./DemoSite.vue";
 import sites from "~/assets/sites.json";
-export default {
-  components: {
-    DemoSite,
-  },
-  data() {
-    return {
-      sites,
-      numOfRow: 8,
-    };
-  },
-};
+
+import {ref} from 'vue'
+
+const numOfRow = ref(8)
 </script>

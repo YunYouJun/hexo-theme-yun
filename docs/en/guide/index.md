@@ -4,7 +4,7 @@ This is a Hexo theme. Please make sure you acknowledge the basic usage of Hexo.
 
 You can also refer to the newbie tutorial I wrote [Tutorial on how to build your website from scratch-Yunyoujun's small station](https://www.yunyoujun.cn/share/how-to-build-your-site/).
 
-```sh
+```bash
 npm install hexo-cli -g
 hexo init your-blog
 cd your-blog
@@ -28,7 +28,7 @@ Or [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
 (The former one does not support frequently update during development, but the latter does.)
 And [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
 
-```sh
+```bash
 npm install hexo-render-pug hexo-renderer-stylus --save
 # or
 yarn add hexo-render-pug hexo-renderer-stylus
@@ -40,19 +40,19 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 Go to the root directory of your Hexo blog. Clone or download the `hexo-theme-yun` theme, and place it under `themes/yun`.
 
-```sh
+```bash
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 > If you are using continuous integration and wanting to build a stable version each time, you can first fork this project and then clone your fork project.
 >
-> ```sh
+> ```bash
 > git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
 > ```
 
 If you want to experience the new version of `hexo-theme-yun`. ([云游君的小站](https://www.yunyoujun.cn) will always use the latest version as an example.)
 
-```sh
+```bash
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
@@ -66,7 +66,7 @@ git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 Modify the Hexo site configuration file `_config.yml`
 
-```sh
+```bash
 # Set the theme to hexo-theme-yun
 theme: yun
 ```
@@ -102,7 +102,7 @@ avatar:
 
 If you are configuring in `yun.yml`, you only need to enter the following command in the Hexo working path:
 
-```sh
+```bash
 cd themes/yun
 git pull
 ```

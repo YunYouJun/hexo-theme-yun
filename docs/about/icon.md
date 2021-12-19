@@ -18,47 +18,20 @@ icon: icon-github-line
 
 > 通用的 UI 辅助图标
 
-<display-icon v-for="aria in arias" :icon="aria"></display-icon>
+<display-icon v-for="aria in icons.arias" :icon="aria"></display-icon>
 
 ## 表意图标
 
 > 通常有现实中对应物体
 
-<display-icon v-for="object in objects" :icon="object"></display-icon>
+<display-icon v-for="object in icons.objects" :icon="object"></display-icon>
 
 ## LOGO
 
-<display-icon v-for="logo in logos" :icon="logo"></display-icon>
+<display-icon v-for="logo in icons.logos" :icon="logo"></display-icon>
 
-<div class="toast" id="toast">
-  复制成功
-</div>
+<CustomToast />
 
-<script>
-import icons from "~/assets/icons.json"
-export default {
-  data() {
-    return {
-      ...icons
-    }
-  }
-}
+<script setup>
+import icons from "~/assets/icons"
 </script>
-
-<style lang="scss">
-.toast {
-  position: fixed;
-  top: 5rem;
-  color: white;
-  background-color: #4CAF50;
-  border-radius: 2rem;
-  padding: 0.5rem 2rem;
-  box-shadow: 0 0 0.2rem #4CAF50;
-  transition: 0.4s;
-  opacity: 0;
-
-  &.show {
-    opacity: 1;
-  }
-}
-</style>

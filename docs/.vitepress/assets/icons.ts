@@ -1,5 +1,5 @@
-{
-  "arias": [
+export const icons = {
+  arias: [
     "arrow-up-s-line",
     "arrow-down-s-line",
     "arrow-left-s-line",
@@ -21,9 +21,9 @@
     "questionnaire-line",
     "search-line",
     "settings-line",
-    "share-line"
+    "share-line",
   ],
-  "objects": [
+  objects: [
     "archive-line",
     "book-2-line",
     "calendar-2-line",
@@ -53,9 +53,9 @@
     "calendar-line",
     "time-line",
     "timer-line",
-    "train-line"
+    "train-line",
   ],
-  "logos": [
+  logos: [
     "alipay-line",
     "bilibili-line",
     "douban-line",
@@ -80,6 +80,8 @@
     "creative-commons-nc-line",
     "creative-commons-nd-line",
     "creative-commons-sa-line",
-    "creative-commons-zero-line"
-  ]
-}
+    "creative-commons-zero-line",
+  ],
+};
+
+export default icons;

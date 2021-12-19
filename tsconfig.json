@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "types": ["@vuepress/client/types"],
     "paths": {
-      "~/*": ["docs/.vuepress/*"]
+      "~/*": ["docs/.vitepress/*"]
     },
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "docs/.vuepress/**/*"
-  ]
+  "include": ["docs/.vitepress/**/*"]
 }

@@ -1,6 +1,6 @@
 # Assets
 
-- [icons.json](./icons.json): 图标列表
+- [icons.json](./icons.ts): 图标列表
 
 ## 示例站点
 

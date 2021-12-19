@@ -4,7 +4,7 @@
 
 你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
 
-```sh
+```bash
 npm install hexo-cli -g
 hexo init your-blog
 cd your-blog
@@ -30,7 +30,7 @@ hexo server
 （以及前者尚未支持开发时热更新，后者支持。）
 和 [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
 
-```sh
+```bash
 npm install hexo-render-pug hexo-renderer-stylus --save
 # or
 yarn add hexo-render-pug hexo-renderer-stylus
@@ -44,19 +44,19 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 > 你也可以考虑加上 `--depth 1` 的参数来只克隆当前版本（体积更小，速度更快）。
 
-```sh
+```bash
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 > 如果你使用了持续集成，并希望每次构建的版本保持稳定。你可以 fork 本项目，然后克隆你 fork 的项目。
 >
-> ```sh
+> ```bash
 > git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
 > ```
 
 如果你想体验新版 `hexo-theme-yun`。（[云游君的小站](https://www.yunyoujun.cn) 将始终使用最新版作为示例。）
 
-```sh
+```bash
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
@@ -70,7 +70,7 @@ git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 修改 Hexo 站点配置文件 `_config.yml`
 
-```sh
+```bash
 # 将主题设置为 hexo-theme-yun
 theme: yun
 ```
@@ -109,7 +109,7 @@ avatar:
 
 如果您是在 `yun.yml` 中进行配置，那么仅需在 Hexo 工作路径中输入以下命令：
 
-```sh
+```bash
 cd themes/yun
 git pull
 ```
@@ -304,7 +304,7 @@ RUN     set -xe \
 启动容器后您可以继续按照文档的指示来配置您的博客，
 配置完毕后可以执行下列命令来进行测试和部署等操作。
 
-```sh
+```bash
 # 启动测试服务器并可以在 http://localhost:4000 查看测试效果
 docker exec hexo npx hexo s
 

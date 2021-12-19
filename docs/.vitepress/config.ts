@@ -1,49 +1,15 @@
+import type { UserConfig } from "vitepress";
+
 import path from "path";
-import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
 
 import * as navbar from "./configs/navbar";
 import * as sidebar from "./configs/sidebar";
 
-export default defineUserConfig<DefaultThemeOptions>({
-  alias: {
-    "~": path.resolve(__dirname, "."),
-  },
+import { head } from "./configs/head";
 
-  head: [
-    ["link", { rel: "icon", href: "/yun.svg" }],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
-    ["meta", { name: "theme-color", content: "#6200ee" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "#6200ee" },
-    ],
-    ["link", { rel: "apple-touch-icon", href: "/logo.png" }],
-    [
-      "link",
-      {
-        rel: "mask-icon",
-        href: "/logo.png",
-        color: "#6200ee",
-      },
-    ],
-    [
-      "meta",
-      {
-        name: "msapplication-TileImage",
-        content: "/logo.png",
-      },
-    ],
-    ["meta", { name: "msapplication-TileColor", content: "#6200ee" }],
-    [
-      "script",
-      {
-        async: true,
-        src: "//at.alicdn.com/t/font_1140697_dxory92pb0h.js",
-      },
-    ],
-  ],
+const config: UserConfig = {
+  // @ts-ignore
+  head,
 
   title: "Hexo-Theme-Yun",
   locales: {
@@ -59,7 +25,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   themeConfig: {
-    logo: "/yun.svg",
+    iconClass: "i-ri-cloud-line",
     nextLinks: true,
     prevLinks: true,
     repo: "YunYouJun/hexo-theme-yun",
@@ -131,4 +97,6 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
     ],
   ],
-});
+};
+
+export default config;

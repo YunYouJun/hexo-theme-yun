@@ -79,7 +79,7 @@ icon: icon-women-line
 
 新建 `tags` 页面，在博客根目录下输入：
 
-```sh
+```bash
 hexo new page tags
 ```
 
@@ -112,7 +112,7 @@ wordcloud:
 
 新建 `categories` 页面，在博客根目录下输入：
 
-```sh
+```bash
 hexo new page categories
 ```
 
@@ -152,7 +152,7 @@ Hexo 默认支持
 
 你需要新建好你的关于页面。
 
-```sh
+```bash
 hexo new page about
 ```
 
@@ -193,7 +193,7 @@ Example: <https://www.yunyoujun.cn/404.html>
 
 新建友链页面
 
-```sh
+```bash
 hexo new page links
 ```
 
@@ -311,7 +311,7 @@ girls:
   enable: true
 ```
 
-```sh
+```bash
 hexo new page girls
 ```
 
@@ -360,7 +360,7 @@ albums:
 
 新建相册集页面
 
-```sh
+```bash
 hexo new page albums
 ```
 
@@ -396,7 +396,7 @@ albums:
 
 或通过命令行新建：
 
-```sh
+```bash
 hexo new page --path albums/sunset "夕阳"
 ```
 
@@ -448,7 +448,7 @@ photos:
 
 或者命令：
 
-```sh
+```bash
 hexo new page --path slides/test "测试 Slides"
 ```
 

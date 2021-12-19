@@ -50,7 +50,7 @@ If you have not installed `hexo-generator-tag`, please enter `npm install hexo-g
 
 Create a new `tags` page, and enter the following in the root directory of the blog:
 
-```sh
+```bash
 hexo new page tags
 ```
 
@@ -71,7 +71,7 @@ If you have not installed `hexo-generator-category`, please enter `npm install h
 
 Create a new `categories` page, and enter the following in the root directory of the blog:
 
-```sh
+```bash
 hexo new page categories
 ```
 
@@ -112,7 +112,7 @@ Click on your avatar or name will enter the about page by default.
 
 You will need to create your about page.
 
-```sh
+```bash
 hexo new page about
 ```
 
@@ -151,7 +151,7 @@ You can also directly visit `/404.html` to see the effect locally.
 
 New Friends Link Page
 
-```sh
+```bash
 hexo new page links
 ```
 
@@ -267,7 +267,7 @@ girls:
   enable: true
 ```
 
-```sh
+```bash
 hexo new page girls
 ```
 
@@ -312,7 +312,7 @@ The album collection is the navigation page of the album, you can place multiple
 
 New page for albums:
 
-```sh
+```bash
 hexo new page albums
 ```
 
@@ -348,7 +348,7 @@ You just need to create the md file in the newly created albums folder above, fo
 
 Or create new via command line:
 
-```sh
+```bash
 hexo new page --path albums/sunset "夕阳"
 ```
 
@@ -400,7 +400,7 @@ Create a new `slides/test.md` under `source`.
 
 Or command:
 
-```sh
+```bash
 hexo new page --path slides/test "Test Slides"
 ```
 

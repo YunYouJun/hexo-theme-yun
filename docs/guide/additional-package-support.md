@@ -8,7 +8,7 @@
 
 安装 [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
-```sh
+```bash
 npm install hexo-wordcount
 # or
 # yarn add hexo-wordcount
@@ -30,7 +30,7 @@ wordcount:
 
 安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)。
 
-```sh
+```bash
 npm install hexo-generator-feed --save
 ```
 
@@ -88,7 +88,7 @@ sticky: 2
 
 安装 [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
-```sh
+```bash
 npm install --save hexo-helper-live2d
 ```
 
@@ -168,7 +168,7 @@ wordcloud:
 
 安装 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
-```sh
+```bash
 npm install hexo-tag-aplayer
 ```
 
@@ -201,7 +201,6 @@ aplayer:
 title: xxx
 aplayer: true
 ---
-
 ```
 
 :::
@@ -342,9 +341,7 @@ $E = mc^2$
 譬如：
 
 ```html
-<div>
-  \[ E = mc^2 \]
-</div>
+<div>\[ E = mc^2 \]</div>
 ```
 
 :::

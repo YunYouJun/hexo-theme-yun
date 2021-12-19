@@ -9,7 +9,7 @@
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 <p align="center">
-  <img width="128" src="docs/.vuepress/public/logo.gif">
+  <img width="128" src="docs/public/logo.gif">
 </p>
 
 > A light & fast & lovely hexo theme.
@@ -25,19 +25,19 @@
 - Docs for `dev`: <https://yun.yunyoujun.cn>
 - Docs for `master`: <https://hexo-theme-yun.vercel.app/>
 
-![index-preview.jpg](./docs/.vuepress/public/images/index-preview.jpg)
+![index-preview.jpg](./docs/public/images/index-preview.jpg)
 
 ## Install
 
 In your hexo folder:
 
-```sh
+```bash
 git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 If you don't have jade & stylus renderer:
 
-```sh
+```bash
 npm install hexo-render-pug hexo-renderer-stylus
 ```
 
@@ -56,7 +56,7 @@ More info [here](https://yun.yunyoujun.cn/guide/config.html).
 
 You just need to execute:
 
-```sh
+```bash
 cd themes/yun
 git pull
 ```
@@ -90,7 +90,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
 
 如果你已经使用了本主题，欢迎前往 [Demo Sites | 示例站点](https://github.com/YunYouJun/hexo-theme-yun/discussions/97) 留下你的站点，我将会将其添加到下方的示例站点中。
 
-您可以直接为 [docs/.vuepress/assets/sites.json](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/docs/.vuepress/assets/sites.json) 文件创建 PR，以将您的站点作为示例站点。
+您可以直接为 [docs/.vitepress/assets/sites.json](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/docs/.vitepress/assets/sites.json) 文件创建 PR，以将您的站点作为示例站点。
 
 README 中只会展示前 40 个示例站点，其余站点将会在 [示例站点 | 主题文档](https://yun.yunyoujun.cn/demo/) 中展示。
 

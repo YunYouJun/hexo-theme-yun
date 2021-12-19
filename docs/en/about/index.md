@@ -79,20 +79,17 @@ Previously, I wandered between the choice of bright and dark themes, so I though
 - [RemixIcon](https://github.com/Remix-Design/remixicon)
 - [iconfont](https://www.iconfont.cn/)
 - [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js/)
-- [VuePress](https://github.com/vuejs/vuepress)
+- [VitePress](https://github.com/vuejs/vitepress)
 - [KaTeX](https://github.com/KaTeX/KaTeX)
 - [Pjax](https://github.com/MoOx/pjax)
 
 ### Theme
 
--[hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
--[hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
--[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)
+-[hexo-theme-next](https://github.com/theme-next/hexo-theme-next) -[hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) -[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)
 
 ### PV
 
--[[Luo Tianyi original] The strange storm center [Sugita Lang]](https://www.bilibili.com/video/av4018008)
--[[Luo Tianyi Original] Starry Time][Sugita Lang]](https://www.bilibili.com/video/av7036967)
+-[[Luo Tianyi original] The strange storm center [Sugita Lang]](https://www.bilibili.com/video/av4018008) -[[Luo Tianyi Original] Starry Time][Sugita Lang]](https://www.bilibili.com/video/av7036967)
 
 ### Article
 

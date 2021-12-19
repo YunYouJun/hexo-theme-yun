@@ -6,7 +6,7 @@ The difference with third-party support is that most of the functions here are i
 
 Install [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
-```sh
+```bash
 npm install hexo-wordcount
 # or
 # yarn add hexo-wordcount
@@ -28,7 +28,7 @@ wordcount:
 
 Install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
 
-```sh
+```bash
 npm install hexo-generator-feed --save
 ```
 
@@ -76,7 +76,7 @@ The reason it appears here is to illustrate the recommended settings (in short, 
 
 Install [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
 
-```sh
+```bash
 npm install --save hexo-helper-live2d
 ```
 
@@ -125,7 +125,7 @@ Config in `yun.yml, use colorful word cloud instead of native tag cloud.
 
 Install [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
-```sh
+```bash
 npm install hexo-tag-aplayer
 ```
 
@@ -158,7 +158,6 @@ Then decide whether to enable `aplayer` at the head of the article:
 title: xxx
 aplayer: true
 ---
-
 ```
 
 You can also set it globally in `yun.yml`. (When you set up a global player, you can use it.)
@@ -302,9 +301,7 @@ If you have too many characters that need to be translated, you can directly wra
 For example:
 
 ```html
-<div>
-  \[E = mc ^ 2 \]
-</div>
+<div>\[E = mc ^ 2 \]</div>
 ```
 
 :::

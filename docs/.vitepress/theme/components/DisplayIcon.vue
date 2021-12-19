@@ -9,28 +9,25 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts" setup>
+const props = withDefaults(
+  defineProps<{
+    icon: string;
+  }>(),
+  {
+    icon: "",
+  }
+);
 
-export default defineComponent({
-  props: {
-    icon: {
-      type: String,
-      default: "",
-    },
-  },
-  methods: {
-    copyIcon() {
-      navigator.clipboard.writeText('icon-' + this.icon);
+const copyIcon = () => {
+  navigator.clipboard.writeText("icon-" + props.icon);
 
-      const toast = document.getElementById('toast')
-      toast.classList.add("show");
-      setTimeout(() => {
-        toast.classList.remove("show");
-      }, 3000);
-    },
-  },
-});
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+};
 </script>
 
 <style lang="scss">
@@ -52,6 +49,7 @@ export default defineComponent({
     background-color: black;
   }
 }
+
 .iconfont {
   width: 2rem;
   height: 2rem;

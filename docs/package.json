@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev . --host"
+  },
+  "devDependencies": {
+    "sass": "^1.45.0",
+    "unplugin-vue-components": "^0.17.9",
+    "vitepress": "^0.20.9"
+  },
+  "dependencies": {
+    "@iconify-json/ri": "^1.0.2",
+    "vitepress-theme-you": "^0.0.12"
+  }
+}

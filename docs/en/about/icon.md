@@ -18,31 +18,24 @@ icon: icon-github-line
 
 > Universal UI auxiliary icons
 
-<display-icon v-for="aria in arias" :icon="aria"></display-icon>
+<display-icon v-for="aria in icons.arias" :icon="aria"></display-icon>
 
 ## Ideogram icon
 
 > Usually there are corresponding objects in reality
 
-<display-icon v-for="object in objects" :icon="object"></display-icon>
+<display-icon v-for="object in icons.objects" :icon="object"></display-icon>
 
 ## LOGO
 
-<display-icon v-for="logo in logos" :icon="logo"></display-icon>
+<display-icon v-for="logo in icons.logos" :icon="logo"></display-icon>
 
 <div class="toast" id="toast">
   Copy Sucessfully.
 </div>
 
-<script>
-import icons from "~/assets/icons.json"
-export default {
-  data() {
-    return {
-      ...icons
-    }
-  }
-}
+<script setup>
+import icons from "~/assets/icons"
 </script>
 
 <style lang="scss">
