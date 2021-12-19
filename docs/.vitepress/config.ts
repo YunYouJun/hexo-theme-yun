@@ -1,4 +1,5 @@
 import type { UserConfig } from "vitepress";
+import type { YouTheme } from "vitepress-theme-you/src/config";
 
 import path from "path";
 
@@ -7,11 +8,13 @@ import * as sidebar from "./configs/sidebar";
 
 import { head } from "./configs/head";
 
-const config: UserConfig = {
+const config: UserConfig<YouTheme.Config> = {
   // @ts-ignore
   head,
 
   title: "Hexo-Theme-Yun",
+  shortTitle: "Yun",
+
   locales: {
     "/": {
       lang: "zh-CN",
@@ -25,7 +28,9 @@ const config: UserConfig = {
   },
 
   themeConfig: {
-    iconClass: "i-ri-cloud-line",
+    // iconClass: "i-ri-cloud-line",
+    shortTitle: "Yun",
+
     nextLinks: true,
     prevLinks: true,
     repo: "YunYouJun/hexo-theme-yun",
@@ -35,20 +40,29 @@ const config: UserConfig = {
     sidebarDepth: 2,
     docsBranch: "dev",
 
+    editLinkText: "帮助改善此页面",
+
     locales: {
       "/": {
-        selectLanguageName: "简体中文",
-        lastUpdatedText: "上次更新",
+        label: "简体中文",
+        selectText: "简体中文",
+        lastUpdated: "上次更新",
         editLinkText: "帮助改善此页面！( ￣□￣)/",
-        navbar: navbar.zh,
+        nav: navbar.zh,
         sidebar: sidebar.zh,
       },
       "/en/": {
-        selectLanguageName: "English",
-        lastUpdatedText: "Last Updated",
-        navbar: navbar.en,
+        label: "English",
+        selectText: "English",
+        lastUpdated: "Last Updated",
+        nav: navbar.en,
         sidebar: sidebar.en,
       },
+    },
+
+    algolia: {
+      apiKey: "62c0b4aa58760ed3804e4fae0457c202",
+      indexName: "yunyoujun",
     },
   },
 
@@ -71,21 +85,6 @@ const config: UserConfig = {
           "/en/": {
             message: "Documentation Updated～",
             buttonText: "Refresh Me!",
-          },
-        },
-      },
-    ],
-    [
-      "@vuepress/docsearch",
-      {
-        apiKey: "62c0b4aa58760ed3804e4fae0457c202",
-        indexName: "yunyoujun",
-        locales: {
-          "/": {
-            placeholder: "Search Documentation",
-          },
-          "/zh/": {
-            placeholder: "搜索文档",
           },
         },
       },

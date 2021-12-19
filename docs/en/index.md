@@ -1,11 +1,12 @@
 ---
+title: Home
 home: true
 heroImage: /logo.gif
 heroText: hexo-theme-yun
 tagline: A light & fast & lovely theme for Hexo.
 actions:
   - text: Quick Start →
-  - link: /en/guide/
+    link: /en/guide/
 features:
   - title: Simple
     details: Simple, elegant and responsive UI.
@@ -16,5 +17,7 @@ features:
 footer:
   license: MIT Licensed
   since: 2020
-  author: YunYouJun
+  author:
+    name: YunYouJun
+    url: https://www.yunyoujun.cn
 ---

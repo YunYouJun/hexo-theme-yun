@@ -1,4 +1,4 @@
-import type { YouTheme } from "vitepress-theme-you/src/config";
+import type { YouTheme } from "vitepress-theme-you";
 
 export const zh: YouTheme.SideBarConfig = [
   {
