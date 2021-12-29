@@ -29,7 +29,7 @@ footer#footer.sidebar-translate
         |  v#{yun_env('version')}
 
   if theme.footer.live_time.enable
-    .live_time
+    .live-time
       span!=theme.footer.live_time.prefix
       span#display_live_time
       if theme.footer.live_time.suffix
@@ -47,7 +47,7 @@ footer#footer.sidebar-translate
           const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
           const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
           const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
-          display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+          display_live_time.innerHTML = ` ${passDay} #{__('time.day')} ${passHour} #{__('time.hour')} ${passMinute} #{__('time.minute')} ${passSecond} #{__('time.second')}`;
         }
         blog_live_time();
 

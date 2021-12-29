@@ -93,3 +93,9 @@ wordcount:
   count_total: 站点总字数
   time: 阅读时长
   time_total: 站点阅读时长
+
+time:
+  day: 天
+  hour: 小时
+  minute: 分
+  second: 秒

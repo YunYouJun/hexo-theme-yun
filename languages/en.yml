@@ -94,3 +94,9 @@ wordcount:
   count_total: Word count total
   time: Reading time
   time_total: Total reading time
+
+time:
+  day: Days
+  hour: Hours
+  minute: Minutes
+  second: Seconds
