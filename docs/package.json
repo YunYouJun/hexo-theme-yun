@@ -5,13 +5,13 @@
     "dev": "vitepress dev . --host"
   },
   "devDependencies": {
-    "sass": "^1.45.0",
-    "unplugin-vue-components": "^0.17.9",
+    "sass": "^1.45.1",
+    "unplugin-vue-components": "^0.17.11",
     "vite-plugin-pwa": "^0.11.12",
-    "vitepress": "^0.20.9"
+    "vitepress": "^0.20.10"
   },
   "dependencies": {
     "@iconify-json/ri": "^1.0.2",
-    "vitepress-theme-you": "^0.0.16"
+    "vitepress-theme-you": "^0.0.19"
   }
 }
