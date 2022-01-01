@@ -1,7 +1,5 @@
 import type { UserConfig } from "vitepress";
-import type { YouTheme } from "vitepress-theme-you/src/config";
-
-import path from "path";
+import type { YouTheme } from "vitepress-theme-you";
 
 import * as navbar from "./configs/navbar";
 import * as sidebar from "./configs/sidebar";
@@ -36,8 +34,6 @@ const config: UserConfig<YouTheme.Config> = {
     repo: "YunYouJun/hexo-theme-yun",
     docsDir: "docs",
     editLinks: true,
-    smoothScroll: true,
-    sidebarDepth: 2,
     docsBranch: "dev",
 
     editLinkText: "帮助改善此页面",
@@ -61,41 +57,20 @@ const config: UserConfig<YouTheme.Config> = {
     },
 
     algolia: {
-      apiKey: "62c0b4aa58760ed3804e4fae0457c202",
+      // todo: new api key
+      apiKey: "",
       indexName: "yunyoujun",
     },
   },
 
-  plugins: [
-    [
-      "@vuepress/google-analytics",
-      {
-        id: "UA-121354150-9",
-      },
-    ],
-    ["@vuepress/plugin-pwa"],
-    [
-      "@vuepress/plugin-pwa-popup",
-      {
-        locales: {
-          "/": {
-            message: "文档更新啦～",
-            buttonText: "快点我刷新！",
-          },
-          "/en/": {
-            message: "Documentation Updated～",
-            buttonText: "Refresh Me!",
-          },
-        },
-      },
-    ],
-    [
-      "@vuepress/register-components",
-      {
-        componentsDir: path.resolve(__dirname, "./components"),
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     "@vuepress/google-analytics",
+  //     {
+  //       id: "UA-121354150-9",
+  //     },
+  //   ],
+  // ],
 };
 
 export default config;

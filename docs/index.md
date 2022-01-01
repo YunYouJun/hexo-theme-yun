@@ -5,8 +5,11 @@ heroImage: /logo.gif
 heroText: Hexo-Theme-Yun
 tagline: A light & fast & lovely theme for Hexo.
 actions:
-  - text: 快速上手 →
+  - text: 快速上手
     link: /guide/
+  - text: 示例站点
+    link: /demo/
+    color: green
 features:
   - title: 简洁
     details: 简洁、优雅、轻量、自适应的用户界面。

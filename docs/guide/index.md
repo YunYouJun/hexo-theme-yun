@@ -23,6 +23,7 @@ hexo server
 ## 快速开始
 
 ::: tip 渲染器
+
 如果您没有 `pug` 与 `stylus` 的渲染器，请先安装：
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
 （这个是 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
@@ -85,6 +86,7 @@ theme: yun
 > 因为我开启了 `algolia`、`wordcount` 等需要在其他地方安装或额外配置的东西，所以如果你直接复制我的配置，记得删掉 `algolia_search` 和 `wordcount`字段。（以及请务必不要照抄我的 `waline` 字段！）
 
 ::: tip
+
 如：
 
 `avatar` 的完整配置如下

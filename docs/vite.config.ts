@@ -1,6 +1,6 @@
 import path from "path";
 import Components from "unplugin-vue-components/vite";
-import { VitePWA } from "vite-plugin-pwa";
+// import { VitePWA } from "vite-plugin-pwa";
 
 import { defaultConfig } from "./node_modules/vitepress-theme-you/src/config";
 
@@ -14,9 +14,9 @@ defaultConfig.plugins = defaultConfig.plugins.concat([
     dts: true,
   }),
 
-  VitePWA({
-    registerType: "autoUpdate",
-  }),
+  // VitePWA({
+  //   registerType: "autoUpdate",
+  // }),
 ]);
 
 const viteConfig: UserConfig = {
