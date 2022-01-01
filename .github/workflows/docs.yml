@@ -24,6 +24,9 @@ jobs:
             -d '{"event_type":"on-demand-test"}'
 
       - run: npm i -g pnpm && pnpm i
+      - run: git clone https://github.com/YunYouJun/vitepress-theme-you
+      - run: cd vitepress-theme-you && pnpm link --global
+      - run: cd .. && pnpm link vitepress-theme-you --global
       - run: pnpm build
 
       - name: Deploy
