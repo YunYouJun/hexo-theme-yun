@@ -31,6 +31,7 @@ jobs:
           repository: YunYouJun/vitepress-theme-you
           token: ${{ secrets.GITHUB_TOKEN }}
           path: vitepress-theme-you
+          ref: main
 
       - run: cd vitepress-theme-you && pnpm link --global
       - run: cd .. && pnpm link vitepress-theme-you --global
