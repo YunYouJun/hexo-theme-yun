@@ -1,8 +1,8 @@
 <template>
   <a class="site-link" :href="site.url" target="_blank">
-    <img width="80" :src="site.avatar" />
+    <img class="rounded rounded-full w-15 h-15 shadow-md transition hover:shadow-lg" :src="site.avatar" />
     <br />
-    <sub :title="site.desc">{{ site.name }}</sub>
+    <sub m="t-1" class="block w-20 truncate whitespace-nowrap" text="xs" :title="site.desc">{{ site.name }}</sub>
   </a>
 </template>
 
@@ -23,9 +23,3 @@ withDefaults(
   }
 );
 </script>
-
-<style lang="scss">
-.site-link {
-  font-size: 12px;
-}
-</style>
