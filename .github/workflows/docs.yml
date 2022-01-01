@@ -4,6 +4,18 @@ on:
     branches:
       - dev
 jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger yunyoujun.github.io
+        run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches \
+            -H 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
+            -d '{"event_type":"on-demand-test"}'
+
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -14,27 +26,17 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: trigger yunyoujun.github.io
-        run: |
-          curl \
-            -X POST \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/YunYouJun/yunyoujun.github.io/dispatches \
-            -H 'Authorization: Bearer ${{ secrets.PERSONAL_ACCESS_TOKEN }}' \
-            -d '{"event_type":"on-demand-test"}'
-
       - run: npm i -g pnpm && pnpm i
 
       - name: Check out vitepress-theme-you
         uses: actions/checkout@master
         with:
           repository: YunYouJun/vitepress-theme-you
-          token: ${{ secrets.GITHUB_TOKEN }}
           path: vitepress-theme-you
           ref: main
 
       - run: cd vitepress-theme-you && pnpm link --global
-      - run: cd .. && pnpm link vitepress-theme-you --global
+      - run: pnpm link vitepress-theme-you --global
       - run: pnpm build
 
       - name: Deploy
