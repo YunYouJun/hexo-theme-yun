@@ -1,7 +1,6 @@
 import type { UserConfig } from "vitepress";
 import type { YouTheme } from "vitepress-theme-you";
 
-// import baseConfig from '../node_modules/vitepress-theme-you/src/vitepress/config/baseConfig.js'
 import baseConfig from 'vitepress-theme-you/config'
 
 import * as navbar from "./configs/navbar";
@@ -9,31 +8,8 @@ import * as sidebar from "./configs/sidebar";
 
 import { head } from "./configs/head";
 
-import Components from "unplugin-vue-components/vite";
-import path from "path";
-
 const config: UserConfig<YouTheme.Config> = {
   extends: baseConfig,
-
-  vite: {
-    //   alias: {
-    //     "~/": `${(path.resolve(__dirname), ".")}/`,
-    //   },
-    // },
-
-    plugins: [
-      Components({
-        dirs: [path.resolve(__dirname, "theme/components")],
-        extensions: ["vue", "ts"],
-        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        dts: true,
-      })
-      // VitePWA({
-      //   registerType: "autoUpdate",
-      // })
-    ]
-
-  },
 
   head,
 

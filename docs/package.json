@@ -8,13 +8,12 @@
     "@unocss/preset-icons": "^0.20.2",
     "@vueuse/core": "^7.5.1",
     "sass": "^1.45.2",
-    "unplugin-vue-components": "^0.17.11",
     "vite-plugin-pwa": "^0.11.12",
     "vitepress": "^0.20.10"
   },
   "dependencies": {
     "@iconify-json/ri": "^1.0.2",
     "dayjs": "^1.10.7",
-    "vitepress-theme-you": "^0.0.27"
+    "vitepress-theme-you": "^0.0.28"
   }
 }
