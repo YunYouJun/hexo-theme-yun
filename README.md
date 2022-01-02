@@ -1,6 +1,6 @@
 # Hexo-Theme-Yun
 
-[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/docs/badge.svg)](https://yun.yunyoujun.cn)
+[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
 [![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
