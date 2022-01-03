@@ -60,8 +60,8 @@ const config: UserConfig<YouTheme.Config> = {
     },
 
     algolia: {
-      // todo: new api key
-      apiKey: "",
+      appId: 'N2XEWA4N6V',
+      apiKey: "88b435214282cbb184aa2353d08640f7",
       indexName: "yunyoujun",
     },
   },
