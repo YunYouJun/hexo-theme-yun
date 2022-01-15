@@ -63,8 +63,7 @@ block content
     else
       +page_header(page.title, page.icon)
       article#page
-        section.post-body(itemprop='articleBody')
-          .post-content.markdown-body!= page.content
+        section.post-body.markdown-body(itemprop='articleBody')!= page.content
 
     //- default not display reward
     if page.reward

@@ -716,7 +716,7 @@ scrollreveal:
   enable: true
   targets:
     - .post-card
-    - .post-content img
+    - .markdown-body img
 ```
 
 ### Cursor Cursor
