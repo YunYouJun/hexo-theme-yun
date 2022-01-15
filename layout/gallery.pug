@@ -33,4 +33,4 @@ block content
                 img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
                 figcaption=photo.caption
 
-    section.post-body.markdown-body(itemprop='articleBody')!= page.content
+    include ./_partial/post/post-content.pug
