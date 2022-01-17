@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.0",
-    "@types/node": "^17.0.8",
-    "eslint": "^8.6.0",
+    "@types/node": "^17.0.9",
+    "eslint": "^8.7.0",
     "esno": "^0.14.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.7",
