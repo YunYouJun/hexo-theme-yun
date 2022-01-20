@@ -346,8 +346,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://lfhsheng.github.io/" target="_blank">
-        <img width="80px" src="https://lfhsheng.github.io/images/lfhsheng.jpg" />
+      <a href="https://blog.lfhsheng.top" target="_blank">
+        <img width="80px" src="https://blog.lfhsheng.top/images/lfhsheng.jpg" />
         <br />
         <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
       </a>
