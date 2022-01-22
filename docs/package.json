@@ -5,11 +5,11 @@
     "dev": "vitepress dev . --host"
   },
   "devDependencies": {
-    "@unocss/preset-icons": "^0.22.4",
-    "@vueuse/core": "^7.5.3",
-    "sass": "^1.48.0",
+    "@unocss/preset-icons": "^0.22.5",
+    "@vueuse/core": "^7.5.4",
+    "sass": "^1.49.0",
     "vite-plugin-pwa": "^0.11.13",
-    "vitepress": "^0.21.5"
+    "vitepress": "^0.21.6"
   },
   "dependencies": {
     "@iconify-json/ri": "^1.0.2",
