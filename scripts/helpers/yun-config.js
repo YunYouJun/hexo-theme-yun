@@ -2,8 +2,8 @@
 const { parse } = require("url");
 
 hexo.extend.helper.register("yun_config", function () {
-  let { config, theme, yun_version, __ } = this;
-  let exportConfig = {
+  const { config, theme, yun_version, __ } = this;
+  const exportConfig = {
     hostname: parse(config.url).hostname || config.url,
     root: config.root,
     title: theme.banner.title || config.title,
@@ -22,9 +22,9 @@ hexo.extend.helper.register("yun_config", function () {
   };
 
   // anonymous_image
-  if (theme.anonymous_image) {
+  if (theme.anonymous_image)
     exportConfig.anonymous_image = theme.anonymous_image;
-  }
+
   // say
   if (theme.say.enable) {
     if (theme.say.hitokoto.enable) {
@@ -56,7 +56,7 @@ hexo.extend.helper.register("yun_config", function () {
 
   // local search
   if (theme.local_search.enable) {
-    let search_path = config.search.path || "search.xml";
+    const search_path = config.search.path || "search.xml";
     exportConfig.local_search = {
       path: config.root + search_path,
     };
@@ -69,16 +69,16 @@ hexo.extend.helper.register("yun_config", function () {
     };
   }
   return `<script id="yun-config">
-    const Yun = window.Yun || {};
+    window.Yun = {}
     window.CONFIG = ${JSON.stringify(exportConfig)};
   </script>`;
 });
 
 // wordcloud
 hexo.extend.helper.register("wordcloud_config", function (color) {
-  let { config, theme } = this;
+  const { config, theme } = this;
   const wordcloud_config = {};
-  let list = [];
+  const list = [];
   const tags = hexo.locals.get("tags");
   tags.forEach((tag) => {
     list.push([tag.name, tag.length / 10 + 1, config.root + tag.path]);

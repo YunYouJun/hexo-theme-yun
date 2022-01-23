@@ -12,6 +12,9 @@
   "bugs": {
     "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "keywords": [
     "hexo",
     "theme",

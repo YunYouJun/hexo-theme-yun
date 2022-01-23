@@ -15,3 +15,6 @@ dist/
 
 .cache
 .temp
+
+# dev
+source/js/hexo-theme-yun.js
