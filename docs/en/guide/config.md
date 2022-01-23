@@ -1365,7 +1365,6 @@ i.e.:
 say:
   enable: true
   api: /data/sentences.json
-  src: /js/say.js
   hitokoto:
     enable: false
 ```

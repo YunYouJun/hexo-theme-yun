@@ -16,5 +16,5 @@ dist/
 .cache
 .temp
 
-# dev
-source/js/hexo-theme-yun.js
+# dev esbuild
+source/js/

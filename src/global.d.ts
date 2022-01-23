@@ -11,15 +11,41 @@ declare interface Window {
   CONFIG: {
     version: string
     root: string
+    title: string
+
+    i18n: any
 
     /**
      * 是否开启拷贝代码
      */
     copycode: boolean
+
+    say: {
+      api: any
+      hitokoto: string
+    }
+
+    fireworks: any
+
+    algolia: any
+
+    local_search: any
   }
+
+  Pjax: (any) => void
 
   /**
    * katex
    */
   renderMathInElement: (el: HTMLElement, options: any) => void
+
+  CryptoJS: any
+
+  loadDisqus: () => void
+
+  anime: any
+
+  // algolia
+  instantsearch: any
+  algoliasearch: any
 }

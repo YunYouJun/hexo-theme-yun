@@ -1344,7 +1344,6 @@ footer:
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
-  src: /js/say.js
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true

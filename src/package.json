@@ -1,14 +1,18 @@
 {
   "name": "@yunyoujun/theme",
+  "type": "module",
   "private": true,
+  "files": [
+    "source"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "node scripts/build.js",
-    "dev": "node scripts/build.js --watch"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "devDependencies": {
-    "esbuild": "^0.14.13"
+    "tsup": "^5.11.11"
   }
 }

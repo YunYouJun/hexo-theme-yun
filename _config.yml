@@ -25,7 +25,6 @@ favicon: /yun.svg
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
-  src: /js/sidebar.js
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
   # dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
   bg_position: bottom 1rem center
@@ -239,7 +238,6 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/hexo-theme-yun.js
 
 prefetch:
   script:
@@ -259,7 +257,6 @@ lazyload:
 # pjax
 pjax:
   enable: false
-  src: /js/pjax.js
 
 # stylesheets loaded in the <head>
 css:
@@ -267,7 +264,6 @@ css:
 
 # scripts loaded in the end of the <head>
 js:
-  - /js/hexo-theme-yun.js
 
 # custom your assets in head
 head:
@@ -325,7 +321,6 @@ font:
 # custom your color in fireworks
 fireworks:
   enable: true
-  src: /js/ui/fireworks.js
   colors:
     - "102, 167, 221"
     - "62, 131, 225"
@@ -480,8 +475,6 @@ say:
   # api: https://say.elpsy.cn/sentences.json
   # /data/sentences.json
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
-  # src is the script
-  src: /js/say.js
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true
