@@ -8,6 +8,7 @@ This theme supports and uses the following page types by default.
 - `email`: Automatically obtain [Gravatar](https://en.gravatar.com/site/implement/images/) avatar based on email
 - `toc`: Whether to display the table of contents (the article `post` is displayed by default, and the page `post` is not displayed by default)
 - `readmore`: Boolean, will force a `READ MORE` button to be displayed at the end of the homepage card summary
+- `hideTime`: Forces time information to be hidden
 
 ```md {3,4}
 ---

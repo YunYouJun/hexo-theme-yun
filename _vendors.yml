@@ -53,10 +53,11 @@ disqusjs:
   css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
   js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
-iconify: https://code.iconify.design/1/1.0.7/iconify.min.js
+iconify: https://code.iconify.design/2/2.1.1/iconify.min.js
 busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 unocss:
-  runtime: https://unpkg.com/@unocss/runtime
-  core: https://unpkg.com/@unocss/runtime/core.global.js
-  uno: https://unpkg.com/@unocss/runtime/uno.global.js
-  attributify: https://unpkg.com/@unocss/runtime/attributify.global.js
+  runtime: https://cdn.jsdelivr.net/npm/@unocss/runtime
+  core: https://cdn.jsdelivr.net/npm/@unocss/runtime/core.global.js
+  uno: https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js
+  attributify: https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js
+  mini: https://cdn.jsdelivr.net/npm/@unocss/runtime/mini.global.js
