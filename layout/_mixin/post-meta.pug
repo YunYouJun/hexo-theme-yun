@@ -1,0 +1,102 @@
+//- for home post card time
+mixin post_meta(post)
+  .post-meta
+    if !post.hideTime
+      .post-time(style=theme.wordcount.enable && "display:block")
+        - var date_diff = date(post.date) != date(post.updated)
+        - var time_diff = time(post.date) != time(post.updated)
+        - var datetime_diff = date_diff || time_diff
+        if theme.post_meta.created_at
+          span.post-meta-item-icon
+            +icon('icon-calendar-line')
+          |  
+          if theme.post_meta.item_text
+            span.post-meta-icon-text=__('post.posted')
+            |  
+          - var create_title = __('post.created') + __('symbol.colon') + full_date(post.date)
+          time(title=create_title, itemprop='dateCreated datePublished', datetime=moment(post.date).format())=date(post.date)
+
+        if theme.post_meta.updated_at && datetime_diff
+          - var display_updated = date_diff
+          if display_updated
+            if theme.post_meta.created_at && theme.post_meta.updated_at
+              span.post-meta-divider='-'
+              span.post-meta-item-icon
+                +icon('icon-calendar-2-line')
+              |  
+              if theme.post_meta.item_text
+                span.post-meta-icon-text=__('post.edited')
+                |  
+              - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
+              time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
+
+    //- wordcount
+    if theme.wordcount.enable && !post.type
+      span.post-count
+        if theme.wordcount.count || theme.wordcount.time
+          span.post-symbolcount
+            if theme.wordcount.count
+              span.post-meta-item-icon(title=__('wordcount.count'))
+                +icon('icon-file-word-line')
+              |  
+              span(title=__('wordcount.count'))=wordcount(post.content)
+            if theme.wordcount.count && theme.wordcount.time
+              span.post-meta-divider='-'
+            if theme.wordcount.time
+              span.post-meta-item-icon(title=__('wordcount.time'))
+                +icon('icon-timer-line')
+              |  
+              span(title=__('wordcount.time'))=min2read(post.content) + 'm'
+
+    if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
+      span.post-busuanzi
+        span.post-meta-divider='-'
+        span.post-meta-item-icon(title=__('post.views'))
+          +icon(theme.busuanzi.page_pv_icon)
+          |  
+          span#busuanzi_value_page_pv
+
+    - var leancloud_visitor = theme.leancloud_visitors && theme.leancloud_visitors.enable
+    - var valine_visitor = is_post() && theme.valine.enable && theme.valine.visitor
+    - var waline_visitor = is_post() && theme.waline.enable && theme.waline.visitor
+    if leancloud_visitor || valine_visitor || waline_visitor
+      span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
+        span.post-meta-divider='-'
+        span.post-meta-item-icon(title=__('post.views'))
+          +icon(theme.busuanzi.page_pv_icon)
+          |  
+          span.leancloud-visitors-count
+
+    if is_post() && theme.waline.enable && theme.waline.comment
+      span.post-meta-divider='-'
+      a(href="#comment")
+        span.post-meta-item-icon( title=__('post.comments_count'))
+          +icon(theme.comment.icon)
+          |  
+          span.waline-comment-count(id=url_for(post.path))
+
+    if theme.disqus.count
+      span.post-meta-divider='-'
+      span.post-meta-item-icon(title=__('post.comments_count'))
+        +icon(theme.comment.icon)
+      |  
+      a(href=url_for(post.path) + '#disqus_thread')
+
+    if is_post()
+      .post-classify
+        if post.categories && post.categories.length && theme.post_meta.categories
+          span.post-category
+            include ../_mixin/post-categories.pug
+
+        if post.tags && post.tags.length && theme.post_meta.tags
+          span.post-tag
+            if post.categories && post.categories.length && theme.post_meta.categories
+              span.post-meta-divider='-'
+            include ../_mixin/post-tags.pug
+
+    if post.author
+      .post-author
+        if post.email
+          .author-avatar
+            img(src=gravatar(post.email, {s: 20, d: theme.anonymous_image}))
+        span.author-name=post.author

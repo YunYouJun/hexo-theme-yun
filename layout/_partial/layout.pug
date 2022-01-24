@@ -30,11 +30,11 @@ html(lang=config.language)
           document.documentElement.classList.toggle('dark', true)
       })()
   body(class= is_home() ? 'is-home' : '')
+    //- global
+    include ../_mixin/index.pug
     //- background
     include background.pug
     .container
-      //- global
-      include ../_mixin/index.pug
       include sidebar.pug
       main#content.sidebar-translate
         block content

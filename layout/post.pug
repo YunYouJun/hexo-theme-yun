@@ -16,7 +16,7 @@ block content
           if theme.post_edit.enable
             include _partial/post/post-edit.pug
 
-        include _partial/post/post-meta.pug
+        +post_meta(post)
 
         if post.url
           a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin: 1rem;background-color:${post_type.color}`)=__('post.view_link')

@@ -16,8 +16,7 @@ section#recent-posts(class="flex flex-col")
                 a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + post_type.color)
                   +icon(post_type.icon)
                   span=post.title
-
-            include ../_partial/post/post-meta.pug
+            +post_meta(post)
             if post.description
               .post-description=post.description
         .post-card-content.text-center
