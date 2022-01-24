@@ -18,7 +18,7 @@ function random(min, max) {
  * 生成标语
  * @param {string} title
  */
-function generateBanner(title) {
+function generateBanner(title: string) {
   let sumH = 0
   const lineTop = document.querySelector('.vertical-line-top') as HTMLElement
   const lineBottom = document.querySelector('.vertical-line-bottom') as HTMLElement
@@ -69,7 +69,7 @@ function initBanner() {
   if (banner) {
     setTimeout(() => {
       generateBanner(window.CONFIG.title)
-    }, 100)
+    }, 50)
   }
 }
 
