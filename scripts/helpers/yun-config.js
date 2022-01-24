@@ -79,8 +79,13 @@ hexo.extend.helper.register('yun_config', function() {
         path: url_for(page.path),
       }),
       cdn: theme.vendors.waline_js,
-      dark: 'html[data-user-color-scheme="dark"]',
+      dark: 'html.dark',
     }
+  }
+
+  // vendors
+  exportConfig.vendors = {
+    darken: theme.vendors.darken,
   }
 
   return `<script id="yun-config">

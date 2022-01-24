@@ -1,106 +1,28 @@
-$dark-primary-color = convert(hexo-config('colors.dark.block'));
-$bg-image-url = hexo-config('bg_image.dark');
-
 ::-webkit-input-placeholder {
   color: white;
 }
 
-body {
-  color: var(--hty-text-color);
-
-  &::before {
-    background-image: url($bg-image-url);
+.dark {
+  .aplayer {
+    color: black;
   }
-}
 
-// banner
-$banner-char-bg-color = black;
-
-.char {
-  background-color: rgba($banner-char-bg-color, 0.5);
-
-  &:hover {
-    color: $banner-char-bg-color;
-    background-color: var(--banner-char-color);
-  }
-}
-
-// sidebar
-$sidebar-bg-image = hexo-config('sidebar.dark_bg_image');
-
-.sidebar {
-  background-color: rgba($dark-primary-color, 0.95);
-
-  if ($sidebar-bg-image) {
-    background-image: url($sidebar-bg-image);
-  } else {
-    background-image: none;
-  }
-}
-
-// search
-// if you enable modal, do not need bg_image
-if (!hexo-config('search.modal')) {
-  $search-bg-image = hexo-config('search.dark_bg_image');
-
-  .search-popup {
-    background-image: url($search-bg-image);
-  }
-}
-
-// post-card
-$post-card-bg-color = $dark-primary-color;
-
-.post-card {
-  color: white;
-  background-color: rgba($post-card-bg-color, $post-card-opacity);
-  box-shadow: 0 1px 8px rgba($post-card-bg-color, 0.1);
-}
-
-// pagination
-.page-number-basic {
-  background-color: alpha(black, 0.5);
-}
-
-.pagination {
-  .prev, .next, .page-number, .space {
-    background-color: alpha(black, 0.5);
-
-    &:hover {
-      background: rgba(lighten($colors.primary, 80%), 0.9);
+  if (hexo-config('minivaline.enable')) {
+    .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before {
+      background: linear-gradient(180deg, rgba(246, 246, 246, 0), rgba(0, 0, 0, 0.9));
     }
 
-    &:active {
-      background: $colors.primary;
+    .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after {
+      background: rgba(0, 0, 0, 0.9);
     }
 
-    &.current {
-      background: rgba(lighten($colors.primary, 90%), 0.9);
-      cursor: default;
+    .ohhho pre {
+      background: var(--color-meta);
+      border: 1px solid var(--color-block);
     }
-  }
-}
 
-// aplayer
-.aplayer {
-  color: black;
-}
-
-if (hexo-config('minivaline.enable')) {
-  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before {
-    background: linear-gradient(180deg, rgba(246, 246, 246, 0), rgba(0, 0, 0, 0.9));
-  }
-
-  .ohhho .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after {
-    background: rgba(0, 0, 0, 0.9);
-  }
-
-  .ohhho pre {
-    background: var(--color-meta);
-    border: 1px solid var(--color-block);
-  }
-
-  .ohhho .vlist .vcard .vcomment-body .vhead {
-    filter: brightness(85%);
+    .ohhho .vlist .vcard .vcomment-body .vhead {
+      filter: brightness(85%);
+    }
   }
 }

@@ -12,34 +12,6 @@
 @import '_widget';
 // helper
 @import '_helper';
-
-if (hexo-config('mode') == 'dark') {
-  :root {
-    dark();
-    --color-mode: 'dark';
-  }
-
-  @import '_global/dark';
-} else if (hexo-config('mode') == 'auto' || hexo-config('mode') == 'time') {
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-mode: 'dark';
-    }
-
-    :root:not([data-user-color-scheme]) {
-      dark();
-
-      @import '_global/dark';
-    }
-  }
-
-  [data-user-color-scheme='dark'] {
-    dark();
-
-    @import '_global/dark';
-  }
-}
-
 // extend page
 @import '_extend/tags';
 

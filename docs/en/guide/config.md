@@ -1086,20 +1086,12 @@ prismjs:
 In `yun.yml`:
 
 - `copy_btn`: enable copy button in codeblock
-- `prismjs`
-  - `light`: code highlight style for light
-  - `dark`: code highlight style for dark
 
-(You can set the corresponding suitable highlight styles for the light and dark modes.)
-
-> Please refer to the code highlighting theme <https://cdn.jsdelivr.net/npm/prismjs@latest/themes/>.
+> Since v1.8.3, code block will auto toggle light/dark mode.
 
 ```yaml
 codeblock:
   copy_btn: true
-  prismjs:
-    light: default
-    dark: tomorrow
 ```
 
 > It is recommended to close the line number, [here](https://highlightjs.readthedocs.io/en/latest/line-numbers.html) is the where the author wrote why highlight does not support line numbers.

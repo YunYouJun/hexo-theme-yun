@@ -12,6 +12,9 @@ declare interface Window {
     version: string
     root: string
     title: string
+    vendors: {
+      darken: string
+    }
 
     i18n: any
 
@@ -35,6 +38,10 @@ declare interface Window {
       config: any
       cdn: string
     }
+
+    mode: string
+
+    Darkmode: any
   }
 
   Pjax: (any) => void
@@ -55,4 +62,6 @@ declare interface Window {
   algoliasearch: any
 
   Waline: any
+
+  darken: any
 }

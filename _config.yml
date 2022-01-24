@@ -108,9 +108,6 @@ social:
 
 codeblock:
   copy_btn: true
-  prismjs:
-    light: default
-    dark: tomorrow
 
 # Extra links
 pages:
@@ -279,6 +276,7 @@ cdn:
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
     yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css
+    prism-theme-vars: https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css
     # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   js:
     base:

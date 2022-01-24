@@ -32,17 +32,8 @@ revealjs:
     highlight:
       js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
       monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
-prismjs:
-  themes:
-    default: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css
-    coy: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-coy.css
-    dark: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-dark.css
-    funky: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-funky.css
-    okaidia: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-okaidia.css
-    solarizedlight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-solarizedlight.css
-    tomorrow: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css
-    twilight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-twilight.css
 vue: https://cdn.jsdelivr.net/npm/vue@2.6.14
+darken: https://cdn.jsdelivr.net/npm/darken@1.5.0
 
 # comment
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js

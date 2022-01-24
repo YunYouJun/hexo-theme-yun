@@ -1108,10 +1108,10 @@ prismjs:
 ```yaml
 codeblock:
   copy_btn: true
-  prismjs:
-    light: default
-    dark: tomorrow
 ```
+
+> v1.8.3 之后废弃了代码亮暗自定义主题，将会自动切换亮暗模式。
+> More info: [prism-theme-vars](https://github.com/antfu/prism-theme-vars)
 
 > 建议关闭行号，[这里](https://highlightjs.readthedocs.io/en/latest/line-numbers.html)是 highlight 作者写的为什么 highlight 不支持行号。
 > 行号是否存在影响不大，当去掉时可以节约出一部分空间，譬如一些原先需要滚动条的代码，去掉后，就可以完全显示出来。

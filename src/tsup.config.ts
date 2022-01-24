@@ -5,7 +5,7 @@ export default defineConfig({
   splitting: true,
   sourcemap: false,
   // future to false
-  // clean: true,
+  clean: true,
   format: ['esm'],
   minify: true,
   outDir: '../source/js',

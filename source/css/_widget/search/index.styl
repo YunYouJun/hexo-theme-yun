@@ -6,6 +6,17 @@ if (hexo-config('local_search') && hexo-config('local_search.enable')) {
 
 $search-bg-image = hexo-config('search.bg_image');
 
+// if you enable modal, do not need bg_image
+if (!hexo-config('search.modal')) {
+  :root {
+    --search-bg-image: url($search-bg-image);
+  }
+
+  html.dark {
+    --search-bg-image: url(hexo-config('search.dark_bg_image'));
+  }
+}
+
 .search-popup {
   if (hexo-config('search.modal')) {
     backdrop-filter: blur(30px);
