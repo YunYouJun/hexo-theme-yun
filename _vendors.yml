@@ -42,7 +42,7 @@ prismjs:
     solarizedlight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-solarizedlight.css
     tomorrow: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css
     twilight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-twilight.css
-vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
+vue: https://cdn.jsdelivr.net/npm/vue@2.6.14
 
 # comment
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js

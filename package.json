@@ -16,7 +16,6 @@
     "node": ">=14.0.0"
   },
   "files": [
-    "data",
     "languages",
     "layout",
     "scripts",
