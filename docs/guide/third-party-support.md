@@ -345,7 +345,6 @@ engine_search:
 # https://github.com/wzpan/hexo-generator-search
 local_search:
   enable: true
-  src: /js/search/local-search.js
 ```
 
 > 如果你发现本地正常，部署后点击搜索按钮却会跳转至页面底部，可能单纯只是缓存问题。
@@ -361,7 +360,6 @@ local_search:
 ```yaml
 algolia_search:
   enable: true
-  src: /js/search/algolia-search.js
   hits:
     per_page: 10 # the number of search results per page
 ```

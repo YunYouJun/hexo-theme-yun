@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-yun",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "docs"
   ],
   "scripts": {
-    "build": "pnpm docs:build",
+    "build": "cd src && npm run build",
     "dev": "pnpm docs:dev",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -42,5 +42,8 @@
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
+  },
+  "dependencies": {
+    "tsup": "^5.11.11"
   }
 }

@@ -30,6 +30,11 @@ declare interface Window {
     algolia: any
 
     local_search: any
+
+    waline: {
+      config: any
+      cdn: string
+    }
   }
 
   Pjax: (any) => void
@@ -48,4 +53,6 @@ declare interface Window {
   // algolia
   instantsearch: any
   algoliasearch: any
+
+  Waline: any
 }

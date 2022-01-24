@@ -294,7 +294,6 @@ vendors:
 banner:
   enable: true
   title: 云游君的小站
-  src: /js/ui/banner.js
   border: true
   cloud:
     enable: true
@@ -524,12 +523,10 @@ engine_search:
 # https://github.com/wzpan/hexo-generator-search
 local_search:
   enable: false
-  src: /js/search/local-search.js
 
 # https://github.com/oncletom/hexo-algolia
 algolia_search:
   enable: false
-  src: /js/search/algolia-search.js
   hits:
     per_page: 8 # the number of search results per page
 

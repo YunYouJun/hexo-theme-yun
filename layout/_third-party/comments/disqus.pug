@@ -29,7 +29,7 @@ script.
       });
     }
   }
-script(src=url_for('/js/comments/disqus.js'))
+script(src=url_for('/js/comments/disqus.js'), type='module')
 
 if theme.disqus.count
   script#dsq-count-scr(src=`//${theme.disqus.shortname}.disqus.com/count.js` async)

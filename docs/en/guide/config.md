@@ -525,7 +525,6 @@ You can visit <https://yunyoujun.cn> to see the effect. (Each refresh will displ
 banner:
   enable: true
   title: 云游君的小站
-  src: /js/ui/banner.js
   border: true
   cloud:
     enable: true

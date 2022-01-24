@@ -11,8 +11,5 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
-  },
-  "devDependencies": {
-    "tsup": "^5.11.11"
   }
 }
