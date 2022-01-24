@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-yun",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
   "repository": {
     "type": "git",
@@ -15,6 +15,16 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "files": [
+    "data",
+    "languages",
+    "layout",
+    "scripts",
+    "source",
+    "src",
+    "_config.yml",
+    "_vendors.yml"
+  ],
   "keywords": [
     "hexo",
     "theme",
@@ -29,7 +39,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "generate:demo-sites": "esno docs/.vitepress/scripts/index.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.0",
@@ -37,7 +48,7 @@
     "eslint": "^8.7.0",
     "esno": "^0.14.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.2.2",
+    "lint-staged": "^12.3.1",
     "typescript": "^4.5.5"
   },
   "lint-staged": {
