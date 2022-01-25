@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.0",
-    "@types/node": "^17.0.10",
+    "@types/node": "^17.0.12",
     "eslint": "^8.7.0",
     "esno": "^0.14.0",
     "husky": "^7.0.4",
@@ -54,6 +54,7 @@
     "sites.json": "npm run generate:demo-sites"
   },
   "dependencies": {
-    "tsup": "^5.11.11"
+    "tsup": "^5.11.11",
+    "vitepress-theme-you": "^0.0.32"
   }
 }

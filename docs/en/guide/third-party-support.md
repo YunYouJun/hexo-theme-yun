@@ -1,6 +1,6 @@
 # Third-party support
 
-All configuration is done by default in the `source/_data /yun.yml` file.
+All configuration is done by default in the `_config.yun.yml` file.
 
 The difference from the additional packagfe support, here is mainly to use the service implementation provided by third-party service providers.
 
@@ -124,7 +124,7 @@ In fact, you only need to refer to the page below to get the appId and appKey re
 
 - `visitor`: Article reading statistics (please do not enable it at the same time with [不蒜子](#busuanzi))
 
-> [More configuration items](https://valine.js.org/configuration.html) is written in `yun.yml`.
+> [More configuration items](https://valine.js.org/configuration.html) is written in `_config.yun.yml`.
 
 ```yaml
 valine:

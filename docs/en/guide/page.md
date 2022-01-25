@@ -296,7 +296,7 @@ Please refer to my [configuration](https://github.com/YunYouJun/yunyoujun.github
 
 There is an album homepage, place multiple albums, click to enter the album to view more photos.
 
-In `yun.yml`:
+In `_config.yun.yml`:
 
 ```yaml
 albums:

@@ -1,6 +1,6 @@
 # 第三方支持
 
-所有配置默认在 `source/_data/yun.yml` 文件下进行。
+所有配置默认在 `_config.yun.yml` 文件下进行。
 
 与额外依赖库支持的区别，此处主要为使用第三方服务商提供的服务实现。
 
@@ -160,7 +160,7 @@ language: zh-CN
 
 - `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
 
-> [更多配置项](https://valine.js.org/configuration.html) 写在 `yun.yml` 中。
+> [更多配置项](https://valine.js.org/configuration.html) 写在 `_config.yun.yml` 中。
 
 ```yaml
 valine:
@@ -410,7 +410,7 @@ busuanzi:
 基于 LeanCloud 的访问者统计，显示每篇文章的访问量。
 
 > 建议在 `LeanCloud` 新建一个应用，并在应用中新建一个 `Class` 名为 `Counter` 权限设置为所有用户和无限制。
-> 在应用凭证中复制 `AppID` 和 `AppKey` 并填写站点的 url `server_url` (如: `https://lncld.yunyoujun.cn`)，置于 `yun.yml` 。
+> 在应用凭证中复制 `AppID` 和 `AppKey` 并填写站点的 url `server_url` (如: `https://lncld.yunyoujun.cn`)，置于 `_config.yun.yml` 。
 
 ```yaml
 leancloud_visitors:

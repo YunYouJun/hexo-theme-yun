@@ -38,28 +38,10 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 ### Install Theme
 
-Go to the root directory of your Hexo blog. Clone or download the `hexo-theme-yun` theme, and place it under `themes/yun`.
+Go to the root directory of your Hexo blog.
 
 ```bash
-git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
-```
-
-> If you are using continuous integration and wanting to build a stable version each time, you can first fork this project and then clone your fork project.
->
-> ```bash
-> git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
-> ```
-
-If you want to experience the new version of `hexo-theme-yun`. ([云游君的小站](https://www.yunyoujun.cn) will always use the latest version as an example.)
-
-```bash
-git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
-```
-
-You can use `submodule` to associate your blog with theme repo, instead of uploading themes to your repo.
-
-```bash
-git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
+npm i hexo-theme-yun@latest
 ```
 
 ### Enable Themes
@@ -73,9 +55,9 @@ theme: yun
 
 ### Configure Theme
 
-Create a new `source/_data/yun.yml` in the Hexo working directory. (If the `source/_data` directory does not exist, please create a new one.)
+Create a new `_config.yun.yml` in the Hexo working directory.
 
-With the convention greater than the configuration, you only need to customize the configuration you want to override in `yun.yml`, and the rest will be automatically merged with the theme's default configuration. (This is also more convenient for future upgrades)
+With the convention greater than the configuration, you only need to customize the configuration you want to override in `_config.yun.yml`, and the rest will be automatically merged with the theme's default configuration. (This is also more convenient for future upgrades)
 
 ::: tip
 Such as:
@@ -89,7 +71,7 @@ avatar:
   opacity: 1
 ```
 
-You can just define it in `yun.yml` (it is also possible to cover it all)
+You can just define it in `_config.yun.yml` (it is also possible to cover it all)
 
 ```yaml
 avatar:
@@ -100,14 +82,13 @@ avatar:
 
 ### Upgrade Theme
 
-If you are configuring in `yun.yml`, you only need to enter the following command in the Hexo working path:
+If you are configuring in `_config.yun.yml`, you only need to enter the following command in the Hexo working path:
 
 ```bash
-cd themes/yun
-git pull
+npm i hexo-theme-yun@latest
 ```
 
-If you modify the theme's `themes/yun/_config.yml` configuration file, you may encounter conflicts during the upgrade and need to adjust it by yourself.
+If you modify the theme's file, you may encounter conflicts during the upgrade and need to adjust it by yourself.
 
 ::: danger
 It is best not to modify any of the theme's files unless you have certain development capabilities, or else the theme can not be upgraded afterwards.
@@ -149,16 +130,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 
-And set the `head` option in `yun.yml` to introduce css or js.
+And set the `head` option in `_config.yun.yml` to introduce css or js.
 
 ```yaml
 head:
-  css:
-    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
-  js:
-    defer:
-      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
-      loadAplayer: /js/load-aplayer.js
+  css:
+    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
+  js:
+    defer:
+      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/load-aplayer.js
 ```
 
 ### Auto Update

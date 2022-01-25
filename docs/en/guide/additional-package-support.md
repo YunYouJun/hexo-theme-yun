@@ -12,7 +12,7 @@ npm install hexo-wordcount
 # yarn add hexo-wordcount
 ```
 
-Enter the configuration file `source/_data/yun.yml` in the root directory of the blog
+Enter the configuration file `_config.yun.yml` in the root directory of the blog
 
 - `count`: Word Count
 - `time`: Read Time
@@ -32,9 +32,9 @@ Install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
 npm install hexo-generator-feed --save
 ```
 
-Configure the default icon as `icon-rss-line`. If you need to customize, enter `source/_data /yun.yml` to configure.
+Configure the default icon as `icon-rss-line`. If you need to customize, enter `_config.yun.yml` to configure.
 
-It can be configured in the `social` field of `yun.yml`, such as:
+It can be configured in the `social` field of `_config.yun.yml`, such as:
 
 ```yaml
 social:
@@ -114,7 +114,7 @@ live2d:
 
 ## Tag Cloud (Word Cloud)
 
-Config in `yun.yml, use colorful word cloud instead of native tag cloud.
+Config in `_config.yun.yml`, use colorful word cloud instead of native tag cloud.
 
 - `enable`: enable word cloud
 - `height`: set the height for word cloud
@@ -160,7 +160,7 @@ aplayer: true
 ---
 ```
 
-You can also set it globally in `yun.yml`. (When you set up a global player, you can use it.)
+You can also set it globally in `_config.yun.yml`. (When you set up a global player, you can use it.)
 
 ```yaml
 aplayer:
@@ -177,7 +177,7 @@ Insert a song from NetEase Cloud Music
 
 ### Global Music Player
 
-You can set it global enable in `yun.yml`.
+You can set it global enable in `_config.yun.yml`.
 
 - `meting`: enable [meting](https://github.com/metowolf/MetingJS), whether to introduce meting resources (pay attention to the difference between this and `widget`)
 - `widget`: set `widget.enable` `true` to enable global player (aplayer.global must be `true`)

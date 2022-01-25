@@ -5,9 +5,9 @@
 约定 ＞ 配置
 
 ::: danger
-请在 `source/_data/yun.yml` 中定义您所需要的配置，其余将自动使用主题的默认配置。
+请在 `_config.yun.yml` 中定义您所需要的配置，其余将自动使用主题的默认配置。
 
-如未特殊说明，皆默认在 `yun.yml` 文件中配置。
+如未特殊说明，皆默认在 `_config.yun.yml` 文件中配置。
 
 请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力或此后将不会对主题进行升级。
 :::
@@ -119,7 +119,7 @@ head:
 
 ::: tip
 
-譬如想要自定义 css，先设置 `yun.yml`:
+譬如想要自定义 css，先设置 `_config.yun.yml`:
 
 ```yaml
 head:
@@ -304,7 +304,7 @@ preconnect:
 
 多色图标需采用文章中 `symbol` 引用方式。
 
-随后如下在 `yun.yml` 中设置。
+随后如下在 `_config.yun.yml` 中设置。
 
 ```yaml
 head:
@@ -495,7 +495,7 @@ social:
     color: black
 ```
 
-您只需要在 `yun.yml` 中设置 `social` 来覆盖即可（这时即可只显示你的邮箱图标，而没有其他图标）：
+您只需要在 `_config.yun.yml` 中设置 `social` 来覆盖即可（这时即可只显示你的邮箱图标，而没有其他图标）：
 
 ```yaml
 social:
@@ -505,7 +505,7 @@ social:
     color: "#8E71C1"
 ```
 
-如果您不想放置任何链接，仅需在 `yun.yml` 中设置：
+如果您不想放置任何链接，仅需在 `_config.yun.yml` 中设置：
 
 ```yaml
 social:
@@ -857,7 +857,7 @@ pages:
     color: dodgerblue
 ```
 
-如果您不想放置任何链接，仅需在 `yun.yml` 中设置：
+如果您不想放置任何链接，仅需在 `_config.yun.yml` 中设置：
 
 ```yaml
 pages:
@@ -929,7 +929,7 @@ types:
     icon: icon-zhihu-line
 ```
 
-你也可以自己在 `yun.yml` 设置你跳转不同链接专属的图标和颜色。
+你也可以自己在 `_config.yun.yml` 设置你跳转不同链接专属的图标和颜色。
 
 ```yaml
 types:
@@ -1094,7 +1094,7 @@ prismjs:
   tab_replace: ""
 ```
 
-在 `yun.yml` 中：
+在 `_config.yun.yml` 中：
 
 - `copy_btn`: 开启一键复制按钮
 - `prismjs`
@@ -1176,7 +1176,7 @@ lazyload:
 - `color`: 图标颜色
 - `icon`: 图标名称
 
-在 `yun.yml` 中进行覆盖。
+在 `_config.yun.yml` 中进行覆盖。
 
 ::: warning
 v0.9.2 将原先的 `reward_settings` 与 `reward` 配置合并。
@@ -1434,4 +1434,4 @@ custom:
 
 你可以直接查看 [themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
 
-或者参考我的博客的自定义配置 [source/\_data/yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml)。
+或者参考我的博客的自定义配置 [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml)。

@@ -1,7 +1,7 @@
 <template>
   <span
     class="badge bg-blue-500 rounded"
-    text="sm"
+    text="sm white"
     p="x-2 y-1"
     :class="type"
     :style="styles"

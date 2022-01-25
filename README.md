@@ -1,3 +1,5 @@
+<p align="center">
+
 # Hexo-Theme-Yun
 
 [![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
@@ -8,15 +10,19 @@
 [![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
-<p align="center">
   <img width="128" src="docs/public/logo.gif">
 </p>
 
+<div align="center">
+
+[Yun v1.0 - Strato PV](https://www.bilibili.com/video/BV17t4y1S7tz) ｜
+[Coding 镜像](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files) ｜
+[Preview 示例预览](https://www.yunyoujun.cn) ｜
+[Docs 使用文档](https://yun.yunyoujun.cn)
+
 > A light & fast & lovely hexo theme.
 
-- PV: [Yun v1.0 - Strato | bilibili](https://www.bilibili.com/video/BV17t4y1S7tz)
-- Coding 镜像: [hexo-theme-yun](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files)
-- 示例站点：[云游君的小站](https://www.yunyoujun.cn)
+</div>
 
 ## Docs
 
@@ -32,10 +38,10 @@
 In your hexo folder:
 
 ```bash
-git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
+npm install hexo-theme-yun@latest
 ```
 
-If you don't have jade & stylus renderer:
+If you don't have pug & stylus renderer:
 
 ```bash
 npm install hexo-render-pug hexo-renderer-stylus
@@ -50,6 +56,12 @@ theme: yun
 
 ### Config
 
+New file `_config.yun.yml` in your root folder.
+
+```yaml
+# write hexo-theme-yun config
+```
+
 More info [here](https://yun.yunyoujun.cn/guide/config.html).
 
 ### Upgrade
@@ -57,8 +69,7 @@ More info [here](https://yun.yunyoujun.cn/guide/config.html).
 You just need to execute:
 
 ```bash
-cd themes/yun
-git pull
+npm install hexo-theme-yun@latest
 ```
 
 ## [About](https://yun.yunyoujun.cn/guide/about.html)

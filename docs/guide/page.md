@@ -95,7 +95,7 @@ type: tags
 ---
 ```
 
-你可以在 `yun.yml` 中设置：
+你可以在 `_config.yun.yml` 中设置：
 
 ```yaml
 wordcloud:
@@ -343,7 +343,7 @@ girls:
 
 存在一个相册主页，放置多个相册，点击进入相册查看更多照片。
 
-在 `yun.yml` 中开启相册功能。
+在 `_config.yun.yml` 中开启相册功能。
 
 ```yaml
 albums:
