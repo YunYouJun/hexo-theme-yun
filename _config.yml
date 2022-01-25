@@ -362,20 +362,20 @@ reward:
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
-    - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
-      icon: icon-alipay-line
-    - name: QQ 支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
-      icon: icon-qq-line
-    - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
-      icon: icon-wechat-pay-line
-    # - name: paypal
-    #   link: https://paypal.com
+    # - name: 支付宝
+    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+    #   color: "#00A3EE"
+    #   icon: icon-alipay-line
+    # - name: QQ 支付
+    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+    #   color: "#12B7F5"
+    #   icon: icon-qq-line
+    # - name: 微信支付
+    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+    #   color: "#2DC100"
+    #   icon: icon-wechat-pay-line
+    # - name: PayPal
+    #   link: https://paypal.me/elpsycn
     #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
     #   color: "#2D70B5"
     #   icon: icon-paypal-line
