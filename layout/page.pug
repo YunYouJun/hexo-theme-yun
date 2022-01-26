@@ -63,7 +63,7 @@ block content
     else
       +page_header(page.title, page.icon)
       div.text-center
-        include ./_partial/post/post-meta.pug
+        +post_meta(page)
       article#page
         include ./_partial/post/post-content.pug
 

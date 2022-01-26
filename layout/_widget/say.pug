@@ -3,9 +3,5 @@
   small#say-author
   small#say-from
 
-script(src=url_for(theme.cdn.pre + theme.say.src))
-script.
-  document.addEventListener("DOMContentLoaded", fetchApiToSay);
-  document.addEventListener("pjax:success", () => {
-    Yun.utils.isHome() ? fetchApiToSay() : null;
-  });
+script(src=url_for(theme.cdn.pre + '/js/say.js'), type='module')
+

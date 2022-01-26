@@ -22,7 +22,7 @@ hexo server
 
 ## 快速开始
 
-::: tip 渲染器
+::: warning 渲染器
 
 如果您没有 `pug` 与 `stylus` 的渲染器，请先安装：
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
@@ -30,6 +30,8 @@ hexo server
 或 [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
 （以及前者尚未支持开发时热更新，后者支持。）
 和 [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
+
+<!-- > 后续可能使用 Vue3 重构，届时将无需安装该渲染器。 -->
 
 ```bash
 npm install hexo-render-pug hexo-renderer-stylus --save
@@ -41,31 +43,26 @@ yarn add hexo-render-pug hexo-renderer-stylus
 
 ### 安装主题
 
-进入您的 Hexo 博客根目录，克隆或下载 `hexo-theme-yun` 主题，置于 `themes/yun`。
+::: danger
 
-> 你也可以考虑加上 `--depth 1` 的参数来只克隆当前版本（体积更小，速度更快）。
+自 <Badge>v1.8.x</Badge> 起，主题转为使用 npm 包进行发布安装。
 
-```bash
-git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
-```
+> 新版本的脚本使用 TypeScript 进行重构，约束类型，并使用 ESBuild 进行构建压缩。
+> 因此发布后的内容为编译压缩后的代码。
 
-> 如果你使用了持续集成，并希望每次构建的版本保持稳定。你可以 fork 本项目，然后克隆你 fork 的项目。
->
-> ```bash
-> git clone -b master https://github.com/你的名字/hexo-theme-yun themes/yun
-> ```
+原先 clone 项目的方式不再推荐，如果您仍然想要使用该方式，请 clone 项目后，手动执行 `npm i && npm run build` 以构建压缩后的脚本。
 
-如果你想体验新版 `hexo-theme-yun`。（[云游君的小站](https://www.yunyoujun.cn) 将始终使用最新版作为示例。）
+配置迁移见 [迁移指南](./migrate.md)。
 
-```bash
-git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
-```
+:::
 
-您可以采用子模块的方式将博客与主题仓库建立关联，而无需将主题一并上传至仓库。
+进入您的 Hexo 博客根目录，执行：
 
 ```bash
-git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
+npm i hexo-theme-yun@latest
 ```
+
+> [云游君的小站](https://www.yunyoujun.cn) 将始终使用最新版作为示例。
 
 ### 启用主题
 
@@ -78,11 +75,11 @@ theme: yun
 
 ### 配置主题
 
-在 Hexo 工作目录下新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建。）
+在 Hexo 工作目录下新建 `_config.yun.yml`。（与你的 Hexo 配置 `_config.yml` 在同一目录）
 
-采用约定大于配置的方式，您仅需在 `yun.yml` 中自定义您想要覆盖的配置，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
+采用约定大于配置的方式，您仅需在 `_config.yun.yml` 中自定义您想要覆盖的配置，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
 
-> 你可以参考我的配置文件 [yun.yml - yunyoujun.github.io](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml)，是不是很短。  
+> 你可以参考我的配置文件 [\_config.yun.yml - yunyoujun.github.io](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml)。
 > 因为我开启了 `algolia`、`wordcount` 等需要在其他地方安装或额外配置的东西，所以如果你直接复制我的配置，记得删掉 `algolia_search` 和 `wordcount`字段。（以及请务必不要照抄我的 `waline` 字段！）
 
 ::: tip
@@ -98,7 +95,7 @@ avatar:
   opacity: 1
 ```
 
-你可以在 `yun.yml` 中仅定义（当然，全部覆盖也是可以的）
+你可以在 `_config.yun.yml` 中仅定义（当然，全部覆盖也是可以的）
 
 ```yaml
 avatar:
@@ -109,21 +106,20 @@ avatar:
 
 ### 升级主题
 
-如果您是在 `yun.yml` 中进行配置，那么仅需在 Hexo 工作路径中输入以下命令：
+如果您是在 `_config.yun.yml` 中进行配置，那么仅需在 Hexo 工作路径中输入以下命令：
 
 ```bash
-cd themes/yun
-git pull
+npm i hexo-theme-yun@latest
 ```
 
 ::: tip
 当主题配置出现不兼容更新时，请参见 [迁移指南](/guide/migrate)。
 :::
 
-如果您修改了主题的 `themes/yun/_config.yml` 配置文件，那么您升级时可能会遭遇冲突，需要自行调整。
+如果您修改了主题文件，那么您升级时可能会遭遇冲突，需要自行调整。
 
 ::: danger
-请最好不要对主题的任何文件进行修改，除非你确认你拥有一定的开发能力或此后将不会对主题进行升级。
+请最好**不要**对**主题的任何文件**进行修改，除非你确认你拥有一定的开发能力或此后将不会对主题进行升级。
 :::
 
 如果你想对主题进行一些定制，你可以在 `head` 配置项中引入你的资源。
@@ -162,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 
-并在 `yun.yml` 中设置 `head` 选项来引入 css 或 js。
+并在 `_config.yun.yml` 中设置 `head` 选项来引入 css 或 js。
 
 ```yaml
 head:
@@ -174,22 +170,43 @@ head:
       loadAplayer: /js/load-aplayer.js
 ```
 
-### 自动升级
+### 持续集成
 
-你想要完全自动更新，时刻保持最新主题，可以采用持续集成（如 [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/) 等）。
+您可以采用持续集成（如 [GitHub Actions](https://github.com/features/actions), [Travis](https://travis-ci.com/) 等），来自动构建部署博客。
 
 你可以参考我的 GitHub Action 配置文件 [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml)。(照抄配置，放在对应文件夹下即可，GitHub Actions 为 GitHub 自带的服务。)
 若你没有使用 `algolia_search`，请删除 `algolia` 相关部分。
 
-> 我采用的是这种做法，但我从良心上并不推荐你也如此，因为这是我自己的主题，自然对潜在的 BUG 拥有一定的容忍度。  
-> 时刻保持与仓库版本相同，可能会遇到新引入的 BUG。  
-> 当然你愿意当小白鼠的话，可以一试。顺便给咱反馈问题。个人角度上，是十分欢迎的。
-
-如果你想要克隆稳定版本的主题，你可以自行 fork，然后修改源项目地址为你 fork 后的项目地址即可。
+新建文件 `.github/workflows/gh-pages.yml`。
 
 ```yaml
-run: |
-  git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
+name: GitHub Pages
+on:
+  push:
+    branches:
+      - hexo
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+
+      - name: Install Dependencies
+        run: npm i
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          force_orphan: true
 ```
 
 ## Markdown 样式扩展
@@ -199,6 +216,8 @@ run: |
 - 多彩引用标签
 
 ## 其他方式
+
+> 如果您已成功安装，无需继续阅读下文。
 
 ### Docker
 

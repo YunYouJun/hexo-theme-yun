@@ -25,7 +25,7 @@ url: https://www.yunyoujun.cn
 root: /
 ```
 
-检查是否在 `yun.yml` 文件中进行主题配置，且已经保存。
+检查是否在 `_config.yun.yml` 文件中进行主题配置，且已经保存。
 检查是否已经执行如下几步：
 
 - `hexo clean`：清除本地缓存

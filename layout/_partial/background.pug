@@ -1,6 +1,6 @@
 if theme.fireworks && theme.fireworks.enable
   script(defer, src=theme.vendors.anime)
-  script(defer, src=url_for(theme.cdn.pre + theme.fireworks.src))
+  script(defer, src=url_for(theme.cdn.pre + '/js/ui/fireworks.js'), type='module')
   canvas.fireworks
 
 if theme.trianglify && theme.trianglify.enable

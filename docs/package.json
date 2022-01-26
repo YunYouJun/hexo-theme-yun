@@ -5,8 +5,8 @@
     "dev": "vitepress dev . --host"
   },
   "devDependencies": {
-    "@unocss/preset-icons": "^0.22.5",
-    "@vueuse/core": "^7.5.4",
+    "@unocss/preset-icons": "^0.22.6",
+    "@vueuse/core": "^7.5.5",
     "sass": "^1.49.0",
     "vite-plugin-pwa": "^0.11.13",
     "vitepress": "^0.21.6"
@@ -14,6 +14,6 @@
   "dependencies": {
     "@iconify-json/ri": "^1.0.2",
     "dayjs": "^1.10.7",
-    "vitepress-theme-you": "^0.0.31"
+    "vitepress-theme-you": "^0.0.32"
   }
 }

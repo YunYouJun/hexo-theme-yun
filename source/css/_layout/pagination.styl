@@ -1,9 +1,15 @@
+:root {
+  --page-btn-bg-color: rgba(white, 0.5);
+  --page-btn-hover-bg-color: rgba($colors.primary, 0.7);
+  --page-btn-active-bg-color: rgba(lighten($colors.primary, 20%), 0.9);
+}
+
 .page-number-basic {
   display: inline-block;
   width: 2rem;
   height: 2rem;
   margin: 0;
-  background-color: alpha(white, 0.5);
+  background-color: var(--page-btn-bg-color);
   transition: 0.2s;
 }
 
@@ -18,21 +24,22 @@
     @extend .page-number-basic;
     color: var(--hty-text-color) !important;
     text-decoration: none;
+    background-color: var(--page-btn-bg-color);
 
     &:hover {
       font-weight: normal;
       color: var(--hty-bg-color) !important;
-      background: rgba($colors.primary, 0.7);
+      background: var(--page-btn-hover-bg-color);
     }
 
     &:active {
       color: var(--hty-bg-color) !important;
-      background: rgba(lighten($colors.primary, 20%), 0.9);
+      background: var(--page-btn-active-bg-color);
     }
 
     &.current {
       font-weight: normal;
-      background: rgba(lighten($colors.primary, 20%), 0.9);
+      background: var(--page-btn-active-bg-color);
       color: var(--hty-bg-color) !important;
       cursor: default;
     }

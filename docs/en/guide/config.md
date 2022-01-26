@@ -5,9 +5,9 @@
 Convention > Configuration
 
 ::: danger
-Please define the configuration you need in `source/_data/yun.yml`, the rest will automatically use the default configuration.
+Please define the configuration you need in `_config.yun.yml`, the rest will automatically use the default configuration.
 
-Unless otherwise specified, they are configured by default in the `yun.yml` file.
+Unless otherwise specified, they are configured by default in the `_config.yun.yml` file.
 
 It is best not to modify any of the theme's files unless you have certain development capabilities, or else the theme can not be upgraded afterward.
 :::
@@ -117,7 +117,7 @@ head:
 
 ::: tip
 
-If you want to custom css，please set `yun.yml`:
+If you want to custom css，please set `_config.yun.yml`:
 
 ```yaml
 head:
@@ -201,7 +201,7 @@ cdn:
     defer:
 ```
 
-- `pre`: empty by default, your loading resource prefix. For example, if you want to use `jsdelivr` to accelerate the static resources of the whole station, you can set it in `yun.yml` like this.
+- `pre`: empty by default, your loading resource prefix. For example, if you want to use `jsdelivr` to accelerate the static resources of the whole station, you can set it in `_config.yun.yml` like this.
 
 > Replace `https://cdn.jsdelivr.net/gh/` with your GitHub username and repository name (you can also add the current branch, such as `@master`).
 > `@latest` is to use the latest version (but it will still be cached, **and it will take 12 hours to update**, if you need to force a refresh, please refer to [Purge Cache](https://github.com/jsdelivr/sdelivr#purge-cache)
@@ -259,7 +259,6 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
@@ -302,7 +301,7 @@ Under Alibaba, you can customize your own icon set. Domestic speed is decent in 
 
 Multi-color icons need to be quoted in the `symbol` of the article.
 
-Then set as follow in `yun.yml`.
+Then set as follow in `_config.yun.yml`.
 
 ```yaml
 head:
@@ -487,7 +486,7 @@ social:
     color: "#0088CC"
 ```
 
-You only need to set `social` in `yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
+You only need to set `social` in `_config.yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
 
 ```yaml
 social:
@@ -497,7 +496,7 @@ social:
     color: "#8E71C1"
 ```
 
-If you don't want to put any links, just set the following in `yun.yml`:
+If you don't want to put any links, just set the following in `_config.yun.yml`:
 
 ```yaml
 social:
@@ -526,7 +525,6 @@ You can visit <https://yunyoujun.cn> to see the effect. (Each refresh will displ
 banner:
   enable: true
   title: 云游君的小站
-  src: /js/ui/banner.js
   border: true
   cloud:
     enable: true
@@ -852,7 +850,7 @@ pages:
     color: dodgerblue
 ```
 
-If you don't want to put any links, just set the following in `yun.yml`:
+If you don't want to put any links, just set the following in `_config.yun.yml`:
 
 ```yaml
 pages:
@@ -924,7 +922,7 @@ types:
     icon: icon-zhihu-line
 ```
 
-You can also set your icon and color for different links in `yun.yml`.
+You can also set your icon and color for different links in `_config.yun.yml`.
 
 ```yaml
 types:
@@ -1085,23 +1083,15 @@ prismjs:
   tab_replace: ""
 ```
 
-In `yun.yml`:
+In `_config.yun.yml`:
 
 - `copy_btn`: enable copy button in codeblock
-- `prismjs`
-  - `light`: code highlight style for light
-  - `dark`: code highlight style for dark
 
-(You can set the corresponding suitable highlight styles for the light and dark modes.)
-
-> Please refer to the code highlighting theme <https://cdn.jsdelivr.net/npm/prismjs@latest/themes/>.
+> Since v1.8.3, code block will auto toggle light/dark mode.
 
 ```yaml
 codeblock:
   copy_btn: true
-  prismjs:
-    light: default
-    dark: tomorrow
 ```
 
 > It is recommended to close the line number, [here](https://highlightjs.readthedocs.io/en/latest/line-numbers.html) is the where the author wrote why highlight does not support line numbers.
@@ -1170,7 +1160,7 @@ QQ, WeChat, and Alipay reward icons are supported by default, and `color` is a c
 - `color`: icon color
 - `icon`: icon name
 
-You can override it in `yun.yml`.
+You can override it in `_config.yun.yml`.
 
 ```yaml
 reward:
@@ -1366,7 +1356,6 @@ i.e.:
 say:
   enable: true
   api: /data/sentences.json
-  src: /js/say.js
   hitokoto:
     enable: false
 ```
@@ -1405,4 +1394,4 @@ custom:
 
 You can directly view the files and relative comments in[themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).
 
-Or refer to the custom configuration of my blog [source/\_data/yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml).
+Or refer to the custom configuration of my blog [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml).

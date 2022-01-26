@@ -8,4 +8,4 @@
     a#goDown(aria-label='go-down' href="javascript:window.scrollTo(0, banner.clientHeight);")
       +icon(theme.banner.go_down.icon)
 
-script(src=url_for(theme.cdn.pre + theme.banner.src))
+script(src=url_for(theme.cdn.pre + '/js/ui/banner.js'), type='module')

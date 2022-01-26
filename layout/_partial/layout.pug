@@ -22,12 +22,19 @@ html(lang=config.language)
     include head.pug
     include extended.pug
     block preconnect
+    script.
+      (function() {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('darken-mode') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
   body(class= is_home() ? 'is-home' : '')
+    //- global
+    include ../_mixin/index.pug
     //- background
     include background.pug
     .container
-      //- global
-      include ../_mixin/index.pug
       include sidebar.pug
       main#content.sidebar-translate
         block content

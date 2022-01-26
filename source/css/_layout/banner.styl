@@ -6,8 +6,8 @@ $char-animation-duration = 0.4s;
 $banner-char-bg-color = white;
 
 :root {
-  --banner-line-color: black;
-  --banner-char-color: black;
+  --banner-char-bg-color: rgba($banner-char-bg-color, 0.5);
+  --banner-char-hover-color: $banner-char-bg-color;
 }
 
 if (hexo-config('banner.border')) {
@@ -62,12 +62,12 @@ if (hexo-config('banner.border')) {
   font-family: $font-family-serif;
   font-size: var(--banner-char-size, 1rem);
   font-weight: $font-family-serif-weight;
-  background-color: rgba($banner-char-bg-color, 0.5);
+  background-color: var(--banner-char-bg-color);
   line-height: 1;
   the-transition();
 
   &:hover {
-    color: $banner-char-bg-color;
+    color: var(--banner-char-hover-color);
     background-color: var(--banner-char-color);
   }
 
