@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@unocss/preset-icons": "^0.22.6",
-    "@vueuse/core": "^7.5.4",
+    "@vueuse/core": "^7.5.5",
     "sass": "^1.49.0",
     "vite-plugin-pwa": "^0.11.13",
     "vitepress": "^0.21.6"

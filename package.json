@@ -48,13 +48,13 @@
     "esno": "^0.14.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.1",
+    "tsup": "^5.11.11",
     "typescript": "^4.5.5"
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
   },
   "dependencies": {
-    "tsup": "^5.11.11",
     "vitepress-theme-you": "^0.0.32"
   }
 }
