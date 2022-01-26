@@ -1,17 +1,9 @@
 <p align="center">
-
-<h1>Hexo-Theme-Yun</h1>
-
-[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
-[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
-[![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
-[![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
-[![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
-
 <img width="128" src="docs/public/logo.gif">
+</p>
 
+<p align="center">
+<b>Hexo-Theme-Yun</b>
 </p>
 
 <div align="center">
@@ -22,6 +14,14 @@
 [Docs 使用文档](https://yun.yunyoujun.cn)
 
 > A light & fast & lovely hexo theme.
+
+[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
+[![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
+[![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
+[![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 </div>
 
