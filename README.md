@@ -42,7 +42,7 @@ In your hexo folder:
 npm install hexo-theme-yun@latest
 ```
 
-> Since v1.8.x, installation with `git clone` is no longer recommended.
+> Since `v1.8.x`, installation with `git clone` is no longer recommended.
 
 If you don't have pug & stylus renderer:
 

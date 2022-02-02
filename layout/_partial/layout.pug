@@ -32,6 +32,10 @@ html(lang=config.language)
   body(class= is_home() ? 'is-home' : '')
     //- global
     include ../_mixin/index.pug
+    
+    if page.iconify
+      include ../_third-party/iconify.pug
+
     //- background
     include background.pug
     .container

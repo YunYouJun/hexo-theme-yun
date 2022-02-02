@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-yun",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
   "repository": {
     "type": "git",
@@ -42,13 +42,13 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.16.0",
-    "@types/node": "^17.0.12",
-    "eslint": "^8.7.0",
+    "@antfu/eslint-config": "^0.16.1",
+    "@types/node": "^17.0.14",
+    "eslint": "^8.8.0",
     "esno": "^0.14.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.1",
-    "tsup": "^5.11.11",
+    "lint-staged": "^12.3.3",
+    "tsup": "^5.11.13",
     "typescript": "^4.5.5"
   },
   "lint-staged": {

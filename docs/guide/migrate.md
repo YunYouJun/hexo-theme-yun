@@ -6,7 +6,7 @@
 
 <Badge>v1.8.x</Badge> 后起使用 npm 包进行分发安装。
 
-迁移方式：
+迁移步骤：
 
 1. 在博客根目录下执行：`npm install hexo-theme-yun@latest`
 2. 将 `source/_data/yun.yml` 移动至根目录下，并重命名为 `_config.yun.yml`。
