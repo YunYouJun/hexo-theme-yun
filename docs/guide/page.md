@@ -14,6 +14,7 @@
 - `email`: 自动根据邮箱获取 [Gravatar](https://en.gravatar.com/site/implement/images/) 头像
 - `toc`: 是否显示目录（文章 `post` 默认显示，页面 `post` 默认不显示）
 - `readmore`: 将会首页卡片摘要末尾强制显示一个 `阅读更多` 按钮
+- `hideTime`: 强制隐藏时间显示
 
 ```md {3,4}
 ---
@@ -21,6 +22,7 @@ title: xxx
 author: 云游君
 email: me@yunyoujun.cn
 readmore: true
+hideTime: true
 ---
 ```
 
@@ -93,7 +95,7 @@ type: tags
 ---
 ```
 
-你可以在 `yun.yml` 中设置：
+你可以在 `_config.yun.yml` 中设置：
 
 ```yaml
 wordcloud:
@@ -341,7 +343,7 @@ girls:
 
 存在一个相册主页，放置多个相册，点击进入相册查看更多照片。
 
-在 `yun.yml` 中开启相册功能。
+在 `_config.yun.yml` 中开启相册功能。
 
 ```yaml
 albums:

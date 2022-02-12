@@ -1,3 +1,13 @@
+.heimu {
+  background-color: var(--hty-text-color);
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+
 // ref tailwindcss windicss
 // https://windicss.org/utilities/
 // but hexo can not bundle like webpack/vite, so i have to custom them by myself.
@@ -23,4 +33,10 @@
 
 .w-full {
   width: 100%;
+}
+
+.shadow-none {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: none !important;
 }

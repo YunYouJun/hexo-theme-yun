@@ -1,0 +1,14 @@
+script(src=theme.vendors.iconify)
+script.
+  // Define global variable
+  IconifyProviders = {
+    // Empty prefix: overwrite default API provider configuration
+    '': {
+      // Use custom API first, use Iconify public API as backup
+      resources: [
+          'https://api.iconify.design',
+      ],
+      // Wait for 1 second before switching API hosts
+      rotate: 1000,
+    },
+  };

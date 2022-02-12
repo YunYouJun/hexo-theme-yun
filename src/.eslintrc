@@ -1,0 +1,16 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "Yun": true,
+    "Pjax": true
+  },
+  "extends": ["@antfu/eslint-config-ts"],
+  "rules": {
+    "no-console": "off",
+    "node/no-missing-import": "off",
+    "node/no-unsupported-features/es-syntax": "off"
+  }
+}

@@ -6,4 +6,4 @@ script.
   function loadDisqus() {
     const dsqjs = new DisqusJS(disqusjsConfig)
   }
-script(src=url_for('/js/comments/disqus.js'))
+script(src=url_for('/js/comments/disqus.js', type='module'))

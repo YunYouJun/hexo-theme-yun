@@ -1,6 +1,11 @@
 $sidebar-bg-image = hexo-config('sidebar.bg_image');
 $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
+// for dark
+:root {
+  --sidebar-bg-image: url($sidebar-bg-image);
+}
+
 // 只在主页显示
 #menu-btn {
   display: none;
@@ -55,8 +60,8 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   bottom: 0;
   left: 0;
   width: 20rem;
-  background-color: white;
-  background-image: url($sidebar-bg-image);
+  background-image: var(--sidebar-bg-image, none);
+  background-color: var(--sidebar-bg-color, white);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: convert($sidebar-bg-position);

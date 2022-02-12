@@ -62,9 +62,10 @@ block content
 
     else
       +page_header(page.title, page.icon)
+      div.text-center
+        +post_meta(page)
       article#page
-        section.post-body(itemprop='articleBody')
-          .post-content.markdown-body!= page.content
+        include ./_partial/post/post-content.pug
 
     //- default not display reward
     if page.reward

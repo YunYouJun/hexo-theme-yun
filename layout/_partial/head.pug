@@ -15,8 +15,9 @@ if is_home()
 
 if theme.preload
   each items, name in theme.preload
-    each item in items
-      link(rel='preload', href=url_for(theme.cdn.pre + item), as=name)
+    if items
+      each item in items
+        link(rel='preload', href=url_for(theme.cdn.pre + item), as=name)
 
 //- prefetch
 if theme.prefetch
@@ -41,6 +42,8 @@ if theme.preconnect
 if theme.css !== undefined && theme.css.length > 0
   each url in theme.css
     link(rel='stylesheet', href=url_for(theme.cdn.pre + url))
+
+script(src=url_for(theme.cdn.pre + '/js/hexo-theme-yun.js'), type="module")
 
 if theme.js
   each item in theme.js
@@ -78,9 +81,6 @@ if page.photos
 
 if page.photos
   - page.photos = page_photos
-
-if theme.mode !== 'light'
-  script(src=url_for('/js/ui/mode.js'))
 
 //- no-referer
 if page.type === 'albums' || page.layout === 'gallery'

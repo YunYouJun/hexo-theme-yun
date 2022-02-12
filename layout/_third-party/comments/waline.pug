@@ -1,10 +1,2 @@
 #waline
-- theme.waline.el = "#waline"
-- theme.waline.lang = (theme.waline.lang || config.language || "zh-CN")
-script.
-  Yun.utils.getScript("#{theme.vendors.waline_js}", () => {
-    const walineConfig = !{JSON.stringify(theme.waline)}
-    walineConfig.path = "#{url_for(page.path)}"
-    walineConfig.dark = 'html[data-user-color-scheme="dark"]'
-    new Waline(walineConfig)
-  }, window.Waline);
+script(src='/js/comments/waline.js', type='module', defer)

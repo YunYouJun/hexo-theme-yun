@@ -1,13 +1,18 @@
 $post-card-opacity = hexo-config('post_card.opacity');
 $post-card-bg-color = white;
 
+:root {
+  --post-card-bg-color: rgba($post-card-bg-color, $post-card-opacity);
+  --post-card-shadow: 0 0 10px rgba($post-card-bg-color, 0.1);
+}
+
 .post-card {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
   the-transition();
-  background-color: rgba($post-card-bg-color, $post-card-opacity);
-  box-shadow: 0 0 10px rgba($post-card-bg-color, 0.1);
+  background-color: var(--post-card-bg-color);
+  box-shadow: var(--post-card-shadow);
 
   &:hover {
     box-shadow: 0 0px 25px rgba(black, 0.05);

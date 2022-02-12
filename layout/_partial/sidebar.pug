@@ -10,7 +10,7 @@ a#menu-btn.sidebar-toggle.hty-icon-button
 aside.sidebar
   //- can not be async
   //- https://stackoverflow.com/questions/9237044/async-loaded-scripts-with-domcontentloaded-or-load-event-handlers-not-being-call
-  script(src=url_for(theme.cdn.pre + theme.sidebar.src))
+  script(src=url_for(theme.cdn.pre + '/js/sidebar.js'), type='module')
   - var toc_content = toc(page.content, {list_number: theme.toc.list_number, max_depth: theme.toc.max_depth, min_depth: theme.toc.min_depth})
   if display_toc
     ul.sidebar-nav

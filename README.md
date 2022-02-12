@@ -1,22 +1,29 @@
-# Hexo-Theme-Yun
+<p align="center">
+<img width="128" src="docs/public/logo.gif">
+</p>
 
-[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/docs/badge.svg)](https://yun.yunyoujun.cn)
+<p align="center">
+<b>Hexo-Theme-Yun</b>
+</p>
+
+<div align="center">
+
+[Yun v1.0 - Strato PV](https://www.bilibili.com/video/BV17t4y1S7tz) ｜
+[Coding 镜像](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files) ｜
+[Preview 示例预览](https://www.yunyoujun.cn) ｜
+[Docs 使用文档](https://yun.yunyoujun.cn)
+
+> A light & fast & lovely hexo theme.
+
+[![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
 [![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/YunYouJun/hexo-theme-yun)
+[![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
 [![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
 [![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
-<p align="center">
-  <img width="128" src="docs/public/logo.gif">
-</p>
-
-> A light & fast & lovely hexo theme.
-
-- PV: [Yun v1.0 - Strato | bilibili](https://www.bilibili.com/video/BV17t4y1S7tz)
-- Coding 镜像: [hexo-theme-yun](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files)
-- 示例站点：[云游君的小站](https://www.yunyoujun.cn)
+</div>
 
 ## Docs
 
@@ -32,10 +39,12 @@
 In your hexo folder:
 
 ```bash
-git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
+npm install hexo-theme-yun@latest
 ```
 
-If you don't have jade & stylus renderer:
+> Since `v1.8.x`, installation with `git clone` is no longer recommended.
+
+If you don't have pug & stylus renderer:
 
 ```bash
 npm install hexo-render-pug hexo-renderer-stylus
@@ -50,6 +59,12 @@ theme: yun
 
 ### Config
 
+New file `_config.yun.yml` in your root folder.
+
+```yaml
+# write hexo-theme-yun config
+```
+
 More info [here](https://yun.yunyoujun.cn/guide/config.html).
 
 ### Upgrade
@@ -57,8 +72,7 @@ More info [here](https://yun.yunyoujun.cn/guide/config.html).
 You just need to execute:
 
 ```bash
-cd themes/yun
-git pull
+npm install hexo-theme-yun@latest
 ```
 
 ## [About](https://yun.yunyoujun.cn/guide/about.html)
@@ -346,8 +360,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://lfhsheng.github.io/" target="_blank">
-        <img width="80px" src="https://lfhsheng.github.io/images/lfhsheng.jpg" />
+      <a href="https://blog.lfhsheng.top" target="_blank">
+        <img width="80px" src="https://lfhsheng.top/images/lfhsheng.jpg" />
         <br />
         <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
       </a>

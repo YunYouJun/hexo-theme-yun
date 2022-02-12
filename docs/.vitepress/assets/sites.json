@@ -206,8 +206,8 @@
   },
   {
     "name": "泠风寒声的小窝",
-    "url": "https://lfhsheng.github.io/",
-    "avatar": "https://lfhsheng.github.io/images/lfhsheng.jpg",
+    "url": "https://blog.lfhsheng.top",
+    "avatar": "https://lfhsheng.top/images/lfhsheng.jpg",
     "desc": "沉浸在Touch Fish的海洋中无法自拔"
   },
   {
@@ -251,5 +251,17 @@
     "url": "https://www.misakishiki.site/",
     "avatar": "https://www.misakishiki.site/aquced.png",
     "desc": "栗木小站"
+  },
+  {
+    "name": "孙悟元的小站",
+    "url": "https://wuyuan.gq",
+    "avatar": "https://picture.wuyuan.gq/logo.png",
+    "desc": "次次追逐，次次追忆"
+  },
+  {
+    "name": "绮罗传香度良辰",
+    "url": "https://sagirichan.com/",
+    "avatar": "https://avatars.githubusercontent.com/u/87757744?v=4",
+    "desc": "希望能成为一个有趣的人"
   }
 ]

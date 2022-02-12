@@ -45,7 +45,7 @@ export function injectContentBetweenTags(
 export function generateDemoSite(site: SiteData) {
   if (!site) {
     site = {
-      avatar: "https://yun.yunyoujun.cn/yun.svg",
+      avatar: "https://yun.yunyoujun.cn/favicon.svg",
       url: "https://yun.yunyoujun.cn/demo/",
       name: "虚位以待",
       desc: "",

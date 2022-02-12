@@ -1,7 +1,7 @@
 import type { UserConfig } from "vitepress";
-import type { YouTheme } from "vitepress-theme-you/src/config";
+import type { YouTheme } from "vitepress-theme-you";
 
-import path from "path";
+import baseConfig from 'vitepress-theme-you/config'
 
 import * as navbar from "./configs/navbar";
 import * as sidebar from "./configs/sidebar";
@@ -9,7 +9,8 @@ import * as sidebar from "./configs/sidebar";
 import { head } from "./configs/head";
 
 const config: UserConfig<YouTheme.Config> = {
-  // @ts-ignore
+  extends: baseConfig,
+
   head,
 
   title: "Hexo-Theme-Yun",
@@ -36,8 +37,6 @@ const config: UserConfig<YouTheme.Config> = {
     repo: "YunYouJun/hexo-theme-yun",
     docsDir: "docs",
     editLinks: true,
-    smoothScroll: true,
-    sidebarDepth: 2,
     docsBranch: "dev",
 
     editLinkText: "帮助改善此页面",
@@ -61,41 +60,20 @@ const config: UserConfig<YouTheme.Config> = {
     },
 
     algolia: {
+      // appId: 'N2XEWA4N6V',
       apiKey: "62c0b4aa58760ed3804e4fae0457c202",
       indexName: "yunyoujun",
     },
   },
 
-  plugins: [
-    [
-      "@vuepress/google-analytics",
-      {
-        id: "UA-121354150-9",
-      },
-    ],
-    ["@vuepress/plugin-pwa"],
-    [
-      "@vuepress/plugin-pwa-popup",
-      {
-        locales: {
-          "/": {
-            message: "文档更新啦～",
-            buttonText: "快点我刷新！",
-          },
-          "/en/": {
-            message: "Documentation Updated～",
-            buttonText: "Refresh Me!",
-          },
-        },
-      },
-    ],
-    [
-      "@vuepress/register-components",
-      {
-        componentsDir: path.resolve(__dirname, "./components"),
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     "@vuepress/google-analytics",
+  //     {
+  //       id: "UA-121354150-9",
+  //     },
+  //   ],
+  // ],
 };
 
 export default config;

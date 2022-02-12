@@ -26,7 +26,7 @@ url: https://www.yunyoujun.cn
 root: /
 ```
 
-Check whether the theme configurations are done in the `yun.yml` file and has been saved.
+Check whether the theme configurations are done in the `_config.yun.yml` file and has been saved.
 Check whether the following steps have been performed:
 
 - `hexo clean`: clear the local cache

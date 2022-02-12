@@ -14,7 +14,7 @@ npm install hexo-wordcount
 # yarn add hexo-wordcount
 ```
 
-在配置文件 `source/_data/yun.yml` 中：
+在配置文件 `_config.yun.yml` 中：
 
 - `count`: 字数统计
 - `time`: 阅读时间
@@ -34,9 +34,9 @@ wordcount:
 npm install hexo-generator-feed --save
 ```
 
-配置默认图标为 `icon-rss-line`，如需自定义，进入 `source/_data/yun.yml` 进行配置。
+配置默认图标为 `icon-rss-line`，如需自定义，进入 `_config.yun.yml` 进行配置。
 
-可配置在 `yun.yml` 的 `social` 字段里，如：
+可配置在 `_config.yun.yml` 的 `social` 字段里，如：
 
 ```yaml
 social:
@@ -153,7 +153,7 @@ abbrlink:
 
 ## 标签云（词云）
 
-在 `yun.yml` 中设置，在标签页中使用彩色词云替代原生标签云。
+在 `_config.yun.yml` 中设置，在标签页中使用彩色词云替代原生标签云。
 
 - `enable`: 是否开启
 - `height`: 词云高度
@@ -213,7 +213,7 @@ aplayer: true
 
 ### 全局音乐播放器
 
-你也可以在 `yun.yml` 中设置全局开启。（当你设置了全局的播放器时，可以使用它。）
+你也可以在 `_config.yun.yml` 中设置全局开启。（当你设置了全局的播放器时，可以使用它。）
 
 - `meting`: 是否开启 [meting](https://github.com/metowolf/MetingJS)，决定是否引入 meting 资源。（注意与 `widget` 下的 `meting` 相区分）
 - `widget`: 你可以将 `widget.enable` 设置为 `true` 来打开全局播放器。（`aplayer.global` 必须为 `true`）

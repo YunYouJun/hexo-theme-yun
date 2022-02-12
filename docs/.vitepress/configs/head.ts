@@ -1,5 +1,5 @@
 export const head = [
-  ["link", { rel: "icon", href: "/yun.svg" }],
+  ["link", { rel: "icon", href: "/favicon.svg" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
   ["meta", { name: "theme-color", content: "#6200ee" }],
   ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],

@@ -32,17 +32,8 @@ revealjs:
     highlight:
       js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
       monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
-prismjs:
-  themes:
-    default: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css
-    coy: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-coy.css
-    dark: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-dark.css
-    funky: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-funky.css
-    okaidia: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-okaidia.css
-    solarizedlight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-solarizedlight.css
-    tomorrow: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css
-    twilight: https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-twilight.css
-vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
+vue: https://cdn.jsdelivr.net/npm/vue@2.6.14
+darken: https://cdn.jsdelivr.net/npm/darken@1.5.0
 
 # comment
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
@@ -53,10 +44,11 @@ disqusjs:
   css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
   js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
-iconify: https://code.iconify.design/1/1.0.7/iconify.min.js
+iconify: https://code.iconify.design/2/2.1.1/iconify.min.js
 busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 unocss:
-  runtime: https://unpkg.com/@unocss/runtime
-  core: https://unpkg.com/@unocss/runtime/core.global.js
-  uno: https://unpkg.com/@unocss/runtime/uno.global.js
-  attributify: https://unpkg.com/@unocss/runtime/attributify.global.js
+  runtime: https://cdn.jsdelivr.net/npm/@unocss/runtime
+  core: https://cdn.jsdelivr.net/npm/@unocss/runtime/core.global.js
+  uno: https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js
+  attributify: https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js
+  mini: https://cdn.jsdelivr.net/npm/@unocss/runtime/mini.global.js
