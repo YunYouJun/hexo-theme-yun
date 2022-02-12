@@ -20,6 +20,10 @@ hexo server
 
 - [更新日志](https://github.com/YunYouJun/hexo-theme-yun/releases)
 
+::: tip
+如果您使用旧版 Yun < v1.8.x 请查看 [迁移指南](/guide/migrate.html) 更新或修改配置文件。
+:::
+
 ## 快速开始
 
 ::: warning 渲染器
