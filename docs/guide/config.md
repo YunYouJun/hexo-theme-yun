@@ -732,6 +732,7 @@ scrollreveal:
 
 - `default`: 默认状态下图标。
 - `pointer`: 指针（即链接状态下）图标。
+- `text`: 文本选择图标。
 
 ```yaml
 cursor:
