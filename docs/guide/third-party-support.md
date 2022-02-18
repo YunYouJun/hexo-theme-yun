@@ -213,8 +213,9 @@ waline:
 
 - `serverURL`: 后端部署后的链接（需自行部署）
 - `comment`: 是否显示本文评论数量
+- `emoji`: 自定义表情
 
-如何部署与更多配置请参见[官方文档](https://waline.js.org/quick-start.html)。
+如何部署与更多配置请参见[官方文档](https://waline.js.org/guide/get-started)。
 
 ### MiniValine
 
