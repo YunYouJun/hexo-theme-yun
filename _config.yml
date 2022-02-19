@@ -623,7 +623,7 @@ comment:
   enable: true
   icon: icon-chat-3-line
   tips:
-    - 要不要和我说些什么？
+    # - 要不要和我说些什么？
   # candidates:
   #   - valine
   #   - utterances

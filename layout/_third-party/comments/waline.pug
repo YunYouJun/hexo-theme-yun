@@ -1,2 +1,4 @@
 #waline
-script(src='/js/comments/waline.js', type='module', defer)
+script.
+  window.CONFIG.waline.config.path = "#{url_for(page.path)}"
+script(src=url_for('/js/comments/waline.js'), type='module', defer)

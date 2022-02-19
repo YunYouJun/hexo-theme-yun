@@ -76,7 +76,7 @@ hexo.extend.helper.register('yun_config', function() {
       config: Object.assign(theme.waline, {
         el: '#waline',
         lang: (theme.waline.lang || config.language || 'zh-CN'),
-        path: url_for(page.path),
+        // set path in script
       }),
       cdn: theme.vendors.waline_js,
       dark: 'html.dark',
