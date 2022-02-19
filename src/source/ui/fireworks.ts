@@ -3,13 +3,28 @@
  * custom by hexo-theme-yun @YunYouJun
  */
 
+interface MinMax {
+  min: number
+  max: number
+}
+
+interface FireworksConfig {
+  colors: string[]
+  numberOfParticules: number
+  orbitRadius: MinMax
+  circleRadius: MinMax
+  diffuseRadius: MinMax
+  animeDuration: MinMax
+}
+
 /**
  * 创建烟花
- * @typedef {{min: number, max: number}} MinMax
- * @param {{numberOfParticules: number, orbitRadius: MinMax, circleRadius: MinMax, diffuseRadius: MinMax, animeDuration: MinMax}} config
+ * @param config 
  */
-function createFireworks(
-  config = {
+function createFireworks(config: Partial<FireworksConfig>) {
+  const defaultColors = ['102, 167, 221', '62, 131, 225', '33, 78, 194']
+  const defaultConfig: FireworksConfig = {
+    colors: defaultColors,
     numberOfParticules: 20,
     orbitRadius: {
       min: 50,
@@ -27,14 +42,14 @@ function createFireworks(
       min: 900,
       max: 1500,
     },
-  },
-) {
+  }
+  config = Object.assign(defaultConfig, config)
+
   let pointerX = 0
   let pointerY = 0
 
   // sky blue
-  let colors = ['102, 167, 221', '62, 131, 225', '33, 78, 194']
-  if (window.CONFIG.fireworks.colors) colors = window.CONFIG.fireworks.colors
+  let colors = config.colors || defaultColors
 
   const canvasEl = document.querySelector('.fireworks') as HTMLCanvasElement
   const ctx = canvasEl.getContext('2d')
@@ -201,5 +216,9 @@ function createFireworks(
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  createFireworks()
+  let fireworksConfig: Partial<FireworksConfig> = {}
+  if (window.CONFIG.fireworks.colors) {
+    fireworksConfig.colors = window.CONFIG.fireworks.colors
+  }
+  createFireworks(fireworksConfig)
 })
