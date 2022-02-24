@@ -120,7 +120,6 @@ anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 albums:
   enable: false
   icon: icon-gallery-line
-  src: /js/gallery-decrypt.js
 
 girls:
   enable: false

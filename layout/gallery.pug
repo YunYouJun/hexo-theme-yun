@@ -19,7 +19,7 @@ block content
                 figcaption=photo.caption
         else
           script(src=theme.vendors.crypto_js.all)
-          script(src=url_for(theme.albums.src))
+          script(type="module", src=url_for('/js/gallery-decrypt.js'))
           #decryptContainer
             input#decrypt-password(type="password")
             button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
