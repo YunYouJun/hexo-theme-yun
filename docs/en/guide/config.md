@@ -1392,6 +1392,6 @@ custom:
 
 ## More Configuration
 
-You can directly view the files and relative comments in[themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).
+You can directly view the files and relative comments in [\_config.yml | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).
 
 Or refer to the custom configuration of my blog [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml).

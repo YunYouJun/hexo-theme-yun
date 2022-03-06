@@ -30,7 +30,7 @@ language: zh-CN
 
 配置方式参考下例：
 
-> 各语言对应属性和内容见 `themes/yun/languages`，覆盖对应项即可。
+> 各语言对应属性和内容见 [languages | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/languages/)，覆盖对应项即可。
 
 ```yaml
 en: # 将要覆盖的语言
@@ -1433,6 +1433,6 @@ custom:
 
 ## 更多配置
 
-你可以直接查看 [themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
+你可以直接查看 [\_config.yml ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
 
 或者参考我的博客的自定义配置 [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml)。
