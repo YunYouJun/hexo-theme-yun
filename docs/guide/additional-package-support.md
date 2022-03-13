@@ -296,13 +296,15 @@ embeddedVideoTransformer: function() {
 
 > 其主要采用 CDN 的方式实现。
 
-- `copy_tex`: 复制 katex 文本，默认开启
-- `global`: 如果你想要在全局页面使用 `KaTex`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
+- `copy_tex`: 复制 KaTeX 文本，默认开启
+- `global`: 如果你想要在全局页面使用 `KaTeX`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
+- `options`: 传入 KaTeX 渲染器的选项。具体选项参考[这里](https://katex.org/docs/options.html)。
 
 ```yaml
 katex:
   copy_tex: true
   global: false
+  options: {}
 ```
 
 只有在使用了 `katex` 的文章或页面才会加载 KaTeX 的库，所以你需要在使用 KaTeX 的文章或头部进行设置。
@@ -314,6 +316,8 @@ title: xxx
 katex: true
 ---
 ```
+
+头部中的 `katex` 类型可以是 `bool | object`，如果是 `object`，那只有 `options` 选项有效果，具体参数与全局设置一样，并且会与全局设置合并与替换。
 
 你可以使用如下方式包裹公式。
 

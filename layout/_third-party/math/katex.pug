@@ -7,5 +7,8 @@ if theme.katex.copy_tex
 script(defer src=theme.vendors.katex.auto_render)
 script.
   document.addEventListener("DOMContentLoaded", () => {
-    Yun.utils.renderKatex();
+    Yun.utils.renderKatex({
+      ...!{JSON.stringify(theme.katex.options)},
+      ...!{String(JSON.stringify(page.katex))}?.options,
+    });
   });

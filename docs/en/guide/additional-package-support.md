@@ -256,13 +256,15 @@ embeddedVideoTransformer: function () {
 
 Some simple mathematical formulas are shown in the article, using KaTeX. For details, please refer to [Official Document](https://katex.org/).
 
-- `copy_tex`: copy katex text, enabled by default
-- `global`: If you want to use `KaTex` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
+- `copy_tex`: copy KaTeX text, enabled by default
+- `global`: If you want to use `KaTeX` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
+- `options`: Options to pass in KaTeX renderer. Availables options can be found [here](https://katex.org/docs/options.html).
 
 ```yaml
 katex:
   copy_tex: true
   global: false
+  options: {}
 ```
 
 KaTeX libraries will be loaded only in articles or pages that use `katex`, so you need to set them in articles or headers using KaTeX.
@@ -274,6 +276,8 @@ title: xxx
 katex: true
 ---
 ```
+
+The type of `katex` in the headers is `bool | object`. If it's an `object`, then only the property `options` is useful, and its properties are the same as global, and the global options will be merged and substituted by the page-specific options.
 
 You can wrap the formula in the following way.
 

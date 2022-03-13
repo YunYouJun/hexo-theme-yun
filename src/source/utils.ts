@@ -3,7 +3,7 @@
  */
 
 // @ts-expect-error wrap
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this)
   this.parentNode.removeChild(this)
   wrapper.appendChild(this)
@@ -81,8 +81,8 @@ export function insertCopyCodeBtn() {
     const copyBtn = container.querySelector('.copy-btn') as HTMLButtonElement
     copyBtn.addEventListener('click', () => {
       const lines
-          = container.querySelector('code[class*=\'language-\']')
-          || container.querySelector('.token')
+        = container.querySelector('code[class*=\'language-\']')
+        || container.querySelector('.token')
       const code = lines.innerText
       const ta = document.createElement('textarea')
       ta.style.top = `${window.scrollY}px` // Prevent page scrolling
@@ -122,7 +122,7 @@ export function insertCopyCodeBtn() {
  * 须已引入 KaTeX CDN
  * https://github.com/KaTeX/KaTeX
  */
-export function renderKatex() {
+export function renderKatex(options: any) {
   if (typeof window.renderMathInElement !== 'undefined') {
     window.renderMathInElement(document.body, {
       delimiters: [
@@ -131,6 +131,7 @@ export function renderKatex() {
         { left: '\\(', right: '\\)', display: false },
         { left: '\\[', right: '\\]', display: true },
       ],
+      ...options,
     })
   }
   else {
@@ -159,7 +160,7 @@ export function registerScrollPercent() {
     const windowHeight = window.innerHeight
     const circumference = progressCircle.r.baseVal.value * 2 * Math.PI
     const offset
-        = circumference - (curTop / (bodyHeight - windowHeight)) * circumference
+      = circumference - (curTop / (bodyHeight - windowHeight)) * circumference
     progressCircle.setAttribute(
       'stroke-dasharray',
       `${circumference} ${circumference}`,
