@@ -554,6 +554,9 @@ leancloud_visitors:
 katex:
   copy_tex: true
   global: false
+  # Options are for katex rendering options: https://katex.org/docs/options.html
+  # In page katex options are also possible and will be merged
+  options: {}
 
 # plugins
 aplayer:
