@@ -34,6 +34,10 @@
 
 ![index-preview.jpg](./docs/public/images/index-preview.jpg)
 
+> Now, I'm developing [valaxy](https://github.com/YunYouJun/valaxy) & `valaxy-theme-yun` to solve all the problems that currently exist in this theme.
+> If you wish to see it sooner, you can sponsor me [here](https://sponsors.yunyoujun.cn/).
+> More info see [#260](https://github.com/YunYouJun/hexo-theme-yun/discussions/260).
+
 ## Install
 
 In your hexo folder:
@@ -360,13 +364,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://blog.lfhsheng.top" target="_blank">
-        <img width="80px" src="https://lfhsheng.top/images/lfhsheng.jpg" />
-        <br />
-        <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
-      </a>
-    </td>
-    <td>
       <a href="https://yuumi0221.github.io/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Yuumi0221/Yuumi0221.github.io/images/settings/favicon.png" />
         <br />
@@ -401,8 +398,23 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="简单的个人Blog">随风的小站</sub>
       </a>
     </td>
+    <td>
+      <a href="https://wxxybxg.bsblog.cn" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/BNQDZJ/bsblog-images@main/20211120/wxxybxg.png" />
+        <br />
+        <sub title="无锡欣跃不锈钢有限公司官方网站">无锡欣跃不锈钢有限公司</sub>
+      </a>
+    </td>
   </tr>
 </table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- demo-sites:end -->
+
+## [Sponsors](https://sponsors.yunyoujun.cn)
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/YunYouJun/sponsors/public/sponsors.svg">
+    <img src='https://cdn.jsdelivr.net/gh/YunYouJun/sponsors/public/sponsors.svg'/>
+  </a>
+</p>
