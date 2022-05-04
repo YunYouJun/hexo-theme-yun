@@ -1,6 +1,6 @@
 hexo.extend.tag.register(
   "prompt",
-  function(args, content) {
+  function (args, content) {
     const password = args[0];
     return (
       "<button class='hty-button hty-button--raised prompt-block-btn' onclick=" +

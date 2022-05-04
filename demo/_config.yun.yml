@@ -27,6 +27,7 @@ reward:
 comment:
   candidates:
     - waline
+    - twikoo
     # - giscus
   tips:
     - 如果您有任何关于博客内容的相关讨论，欢迎前往 <a href="https://github.com/YunYouJun/yunyoujun.github.io/discussions" target="_blank">GitHub Discussions</a> 与我交流。
@@ -43,6 +44,10 @@ waline:
   locale:
     placeholder: 填写邮箱，可以收到回复通知哦～
   requiredMeta: ["nick"]
+
+twikoo:
+  enable: true
+  envId: test-1c8fe2
 
 github_issues:
   enable: false

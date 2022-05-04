@@ -1,2 +1,4 @@
 dist
 public
+
+packages/hexo-theme-yun/source/js/**/*

@@ -27,6 +27,7 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "generate:demo-sites": "esno docs/.vitepress/scripts/index.ts",
+    "lint": "eslint .",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
   },

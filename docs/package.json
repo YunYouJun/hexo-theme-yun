@@ -5,15 +5,15 @@
     "dev": "vitepress dev . --host"
   },
   "devDependencies": {
-    "@unocss/preset-icons": "^0.27.6",
-    "@vueuse/core": "^8.0.0",
-    "sass": "^1.49.9",
-    "vite-plugin-pwa": "^0.11.13",
+    "@unocss/preset-icons": "^0.32.12",
+    "@vueuse/core": "^8.4.1",
+    "sass": "^1.51.0",
+    "vite-plugin-pwa": "^0.12.0",
     "vitepress": "^0.22.3"
   },
   "dependencies": {
     "@iconify-json/ri": "^1.1.1",
-    "dayjs": "^1.10.8",
+    "dayjs": "^1.11.1",
     "vitepress-theme-you": "^0.0.33"
   }
 }
