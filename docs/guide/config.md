@@ -58,9 +58,9 @@ zh-CN: # 将要覆盖的语言
 
 ```yaml
 colors:
-  primary: "#6200ee"
+  primary: '#6200ee'
   # bg: "#F5F5F5"
-  selection_bg: "#8e71c1" # 选取文字时的背景色
+  selection_bg: '#8e71c1' # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
   # tag_start_color:
   # tag_end_color:
@@ -72,18 +72,18 @@ colors:
 
 ```yaml
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E834D"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E834D'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 ```
 
 ### categories
@@ -194,7 +194,7 @@ Content Delivery Network，统一加载网络资源，有利于提高网页加�
 
 ```yaml
 cdn:
-  pre: ""
+  pre: ''
   css:
   js:
     base:
@@ -440,55 +440,55 @@ social:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
-    color: "#12B7F5"
+    color: '#12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: "#181717"
+    color: '#181717'
   - name: E-Mail
     link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
-    color: "#8E71C1"
+    color: '#8E71C1'
   - name: 微博
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
-    color: "#E6162D"
+    color: '#E6162D'
   - name: 豆瓣
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
-    color: "#007722"
+    color: '#007722'
   - name: 网易云音乐
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
-    color: "#C10D0C"
+    color: '#C10D0C'
   - name: 知乎
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
-    color: "#0084FF"
+    color: '#0084FF'
   - name: 哔哩哔哩动画
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
-    color: "#FF8EB3"
+    color: '#FF8EB3'
   - name: POPI
     link: https://www.popiask.cn/elpsycn
     icon: icon-questionnaire-line
-    color: "#525252"
+    color: '#525252'
   - name: 微信公众号
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
-    color: "#1AAD19"
+    color: '#1AAD19'
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
-    color: "#1da1f2"
+    color: '#1da1f2'
   - name: Telegram
     link: https://t.me/YunYouJun
     icon: icon-telegram-line
-    color: "#0088CC"
+    color: '#0088CC'
   - name: Telegram Channel
     link: https://t.me/elpsycn
     icon: icon-telegram-fill
-    color: "#0088CC"
+    color: '#0088CC'
   - name: Travelling
     link: https://travellings.link
     icon: icon-send-plane-2-line
@@ -502,7 +502,7 @@ social:
   - name: E-Mail
     link: mailto:你的邮箱
     icon: icon-mail-line
-    color: "#8E71C1"
+    color: '#8E71C1'
 ```
 
 如果您不想放置任何链接，仅需在 `_config.yun.yml` 中设置：
@@ -537,7 +537,7 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: white
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
@@ -619,13 +619,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: '''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
 ```
 
 ### 图片背景
@@ -703,9 +703,9 @@ trianglify:
 fireworks:
   enable: true
   colors:
-    - "102, 167, 221"
-    - "62, 131, 225"
-    - "33, 78, 194"
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
 ```
 
 > 参考自：[Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
@@ -899,34 +899,34 @@ types:
     color: blue
     icon: icon-external-link-line
   bilibili:
-    color: "#FF8EB3"
+    color: '#FF8EB3'
     icon: icon-bilibili-line
   douban:
-    color: "#007722"
+    color: '#007722'
     icon: icon-douban-line
   github:
     color: black
     icon: icon-github-line
   netease-cloud-music:
-    color: "#C10D0C"
+    color: '#C10D0C'
     icon: icon-netease-cloud-music-line
   notion:
     color: black
     icon: icon-notion
   twitter:
-    color: "#1da1f2"
+    color: '#1da1f2'
     icon: icon-twitter-line
   wechat:
-    color: "#1AAD19"
+    color: '#1AAD19'
     icon: icon-wechat-2-line
   weibo:
-    color: "#E6162D"
+    color: '#E6162D'
     icon: icon-weibo-line
   yuque:
-    color: "#25b864"
+    color: '#25b864'
     icon: icon-yuque
   zhihu:
-    color: "#0084FF"
+    color: '#0084FF'
     icon: icon-zhihu-line
 ```
 
@@ -1092,7 +1092,7 @@ prismjs:
   enable: true
   preprocess: true
   line_number: false
-  tab_replace: ""
+  tab_replace: ''
 ```
 
 在 `_config.yun.yml` 中：
@@ -1142,7 +1142,7 @@ creative_commons:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
 ```
 
@@ -1192,15 +1192,15 @@ reward:
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
+      color: '#00A3EE'
       icon: icon-alipay-line
     - name: QQ 支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
+      color: '#12B7F5'
       icon: icon-qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
+      color: '#2DC100'
       icon: icon-wechat-pay-line
 ```
 
@@ -1223,7 +1223,7 @@ footer:
   icon:
     name: icon-cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
 ```
 
 :::
@@ -1250,7 +1250,7 @@ footer:
   icon:
     name: icon-cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
     url: https://sponsors.yunyoujun.cn
     title: 云游君的赞助者们
 ```
@@ -1300,7 +1300,7 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: '2019-04-12T00:00:00'
 ```
 
 > 注意记得补 0，譬如 `2019-04-01` 而不是 `2019-4-1`。
@@ -1413,7 +1413,7 @@ say:
 mourn:
   enable: true
   days:
-    - "4-4"
+    - 4-4
 ```
 
 > 注意这里不用补 0，因为直接获取月日判断时，可以直接判断，逻辑代码最少。

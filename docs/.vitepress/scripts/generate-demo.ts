@@ -2,10 +2,10 @@
  * 站点数据
  */
 interface SiteData {
-  name: string;
-  url: string;
-  avatar: string;
-  desc: string;
+  name: string
+  url: string
+  avatar: string
+  desc: string
 }
 
 /**
@@ -15,27 +15,27 @@ interface SiteData {
  */
 export function injectContentBetweenTags(
   content: string,
-  injectedContent: string
+  injectedContent: string,
 ) {
-  const namespace = "demo-sites";
-  const startTag = `<!-- ${namespace}:start -->`;
-  const endTag = `<!-- ${namespace}:end -->`;
+  const namespace = 'demo-sites'
+  const startTag = `<!-- ${namespace}:start -->`
+  const endTag = `<!-- ${namespace}:end -->`
 
-  const startIndex = content.indexOf(startTag);
-  const endIndex = content.indexOf(endTag, startIndex);
+  const startIndex = content.indexOf(startTag)
+  const endIndex = content.indexOf(endTag, startIndex)
 
-  if (startIndex === -1 || endIndex === -1) {
-    return "";
-  }
+  if (startIndex === -1 || endIndex === -1)
+    return ''
+
   return [
     content.slice(0, startIndex + startTag.length),
-    "\n<!-- prettier-ignore-start -->",
-    "\n<!-- markdownlint-disable -->\n",
+    '\n<!-- prettier-ignore-start -->',
+    '\n<!-- markdownlint-disable -->\n',
     injectedContent,
-    "\n<!-- markdownlint-restore -->",
-    "\n<!-- prettier-ignore-end -->\n",
+    '\n<!-- markdownlint-restore -->',
+    '\n<!-- prettier-ignore-end -->\n',
     content.slice(endIndex),
-  ].join("");
+  ].join('')
 }
 
 /**
@@ -45,17 +45,17 @@ export function injectContentBetweenTags(
 export function generateDemoSite(site: SiteData) {
   if (!site) {
     site = {
-      avatar: "https://yun.yunyoujun.cn/favicon.svg",
-      url: "https://yun.yunyoujun.cn/demo/",
-      name: "虚位以待",
-      desc: "",
-    };
+      avatar: 'https://yun.yunyoujun.cn/favicon.svg',
+      url: 'https://yun.yunyoujun.cn/demo/',
+      name: '虚位以待',
+      desc: '',
+    }
   }
   return `<a href="${site.url}" target="_blank">
         <img width="80px" src="${site.avatar}" />
         <br />
         <sub title="${site.desc}">${site.name}</sub>
-      </a>`;
+      </a>`
 }
 
 /**
@@ -64,20 +64,20 @@ export function generateDemoSite(site: SiteData) {
  * @param maxLength 最大长度
  */
 export function generateDemoSitesTable(sites: SiteData[], maxLength = 40) {
-  const length = maxLength < sites.length ? maxLength : sites.length;
+  const length = maxLength < sites.length ? maxLength : sites.length
 
-  let tableContent = "";
-  const numOfRow = 8;
-  const totalRows = Math.ceil(length / numOfRow);
+  let tableContent = ''
+  const numOfRow = 8
+  const totalRows = Math.ceil(length / numOfRow)
   for (let row = 0; row < totalRows; row++) {
-    tableContent += `\n  <tr align="center">\n`;
+    tableContent += '\n  <tr align="center">\n'
     for (let col = 0; col < numOfRow; col++) {
-      const site = sites[row * numOfRow + col];
+      const site = sites[row * numOfRow + col]
       tableContent += `    <td>
       ${generateDemoSite(site)}
-    </td>\n`;
+    </td>\n`
     }
-    tableContent += `  </tr>`;
+    tableContent += '  </tr>'
   }
-  return `<table align="center">${tableContent}\n</table>`;
+  return `<table align="center">${tableContent}\n</table>`
 }

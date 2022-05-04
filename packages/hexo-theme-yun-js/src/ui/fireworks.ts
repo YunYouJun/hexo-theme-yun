@@ -19,7 +19,7 @@ interface FireworksConfig {
 
 /**
  * 创建烟花
- * @param config 
+ * @param config
  */
 function createFireworks(config: Partial<FireworksConfig>) {
   const defaultColors = ['102, 167, 221', '62, 131, 225', '33, 78, 194']
@@ -49,7 +49,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
   let pointerY = 0
 
   // sky blue
-  let colors = config.colors || defaultColors
+  const colors = config.colors || defaultColors
 
   const canvasEl = document.querySelector('.fireworks') as HTMLCanvasElement
   const ctx = canvasEl.getContext('2d')
@@ -110,7 +110,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
       draw() {},
     }
     p.endPos = setParticuleDirection(p)
-    p.draw = function() {
+    p.draw = function () {
       ctx.beginPath()
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true)
       ctx.fillStyle = p.color
@@ -129,7 +129,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
       lineWidth: 6,
       draw() {},
     }
-    p.draw = function() {
+    p.draw = function () {
       ctx.globalAlpha = p.alpha
       ctx.beginPath()
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true)
@@ -216,9 +216,9 @@ function createFireworks(config: Partial<FireworksConfig>) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  let fireworksConfig: Partial<FireworksConfig> = {}
-  if (window.CONFIG.fireworks.colors) {
+  const fireworksConfig: Partial<FireworksConfig> = {}
+  if (window.CONFIG.fireworks.colors)
     fireworksConfig.colors = window.CONFIG.fireworks.colors
-  }
+
   createFireworks(fireworksConfig)
 })

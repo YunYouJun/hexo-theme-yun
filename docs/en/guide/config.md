@@ -56,9 +56,9 @@ The main color of the custom theme.
 
 ```yaml
 colors:
-  primary: "#6200ee"
+  primary: '#6200ee'
   # bg: "# F5F5F5"
-  selection_bg: "#8e71c1" # background color when selecting text
+  selection_bg: '#8e71c1' # background color when selecting text
   # Starting and ending colors of the tags
   # tag_start_color:
   # tag_end_color:
@@ -70,18 +70,18 @@ You can specify the color for your label, the default color is `#333`.
 
 ```yaml
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E834D"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E834D'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 ```
 
 ### Categories
@@ -191,7 +191,7 @@ You can also obtain the CDN you want according to the naming rules, and introduc
 
 ```yaml
 cdn:
-  pre: ""
+  pre: ''
   css:
   js:
     base:
@@ -528,7 +528,7 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: white
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
@@ -611,13 +611,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: '''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
 ```
 
 ### Background
@@ -696,9 +696,9 @@ Click on the fireworks effect on the page
 fireworks:
   enable: true
   colors:
-    - "102, 167, 221"
-    - "62, 131, 225"
-    - "33, 78, 194"
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
 ```
 
 > Reference from: [Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
@@ -891,34 +891,34 @@ types:
     color: blue
     icon: icon-external-link-line
   bilibili:
-    color: "#FF8EB3"
+    color: '#FF8EB3'
     icon: icon-bilibili-line
   douban:
-    color: "#007722"
+    color: '#007722'
     icon: icon-douban-line
   github:
     color: black
     icon: icon-github-line
   netease-cloud-music:
-    color: "#C10D0C"
+    color: '#C10D0C'
     icon: icon-netease-cloud-music-line
   notion:
     color: black
     icon: icon-notion
   twitter:
-    color: "#1da1f2"
+    color: '#1da1f2'
     icon: icon-twitter-line
   wechat:
-    color: "#1AAD19"
+    color: '#1AAD19'
     icon: icon-wechat-2-line
   weibo:
-    color: "#E6162D"
+    color: '#E6162D'
     icon: icon-weibo-line
   yuque:
-    color: "#25b864"
+    color: '#25b864'
     icon: icon-yuque
   zhihu:
-    color: "#0084FF"
+    color: '#0084FF'
     icon: icon-zhihu-line
 ```
 
@@ -1080,7 +1080,7 @@ prismjs:
   enable: true
   preprocess: true
   line_number: false
-  tab_replace: ""
+  tab_replace: ''
 ```
 
 In `_config.yun.yml`:
@@ -1125,7 +1125,7 @@ creative_commons:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
 ```
 
@@ -1171,15 +1171,15 @@ reward:
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
+      color: '#00A3EE'
       icon: icon-alipay-line
     - name: QQ 支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
+      color: '#12B7F5'
       icon: icon-qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
+      color: '#2DC100'
       icon: icon-wechat-pay-line
 ```
 
@@ -1202,7 +1202,7 @@ footer:
   icon:
     name: icon-cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
 ```
 
 :::
@@ -1229,7 +1229,7 @@ footer:
   icon:
     name: icon-cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
     url: https://sponsors.yunyoujun.cn
     title: Sponsors for YunYouJun
 ```
@@ -1263,7 +1263,7 @@ live_time:
   enable: false
   prefix: This blog has been run cutely
   suffix: (● '◡' ●)
-  start_time: "2019-04-12T00: 00: 00"
+  start_time: '2019-04-12T00: 00: 00'
 ```
 
 > Remember to add 0, such as `2019-04-01` instead of `2019-4-1`.

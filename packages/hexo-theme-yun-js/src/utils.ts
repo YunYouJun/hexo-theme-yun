@@ -66,7 +66,8 @@ export function insertCopyCodeBtn() {
   const codeblocks = document.querySelectorAll('pre[class*=\'language-\']')
 
   codeblocks.forEach((codeblock) => {
-    if (!window.CONFIG.copycode) return
+    if (!window.CONFIG.copycode)
+      return
 
     const container = document.createElement('div')
     container.className = 'code-container'

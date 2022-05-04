@@ -1,7 +1,7 @@
-import type { Theme } from "vitepress";
-import { VPTheme } from "vitepress-theme-you";
+import type { Theme } from 'vitepress'
+import { VPTheme } from 'vitepress-theme-you'
 
-import "uno.css";
+import 'uno.css'
 
 import Badge from './components/Badge.vue'
 import CustomToast from './components/CustomToast.vue'
@@ -16,6 +16,6 @@ const theme: Theme = Object.assign({}, VPTheme, {
     app.component('DisplayIcon', DisplayIcon)
     app.component('DemoSites', DemoSites)
   },
-} as Theme);
+} as Theme)
 
-export default theme;
+export default theme

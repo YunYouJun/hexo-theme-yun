@@ -372,7 +372,7 @@ mermaid:
   enable: false
   options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: false #default true
+  global: false # default true
 ```
 
 Write markdown as shown below:

@@ -5,14 +5,14 @@ mode: auto
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
 colors:
-  primary: "#0078E7"
+  primary: '#0078E7'
   # primary: "#6200ee"
-  bg: "#f5f5f5"
-  selection_bg: "#8e71c1"
-  tag_start_color: "#999999"
-  tag_end_color: "#0078E7"
+  bg: '#f5f5f5'
+  selection_bg: '#8e71c1'
+  tag_start_color: '#999999'
+  tag_end_color: '#0078E7'
   dark:
-    block: "#1b1f2e"
+    block: '#1b1f2e'
     # block: "#17202A"
 
 # Favicon
@@ -41,66 +41,66 @@ toc:
 
 # Social Links.
 social:
-  # - name: RSS
-  #   # set rss in your root config
-  #   # https://github.com/hexojs/hexo-generator-feed
-  #   link: /atom.xml # config.feed.path
-  #   icon: icon-rss-line
-  #   color: orange
-  # - name: QQ 群 1050458482
-  #   # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-  #   link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
-  #   icon: icon-qq-line
-  #   color: "#12B7F5"
-  # - name: GitHub
-  #   link: https://github.com/YunYouJun
-  #   icon: icon-github-line
-  #   color: "#6e5494"
-  # - name: 微博
-  #   link: https://weibo.com/jizhideyunyoujun
-  #   icon: icon-weibo-line
-  #   color: "#E6162D"
-  # - name: 豆瓣
-  #   link: https://www.douban.com/people/yunyoujun/
-  #   icon: icon-douban-line
-  #   color: "#007722"
-  # - name: 网易云音乐
-  #   link: https://music.163.com/#/user/home?id=247102977
-  #   icon: icon-netease-cloud-music-line
-  #   color: "#C20C0C"
-  # - name: 知乎
-  #   link: https://www.zhihu.com/people/yunyoujun/
-  #   icon: icon-zhihu-line
-  #   color: "#0084FF"
-  # - name: 哔哩哔哩
-  #   link: https://space.bilibili.com/1579790
-  #   icon: icon-bilibili-line
-  #   color: "#FF8EB3"
-  # - name: 微信公众号
-  #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-  #   icon: icon-wechat-2-line
-  #   color: "#1AAD19"
-  # - name: Twitter
-  #   link: https://twitter.com/YunYouJun
-  #   icon: icon-twitter-line
-  #   color: "#1da1f2"
-  # # - name: Telegram
-  # #   link: https://t.me/yunyoujun_group
-  # #   icon: icon-telegram-line
-  # #   color: "#0088CC"
-  # - name: Telegram Channel
-  #   link: https://t.me/elpsycn
-  #   # icon: icon-telegram-fill
-  #   icon: icon-telegram-line
-  #   color: "#0088CC"
-  # - name: E-Mail
-  #   link: mailto:me@yunyoujun.cn
-  #   icon: icon-mail-line
-  #   color: "#8E71C1"
-  # - name: Travelling
-  #   link: https://travellings.link
-  #   icon: icon-train-line
-  #   color: black
+# - name: RSS
+#   # set rss in your root config
+#   # https://github.com/hexojs/hexo-generator-feed
+#   link: /atom.xml # config.feed.path
+#   icon: icon-rss-line
+#   color: orange
+# - name: QQ 群 1050458482
+#   # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+#   link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
+#   icon: icon-qq-line
+#   color: "#12B7F5"
+# - name: GitHub
+#   link: https://github.com/YunYouJun
+#   icon: icon-github-line
+#   color: "#6e5494"
+# - name: 微博
+#   link: https://weibo.com/jizhideyunyoujun
+#   icon: icon-weibo-line
+#   color: "#E6162D"
+# - name: 豆瓣
+#   link: https://www.douban.com/people/yunyoujun/
+#   icon: icon-douban-line
+#   color: "#007722"
+# - name: 网易云音乐
+#   link: https://music.163.com/#/user/home?id=247102977
+#   icon: icon-netease-cloud-music-line
+#   color: "#C20C0C"
+# - name: 知乎
+#   link: https://www.zhihu.com/people/yunyoujun/
+#   icon: icon-zhihu-line
+#   color: "#0084FF"
+# - name: 哔哩哔哩
+#   link: https://space.bilibili.com/1579790
+#   icon: icon-bilibili-line
+#   color: "#FF8EB3"
+# - name: 微信公众号
+#   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+#   icon: icon-wechat-2-line
+#   color: "#1AAD19"
+# - name: Twitter
+#   link: https://twitter.com/YunYouJun
+#   icon: icon-twitter-line
+#   color: "#1da1f2"
+# # - name: Telegram
+# #   link: https://t.me/yunyoujun_group
+# #   icon: icon-telegram-line
+# #   color: "#0088CC"
+# - name: Telegram Channel
+#   link: https://t.me/elpsycn
+#   # icon: icon-telegram-fill
+#   icon: icon-telegram-line
+#   color: "#0088CC"
+# - name: E-Mail
+#   link: mailto:me@yunyoujun.cn
+#   icon: icon-mail-line
+#   color: "#8E71C1"
+# - name: Travelling
+#   link: https://travellings.link
+#   icon: icon-train-line
+#   color: black
 
 codeblock:
   copy_btn: true
@@ -168,18 +168,18 @@ wordcloud:
 
 # You can set color for every tag or category.
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E83CD"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E83CD'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 
 categories:
   笔记: dimgray
@@ -190,34 +190,34 @@ types:
     color: blue
     icon: icon-external-link-line
   bilibili:
-    color: "#FF8EB3"
+    color: '#FF8EB3'
     icon: icon-bilibili-line
   douban:
-    color: "#007722"
+    color: '#007722'
     icon: icon-douban-line
   github:
     color: black
     icon: icon-github-line
   netease-cloud-music:
-    color: "#C10D0C"
+    color: '#C10D0C'
     icon: icon-netease-cloud-music-line
   notion:
     color: black
     icon: icon-notion
   twitter:
-    color: "#1da1f2"
+    color: '#1da1f2'
     icon: icon-twitter-line
   wechat:
-    color: "#1AAD19"
+    color: '#1AAD19'
     icon: icon-wechat-2-line
   weibo:
-    color: "#E6162D"
+    color: '#E6162D'
     icon: icon-weibo-line
   yuque:
-    color: "#25b864"
+    color: '#25b864'
     icon: icon-yuque
   zhihu:
-    color: "#0084FF"
+    color: '#0084FF'
     icon: icon-zhihu-line
 
 # post_card
@@ -236,7 +236,7 @@ prefetch:
     - /js/sidebar.js
 
 dns_prefetch:
-  # - https://xxx
+# - https://xxx
 
 # do more(TCP handshake...) than dns-fetch
 preconnect:
@@ -267,7 +267,7 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre: ""
+  pre: ''
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
     yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css
@@ -290,7 +290,7 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: white
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
@@ -302,23 +302,23 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace"
+    family: '''Source Code Pro'', Consolas, Monaco, SFMono-Regular, ''Ubuntu Mono'', Menlo, monospace'
 
 # custom your color in fireworks
 fireworks:
   enable: true
   colors:
-    # - "102, 167, 221"
-    # - "62, 131, 225"
-    # - "33, 78, 194"
-    # - "3, 28, 95"
-    # - "0, 8, 55"
+  # - "102, 167, 221"
+  # - "62, 131, 225"
+  # - "33, 78, 194"
+  # - "3, 28, 95"
+  # - "0, 8, 55"
 
 # https://github.com/qrohlf/trianglify
 trianglify:
@@ -361,23 +361,23 @@ reward:
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
-    # - name: 支付宝
-    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    #   color: "#00A3EE"
-    #   icon: icon-alipay-line
-    # - name: QQ 支付
-    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-    #   color: "#12B7F5"
-    #   icon: icon-qq-line
-    # - name: 微信支付
-    #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-    #   color: "#2DC100"
-    #   icon: icon-wechat-pay-line
-    # - name: PayPal
-    #   link: https://paypal.me/elpsycn
-    #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
-    #   color: "#2D70B5"
-    #   icon: icon-paypal-line
+  # - name: 支付宝
+  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+  #   color: "#00A3EE"
+  #   icon: icon-alipay-line
+  # - name: QQ 支付
+  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+  #   color: "#12B7F5"
+  #   icon: icon-qq-line
+  # - name: 微信支付
+  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+  #   color: "#2DC100"
+  #   icon: icon-wechat-pay-line
+  # - name: PayPal
+  #   link: https://paypal.me/elpsycn
+  #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
+  #   color: "#2D70B5"
+  #   icon: icon-paypal-line
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/
@@ -413,7 +413,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#0078E7"
+    color: '#0078E7'
     # url: https://sponsors.yunyoujun.cn
     # title: 云游君的赞助者们
 
@@ -431,7 +431,7 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: '2019-04-12T00:00:00'
 
   # Display support
   # support:
@@ -505,7 +505,7 @@ search:
 
 engine_search:
   enable: false
-  href: "https://www.google.com/search?q=site:"
+  href: 'https://www.google.com/search?q=site:'
   # href: "https://www.baidu.com/s?wd=site:"
   # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn
@@ -591,14 +591,14 @@ mermaid:
   enable: false
   options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: false #default true
+  global: false # default true
 
 # special
 mourn:
   enable: false
   days:
-    - "4-4"
-    - "9-18"
+    - 4-4
+    - 9-18
 
 # SEO
 # https://ziyuan.baidu.com/linksubmit/index
@@ -611,8 +611,8 @@ custom:
 # slide
 slide:
   separator: ---
-  separator_vertical: "~~"
-  data_separator_notes: "^Note:"
+  separator_vertical: ~~
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true
@@ -625,7 +625,7 @@ comment:
   enable: true
   icon: icon-chat-3-line
   tips:
-    # - 要不要和我说些什么？
+  # - 要不要和我说些什么？
   # candidates:
   #   - valine
   #   - utterances

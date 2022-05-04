@@ -313,7 +313,7 @@ add_this_id:
 ```yaml
 engine_search:
   enable: true
-  href: "https://www.google.com/search?q=site:"
+  href: 'https://www.google.com/search?q=site:'
   # href: "https://www.baidu.com/s?wd=site:"
   # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn

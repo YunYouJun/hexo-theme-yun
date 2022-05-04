@@ -1,34 +1,34 @@
+<script lang="ts" setup>
+const props = withDefaults(
+  defineProps<{
+    icon: string
+  }>(),
+  {
+    icon: '',
+  },
+)
+
+const copyIcon = () => {
+  navigator.clipboard.writeText(`icon-${props.icon}`)
+
+  const toast = document.getElementById('toast')
+  toast.classList.add('show')
+  setTimeout(() => {
+    toast.classList.remove('show')
+  }, 3000)
+}
+</script>
+
 <template>
   <div class="icon-box" @click="copyIcon">
     <div class="icon-body">
       <svg class="iconfont" aria-hidden="true">
-        <use :xlink:href="'#icon-' + icon"></use>
+        <use :xlink:href="`#icon-${icon}`" />
       </svg>
     </div>
     <span class="icon-name">{{ icon }}</span>
   </div>
 </template>
-
-<script lang="ts" setup>
-const props = withDefaults(
-  defineProps<{
-    icon: string;
-  }>(),
-  {
-    icon: "",
-  }
-);
-
-const copyIcon = () => {
-  navigator.clipboard.writeText("icon-" + props.icon);
-
-  const toast = document.getElementById("toast");
-  toast.classList.add("show");
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 3000);
-};
-</script>
 
 <style lang="scss">
 .icon-box {

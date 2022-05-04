@@ -4,16 +4,16 @@
     "build": "vitepress build .",
     "dev": "vitepress dev . --host"
   },
+  "dependencies": {
+    "@iconify-json/ri": "^1.1.1",
+    "dayjs": "^1.11.1",
+    "vitepress-theme-you": "^0.0.33"
+  },
   "devDependencies": {
     "@unocss/preset-icons": "^0.32.12",
     "@vueuse/core": "^8.4.1",
     "sass": "^1.51.0",
     "vite-plugin-pwa": "^0.12.0",
     "vitepress": "^0.22.3"
-  },
-  "dependencies": {
-    "@iconify-json/ri": "^1.1.1",
-    "dayjs": "^1.11.1",
-    "vitepress-theme-you": "^0.0.33"
   }
 }

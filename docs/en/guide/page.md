@@ -183,7 +183,7 @@ links:
     name: Yunyou Jun
     blog: Yunyoujun's blog
     desc: All at sea.
-    color: "#0078e7" # representative color
+    color: '#0078e7' # representative color
     email: # not required
 placeholder: I haven't thought about what to say # The default description of YouChain
 tip: Friendchain loading in progress ~ If it fails, please refresh and try again ~
@@ -453,8 +453,8 @@ The theme is `white`, [more theme names](https://revealjs.com/themes/).
 ```yaml
 slide:
   separator: ---
-  separator_vertical: "~~"
-  data_separator_notes: "^Note:"
+  separator_vertical: ~~
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true

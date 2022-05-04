@@ -13,8 +13,7 @@ random: true
 <summary>神隐</summary>
 
 ```yaml
-
-```
+``
 
 </details>
 

@@ -2,12 +2,17 @@
   "name": "@hexo-theme-yun/monorepo",
   "private": true,
   "description": "☁️ A fast & light & lovely theme for Hexo.",
+  "keywords": [
+    "hexo",
+    "theme",
+    "yun"
+  ],
+  "license": "MIT",
+  "author": "YunYouJun <me@yunyoujun.cn>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
   },
-  "author": "YunYouJun <me@yunyoujun.cn>",
-  "license": "MIT",
   "homepage": "https://yun.yunyoujun.cn",
   "bugs": {
     "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
@@ -15,11 +20,6 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "keywords": [
-    "hexo",
-    "theme",
-    "yun"
-  ],
   "scripts": {
     "build": "pnpm --dir=packages/hexo-theme-yun-js run build",
     "dev": "pnpm --dir=demo run dev",

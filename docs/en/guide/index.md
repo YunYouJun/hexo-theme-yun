@@ -111,23 +111,23 @@ You can create a new `load-aplayer.js` file under the `source/js` folder in the 
 Through the `createElement` method, `append` into the `body` container.
 
 ```js
-document.addEventListener("DOMContentLoaded", function () {
-  let apContainer = document.createElement("div");
-  apContainer.id = "aplayer";
-  document.body.append(apContainer);
+document.addEventListener('DOMContentLoaded', () => {
+  const apContainer = document.createElement('div')
+  apContainer.id = 'aplayer'
+  document.body.append(apContainer)
   const ap = new APlayer({
-    container: document.getElementById("aplayer"),
+    container: document.getElementById('aplayer'),
     fixed: true,
     audio: [
       {
-        name: "name",
-        artist: "artist",
-        url: "url.mp3",
-        cover: "cover.jpg",
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
       },
     ],
-  });
-});
+  })
+})
 ```
 
 And set the `head` option in `_config.yun.yml` to introduce css or js.
@@ -166,7 +166,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
+          node-version: 16.x
 
       - name: Install Dependencies
         run: npm i

@@ -1,59 +1,59 @@
-import type { UserConfig } from "vitepress";
-import type { YouTheme } from "vitepress-theme-you";
+import type { UserConfig } from 'vitepress'
+import type { YouTheme } from 'vitepress-theme-you'
 
 import baseConfig from 'vitepress-theme-you/config'
 
-import * as navbar from "./configs/navbar";
-import * as sidebar from "./configs/sidebar";
+import * as navbar from './configs/navbar'
+import * as sidebar from './configs/sidebar'
 
-import { head } from "./configs/head";
+import { head } from './configs/head'
 
 const config: UserConfig<YouTheme.Config> = {
   extends: baseConfig,
 
   head,
 
-  title: "Hexo-Theme-Yun",
-  shortTitle: "Yun",
+  title: 'Hexo-Theme-Yun',
+  shortTitle: 'Yun',
 
   locales: {
-    "/": {
-      lang: "zh-CN",
+    '/': {
+      lang: 'zh-CN',
       description:
-        "A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。",
+        'A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。',
     },
-    "/en/": {
-      lang: "en-US",
-      description: "A powerful & simple & fast theme for Hexo.",
+    '/en/': {
+      lang: 'en-US',
+      description: 'A powerful & simple & fast theme for Hexo.',
     },
   },
 
   themeConfig: {
     // iconClass: "i-ri-cloud-line",
-    shortTitle: "Yun",
+    shortTitle: 'Yun',
 
     nextLinks: true,
     prevLinks: true,
-    repo: "YunYouJun/hexo-theme-yun",
-    docsDir: "docs",
+    repo: 'YunYouJun/hexo-theme-yun',
+    docsDir: 'docs',
     editLinks: true,
-    docsBranch: "dev",
+    docsBranch: 'dev',
 
-    editLinkText: "帮助改善此页面",
+    editLinkText: '帮助改善此页面',
 
     locales: {
-      "/": {
-        label: "简体中文",
-        selectText: "简体中文",
-        lastUpdated: "上次更新",
-        editLinkText: "帮助改善此页面！( ￣□￣)/",
+      '/': {
+        label: '简体中文',
+        selectText: '简体中文',
+        lastUpdated: '上次更新',
+        editLinkText: '帮助改善此页面！( ￣□￣)/',
         nav: navbar.zh,
         sidebar: sidebar.zh,
       },
-      "/en/": {
-        label: "English",
-        selectText: "English",
-        lastUpdated: "Last Updated",
+      '/en/': {
+        label: 'English',
+        selectText: 'English',
+        lastUpdated: 'Last Updated',
         nav: navbar.en,
         sidebar: sidebar.en,
       },
@@ -61,8 +61,8 @@ const config: UserConfig<YouTheme.Config> = {
 
     algolia: {
       // appId: 'N2XEWA4N6V',
-      apiKey: "62c0b4aa58760ed3804e4fae0457c202",
-      indexName: "yunyoujun",
+      apiKey: '62c0b4aa58760ed3804e4fae0457c202',
+      indexName: 'yunyoujun',
     },
   },
 
@@ -74,6 +74,6 @@ const config: UserConfig<YouTheme.Config> = {
   //     },
   //   ],
   // ],
-};
+}
 
-export default config;
+export default config

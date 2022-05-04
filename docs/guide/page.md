@@ -226,7 +226,7 @@ links:
     name: 云游君
     blog: 云游君的小站
     desc: All at sea.
-    color: "#0078e7" # 代表色
+    color: '#0078e7' # 代表色
     email: # 非必须
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
@@ -502,8 +502,8 @@ slide:
 ```yaml
 slide:
   separator: ---
-  separator_vertical: "~~"
-  data_separator_notes: "^Note:"
+  separator_vertical: ~~
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true

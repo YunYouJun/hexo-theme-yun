@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+
+withDefaults(defineProps<{
+  type?: string
+  text?: string
+}>(), {
+  type: 'tip',
+  text: '',
+})
+
+const styles = computed(() => ({
+
+}))
+</script>
+
 <template>
   <span
     class="badge bg-blue-500 rounded"
@@ -9,19 +25,3 @@
     <slot>{{ text }}</slot>
   </span>
 </template>
-
-<script setup lang="ts">
-import {computed} from 'vue'
-
-withDefaults(defineProps<{
-  type?: string,
-  text?: string,
-}>(), {
-  type: 'tip',
-  text: '',
-})
-
-const styles = computed(() => ({
-  
-}))
-</script>

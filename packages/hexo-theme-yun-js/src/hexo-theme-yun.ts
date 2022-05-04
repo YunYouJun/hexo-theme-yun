@@ -1,6 +1,6 @@
 import * as utils from './utils'
 export {
-  utils
+  utils,
 }
 
 window.Yun.utils = utils

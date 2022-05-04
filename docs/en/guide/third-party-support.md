@@ -149,8 +149,8 @@ valine:
   # more...
   # enableQQ: false
   # requiredFields:
-  #-nick
-  #-mail
+  # -nick
+  # -mail
 ```
 
 For Valine's extensions and enhancements, please refer to [Valine-Admin](https://github.com/DesertsP/Valine-Admin), you can send email reminders to specific comments.
@@ -244,7 +244,7 @@ You can search by `site: yunyoujun.cn what you want to search`
 ```yaml
 engine_search:
   enable: true
-  href: "https://www.google.com/search?q=site:"
+  href: 'https://www.google.com/search?q=site:'
   domain: yunyoujun.cn
 ```
 

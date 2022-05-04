@@ -10,7 +10,8 @@
  * @param {*} target
  */
 function activateNavByIndex(target) {
-  if (target.classList.contains('active-current')) return
+  if (target.classList.contains('active-current'))
+    return
 
   document.querySelectorAll('.post-toc .active').forEach((element) => {
     element.classList.remove('active', 'active-current')
@@ -18,7 +19,8 @@ function activateNavByIndex(target) {
   target.classList.add('active', 'active-current')
   let parent = target.parentNode
   while (!parent.matches('.post-toc')) {
-    if (parent.matches('li')) parent.classList.add('active')
+    if (parent.matches('li'))
+      parent.classList.add('active')
     parent = parent.parentNode
   }
 }
@@ -28,7 +30,8 @@ function activateNavByIndex(target) {
  */
 function listenSidebarTOC() {
   const navItems = document.querySelectorAll('.post-toc li') as NodeListOf<HTMLLIElement>
-  if (!navItems.length) return
+  if (!navItems.length)
+    return
   const sections = [...navItems].map((element) => {
     const link = element.querySelector('.toc-link')
     const target = document.getElementById(
@@ -125,7 +128,7 @@ function initSidebar() {
   function toggleSidebarNav() {
     const list = document.querySelectorAll('.sidebar-nav li') as NodeListOf<HTMLLIElement>
     list.forEach((el) => {
-      el.onclick = function() {
+      el.onclick = function () {
         if (this.classList.contains(activeTabClass))
           return
 

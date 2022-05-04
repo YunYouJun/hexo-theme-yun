@@ -35,13 +35,13 @@ post:
     author: 本文作者
     link: 本文链接
     license_title: 版权声明
-    license_content: "本博客所有文章除特别声明外，均默认采用 %s 许可协议。"
+    license_content: '本博客所有文章除特别声明外，均默认采用 %s 许可协议。'
 
 # page:
 #   totally: 共有
 #   tags: 标签
 footer:
-  powered: "由 %s 驱动"
+  powered: '由 %s 驱动'
   theme: 主题
   total_views: 总访问量
   total_visitors: 总访客量
@@ -50,34 +50,34 @@ counter:
   tag_cloud:
     zero: 暂无标签
     one: 共计 1 个标签
-    other: "共计 %d 个标签"
+    other: '共计 %d 个标签'
   categories:
     zero: 暂无分类
     one: 共计 1 个分类
-    other: "共计 %d 个分类"
+    other: '共计 %d 个分类'
   archive_posts:
     zero: 暂无日志
     one: 共计 1 篇日志
-    other: "共计 %d 篇日志"
+    other: '共计 %d 篇日志'
   albums:
     zero: 暂无相册
     one: 共计 1 个相册
-    other: "共计 %d 个相册"
+    other: '共计 %d 个相册'
   photos:
     zero: 暂无照片
     one: 共计 1 张照片
-    other: "共计 %d 张照片"
+    other: '共计 %d 张照片'
 
 search:
   placeholder: 搜索...
-  empty: "找不到您查询的内容: ${query}"
-  hits: "找到 ${hits} 条结果"
-  hits_time: "找到 ${hits} 条结果（用时 ${time} 毫秒）"
+  empty: '找不到您查询的内容: ${query}'
+  hits: '找到 ${hits} 条结果'
+  hits_time: '找到 ${hits} 条结果（用时 ${time} 毫秒）'
 
 symbol:
-  comma: "，"
-  period: "。"
-  colon: "："
+  comma: ，
+  period: 。
+  colon: ：
 
 reward:
   donate: 打赏

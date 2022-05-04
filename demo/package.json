@@ -5,6 +5,14 @@
   "hexo": {
     "version": "6.1.0"
   },
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development && hexo server",
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
   "devDependencies": {
     "hexo": "6.1.0",
     "hexo-generator-archive": "^1.0.0",
@@ -21,13 +29,5 @@
     "hexo-tag-common": "^0.0.5",
     "hexo-theme-yun": "workspace:*",
     "hexo-wordcount": "^6.0.1"
-  },
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development && hexo server",
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
-  },
-  "license": "CC-BY-NC-SA-4.0"
+  }
 }

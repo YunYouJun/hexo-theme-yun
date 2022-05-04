@@ -134,20 +134,20 @@ live2d:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
 # permalink: :year/:month/:day/:title/  # 旧的注释掉
 # permalink_defaults:                   # 旧的注释掉
 permalink: posts/:abbrlink/
 abbrlink:
-  alg: crc32 #support crc16(default) and crc32
-  rep: hex #support dec(default) and hex
-  drafts: false #(true)Process draft,(false)Do not process draft
+  alg: crc32 # support crc16(default) and crc32
+  rep: hex # support dec(default) and hex
+  drafts: false # (true)Process draft,(false)Do not process draft
   # Generate categories from directory-tree
   # depth: the max_depth of directory-tree you want to generate, should > 0
   auto_category:
-    enable: false #默认为 true， 手改改为 false
+    enable: false # 默认为 true， 手改改为 false
     depth:
 ```
 
@@ -399,7 +399,7 @@ mermaid:
   enable: false
   options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: false #default true
+  global: false # default true
 ```
 
 如下所示编写你的 Markdown:

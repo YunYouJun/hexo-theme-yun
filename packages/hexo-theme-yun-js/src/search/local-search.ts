@@ -47,7 +47,8 @@ const getIndexByWord = (words, text, caseSensitive = false) => {
   const included = new Set()
   words.forEach((word) => {
     const wordLen = word.length
-    if (wordLen === 0) return
+    if (wordLen === 0)
+      return
     let startPosition = 0
     let position = -1
     if (!caseSensitive) {
@@ -113,7 +114,8 @@ const localSearch = (path, searchId, contentId) => {
 
       // Show search results
       const hitCount = indexOfTitle.length + indexOfContent.length
-      if (hitCount === 0) return
+      if (hitCount === 0)
+        return
 
       const slicesOfTitle = []
       if (indexOfTitle.length !== 0)
@@ -186,16 +188,16 @@ const localSearch = (path, searchId, contentId) => {
         // Get the contents from search data
         datas = isXml
           ? [
-            ...new DOMParser()
-              .parseFromString(res, 'text/xml')
-              .querySelectorAll('entry'),
-          ].map((element) => {
-            return {
-              title: element.querySelector('title').textContent,
-              content: element.querySelector('content').textContent,
-              url: element.querySelector('url').textContent,
-            }
-          })
+              ...new DOMParser()
+                .parseFromString(res, 'text/xml')
+                .querySelectorAll('entry'),
+            ].map((element) => {
+              return {
+                title: element.querySelector('title').textContent,
+                content: element.querySelector('content').textContent,
+                url: element.querySelector('url').textContent,
+              }
+            })
           : JSON.parse(res)
         // Only match articles with non-empty titles
         datas = datas
@@ -209,7 +211,8 @@ const localSearch = (path, searchId, contentId) => {
             return data
           })
 
-        if (!$input) return
+        if (!$input)
+          return
         $input.addEventListener('input', () => {
           const searchText = $input.value.trim().toLowerCase()
           const keywords = searchText.split(/[-\s]+/)

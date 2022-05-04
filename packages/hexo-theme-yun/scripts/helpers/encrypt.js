@@ -7,8 +7,8 @@
  * @returns
  */
 function encrypt(content, password) {
-  const CryptoJS = require("crypto-js");
-  return CryptoJS.AES.encrypt(content, password).toString();
+  const CryptoJS = require('crypto-js')
+  return CryptoJS.AES.encrypt(content, password).toString()
 }
 
-hexo.extend.helper.register("aes", encrypt);
+hexo.extend.helper.register('aes', encrypt)
