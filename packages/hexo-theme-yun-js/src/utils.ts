@@ -28,8 +28,8 @@ export const isHome = () => {
 }
 
 /**
-   * 包裹表格，添加 class 以控制 table 样式
-   */
+ * 包裹表格，添加 class 以控制 table 样式
+ */
 export const wrapTable = () => {
   document.querySelectorAll('table').forEach((el) => {
     const container = document.createElement('div')

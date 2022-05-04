@@ -1,5 +1,5 @@
 {
-  "name": "@yunyoujun/theme",
+  "name": "hexo-theme-yun-js",
   "type": "module",
   "private": true,
   "files": [

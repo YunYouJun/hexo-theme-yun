@@ -15,6 +15,3 @@ dist/
 
 .cache
 .temp
-
-# dev esbuild
-source/js/
