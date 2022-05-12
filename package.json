@@ -33,10 +33,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
-    "@types/node": "^17.0.31",
+    "@types/node": "^17.0.32",
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
-    "esno": "^0.14.1",
+    "esno": "^0.15.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "tsup": "^5.12.7",
