@@ -1,3 +1,6 @@
+const fs = require('fs')
+const path = require('path')
+const yaml = require('js-yaml')
 const { merge } = require('./utils')
 
 /**
@@ -32,4 +35,12 @@ module.exports = (hexo) => {
   // merge languages
   if (data.languages)
     mergeLanguages(hexo, data.languages)
+  
+  // read _vendors.yml
+  const vendorsFile = fs.readFileSync(
+    path.join(__dirname, '../../_vendors.yml'),
+    'utf-8',
+  )
+  // merge vendors
+  hexo.theme.config.vendors = merge(yaml.load(vendorsFile), hexo.theme.config.vendors)
 }

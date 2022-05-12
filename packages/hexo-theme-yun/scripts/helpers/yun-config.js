@@ -78,7 +78,7 @@ hexo.extend.helper.register('yun_config', function () {
         lang: (theme.waline.lang || config.language || 'zh-CN'),
         // set path in script
       }),
-      cdn: theme.vendors.waline_js,
+      cdn: theme.vendors.waline.js,
       dark: 'html.dark',
     }
   }

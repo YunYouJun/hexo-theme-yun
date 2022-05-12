@@ -2,8 +2,7 @@ import { getScript } from '../utils'
 
 function initWaline() {
   getScript(window.CONFIG.waline.cdn, () => {
-    // eslint-disable-next-line no-new
-    new window.Waline(window.CONFIG.waline.config)
+    window.Waline.init(window.CONFIG.waline.config)
   }, window.Waline)
 }
 

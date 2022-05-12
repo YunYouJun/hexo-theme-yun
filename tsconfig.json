@@ -9,8 +9,7 @@
       "~/*": ["docs/.vitepress/*"]
     },
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["vite-plugin-pwa/client"]
+    "allowSyntheticDefaultImports": true
   },
   "include": ["docs/.vitepress/**/*"]
 }
