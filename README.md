@@ -16,7 +16,7 @@
 > A light & fast & lovely hexo theme.
 
 [![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
-[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
+[![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/hexo-theme-yun/dev/hexo?filename=demo%2Fpackage.json&logo=hexo)](https://hexo.io)
 [![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
 [![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
