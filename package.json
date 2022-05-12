@@ -29,7 +29,8 @@
     "generate:demo-sites": "esno docs/.vitepress/scripts/index.ts",
     "lint": "eslint .",
     "prepare": "husky install",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "publish:theme": "pnpm --dir=packages/hexo-theme-yun run publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
