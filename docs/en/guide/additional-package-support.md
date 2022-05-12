@@ -38,10 +38,10 @@ It can be configured in the `social` field of `_config.yun.yml`, such as:
 
 ```yaml
 social:
-  - name: RSS
-    link: /atom.xml # config.feed.path
-    icon: icon-rss-line
-    color: orange
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
 ```
 
 For more configuration, please refer to [Official Document](https://github.com/hexojs/hexo-generator-feed) (in `_config.yml` in the Hexo working directory).
@@ -135,10 +135,10 @@ Recommended configuration (in `_config.yml` in the root directory of Hexo):
 
 ```yaml
 aplayer:
-  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
-  meting: true
-  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  meting: true
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 ```
 
 ::: tip
@@ -148,7 +148,7 @@ If you find that the Aplayer sometimes introduces header files repeatedly in irr
 
 ```yaml
 aplayer:
-  asset_inject: false
+  asset_inject: false
 ```
 
 Then decide whether to enable `aplayer` at the head of the article:
@@ -164,7 +164,7 @@ You can also set it globally in `_config.yun.yml`. (When you set up a global pla
 
 ```yaml
 aplayer:
-  global: true
+  global: true
 ```
 
 :::
@@ -218,35 +218,35 @@ aplayer:
 Since `hexo-tag-aplayer` is so fragrant, I decided to remove the original media package script. Students who are really in need can add it by themselves.
 
 ```js
-/ **
- * Transform embedded video to support responsive layout.
- * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
- * /
-embeddedVideoTransformer: function () {
-  let iframes = document.getElementsByTagName ("iframe");
-  let SUPPORTED_PLAYERS = [
-    "www.youtube.com",
-    "player.vimeo.com",
-    "music.163.com"
-  ];
-  for (let i = 0; i <iframes.length; i ++) {
-    let iframe = iframes [i];
-    if (iframe.src.search (SUPPORTED_PLAYERS.join ("|"))! == -1) {
-      let videoRatio = (iframe.height / iframe.width) * 100;
-      iframe.width = "100%";
+/**
+ * Transform embedded video to support responsive layout.
+ * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
+ */
+function embeddedVideoTransformer() {
+  const iframes = document.getElementsByTagName ('iframe')
+  const SUPPORTED_PLAYERS = [
+    'www.youtube.com',
+    'player.vimeo.com',
+    'music.163.com'
+  ]
+  for (let i = 0; i < iframes.length; i++) {
+    const iframe = iframes[i]
+    if (iframe.src.search (SUPPORTED_PLAYERS.join ('|'))! === -1) {
+      const videoRatio = (iframe.height / iframe.width) * 100
+      iframe.width = '100%'
 
-      let wrap = document.createElement ("div");
-      wrap.className = "fluid-vids";
-      wrap.style.width = "100%";
-      wrap.style.minHeight = "90px";
-      wrap.style.height = iframe.height;
-      wrap.style.position = "relative";
+      const wrap = document.createElement ('div')
+      wrap.className = 'fluid-vids'
+      wrap.style.width = '100%'
+      wrap.style.minHeight = '90px'
+      wrap.style.height = iframe.height
+      wrap.style.position = 'relative'
 
-      let iframeParent = iframe.parentNode;
-      iframeParent.insertBefore (wrap, iframe);
-      wrap.appendChild (iframe);
-    }
-  }
+      const iframeParent = iframe.parentNode
+      iframeParent.insertBefore (wrap, iframe)
+      wrap.appendChild (iframe)
+    }
+  }
 }
 ```
 
@@ -262,8 +262,8 @@ Some simple mathematical formulas are shown in the article, using KaTeX. For det
 
 ```yaml
 katex:
-  copy_tex: true
-  global: false
+  copy_tex: true
+  global: false
   options: {}
 ```
 

@@ -435,55 +435,51 @@ social:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
     icon: icon-qq-line
-    color: "# 12B7F5"
+    color: '# 12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: "# 181717"
+    color: '# 181717'
   - name: E-Mail
-    link: mailto: me@yunyoujun.cn
+    link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
-    color: "# 8E71C1"
+    color: '# 8E71C1'
   - name: Weibo
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
-    color: "# E6162D"
+    color: '# E6162D'
   - name: Douban
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
-    color: "# 007722"
+    color: '# 007722'
   - name: NetEase Cloud Music
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
-    color: "# C10D0C"
+    color: '# C10D0C'
   - name: Zhihu
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
-    color: "# 0084FF"
+    color: '# 0084FF'
   - name: Bilibili Animation
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
-    color: "# FF8EB3"
-  - name: POPI
-    link: https://www.popiask.cn/elpsycn
-    icon: icon-questionnaire-line
-    color: "# 525252"
+    color: '# FF8EB3'
   - name: WeChat official account
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
-    color: "# 1AAD19"
-    - name: Twitter
+    color: '# 1AAD19'
+  - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
-    color: "#1da1f2"
+    color: '#1da1f2'
   - name: Telegram
     link: https://t.me/YunYouJun
     icon: icon-telegram-line
-    color: "#0088CC"
+    color: '#0088CC'
   - name: Telegram Channel
     link: https://t.me/elpsycn
     icon: icon-telegram-fill
-    color: "#0088CC"
+    color: '#0088CC'
 ```
 
 You only need to set `social` in `_config.yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
@@ -491,9 +487,9 @@ You only need to set `social` in `_config.yun.yml` to overwrite it (at this time
 ```yaml
 social:
   - name: E-Mail
-    link: mailto: your email
+    link: mailto:your email
     icon: icon-mail-line
-    color: "#8E71C1"
+    color: '#8E71C1'
 ```
 
 If you don't want to put any links, just set the following in `_config.yun.yml`:
@@ -1331,10 +1327,6 @@ The format is as follows:
     "content": "Hello, World!",
     "author": "Brian Kernighan",
     "from": "The C Programming Language"
-  },
-  {
-    "content": "The so-called daily life we ​​spend day by day may actually be a continuous miracle.",
-    "from": "Daily"
   },
   {
     "content": "Yeah, what I love is neither the stars nor the galaxy.",

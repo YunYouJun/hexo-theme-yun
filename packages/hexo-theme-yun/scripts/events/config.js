@@ -35,7 +35,7 @@ module.exports = (hexo) => {
   // merge languages
   if (data.languages)
     mergeLanguages(hexo, data.languages)
-  
+
   // read _vendors.yml
   const vendorsFile = fs.readFileSync(
     path.join(__dirname, '../../_vendors.yml'),

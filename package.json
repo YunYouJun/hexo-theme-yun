@@ -31,7 +31,7 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "prepublishOnly": "npm run build",
-    "publish:theme": "pnpm --dir=packages/hexo-theme-yun run publish"
+    "publish:theme": "pnpm --dir=packages/hexo-theme-yun run publish --access public"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",

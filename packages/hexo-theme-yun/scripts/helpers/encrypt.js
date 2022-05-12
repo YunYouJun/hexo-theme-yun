@@ -1,5 +1,3 @@
-/* global hexo */
-
 /**
  * AES 加密
  * @param {string} content

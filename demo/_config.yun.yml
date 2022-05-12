@@ -13,15 +13,15 @@ reward:
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
+      color: '#00A3EE'
       icon: icon-alipay-line
     - name: QQ 支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
+      color: '#12B7F5'
       icon: icon-qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
+      color: '#2DC100'
       icon: icon-wechat-pay-line
 
 comment:
@@ -118,22 +118,22 @@ girls:
 tags:
   动画: crimson
   漫画: orange
-  Parcel: "#21374b"
+  Parcel: '#21374b'
   学习: saddlebrown
   MAD: crimson
   教程: royalblue
   笔记: dimgray
-  分享: "#0078e7"
+  分享: '#0078e7'
   随笔: mediumpurple
-  Blender: "#d04d2d"
-  Linux: "#2577b1"
-  中传: "#ccb44b"
-  部落: "#DD306A"
+  Blender: '#d04d2d'
+  Linux: '#2577b1'
+  中传: '#ccb44b'
+  部落: '#DD306A'
   科幻: midnightblue
-  蚂蚁森林: "#54a892"
+  蚂蚁森林: '#54a892'
 
 categories:
-  云游的小视频: "#FB7299"
+  云游的小视频: '#FB7299'
 
 pages:
   - name: 我的小伙伴们
@@ -179,39 +179,39 @@ social:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
     icon: icon-qq-line
-    color: "#12B7F5"
+    color: '#12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: icon-github-line
-    color: "#6e5494"
+    color: '#6e5494'
   - name: 微博
     link: https://weibo.com/jizhideyunyoujun
     icon: icon-weibo-line
-    color: "#E6162D"
+    color: '#E6162D'
   - name: 豆瓣
     link: https://www.douban.com/people/yunyoujun/
     icon: icon-douban-line
-    color: "#007722"
+    color: '#007722'
   - name: 网易云音乐
     link: https://music.163.com/#/user/home?id=247102977
     icon: icon-netease-cloud-music-line
-    color: "#C20C0C"
+    color: '#C20C0C'
   - name: 知乎
     link: https://www.zhihu.com/people/yunyoujun/
     icon: icon-zhihu-line
-    color: "#0084FF"
+    color: '#0084FF'
   - name: 哔哩哔哩
     link: https://space.bilibili.com/1579790
     icon: icon-bilibili-line
-    color: "#FF8EB3"
+    color: '#FF8EB3'
   - name: 微信公众号
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
-    color: "#1AAD19"
+    color: '#1AAD19'
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
-    color: "#1da1f2"
+    color: '#1da1f2'
   # - name: Telegram
   #   link: https://t.me/yunyoujun_group
   #   icon: icon-telegram-line
@@ -220,11 +220,11 @@ social:
     link: https://t.me/elpsycn
     # icon: icon-telegram-fill
     icon: icon-telegram-line
-    color: "#0088CC"
+    color: '#0088CC'
   - name: E-Mail
     link: mailto:me@yunyoujun.cn
     icon: icon-mail-line
-    color: "#8E71C1"
+    color: '#8E71C1'
   - name: Travelling
     link: https://travellings.link
     icon: icon-train-line

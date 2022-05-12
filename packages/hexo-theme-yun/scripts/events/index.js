@@ -1,5 +1,3 @@
-/* global hexo */
-
 const pkg = require('../../package.json')
 
 hexo.on('generateBefore', () => {

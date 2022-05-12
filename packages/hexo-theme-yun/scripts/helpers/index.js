@@ -1,12 +1,10 @@
-/* global hexo */
-
 /**
  * 是否为 url 链接
  * @param {string} path
  * @returns
  */
 function isUrl(path) {
-  return new RegExp(/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/).test(
+  return /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/.test(
     path,
   )
 }

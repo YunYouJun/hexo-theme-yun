@@ -1,4 +1,6 @@
 dist
 public
 
+db.json
+
 packages/hexo-theme-yun/source/js/**/*

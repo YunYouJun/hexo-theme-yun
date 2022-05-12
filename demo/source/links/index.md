@@ -13,7 +13,8 @@ random: true
 <summary>神隐</summary>
 
 ```yaml
-``
+# 无法建立连接的友链
+```
 
 </details>
 

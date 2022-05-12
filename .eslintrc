@@ -5,13 +5,14 @@
   },
   "extends": "@antfu",
   "globals": {
-    "hexo": "off",
+    "hexo": true,
     "CONFIG": "off",
     "anime": "off",
     "Yun": true,
     "Pjax": true
   },
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "yml/no-empty-mapping-value": "off"
   }
 }

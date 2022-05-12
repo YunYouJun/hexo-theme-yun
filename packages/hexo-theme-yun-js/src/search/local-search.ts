@@ -4,7 +4,6 @@
 // '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>';
 // - local-search
 
-/* global CONFIG */
 // ref https://github.com/next-theme/hexo-theme-next/blob/master/source/js/local-search.js
 
 // Merge hits into slices
@@ -55,10 +54,13 @@ const getIndexByWord = (words, text, caseSensitive = false) => {
       text = text.toLowerCase()
       word = word.toLowerCase()
     }
-    while ((position = text.indexOf(word, startPosition)) > -1) {
+    position = text.indexOf(word, startPosition)
+    while (position > -1) {
       index.push({ position, word })
       included.add(word)
       startPosition = position + wordLen
+
+      position = text.indexOf(word, startPosition)
     }
   })
   // Sort index by position of keyword

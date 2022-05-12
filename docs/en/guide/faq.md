@@ -56,7 +56,7 @@ Set the following in the root directory of `_config.yml`
 
 ```yaml
 server:
-  compress: true
+  compress: true
 ```
 
 > <https://github.com/hexojs/hexo-browsersync/issues/15#issuecomment-573492492>

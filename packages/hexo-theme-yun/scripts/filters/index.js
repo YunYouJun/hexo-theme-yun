@@ -1,5 +1,3 @@
-/* global hexo */
-
 hexo.extend.filter.register('template_locals', (locals) => {
   locals.yun_version = require('../../package.json').version
   return locals

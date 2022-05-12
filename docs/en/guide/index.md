@@ -66,16 +66,16 @@ The complete configuration of `avatar` is as follows
 
 ```yaml
 avatar:
-  url: /images/avatar.jpg
-  rounded: true
-  opacity: 1
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
 ```
 
 You can just define it in `_config.yun.yml` (it is also possible to cover it all)
 
 ```yaml
 avatar:
-  url: /images/avatar.jpg
+  url: /images/avatar.jpg
 ```
 
 :::

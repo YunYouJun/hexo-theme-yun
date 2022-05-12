@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict'
 
 hexo.extend.helper.register('hexo_env', function (type) {

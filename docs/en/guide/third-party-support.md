@@ -243,9 +243,9 @@ You can search by `site: yunyoujun.cn what you want to search`
 
 ```yaml
 engine_search:
-  enable: true
-  href: 'https://www.google.com/search?q=site:'
-  domain: yunyoujun.cn
+  enable: true
+  href: 'https://www.google.com/search?q=site:'
+  domain: yunyoujun.cn
 ```
 
 ### Local search
@@ -261,7 +261,7 @@ Before enabling it, remember to turn off the default engine search.
 
 ```yaml
 engine_search:
-  enable: false
+  enable: false
 ```
 
 :::
@@ -270,7 +270,7 @@ engine_search:
 # search
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: true
+  enable: true
 ```
 
 > If you find that the local is normal, click the search button after deployment but it will jump to the bottom of the page, it may be simply a cache problem.
@@ -285,9 +285,9 @@ Turn it on again.
 
 ```yaml
 algolia_search:
-  enable: true
-  hits:
-    per_page: 10 # the number of search results per page
+  enable: true
+  hits:
+    per_page: 10 # the number of search results per page
 ```
 
 ## Analysis Statistics
@@ -300,9 +300,9 @@ Go to [Google Analytics](https://analytics.google.com/) to get your ID. (Science
 
 ```yaml
 google_analytics:
-  enable: true
-  id: UA-XXXXXXXXX-X
-  // Note : Google Analytics abandoned the measurement ID of "UA-XXXXXXXXX-X" and used the measurement ID of "G-XXXXXXXXXX". You can fill in the new measurement ID directly in the "id:" item, which will not affect the analysis .
+  enable: true
+  id: UA-XXXXXXXXX-X
+  # Note : Google Analytics abandoned the measurement ID of "UA-XXXXXXXXX-X" and used the measurement ID of "G-XXXXXXXXXX". You can fill in the new measurement ID directly in the "id:" item, which will not affect the analysis .
 ```
 
 ### busuanzi
@@ -319,22 +319,22 @@ Instructions for use: <https://ibruce.info/2015/04/04/busuanzi>
 - `site_pv`: whether to display site page views Page View
 - `page_pv`: whether to display page views of article pages
 
-```yaml
+```yml
 busuanzi:
-  enable: false
-  site_uv: true
-  site_uv_icon: icon-user-line
-  site_pv: true
-  site_pv_icon: icon-eye-line
-  page_pv: true
-  page_pv_icon: icon-eye-line
+  enable: false
+  site_uv: true
+  site_uv_icon: icon-user-line
+  site_pv: true
+  site_pv_icon: icon-eye-line
+  page_pv: true
+  page_pv_icon: icon-eye-line
 ```
 
 ### LeanCloud Visitors
 
 Show number of visitors of each article.
 
-You can visit https://www.leancloud.cn to get AppID and AppKey.
+You can visit <https://www.leancloud.cn> to get AppID and AppKey.
 
 ```yaml
 leancloud_visitors:
@@ -353,8 +353,8 @@ Go to [Google Adsense](https://www.google.com/adsense) to get your client id.
 
 ```yaml
 google_adsense:
-  enable: false
-  client: ca-pub-2245427233262012
+  enable: false
+  client: ca-pub-2245427233262012
 ```
 
 ## SEO
@@ -387,8 +387,8 @@ Examples:
 
 ```yaml
 skip_render:
-  - README.md
-  - googlexxxxxxxxxxxxxxx.html
+  - README.md
+  - googlexxxxxxxxxxxxxxx.html
 ```
 
 :::

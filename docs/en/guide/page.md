@@ -57,7 +57,7 @@ hexo new page tags
 
 Modify `Front Matter` of `source/tags/index.md`
 
-```yaml {5}
+```md {5}
 ---
 title: tag
 date: 2017-10-09 19:11:58
@@ -78,7 +78,7 @@ hexo new page categories
 
 Modify `Front Matter` of `source/categories/index.md`
 
-```yaml {5}
+```md {5}
 ---
 title: Category
 date: 2017-10-12 10:47:16
@@ -169,7 +169,7 @@ You can enter [My Friends](https://www.yunyoujun.cn/links/) to see the effect
 
 - `tip`: a text reminder when FriendChain is not loaded successfully and will be removed after loading. (This only takes effect after successfully loaded FriendChain via JSON.)
 
-```yaml
+```md
 ---
 layout: links
 title: My friends
@@ -265,7 +265,7 @@ Set to enable first. (I know most people may not use this feature, so it is set 
 
 ```yaml
 girls:
-  enable: true
+  enable: true
 ```
 
 ```bash
@@ -274,13 +274,13 @@ hexo new page girls
 
 Enter `source/girls/index.md`
 
-```yaml
+```md
 ---
 layout: girls
 title: kawaii girls
 banner: <span title = "Everyone is my angel!"> ranked in unintentional order </ span>
 girls:
-  -name: name
+  - name: name
     avatar: avatar image link
     from: the project she's from
     url: character encyclopedia link
