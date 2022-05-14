@@ -34,8 +34,8 @@
     "publish:theme": "zx scripts/publish.mjs"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.23.0",
-    "@types/node": "^17.0.32",
+    "@antfu/eslint-config": "^0.23.1",
+    "@types/node": "^17.0.33",
     "bumpp": "^7.1.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",

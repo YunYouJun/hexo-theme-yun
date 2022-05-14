@@ -64,6 +64,8 @@ block content
       +page_header(page.title, page.icon)
       div.text-center
         +post_meta(page)
+        
+    if page.content
       article#page
         include ./_partial/post/post-content.pug
 

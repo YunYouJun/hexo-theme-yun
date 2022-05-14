@@ -10,7 +10,7 @@
     "vitepress-theme-you": "^0.0.33"
   },
   "devDependencies": {
-    "@unocss/preset-icons": "^0.33.2",
+    "@unocss/preset-icons": "^0.33.4",
     "@vueuse/core": "^8.4.2",
     "sass": "^1.51.0",
     "vite-plugin-pwa": "^0.12.0",
