@@ -25,8 +25,8 @@ favicon: /yun.svg
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
-  # dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
+  bg_image: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/alpha-stars-timing-1.webp
+  # dark_bg_image: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/dark-alpha-stars-timing-1.webp
   bg_position: bottom 1rem center
   tagcloud:
     enable: false
@@ -77,7 +77,7 @@ social:
 #   icon: icon-bilibili-line
 #   color: "#FF8EB3"
 # - name: 微信公众号
-#   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+#   link: https://hk1.monika.love/YunYouJun/cdn/master/img/about/white-qrcode-and-search.jpg
 #   icon: icon-wechat-2-line
 #   color: "#1AAD19"
 # - name: Twitter
@@ -115,7 +115,7 @@ pages:
 # pages
 # -------
 # friend
-anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
+anonymous_image: https://hk1.monika.love/YunYouJun/cdn/master/img/avatar/none.jpg
 
 albums:
   enable: false
@@ -270,9 +270,9 @@ cdn:
   pre: ''
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css
-    prism-theme-vars: https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css
-    # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
+    yun-markdown-css: https://unpkg.com/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css
+    prism-theme-vars: https://unpkg.com/prism-theme-vars/base.css
+    # github-markdown-css: https://unpkg.com/github-markdown-css@4.0.0/github-markdown.css
   js:
     base:
     async:
@@ -300,7 +300,7 @@ font:
   cdn:
     enable: true
     lib:
-      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+      - https://fonts.font.im/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
     family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
@@ -332,10 +332,9 @@ trianglify:
 
 cursor:
   enable: false
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
-
+  default: https://hk1.monika.love/YunYouJun/cdn/master/css/md-cursors/pointer.cur
+  pointer: https://hk1.monika.love/YunYouJun/cdn/master/css/md-cursors/link.cur
+  text: https://hk1.monika.love/YunYouJun/cdn/master/css/md-cursors/text.cur
 smoothScroll: true
 
 # You can see effect in https://scrollrevealjs.org/
@@ -347,8 +346,8 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+  url: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
+  dark: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/galaxy.jpg
   # blur: 30px
   opacity: 1
 
@@ -362,15 +361,15 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
   # - name: 支付宝
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+  #   path: https://hk1.monika.love/YunYouJun/cdn/master/img/donate/alipay-qrcode.jpg
   #   color: "#00A3EE"
   #   icon: icon-alipay-line
   # - name: QQ 支付
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+  #   path: https://hk1.monika.love/YunYouJun/cdn/master/img/donate/qqpay-qrcode.png
   #   color: "#12B7F5"
   #   icon: icon-qq-line
   # - name: 微信支付
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+  #   path: https://hk1.monika.love/YunYouJun/cdn/master/img/donate/wechatpay-qrcode.jpg
   #   color: "#2DC100"
   #   icon: icon-wechat-pay-line
   # - name: PayPal
@@ -438,7 +437,7 @@ footer:
   #   enable: true
   #   title: 又拍云
   #   link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
-  #   logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+  #   logo: https://hk1.monika.love/YunYouJun/cdn/master/img/logo/upyun-logo.png
   #   prefix: 本网站由
   #   suffix: 提供 CDN 加速
   # Any custom text can be defined here.
@@ -466,7 +465,7 @@ say:
   enable: true
   # api: https://say.elpsy.cn/sentences.json
   # /data/sentences.json
-  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  api: https://hk1.monika.love/ElpsyCN/say/gh-pages/sentences.json
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true
@@ -499,8 +498,8 @@ wordcount:
 # search
 search:
   modal: true
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
-  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg
+  bg_image: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/stars-timing-0-blur-30px.jpg
+  dark_bg_image: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/mountain-blur-30px.jpg
   # placeholder: 想要搜些什么？
 
 engine_search:
@@ -578,8 +577,8 @@ aplayer:
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+        url: https://hk1.monika.love/YunYouJun/cdn/master/audio/star-timer.mp3
+        cover: https://hk1.monika.love/YunYouJun/cdn/master/img/bg/stars-timing-0.jpg
     meting:
       enable: true
       id: 308168565
@@ -743,3 +742,61 @@ giscus:
   reactions-enabled: 1
   emit-metadata: 0
   theme: light
+  
+vendors:
+    # cdn for third-party library (alternative include)
+  algolia_search: https://unpkg.com/algoliasearch@4/dist/algoliasearch-lite.umd.js
+  instant_search: https://unpkg.com/instantsearch.js@4/dist/instantsearch.production.min.js
+  anime: https://unpkg.com/animejs@latest
+  scrollreveal: https://unpkg.com/scrollreveal/dist/scrollreveal.min.js
+  katex:
+    js: https://unpkg.com/katex@latest/dist/katex.min.js
+    css: https://unpkg.com/katex@latest/dist/katex.min.css
+    auto_render: https://unpkg.com/katex@latest/dist/contrib/auto-render.min.js
+    copy_tex:
+      css: https://unpkg.com/katex@latest/dist/contrib/copy-tex.min.css
+      js: https://unpkg.com/katex@latest/dist/contrib/copy-tex.min.js
+  aplayer:
+    css: https://unpkg.com/aplayer@latest/dist/APlayer.min.css
+    js: https://unpkg.com/aplayer@latest/dist/APlayer.min.js
+    meting: https://unpkg.com/meting@1/dist/Meting.min.js
+  mermaid: https://unpkg.com/mermaid/dist/mermaid.min.js
+  trianglify: https://unpkg.com/trianglify@4/dist/trianglify.bundle.js
+  lightgallery:
+    css: https://unpkg.com/lightgallery.js@latest/dist/css/lightgallery.min.css
+    js: https://unpkg.com/lightgallery.js@latest/dist/js/lightgallery.min.js
+  pjax: https://unpkg.com/pjax@latest/pjax.min.js
+  crypto_js:
+    all: https://unpkg.com/crypto-js@latest/crypto-js.js
+  wordcloud: https://unpkg.com/wordcloud@1.1.1/src/wordcloud2.js
+  revealjs:
+    css: https://unpkg.com/reveal.js/dist/reveal.css
+    js: https://unpkg.com/reveal.js/dist/reveal.js
+    plugin:
+      markdown: https://unpkg.com/reveal.js/plugin/markdown/markdown.js
+      notes: https://unpkg.com/reveal.js/plugin/notes/notes.js
+      highlight:
+        js: https://unpkg.com/reveal.js/plugin/highlight/highlight.js
+        monokai: https://unpkg.com/reveal.js@4.0.2/plugin/highlight/monokai.css
+  vue: https://unpkg.com/vue@2.6.14
+  darken: https://unpkg.com/darken@1.5.0
+
+  # comment
+  valine_js: https://unpkg.com/valine@latest/dist/Valine.min.js
+  waline:
+    css: https://unpkg.com/@waline/client@v2/dist/waline.css
+    js: https://unpkg.com/@waline/client@v2/dist/waline.js
+  minivaline_js: https://unpkg.com/minivaline@6
+  # https://github.com/SukkaW/DisqusJS
+  disqusjs:
+    css: https://unpkg.com/disqusjs@latest/dist/disqusjs.css
+    js: https://unpkg.com/disqusjs@latest/dist/disqus.js
+  twikoo: https://unpkg.com/twikoo@latest/dist/twikoo.all.min.js
+  iconify: https://code.iconify.design/2/2.1.1/iconify.min.js
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  unocss:
+    runtime: https://unpkg.com/@unocss/runtime
+    core: https://unpkg.com/@unocss/runtime/core.global.js
+    uno: https://unpkg.com/@unocss/runtime/uno.global.js
+    attributify: https://unpkg.com/@unocss/runtime/attributify.global.js
+    mini: https://unpkg.com/@unocss/runtime/mini.global.js
