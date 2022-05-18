@@ -4,7 +4,11 @@ if theme.font.cdn.enable
 
 if theme.cdn.css
   each item in theme.cdn.css
-    link(rel='stylesheet', href=item)
+    //- load from vendors 
+    if (item in theme.vendors)
+      link(rel='stylesheet', href=theme.vendors[item])
+    else
+      link(rel='stylesheet', href=item)
 
 if theme.cdn.js.base
   each item in theme.cdn.js.base

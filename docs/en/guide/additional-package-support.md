@@ -96,7 +96,7 @@ live2d:
   debug: false
   model:
     # recommend to use CDN to load the model
-    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+    use: https://fastly.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
   display:
     position: right
     width: 150
@@ -135,10 +135,10 @@ Recommended configuration (in `_config.yml` in the root directory of Hexo):
 
 ```yaml
 aplayer:
-  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  cdn: https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
   meting: true
-  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+  meting_cdn: https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 ```
 
 ::: tip
@@ -206,8 +206,8 @@ aplayer:
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+        url: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.yunyoujun.cn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
       id: 308168565

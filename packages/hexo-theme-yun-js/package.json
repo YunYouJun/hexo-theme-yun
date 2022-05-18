@@ -13,6 +13,6 @@
     "dev": "tsup --watch"
   },
   "devDependencies": {
-    "@vueuse/core": "^8.4.2"
+    "@vueuse/core": "^8.5.0"
   }
 }

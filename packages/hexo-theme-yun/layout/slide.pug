@@ -22,7 +22,7 @@ html(lang=config.language)
 
     - var slide = Object.assign({}, theme.slide, page.slide)
     link(rel="stylesheet", href=theme.vendors.revealjs.css)
-    link(rel="stylesheet" href=`https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/${slide.theme}.css`)
+    link(rel="stylesheet" href=`${theme.vendors.host}reveal.js/dist/theme/${slide.theme}.css`)
 
   body
     .reveal

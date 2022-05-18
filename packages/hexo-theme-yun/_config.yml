@@ -5,14 +5,14 @@ mode: auto
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
 colors:
-  primary: '#0078E7'
+  primary: "#0078E7"
   # primary: "#6200ee"
-  bg: '#f5f5f5'
-  selection_bg: '#8e71c1'
-  tag_start_color: '#999999'
-  tag_end_color: '#0078E7'
+  bg: "#f5f5f5"
+  selection_bg: "#8e71c1"
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
   dark:
-    block: '#1b1f2e'
+    block: "#1b1f2e"
     # block: "#17202A"
 
 # Favicon
@@ -25,8 +25,8 @@ favicon: /yun.svg
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
-  # dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
+  bg_image: https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp
+  # dark_bg_image: https://cdn.yunyoujun.cn/img/bg/dark-alpha-stars-timing-1.webp
   bg_position: bottom 1rem center
   tagcloud:
     enable: false
@@ -77,7 +77,7 @@ social:
 #   icon: icon-bilibili-line
 #   color: "#FF8EB3"
 # - name: 微信公众号
-#   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+#   link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
 #   icon: icon-wechat-2-line
 #   color: "#1AAD19"
 # - name: Twitter
@@ -115,7 +115,7 @@ pages:
 # pages
 # -------
 # friend
-anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
+anonymous_image: https://cdn.yunyoujun.cn/img/avatar/none.jpg
 
 albums:
   enable: false
@@ -168,18 +168,18 @@ wordcloud:
 
 # You can set color for every tag or category.
 tags:
-  Vue: '#4fc08d'
-  Hexo: '#0E83CD'
-  CSS: '#5298d1'
-  Node.js: '#026E00'
-  Git: '#F14E32'
-  React: '#61dafb'
-  Python: '#3776ab'
-  PHP: '#8892BF'
-  VS Code: '#0066B8'
-  JavaScript: '#F4DF4F'
-  TypeScript: '#317AC6'
-  Laravel: '#F4645F'
+  Vue: "#4fc08d"
+  Hexo: "#0E83CD"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
 
 categories:
   笔记: dimgray
@@ -190,34 +190,34 @@ types:
     color: blue
     icon: icon-external-link-line
   bilibili:
-    color: '#FF8EB3'
+    color: "#FF8EB3"
     icon: icon-bilibili-line
   douban:
-    color: '#007722'
+    color: "#007722"
     icon: icon-douban-line
   github:
     color: black
     icon: icon-github-line
   netease-cloud-music:
-    color: '#C10D0C'
+    color: "#C10D0C"
     icon: icon-netease-cloud-music-line
   notion:
     color: black
     icon: icon-notion
   twitter:
-    color: '#1da1f2'
+    color: "#1da1f2"
     icon: icon-twitter-line
   wechat:
-    color: '#1AAD19'
+    color: "#1AAD19"
     icon: icon-wechat-2-line
   weibo:
-    color: '#E6162D'
+    color: "#E6162D"
     icon: icon-weibo-line
   yuque:
-    color: '#25b864'
+    color: "#25b864"
     icon: icon-yuque
   zhihu:
-    color: '#0084FF'
+    color: "#0084FF"
     icon: icon-zhihu-line
 
 # post_card
@@ -267,12 +267,11 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre: ''
+  pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.2.4/dist/yun/yun-markdown.min.css
-    prism-theme-vars: https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css
-    # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
+    yun-markdown-css: "yun_markdown_css"
+    prism-theme-vars: "prism_theme_vars"
   js:
     base:
     async:
@@ -282,6 +281,7 @@ cdn:
 # cdn for third-party library (alternative include)
 # please see in _vendors.yml
 vendors:
+  host: https://fastly.jsdelivr.net/npm/
 
 # UI
 banner:
@@ -302,13 +302,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
   sans_serif:
-    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 400
   monospace:
-    family: '''Source Code Pro'', Consolas, Monaco, SFMono-Regular, ''Ubuntu Mono'', Menlo, monospace'
+    family: "'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace"
 
 # custom your color in fireworks
 fireworks:
@@ -332,9 +332,9 @@ trianglify:
 
 cursor:
   enable: false
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
 
 smoothScroll: true
 
@@ -347,8 +347,8 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+  url: https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
+  dark: https://cdn.yunyoujun.cn/img/bg/galaxy.jpg
   # blur: 30px
   opacity: 1
 
@@ -362,15 +362,15 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
   # - name: 支付宝
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+  #   path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
   #   color: "#00A3EE"
   #   icon: icon-alipay-line
   # - name: QQ 支付
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+  #   path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
   #   color: "#12B7F5"
   #   icon: icon-qq-line
   # - name: 微信支付
-  #   path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+  #   path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
   #   color: "#2DC100"
   #   icon: icon-wechat-pay-line
   # - name: PayPal
@@ -413,7 +413,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: '#0078E7'
+    color: "#0078E7"
     # url: https://sponsors.yunyoujun.cn
     # title: 云游君的赞助者们
 
@@ -431,14 +431,14 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: '2019-04-12T00:00:00'
+    start_time: "2019-04-12T00:00:00"
 
   # Display support
   # support:
   #   enable: true
   #   title: 又拍云
   #   link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
-  #   logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+  #   logo: https://cdn.yunyoujun.cn/img/logo/upyun-logo.png
   #   prefix: 本网站由
   #   suffix: 提供 CDN 加速
   # Any custom text can be defined here.
@@ -466,10 +466,10 @@ say:
   enable: true
   # api: https://say.elpsy.cn/sentences.json
   # /data/sentences.json
-  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  api: https://el-bot-api.vercel.app/api/words/young
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
-    enable: true
+    enable: false
     api: https://v1.hitokoto.cn
     # api: https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=k
 
@@ -499,13 +499,13 @@ wordcount:
 # search
 search:
   modal: true
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
-  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg
+  bg_image: https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg
+  dark_bg_image: https://cdn.yunyoujun.cn/img/bg/mountain-blur-30px.jpg
   # placeholder: 想要搜些什么？
 
 engine_search:
   enable: false
-  href: 'https://www.google.com/search?q=site:'
+  href: "https://www.google.com/search?q=site:"
   # href: "https://www.baidu.com/s?wd=site:"
   # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn
@@ -578,8 +578,8 @@ aplayer:
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+        url: https://cdn.yunyoujun.cn/audio/star-timer.mp3
+        cover: https://cdn.yunyoujun.cn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
       id: 308168565
@@ -612,7 +612,7 @@ custom:
 slide:
   separator: ---
   separator_vertical: ~~
-  data_separator_notes: '^Note:'
+  data_separator_notes: "^Note:"
   theme: white
   config:
     history: true

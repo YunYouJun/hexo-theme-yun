@@ -16,9 +16,9 @@ girls: https://wives.vercel.app/girls.json
 random: true
 ---
 
-![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
-![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
-![她们是点阵、是数据、这种事情我知道。](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-like-paper-girls.jpg)
+![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.yunyoujun.cn/img/meme/love-er-ci-yuan-is-sick.jpg)
+![爷就是二次元](https://cdn.yunyoujun.cn/img/meme/i-am-er-ci-yuan.jpg)
+![她们是点阵、是数据、这种事情我知道。](https://cdn.yunyoujun.cn/img/meme/i-like-paper-girls.jpg)
 
 ## 原则
 

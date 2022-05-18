@@ -1,56 +1,63 @@
+# you can config it in vendors.host
+host: https://cdn.jsdelivr.net/npm/
+
+# internal
+yun_markdown_css: star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css
+prism_theme_vars: prism-theme-vars/base.css
+
 # cdn for third-party library (alternative include)
-algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-anime: https://cdn.jsdelivr.net/npm/animejs@latest
-scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
+algolia_search: algoliasearch@4/dist/algoliasearch-lite.umd.js
+instant_search: instantsearch.js@4/dist/instantsearch.production.min.js
+anime: animejs@latest
+scrollreveal: scrollreveal/dist/scrollreveal.min.js
 katex:
-  js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
-  css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+  js: katex@latest/dist/katex.min.js
+  css: katex@latest/dist/katex.min.css
+  auto_render: katex@latest/dist/contrib/auto-render.min.js
   copy_tex:
-    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
-    js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+    css: katex@latest/dist/contrib/copy-tex.min.css
+    js: katex@latest/dist/contrib/copy-tex.min.js
 aplayer:
-  css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
-  js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-  meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
-mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
-trianglify: https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js
+  css: aplayer@latest/dist/APlayer.min.css
+  js: aplayer@latest/dist/APlayer.min.js
+  meting: meting@1/dist/Meting.min.js
+mermaid: mermaid/dist/mermaid.min.js
+trianglify: trianglify@4/dist/trianglify.bundle.js
 lightgallery:
-  css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
-  js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
-pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
+  css: lightgallery.js@latest/dist/css/lightgallery.min.css
+  js: lightgallery.js@latest/dist/js/lightgallery.min.js
+pjax: pjax@latest/pjax.min.js
 crypto_js:
-  all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
-wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
+  all: crypto-js@latest/crypto-js.js
+wordcloud: wordcloud@1.1.1/src/wordcloud2.js
 revealjs:
-  css: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css
-  js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
+  css: reveal.js/dist/reveal.css
+  js: reveal.js/dist/reveal.js
   plugin:
-    markdown: https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js
-    notes: https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js
+    markdown: reveal.js/plugin/markdown/markdown.js
+    notes: reveal.js/plugin/notes/notes.js
     highlight:
-      js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
-      monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
-vue: https://cdn.jsdelivr.net/npm/vue@2.6.14
-darken: https://cdn.jsdelivr.net/npm/darken@1.5.0
+      js: reveal.js/plugin/highlight/highlight.js
+      monokai: reveal.js@4.0.2/plugin/highlight/monokai.css
+vue: vue@2.6.14
+darken: darken@1.5.0
 
 # comment
-valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
+valine_js: valine@latest/dist/Valine.min.js
 waline:
-  css: https://cdn.jsdelivr.net/npm/@waline/client@v2/dist/waline.css
-  js: https://cdn.jsdelivr.net/npm/@waline/client@v2/dist/waline.js
-minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@6
+  css: "@waline/client@v2/dist/waline.css"
+  js: "@waline/client@v2/dist/waline.js"
+minivaline_js: minivaline@6
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
-  js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
-twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
+  css: disqusjs@latest/dist/disqusjs.css
+  js: disqusjs@latest/dist/disqus.js
+twikoo: twikoo@latest/dist/twikoo.all.min.js
 iconify: https://code.iconify.design/2/2.1.1/iconify.min.js
 busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 unocss:
-  runtime: https://cdn.jsdelivr.net/npm/@unocss/runtime
-  core: https://cdn.jsdelivr.net/npm/@unocss/runtime/core.global.js
-  uno: https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js
-  attributify: https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js
-  mini: https://cdn.jsdelivr.net/npm/@unocss/runtime/mini.global.js
+  runtime: "@unocss/runtime"
+  core: "@unocss/runtime/core.global.js"
+  uno: "@unocss/runtime/uno.global.js"
+  attributify: "@unocss/runtime/attributify.global.js"
+  mini: "@unocss/runtime/mini.global.js"

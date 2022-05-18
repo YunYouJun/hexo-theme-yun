@@ -1382,6 +1382,25 @@ custom:
   style: source/_data/style/*
 ```
 
+## Vendors
+
+Vendors means suppliers, vending machines.
+
+The third-party CDN link used will be set here.
+More information can be found at [`_vendors.yml`](<https://github.com/YunYouJun/hexo-theme-yun/blob/dev/packages/hexo>- theme-yun/_vendors.yml).
+
+For example, it can be overridden in `_config.yun.yml` in the following ways:
+
+> - `host`: CDN start link, since `cdn.jsdelivr.com` has been polluted in China, it is recommended to use `https://fastly.jsdelivr.com/npm/` instead.
+
+````yml
+vendors:
+  # ends with '/'
+  host: 'https://fastly.jsdelivr.com/npm/'
+  waline:
+    css: '@waline/client@v2/dist/waline.css'
+````
+
 ## More Configuration
 
 You can directly view the files and relative comments in [\_config.yml | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).

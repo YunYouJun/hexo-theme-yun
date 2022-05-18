@@ -41,6 +41,37 @@ module.exports = (hexo) => {
     path.join(__dirname, '../../_vendors.yml'),
     'utf-8',
   )
+
   // merge vendors
   hexo.theme.config.vendors = merge(yaml.load(vendorsFile), hexo.theme.config.vendors)
+
+  const host = hexo.theme.config.vendors.host
+
+  function addHostForVendor(obj) {
+    for (const key in obj) {
+      if (typeof obj[key] === 'object') {
+        addHostForVendor(obj[key])
+      }
+      else {
+        if (!obj[key].startsWith('http'))
+          obj[key] = host + obj[key]
+      }
+    }
+  }
+
+  // add host url for vendor
+  // for example, https://cdn.jsdelivr.com/npm/
+  addHostForVendor(hexo.theme.config.vendors)
+
+  // set aplayer cdn
+  if (hexo.config.aplayer) {
+    if (!hexo.config.aplayer.cdn)
+      hexo.config.aplayer.cdn = hexo.theme.config.vendors.aplayer.js
+
+    if (!hexo.config.aplayer.style_cdn)
+      hexo.config.aplayer.style_cdn = hexo.theme.config.vendors.aplayer.css
+
+    if (!hexo.config.aplayer.meting_cdn)
+      hexo.config.aplayer.meting_cdn = hexo.theme.config.vendors.aplayer.meting
+  }
 }

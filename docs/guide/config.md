@@ -737,9 +737,9 @@ scrollreveal:
 ```yaml
 cursor:
   enable: false
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
 ```
 
 ## 侧边栏
@@ -1191,15 +1191,15 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
       color: '#00A3EE'
       icon: icon-alipay-line
     - name: QQ 支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
       color: '#12B7F5'
       icon: icon-qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
       color: '#2DC100'
       icon: icon-wechat-pay-line
 ```
@@ -1429,6 +1429,24 @@ mourn:
 ```yaml
 custom:
   style: source/_data/style/*
+```
+
+## Vendors
+
+Vendors 意为供应商、售货机。
+
+此处将会设置使用到的第三方 CDN 链接，更多内容可以在 [`_vendors.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/packages/hexo-theme-yun/_vendors.yml) 中查看。
+
+譬如可以通过以下方式在 `_config.yun.yml` 中覆盖：
+
+> - `host`: CDN 起始链接，由于 `cdn.jsdelivr.com` 在国内已被污染，建议改为使用 `https://fastly.jsdelivr.com/npm/`。
+
+```yml
+vendors:
+  # 以 '/' 结尾
+  host: 'https://fastly.jsdelivr.com/npm/'
+  waline:
+    css: '@waline/client@v2/dist/waline.css'
 ```
 
 ## 更多配置

@@ -36,6 +36,9 @@ if theme.preconnect
     if item
       link(rel='preconnect', href=url_for(item), crossorigin)
 
+//- preconnect host
+link(rel='preconnect', href=url_for(theme.vendors.host), crossorigin)
+
 //- config
 !=yun_config()
 
