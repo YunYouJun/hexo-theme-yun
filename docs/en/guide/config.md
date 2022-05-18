@@ -1391,12 +1391,12 @@ More information can be found at [`_vendors.yml`](<https://github.com/YunYouJun/
 
 For example, it can be overridden in `_config.yun.yml` in the following ways:
 
-> - `host`: CDN start link, since `cdn.jsdelivr.com` has been polluted in China, it is recommended to use `https://fastly.jsdelivr.com/npm/` instead.
+> - `host`: CDN start link, since `cdn.jsdelivr.net` has been polluted in China, it is recommended to use `https://fastly.jsdelivr.net/npm/` instead.
 
 ````yml
 vendors:
   # ends with '/'
-  host: 'https://fastly.jsdelivr.com/npm/'
+  host: 'https://fastly.jsdelivr.net/npm/'
   waline:
     css: '@waline/client@v2/dist/waline.css'
 ````

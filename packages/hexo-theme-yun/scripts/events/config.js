@@ -60,7 +60,7 @@ module.exports = (hexo) => {
   }
 
   // add host url for vendor
-  // for example, https://cdn.jsdelivr.com/npm/
+  // for example, https://cdn.jsdelivr.net/npm/
   addHostForVendor(hexo.theme.config.vendors)
 
   // set aplayer cdn
