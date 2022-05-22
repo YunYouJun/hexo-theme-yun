@@ -111,6 +111,7 @@ head:
     example: //example.min.css
   js:
     base:
+      - xxx
     async:
     defer:
 ```
@@ -195,6 +196,7 @@ cdn:
   css:
   js:
     base:
+      - xxx
     async:
       # Icon resources introduced by default, use iconfont
       iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
