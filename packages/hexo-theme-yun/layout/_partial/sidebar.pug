@@ -15,9 +15,9 @@ aside.sidebar
   if display_toc
     ul.sidebar-nav
       li.sidebar-nav-item.sidebar-nav-toc.hty-icon-button(data-target='post-toc-wrap', title=__('sidebar.toc'), class=toc_content ? 'sidebar-nav-active' : '')
-        +icon('icon-list-ordered')
+        +icon('ri:list-ordered')
       li.sidebar-nav-item.sidebar-nav-overview.hty-icon-button(data-target='site-overview-wrap', title=__('sidebar.overview'), class=toc_content ? '' : 'sidebar-nav-active')
-        +icon('icon-passport-line')
+        +icon('ri:passport-line')
 
   #site-overview-wrap.sidebar-panel(class=display_toc && toc_content.length > 1 ? '' : 'sidebar-panel-active')
     include ./sidebar/info.pug
@@ -69,7 +69,7 @@ aside.sidebar
     if theme.mode === 'auto' || theme.mode === "time"
       br
       a#toggle-mode-btn.links-item.hty-icon-button(href='javascript:;' title="Mode" style='color: #f1cb64')
-        +icon('icon-contrast-2-line')
+        +icon('ri:contrast-2-line')
 
   if display_toc
     #post-toc-wrap.sidebar-panel(class=toc_content.length > 1 ? 'sidebar-panel-active' : '')

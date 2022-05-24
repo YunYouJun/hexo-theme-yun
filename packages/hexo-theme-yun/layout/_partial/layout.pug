@@ -33,7 +33,7 @@ html(lang=config.language)
     //- global
     include ../_mixin/index.pug
     
-    if page.iconify
+    if page.iconify || theme.iconify.global
       include ../_third-party/iconify.pug
 
     //- background

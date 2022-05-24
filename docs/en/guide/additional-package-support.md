@@ -32,7 +32,7 @@ Install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
 npm install hexo-generator-feed --save
 ```
 
-Configure the default icon as `icon-rss-line`. If you need to customize, enter `_config.yun.yml` to configure.
+Configure the default icon as `ri:rss-line`. If you need to customize, enter `_config.yun.yml` to configure.
 
 It can be configured in the `social` field of `_config.yun.yml`, such as:
 
@@ -40,7 +40,7 @@ It can be configured in the `social` field of `_config.yun.yml`, such as:
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
 ```
 

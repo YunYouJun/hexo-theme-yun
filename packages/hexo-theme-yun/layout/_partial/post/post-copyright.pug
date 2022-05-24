@@ -1,11 +1,11 @@
 - let ccVersion = (theme.creative_commons.license == 'zero') ? '1.0' : '4.0'
-- let ccIcon = '<svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg>'
+- let ccIcon = '<span class="icon iconify" data-icon="ri:creative-commons-line"></span>'
 - let ccPrefix = (theme.creative_commons.license == 'zero') ? 'publicdomain' : 'licenses'
 - let ccURL = 'https://creativecommons.org/' + ccPrefix + '/' + theme.creative_commons.license + '/' + ccVersion + '/' + theme.creative_commons.language
 
 - licenses = theme.creative_commons.license.split('-')
 for license in licenses
-  - ccIcon += `<svg class="icon"><use xlink:href="#icon-creative-commons-${license}-line"></use></svg>`
+  - ccIcon += `<span class="icon iconify" data-icon="ri:creative-commons-${license}-line"></span>`
 
 ul.post-copyright
   li.post-copyright-author

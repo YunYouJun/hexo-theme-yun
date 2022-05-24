@@ -10,7 +10,7 @@ block content
         .page-subtitle!=_p('counter.photos', page.photos.length)
         .page-action.text-center
           a.hty-icon-button(href="./" style="width:2.5rem;height:2.5rem;", title=__('accessibility.back'))
-            +icon('icon-arrow-go-back-line')
+            +icon('ri:arrow-go-back-line')
         if !page.gallery_password
           #lightgallery.photo-list
             for photo in page.photos
@@ -23,7 +23,7 @@ block content
           #decryptContainer
             input#decrypt-password(type="password")
             button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
-              +icon('icon-fingerprint-line')
+              +icon('ri:fingerprint-line')
           #lightgallery.photo-list(style='display: none')
             for photo in page.photos
               - photo.src = aes(photo.src, page.gallery_password)

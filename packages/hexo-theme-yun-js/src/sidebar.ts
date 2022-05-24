@@ -96,24 +96,23 @@ function initSidebar() {
    */
   function toggleTocNumber() {
     const tocBtn = document.querySelector('.sidebar-nav-toc')
-    const orderedIcon = '#icon-list-ordered'
-    const unorderedIcon = '#icon-list-unordered'
+    const orderedIcon = 'ri:list-ordered'
+    const unorderedIcon = 'ri:list-unordered'
 
     if (!tocBtn)
       return
 
     tocBtn.addEventListener('click', () => {
-      // 被激活时才可切换
+      console.log('click')
+      // only can toggle when active
       const isActived = tocBtn.classList.contains(activeTabClass)
       if (isActived) {
-        const useTag = tocBtn.querySelector('use')
+        const iconTag = tocBtn.querySelector('.iconify') as HTMLSpanElement
 
-        useTag.setAttribute(
-          'xlink:href',
-          useTag.getAttribute('xlink:href') === orderedIcon
+        iconTag.dataset.icon
+          = iconTag.dataset.icon === orderedIcon
             ? unorderedIcon
-            : orderedIcon,
-        )
+            : orderedIcon
 
         document.querySelectorAll('.toc-number').forEach((el) => {
           el.classList.toggle('hidden')

@@ -399,11 +399,11 @@ google_analytics:
 busuanzi:
   enable: false
   site_uv: true
-  site_uv_icon: icon-user-line
+  site_uv_icon: ri:user-line
   site_pv: true
-  site_pv_icon: icon-eye-line
+  site_pv_icon: ri:eye-line
   page_pv: true
-  page_pv_icon: icon-eye-line
+  page_pv_icon: ri:eye-line
 ```
 
 ### LeanCloud Visitors

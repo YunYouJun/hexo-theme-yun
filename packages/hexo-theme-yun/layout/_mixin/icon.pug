@@ -6,5 +6,7 @@ mixin icon(name, size=24)
   else if name.indexOf('icon') !== -1
     svg.icon(aria-hidden='true')
       use(xlink:href='#' + name)
+  else if name.indexOf(':') !== -1
+    span.icon(class='iconify' data-icon=name)
   else
     i(class=name)

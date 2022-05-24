@@ -45,61 +45,56 @@ social:
 #   # set rss in your root config
 #   # https://github.com/hexojs/hexo-generator-feed
 #   link: /atom.xml # config.feed.path
-#   icon: icon-rss-line
+#   icon: ri:rss-line
 #   color: orange
-# - name: QQ 群 1050458482
-#   # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-#   link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
-#   icon: icon-qq-line
-#   color: "#12B7F5"
 # - name: GitHub
 #   link: https://github.com/YunYouJun
-#   icon: icon-github-line
+#   icon: ri:github-line
 #   color: "#6e5494"
 # - name: 微博
 #   link: https://weibo.com/jizhideyunyoujun
-#   icon: icon-weibo-line
+#   icon: ri:weibo-line
 #   color: "#E6162D"
 # - name: 豆瓣
 #   link: https://www.douban.com/people/yunyoujun/
-#   icon: icon-douban-line
+#   icon: ri:douban-line
 #   color: "#007722"
 # - name: 网易云音乐
 #   link: https://music.163.com/#/user/home?id=247102977
-#   icon: icon-netease-cloud-music-line
+#   icon: ri:netease-cloud-music-line
 #   color: "#C20C0C"
 # - name: 知乎
 #   link: https://www.zhihu.com/people/yunyoujun/
-#   icon: icon-zhihu-line
+#   icon: ri:zhihu-line
 #   color: "#0084FF"
 # - name: 哔哩哔哩
 #   link: https://space.bilibili.com/1579790
-#   icon: icon-bilibili-line
+#   icon: ri:bilibili-line
 #   color: "#FF8EB3"
 # - name: 微信公众号
 #   link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
-#   icon: icon-wechat-2-line
+#   icon: ri:wechat-2-line
 #   color: "#1AAD19"
 # - name: Twitter
 #   link: https://twitter.com/YunYouJun
-#   icon: icon-twitter-line
+#   icon: ri:twitter-line
 #   color: "#1da1f2"
 # # - name: Telegram
 # #   link: https://t.me/yunyoujun_group
-# #   icon: icon-telegram-line
+# #   icon: ri:telegram-line
 # #   color: "#0088CC"
 # - name: Telegram Channel
 #   link: https://t.me/elpsycn
-#   # icon: icon-telegram-fill
-#   icon: icon-telegram-line
+#   # icon: ri:telegram-fill
+#   icon: ri:telegram-line
 #   color: "#0088CC"
 # - name: E-Mail
 #   link: mailto:me@yunyoujun.cn
-#   icon: icon-mail-line
+#   icon: ri:mail-line
 #   color: "#8E71C1"
 # - name: Travelling
 #   link: https://travellings.link
-#   icon: icon-train-line
+#   icon: ri:train-line
 #   color: black
 
 codeblock:
@@ -109,7 +104,7 @@ codeblock:
 pages:
   - name: 我的小伙伴们
     url: /links/
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
 
 # pages
@@ -119,7 +114,7 @@ anonymous_image: https://cdn.yunyoujun.cn/img/avatar/none.jpg
 
 albums:
   enable: false
-  icon: icon-gallery-line
+  icon: ri:gallery-line
 
 girls:
   enable: false
@@ -142,21 +137,21 @@ avatar:
 menu:
   home:
     path: /
-    icon: icon-home-4-line
+    icon: ri:home-4-line
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: ri:archive-line
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: ri:folder-2-line
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
+      icon: ri:price-tag-3-line
   custom:
     title: 文档
     path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    icon: ri:settings-line
 
 # archive
 archive:
@@ -188,37 +183,37 @@ categories:
 types:
   link:
     color: blue
-    icon: icon-external-link-line
+    icon: ri:external-link-line
   bilibili:
     color: "#FF8EB3"
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
   douban:
     color: "#007722"
-    icon: icon-douban-line
+    icon: ri:douban-line
   github:
     color: black
-    icon: icon-github-line
+    icon: ri:github-line
   netease-cloud-music:
     color: "#C10D0C"
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
   notion:
     color: black
-    icon: icon-notion
+    icon: ri:notion
   twitter:
     color: "#1da1f2"
-    icon: icon-twitter-line
+    icon: ri:twitter-line
   wechat:
     color: "#1AAD19"
-    icon: icon-wechat-2-line
+    icon: ri:wechat-2-line
   weibo:
     color: "#E6162D"
-    icon: icon-weibo-line
+    icon: ri:weibo-line
   yuque:
     color: "#25b864"
-    icon: icon-yuque
+    icon: ri:yuque
   zhihu:
     color: "#0084FF"
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
 
 # post_card
 post_card:
@@ -275,7 +270,6 @@ cdn:
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -293,7 +287,7 @@ banner:
     color: white
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
+    icon: ri:arrow-down-s-line
 
 # You can import the font you want in the head.
 font:
@@ -357,27 +351,27 @@ bg_image:
 # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
 reward:
   enable: true
-  icon: icon-hand-coin-line
+  icon: ri:hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
   # - name: 支付宝
   #   path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
   #   color: "#00A3EE"
-  #   icon: icon-alipay-line
+  #   icon: ri:alipay-line
   # - name: QQ 支付
   #   path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
   #   color: "#12B7F5"
-  #   icon: icon-qq-line
+  #   icon: ri:qq-line
   # - name: 微信支付
   #   path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
   #   color: "#2DC100"
-  #   icon: icon-wechat-pay-line
+  #   icon: ri:wechat-pay-line
   # - name: PayPal
   #   link: https://paypal.me/elpsycn
   #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
   #   color: "#2D70B5"
-  #   icon: icon-paypal-line
+  #   icon: ri:paypal-line
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/
@@ -409,7 +403,7 @@ footer:
   # Icon between year and copyright info.
   icon:
     # `heart` is recommended with animation in red (#ff0000).
-    name: icon-cloud-line
+    name: ri:cloud-line
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
@@ -460,6 +454,10 @@ notice:
 # third party
 # ----------------
 
+# enable global iconify
+iconify:
+  global: true
+
 # say something
 # https://say.elpsy.cn
 say:
@@ -483,11 +481,11 @@ say:
 busuanzi:
   enable: false
   site_uv: true
-  site_uv_icon: icon-user-line
+  site_uv_icon: ri:user-line
   site_pv: true
-  site_pv_icon: icon-eye-line
+  site_pv_icon: ri:eye-line
   page_pv: true
-  page_pv_icon: icon-eye-line
+  page_pv_icon: ri:eye-line
 
 # Post wordcount
 # https://github.com/willin/hexo-wordcount
@@ -623,7 +621,7 @@ slide:
 # ---------
 comment:
   enable: true
-  icon: icon-chat-3-line
+  icon: ri:chat-3-line
   tips:
   # - 要不要和我说些什么？
   # candidates:

@@ -1,11 +1,11 @@
 if theme.engine_search && theme.engine_search.enable
   a#search.popup-trigger.hty-icon-button.icon-search(href=theme.engine_search.href + theme.engine_search.domain, title=__('menu.search'))
     span.site-state-item-icon
-      +icon('icon-search-line')
+      +icon('ri:search-line')
 else
   a#search.popup-trigger.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
     span.site-state-item-icon
-      +icon('icon-search-line')
+      +icon('ri:search-line')
   script.
     window.addEventListener("DOMContentLoaded", () => {
       // Handle and trigger popup window
@@ -40,7 +40,7 @@ else
   .popup.search-popup
     .search-header
       span.popup-btn-close.close-icon.hty-icon-button
-        +icon('icon-close-line')
+        +icon('ri:close-line')
 
     if theme.algolia_search.enable
       .search-input-container

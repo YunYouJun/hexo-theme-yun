@@ -42,7 +42,7 @@ export const zh: YouTheme.SideBarConfig = [
         link: '/about/',
       },
       {
-        text: '辅助图标',
+        text: '默认图标',
         link: '/about/icon',
       },
     ],

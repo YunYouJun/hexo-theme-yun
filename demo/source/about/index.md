@@ -5,7 +5,7 @@ type: "about"
 updated: 2021-01-24 15:10:32
 aplayer: true
 reward: true
-icon: icon-cloud-line
+icon: ri:cloud-line
 iconify: true
 ---
 

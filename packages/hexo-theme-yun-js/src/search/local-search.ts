@@ -1,9 +1,3 @@
-// '<div id="no-result"><svg class="icon"><use xlink:href="#icon-search-line"></use></svg></div>';
-// } else if (resultItems.length === 0) {
-// resultContent.innerHTML =
-// '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>';
-// - local-search
-
 // ref https://github.com/next-theme/hexo-theme-next/blob/master/source/js/local-search.js
 
 // Merge hits into slices

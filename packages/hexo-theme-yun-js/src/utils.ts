@@ -76,7 +76,7 @@ export function insertCopyCodeBtn() {
 
     container.insertAdjacentHTML(
       'beforeend',
-      '<div class="copy-btn"><svg class="icon"><use xlink:href="#icon-file-copy-line" aria-label="copy"></use></svg></div>',
+      '<div class="copy-btn"><span class="icon iconify" data-icon="ri:file-copy-line"></span></div>',
     )
 
     const copyBtn = container.querySelector('.copy-btn') as HTMLButtonElement
@@ -98,10 +98,10 @@ export function insertCopyCodeBtn() {
       // copy success
       // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API todo
       const result = document.execCommand('copy')
-      const iconName = result ? '#icon-check-line' : '#icon-timer-line'
-      const iconSvg = copyBtn.querySelector('svg use')
-      iconSvg.setAttribute('xlink:href', iconName)
-      iconSvg.setAttribute('color', result ? 'green' : 'red')
+      const iconName = result ? 'ri:check-line' : 'ri:timer-line'
+      const iconSvg = copyBtn.querySelector('.iconify') as HTMLSpanElement
+      iconSvg.dataset.icon = iconName
+      iconSvg.setAttribute('style', `color:${result ? 'green' : 'red'}`)
 
       ta.blur() // For iOS
       copyBtn.blur()
@@ -110,9 +110,9 @@ export function insertCopyCodeBtn() {
 
     container.addEventListener('mouseleave', () => {
       setTimeout(() => {
-        const iconSvg = copyBtn.querySelector('svg use')
-        iconSvg.setAttribute('xlink:href', '#icon-file-copy-line')
-        iconSvg.setAttribute('color', 'gray')
+        const iconSvg = copyBtn.querySelector('.iconify') as HTMLSpanElement
+        iconSvg.dataset.icon = 'ri:file-copy-line'
+        iconSvg.setAttribute('style', 'color:gray')
       }, 200)
     })
   })

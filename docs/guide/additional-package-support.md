@@ -34,7 +34,7 @@ wordcount:
 npm install hexo-generator-feed --save
 ```
 
-配置默认图标为 `icon-rss-line`，如需自定义，进入 `_config.yun.yml` 进行配置。
+配置默认图标为 `ri:rss-line`，如需自定义，进入 `_config.yun.yml` 进行配置。
 
 可配置在 `_config.yun.yml` 的 `social` 字段里，如：
 
@@ -42,7 +42,7 @@ npm install hexo-generator-feed --save
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
 ```
 

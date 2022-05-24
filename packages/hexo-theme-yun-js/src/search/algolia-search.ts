@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
       showLast: false,
       templates: {
         first:
-          '<svg class="icon"><use xlink:href="#icon-arrow-left-line"></use></svg>',
-        last: '<svg class="icon"><use xlink:href="#icon-arrow-right-line"></use></svg>',
+          '<span class="icon iconify" data-icon="ri:arrow-left-line"></span>',
+        last: '<span class="icon iconify" data-icon="ri:arrow-right-line"></span>',
         previous:
-          '<svg class="icon"><use xlink:href="#icon-arrow-left-s-line"></use></svg>',
-        next: '<svg class="icon"><use xlink:href="#icon-arrow-right-s-line"></use></svg>',
+          '<span class="icon iconify" data-icon="ri:arrow-left-s-line"></span>',
+        next: '<span class="icon iconify" data-icon="ri:arrow-right-s-line"></span>',
       },
       cssClasses: {
         root: 'pagination',

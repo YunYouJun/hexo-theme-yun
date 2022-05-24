@@ -431,56 +431,56 @@ social:
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
   - name: QQ
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-    icon: icon-qq-line
+    icon: ri:qq-line
     color: '# 12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
-    icon: icon-github-line
+    icon: ri:github-line
     color: '# 181717'
   - name: E-Mail
     link: mailto:me@yunyoujun.cn
-    icon: icon-mail-line
+    icon: ri:mail-line
     color: '# 8E71C1'
   - name: Weibo
     link: https://weibo.com/jizhideyunyoujun
-    icon: icon-weibo-line
+    icon: ri:weibo-line
     color: '# E6162D'
   - name: Douban
     link: https://www.douban.com/people/yunyoujun/
-    icon: icon-douban-line
+    icon: ri:douban-line
     color: '# 007722'
   - name: NetEase Cloud Music
     link: https://music.163.com/#/user/home?id=247102977
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
     color: '# C10D0C'
   - name: Zhihu
     link: https://www.zhihu.com/people/yunyoujun/
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
     color: '# 0084FF'
   - name: Bilibili Animation
     link: https://space.bilibili.com/1579790
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
     color: '# FF8EB3'
   - name: WeChat official account
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-    icon: icon-wechat-2-line
+    icon: ri:wechat-2-line
     color: '# 1AAD19'
   - name: Twitter
     link: https://twitter.com/YunYouJun
-    icon: icon-twitter-line
+    icon: ri:twitter-line
     color: '#1da1f2'
   - name: Telegram
     link: https://t.me/YunYouJun
-    icon: icon-telegram-line
+    icon: ri:telegram-line
     color: '#0088CC'
   - name: Telegram Channel
     link: https://t.me/elpsycn
-    icon: icon-telegram-fill
+    icon: ri:telegram-fill
     color: '#0088CC'
 ```
 
@@ -490,7 +490,7 @@ You only need to set `social` in `_config.yun.yml` to overwrite it (at this time
 social:
   - name: E-Mail
     link: mailto:your email
-    icon: icon-mail-line
+    icon: ri:mail-line
     color: '#8E71C1'
 ```
 
@@ -529,7 +529,7 @@ banner:
     color: white
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
+    icon: ri:arrow-down-s-line
 ```
 
 You can customize the character segmentation in the form of an array, for example:
@@ -810,24 +810,24 @@ list
 menu:
   home:
     path: /
-    icon: icon-home-4-line
+    icon: ri:home-4-line
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: ri:archive-line
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: ri:folder-2-line
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
+      icon: ri:price-tag-3-line
     # - path: https://www.yunyoujun.cn
-    #   icon: icon-cloud-line
+    #   icon: ri:cloud-line
     #   count: guess it
   custom:
     title: Document
     path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    icon: ri:settings-line
 ```
 
 ### Page Link
@@ -844,7 +844,7 @@ e.g.:
 pages:
   - name: my friends
     url: / links /
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
 ```
 
@@ -887,37 +887,37 @@ Currently, the following types are supported by default (Bilibili, Douban, GitHu
 types:
   link:
     color: blue
-    icon: icon-external-link-line
+    icon: ri:external-link-line
   bilibili:
     color: '#FF8EB3'
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
   douban:
     color: '#007722'
-    icon: icon-douban-line
+    icon: ri:douban-line
   github:
     color: black
-    icon: icon-github-line
+    icon: ri:github-line
   netease-cloud-music:
     color: '#C10D0C'
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
   notion:
     color: black
-    icon: icon-notion
+    icon: ri:notion
   twitter:
     color: '#1da1f2'
-    icon: icon-twitter-line
+    icon: ri:twitter-line
   wechat:
     color: '#1AAD19'
-    icon: icon-wechat-2-line
+    icon: ri:wechat-2-line
   weibo:
     color: '#E6162D'
-    icon: icon-weibo-line
+    icon: ri:weibo-line
   yuque:
     color: '#25b864'
-    icon: icon-yuque
+    icon: ri:yuque
   zhihu:
     color: '#0084FF'
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
 ```
 
 You can also set your icon and color for different links in `_config.yun.yml`.
@@ -1163,22 +1163,22 @@ You can override it in `_config.yun.yml`.
 ```yaml
 reward:
   enable: true
-  icon: icon-hand-coin-line
+  icon: ri:hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
       color: '#00A3EE'
-      icon: icon-alipay-line
+      icon: ri:alipay-line
     - name: QQ 支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
       color: '#12B7F5'
-      icon: icon-qq-line
+      icon: ri:qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
       color: '#2DC100'
-      icon: icon-wechat-pay-line
+      icon: ri:wechat-pay-line
 ```
 
 You can also set whether to enable rewards at the top of an article.
@@ -1198,7 +1198,7 @@ Such as:
 footer:
   since: 1997
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
     color: '#0078E7'
 ```
@@ -1225,7 +1225,7 @@ The icon between the year and the name.
 ```yaml
 footer:
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
     color: '#0078E7'
     url: https://sponsors.yunyoujun.cn

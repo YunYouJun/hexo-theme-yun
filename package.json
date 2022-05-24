@@ -23,7 +23,9 @@
   },
   "scripts": {
     "build": "pnpm --dir=packages/hexo-theme-yun-js run build",
-    "dev": "pnpm --dir=demo run dev",
+    "dev": "pnpm run dev:lib & pnpm run demo",
+    "dev:lib": "pnpm --dir=packages/hexo-theme-yun-js run dev",
+    "demo": "pnpm --dir=demo run dev",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",

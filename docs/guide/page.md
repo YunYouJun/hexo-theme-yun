@@ -67,7 +67,7 @@ description: xxxxxxx
 ```yaml {3}
 ---
 title: xxx
-icon: icon-women-line
+icon: ri:women-line
 ---
 ```
 

@@ -1,5 +1,28 @@
 # Icons
 
+## Iconify <Badge>v1.10.x</Badge>
+
+Use [Iconify](https://iconify.design/) to load icon resources after `v1.10.x`.
+
+So you can use any icons you can see in <https://icones.js.org/>.
+
+The naming convention is: `ri:github-line`.
+
+> This theme uses Remix Icon by default, so the previous `icon-github-line` is migrated to `ri:github-line`.
+
+Such as:
+
+````yml
+icon: ri:github-line
+````
+
+<br />
+<br />
+
+<details>
+
+<summary>Deprecated usage since v1.10.x</summary>
+
 The default icon used by the current theme (corresponding to the `cdn.js.async` in the file [`_config.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/_config.yml#L277) .iconfont` link)
 
 Most of the icons are taken from [Remix Icon](https://remixicon.com/) and keep their original names.
@@ -35,3 +58,5 @@ icon: icon-github-line
 <script setup>
 import icons from "../../.vitepress/assets/icons"
 </script>
+
+</details>

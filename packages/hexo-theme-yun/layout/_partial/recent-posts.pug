@@ -5,7 +5,7 @@ section#recent-posts(class="flex flex-col")
         include ../_partial/post/post-schema.pug
         if post.top || post.sticky
           .post-top-icon
-            +icon("icon-pushpin-line")
+            +icon("ri:pushpin-line")
         .post-card-header
           header.post-header
             h2.post-title(itemprop='name headline')
@@ -31,10 +31,10 @@ section#recent-posts(class="flex flex-col")
               include ../_mixin/post-categories.pug
             else
               span.post-meta-item-icon
-                +icon('icon-folder-line')
+                +icon('ri:folder-line')
           .post-card-tag
             if post.tags && post.tags.length && theme.post_meta.tags
               include ../_mixin/post-tags.pug
             else
               span.post-meta-item-icon
-                +icon('icon-price-tag-3-line')
+                +icon('ri:price-tag-3-line')

@@ -5,7 +5,7 @@ type: about
 updated: 2021-01-24 15:10:32
 aplayer: true
 reward: true
-icon: icon-home-4-line
+icon: ri:home-4-line
 ---
 
 <img class="shadow-none" src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" alt="小云">_小云之家_

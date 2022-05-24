@@ -8,7 +8,7 @@ mixin post_meta(post)
         - var datetime_diff = date_diff || time_diff
         if theme.post_meta.created_at
           span.post-meta-item-icon
-            +icon('icon-calendar-line')
+            +icon('ri:calendar-line')
           |  
           if theme.post_meta.item_text
             span.post-meta-icon-text=__('post.posted')
@@ -22,7 +22,7 @@ mixin post_meta(post)
             if theme.post_meta.created_at && theme.post_meta.updated_at
               span.post-meta-divider='-'
               span.post-meta-item-icon
-                +icon('icon-calendar-2-line')
+                +icon('ri:calendar-2-line')
               |  
               if theme.post_meta.item_text
                 span.post-meta-icon-text=__('post.edited')
@@ -37,14 +37,14 @@ mixin post_meta(post)
           span.post-symbolcount
             if theme.wordcount.count
               span.post-meta-item-icon(title=__('wordcount.count'))
-                +icon('icon-file-word-line')
+                +icon('ri:file-word-line')
               |  
               span(title=__('wordcount.count'))=wordcount(post.content)
             if theme.wordcount.count && theme.wordcount.time
               span.post-meta-divider='-'
             if theme.wordcount.time
               span.post-meta-item-icon(title=__('wordcount.time'))
-                +icon('icon-timer-line')
+                +icon('ri:timer-line')
               |  
               span(title=__('wordcount.time'))=min2read(post.content) + 'm'
 
