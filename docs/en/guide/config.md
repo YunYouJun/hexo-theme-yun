@@ -914,7 +914,7 @@ types:
     icon: ri:weibo-line
   yuque:
     color: '#25b864'
-    icon: ri:yuque
+    icon: ant-design:yuque-outlined
   zhihu:
     color: '#0084FF'
     icon: ri:zhihu-line
