@@ -701,6 +701,15 @@ fireworks:
 
 > Reference from: [Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
 
+### Medium Zoom Zoom in on the preview image <Badge>v1.10.2</Badge>
+
+Click the article image to enlarge it for preview.
+
+```yml
+# _config.yun.yml
+medium_zoom: true
+```
+
 ### ScrollReveal
 
 The scrolling effect of the card on the home page can be seen in [Official Website](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js), which is enabled by default.

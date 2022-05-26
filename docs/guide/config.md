@@ -712,6 +712,15 @@ fireworks:
 
 > 参考自：[Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
 
+### Medium Zoom 放大预览图片 <Badge>v1.10.2</Badge>
+
+点击文章图片，放大预览。
+
+```yml
+# _config.yun.yml
+medium_zoom: true
+```
+
 ### ScrollReveal
 
 首页卡片与文章内部图片的滚动浮现效果，可见[官网](https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js)，默认开启。
