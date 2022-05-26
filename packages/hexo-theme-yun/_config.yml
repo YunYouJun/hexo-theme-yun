@@ -332,6 +332,8 @@ cursor:
 
 smoothScroll: true
 
+medium_zoom: false
+
 # You can see effect in https://scrollrevealjs.org/
 scrollreveal:
   enable: true

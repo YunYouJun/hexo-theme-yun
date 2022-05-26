@@ -1,8 +1,9 @@
 // ref https://github.com/next-theme/hexo-theme-next/blob/master/source/js/third-party/search/local-search.js
 
+/* global LocalSearch */
+
 document.addEventListener('DOMContentLoaded', () => {
   const CONFIG = window.CONFIG
-  const LocalSearch = window.LocalSearch
   const dbPath = window.CONFIG.local_search.path
 
   if (!dbPath) {
@@ -10,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('`hexo-generator-searchdb` plugin is not installed!')
     return
   }
+
+  // @ts-expect-error global LocalSearch
   const localSearch = new LocalSearch({
     path: dbPath,
     top_n_per_article: CONFIG.localsearch.top_n_per_article,
@@ -81,20 +84,5 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!localSearch.isfetched)
         localSearch.fetchData()
     })
-  })
-
-  // Monitor main search box
-  const onPopupClose = () => {
-    document.body.classList.remove('search-active')
-  }
-
-  document.querySelector('.search-pop-overlay').addEventListener('click', (event) => {
-    if (event.target === document.querySelector('.search-pop-overlay'))
-      onPopupClose()
-  })
-  document.querySelector('.popup-btn-close').addEventListener('click', onPopupClose)
-  window.addEventListener('keyup', (event) => {
-    if (event.key === 'Escape')
-      onPopupClose()
   })
 })

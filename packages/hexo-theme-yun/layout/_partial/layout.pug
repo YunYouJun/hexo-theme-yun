@@ -48,5 +48,9 @@ html(lang=config.language)
             include ../_third-party/comments/index.pug
 
       include footer.pug
-      //- widget
-      include ../_widget/index.pug
+    
+    //- widget
+    include ../_widget/index.pug
+    //- load at last
+    if theme.medium_zoom
+      include ../_third-party/medium-zoom.pug

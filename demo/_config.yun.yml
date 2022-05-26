@@ -246,3 +246,5 @@ vendors:
 
 iconify:
   global: true
+
+medium_zoom: true
