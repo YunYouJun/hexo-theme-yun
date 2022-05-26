@@ -985,9 +985,9 @@ indexing: false
 
 > [excluding-posts | hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap#excluding-posts)
 
-如果你开启了本地搜索，那它还会出现在 `search.xml` 中，你还需要设置 `indexing: false` 来排除它。
+<!-- 如果你开启了本地搜索，那它还会出现在 `search.xml` 中，你还需要设置 `indexing: false` 来排除它。 -->
 
-> [exclude-indexing | hexo-generator-search](https://github.com/wzpan/hexo-generator-search#exclude-indexing)
+<!-- > [exclude-indexing | hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) -->
 
 :::
 

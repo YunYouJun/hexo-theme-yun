@@ -250,7 +250,7 @@ engine_search:
 
 ### Local search
 
-You need to install [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) first, and refer to the configuration document.
+You need to install [hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb) first, and refer to the configuration document.
 
 This theme is implemented using native JavaScript, without jQuery dependency.
 
@@ -268,7 +268,7 @@ engine_search:
 
 ```yaml
 # search
-# https://github.com/wzpan/hexo-generator-search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
 ```

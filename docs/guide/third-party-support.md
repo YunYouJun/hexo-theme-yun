@@ -321,10 +321,10 @@ engine_search:
 
 ### 本地搜索
 
-您需要先安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)，并参考配置文档。
+您需要先安装 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)，并参考配置文档。
 
 ```bash
-npm install hexo-generator-search
+npm install hexo-generator-searchdb
 ```
 
 本主题使用原生 JavaScript 实现，无 jQuery 依赖。
@@ -343,7 +343,7 @@ engine_search:
 
 ```yaml
 # search
-# https://github.com/wzpan/hexo-generator-search
+# https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
 ```

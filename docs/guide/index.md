@@ -288,7 +288,7 @@ RUN     set -xe \
     &&  npm install --save hexo-renderer-stylus \
     &&  npm install --save hexo-tag-aplayer \
     &&  npm install --save hexo-generator-sitemap \
-    &&  npm install --save hexo-generator-search \
+    &&  npm install --save hexo-generator-searchdb \
     &&  npm install --save hexo-generator-tag \
     &&  npm install --save hexo-generator-category \
     &&  npm install --save hexo-algoliasearch \

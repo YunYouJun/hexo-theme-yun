@@ -32,6 +32,9 @@ declare interface Window {
 
     algolia: any
 
+    // for theme config
+    localsearch: any
+    // for plugin config
     local_search: any
 
     waline: {
@@ -44,6 +47,7 @@ declare interface Window {
     Darkmode: any
   }
 
+  LocalSearch: (any) => void
   Pjax: (any) => void
 
   /**

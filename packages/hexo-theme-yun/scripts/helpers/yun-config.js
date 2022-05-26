@@ -1,7 +1,7 @@
 const { URL } = require('url')
 
 hexo.extend.helper.register('yun_config', function () {
-  const { config, theme, yun_version, __ } = this
+  const { config, theme, yun_version, __, url_for } = this
   const exportConfig = {
     hostname: new URL(config.url).hostname || config.url,
     root: config.root,
@@ -56,10 +56,10 @@ hexo.extend.helper.register('yun_config', function () {
 
   // local search
   if (theme.local_search.enable) {
-    const search_path = config.search.path || 'search.xml'
     exportConfig.local_search = {
-      path: config.root + search_path,
+      path: url_for(config.search.path || 'search.xml'),
     }
+    exportConfig.localsearch = theme.local_search
   }
 
   // 点击效果

@@ -93,7 +93,11 @@ engine_search:
 
 # If you want to use it, you need config algolia appID in _config.yml!!!
 # https://github.com/oncletom/hexo-algolia
-algolia_search:
+# algolia_search:
+#   enable: true
+#   # ...
+
+local_search:
   enable: true
   # ...
 

@@ -8,6 +8,7 @@ prism_theme_vars: prism-theme-vars/base.css
 # cdn for third-party library (alternative include)
 algolia_search: algoliasearch@4/dist/algoliasearch-lite.umd.js
 instant_search: instantsearch.js@4/dist/instantsearch.production.min.js
+local_search: hexo-generator-searchdb@1.4.0/dist/search.js
 anime: animejs@latest
 scrollreveal: scrollreveal/dist/scrollreveal.min.js
 katex:
