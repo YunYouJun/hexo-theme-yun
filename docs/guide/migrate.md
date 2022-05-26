@@ -2,6 +2,17 @@
 
 当你升级主题时，可能会遇到一些不兼容更新。
 
+## v1.10.1
+
+使用 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) 替代 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)。
+
+```bash
+npm un hexo-generator-search
+npm i hexo-generator-searchdb
+```
+
+更多配置见 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)。
+
 ## 迁移至 v1.10.x 之后的版本
 
 <Badge>v1.10.x</Badge> 后使用 Iconify 加载图标资源。
