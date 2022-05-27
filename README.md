@@ -19,8 +19,8 @@
 [![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/hexo-theme-yun/dev/hexo?filename=demo%2Fpackage.json&logo=hexo)](https://hexo.io)
 [![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
-[![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
+[![GitHub Discussions](https://img.shields.io/github/discussions/YunYouJun/hexo-theme-yun?color=9cf&logo=github)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
+[![Discord](https://img.shields.io/discord/752821465891733574?label=discord&logo=discord)](https://discord.gg/nd3mPkU5j8)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 </div>

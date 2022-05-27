@@ -433,11 +433,6 @@ social:
     link: atom.xml # config.feed.path
     icon: ri:rss-line
     color: orange
-  - name: QQ
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-    icon: ri:qq-line
-    color: '# 12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: ri:github-line

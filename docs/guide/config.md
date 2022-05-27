@@ -438,11 +438,6 @@ social:
     link: /atom.xml # config.feed.path
     icon: ri:rss-line
     color: orange
-  - name: QQ
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-    icon: ri:qq-line
-    color: '#12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: ri:github-line
@@ -471,10 +466,6 @@ social:
     link: https://space.bilibili.com/1579790
     icon: ri:bilibili-line
     color: '#FF8EB3'
-  - name: POPI
-    link: https://www.popiask.cn/elpsycn
-    icon: ri:questionnaire-line
-    color: '#525252'
   - name: 微信公众号
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
     icon: ri:wechat-2-line
