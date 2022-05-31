@@ -21,6 +21,48 @@ if (hexo-config('banner.border')) {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+
+  .char {
+    font-family: $font-family-serif;
+    font-size: var(--banner-char-size, 1rem);
+    font-weight: $font-family-serif-weight;
+    background-color: var(--banner-char-bg-color);
+    line-height: 1;
+    the-transition();
+
+    &:hover {
+      color: var(--banner-char-hover-color);
+      background-color: var(--banner-char-color);
+    }
+
+    &-left, &-right {
+      display: flex;
+      color: var(--banner-char-color);
+      opacity: 0;
+    }
+
+    &-left {
+      border-left: $char-border-width solid var(--banner-line-color);
+      border-right: 0px solid rgba($colors.primary, 0.1);
+      border-right-width: 0px;
+      // animation-name: char-move-left;
+      animation-duration: $char-animation-duration;
+      animation-delay: $line-animation-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+
+    &-right {
+      border-left: 0px solid rgba($colors.primary, 0.1);
+      border-right: $char-border-width solid var(--banner-line-color);
+      border-left-width: 0px;
+      // animation-name: char-move-right;
+      animation-duration: $char-animation-duration;
+      animation-delay: $line-animation-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
 }
 
 .banner-char-container {
@@ -54,48 +96,6 @@ if (hexo-config('banner.border')) {
 
   to {
     height: var(--banner-line-height);
-  }
-}
-
-.char {
-  font-family: $font-family-serif;
-  font-size: var(--banner-char-size, 1rem);
-  font-weight: $font-family-serif-weight;
-  background-color: var(--banner-char-bg-color);
-  line-height: 1;
-  the-transition();
-
-  &:hover {
-    color: var(--banner-char-hover-color);
-    background-color: var(--banner-char-color);
-  }
-
-  &-left, &-right {
-    display: flex;
-    color: var(--banner-char-color);
-    opacity: 0;
-  }
-
-  &-left {
-    border-left: $char-border-width solid var(--banner-line-color);
-    border-right: 0px solid rgba($colors.primary, 0.1);
-    border-right-width: 0px;
-    // animation-name: char-move-left;
-    animation-duration: $char-animation-duration;
-    animation-delay: $line-animation-duration;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-  }
-
-  &-right {
-    border-left: 0px solid rgba($colors.primary, 0.1);
-    border-right: $char-border-width solid var(--banner-line-color);
-    border-left-width: 0px;
-    // animation-name: char-move-right;
-    animation-duration: $char-animation-duration;
-    animation-delay: $line-animation-duration;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
   }
 }
 
