@@ -28,7 +28,7 @@
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-tag-common": "^0.1.0",
+    "hexo-tag-common": "^0.2.0",
     "hexo-theme-yun": "workspace:*",
     "hexo-wordcount": "^6.0.1"
   }

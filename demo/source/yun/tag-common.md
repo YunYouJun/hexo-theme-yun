@@ -13,13 +13,13 @@ type:
 
 {% tabs First unique name %}
 
-<!-- tab -->
+<!-- tab First unique name 1 @ri:home-4-line -->
 
 **This is Tab 1.**
 
 <!-- endtab -->
 
-<!-- tab -->
+<!-- tab Icon Test @ri:cloud-line -->
 
 **This is Tab 2.**
 
