@@ -350,7 +350,7 @@ $E = mc^2$
 
 :::
 
-> 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/katex.html) 来查看实际效果。
+> 你可以访问 [Yun Test](https://demo.yun.yunyoujun.cn/posts/katex.html) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
 
 ### [hexo-math](https://github.com/hexojs/hexo-math)
@@ -433,7 +433,7 @@ More info see [Mermaid](https://mermaidjs.github.io/).
 
 扩展的 hexo 标签语法。
 
-譬如实现 Tabs 功能。（[Demo](https://www.yunyoujun.cn/yun/tag-common.html)）
+譬如实现 Tabs 功能。（[Demo](https://demo.yun.yunyoujun.cn/posts/tag-common.html)）
 
 后续可能会添加更多常用标签。
 

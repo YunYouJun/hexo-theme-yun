@@ -303,7 +303,7 @@ albums:
 enable: true
 ```
 
-[Albums Example](https://www.yunyoujun.cn/albums/)
+[Albums Example](https://demo.yun.yunyoujun.cn/albums/)
 
 [Config Example](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
 
@@ -337,7 +337,7 @@ albums:
 
 ### Gallery
 
-[Gallery Example](https://www.yunyoujun.cn/albums/sunset.html)
+[Gallery Example](https://demo.yun.yunyoujun.cn/albums/sunset.html)
 
 The photo album page is where you actually store your photos.
 
@@ -364,7 +364,7 @@ It is not directly named `password` to prevent conflicts with [hexo-blog-encrypt
 
 > Because [crypto-js](https://github.com/brix/crypto-js) is used, you also need `npm install crypto-js`.
 
-Test page: <https://www.yunyoujun.cn/albums/sunset.html>
+Test page: <https://demo.yun.yunyoujun.cn/albums/sunset.html>
 Test password: test
 
 > If you find that the album cannot be decrypted normally when PJAX is turned on in `hexo s`, don't worry, this is that when Hexo is used as a server, the link is re-encrypted again, and there is no problem when generating static files for deployment.

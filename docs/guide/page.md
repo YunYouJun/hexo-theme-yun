@@ -350,7 +350,7 @@ albums:
   enable: true
 ```
 
-[相册示例](https://www.yunyoujun.cn/albums/)
+[相册示例](https://demo.yun.yunyoujun.cn/albums/)
 
 [配置示例](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
 
@@ -386,7 +386,7 @@ albums:
 
 ### 相册页
 
-[相册页示例](https://www.yunyoujun.cn/albums/sunset.html)
+[相册页示例](https://demo.yun.yunyoujun.cn/albums/sunset.html)
 
 相册页，才是你真正存放照片的地方。
 
@@ -413,7 +413,7 @@ hexo new page --path albums/sunset "夕阳"
 
 > 因为使用了 [crypto-js](https://github.com/brix/crypto-js)，所以你还需要 `npm install crypto-js`。
 
-测试页面：<https://www.yunyoujun.cn/albums/sunset.html>
+测试页面：<https://demo.yun.yunyoujun.cn/albums/sunset.html>
 测试密码：test
 
 > 如果你发现在 `hexo s` 并开启了 PJAX 时，无法正常解密相册，不用担心，这是 Hexo 作为服务器时，对链接又重新加密了一遍，生成静态文件部署时是没有问题的。

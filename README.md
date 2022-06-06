@@ -10,6 +10,7 @@
 
 [Yun v1.0 - Strato PV](https://www.bilibili.com/video/BV17t4y1S7tz) ｜
 [Coding 镜像](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files) ｜
+[Demo](https://demo.yun.yunyoujun.cn) ｜
 [Preview 示例预览](https://www.yunyoujun.cn) ｜
 [Docs 使用文档](https://yun.yunyoujun.cn)
 
