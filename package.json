@@ -26,6 +26,7 @@
     "dev": "pnpm run dev:lib & pnpm run demo",
     "dev:lib": "pnpm --dir=packages/hexo-theme-yun-js run dev",
     "demo": "pnpm --dir=demo run dev",
+    "demo:build": "pnpm --dir=demo run build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
