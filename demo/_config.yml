@@ -23,7 +23,7 @@ timezone: Asia/Shanghai
 
 # URL
 # # If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
-url: https://www.yunyoujun.cn
+url: https://hexo-theme-yun.yunyoujun.cn
 root: /
 # posts/:name/
 permalink: posts/:title/ # :category/:title
