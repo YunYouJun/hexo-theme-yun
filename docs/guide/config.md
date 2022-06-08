@@ -1441,20 +1441,22 @@ Vendors 意为供应商、售货机。
 
 譬如可以通过以下方式在 `_config.yun.yml` 中覆盖：
 
-> - `host`: CDN 起始链接，由于 `cdn.jsdelivr.net` 在国内已被污染，建议改为使用 `https://fastly.jsdelivr.net/npm/`。
+> - `host`: Since `v1.9.3`, CDN 起始链接，由于 `cdn.jsdelivr.net` 在国内已被污染，建议改为使用其他国内 CDN。
 
 ```yml
 vendors:
   # 以 '/' 结尾
-  host: 'https://fastly.jsdelivr.net/npm/'
-  waline:
-    css: '@waline/client@v2/dist/waline.css'
+  host: 'https://npm.elemecdn.com/'
+  # 下方代表覆盖 waline CDN 为别的链接，默认不用修改
+  # waline:
+  #   css: '@waline/client@v2/dist/waline.css'
 ```
 
 ::: tip
 
 可选 CDN：
 
+- <https://fastly.jsdelivr.net/npm/>
 - <https://npm.elemecdn.com/>
 - <https://unpkg.zhimg.com/>
 
