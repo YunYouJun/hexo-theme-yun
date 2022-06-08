@@ -137,7 +137,7 @@ disqusjs:
 
 ### Valine
 
-由于 [Valine](https://github.com/xCss/Valine) 不再开源，从 `v1.10.5` 放弃 Valine 支持.
+由于 [Valine](https://github.com/xCss/Valine) 不再开源，从 `v1.11.0` 放弃 Valine 支持.
 
 ### Waline
 

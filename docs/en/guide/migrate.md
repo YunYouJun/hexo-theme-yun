@@ -2,14 +2,29 @@
 
 When you upgrade your theme, you may encounter some incompatible updates.
 
-## v1.10.1
+## Migrating to versions after v1.11
 
-Use [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) instead of [hexo-generator-search](https://github.com/wzpan/hexo-generator-search).
+<Badge>v1.11.0</Badge>
+
+- Deprecated Valine support
+- Deprecated Slides (reveal.js) in favor of [slidev](https://sli.dev/)
+
+## Migrating to versions after v1.10.x
+
+<Badge>v1.10.x</Badge> Use Iconify to load icon resources.
+
+You can load any icon from the icon set.
+
+For example, the theme uses Remix Icon by default, and the original icon name is `icon-github-line` and is changed to `ri:github-line`.
+
+---
+
+<Badge>v1.10.1</Badge> Use [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) instead of [hexo-generator-search](https:// github.com/wzpan/hexo-generator-search).
 
 ```bash
 npm un hexo-generator-search
 npm i hexo-generator-searchdb
-```
+````
 
 See [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) for more configuration.
 

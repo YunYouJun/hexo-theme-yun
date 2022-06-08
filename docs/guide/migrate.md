@@ -2,16 +2,12 @@
 
 当你升级主题时，可能会遇到一些不兼容更新。
 
-## v1.10.1
+## 迁移至 v1.11 之后的版本
 
-使用 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) 替代 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)。
+<Badge>v1.11.0</Badge>
 
-```bash
-npm un hexo-generator-search
-npm i hexo-generator-searchdb
-```
-
-更多配置见 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)。
+- 弃用 Valine 支持
+- 弃用 Slides(reveal.js)，推荐使用 [slidev](https://sli.dev/)
 
 ## 迁移至 v1.10.x 之后的版本
 
@@ -20,6 +16,17 @@ npm i hexo-generator-searchdb
 您可以加载图标集中的任意图标。
 
 譬如主题默认使用 Remix Icon，原图标名为 `icon-github-line` 修改为 `ri:github-line`。
+
+---
+
+<Badge>v1.10.1</Badge> 使用 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) 替代 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)。
+
+```bash
+npm un hexo-generator-search
+npm i hexo-generator-searchdb
+```
+
+更多配置见 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)。
 
 ## 从 1.x 迁移至 v1.8.x 之后的版本
 

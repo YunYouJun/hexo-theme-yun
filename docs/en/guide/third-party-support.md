@@ -110,7 +110,7 @@ utterances:
 
 ### Valine
 
-Deprecated valine support from `v1.10.5`.
+Deprecated valine support from `v1.11.0`.
 
 > Since valine stopped open source. [valine](https://github.com/xCss/Valine)
 
