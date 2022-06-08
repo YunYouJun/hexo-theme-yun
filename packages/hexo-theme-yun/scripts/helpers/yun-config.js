@@ -80,10 +80,23 @@ hexo.extend.helper.register('yun_config', function () {
       cdn: theme.vendors.waline.js,
       dark: 'html.dark',
     }
+
+    // adapt waline emoji
+    const host = theme.vendors.host
+    if (host) {
+      const emoji = exportConfig.waline.config.emoji
+      if (emoji) {
+        emoji.forEach((e, i) => {
+          if (e.startsWith('@'))
+            emoji[i] = host + emoji[i]
+        })
+      }
+    }
   }
 
   // vendors
   exportConfig.vendors = {
+    host: theme.vendors.host,
     darken: theme.vendors.darken,
   }
 

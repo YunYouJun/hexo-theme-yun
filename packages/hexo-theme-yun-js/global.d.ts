@@ -13,6 +13,7 @@ declare interface Window {
     root: string
     title: string
     vendors: {
+      host: string
       darken: string
     }
 

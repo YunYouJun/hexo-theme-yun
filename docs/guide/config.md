@@ -1451,6 +1451,15 @@ vendors:
     css: '@waline/client@v2/dist/waline.css'
 ```
 
+::: tip
+
+可选 CDN：
+
+- <https://npm.elemecdn.com/>
+- <https://unpkg.zhimg.com/>
+
+:::
+
 ## 更多配置
 
 你可以直接查看 [\_config.yml ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。

@@ -1,7 +1,8 @@
 # you can config it in vendors.host
 host: https://cdn.jsdelivr.net/npm/
 # Whether to enable local
-local: true
+# todo
+# local: true
 
 # internal
 yun_markdown_css: star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css

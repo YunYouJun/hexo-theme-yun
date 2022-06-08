@@ -38,9 +38,9 @@ waline:
   visitor: true
   comment: true
   emoji:
-    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
-    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
-    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+    - "@waline/emojis@latest/bilibili/"
+    - "@waline/emojis@latest/weibo/"
+    - "@waline/emojis@latest/qq/"
   locale:
     placeholder: 填写邮箱，可以收到回复通知哦～
   requiredMeta: [nick]
