@@ -1,5 +1,7 @@
 # you can config it in vendors.host
 host: https://cdn.jsdelivr.net/npm/
+# Whether to enable local
+local: true
 
 # internal
 yun_markdown_css: star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css
@@ -47,7 +49,6 @@ darken: darken@1.5.0
 medium_zoom: medium-zoom@1.0.6/dist/medium-zoom.min.js
 
 # comment
-valine_js: valine@latest/dist/Valine.min.js
 waline:
   css: "@waline/client@v2/dist/waline.css"
   js: "@waline/client@v2/dist/waline.js"

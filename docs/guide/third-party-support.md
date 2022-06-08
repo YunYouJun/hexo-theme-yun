@@ -17,7 +17,7 @@ comment:
     - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
   candidates:
-    - valine
+    - waline
     - utterances
 ```
 
@@ -137,62 +137,7 @@ disqusjs:
 
 ### Valine
 
-参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。
-
-即 Hexo 根目录下的 `_config.yml`。（注意与主题的 `_config.yml` 相区分）
-
-```yaml
-language: zh-CN
-```
-
-实际上，你只需要参考下方页面获取配置所需的 appId 和 appKey 即可。（不需要安装，主题默认使用 CDN。模版也已经内置。）
-
-> [快速开始 - 获取 APP ID 和 APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
-
-::: warning
-
-因为国内行情，建议直接使用 [LeanCloud 国际版](https://leancloud.app/)。
-如果你打算使用国内版，你需要绑定你的自定义域名并配置下方 `serverURLs` 字段。
-
-> [请各位用户在 10 月 1 日前绑定自己的域名 | LeanCloud](https://leancloudblog.com/mandatory-domain-config/)
-
-:::
-
-- `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
-
-> [更多配置项](https://valine.js.org/configuration.html) 写在 `_config.yun.yml` 中。
-
-```yaml
-valine:
-  enable: false
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
-  placeholder: Just go go # comment box placeholder
-  avatar: # gravatar style
-  meta:
-    - nick
-    - mail
-    - link
-  pageSize: 10 # pagination size
-  # lang: zh-CN
-  # visitor: false
-  # highlight: true
-  # recordIP: false
-  # serverURLs:
-  # Emoji See: https://valine.js.org/emoji.html
-  # emojiCDN: //i0.hdslb.com/bfs/emote/
-  # emojiMaps:
-  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
-  #   more...
-  # enableQQ: false
-  # requiredFields:
-  #   - nick
-  #   - mail
-```
-
-Valine 的扩展和增强功能可以参考 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)，可以对具体的评论进行邮件提醒。
-
-> pjax: [请问如何在带有 pjax 的页面下使用 - Issue #138](https://github.com/xCss/Valine/issues/138)
+由于 [Valine](https://github.com/xCss/Valine) 不再开源，从 `v1.10.5` 放弃 Valine 支持.
 
 ### Waline
 
@@ -389,7 +334,7 @@ google_analytics:
 
 使用说明：<https://ibruce.info/2015/04/04/busuanzi>
 
-> 请最后不要与 [Valine](#valine) 的 `visitor` 同时启用。
+> 请不要与 [Valine](#valine) 的 `visitor` 同时启用。
 
 - `site_uv`: 是否显示站点用户访问量 Unique Visitor（\_icon 为对应图标，以下同理）
 - `site_pv`: 是否显示站点页面访问量 Page View

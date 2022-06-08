@@ -110,52 +110,9 @@ utterances:
 
 ### Valine
 
-Refer to [Valine](https://valine.js.org) official document for configuration. The language defaults to follow Hexo's language setting.
+Deprecated valine support from `v1.10.5`.
 
-That is `_config.yml` in the root directory of Hexo. (Note that it is different from the theme's `_config.yml`)
-
-```yaml
-language: zh-CN
-```
-
-In fact, you only need to refer to the page below to get the appId and appKey required for configuration. (No need to install, the theme uses CDN by default. The template is also built-in.)
-
-> [Quick Start-Get APP ID and APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
-
-- `visitor`: Article reading statistics (please do not enable it at the same time with [不蒜子](#busuanzi))
-
-> [More configuration items](https://valine.js.org/configuration.html) is written in `_config.yun.yml`.
-
-```yaml
-valine:
-  enable: false
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
-  placeholder: Just go go # comment box placeholder
-  avatar: # gravatar style
-  meta: -nick
-    -mail
-    -link
-  pageSize: 10 # pagination size
-  # lang: zh-CN
-  # visitor: false
-  # highlight: true
-  # recordIP: false
-  # serverURLs:
-  # Emoji See: https://valine.js.org/emoji.html
-  # emojiCDN: //i0.hdslb.com/bfs/emote/
-  # emojiMaps:
-  # tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
-  # more...
-  # enableQQ: false
-  # requiredFields:
-  # -nick
-  # -mail
-```
-
-For Valine's extensions and enhancements, please refer to [Valine-Admin](https://github.com/DesertsP/Valine-Admin), you can send email reminders to specific comments.
-
-> pjax: [How do I use it on a page with pjax-Issue #138](https://github.com/xCss/Valine/issues/138)
+> Since valine stopped open source. [valine](https://github.com/xCss/Valine)
 
 ### Waline
 

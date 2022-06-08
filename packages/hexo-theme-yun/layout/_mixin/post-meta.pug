@@ -57,9 +57,8 @@ mixin post_meta(post)
           span#busuanzi_value_page_pv
 
     - var leancloud_visitor = theme.leancloud_visitors && theme.leancloud_visitors.enable
-    - var valine_visitor = is_post() && theme.valine.enable && theme.valine.visitor
     - var waline_visitor = is_post() && theme.waline.enable && theme.waline.visitor
-    if leancloud_visitor || valine_visitor || waline_visitor
+    if leancloud_visitor || waline_visitor
       span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
         span.post-meta-divider='-'
         span.post-meta-item-icon(title=__('post.views'))

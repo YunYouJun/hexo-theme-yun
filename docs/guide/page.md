@@ -442,6 +442,14 @@ photos:
 
 ## Slides 幻灯片
 
+::: danger
+
+将会被弃用！
+
+让我们使用 [slidev](https://github.com/slidevjs/slidev) 吧！
+
+:::
+
 > 使用 [reveal.js](https://revealjs.com/) 实现，更多信息请参见[文档](https://revealjs.com/markdown/)。
 
 你可以使用 Markdown 混合 Html 来快速编写你的幻灯片。

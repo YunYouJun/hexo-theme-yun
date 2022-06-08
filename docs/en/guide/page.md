@@ -393,6 +393,14 @@ photos:
 
 ## Slides
 
+::: danger
+
+Will be deprecated!
+
+Let's use [slidev](https://github.com/slidevjs/slidev)!
+
+:::
+
 > Use [reveal.js](https://revealjs.com/) to achieve, see [document](https://revealjs.com/markdown/) for more information.
 
 You can use Markdown to mix Html to quickly write your slides.
