@@ -1,21 +1,19 @@
-import type { Theme } from 'vitepress'
-import { VPTheme } from 'vitepress-theme-you'
-
 import 'uno.css'
+import Theme from 'vitepress/theme'
 
-import Badge from './components/Badge.vue'
-import CustomToast from './components/CustomToast.vue'
-import DisplayIcon from './components/DisplayIcon.vue'
-import DemoSites from './components/DemoSites.vue'
+import './styles/index.scss'
 
-const theme: Theme = Object.assign({}, VPTheme, {
-  enhanceApp: ({ app }) => {
-    // unplugin-vue-components seems have some issues
-    app.component('Badge', Badge)
-    app.component('CustomToast', CustomToast)
-    app.component('DisplayIcon', DisplayIcon)
-    app.component('DemoSites', DemoSites)
+import { isClient } from '@vueuse/core'
+
+export default {
+  ...Theme,
+  enhanceApp: () => {
+    if (isClient) {
+      // remove pwa
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (const registration of registrations)
+          registration.unregister()
+      })
+    }
   },
-} as Theme)
-
-export default theme
+}

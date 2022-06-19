@@ -12,7 +12,7 @@ The naming convention is: `ri:github-line`.
 
 Such as:
 
-````yml
+````yaml
 icon: ri:github-line
 ````
 

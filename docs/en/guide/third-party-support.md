@@ -276,7 +276,7 @@ Instructions for use: <https://ibruce.info/2015/04/04/busuanzi>
 - `site_pv`: whether to display site page views Page View
 - `page_pv`: whether to display page views of article pages
 
-```yml
+```yaml
 busuanzi:
   enable: false
   site_uv: true

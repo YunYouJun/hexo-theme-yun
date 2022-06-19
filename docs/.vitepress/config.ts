@@ -1,68 +1,85 @@
-import type { UserConfig } from 'vitepress'
-import type { YouTheme } from 'vitepress-theme-you'
+import { defineConfig } from 'vitepress'
 
-import baseConfig from 'vitepress-theme-you/config'
-
-import * as navbar from './configs/navbar'
-import * as sidebar from './configs/sidebar'
-
+import { nav } from './configs/navbar'
+import { sidebar } from './configs/sidebar'
 import { head } from './configs/head'
 
-const config: UserConfig<YouTheme.Config> = {
-  extends: baseConfig,
-
+export default defineConfig({
   head,
-
+  lang: 'zh-CN',
   title: 'Hexo-Theme-Yun',
-  shortTitle: 'Yun',
+  description: 'A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。',
+  lastUpdated: true,
 
   locales: {
-    '/': {
-      lang: 'zh-CN',
-      description:
-        'A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。',
-    },
     '/en/': {
       lang: 'en-US',
+      label: 'English',
       description: 'A powerful & simple & fast theme for Hexo.',
+      selectText: 'English',
+    },
+    '/': {
+      lang: 'zh-CN',
+      label: '简体中文',
+      description: 'A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。',
+      selectText: '简体中文',
+    },
+  },
+
+  langs: {
+    '/en/': {
+      lang: 'en-US',
+      label: 'English',
+    },
+    '/': {
+      lang: 'zh-CN',
+      label: '简体中文',
     },
   },
 
   themeConfig: {
+    logo: '/favicon.svg',
+
     // iconClass: "i-ri-cloud-line",
-    shortTitle: 'Yun',
+    // shortTitle: 'Yun',
 
-    nextLinks: true,
-    prevLinks: true,
-    repo: 'YunYouJun/hexo-theme-yun',
-    docsDir: 'docs',
-    editLinks: true,
-    docsBranch: 'dev',
-
-    editLinkText: '帮助改善此页面',
-
-    locales: {
-      '/': {
-        label: '简体中文',
-        selectText: '简体中文',
-        lastUpdated: '上次更新',
-        editLinkText: '帮助改善此页面！( ￣□￣)/',
-        nav: navbar.zh,
-        sidebar: sidebar.zh,
-      },
-      '/en/': {
-        label: 'English',
-        selectText: 'English',
-        lastUpdated: 'Last Updated',
-        nav: navbar.en,
-        sidebar: sidebar.en,
-      },
+    editLink: {
+      pattern: 'https://github.com/YunYouJun/hexo-theme-yun/edit/dev/docs/:path',
+      text: '帮助改善此页面！( ￣□￣)/',
     },
 
+    socialLinks: [
+      {
+        icon: 'github', link: 'https://github.com/YunYouJun/hexo-theme-yun',
+      },
+      {
+        icon: 'twitter', link: 'https://twitter.com/YunYouJun',
+      },
+      {
+        icon: 'discord', link: 'https://discord.gg/99bK4CaBhQ',
+      },
+    ],
+
+    nav: nav(),
+    sidebar,
+
     algolia: {
-      // appId: 'N2XEWA4N6V',
+      appId: 'N2XEWA4N6V',
       apiKey: '62c0b4aa58760ed3804e4fae0457c202',
       indexName: 'yunyoujun',
+    },
+
+    localeLinks: {
+      // text: '选择语言',
+      items: [
+        { text: 'English', link: '/en/guide/' },
+        { text: '简体中文', link: '/guide/' },
+      ],
+    },
+
+    footer: {
+      message: 'Released under the SATA | MIT License.',
+      copyright: 'Copyright © 2020-PRESENT YunYouJun',
     },
   },
 
@@ -74,6 +91,4 @@ const config: UserConfig<YouTheme.Config> = {
   //     },
   //   ],
   // ],
-}
-
-export default config
+})

@@ -16,8 +16,10 @@ const styles = computed(() => ({
 
 <template>
   <span
-    class="badge bg-blue-500 rounded"
-    text="sm white"
+    class="badge bg-blue-600 inline-block leading-4 rounded"
+    border="~ blue-500"
+    bg="opacity-10"
+    text="sm blue-500"
     p="x-2 y-1"
     :class="type"
     :style="styles"

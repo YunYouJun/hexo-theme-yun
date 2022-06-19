@@ -700,7 +700,7 @@ fireworks:
 
 Click the article image to enlarge it for preview.
 
-```yml
+```yaml
 # _config.yun.yml
 medium_zoom: true
 ```
@@ -1399,7 +1399,7 @@ For example, it can be overridden in `_config.yun.yml` in the following ways:
 
 > - `host`: CDN start link, since `cdn.jsdelivr.net` has been polluted in China, it is recommended to use `https://fastly.jsdelivr.net/npm/` instead.
 
-````yml
+````yaml
 vendors:
   # ends with '/'
   host: 'https://fastly.jsdelivr.net/npm/'

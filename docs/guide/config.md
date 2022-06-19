@@ -161,7 +161,7 @@ Example:
 
 <!-- html formatOnSave 出错 -->
 
-```svg
+```html
 <svg id="yun-logo">
   <style>
     #yun-logo {
@@ -707,7 +707,7 @@ fireworks:
 
 点击文章图片，放大预览。
 
-```yml
+```yaml
 # _config.yun.yml
 medium_zoom: true
 ```
@@ -1443,7 +1443,7 @@ Vendors 意为供应商、售货机。
 
 > - `host`: Since `v1.9.3`, CDN 起始链接，由于 `cdn.jsdelivr.net` 在国内已被污染，建议改为使用其他国内 CDN。
 
-```yml
+```yaml
 vendors:
   # 以 '/' 结尾
   host: 'https://npm.elemecdn.com/'

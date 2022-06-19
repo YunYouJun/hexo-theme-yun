@@ -1,5 +1,7 @@
 @use "sass:map";
 
+// #6200ee
+
 $colors: (
   brand: #0078e7,
   primary: #ccc,
@@ -33,13 +35,10 @@ $colors: (
 }
 
 :root {
-  --c-brand: #{map.get($colors, "brand")};
-  --c-brand-light: #{lighten(map.get($colors, "brand"), 10%)};
+  --vp-c-brand: #{map.get($colors, "brand")};
+  --vp-c-brand-light: #{lighten(map.get($colors, "brand"), 10%)};
+  --vp-c-brand-lighter: #{lighten(map.get($colors, "brand"), 20%)};
+  --vp-button-brand-bg: #0078e7;
 
   --content-width: 1000px;
-}
-
-html.dark {
-  --c-brand: #{lighten(map.get($colors, "brand"), 20%)};
-  --c-brand-light: #{lighten(map.get($colors, "brand"), 30%)};
 }

@@ -1,8 +1,10 @@
 # 默认图标
 
-## Iconify <Badge>v1.10.x</Badge>
+## Iconify
 
-`v1.10.x` 后使用 [Iconify](https://iconify.design/) 加载图标资源。
+> <Badge>v1.10.x</Badge>
+
+使用 [Iconify](https://iconify.design/) 加载图标资源。
 
 因此您可以使用 <https://icones.js.org/> 中可以看到的任意图标。
 
@@ -12,7 +14,7 @@
 
 如：
 
-```yml
+```yaml
 icon: ri:github-line
 ```
 

@@ -108,12 +108,6 @@
     "desc": "后花园是自己精心培育的，大部分时候是给自己看的，不过如果有行人能够驻足欣赏，我也会很开心的！"
   },
   {
-    "name": "绅士兔の小窝",
-    "url": "https://gentrabbit.moe/",
-    "avatar": "https://gentrabbit.moe/images/avatar.jpg",
-    "desc": "To live, but not to exist."
-  },
-  {
     "name": "工藤旧二の博客",
     "url": "http://huang_zhao.gitee.io/task/",
     "avatar": "http://huang_zhao.gitee.io/task/Yun.png",
@@ -130,12 +124,6 @@
     "url": "https://blog.miaoer.xyz",
     "avatar": "https://www.miaoer.xyz/weblogo.png",
     "desc": "喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨"
-  },
-  {
-    "name": "yln's blog",
-    "url": "https://www.blog.yln956.top/",
-    "avatar": "https://www.blog.yln956.top/images/tou.jpg",
-    "desc": "梦想是什么，梦想是现实的延续；现实是什么，现实是梦想的终结。"
   },
   {
     "name": "星云荒原",
@@ -168,12 +156,6 @@
     "desc": "感谢云游君提供的主题哦"
   },
   {
-    "name": "林森森",
-    "url": "https://assistest.github.io/",
-    "avatar": "https://s.im5i.com/2021/04/03/WKnMF.jpg",
-    "desc": "山有木兮木有枝,心悦君兮君不知。"
-  },
-  {
     "name": "熊之记事本",
     "url": "https://kuuhaku.top",
     "avatar": "https://cdn.jsdelivr.net/gh/kuuhaku-w/blogimg/intro/avatar_ai.png",
@@ -197,7 +179,6 @@
     "avatar": "https://blog.adkimsm.asia/logo.svg",
     "desc": "Adkinsm 的小站"
   },
-
   {
     "name": "七月流火",
     "url": "https://qylh.xyz/",
@@ -225,7 +206,7 @@
   {
     "name": "小文的博客",
     "url": "https://siquan-wen.github.io/",
-    "avatar": "https://github.com/SiQuan-Wen/SiQuan-Wen.github.io/blob/hexo/source/images/avatar.jpg",
+    "avatar": "https://siquan-wen.github.io/images/avatar.jpg",
     "desc": "救赎之道，就在其中"
   },
   {
@@ -249,7 +230,7 @@
   {
     "name": "孙悟元的小站",
     "url": "https://wuyuan.gq",
-    "avatar": "https://picture.wuyuan.gq/logo.png",
+    "avatar": "https://img.wenhairu.com/images/2021/09/25/1qNwC.png",
     "desc": "次次追逐，次次追忆"
   },
   {
@@ -267,7 +248,7 @@
   {
     "name": "紅葉の森",
     "url": "https://jk-momiji.com",
-    "avatar": "https://github.com/Jk-Cheung/Jk-Cheung.github.io/blob/main/img/avatar.png",
+    "avatar": "https://jk-momiji.com/img/avatar.png",
     "desc": "人会背叛你, 但数学和代码永远不会."
   },
   {

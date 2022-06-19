@@ -1,4 +1,6 @@
-export const head = [
+import type { HeadConfig } from 'vitepress'
+
+export const head: HeadConfig[] = [
   ['link', { rel: 'icon', href: '/favicon.svg' }],
   ['link', { rel: 'manifest', href: '/manifest.json' }],
   ['meta', { name: 'theme-color', content: '#6200ee' }],

@@ -6,13 +6,13 @@
   },
   "dependencies": {
     "@iconify-json/ri": "^1.1.2",
-    "dayjs": "^1.11.3",
-    "vitepress-theme-you": "^0.0.33"
+    "dayjs": "^1.11.3"
   },
   "devDependencies": {
-    "@vueuse/core": "^8.6.0",
-    "sass": "^1.52.2",
-    "vite-plugin-pwa": "^0.12.0",
-    "vitepress": "^0.22.4"
+    "@vueuse/core": "^8.7.4",
+    "sass": "^1.52.3",
+    "unocss": "^0.39.3",
+    "unplugin-vue-components": "^0.19.6",
+    "vitepress": "1.0.0-alpha.2"
   }
 }

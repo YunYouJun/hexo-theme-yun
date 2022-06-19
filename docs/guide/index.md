@@ -261,7 +261,7 @@ services:
 
 然后在 hexo 根目录创建名为 `Dockerfile` 的文件并填入下列内容。
 
-```dockerfile
+```docker
 FROM node:12.20.2-alpine AS base
 ARG CHANGE_APK_SOURCE=false
 ARG CHANGE_NPM_SOURCE=false
