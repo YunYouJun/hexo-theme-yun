@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import sites from '../../assets/sites.json'
+import sites from '../assets/sites.json'
 import DemoSite from './DemoSite.vue'
 
 const numOfRow = ref(6)
