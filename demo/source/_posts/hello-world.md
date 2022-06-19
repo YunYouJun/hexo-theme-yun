@@ -1,8 +1,16 @@
 ---
-title: Hello World
+title: Hello Theme Yun
 ---
 
 ![Preview Image](https://yun.yunyoujun.cn/images/index-preview.jpg)
+
+## Hexo Theme Yun
+
+- 文档: <https://yun.yunyoujun.cn>
+
+<!-- more -->
+
+## Hexo
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

@@ -1,5 +1,11 @@
 [
   {
+    "name": "默认示例",
+    "url": "https://hexo-theme-yun.yunyoujun.cn",
+    "avatar": "https://yun.yunyoujun.cn/logo.gif",
+    "desc": "主题默认示例"
+  },
+  {
     "name": "云游君的小站",
     "url": "https://www.yunyoujun.cn",
     "avatar": "https://www.yunyoujun.cn/images/avatar.jpg",

@@ -38,7 +38,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/favicon.svg',
+    logo: '/logo.svg',
 
     // iconClass: "i-ri-cloud-line",
     // shortTitle: 'Yun',

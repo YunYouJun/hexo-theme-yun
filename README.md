@@ -119,6 +119,13 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
 <table align="center">
   <tr align="center">
     <td>
+      <a href="https://hexo-theme-yun.yunyoujun.cn" target="_blank">
+        <img width="80px" src="https://yun.yunyoujun.cn/logo.gif" />
+        <br />
+        <sub title="主题默认示例">默认示例</sub>
+      </a>
+    </td>
+    <td>
       <a href="https://www.yunyoujun.cn" target="_blank">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg" />
         <br />
@@ -167,6 +174,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.kumybryce.work" target="_blank">
         <img width="80px" src="https://kumybryce.gitee.io/myblog/img/favicon.png" />
@@ -174,8 +183,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="努力一点，再努力一点">山山的掉发历程</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://hexo.cool" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg" />
@@ -225,6 +232,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="恰同学少年，风华正茂；书生意气，挥斥方遒。">LeoStudio</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.meow-2.com/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Meow-2/cdn/source/avatar.jpg" />
@@ -232,8 +241,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="你好！">喵二的博客</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://sknplz.xyz/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Sknp1006/cdn@master/img/albums/arknights_Skadi/024.png" />
@@ -283,6 +290,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="蹲一蹲">包子君的小站</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.aranne.me" target="_blank">
         <img width="80px" src="https://www.aranne.me/avatar.png" />
@@ -290,8 +299,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="要永远热爱生活呀">阿然君的小站</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://willian588.github.io/" target="_blank">
         <img width="80px" src="https://willian588.github.io/shadiao.png" />
@@ -341,6 +348,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="记录一些学习过程，主要是软硬件开发">七月流火</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://yuumi0221.github.io/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Yuumi0221/Yuumi0221.github.io/images/settings/favicon.png" />
@@ -348,8 +357,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="いつか伝えに行くよ">Yuumi的烟波之路</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://Melanie618.github.io/" target="_blank">
         <img width="80px" src="https://melanie618.github.io/images/avatar.jpg" />
@@ -397,13 +404,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <img width="80px" src="https://img.wenhairu.com/images/2021/09/25/1qNwC.png" />
         <br />
         <sub title="次次追逐，次次追忆">孙悟元的小站</sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://sagirichan.com/" target="_blank">
-        <img width="80px" src="https://avatars.githubusercontent.com/u/87757744?v=4" />
-        <br />
-        <sub title="希望能成为一个有趣的人">绮罗传香度良辰</sub>
       </a>
     </td>
   </tr>
