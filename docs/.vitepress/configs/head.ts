@@ -30,7 +30,7 @@ export const head: HeadConfig[] = [
   [
     'script',
     {
-      async: true,
+      async: 'true',
       src: '//at.alicdn.com/t/font_1140697_dxory92pb0h.js',
     },
   ],

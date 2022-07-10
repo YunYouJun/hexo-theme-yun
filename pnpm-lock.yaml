@@ -74,7 +74,7 @@ importers:
       sass: ^1.52.3
       unocss: ^0.39.3
       unplugin-vue-components: ^0.19.6
-      vitepress: 1.0.0-alpha.2
+      vitepress: 1.0.0-alpha.4
     dependencies:
       '@iconify-json/ri': 1.1.2
       dayjs: 1.11.3
@@ -83,7 +83,7 @@ importers:
       sass: 1.52.3
       unocss: 0.39.3
       unplugin-vue-components: 0.19.6
-      vitepress: 1.0.0-alpha.2_sass@1.52.3
+      vitepress: 1.0.0-alpha.4_sass@1.52.3
 
   packages/hexo-theme-yun:
     specifiers: {}
@@ -6217,7 +6217,7 @@ packages:
     dev: true
 
   /to-fast-properties/2.0.0:
-    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
     dev: true
 
@@ -6602,8 +6602,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.2_sass@1.52.3:
-    resolution: {integrity: sha512-twSsmx2DI/3XgZZ8KLyRAH8RgK2Zj4kJx/kwhZhimwndYqQDrtcIaAcuV+P3FKukZ+cYtm9yt9qohz631jKx4A==}
+  /vitepress/1.0.0-alpha.4_sass@1.52.3:
+    resolution: {integrity: sha512-bOAA4KW6vYGlkbcrPLZLTKWTgXVroObU+o9xj9EENyEl6yg26WWvfN7DGA4BftjdM5O8nR93Z5khPQ3W/tFE7Q==}
     engines: {node: '>=14.6.0'}
     hasBin: true
     dependencies:

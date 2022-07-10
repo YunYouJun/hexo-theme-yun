@@ -26,17 +26,6 @@ export default defineConfig({
     },
   },
 
-  langs: {
-    '/en/': {
-      lang: 'en-US',
-      label: 'English',
-    },
-    '/': {
-      lang: 'zh-CN',
-      label: '简体中文',
-    },
-  },
-
   themeConfig: {
     logo: '/logo.svg',
 
@@ -70,7 +59,7 @@ export default defineConfig({
     },
 
     localeLinks: {
-      // text: '选择语言',
+      text: '',
       items: [
         { text: 'English', link: '/en/guide/' },
         { text: '简体中文', link: '/guide/' },
