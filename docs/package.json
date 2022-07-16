@@ -13,6 +13,6 @@
     "sass": "^1.52.3",
     "unocss": "^0.39.3",
     "unplugin-vue-components": "^0.19.6",
-    "vitepress": "1.0.0-alpha.2"
+    "vitepress": "1.0.0-alpha.4"
   }
 }
