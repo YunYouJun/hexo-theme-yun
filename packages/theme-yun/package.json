@@ -4,6 +4,7 @@
   "description": "Theme Yun Common CSS/JS",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "gulp",
     "dev": "sass -w index.scss dist/index.css"
   },
