@@ -62,7 +62,7 @@ mixin post_meta(post)
       span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
         span.post-meta-divider='-'
         span.post-meta-item-icon(title=__('post.views'))
-          +icon(theme.busuanzi.page_pv_icon)
+          +icon(theme.icons.view)
           |  
           span.leancloud-visitors-count
 

@@ -4,6 +4,10 @@ date: 2021-10-21 02:02:15
 updated: 2021-10-21 02:02:15
 mermaid: true
 toc: true
+categories:
+  - Test
+tags:
+  - Mermaid
 ---
 
 ## Mermaid

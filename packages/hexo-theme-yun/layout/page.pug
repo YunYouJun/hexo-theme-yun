@@ -3,7 +3,7 @@ extends _partial/layout.pug
 block content
   #page.hty-card
     if page.type === 'tags'
-      +page_header(page.title, 'ri:price-tag-3-line')
+      +page_header(page.title, theme.icons.tag)
       .page-subtitle=_p('counter.tag_cloud', site.tags.length)
 
       if theme.wordcloud.enable
@@ -46,7 +46,7 @@ block content
           .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
     else if page.type === 'categories'
-      +page_header(page.title, 'ri:folder-2-line')
+      +page_header(page.title, theme.icons.category)
       .page-subtitle=_p('counter.categories', site.categories.length)
       .category-lists!= list_categories()
 

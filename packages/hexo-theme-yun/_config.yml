@@ -567,6 +567,13 @@ katex:
   # In page katex options are also possible and will be merged
   options: {}
 
+# icons
+icons:
+  back_to_top: ri:arrow-up-s-line
+  category: ri:folder-2-line
+  tag: ri:price-tag-3-line
+  view: ri:eye-line
+
 # plugins
 aplayer:
   global: false

@@ -1,0 +1,20 @@
+@use "./mixins.scss" as *;
+@use "./palette.scss" as *;
+
+$namespace: "yun";
+
+:root {
+  @include set-css-var-from-map($common, $namespace);
+}
+
+// light
+:root {
+  color-scheme: light;
+  @include set-css-var-from-map($light, $namespace);
+}
+
+// dark
+html.dark {
+  color-scheme: dark;
+  @include set-css-var-from-map($dark, $namespace);
+}

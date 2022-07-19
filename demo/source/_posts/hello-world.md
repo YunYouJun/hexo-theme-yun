@@ -1,5 +1,9 @@
 ---
 title: Hello Theme Yun
+categories:
+  - Theme Yun
+tags:
+  - Yun
 ---
 
 ![Preview Image](https://yun.yunyoujun.cn/images/index-preview.jpg)

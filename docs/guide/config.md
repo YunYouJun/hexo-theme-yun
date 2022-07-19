@@ -1433,6 +1433,24 @@ custom:
   style: source/_data/style/*
 ```
 
+## 自定义图标
+
+博客中还存在一些固定的图标，譬如返回顶部按钮、卡片中的标签与分类图标、拜访者图标等。
+
+可以通过配置 `icons` 修改：
+
+```yaml
+icons:
+  # 返回顶部
+  back_to_top: ri:arrow-up-s-line
+  # 分类
+  category: ri:folder-2-line
+  # 标签
+  tag: ri:price-tag-3-line
+  # 拜访
+  view: ri:eye-line
+```
+
 ## Vendors
 
 Vendors 意为供应商、售货机。

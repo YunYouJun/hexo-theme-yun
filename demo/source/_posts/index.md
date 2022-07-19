@@ -2,6 +2,8 @@
 title: Yun Test Preview
 date: 2020-02-10 02:02:15
 updated: 2020-02-10 02:02:15
+categories:
+  - Test
 ---
 
 > 此处放置一些主题的相关示例

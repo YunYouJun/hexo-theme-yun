@@ -11,8 +11,5 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
-  },
-  "devDependencies": {
-    "@vueuse/core": "^8.7.4"
   }
 }

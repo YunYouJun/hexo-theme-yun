@@ -25,6 +25,9 @@ $selection-bg = convert(hexo-config('colors.selection_bg'));
   for $name, $color in $colors {
     --hty-{$name}-color: $color;
   }
+
+  // default
+  --blockquote-border-left-color: var(--smc-border-color);
 }
 
 set-color(type, color) {

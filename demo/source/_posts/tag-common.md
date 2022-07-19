@@ -3,6 +3,11 @@ title: Yun Test With hexo-tag-common
 date: 2020-10-06 20:02:15
 updated: 2020-10-06 20:02:15
 type:
+categories:
+  - Test
+  - Plugins
+tags:
+  - 插件
 ---
 
 ## [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common)

@@ -1,0 +1,28 @@
+// join var name
+// join-var-name(('ns', 'button-text-color')) => '--ns-button-text-color'
+@function join-var-name($namespace, $list) {
+  $name: "--" + $namespace;
+  @each $item in $list {
+    @if $item != "" {
+      $name: $name + "-" + $item;
+    }
+  }
+  @return $name;
+}
+
+// get-css-var('ns', 'button-text-color') => var(--ns-button-text-color)
+@function get-css-var($namespace, $args...) {
+  @return var(#{join-var-name($namespace, $args)});
+}
+
+// get-css-var-name(('ns', 'button-text-color')) => '--ns-button-text-color'
+@function get-css-var-name($namespace, $args...) {
+  @return join-var-name($namespace, $args);
+}
+
+// @include set-css-var-from-map($colors)
+@mixin set-css-var-from-map($map, $namespace: "") {
+  @each $key, $value in $map {
+    #{get-css-var-name($namespace, $key)}: #{$value};
+  }
+}
