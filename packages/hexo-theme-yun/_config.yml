@@ -422,6 +422,10 @@ footer:
   beian:
     enable: false
     # icp: 苏ICP备xxxxxxxx号
+    gongan:
+      enable: false
+      text: 京公网安备 XXXXXXXX 号
+      id: XXXXXXXX
 
   live_time:
     enable: false

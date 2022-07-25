@@ -1288,6 +1288,11 @@ footer:
   beian:
     enable: true
     icp: 苏ICP备xxxxxxxx号
+    # 公安备案
+    gongan:
+      enable: false
+      text: 京公网安备 XXXXXXXX 号
+      id: XXXXXXXX
 ```
 
 ### 运行时间
