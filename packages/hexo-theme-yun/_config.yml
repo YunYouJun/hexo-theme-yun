@@ -361,6 +361,7 @@ reward:
   #   path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
   #   color: "#00A3EE"
   #   icon: ri:alipay-line
+  #   link: xxx
   # - name: QQ 支付
   #   path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
   #   color: "#12B7F5"

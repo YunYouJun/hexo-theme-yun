@@ -1178,6 +1178,7 @@ lazyload:
 - `path`: 图片路径
 - `color`: 图标颜色
 - `icon`: 图标名称
+- `link`: 当链接存在时，点击跳转链接（否则默认打开图片链接）
 
 在 `_config.yun.yml` 中进行覆盖。
 
@@ -1196,6 +1197,7 @@ reward:
       path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
       color: '#00A3EE'
       icon: ri:alipay-line
+      # link: https://xxxx
     - name: QQ 支付
       path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
       color: '#12B7F5'
