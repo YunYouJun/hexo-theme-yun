@@ -1,9 +1,0 @@
-#minivaline-container
-- var minivalineConfig = JSON.stringify(theme.minivaline)
-script(type="module").
-  import { getScript } from '/js/utils.js'
-  getScript("#{theme.vendors.minivaline_js}", () => {
-    const minivalineConfig = !{minivalineConfig}
-    minivalineConfig.el = "#minivaline-container"
-    new MiniValine(minivalineConfig);
-  }, window.MiniValine);
