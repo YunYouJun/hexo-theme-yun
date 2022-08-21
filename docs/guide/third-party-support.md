@@ -164,21 +164,11 @@ waline:
 
 ### MiniValine
 
-简单且简约的评论系统。
+由于上游服务已终止,故 MiniValine 已被弃用
 
-- GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
-- Demo: <https://minivaline.github.io/>
+[leancloud: 2022 年 8 月起，国际版共享域名不再向中国大陆提供服务](https://forum.leancloud.cn/t/2022-8/25408)
 
-```yaml
-minivaline:
-  enable: false
-  md: true
-  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
-  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
-  # 下面是一个例子：
-  backend: waline
-  serverURL: https://waline.vercel.app
-```
+[Infura 公共 API 和网关的弃用时间提前到 8 月 10 日](https://blog.infura.io/post/ipfs-public-api-and-gateway-deprecation)
 
 ### LiveRe 来必力
 

@@ -673,15 +673,6 @@ waline:
   # display comment count
   comment: false
 
-# MiniValine
-# More info available at https://github.com/MiniValine/MiniValine
-minivaline:
-  enable: false
-  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
-  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
-  # 下面是一个例子：
-  serverURL: https://minivaline.your-domain.top
-
 # http://disqus.com/
 disqus:
   enable: false

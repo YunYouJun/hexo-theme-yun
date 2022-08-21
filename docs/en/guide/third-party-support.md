@@ -134,21 +134,11 @@ Quick start and more details, please see [Waline Docs](https://waline.js.org/qui
 
 ### MiniValine
 
-A simple and minimalist comment system.
+MiniValine has been deprecated due to the termination of upstream services
 
-- GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
-- Demo: <https://minivaline.github.io/>
+[leancloud: 2022 年 8 月起，国际版共享域名不再向中国大陆提供服务](https://forum.leancloud.cn/t/2022-8/25408)
 
-```yaml
-minivaline:
-  enable: false
-  md: true
-  # More options https://minivaline.js.org/docs/cn/#/Options Continue to fill in the YML format (except for the [el] option)
-  # List options such as emoticonUrl  see: https://github.com/MiniValine/hexo-next-minivaline
-  # Here is an example:
-  backend: waline
-  serverURL: https://waline.vercel.app
-```
+[the deprecation of the Infura public API and gateway to 10th August](https://blog.infura.io/post/ipfs-public-api-and-gateway-deprecation)
 
 ### LiveRe
 

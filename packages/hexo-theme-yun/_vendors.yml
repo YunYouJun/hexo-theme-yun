@@ -53,7 +53,6 @@ medium_zoom: medium-zoom@1.0.6/dist/medium-zoom.min.js
 waline:
   css: "@waline/client@v2/dist/waline.css"
   js: "@waline/client@v2/dist/waline.js"
-minivaline_js: minivaline@6
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   css: disqusjs@latest/dist/disqusjs.css
