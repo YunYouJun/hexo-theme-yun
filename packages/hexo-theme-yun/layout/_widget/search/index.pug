@@ -1,0 +1,55 @@
+if theme.engine_search && theme.engine_search.enable
+  a#search.popup-trigger.hty-icon-button.icon-search(href=theme.engine_search.href + theme.engine_search.domain, title=__('menu.search'))
+    span.site-state-item-icon
+      +icon('ri:search-line')
+else
+  a#search.popup-trigger.hty-icon-button.icon-search(href='javascript:;', title=__('menu.search'))
+    span.site-state-item-icon
+      +icon('ri:search-line')
+  script.
+    window.addEventListener("DOMContentLoaded", () => {
+      // Handle and trigger popup window
+      document.querySelector(".popup-trigger").addEventListener("click", () => {
+        document.querySelector(".popup").classList.add("show");
+        setTimeout(() => {
+          document.querySelector(".search-input").focus();
+        }, 100);
+      });
+
+      // Monitor main search box
+      const onPopupClose = () => {
+        document.querySelector(".popup").classList.remove("show");
+      };
+
+      document.querySelector(".popup-btn-close").addEventListener("click", () => {
+        onPopupClose();
+      });
+
+      window.addEventListener("keyup", event => {
+        if (event.key === "Escape") {
+          onPopupClose();
+        }
+      });
+    });
+
+  if theme.algolia_search && theme.algolia_search.enable
+    include algolia-search.pug
+  else if theme.local_search && theme.local_search.enable
+    include local-search.pug
+
+  .popup.search-popup
+    .search-header
+      span.popup-btn-close.close-icon.hty-icon-button
+        +icon('ri:close-line')
+
+    if theme.algolia_search.enable
+      .search-input-container
+      .algolia-results
+        #algolia-stats
+        #algolia-hits
+        #algolia-pagination.algolia-pagination
+
+    if theme.local_search.enable
+      .search-input-container
+        input#local-search-input.search-input(type='text', placeholder=theme.search.placeholder || __('search.placeholder'), value="")
+      .search-result-container

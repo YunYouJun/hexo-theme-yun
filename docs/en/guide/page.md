@@ -57,7 +57,7 @@ hexo new page tags
 
 Modify `Front Matter` of `source/tags/index.md`
 
-```yaml {5}
+```md {5}
 ---
 title: tag
 date: 2017-10-09 19:11:58
@@ -78,7 +78,7 @@ hexo new page categories
 
 Modify `Front Matter` of `source/categories/index.md`
 
-```yaml {5}
+```md {5}
 ---
 title: Category
 date: 2017-10-12 10:47:16
@@ -169,7 +169,7 @@ You can enter [My Friends](https://www.yunyoujun.cn/links/) to see the effect
 
 - `tip`: a text reminder when FriendChain is not loaded successfully and will be removed after loading. (This only takes effect after successfully loaded FriendChain via JSON.)
 
-```yaml
+```md
 ---
 layout: links
 title: My friends
@@ -183,7 +183,7 @@ links:
     name: Yunyou Jun
     blog: Yunyoujun's blog
     desc: All at sea.
-    color: "#0078e7" # representative color
+    color: '#0078e7' # representative color
     email: # not required
 placeholder: I haven't thought about what to say # The default description of YouChain
 tip: Friendchain loading in progress ~ If it fails, please refresh and try again ~
@@ -265,7 +265,7 @@ Set to enable first. (I know most people may not use this feature, so it is set 
 
 ```yaml
 girls:
-  enable: true
+  enable: true
 ```
 
 ```bash
@@ -274,13 +274,13 @@ hexo new page girls
 
 Enter `source/girls/index.md`
 
-```yaml
+```md
 ---
 layout: girls
 title: kawaii girls
 banner: <span title = "Everyone is my angel!"> ranked in unintentional order </ span>
 girls:
-  -name: name
+  - name: name
     avatar: avatar image link
     from: the project she's from
     url: character encyclopedia link
@@ -303,7 +303,7 @@ albums:
 enable: true
 ```
 
-[Albums Example](https://www.yunyoujun.cn/albums/)
+[Albums Example](https://hexo-theme-yun.yunyoujun.cn/albums/)
 
 [Config Example](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
 
@@ -337,7 +337,7 @@ albums:
 
 ### Gallery
 
-[Gallery Example](https://www.yunyoujun.cn/albums/sunset.html)
+[Gallery Example](https://hexo-theme-yun.yunyoujun.cn/albums/sunset.html)
 
 The photo album page is where you actually store your photos.
 
@@ -364,7 +364,7 @@ It is not directly named `password` to prevent conflicts with [hexo-blog-encrypt
 
 > Because [crypto-js](https://github.com/brix/crypto-js) is used, you also need `npm install crypto-js`.
 
-Test page: <https://www.yunyoujun.cn/albums/sunset.html>
+Test page: <https://hexo-theme-yun.yunyoujun.cn/albums/sunset.html>
 Test password: test
 
 > If you find that the album cannot be decrypted normally when PJAX is turned on in `hexo s`, don't worry, this is that when Hexo is used as a server, the link is re-encrypted again, and there is no problem when generating static files for deployment.
@@ -392,6 +392,14 @@ photos:
 > [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
 
 ## Slides
+
+::: danger
+
+Will be deprecated!
+
+Let's use [slidev](https://github.com/slidevjs/slidev)!
+
+:::
 
 > Use [reveal.js](https://revealjs.com/) to achieve, see [document](https://revealjs.com/markdown/) for more information.
 
@@ -453,8 +461,8 @@ The theme is `white`, [more theme names](https://revealjs.com/themes/).
 ```yaml
 slide:
   separator: ---
-  separator_vertical: "~~"
-  data_separator_notes: "^Note:"
+  separator_vertical: ~~
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true

@@ -1,0 +1,6 @@
+#waline
+link(rel='stylesheet', href=theme.vendors.waline.css)
+script.
+  window.CONFIG.waline.config.path = "#{url_for(page.path)}"
+.js-Pjax
+  script(src=url_for('/js/comments/waline.js'), type='module', defer)

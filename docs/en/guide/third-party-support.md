@@ -110,52 +110,9 @@ utterances:
 
 ### Valine
 
-Refer to [Valine](https://valine.js.org) official document for configuration. The language defaults to follow Hexo's language setting.
+Deprecated valine support from `v1.11.0`.
 
-That is `_config.yml` in the root directory of Hexo. (Note that it is different from the theme's `_config.yml`)
-
-```yaml
-language: zh-CN
-```
-
-In fact, you only need to refer to the page below to get the appId and appKey required for configuration. (No need to install, the theme uses CDN by default. The template is also built-in.)
-
-> [Quick Start-Get APP ID and APP Key](https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key)
-
-- `visitor`: Article reading statistics (please do not enable it at the same time with [不蒜子](#busuanzi))
-
-> [More configuration items](https://valine.js.org/configuration.html) is written in `_config.yun.yml`.
-
-```yaml
-valine:
-  enable: false
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
-  placeholder: Just go go # comment box placeholder
-  avatar: # gravatar style
-  meta: -nick
-    -mail
-    -link
-  pageSize: 10 # pagination size
-  # lang: zh-CN
-  # visitor: false
-  # highlight: true
-  # recordIP: false
-  # serverURLs:
-  # Emoji See: https://valine.js.org/emoji.html
-  # emojiCDN: //i0.hdslb.com/bfs/emote/
-  # emojiMaps:
-  # tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
-  # more...
-  # enableQQ: false
-  # requiredFields:
-  #-nick
-  #-mail
-```
-
-For Valine's extensions and enhancements, please refer to [Valine-Admin](https://github.com/DesertsP/Valine-Admin), you can send email reminders to specific comments.
-
-> pjax: [How do I use it on a page with pjax-Issue #138](https://github.com/xCss/Valine/issues/138)
+> Since valine stopped open source. [valine](https://github.com/xCss/Valine)
 
 ### Waline
 
@@ -177,21 +134,11 @@ Quick start and more details, please see [Waline Docs](https://waline.js.org/qui
 
 ### MiniValine
 
-A simple and minimalist comment system.
+MiniValine has been deprecated due to the termination of upstream services
 
-- GitHub: [MiniValine](https://github.com/MiniValine/MiniValine)
-- Demo: <https://minivaline.github.io/>
+[leancloud: 2022 年 8 月起，国际版共享域名不再向中国大陆提供服务](https://forum.leancloud.cn/t/2022-8/25408)
 
-```yaml
-minivaline:
-  enable: false
-  md: true
-  # More options https://minivaline.js.org/docs/cn/#/Options Continue to fill in the YML format (except for the [el] option)
-  # List options such as emoticonUrl  see: https://github.com/MiniValine/hexo-next-minivaline
-  # Here is an example:
-  backend: waline
-  serverURL: https://waline.vercel.app
-```
+[the deprecation of the Infura public API and gateway to 10th August](https://blog.infura.io/post/ipfs-public-api-and-gateway-deprecation)
 
 ### LiveRe
 
@@ -243,14 +190,14 @@ You can search by `site: yunyoujun.cn what you want to search`
 
 ```yaml
 engine_search:
-  enable: true
-  href: "https://www.google.com/search?q=site:"
-  domain: yunyoujun.cn
+  enable: true
+  href: 'https://www.google.com/search?q=site:'
+  domain: yunyoujun.cn
 ```
 
 ### Local search
 
-You need to install [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) first, and refer to the configuration document.
+You need to install [hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb) first, and refer to the configuration document.
 
 This theme is implemented using native JavaScript, without jQuery dependency.
 
@@ -261,16 +208,16 @@ Before enabling it, remember to turn off the default engine search.
 
 ```yaml
 engine_search:
-  enable: false
+  enable: false
 ```
 
 :::
 
 ```yaml
 # search
-# https://github.com/wzpan/hexo-generator-search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: true
+  enable: true
 ```
 
 > If you find that the local is normal, click the search button after deployment but it will jump to the bottom of the page, it may be simply a cache problem.
@@ -285,9 +232,9 @@ Turn it on again.
 
 ```yaml
 algolia_search:
-  enable: true
-  hits:
-    per_page: 10 # the number of search results per page
+  enable: true
+  hits:
+    per_page: 10 # the number of search results per page
 ```
 
 ## Analysis Statistics
@@ -300,9 +247,9 @@ Go to [Google Analytics](https://analytics.google.com/) to get your ID. (Science
 
 ```yaml
 google_analytics:
-  enable: true
-  id: UA-XXXXXXXXX-X
-  // Note : Google Analytics abandoned the measurement ID of "UA-XXXXXXXXX-X" and used the measurement ID of "G-XXXXXXXXXX". You can fill in the new measurement ID directly in the "id:" item, which will not affect the analysis .
+  enable: true
+  id: UA-XXXXXXXXX-X
+  # Note : Google Analytics abandoned the measurement ID of "UA-XXXXXXXXX-X" and used the measurement ID of "G-XXXXXXXXXX". You can fill in the new measurement ID directly in the "id:" item, which will not affect the analysis .
 ```
 
 ### busuanzi
@@ -321,20 +268,20 @@ Instructions for use: <https://ibruce.info/2015/04/04/busuanzi>
 
 ```yaml
 busuanzi:
-  enable: false
-  site_uv: true
-  site_uv_icon: icon-user-line
-  site_pv: true
-  site_pv_icon: icon-eye-line
-  page_pv: true
-  page_pv_icon: icon-eye-line
+  enable: false
+  site_uv: true
+  site_uv_icon: ri:user-line
+  site_pv: true
+  site_pv_icon: ri:eye-line
+  page_pv: true
+  page_pv_icon: ri:eye-line
 ```
 
 ### LeanCloud Visitors
 
 Show number of visitors of each article.
 
-You can visit https://www.leancloud.cn to get AppID and AppKey.
+You can visit <https://www.leancloud.cn> to get AppID and AppKey.
 
 ```yaml
 leancloud_visitors:
@@ -353,8 +300,8 @@ Go to [Google Adsense](https://www.google.com/adsense) to get your client id.
 
 ```yaml
 google_adsense:
-  enable: false
-  client: ca-pub-2245427233262012
+  enable: false
+  client: ca-pub-2245427233262012
 ```
 
 ## SEO
@@ -387,8 +334,8 @@ Examples:
 
 ```yaml
 skip_render:
-  - README.md
-  - googlexxxxxxxxxxxxxxx.html
+  - README.md
+  - googlexxxxxxxxxxxxxxx.html
 ```
 
 :::

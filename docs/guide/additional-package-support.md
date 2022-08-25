@@ -34,7 +34,7 @@ wordcount:
 npm install hexo-generator-feed --save
 ```
 
-配置默认图标为 `icon-rss-line`，如需自定义，进入 `_config.yun.yml` 进行配置。
+配置默认图标为 `ri:rss-line`，如需自定义，进入 `_config.yun.yml` 进行配置。
 
 可配置在 `_config.yun.yml` 的 `social` 字段里，如：
 
@@ -42,7 +42,7 @@ npm install hexo-generator-feed --save
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
 ```
 
@@ -134,20 +134,20 @@ live2d:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
 # permalink: :year/:month/:day/:title/  # 旧的注释掉
 # permalink_defaults:                   # 旧的注释掉
 permalink: posts/:abbrlink/
 abbrlink:
-  alg: crc32 #support crc16(default) and crc32
-  rep: hex #support dec(default) and hex
-  drafts: false #(true)Process draft,(false)Do not process draft
+  alg: crc32 # support crc16(default) and crc32
+  rep: hex # support dec(default) and hex
+  drafts: false # (true)Process draft,(false)Do not process draft
   # Generate categories from directory-tree
   # depth: the max_depth of directory-tree you want to generate, should > 0
   auto_category:
-    enable: false #默认为 true， 手改改为 false
+    enable: false # 默认为 true， 手改改为 false
     depth:
 ```
 
@@ -260,29 +260,29 @@ aplayer:
  * Transform embedded video to support responsive layout.
  * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
  */
-embeddedVideoTransformer: function() {
-  let iframes = document.getElementsByTagName("iframe");
-  let SUPPORTED_PLAYERS = [
-    "www.youtube.com",
-    "player.vimeo.com",
-    "music.163.com"
-  ];
+function embeddedVideoTransformer() {
+  const iframes = document.getElementsByTagName('iframe')
+  const SUPPORTED_PLAYERS = [
+    'www.youtube.com',
+    'player.vimeo.com',
+    'music.163.com'
+  ]
   for (let i = 0; i < iframes.length; i++) {
-    let iframe = iframes[i];
-    if (iframe.src.search(SUPPORTED_PLAYERS.join("|")) !== -1) {
-      let videoRatio = (iframe.height / iframe.width) * 100;
-      iframe.width = "100%";
+    const iframe = iframes[i]
+    if (iframe.src.search(SUPPORTED_PLAYERS.join('|')) !== -1) {
+      const videoRatio = (iframe.height / iframe.width) * 100
+      iframe.width = '100%'
 
-      let wrap = document.createElement("div");
-      wrap.className = "fluid-vids";
-      wrap.style.width = "100%";
-      wrap.style.minHeight = "90px";
-      wrap.style.height = iframe.height;
-      wrap.style.position = "relative";
+      const wrap = document.createElement('div')
+      wrap.className = 'fluid-vids'
+      wrap.style.width = '100%'
+      wrap.style.minHeight = '90px'
+      wrap.style.height = iframe.height
+      wrap.style.position = 'relative'
 
-      let iframeParent = iframe.parentNode;
-      iframeParent.insertBefore(wrap, iframe);
-      wrap.appendChild(iframe);
+      const iframeParent = iframe.parentNode
+      iframeParent.insertBefore(wrap, iframe)
+      wrap.appendChild(iframe)
     }
   }
 }
@@ -296,13 +296,15 @@ embeddedVideoTransformer: function() {
 
 > 其主要采用 CDN 的方式实现。
 
-- `copy_tex`: 复制 katex 文本，默认开启
-- `global`: 如果你想要在全局页面使用 `KaTex`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
+- `copy_tex`: 复制 KaTeX 文本，默认开启
+- `global`: 如果你想要在全局页面使用 `KaTeX`，（譬如首页的文章摘要），那么你可以开启它。（当然，这也意味着你的页面每次需要加载更多的资源。）
+- `options`: 传入 KaTeX 渲染器的选项。具体选项参考[这里](https://katex.org/docs/options.html)。
 
 ```yaml
 katex:
   copy_tex: true
   global: false
+  options: {}
 ```
 
 只有在使用了 `katex` 的文章或页面才会加载 KaTeX 的库，所以你需要在使用 KaTeX 的文章或头部进行设置。
@@ -314,6 +316,8 @@ title: xxx
 katex: true
 ---
 ```
+
+头部中的 `katex` 类型可以是 `bool | object`，如果是 `object`，那只有 `options` 选项有效果，具体参数与全局设置一样，并且会与全局设置合并与替换。
 
 你可以使用如下方式包裹公式。
 
@@ -346,7 +350,7 @@ $E = mc^2$
 
 :::
 
-> 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/katex.html) 来查看实际效果。
+> 你可以访问 [Yun Test](https://hexo-theme-yun.yunyoujun.cn/posts/katex.html) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
 
 ### [hexo-math](https://github.com/hexojs/hexo-math)
@@ -395,7 +399,7 @@ mermaid:
   enable: false
   options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: false #default true
+  global: false # default true
 ```
 
 如下所示编写你的 Markdown:
@@ -429,7 +433,7 @@ More info see [Mermaid](https://mermaidjs.github.io/).
 
 扩展的 hexo 标签语法。
 
-譬如实现 Tabs 功能。（[Demo](https://www.yunyoujun.cn/yun/tag-common.html)）
+譬如实现 Tabs 功能。（[Demo](https://hexo-theme-yun.yunyoujun.cn/posts/tag-common.html)）
 
 后续可能会添加更多常用标签。
 

@@ -30,7 +30,7 @@ language: zh-CN
 
 配置方式参考下例：
 
-> 各语言对应属性和内容见 `themes/yun/languages`，覆盖对应项即可。
+> 各语言对应属性和内容见 [languages | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/languages/)，覆盖对应项即可。
 
 ```yaml
 en: # 将要覆盖的语言
@@ -58,9 +58,9 @@ zh-CN: # 将要覆盖的语言
 
 ```yaml
 colors:
-  primary: "#6200ee"
+  primary: '#6200ee'
   # bg: "#F5F5F5"
-  selection_bg: "#8e71c1" # 选取文字时的背景色
+  selection_bg: '#8e71c1' # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
   # tag_start_color:
   # tag_end_color:
@@ -72,18 +72,18 @@ colors:
 
 ```yaml
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E834D"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E834D'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 ```
 
 ### categories
@@ -113,6 +113,7 @@ head:
     example: //example.min.css
   js:
     base:
+      - xxx
     async:
     defer:
 ```
@@ -160,7 +161,7 @@ Example:
 
 <!-- html formatOnSave 出错 -->
 
-```svg
+```html
 <svg id="yun-logo">
   <style>
     #yun-logo {
@@ -194,10 +195,11 @@ Content Delivery Network，统一加载网络资源，有利于提高网页加�
 
 ```yaml
 cdn:
-  pre: ""
+  pre: ''
   css:
   js:
     base:
+      - xxx
     async:
       # 默认引入的图标资源，使用 iconfont
       iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
@@ -434,64 +436,55 @@ social:
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: /atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
-  - name: QQ
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-    icon: icon-qq-line
-    color: "#12B7F5"
   - name: GitHub
     link: https://github.com/YunYouJun
-    icon: icon-github-line
-    color: "#181717"
+    icon: ri:github-line
+    color: '#181717'
   - name: E-Mail
     link: mailto:me@yunyoujun.cn
-    icon: icon-mail-line
-    color: "#8E71C1"
+    icon: ri:mail-line
+    color: '#8E71C1'
   - name: 微博
     link: https://weibo.com/jizhideyunyoujun
-    icon: icon-weibo-line
-    color: "#E6162D"
+    icon: ri:weibo-line
+    color: '#E6162D'
   - name: 豆瓣
     link: https://www.douban.com/people/yunyoujun/
-    icon: icon-douban-line
-    color: "#007722"
+    icon: ri:douban-line
+    color: '#007722'
   - name: 网易云音乐
     link: https://music.163.com/#/user/home?id=247102977
-    icon: icon-netease-cloud-music-line
-    color: "#C10D0C"
+    icon: ri:netease-cloud-music-line
+    color: '#C10D0C'
   - name: 知乎
     link: https://www.zhihu.com/people/yunyoujun/
-    icon: icon-zhihu-line
-    color: "#0084FF"
+    icon: ri:zhihu-line
+    color: '#0084FF'
   - name: 哔哩哔哩动画
     link: https://space.bilibili.com/1579790
-    icon: icon-bilibili-line
-    color: "#FF8EB3"
-  - name: POPI
-    link: https://www.popiask.cn/elpsycn
-    icon: icon-questionnaire-line
-    color: "#525252"
+    icon: ri:bilibili-line
+    color: '#FF8EB3'
   - name: 微信公众号
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-    icon: icon-wechat-2-line
-    color: "#1AAD19"
+    icon: ri:wechat-2-line
+    color: '#1AAD19'
   - name: Twitter
     link: https://twitter.com/YunYouJun
-    icon: icon-twitter-line
-    color: "#1da1f2"
+    icon: ri:twitter-line
+    color: '#1da1f2'
   - name: Telegram
     link: https://t.me/YunYouJun
-    icon: icon-telegram-line
-    color: "#0088CC"
+    icon: ri:telegram-line
+    color: '#0088CC'
   - name: Telegram Channel
     link: https://t.me/elpsycn
-    icon: icon-telegram-fill
-    color: "#0088CC"
+    icon: ri:telegram-fill
+    color: '#0088CC'
   - name: Travelling
     link: https://travellings.link
-    icon: icon-send-plane-2-line
+    icon: ri:send-plane-2-line
     color: black
 ```
 
@@ -501,8 +494,8 @@ social:
 social:
   - name: E-Mail
     link: mailto:你的邮箱
-    icon: icon-mail-line
-    color: "#8E71C1"
+    icon: ri:mail-line
+    color: '#8E71C1'
 ```
 
 如果您不想放置任何链接，仅需在 `_config.yun.yml` 中设置：
@@ -537,10 +530,10 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: white
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
+    icon: ri:arrow-down-s-line
 ```
 
 你可以通过数组形式来自定义字符的分割，例如：
@@ -619,13 +612,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: '''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
 ```
 
 ### 图片背景
@@ -703,12 +696,21 @@ trianglify:
 fireworks:
   enable: true
   colors:
-    - "102, 167, 221"
-    - "62, 131, 225"
-    - "33, 78, 194"
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
 ```
 
 > 参考自：[Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
+
+### Medium Zoom 放大预览图片 <Badge>v1.10.2</Badge>
+
+点击文章图片，放大预览。
+
+```yaml
+# _config.yun.yml
+medium_zoom: true
+```
 
 ### ScrollReveal
 
@@ -737,9 +739,9 @@ scrollreveal:
 ```yaml
 cursor:
   enable: false
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
 ```
 
 ## 侧边栏
@@ -820,24 +822,24 @@ list
 menu:
   home:
     path: /
-    icon: icon-home-4-line
+    icon: ri:home-4-line
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: ri:archive-line
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: ri:folder-2-line
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
+      icon: ri:price-tag-3-line
     # - path: https://www.yunyoujun.cn
-    #   icon: icon-cloud-line
+    #   icon: ri:cloud-line
     #   count: 你猜
   custom:
     title: 文档
     path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    icon: ri:settings-line
 ```
 
 ### 页面链接
@@ -854,7 +856,7 @@ menu:
 pages:
   - name: 我的小伙伴们
     url: /links/
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
 ```
 
@@ -897,37 +899,37 @@ url: https://www.bilibili.com/video/av8153395/
 types:
   link:
     color: blue
-    icon: icon-external-link-line
+    icon: ri:external-link-line
   bilibili:
-    color: "#FF8EB3"
-    icon: icon-bilibili-line
+    color: '#FF8EB3'
+    icon: ri:bilibili-line
   douban:
-    color: "#007722"
-    icon: icon-douban-line
+    color: '#007722'
+    icon: ri:douban-line
   github:
     color: black
-    icon: icon-github-line
+    icon: ri:github-line
   netease-cloud-music:
-    color: "#C10D0C"
-    icon: icon-netease-cloud-music-line
+    color: '#C10D0C'
+    icon: ri:netease-cloud-music-line
   notion:
     color: black
-    icon: icon-notion
+    icon: ri:notion
   twitter:
-    color: "#1da1f2"
-    icon: icon-twitter-line
+    color: '#1da1f2'
+    icon: ri:twitter-line
   wechat:
-    color: "#1AAD19"
-    icon: icon-wechat-2-line
+    color: '#1AAD19'
+    icon: ri:wechat-2-line
   weibo:
-    color: "#E6162D"
-    icon: icon-weibo-line
+    color: '#E6162D'
+    icon: ri:weibo-line
   yuque:
-    color: "#25b864"
-    icon: icon-yuque
+    color: '#25b864'
+    icon: ant-design:yuque-outlined
   zhihu:
-    color: "#0084FF"
-    icon: icon-zhihu-line
+    color: '#0084FF'
+    icon: ri:zhihu-line
 ```
 
 你也可以自己在 `_config.yun.yml` 设置你跳转不同链接专属的图标和颜色。
@@ -983,9 +985,9 @@ indexing: false
 
 > [excluding-posts | hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap#excluding-posts)
 
-如果你开启了本地搜索，那它还会出现在 `search.xml` 中，你还需要设置 `indexing: false` 来排除它。
+<!-- 如果你开启了本地搜索，那它还会出现在 `search.xml` 中，你还需要设置 `indexing: false` 来排除它。 -->
 
-> [exclude-indexing | hexo-generator-search](https://github.com/wzpan/hexo-generator-search#exclude-indexing)
+<!-- > [exclude-indexing | hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) -->
 
 :::
 
@@ -1092,7 +1094,7 @@ prismjs:
   enable: true
   preprocess: true
   line_number: false
-  tab_replace: ""
+  tab_replace: ''
 ```
 
 在 `_config.yun.yml` 中：
@@ -1142,7 +1144,7 @@ creative_commons:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
 ```
 
@@ -1176,6 +1178,7 @@ lazyload:
 - `path`: 图片路径
 - `color`: 图标颜色
 - `icon`: 图标名称
+- `link`: 当链接存在时，点击跳转链接（否则默认打开图片链接）
 
 在 `_config.yun.yml` 中进行覆盖。
 
@@ -1186,22 +1189,23 @@ v0.9.2 将原先的 `reward_settings` 与 `reward` 配置合并。
 ```yaml
 reward:
   enable: true
-  icon: icon-hand-coin-line
+  icon: ri:hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
-      icon: icon-alipay-line
+      path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
+      color: '#00A3EE'
+      icon: ri:alipay-line
+      # link: https://xxxx
     - name: QQ 支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
-      icon: icon-qq-line
+      path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
+      color: '#12B7F5'
+      icon: ri:qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
-      icon: icon-wechat-pay-line
+      path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
+      color: '#2DC100'
+      icon: ri:wechat-pay-line
 ```
 
 您也可以在某篇文章的首部单独设置是否开启打赏。
@@ -1221,9 +1225,9 @@ reward: true
 footer:
   since: 1997
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
 ```
 
 :::
@@ -1248,9 +1252,9 @@ footer:
 ```yaml
 footer:
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
     url: https://sponsors.yunyoujun.cn
     title: 云游君的赞助者们
 ```
@@ -1286,6 +1290,11 @@ footer:
   beian:
     enable: true
     icp: 苏ICP备xxxxxxxx号
+    # 公安备案
+    gongan:
+      enable: false
+      text: 京公网安备 XXXXXXXX 号
+      id: XXXXXXXX
 ```
 
 ### 运行时间
@@ -1300,7 +1309,7 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: '2019-04-12T00:00:00'
 ```
 
 > 注意记得补 0，譬如 `2019-04-01` 而不是 `2019-4-1`。
@@ -1413,7 +1422,7 @@ say:
 mourn:
   enable: true
   days:
-    - "4-4"
+    - 4-4
 ```
 
 > 注意这里不用补 0，因为直接获取月日判断时，可以直接判断，逻辑代码最少。
@@ -1431,8 +1440,55 @@ custom:
   style: source/_data/style/*
 ```
 
+## 自定义图标
+
+博客中还存在一些固定的图标，譬如返回顶部按钮、卡片中的标签与分类图标、拜访者图标等。
+
+可以通过配置 `icons` 修改：
+
+```yaml
+icons:
+  # 返回顶部
+  back_to_top: ri:arrow-up-s-line
+  # 分类
+  category: ri:folder-2-line
+  # 标签
+  tag: ri:price-tag-3-line
+  # 拜访
+  view: ri:eye-line
+```
+
+## Vendors
+
+Vendors 意为供应商、售货机。
+
+此处将会设置使用到的第三方 CDN 链接，更多内容可以在 [`_vendors.yml`](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/packages/hexo-theme-yun/_vendors.yml) 中查看。
+
+譬如可以通过以下方式在 `_config.yun.yml` 中覆盖：
+
+> - `host`: Since `v1.9.3`, CDN 起始链接，由于 `cdn.jsdelivr.net` 在国内已被污染，建议改为使用其他国内 CDN。
+
+```yaml
+vendors:
+  # 以 '/' 结尾
+  host: 'https://npm.elemecdn.com/'
+  # 下方代表覆盖 waline CDN 为别的链接，默认不用修改
+  # waline:
+  #   css: '@waline/client@v2/dist/waline.css'
+```
+
+::: tip
+
+可选 CDN：
+
+- <https://fastly.jsdelivr.net/npm/>
+- <https://npm.elemecdn.com/>
+- <https://unpkg.zhimg.com/>
+
+:::
+
 ## 更多配置
 
-你可以直接查看 [themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
+你可以直接查看 [\_config.yml ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
 
 或者参考我的博客的自定义配置 [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml)。

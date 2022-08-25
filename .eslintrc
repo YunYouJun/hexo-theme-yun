@@ -1,9 +1,18 @@
 {
-  "extends": ["@antfu"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "@antfu",
   "globals": {
-    "hexo": "off",
+    "hexo": true,
     "CONFIG": "off",
-    "Yun": "off",
-    "anime": "off"
+    "anime": "off",
+    "Yun": true,
+    "Pjax": true
+  },
+  "rules": {
+    "no-console": "off",
+    "yml/no-empty-mapping-value": "off"
   }
 }

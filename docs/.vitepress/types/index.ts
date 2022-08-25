@@ -2,17 +2,17 @@ export interface DemoSiteType {
   /**
    * 站点名称
    */
-  name: string;
+  name: string
   /**
    * 站点链接
    */
-  url: string;
+  url: string
   /**
    * 头像/LOGO
    */
-  avatar: string;
+  avatar: string
   /**
    * 简要描述
    */
-  desc: string;
+  desc: string
 }

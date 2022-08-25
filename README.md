@@ -10,17 +10,18 @@
 
 [Yun v1.0 - Strato PV](https://www.bilibili.com/video/BV17t4y1S7tz) ｜
 [Coding 镜像](https://yunyoujun.coding.net/public/hexo-theme-yun/hexo-theme-yun/git/files) ｜
+[Demo](https://hexo-theme-yun.yunyoujun.cn) ｜
 [Preview 示例预览](https://www.yunyoujun.cn) ｜
 [Docs 使用文档](https://yun.yunyoujun.cn)
 
 > A light & fast & lovely hexo theme.
 
 [![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
-[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/yunyoujun.github.io/hexo/hexo?logo=hexo)](https://hexo.io)
+[![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/hexo-theme-yun/dev/hexo?filename=demo%2Fpackage.json&logo=hexo)](https://hexo.io)
 [![npm](https://img.shields.io/npm/v/hexo-theme-yun)](https://www.npmjs.com/package/hexo-theme-yun)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YunYouJun/hexo-theme-yun?logo=vs-code)
-[![Discussions](https://img.shields.io/badge/chat-discussions-9cf)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-389401003-12B7F5?logo=tencent-qq)](https://qm.qq.com/cgi-bin/qm/qr?k=9V4t4RFo8O__ilW35BzFJrcQRMzfBks8&jump_from=webapi)
+[![GitHub Discussions](https://img.shields.io/github/discussions/YunYouJun/hexo-theme-yun?color=9cf&logo=github)](https://github.com/YunYouJun/hexo-theme-yun/discussions)
+[![Discord](https://img.shields.io/discord/752821465891733574?label=discord&logo=discord)](https://discord.gg/nd3mPkU5j8)
 [![SATA License](https://img.shields.io/badge/license-SATA-green.svg)](https://github.com/zTrix/sata-license)
 
 </div>
@@ -33,6 +34,10 @@
 - Docs for `master`: <https://hexo-theme-yun.vercel.app/>
 
 ![index-preview.jpg](./docs/public/images/index-preview.jpg)
+
+> Now, I'm developing [valaxy](https://github.com/YunYouJun/valaxy) & `valaxy-theme-yun` to solve all the problems that currently exist in this theme.
+> If you wish to see it sooner, you can sponsor me [here](https://sponsors.yunyoujun.cn/).
+> More info see [#260](https://github.com/YunYouJun/hexo-theme-yun/discussions/260).
 
 ## Install
 
@@ -114,6 +119,13 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
 <table align="center">
   <tr align="center">
     <td>
+      <a href="https://hexo-theme-yun.yunyoujun.cn" target="_blank">
+        <img width="80px" src="https://yun.yunyoujun.cn/logo.gif" />
+        <br />
+        <sub title="主题默认示例">默认示例</sub>
+      </a>
+    </td>
+    <td>
       <a href="https://www.yunyoujun.cn" target="_blank">
         <img width="80px" src="https://www.yunyoujun.cn/images/avatar.jpg" />
         <br />
@@ -162,6 +174,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.kumybryce.work" target="_blank">
         <img width="80px" src="https://kumybryce.gitee.io/myblog/img/favicon.png" />
@@ -169,8 +183,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="努力一点，再努力一点">山山的掉发历程</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://hexo.cool" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg" />
@@ -220,6 +232,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="恰同学少年，风华正茂；书生意气，挥斥方遒。">LeoStudio</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.meow-2.com/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Meow-2/cdn/source/avatar.jpg" />
@@ -227,8 +241,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="你好！">喵二的博客</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://sknplz.xyz/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Sknp1006/cdn@master/img/albums/arknights_Skadi/024.png" />
@@ -237,17 +249,10 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://misaka-9936.github.io" target="_blank">
-        <img width="80px" src="https://misaka-9936.github.io/images/avatar/avatar.jpg" />
+      <a href="https://mskclover.com/" target="_blank">
+        <img width="80px" src="https://mskclover.com/images/avatar/avatar.jpg" />
         <br />
         <sub title="后花园是自己精心培育的，大部分时候是给自己看的，不过如果有行人能够驻足欣赏，我也会很开心的！">叶子的后花园</sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://gentrabbit.moe/" target="_blank">
-        <img width="80px" src="https://gentrabbit.moe/images/avatar.jpg" />
-        <br />
-        <sub title="To live, but not to exist.">绅士兔の小窝</sub>
       </a>
     </td>
     <td>
@@ -272,21 +277,12 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       </a>
     </td>
     <td>
-      <a href="https://www.blog.yln956.top/" target="_blank">
-        <img width="80px" src="https://www.blog.yln956.top/images/tou.jpg" />
-        <br />
-        <sub title="梦想是什么，梦想是现实的延续；现实是什么，现实是梦想的终结。">yln's blog</sub>
-      </a>
-    </td>
-    <td>
       <a href="http://wasteland.wifikun.top" target="_blank">
         <img width="80px" src="https://wifikun-1257416258.cos.ap-shanghai.myqcloud.com/NebulaStarshipServer/avatar.jpg" />
         <br />
         <sub title="✨Chase your passions, do what you love.✨">星云荒原</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://darksheep.xyz" target="_blank">
         <img width="80px" src="https://darksheep.xyz/images/avatar.jpg" />
@@ -294,6 +290,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="蹲一蹲">包子君的小站</sub>
       </a>
     </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://www.aranne.me" target="_blank">
         <img width="80px" src="https://www.aranne.me/avatar.png" />
@@ -313,13 +311,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <img width="80px" src="https://cdn.jsdelivr.net/gh/xczheergen/CDN/images/avatar.jpg" />
         <br />
         <sub title="感谢云游君提供的主题哦">xczheergen</sub>
-      </a>
-    </td>
-    <td>
-      <a href="https://assistest.github.io/" target="_blank">
-        <img width="80px" src="https://s.im5i.com/2021/04/03/WKnMF.jpg" />
-        <br />
-        <sub title="山有木兮木有枝,心悦君兮君不知。">林森森</sub>
       </a>
     </td>
     <td>
@@ -343,8 +334,6 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="在人的一生，总是为了追寻生命中的光，而走在漫长的旅途上">老哲的小站</sub>
       </a>
     </td>
-  </tr>
-  <tr align="center">
     <td>
       <a href="https://blog.adkimsm.asia/" target="_blank">
         <img width="80px" src="https://blog.adkimsm.asia/logo.svg" />
@@ -359,13 +348,8 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="记录一些学习过程，主要是软硬件开发">七月流火</sub>
       </a>
     </td>
-    <td>
-      <a href="https://blog.lfhsheng.top" target="_blank">
-        <img width="80px" src="https://lfhsheng.top/images/lfhsheng.jpg" />
-        <br />
-        <sub title="沉浸在Touch Fish的海洋中无法自拔">泠风寒声的小窝</sub>
-      </a>
-    </td>
+  </tr>
+  <tr align="center">
     <td>
       <a href="https://yuumi0221.github.io/" target="_blank">
         <img width="80px" src="https://cdn.jsdelivr.net/gh/Yuumi0221/Yuumi0221.github.io/images/settings/favicon.png" />
@@ -389,7 +373,7 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
     </td>
     <td>
       <a href="https://siquan-wen.github.io/" target="_blank">
-        <img width="80px" src="https://github.com/SiQuan-Wen/SiQuan-Wen.github.io/blob/hexo/source/images/avatar.jpg" />
+        <img width="80px" src="https://siquan-wen.github.io/images/avatar.jpg" />
         <br />
         <sub title="救赎之道，就在其中">小文的博客</sub>
       </a>
@@ -401,8 +385,37 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
         <sub title="简单的个人Blog">随风的小站</sub>
       </a>
     </td>
+    <td>
+      <a href="https://wxxybxg.bsblog.cn" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/BNQDZJ/bsblog-images@main/20211120/wxxybxg.png" />
+        <br />
+        <sub title="无锡欣跃不锈钢有限公司官方网站">无锡欣跃不锈钢有限公司</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.misakishiki.site/" target="_blank">
+        <img width="80px" src="https://www.misakishiki.site/aquced.png" />
+        <br />
+        <sub title="栗木小站">栗木小站</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://wuyuan.gq" target="_blank">
+        <img width="80px" src="https://img.wenhairu.com/images/2021/09/25/1qNwC.png" />
+        <br />
+        <sub title="次次追逐，次次追忆">孙悟元的小站</sub>
+      </a>
+    </td>
   </tr>
 </table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- demo-sites:end -->
+
+## [Sponsors](https://sponsors.yunyoujun.cn)
+
+<p align="center">
+  <a href="https://sponsors.yunyoujun.cn">
+    <img src='https://sponsors.yunyoujun.cn/sponsors.svg'/>
+  </a>
+</p>

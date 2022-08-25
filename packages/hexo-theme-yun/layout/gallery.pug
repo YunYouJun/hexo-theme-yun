@@ -1,0 +1,36 @@
+extends _partial/layout.pug
+
+block content
+  article#page
+    +page_header(page.title, theme.albums.icon)
+    include ./_third-party/lightgallery.pug
+
+    if page.photos
+      #gallery
+        .page-subtitle!=_p('counter.photos', page.photos.length)
+        .page-action.text-center
+          a.hty-icon-button(href="./" style="width:2.5rem;height:2.5rem;", title=__('accessibility.back'))
+            +icon('ri:arrow-go-back-line')
+        if !page.gallery_password
+          #lightgallery.photo-list
+            for photo in page.photos
+              figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
+                img.photo-list-cover(src=photo.src, loading="lazy", alt=photo.caption)
+                figcaption=photo.caption
+        else
+          script(src=theme.vendors.crypto_js.all)
+          script(type="module", src=url_for('/js/gallery-decrypt.js'))
+          #decryptContainer
+            input#decrypt-password(type="password")
+            button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
+              +icon('ri:fingerprint-line')
+          #lightgallery.photo-list(style='display: none')
+            for photo in page.photos
+              - photo.src = aes(photo.src, page.gallery_password)
+              - photo.caption = aes(photo.caption, page.gallery_password)
+              - photo.desc = aes(photo.desc, page.gallery_password)
+              figure.photo-list-item(data-src=photo.src, data-sub-html=`<h4>${photo.caption}</h4><p>${photo.desc}</p>`)
+                img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
+                figcaption=photo.caption
+
+    include ./_partial/post/post-content.pug

@@ -1,34 +1,37 @@
-export const head = [
-  ["link", { rel: "icon", href: "/favicon.svg" }],
-  ["link", { rel: "manifest", href: "/manifest.json" }],
-  ["meta", { name: "theme-color", content: "#6200ee" }],
-  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+import type { HeadConfig } from 'vitepress'
+
+export const head: HeadConfig[] = [
+  ['link', { rel: 'icon', href: '/favicon.svg' }],
+  ['link', { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' }],
+  ['link', { rel: 'manifest', href: '/manifest.json' }],
+  ['meta', { name: 'theme-color', content: '#6200ee' }],
+  ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
   [
-    "meta",
-    { name: "apple-mobile-web-app-status-bar-style", content: "#6200ee" },
+    'meta',
+    { name: 'apple-mobile-web-app-status-bar-style', content: '#6200ee' },
   ],
-  ["link", { rel: "apple-touch-icon", href: "/logo.png" }],
+  ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
   [
-    "link",
+    'link',
     {
-      rel: "mask-icon",
-      href: "/logo.png",
-      color: "#6200ee",
+      rel: 'mask-icon',
+      href: '/logo.png',
+      color: '#6200ee',
     },
   ],
   [
-    "meta",
+    'meta',
     {
-      name: "msapplication-TileImage",
-      content: "/logo.png",
+      name: 'msapplication-TileImage',
+      content: '/logo.png',
     },
   ],
-  ["meta", { name: "msapplication-TileColor", content: "#6200ee" }],
+  ['meta', { name: 'msapplication-TileColor', content: '#6200ee' }],
   [
-    "script",
+    'script',
     {
-      async: true,
-      src: "//at.alicdn.com/t/font_1140697_dxory92pb0h.js",
+      async: 'true',
+      src: '//at.alicdn.com/t/font_1140697_dxory92pb0h.js',
     },
   ],
-];
+]

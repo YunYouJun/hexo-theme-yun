@@ -1,0 +1,65 @@
+if theme.font.cdn.enable
+  each item in theme.font.cdn.lib
+    link(rel='stylesheet', href=item, media="print" onload="this.media='all'")
+
+if theme.cdn.css
+  each item in theme.cdn.css
+    //- load from vendors 
+    if (item in theme.vendors)
+      link(rel='stylesheet', href=theme.vendors[item])
+    else
+      link(rel='stylesheet', href=item)
+
+if theme.cdn.js.base
+  each item in theme.cdn.js.base
+    script(src=item)
+
+if theme.cdn.js.async
+  each item in theme.cdn.js.async
+    script(src=item, async)
+
+if theme.cdn.js.defer
+  each item in theme.cdn.js.defer
+    script(src=item, defer)
+
+//- try unocss
+//- https://github.com/antfu/unocss/tree/main/packages/runtime
+//- script(src=theme.vendors.unocss.mini)
+
+if theme.scrollreveal.enable
+  script(src=theme.vendors.scrollreveal, defer)
+  script.
+    function initScrollReveal() {
+      !{JSON.stringify(theme.scrollreveal.targets)}.forEach((target)=> {
+        ScrollReveal().reveal(target);
+      })
+    }
+    document.addEventListener("DOMContentLoaded", initScrollReveal);
+    document.addEventListener("pjax:success", initScrollReveal);
+
+//- math support
+include ./math/index.pug
+
+if theme.aplayer.global
+  include ./aplayer.pug
+
+//- pjax
+if theme.pjax.enable
+  include ./pjax.pug
+  script(src=theme.vendors.vue)
+
+if is_page() || is_post()
+  if page.aplayer && !theme.aplayer.global
+    include aplayer.pug
+
+  if page.aplayer
+    script.
+      document.addEventListener(
+        "pjax:success",
+        function() {
+          if (window.aplayers) {
+            loadMeting();
+          }
+        },
+        !1
+      );

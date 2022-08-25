@@ -1,0 +1,75 @@
+extends _partial/layout.pug
+
+block content
+  #page.hty-card
+    if page.type === 'tags'
+      +page_header(page.title, theme.icons.tag)
+      .page-subtitle=_p('counter.tag_cloud', site.tags.length)
+
+      if theme.wordcloud.enable
+        .wordcloud
+          canvas#wordcloud-canvas
+          #wordbox(hidden)
+        script(src=theme.vendors.wordcloud)
+        script.
+          function initWordCloud() {
+            const wordcloud_canvas = document.getElementById('wordcloud-canvas')
+            wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
+            wordcloud_canvas.height = !{theme.wordcloud.height}
+            let wordcloud_config = !{JSON.stringify(wordcloud_config('random-dark'))}
+            wordcloud_config.hover = function(item, dimension){
+              if (!dimension) {
+                wordbox.hidden = true
+                return;
+              }
+              wordbox.hidden = false
+              wordbox.setAttribute("style", `left:${dimension.x}px;top:${dimension.y}px;width:${dimension.w}px;height:${dimension.h}px;`)
+            }
+            wordcloud_config.click = function(tag){ window.location.href=tag[2] }
+            WordCloud(wordcloud_canvas, wordcloud_config);
+          }
+
+          function loadWordcloud() {
+            const script = document.createElement('script')
+            script.src = "#{theme.vendors.wordcloud}"
+            document.body.appendChild(script)
+            script.onload = () => {
+              initWordCloud()
+            }
+          }
+          
+          loadWordcloud();
+      else
+        .tag-cloud
+          - var start_color = theme.colors.tag_start_color || '#333'
+          - var end_color = theme.colors.tag_end_color || theme.colors.primary
+          .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
+
+    else if page.type === 'categories'
+      +page_header(page.title, theme.icons.category)
+      .page-subtitle=_p('counter.categories', site.categories.length)
+      .category-lists!= list_categories()
+
+    else if page.type === 'albums'
+      +page_header(page.title, theme.albums.icon)
+      .page-subtitle= _p('counter.albums', page.albums.length)
+      .album-list
+        for album in page.albums
+          a.album-list-item(href=url_for(album.url))
+            figure(title=album.desc)
+              img.album-list-cover(src=album.cover, loading="lazy", alt=album.caption, οnlοad="this.src=CONFIG.anonymous_image")
+              figcaption='「'+album.caption+'」'
+
+    else
+      +page_header(page.title, page.icon)
+      div.text-center
+        +post_meta(page)
+        
+    if page.content
+      article#page
+        include ./_partial/post/post-content.pug
+
+    //- default not display reward
+    if page.reward
+      include _partial/post/reward.pug
+

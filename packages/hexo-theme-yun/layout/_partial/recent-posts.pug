@@ -1,0 +1,40 @@
+section#recent-posts(class="flex flex-col")
+  each post in page.posts.data
+    if !post.hide
+      article.post-card(class="w-full", itemscope, itemtype='https://schema.org/Article')
+        include ../_partial/post/post-schema.pug
+        if post.top || post.sticky
+          .post-top-icon
+            +icon("ri:pushpin-line")
+        .post-card-header
+          header.post-header
+            h2.post-title(itemprop='name headline')
+              if !post.type
+                a.post-title-link(itemprop='url', href=url_for(post.path))=post.title
+              else
+                - post_type = getPropertyByType(post.type)
+                a.post-title-link(itemprop='url' href=post.url target='_blank' rel='noopener', style= "color:" + post_type.color)
+                  +icon(post_type.icon)
+                  span=post.title
+            +post_meta(post)
+            if post.description
+              .post-description=post.description
+        .post-card-content.text-center
+          .post-card-excerpt.markdown-body!=post.excerpt
+          if post.readmore
+            - var readmoreBgColor = post_type ? post_type.color : theme.colors.primary
+            a.hty-button.hty-button--raised(href=url_for(post.path), style=`margin: 1rem;background-color:${readmoreBgColor}`)=__('post.read_more')
+
+        .hty-card__actions.post-card__actions
+          .post-card-category
+            if post.categories && post.categories.length && theme.post_meta.categories
+              include ../_mixin/post-categories.pug
+            else
+              span.post-meta-item-icon
+                +icon('ri:folder-line')
+          .post-card-tag
+            if post.tags && post.tags.length && theme.post_meta.tags
+              include ../_mixin/post-tags.pug
+            else
+              span.post-meta-item-icon
+                +icon(theme.icons.tag)

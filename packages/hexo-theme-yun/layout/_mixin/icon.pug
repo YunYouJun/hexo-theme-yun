@@ -1,0 +1,12 @@
+mixin icon(name, size=24)
+  if name.indexOf('ion-icon') !== -1
+    ion-icon(name=name.slice(9))
+  else if name.indexOf('material-icons') !== -1
+    i(class='material-icons')=name.slice(15)
+  else if name.indexOf('icon') !== -1
+    svg.icon(aria-hidden='true')
+      use(xlink:href='#' + name)
+  else if name.indexOf(':') !== -1
+    span.icon(class='iconify' data-icon=name)
+  else
+    i(class=name)

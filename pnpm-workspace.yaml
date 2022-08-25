@@ -1,3 +1,4 @@
 workspace:
   - docs
-  - src
+  - demo
+  - packages/*

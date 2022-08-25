@@ -67,7 +67,7 @@ description: xxxxxxx
 ```yaml {3}
 ---
 title: xxx
-icon: icon-women-line
+icon: ri:women-line
 ---
 ```
 
@@ -226,7 +226,7 @@ links:
     name: 云游君
     blog: 云游君的小站
     desc: All at sea.
-    color: "#0078e7" # 代表色
+    color: '#0078e7' # 代表色
     email: # 非必须
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
@@ -350,7 +350,7 @@ albums:
   enable: true
 ```
 
-[相册示例](https://www.yunyoujun.cn/albums/)
+[相册示例](https://hexo-theme-yun.yunyoujun.cn/albums/)
 
 [配置示例](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/albums/index.md)
 
@@ -386,7 +386,7 @@ albums:
 
 ### 相册页
 
-[相册页示例](https://www.yunyoujun.cn/albums/sunset.html)
+[相册页示例](https://hexo-theme-yun.yunyoujun.cn/albums/sunset.html)
 
 相册页，才是你真正存放照片的地方。
 
@@ -413,7 +413,7 @@ hexo new page --path albums/sunset "夕阳"
 
 > 因为使用了 [crypto-js](https://github.com/brix/crypto-js)，所以你还需要 `npm install crypto-js`。
 
-测试页面：<https://www.yunyoujun.cn/albums/sunset.html>
+测试页面：<https://hexo-theme-yun.yunyoujun.cn/albums/sunset.html>
 测试密码：test
 
 > 如果你发现在 `hexo s` 并开启了 PJAX 时，无法正常解密相册，不用担心，这是 Hexo 作为服务器时，对链接又重新加密了一遍，生成静态文件部署时是没有问题的。
@@ -441,6 +441,14 @@ photos:
 > [What is the Difference Between Albums vs Galleries in WordPress](https://enviragallery.com/what-is-the-difference-between-albums-vs-galleries-in-wordpress/)
 
 ## Slides 幻灯片
+
+::: danger
+
+将会被弃用！
+
+让我们使用 [slidev](https://github.com/slidevjs/slidev) 吧！
+
+:::
 
 > 使用 [reveal.js](https://revealjs.com/) 实现，更多信息请参见[文档](https://revealjs.com/markdown/)。
 
@@ -502,8 +510,8 @@ slide:
 ```yaml
 slide:
   separator: ---
-  separator_vertical: "~~"
-  data_separator_notes: "^Note:"
+  separator_vertical: ~~
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true

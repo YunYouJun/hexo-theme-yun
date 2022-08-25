@@ -1,0 +1,39 @@
+#local-search-input {
+  outline: none;
+}
+
+.search-result-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+  height: calc(100% - 160px);
+
+  ul.search-result-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      width: 100%;
+      padding: 0.6rem 0;
+
+      .search-result-title {
+        font-family: $font-family-serif;
+        font-weight: $font-family-serif-weight;
+        font-size: 1.2rem;
+      }
+
+      .search-result {
+        margin: 0;
+        font-size: 0.8rem;
+
+        .search-keyword {
+          background: transparent;
+          color: red;
+          font-style: normal;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+script(src=theme.vendors.medium_zoom)
+script.
+  const images = [...document.querySelectorAll('.markdown-body img')]
+  mediumZoom(images)
+style.
+  .medium-zoom-image {
+    z-index: 99;
+  }

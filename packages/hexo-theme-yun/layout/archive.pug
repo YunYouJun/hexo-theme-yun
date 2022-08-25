@@ -1,0 +1,10 @@
+
+extends _partial/layout.pug
+
+block content
+  #archive.hty-card
+    include _mixin/post-collapse.pug
+    +page_header(page.title, 'ri:archive-line')
+    .page-subtitle= _p('counter.archive_posts', site.posts.length)
+    +post_collapse(page.posts)
+  include _partial/pagination.pug

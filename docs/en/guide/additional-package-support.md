@@ -32,16 +32,16 @@ Install [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
 npm install hexo-generator-feed --save
 ```
 
-Configure the default icon as `icon-rss-line`. If you need to customize, enter `_config.yun.yml` to configure.
+Configure the default icon as `ri:rss-line`. If you need to customize, enter `_config.yun.yml` to configure.
 
 It can be configured in the `social` field of `_config.yun.yml`, such as:
 
 ```yaml
 social:
-  - name: RSS
-    link: /atom.xml # config.feed.path
-    icon: icon-rss-line
-    color: orange
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: ri:rss-line
+    color: orange
 ```
 
 For more configuration, please refer to [Official Document](https://github.com/hexojs/hexo-generator-feed) (in `_config.yml` in the Hexo working directory).
@@ -96,7 +96,7 @@ live2d:
   debug: false
   model:
     # recommend to use CDN to load the model
-    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+    use: https://fastly.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
   display:
     position: right
     width: 150
@@ -135,10 +135,10 @@ Recommended configuration (in `_config.yml` in the root directory of Hexo):
 
 ```yaml
 aplayer:
-  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
-  meting: true
-  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+  cdn: https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  meting: true
+  meting_cdn: https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 ```
 
 ::: tip
@@ -148,7 +148,7 @@ If you find that the Aplayer sometimes introduces header files repeatedly in irr
 
 ```yaml
 aplayer:
-  asset_inject: false
+  asset_inject: false
 ```
 
 Then decide whether to enable `aplayer` at the head of the article:
@@ -164,7 +164,7 @@ You can also set it globally in `_config.yun.yml`. (When you set up a global pla
 
 ```yaml
 aplayer:
-  global: true
+  global: true
 ```
 
 :::
@@ -206,8 +206,8 @@ aplayer:
     audio:
       - name: 星宿计时
         artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+        url: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.yunyoujun.cn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
       id: 308168565
@@ -218,35 +218,35 @@ aplayer:
 Since `hexo-tag-aplayer` is so fragrant, I decided to remove the original media package script. Students who are really in need can add it by themselves.
 
 ```js
-/ **
- * Transform embedded video to support responsive layout.
- * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
- * /
-embeddedVideoTransformer: function () {
-  let iframes = document.getElementsByTagName ("iframe");
-  let SUPPORTED_PLAYERS = [
-    "www.youtube.com",
-    "player.vimeo.com",
-    "music.163.com"
-  ];
-  for (let i = 0; i <iframes.length; i ++) {
-    let iframe = iframes [i];
-    if (iframe.src.search (SUPPORTED_PLAYERS.join ("|"))! == -1) {
-      let videoRatio = (iframe.height / iframe.width) * 100;
-      iframe.width = "100%";
+/**
+ * Transform embedded video to support responsive layout.
+ * @see https://ultimatecourses.com/blog/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js
+ */
+function embeddedVideoTransformer() {
+  const iframes = document.getElementsByTagName ('iframe')
+  const SUPPORTED_PLAYERS = [
+    'www.youtube.com',
+    'player.vimeo.com',
+    'music.163.com'
+  ]
+  for (let i = 0; i < iframes.length; i++) {
+    const iframe = iframes[i]
+    if (iframe.src.search (SUPPORTED_PLAYERS.join ('|'))! === -1) {
+      const videoRatio = (iframe.height / iframe.width) * 100
+      iframe.width = '100%'
 
-      let wrap = document.createElement ("div");
-      wrap.className = "fluid-vids";
-      wrap.style.width = "100%";
-      wrap.style.minHeight = "90px";
-      wrap.style.height = iframe.height;
-      wrap.style.position = "relative";
+      const wrap = document.createElement ('div')
+      wrap.className = 'fluid-vids'
+      wrap.style.width = '100%'
+      wrap.style.minHeight = '90px'
+      wrap.style.height = iframe.height
+      wrap.style.position = 'relative'
 
-      let iframeParent = iframe.parentNode;
-      iframeParent.insertBefore (wrap, iframe);
-      wrap.appendChild (iframe);
-    }
-  }
+      const iframeParent = iframe.parentNode
+      iframeParent.insertBefore (wrap, iframe)
+      wrap.appendChild (iframe)
+    }
+  }
 }
 ```
 
@@ -256,13 +256,15 @@ embeddedVideoTransformer: function () {
 
 Some simple mathematical formulas are shown in the article, using KaTeX. For details, please refer to [Official Document](https://katex.org/).
 
-- `copy_tex`: copy katex text, enabled by default
-- `global`: If you want to use `KaTex` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
+- `copy_tex`: copy KaTeX text, enabled by default
+- `global`: If you want to use `KaTeX` on the global page (such as the article summary on the homepage), then you can enable it. (Of course, this also means that your page needs to load more resources each time.)
+- `options`: Options to pass in KaTeX renderer. Availables options can be found [here](https://katex.org/docs/options.html).
 
 ```yaml
 katex:
-  copy_tex: true
-  global: false
+  copy_tex: true
+  global: false
+  options: {}
 ```
 
 KaTeX libraries will be loaded only in articles or pages that use `katex`, so you need to set them in articles or headers using KaTeX.
@@ -274,6 +276,8 @@ title: xxx
 katex: true
 ---
 ```
+
+The type of `katex` in the headers is `bool | object`. If it's an `object`, then only the property `options` is useful, and its properties are the same as global, and the global options will be merged and substituted by the page-specific options.
 
 You can wrap the formula in the following way.
 
@@ -368,7 +372,7 @@ mermaid:
   enable: false
   options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     startOnload: true # default true
-  global: false #default true
+  global: false # default true
 ```
 
 Write markdown as shown below:

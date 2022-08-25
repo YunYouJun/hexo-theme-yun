@@ -1,0 +1,56 @@
+#comment.hty-card
+  if theme.comment.tips
+    .comment-tooltip.text-center
+      each tip in theme.comment.tips
+        span!=tip
+        br
+      if theme.github_issues && theme.github_issues.enable
+        include github-issues.pug
+      if theme.github_discussions && theme.github_discussions.enable
+        include github-discussions.pug
+
+    
+    if theme.comment.candidates && theme.comment.candidates.length > 1
+      .toggle-comment-system(style="margin: 1rem auto")
+        - var commentContainer = {waline: '#waline', utterances: '.utterances', livere: '#lv-container', minivaline: '#minivaline-container',  disqus: '#disqus_thread', disqusjs: '#disqus_thread', giscus: '.giscus', twikoo: '#twikoo'}
+        for candidate, i in theme.comment.candidates
+          if i !== 0
+            style.
+              #{commentContainer[candidate]} {
+                display: none;
+              }
+          a.toggle-comment-btn.hty-button.hty-button--raised.text-uppercase(data-target=commentContainer[candidate] onclick=`showComment(this.dataset.target)`)=candidate
+        script.
+          function hideAllComment() {
+            //- hide all
+            document.querySelectorAll('.toggle-comment-btn').forEach((btn) => {
+              const container = document.querySelector(btn.dataset.target);
+              if (container) {
+                container.style.display = "none";
+              }
+            });
+          }
+          function showComment(target) {
+            hideAllComment();
+            //- show target
+            const targetContainer = document.querySelector(target);
+            if (targetContainer) {
+              targetContainer.style.display = "block";
+            }
+          }
+
+  if theme.disqus && theme.disqus.enable
+    include disqus.pug
+  if theme.disqusjs && theme.disqusjs.enable
+    include disqusjs.pug
+  if theme.livere && theme.livere.enable
+    include livere.pug
+  if theme.waline && theme.waline.enable
+    include waline.pug
+  if theme.utterances && theme.utterances.enable
+    include utterances.pug
+  if theme.twikoo && theme.twikoo.enable
+    include twikoo.pug
+  if theme.giscus && theme.giscus.enable
+    include giscus.pug
+

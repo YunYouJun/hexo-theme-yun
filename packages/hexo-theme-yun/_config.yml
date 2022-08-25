@@ -1,0 +1,727 @@
+# ---------------
+# mode: light | dark | auto | time
+mode: auto
+
+# Theme color for customize
+# Notice: color value must in double quotes: "#000000"
+colors:
+  primary: "#0078E7"
+  # primary: "#6200ee"
+  bg: "#f5f5f5"
+  selection_bg: "#8e71c1"
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
+  dark:
+    block: "#1b1f2e"
+    # block: "#17202A"
+
+# Favicon
+# ---------------
+favicon: /yun.svg
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+# Posts / Categories / Tags in sidebar.
+sidebar:
+  bg_image: https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp
+  # dark_bg_image: https://cdn.yunyoujun.cn/img/bg/dark-alpha-stars-timing-1.webp
+  bg_position: bottom 1rem center
+  tagcloud:
+    enable: false
+    amount: 20
+
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  # placeholder: 很遗憾，咱没写啥目录
+  collapse: true
+
+# Social Links.
+social:
+# - name: RSS
+#   # set rss in your root config
+#   # https://github.com/hexojs/hexo-generator-feed
+#   link: /atom.xml # config.feed.path
+#   icon: ri:rss-line
+#   color: orange
+# - name: GitHub
+#   link: https://github.com/YunYouJun
+#   icon: ri:github-line
+#   color: "#6e5494"
+# - name: 微博
+#   link: https://weibo.com/jizhideyunyoujun
+#   icon: ri:weibo-line
+#   color: "#E6162D"
+# - name: 豆瓣
+#   link: https://www.douban.com/people/yunyoujun/
+#   icon: ri:douban-line
+#   color: "#007722"
+# - name: 网易云音乐
+#   link: https://music.163.com/#/user/home?id=247102977
+#   icon: ri:netease-cloud-music-line
+#   color: "#C20C0C"
+# - name: 知乎
+#   link: https://www.zhihu.com/people/yunyoujun/
+#   icon: ri:zhihu-line
+#   color: "#0084FF"
+# - name: 哔哩哔哩
+#   link: https://space.bilibili.com/1579790
+#   icon: ri:bilibili-line
+#   color: "#FF8EB3"
+# - name: 微信公众号
+#   link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
+#   icon: ri:wechat-2-line
+#   color: "#1AAD19"
+# - name: Twitter
+#   link: https://twitter.com/YunYouJun
+#   icon: ri:twitter-line
+#   color: "#1da1f2"
+# # - name: Telegram
+# #   link: https://t.me/yunyoujun_group
+# #   icon: ri:telegram-line
+# #   color: "#0088CC"
+# - name: Telegram Channel
+#   link: https://t.me/elpsycn
+#   # icon: ri:telegram-fill
+#   icon: ri:telegram-line
+#   color: "#0088CC"
+# - name: E-Mail
+#   link: mailto:me@yunyoujun.cn
+#   icon: ri:mail-line
+#   color: "#8E71C1"
+# - name: Travelling
+#   link: https://travellings.link
+#   icon: ri:train-line
+#   color: black
+
+codeblock:
+  copy_btn: true
+
+# Extra links
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
+
+# pages
+# -------
+# friend
+anonymous_image: https://cdn.yunyoujun.cn/img/avatar/none.jpg
+
+albums:
+  enable: false
+  icon: ri:gallery-line
+
+girls:
+  enable: false
+
+# Sidebar Avatar
+avatar:
+  enable: true
+  url: /yun.png
+  # If true, the avatar would be dispalyed in circle.
+  rounded: true
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: false
+    emoji: 😊
+    message: 永远相信美好的事情即将发生
+
+# main menu navigation
+menu:
+  home:
+    path: /
+    icon: ri:home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: ri:archive-line
+    - type: categories
+      path: /categories/
+      icon: ri:folder-2-line
+    - type: tags
+      path: /tags/
+      icon: ri:price-tag-3-line
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: ri:settings-line
+
+# archive
+archive:
+  last_word: 没有更多的黑历史了_(:з」∠)_
+
+wordcloud:
+  enable: false
+  height: 350
+
+# You can set color for every tag or category.
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E83CD"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+
+categories:
+  笔记: dimgray
+
+# post type
+types:
+  link:
+    color: blue
+    icon: ri:external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: ri:bilibili-line
+  douban:
+    color: "#007722"
+    icon: ri:douban-line
+  github:
+    color: black
+    icon: ri:github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: ri:netease-cloud-music-line
+  notion:
+    color: black
+    icon: ri:notion
+  twitter:
+    color: "#1da1f2"
+    icon: ri:twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: ri:wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: ri:weibo-line
+  yuque:
+    color: "#25b864"
+    icon: ant-design:yuque-outlined
+  zhihu:
+    color: "#0084FF"
+    icon: ri:zhihu-line
+
+# post_card
+post_card:
+  opacity: 0.9
+
+# link
+# -------
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+
+prefetch:
+  script:
+    - /js/sidebar.js
+
+dns_prefetch:
+# - https://xxx
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+
+# img loading="lazy"
+lazyload:
+  enable: true
+
+# pjax
+pjax:
+  enable: false
+
+# stylesheets loaded in the <head>
+css:
+  - /css/hexo-theme-yun.css
+
+# scripts loaded in the end of the <head>
+js:
+
+# custom your assets in head
+head:
+  css:
+  js:
+    base:
+    async:
+    defer:
+
+# cdn for third-party library (always include)
+cdn:
+  pre: ""
+  # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
+  css:
+    yun-markdown-css: "yun_markdown_css"
+    prism-theme-vars: "prism_theme_vars"
+  js:
+    base:
+    async:
+    defer:
+
+# cdn for third-party library (alternative include)
+# please see in _vendors.yml
+vendors:
+  host: https://fastly.jsdelivr.net/npm/
+
+# UI
+banner:
+  enable: true
+  title: 云游君的小站
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+
+# You can import the font you want in the head.
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace"
+
+# custom your color in fireworks
+fireworks:
+  enable: true
+  colors:
+  # - "102, 167, 221"
+  # - "62, 131, 225"
+  # - "33, 78, 194"
+  # - "3, 28, 95"
+  # - "0, 8, 55"
+
+# https://github.com/qrohlf/trianglify
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  # https://github.com/qrohlf/trianglify/blob/master/src/utils/colorbrewer.js
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+cursor:
+  enable: false
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
+
+smoothScroll: true
+
+medium_zoom: false
+
+# You can see effect in https://scrollrevealjs.org/
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .markdown-body img
+
+bg_image:
+  enable: true
+  url: https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
+  dark: https://cdn.yunyoujun.cn/img/bg/galaxy.jpg
+  # blur: 30px
+  opacity: 1
+
+# Reward (Donate)
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: true
+  icon: ri:hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+  # - name: 支付宝
+  #   path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
+  #   color: "#00A3EE"
+  #   icon: ri:alipay-line
+  #   link: xxx
+  # - name: QQ 支付
+  #   path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
+  #   color: "#12B7F5"
+  #   icon: ri:qq-line
+  # - name: 微信支付
+  #   path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
+  #   color: "#2DC100"
+  #   icon: ri:wechat-pay-line
+  # - name: PayPal
+  #   link: https://paypal.me/elpsycn
+  #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
+  #   color: "#2D70B5"
+  #   icon: ri:paypal-line
+
+# Creative Commons 4.0 International License.
+# https://creativecommons.org/licenses/
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license.
+# CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
+# Valid values of language: deed.zh, deed.en, deed.ja, etc.
+creative_commons:
+  license: by-nc-sa
+  language: deed.zh
+  post: true
+  clipboard: false
+
+# AddThis Share, See: https://www.addthis.com
+# Go to https://www.addthis.com/dashboard to customize your tools.
+# add_this_id:
+
+# Post edit
+# Dependencies: https://github.com/hexojs/hexo-deployer-git
+post_edit:
+  enable: false
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
+
+# Footer Settings
+# ---------------
+footer:
+  since: 2019
+
+  # Icon between year and copyright info.
+  icon:
+    # `heart` is recommended with animation in red (#ff0000).
+    name: ri:cloud-line
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#0078E7"
+    # url: https://sponsors.yunyoujun.cn
+    # title: 云游君的赞助者们
+
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+
+  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+  # https://beian.miit.gov.cn/
+  beian:
+    enable: false
+    # icp: 苏ICP备xxxxxxxx号
+    gongan:
+      enable: false
+      text: 京公网安备 XXXXXXXX 号
+      id: XXXXXXXX
+
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: "2019-04-12T00:00:00"
+
+  # Display support
+  # support:
+  #   enable: true
+  #   title: 又拍云
+  #   link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+  #   logo: https://cdn.yunyoujun.cn/img/logo/upyun-logo.png
+  #   prefix: 本网站由
+  #   suffix: 提供 CDN 加速
+  # Any custom text can be defined here.
+  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+
+# Post meta display settings
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+# notice pin board
+notice:
+  enable: false
+  content: Thanks for watching my blog.
+
+# third party
+# ----------------
+
+# enable global iconify
+iconify:
+  global: true
+
+# say something
+# https://say.elpsy.cn
+say:
+  enable: true
+  # api: https://say.elpsy.cn/sentences.json
+  # /data/sentences.json
+  api: https://el-bot-api.vercel.app/api/words/young
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: false
+    api: https://v1.hitokoto.cn
+    # api: https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=k
+
+# you can new JSON file in your blog root folder
+# example: source/data/sentences.json
+# then set say.api: /data/sentences.json
+# Example: https://say.elpsy.cn/sentences.json
+
+# Show Views / Visitors of the website / page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi
+busuanzi:
+  enable: false
+  site_uv: true
+  site_uv_icon: ri:user-line
+  site_pv: true
+  site_pv_icon: ri:eye-line
+  page_pv: true
+  page_pv_icon: ri:eye-line
+
+# Post wordcount
+# https://github.com/willin/hexo-wordcount
+wordcount:
+  enable: false
+  count: true
+  time: true
+
+# search
+search:
+  modal: true
+  bg_image: https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg
+  dark_bg_image: https://cdn.yunyoujun.cn/img/bg/mountain-blur-30px.jpg
+  # placeholder: 想要搜些什么？
+
+engine_search:
+  enable: false
+  href: "https://www.google.com/search?q=site:"
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
+  domain: yunyoujun.cn
+
+# Dependencies https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: false
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false
+
+# https://github.com/oncletom/hexo-algolia
+algolia_search:
+  enable: false
+  hits:
+    per_page: 8 # the number of search results per page
+
+# Ads
+# ---------------
+# Google Adsense
+google_adsense:
+  enable: false
+  client: ca-pub-2245427233262012
+
+# Analysis
+# ---------------
+google_analytics:
+  enable: false
+  # GA4
+  id: G-XXXXXXXXX
+
+# Google Tagmanager
+google_tagmanager:
+  enable: false
+  id:
+
+# Show number of visitors of each article.
+# You can visit https://www.leancloud.cn to get AppID and AppKey.
+leancloud_visitors:
+  enable: false
+  app_id: # <your app id>
+  app_key: # <your app key>
+  # Required for apps from CN region
+  server_url: # <your server url>
+
+# That is it only render those page which has `katex: true` in Front-matter.
+# math fomula
+# https://katex.org/
+katex:
+  copy_tex: true
+  global: false
+  # Options are for katex rendering options: https://katex.org/docs/options.html
+  # In page katex options are also possible and will be merged
+  options: {}
+
+# icons
+icons:
+  back_to_top: ri:arrow-up-s-line
+  category: ri:folder-2-line
+  tag: ri:price-tag-3-line
+  view: ri:eye-line
+
+# plugins
+aplayer:
+  global: false
+  meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: false
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: 星宿计时
+        artist: 杉田朗/洛天依
+        url: https://cdn.yunyoujun.cn/audio/star-timer.mp3
+        cover: https://cdn.yunyoujun.cn/img/bg/stars-timing-0.jpg
+    meting:
+      enable: true
+      id: 308168565
+      server: netease
+      type: playlist
+
+# mermaid url https://github.com/knsv/mermaid
+mermaid:
+  enable: false
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: false # default true
+
+# special
+mourn:
+  enable: false
+  days:
+    - 4-4
+    - 9-18
+
+# SEO
+# https://ziyuan.baidu.com/linksubmit/index
+baidu_push: false
+
+# custom (You can use variables.)
+custom:
+  style: # source/_data/style/*
+
+# slide
+slide:
+  separator: ---
+  separator_vertical: ~~
+  data_separator_notes: "^Note:"
+  theme: white
+  config:
+    history: true
+    mouseWheel: false
+
+# ---------
+# Comments
+# ---------
+comment:
+  enable: true
+  icon: ri:chat-3-line
+  tips:
+  # - 要不要和我说些什么？
+  # candidates:
+  #   - waline
+  #   - utterances
+
+# GitHub Issues Link Button
+# https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
+github_issues:
+  enable: false
+  username: YunYouJun
+  repository: yunyoujun.github.io
+  filters: is:issue
+
+# https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart
+github_discussions:
+  enable: false
+  username: YunYouJun
+  repository: yunyoujun.github.io
+
+# https://waline.js.org/
+waline:
+  enable: false
+  serverURL: # https://your-domain.vercel.app
+  # visitor: false
+  # display comment count
+  comment: false
+
+# http://disqus.com/
+disqus:
+  enable: false
+  shortname: yunyoujun
+  count: false
+
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  # siteName:
+  # identifier:
+  # url:
+  # title:
+  # api:
+  # apikey:
+  # nesting: 4
+  # nocomment:
+  # admin:
+  # adminLabel:
+
+# https://livere.com/
+livere:
+  enable: false
+  uid:
+
+# https://github.com/utterance/utterances
+utterances:
+  enable: false
+  repo:
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+
+# https://twikoo.js.org/
+twikoo:
+  enable: false
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+  # region: # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+  # option: # 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+
+# https://github.com/laymonage/giscus
+giscus:
+  enable: false
+  repo:
+  repo-id:
+  category:
+  category-id:
+  mapping: pathname
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light

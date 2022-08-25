@@ -1,0 +1,8 @@
+extends _partial/layout.pug
+
+block content
+  include _mixin/post-collapse.pug
+  #tag.hty-card
+    +page_header(page.tag, theme.icons.tag)
+    +post_collapse(page.posts)
+  include _partial/pagination.pug

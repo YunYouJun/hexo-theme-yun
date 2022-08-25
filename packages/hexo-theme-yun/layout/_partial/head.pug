@@ -1,0 +1,91 @@
+//- favicon
+- var favicon = config.favicon || theme.favicon || '/favicon.ico'
+- var faviconType = 'image/' + (favicon.endsWith('.svg') ? 'svg+xml' : 'png')
+link(rel='icon', type=faviconType, href=url_for(favicon))
+//- Safari
+link(rel="mask-icon", href=url_for(favicon), color=theme.colors.primary)
+
+//- not use cdn.pre in dev
+if process.env.NODE_ENV === 'development'
+  - theme.cdn.pre = ''
+
+//- preload
+if theme.preload
+  each items, name in theme.preload
+    if items
+      each item in items
+        if item
+          link(rel='preload', href=url_for(theme.cdn.pre + item), as=name)
+
+//- prefetch
+if theme.prefetch
+  each items, name in theme.prefetch
+    each item in items
+      if item
+        link(rel='prefetch', href=url_for(theme.cdn.pre + item), as=name)
+
+//- dns-prefetch
+if theme.dns_prefetch
+  each item in theme.dns_prefetch
+    if item
+      link(rel='dns-prefetch', href=url_for(item))
+
+//- preconnect
+if theme.preconnect
+  each item in theme.preconnect
+    if item
+      link(rel='preconnect', href=url_for(item), crossorigin)
+
+//- preconnect host
+link(rel='preconnect', href=url_for(theme.vendors.host), crossorigin)
+
+//- config
+!=yun_config()
+
+//- base
+if theme.css !== undefined && theme.css.length > 0
+  each url in theme.css
+    link(rel='stylesheet', href=url_for(theme.cdn.pre + url))
+
+script(src=url_for(theme.cdn.pre + '/js/hexo-theme-yun.js'), type="module")
+
+if theme.js
+  each item in theme.js
+    script(src=url_for(theme.cdn.pre + item))
+
+if config.feed && config.feed.path
+  != feed_tag(config.feed.path)
+
+//- head custom
+if theme.head.css
+  each item in theme.head.css
+    link(rel='stylesheet', href=url_for(item))
+
+if theme.head.js.base
+  each item in theme.head.js.base
+    script(src=url_for(item))
+
+if theme.head.js.async
+  each item in theme.head.js.async
+    script(src=url_for(item), async)
+
+if theme.head.js.defer
+  each item in theme.head.js.defer
+    script(src=url_for(item), defer)
+
+include ../_third-party/index.pug
+
+//- open graph
+//- to avoid conflict
+if page.photos
+  - var page_photos = page.photos
+  - page.photos = page_photos.map(photo=>{return photo.src})
+
+!=open_graph()
+
+if page.photos
+  - page.photos = page_photos
+
+//- no-referer
+if page.type === 'albums' || page.layout === 'gallery'
+  meta(name="referrer" content="no-referrer")

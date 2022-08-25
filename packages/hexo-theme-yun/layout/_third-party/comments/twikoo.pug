@@ -1,0 +1,11 @@
+//- after init, #tcomment will be #twikoo
+#tcomment
+- var twikooConfig = JSON.stringify(theme.twikoo)
+script(type="module").
+  import { getScript } from '/js/utils.js'
+  
+  getScript("#{theme.vendors.twikoo}", () => {
+    const twikooConfig = !{twikooConfig}
+    twikooConfig.el = '#tcomment'
+    twikoo.init(twikooConfig)
+  }, window.twikoo);

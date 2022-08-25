@@ -1,0 +1,218 @@
+$banner-animation-duration = 1s;
+$line-animation-duration = 0.4s;
+$char-animation-duration = 0.4s;
+// light
+$banner-char-bg-color = white;
+
+:root {
+  --banner-char-bg-color: rgba($banner-char-bg-color, 0.5);
+  --banner-char-hover-color: $banner-char-bg-color;
+}
+
+if (hexo-config('banner.border')) {
+  $char-border-width = 1px;
+} else {
+  $char-border-width = 0;
+}
+
+#banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .char {
+    font-family: $font-family-serif;
+    font-size: var(--banner-char-size, 1rem);
+    font-weight: $font-family-serif-weight;
+    background-color: var(--banner-char-bg-color);
+    line-height: 1;
+    the-transition();
+
+    &:hover {
+      color: var(--banner-char-hover-color);
+      background-color: var(--banner-char-color);
+    }
+
+    &-left, &-right {
+      display: flex;
+      color: var(--banner-char-color);
+      opacity: 0;
+    }
+
+    &-left {
+      border-left: $char-border-width solid var(--banner-line-color);
+      border-right: 0px solid rgba($colors.primary, 0.1);
+      border-right-width: 0px;
+      // animation-name: char-move-left;
+      animation-duration: $char-animation-duration;
+      animation-delay: $line-animation-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+
+    &-right {
+      border-left: 0px solid rgba($colors.primary, 0.1);
+      border-right: $char-border-width solid var(--banner-line-color);
+      border-left-width: 0px;
+      // animation-name: char-move-right;
+      animation-duration: $char-animation-duration;
+      animation-delay: $line-animation-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+
+.banner-char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-line {
+  &-top, &-bottom {
+    display: flex;
+    background-color: var(--banner-line-color);
+    width: $border-width;
+    height: 0;
+    // animation-name: extend-line;
+    animation-duration: $line-animation-duration;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+  }
+
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@keyframes extend-line {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--banner-line-height);
+  }
+}
+
+@keyframes char-move-left {
+  from {
+    opacity: 0;
+    border-right-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-right-width: var(--banner-empty-border-size, var(--banner-char-size));
+  }
+}
+
+@keyframes char-move-right {
+  from {
+    opacity: 0;
+    border-left-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-left-width: var(--banner-empty-border-size, var(--banner-char-size));
+  }
+}
+
+if (hexo-config('banner.cloud')) {
+  .cloud {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $cloud-z-index;
+    box-sizing: border-box;
+    mix-blend-mode: overlay;
+
+    .waves {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100px;
+
+      @media (max-width: 768px) {
+        height: 40px;
+      }
+    }
+
+    .parallax {
+      > use {
+        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+      }
+
+      > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+      }
+
+      > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+      }
+
+      > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+      }
+
+      > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+      }
+    }
+  }
+
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+}
+
+if (hexo-config('banner.go_down.enable')) {
+  #goDown {
+    display: inline-flex;
+    position: absolute;
+    bottom: 1rem;
+    z-index: $go-down-z-index;
+    animation: float 2s ease-in-out infinite;
+
+    .icon {
+      color: $colors.primary;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  @keyframes float {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    50% {
+      opacity: 0.8;
+      transform: translateY(-0.8rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

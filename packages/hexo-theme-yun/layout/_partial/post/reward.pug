@@ -1,0 +1,19 @@
+#reward-container
+  if theme.reward.url
+    a#reward-button.hty-icon-button.button-glow(href=url_for(theme.reward.url) title=__('reward.donate'))
+      +icon(theme.reward.icon)
+  else
+    span#reward-button.hty-icon-button.button-glow(title=__('reward.donate'), onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";')
+      +icon(theme.reward.icon)
+  if theme.reward.comment
+    #reward-comment!=theme.reward.comment
+  if theme.reward.methods
+    #qr(style='display:none;')
+      for method in theme.reward.methods
+        div(style='display:inline-block')
+          if method.path
+            a(href= method.link ? method.link : method.path)
+              img(loading='lazy', src=url_for(method.path), alt=method.name, title=method.name)
+            div
+              span(title=translation, style='color:' + method.color)
+                +icon(method.icon)

@@ -1,0 +1,10 @@
+-
+  var options = {
+    prev_text: '<span class="icon iconify" data-icon="ri:arrow-left-s-line" aria-label="Prev"></span>',
+    next_text: '<span class="icon iconify" data-icon="ri:arrow-right-s-line" aria-label="Next"></span>',
+    escape: false
+  }
+
+if page.prev || page.next
+  nav.pagination
+    !=paginator(options)

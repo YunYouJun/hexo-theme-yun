@@ -1,0 +1,25 @@
+{
+  "name": "theme-yun",
+  "version": "0.0.1",
+  "description": "Theme Yun Common CSS/JS",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "gulp",
+    "dev": "sass -w index.scss dist/index.css"
+  },
+  "keywords": [
+    "theme",
+    "yun"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "consola": "^2.15.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
+}

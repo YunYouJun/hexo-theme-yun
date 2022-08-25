@@ -1,0 +1,102 @@
+title:
+  archive: Archive
+  category: Category
+  tag: Tag
+  album: Album
+
+menu:
+  home: Home
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  search: Search
+
+sidebar:
+  overview: Overview
+  toc: Table of Contents
+
+post:
+  decrypt: DECRYPT
+  posted: Posted on
+  edited: Edited on
+  created: Created
+  modified: Modified
+  edit: Edit this post
+  more: more
+  untitled: Untitled
+  toc_empty: This post does not have a Table of Contents
+  views: Views
+  comments_count: Comments
+  related_posts: Related Posts
+  view_link: View Link
+  read_more: READ MORE
+  copyright:
+    author: Post author
+    link: Post link
+    license_title: Copyright Notice
+    license_content: 'All articles in this blog are licensed under %s unless otherwise stated.'
+
+# page:
+#   totally: Totally
+#   tags: tags
+
+footer:
+  powered: 'Powered by %s'
+  theme: Theme
+  total_views: Total Views
+  total_visitors: Total Visitors
+
+counter:
+  tag_cloud:
+    zero: No tag
+    one: 1 tag in total
+    other: '%d tags in total'
+  categories:
+    zero: No category
+    one: 1 category in total
+    other: '%d categories in total'
+  archive_posts:
+    zero: No post
+    one: 1 post in total
+    other: '%d posts in total'
+  albums:
+    zero: No album
+    one: 1 album in total
+    other: '%d albums in total'
+  photos:
+    zero: No photo
+    one: 1 photo in total
+    other: '%d photos in total'
+
+search:
+  placeholder: Searching...
+  empty: 'We didn''t find any results for the search: ${query}.'
+  hits: '${hits} results found'
+  hits_time: '${hits} results found in ${time} ms'
+
+symbol:
+  comma: ', '
+  period: '. '
+  colon: ': '
+
+reward:
+  donate: Donate
+
+accessibility:
+  back: Back
+#   nav_toggle: Toggle navigation bar
+#   prev_page: Previous page
+#   next_page: Next page
+
+wordcount:
+  count: Word count in article
+  count_total: Word count total
+  time: Reading time
+  time_total: Total reading time
+
+time:
+  day: Days
+  hour: Hours
+  minute: Minutes
+  second: Seconds

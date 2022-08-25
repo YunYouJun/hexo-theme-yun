@@ -1,0 +1,46 @@
+@use "sass:map";
+
+$colors: () !default;
+$colors: map.merge(
+  (
+    "primary": #0078e7,
+  ),
+  $colors
+);
+$c-primary: map.get($colors, "primary") !default;
+
+$common: (
+  "c-brand": $c-primary,
+) !default;
+$common: map.merge((), $common);
+
+// palette
+$light: () !default;
+$light: map.merge(
+  (
+    "c-bg": "white",
+    "c-bg-soft": #f9f9f9,
+    "c-bg-mute": #f1f1f1,
+
+    "c-text": #333,
+    "c-text-light": #555,
+    "c-text-lighter": #666,
+    "c-text-dark": #111,
+  ),
+  $light
+);
+
+$dark: () !default;
+$dark: map.merge(
+  (
+    "c-bg": "#121212",
+    "c-bg-soft": #1d1e1f,
+    "c-bg-mute": #2f2f2f,
+
+    "c-text": #f2f2f2,
+    "c-text-light": #ddd,
+    "c-text-lighter": #eee,
+    "c-text-dark": rgba(#ebebeb, 0.8),
+  ),
+  $dark
+);

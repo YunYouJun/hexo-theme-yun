@@ -1,0 +1,96 @@
+title:
+  archive: アーカイブ
+  category: カテゴリ
+  tag: タグ
+  album: ギャラリ
+
+menu:
+  home: ホーム
+  archives: アーカイブ
+  categories: カテゴリ
+  tags: タグ
+  about: プロフィール
+  search: 検索
+
+sidebar:
+  overview: 概要
+  toc: 見出し
+
+post:
+  decrypt: 解読する
+  posted: 投稿日
+  edited: 編集日
+  created: 作成日
+  modified: 修正日
+  edit: この記事を編集する
+  more: 詳細
+  untitled: 無題
+  toc_empty: には見出しがない
+  views: 閲覧数
+  comments_count: コメント数
+  related_posts: 関連記事
+  view_link: リンクを表示
+  read_more: READ MORE
+  copyright:
+    author: 著者
+    link: 記事へのリンク
+    license_title: 著作権表示
+    license_content: 'このブログ内のすべての記事は、特別な記載がない限り %s の下のライセンスで保護されています。'
+
+# page:
+#   totally: 合計
+#   tags: タグ
+
+footer:
+  powered: 'Powered by %s'
+  theme: Theme
+  total_views: 閲覧合計数
+  total_visitors: 合計閲覧者数
+
+counter:
+  tag_cloud:
+    zero: 見つかりませんでした
+    one: 1 件のタグが見つかりました
+    other: '%d 件のタグが見つかりました'
+  categories:
+    zero: 見つかりませんでした
+    one: 1 件のカテゴリーが見つかりました
+    other: '%d 件のカテゴリーが見つかりました'
+  archive_posts:
+    zero: 見つかりませんでした
+    one: 1 件のポストが見つかりました
+    other: '%d 件のポストが見つかりました'
+  albums:
+    zero: 見つかりませんでした
+    one: 1 件のギャラリーが見つかりました
+    other: '%d 件のギャラリーが見つかりました'
+  photos:
+    zero: 見つかりませんでした
+    one: 1 件のイメージが見つかりました
+    other: '%d 件のイメージが見つかりました'
+
+search:
+  placeholder: 検索...
+  empty: '${query} が見つかりませんでした.'
+  hits: '${hits} 件見つかりました'
+  hits_time: '${hits} 件見つかりました, ${time} ミリ秒'
+
+symbol:
+  comma: ，
+  period: 。
+  colon: ：
+
+reward:
+  donate: 寄付
+
+accessibility:
+  back: 返す
+#   nav_toggle: ナビゲーションバーの切り替え
+#   prev_page: 前のページ
+#   next_page: 次のページ
+
+wordcount:
+  count: 単語数
+  count_total: 単語の総数
+  time: 読書の時間
+  time_total: 読書の合計時間

@@ -143,23 +143,23 @@ npm i hexo-theme-yun@latest
 通过 `createElement` 的方式，`append` 到 `body` 容器中。
 
 ```js
-document.addEventListener("DOMContentLoaded", function () {
-  let apContainer = document.createElement("div");
-  apContainer.id = "aplayer";
-  document.body.append(apContainer);
+document.addEventListener('DOMContentLoaded', () => {
+  const apContainer = document.createElement('div')
+  apContainer.id = 'aplayer'
+  document.body.append(apContainer)
   const ap = new APlayer({
-    container: document.getElementById("aplayer"),
+    container: document.getElementById('aplayer'),
     fixed: true,
     audio: [
       {
-        name: "name",
-        artist: "artist",
-        url: "url.mp3",
-        cover: "cover.jpg",
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
       },
     ],
-  });
-});
+  })
+})
 ```
 
 并在 `_config.yun.yml` 中设置 `head` 选项来引入 css 或 js。
@@ -198,7 +198,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
+          node-version: 16.x
 
       - name: Install Dependencies
         run: npm i
@@ -233,7 +233,7 @@ jobs:
 请在 hexo 根目录创建名为 `docker-compose.yml` 的文件并填入下列内容。
 
 ```yaml
-version: "3"
+version: '3'
 services:
   cli:
     user: root
@@ -256,12 +256,12 @@ services:
       - ./public:/blog/public # 挂载 HTML 的生成目录
     ports:
       - 4000:4000 # 将 Docker 内的 4000 端口映射到主机的 4000 端口
-    command: "sleep 24h" # 休眠 shell 24 小时防止容器自动关闭
+    command: sleep 24h # 休眠 shell 24 小时防止容器自动关闭
 ```
 
 然后在 hexo 根目录创建名为 `Dockerfile` 的文件并填入下列内容。
 
-```dockerfile
+```docker
 FROM node:12.20.2-alpine AS base
 ARG CHANGE_APK_SOURCE=false
 ARG CHANGE_NPM_SOURCE=false
@@ -288,7 +288,7 @@ RUN     set -xe \
     &&  npm install --save hexo-renderer-stylus \
     &&  npm install --save hexo-tag-aplayer \
     &&  npm install --save hexo-generator-sitemap \
-    &&  npm install --save hexo-generator-search \
+    &&  npm install --save hexo-generator-searchdb \
     &&  npm install --save hexo-generator-tag \
     &&  npm install --save hexo-generator-category \
     &&  npm install --save hexo-algoliasearch \

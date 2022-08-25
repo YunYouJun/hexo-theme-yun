@@ -1,0 +1,33 @@
+- let ccVersion = (theme.creative_commons.license == 'zero') ? '1.0' : '4.0'
+- let ccIcon = '<span class="icon iconify" data-icon="ri:creative-commons-line"></span>'
+- let ccPrefix = (theme.creative_commons.license == 'zero') ? 'publicdomain' : 'licenses'
+- let ccURL = 'https://creativecommons.org/' + ccPrefix + '/' + theme.creative_commons.license + '/' + ccVersion + '/' + theme.creative_commons.language
+
+- licenses = theme.creative_commons.license.split('-')
+for license in licenses
+  - ccIcon += `<span class="icon iconify" data-icon="ri:creative-commons-${license}-line"></span>`
+
+ul.post-copyright
+  li.post-copyright-author
+    strong!= __('post.copyright.author') + __('symbol.colon')
+    != post.author || author
+  li.post-copyright-link
+    strong!= __('post.copyright.link') + __('symbol.colon')
+    - let postURL = post.url || post.permalink
+    a(href=postURL, title=post.title)!= postURL
+  li.post-copyright-license
+    strong!= __('post.copyright.license_title') + __('symbol.colon')
+    != _p('post.copyright.license_content', `<a href="${ccURL}" target="_blank" rel="noopener" title="CC ${theme.creative_commons.license.toUpperCase() + ' ' + ccVersion} ">${ccIcon}</a>`)
+
+if theme.creative_commons.clipboard
+  - var copyrightText = "\\n\\n" + __('post.copyright.author') + __('symbol.colon') + (post.author || author) + "\\n" + __('post.copyright.link') + __('symbol.colon') + postURL + "\\n" + __('post.copyright.license_title') + __('symbol.colon') + _p('post.copyright.license_content', `CC ${theme.creative_commons.license.toUpperCase() + ' ' + ccVersion}`)
+  script.
+    document.addEventListener('copy', function (event) {
+      const clipboardData = event.clipboardData || window.clipboardData;
+      if (!clipboardData) { return; }
+      const text = window.getSelection().toString();
+      if (text) {
+        event.preventDefault();
+        clipboardData.setData('text/plain', text + '!{copyrightText}');
+      }
+    });

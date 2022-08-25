@@ -56,9 +56,9 @@ The main color of the custom theme.
 
 ```yaml
 colors:
-  primary: "#6200ee"
+  primary: '#6200ee'
   # bg: "# F5F5F5"
-  selection_bg: "#8e71c1" # background color when selecting text
+  selection_bg: '#8e71c1' # background color when selecting text
   # Starting and ending colors of the tags
   # tag_start_color:
   # tag_end_color:
@@ -70,18 +70,18 @@ You can specify the color for your label, the default color is `#333`.
 
 ```yaml
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E834D"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E834D'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 ```
 
 ### Categories
@@ -111,6 +111,7 @@ head:
     example: //example.min.css
   js:
     base:
+      - xxx
     async:
     defer:
 ```
@@ -191,10 +192,11 @@ You can also obtain the CDN you want according to the naming rules, and introduc
 
 ```yaml
 cdn:
-  pre: ""
+  pre: ''
   css:
   js:
     base:
+      - xxx
     async:
       # Icon resources introduced by default, use iconfont
       iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
@@ -429,61 +431,52 @@ social:
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
-  - name: QQ
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
-    icon: icon-qq-line
-    color: "# 12B7F5"
   - name: GitHub
     link: https://github.com/YunYouJun
-    icon: icon-github-line
-    color: "# 181717"
+    icon: ri:github-line
+    color: '# 181717'
   - name: E-Mail
-    link: mailto: me@yunyoujun.cn
-    icon: icon-mail-line
-    color: "# 8E71C1"
+    link: mailto:me@yunyoujun.cn
+    icon: ri:mail-line
+    color: '# 8E71C1'
   - name: Weibo
     link: https://weibo.com/jizhideyunyoujun
-    icon: icon-weibo-line
-    color: "# E6162D"
+    icon: ri:weibo-line
+    color: '# E6162D'
   - name: Douban
     link: https://www.douban.com/people/yunyoujun/
-    icon: icon-douban-line
-    color: "# 007722"
+    icon: ri:douban-line
+    color: '# 007722'
   - name: NetEase Cloud Music
     link: https://music.163.com/#/user/home?id=247102977
-    icon: icon-netease-cloud-music-line
-    color: "# C10D0C"
+    icon: ri:netease-cloud-music-line
+    color: '# C10D0C'
   - name: Zhihu
     link: https://www.zhihu.com/people/yunyoujun/
-    icon: icon-zhihu-line
-    color: "# 0084FF"
+    icon: ri:zhihu-line
+    color: '# 0084FF'
   - name: Bilibili Animation
     link: https://space.bilibili.com/1579790
-    icon: icon-bilibili-line
-    color: "# FF8EB3"
-  - name: POPI
-    link: https://www.popiask.cn/elpsycn
-    icon: icon-questionnaire-line
-    color: "# 525252"
+    icon: ri:bilibili-line
+    color: '# FF8EB3'
   - name: WeChat official account
     link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-    icon: icon-wechat-2-line
-    color: "# 1AAD19"
-    - name: Twitter
+    icon: ri:wechat-2-line
+    color: '# 1AAD19'
+  - name: Twitter
     link: https://twitter.com/YunYouJun
-    icon: icon-twitter-line
-    color: "#1da1f2"
+    icon: ri:twitter-line
+    color: '#1da1f2'
   - name: Telegram
     link: https://t.me/YunYouJun
-    icon: icon-telegram-line
-    color: "#0088CC"
+    icon: ri:telegram-line
+    color: '#0088CC'
   - name: Telegram Channel
     link: https://t.me/elpsycn
-    icon: icon-telegram-fill
-    color: "#0088CC"
+    icon: ri:telegram-fill
+    color: '#0088CC'
 ```
 
 You only need to set `social` in `_config.yun.yml` to overwrite it (at this time you can only display your mailbox icon and no other icons):
@@ -491,9 +484,9 @@ You only need to set `social` in `_config.yun.yml` to overwrite it (at this time
 ```yaml
 social:
   - name: E-Mail
-    link: mailto: your email
-    icon: icon-mail-line
-    color: "#8E71C1"
+    link: mailto:your email
+    icon: ri:mail-line
+    color: '#8E71C1'
 ```
 
 If you don't want to put any links, just set the following in `_config.yun.yml`:
@@ -528,10 +521,10 @@ banner:
   border: true
   cloud:
     enable: true
-    color: "white"
+    color: white
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
+    icon: ri:arrow-down-s-line
 ```
 
 You can customize the character segmentation in the form of an array, for example:
@@ -611,13 +604,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: '''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
 ```
 
 ### Background
@@ -696,12 +689,21 @@ Click on the fireworks effect on the page
 fireworks:
   enable: true
   colors:
-    - "102, 167, 221"
-    - "62, 131, 225"
-    - "33, 78, 194"
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
 ```
 
 > Reference from: [Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX)
+
+### Medium Zoom Zoom in on the preview image <Badge>v1.10.2</Badge>
+
+Click the article image to enlarge it for preview.
+
+```yaml
+# _config.yun.yml
+medium_zoom: true
+```
 
 ### ScrollReveal
 
@@ -812,24 +814,24 @@ list
 menu:
   home:
     path: /
-    icon: icon-home-4-line
+    icon: ri:home-4-line
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: ri:archive-line
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: ri:folder-2-line
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
+      icon: ri:price-tag-3-line
     # - path: https://www.yunyoujun.cn
-    #   icon: icon-cloud-line
+    #   icon: ri:cloud-line
     #   count: guess it
   custom:
     title: Document
     path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    icon: ri:settings-line
 ```
 
 ### Page Link
@@ -846,7 +848,7 @@ e.g.:
 pages:
   - name: my friends
     url: / links /
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
 ```
 
@@ -889,37 +891,37 @@ Currently, the following types are supported by default (Bilibili, Douban, GitHu
 types:
   link:
     color: blue
-    icon: icon-external-link-line
+    icon: ri:external-link-line
   bilibili:
-    color: "#FF8EB3"
-    icon: icon-bilibili-line
+    color: '#FF8EB3'
+    icon: ri:bilibili-line
   douban:
-    color: "#007722"
-    icon: icon-douban-line
+    color: '#007722'
+    icon: ri:douban-line
   github:
     color: black
-    icon: icon-github-line
+    icon: ri:github-line
   netease-cloud-music:
-    color: "#C10D0C"
-    icon: icon-netease-cloud-music-line
+    color: '#C10D0C'
+    icon: ri:netease-cloud-music-line
   notion:
     color: black
-    icon: icon-notion
+    icon: ri:notion
   twitter:
-    color: "#1da1f2"
-    icon: icon-twitter-line
+    color: '#1da1f2'
+    icon: ri:twitter-line
   wechat:
-    color: "#1AAD19"
-    icon: icon-wechat-2-line
+    color: '#1AAD19'
+    icon: ri:wechat-2-line
   weibo:
-    color: "#E6162D"
-    icon: icon-weibo-line
+    color: '#E6162D'
+    icon: ri:weibo-line
   yuque:
-    color: "#25b864"
-    icon: icon-yuque
+    color: '#25b864'
+    icon: ant-design:yuque-outlined
   zhihu:
-    color: "#0084FF"
-    icon: icon-zhihu-line
+    color: '#0084FF'
+    icon: ri:zhihu-line
 ```
 
 You can also set your icon and color for different links in `_config.yun.yml`.
@@ -1080,7 +1082,7 @@ prismjs:
   enable: true
   preprocess: true
   line_number: false
-  tab_replace: ""
+  tab_replace: ''
 ```
 
 In `_config.yun.yml`:
@@ -1125,7 +1127,7 @@ creative_commons:
 
 ```yaml
 # URL
-## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+# # If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
 ```
 
@@ -1165,22 +1167,22 @@ You can override it in `_config.yun.yml`.
 ```yaml
 reward:
   enable: true
-  icon: icon-hand-coin-line
+  icon: ri:hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
-      icon: icon-alipay-line
+      color: '#00A3EE'
+      icon: ri:alipay-line
     - name: QQ 支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
-      icon: icon-qq-line
+      color: '#12B7F5'
+      icon: ri:qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
-      icon: icon-wechat-pay-line
+      color: '#2DC100'
+      icon: ri:wechat-pay-line
 ```
 
 You can also set whether to enable rewards at the top of an article.
@@ -1200,9 +1202,9 @@ Such as:
 footer:
   since: 1997
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
 ```
 
 :::
@@ -1227,9 +1229,9 @@ The icon between the year and the name.
 ```yaml
 footer:
   icon:
-    name: icon-cloud-line
+    name: ri:cloud-line
     animated: true
-    color: "#0078E7"
+    color: '#0078E7'
     url: https://sponsors.yunyoujun.cn
     title: Sponsors for YunYouJun
 ```
@@ -1263,7 +1265,7 @@ live_time:
   enable: false
   prefix: This blog has been run cutely
   suffix: (● '◡' ●)
-  start_time: "2019-04-12T00: 00: 00"
+  start_time: '2019-04-12T00: 00: 00'
 ```
 
 > Remember to add 0, such as `2019-04-01` instead of `2019-4-1`.
@@ -1333,10 +1335,6 @@ The format is as follows:
     "from": "The C Programming Language"
   },
   {
-    "content": "The so-called daily life we ​​spend day by day may actually be a continuous miracle.",
-    "from": "Daily"
-  },
-  {
     "content": "Yeah, what I love is neither the stars nor the galaxy.",
     "author": "YunYouJun",
     "from": "yunyoujun.cn"
@@ -1390,8 +1388,27 @@ custom:
   style: source/_data/style/*
 ```
 
+## Vendors
+
+Vendors means suppliers, vending machines.
+
+The third-party CDN link used will be set here.
+More information can be found at [`_vendors.yml`](<https://github.com/YunYouJun/hexo-theme-yun/blob/dev/packages/hexo>- theme-yun/_vendors.yml).
+
+For example, it can be overridden in `_config.yun.yml` in the following ways:
+
+> - `host`: CDN start link, since `cdn.jsdelivr.net` has been polluted in China, it is recommended to use `https://fastly.jsdelivr.net/npm/` instead.
+
+````yaml
+vendors:
+  # ends with '/'
+  host: 'https://fastly.jsdelivr.net/npm/'
+  waline:
+    css: '@waline/client@v2/dist/waline.css'
+````
+
 ## More Configuration
 
-You can directly view the files and relative comments in[themes/yun/\_config.yml](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).
+You can directly view the files and relative comments in [\_config.yml | hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml).
 
 Or refer to the custom configuration of my blog [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml).

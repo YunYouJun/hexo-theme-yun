@@ -1,9 +1,0 @@
-//- after init, #tcomment will be #twikoo
-#tcomment
-- var twikooConfig = JSON.stringify(theme.twikoo)
-script.
-  Yun.utils.getScript("#{theme.vendors.twikoo}", () => {
-    const twikooConfig = !{twikooConfig}
-    twikooConfig.el = '#tcomment'
-    twikoo.init(twikooConfig)
-  }, window.twikoo);

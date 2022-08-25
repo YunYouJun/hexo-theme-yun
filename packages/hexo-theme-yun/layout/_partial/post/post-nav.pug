@@ -1,0 +1,17 @@
+.post-nav
+  .post-nav-item
+    if post.prev
+      while post.prev.hide && post.prev.prev
+        - post.prev = post.prev.prev
+      if !post.prev.hide
+        a.post-nav-prev(href=url_for(post.prev.path), rel='prev', title=post.prev.title)
+          +icon('ri:arrow-left-s-line')
+          span.post-nav-text=post.prev.title
+  .post-nav-item
+    if post.next
+      while post.next.hide && post.next.next
+        - post.next = post.next.next
+      if !post.next.hide
+        a.post-nav-next(href=url_for(post.next.path), rel='next', title=post.next.title)
+          span.post-nav-text=post.next.title
+          +icon('ri:arrow-right-s-line')

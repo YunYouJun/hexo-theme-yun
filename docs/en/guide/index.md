@@ -66,16 +66,16 @@ The complete configuration of `avatar` is as follows
 
 ```yaml
 avatar:
-  url: /images/avatar.jpg
-  rounded: true
-  opacity: 1
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
 ```
 
 You can just define it in `_config.yun.yml` (it is also possible to cover it all)
 
 ```yaml
 avatar:
-  url: /images/avatar.jpg
+  url: /images/avatar.jpg
 ```
 
 :::
@@ -111,23 +111,23 @@ You can create a new `load-aplayer.js` file under the `source/js` folder in the 
 Through the `createElement` method, `append` into the `body` container.
 
 ```js
-document.addEventListener("DOMContentLoaded", function () {
-  let apContainer = document.createElement("div");
-  apContainer.id = "aplayer";
-  document.body.append(apContainer);
+document.addEventListener('DOMContentLoaded', () => {
+  const apContainer = document.createElement('div')
+  apContainer.id = 'aplayer'
+  document.body.append(apContainer)
   const ap = new APlayer({
-    container: document.getElementById("aplayer"),
+    container: document.getElementById('aplayer'),
     fixed: true,
     audio: [
       {
-        name: "name",
-        artist: "artist",
-        url: "url.mp3",
-        cover: "cover.jpg",
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
       },
     ],
-  });
-});
+  })
+})
 ```
 
 And set the `head` option in `_config.yun.yml` to introduce css or js.
@@ -149,15 +149,36 @@ If you want to update automatically and keep the latest themes at all times, you
 You can refer to my GitHub Action configuration file [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml). (Copy the configuration and put it in the corresponding folder. GitHub Actions is a service that comes with GitHub.)
 If you are not using `algolia_search`, please delete the relevant part of `algolia`.
 
-> I have adopted this approach. But I do not recommend it to you from the conscience because this is my own theme, and naturally I have a certain degree of tolerance for potential bugs.
-> You may encounter newly introduced BUG by keeping up with the warehouse version.
-> Of course you can give it a try if you are willing to be a guinea pig. By the way, give us feedback. I'll be very appriciate it.
-
-If you want to clone a stable version of the theme, you can fork it yourself, and then modify the source project address to the project address after forking it.
+New file `.github/workflows/gh-pages.yml`:
 
 ```yaml
-run: |
-  git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
+name: GitHub Pages
+on:
+  push:
+    branches:
+      - hexo
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Install Dependencies
+        run: npm i
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          force_orphan: true
 ```
 
 ## Extend Markdown Style

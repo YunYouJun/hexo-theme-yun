@@ -1,0 +1,101 @@
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
+  album: 相册
+
+menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+
+sidebar:
+  overview: 站点概览
+  toc: 文章目录
+
+post:
+  decrypt: 解密
+  posted: 发表于
+  edited: 更新于
+  created: 创建时间
+  modified: 修改时间
+  edit: 编辑
+  more: 更多
+  untitled: 未命名
+  toc_empty: 此文章未包含目录
+  views: 阅读次数
+  comments_count: 评论数
+  related_posts: 相关文章
+  view_link: 查看链接
+  read_more: 阅读更多
+  copyright:
+    author: 本文作者
+    link: 本文链接
+    license_title: 版权声明
+    license_content: '本博客所有文章除特别声明外，均默认采用 %s 许可协议。'
+
+# page:
+#   totally: 共有
+#   tags: 标签
+footer:
+  powered: '由 %s 驱动'
+  theme: 主题
+  total_views: 总访问量
+  total_visitors: 总访客量
+
+counter:
+  tag_cloud:
+    zero: 暂无标签
+    one: 共计 1 个标签
+    other: '共计 %d 个标签'
+  categories:
+    zero: 暂无分类
+    one: 共计 1 个分类
+    other: '共计 %d 个分类'
+  archive_posts:
+    zero: 暂无日志
+    one: 共计 1 篇日志
+    other: '共计 %d 篇日志'
+  albums:
+    zero: 暂无相册
+    one: 共计 1 个相册
+    other: '共计 %d 个相册'
+  photos:
+    zero: 暂无照片
+    one: 共计 1 张照片
+    other: '共计 %d 张照片'
+
+search:
+  placeholder: 搜索...
+  empty: '找不到您查询的内容: ${query}'
+  hits: '找到 ${hits} 条结果'
+  hits_time: '找到 ${hits} 条结果（用时 ${time} 毫秒）'
+
+symbol:
+  comma: ，
+  period: 。
+  colon: ：
+
+reward:
+  donate: 打赏
+
+accessibility:
+  back: 返回
+  # nav_toggle: 切换导航栏
+  # prev_page: 上一页
+  # next_page: 下一页
+
+wordcount:
+  count: 本文字数
+  count_total: 站点总字数
+  time: 阅读时长
+  time_total: 站点阅读时长
+
+time:
+  day: 天
+  hour: 小时
+  minute: 分
+  second: 秒

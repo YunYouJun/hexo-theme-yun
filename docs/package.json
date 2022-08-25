@@ -4,16 +4,15 @@
     "build": "vitepress build .",
     "dev": "vitepress dev . --host"
   },
-  "devDependencies": {
-    "@unocss/preset-icons": "^0.24.3",
-    "@vueuse/core": "^7.6.1",
-    "sass": "^1.49.7",
-    "vite-plugin-pwa": "^0.11.13",
-    "vitepress": "^0.22.0"
-  },
   "dependencies": {
-    "@iconify-json/ri": "^1.0.2",
-    "dayjs": "^1.10.7",
-    "vitepress-theme-you": "^0.0.33"
+    "@iconify-json/ri": "^1.1.3",
+    "dayjs": "^1.11.3"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^8.9.4",
+    "sass": "^1.53.0",
+    "unocss": "^0.44.4",
+    "unplugin-vue-components": "^0.21.1",
+    "vitepress": "1.0.0-alpha.4"
   }
 }

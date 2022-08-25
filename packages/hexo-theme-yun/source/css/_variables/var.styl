@@ -1,0 +1,47 @@
+@import './_code.styl';
+
+$bg-color = convert(hexo-config('colors.bg'));
+
+:root {
+  --hty-mode: 'light';
+  --hty-bg-color: $bg-color;
+  --hty-text-color: #333333;
+  --hty-secondary-text-color: #555555;
+  --post-block-bg-color: white;
+  // star-markdown-css
+  --smc-link-color: $colors.primary;
+  // yun
+  --yun-bg-image: url(hexo-config('bg_image.url'));
+  // banner
+  --banner-line-color: black;
+  --banner-char-color: black;
+}
+
+$dark-primary-color = convert(hexo-config('colors.dark.block'));
+
+html.dark {
+  --hty-mode: 'dark';
+  --hty-bg-color: #303030;
+  --hty-text-color: #f2f2f2;
+  --hty-secondary-text-color: #eeeeee;
+  --post-block-bg-color: convert(hexo-config('colors.dark.block'));
+  // star-markdown-css
+  --smc-link-color: lighten($colors.primary, 30%);
+  // yun
+  --yun-bg-image: url(hexo-config('bg_image.dark'));
+  // banner
+  --banner-line-color: white;
+  --banner-char-color: white;
+  --banner-char-bg-color: rgba(black, 0.5);
+  --banner-char-hover-color: black;
+  // post-card
+  --post-card-bg-color: rgba($dark-primary-color, hexo-config('post_card.opacity'));
+  --post-card-shadow: 0 1px 8px rgba($dark-primary-color, 0.1);
+  // sidebar
+  --sidebar-bg-color: rgba(convert(hexo-config('colors.dark.block')), 0.95);
+  --sidebar-bg-image: url(hexo-config('sidebar.dark_bg_image'));
+  // pagination
+  --page-btn-bg-color: rgba(black, 0.5);
+  --page-btn-hover-bg-color: rgba(lighten($colors.primary, 80%), 0.9);
+  --page-btn-active-bg-color: $colors.primary;
+}

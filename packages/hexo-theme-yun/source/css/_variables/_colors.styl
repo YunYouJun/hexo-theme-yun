@@ -1,0 +1,43 @@
+// color
+$light = #fafbfc;
+$dark = #303133;
+$gray = #999999;
+$red = #db2828;
+$orange = #f2711c;
+$green = #21ba45;
+$blue = #0078E7;
+$purple = #8e71c1;
+$light-blue = #42B8DD;
+$light-gray = #CCCCCC;
+$colors ?= {
+  primary: convert(hexo-config('colors.primary')) || $purple,
+  success: $green,
+  warning: $orange,
+  danger: $red,
+  info: $light-blue,
+  link: $blue,
+  gray: $gray,
+  yellow: #FF8718
+};
+$selection-bg = convert(hexo-config('colors.selection_bg'));
+
+:root {
+  for $name, $color in $colors {
+    --hty-{$name}-color: $color;
+  }
+
+  // default
+  --blockquote-border-left-color: var(--smc-border-color);
+}
+
+set-color(type, color) {
+  .{type} {
+    color: darken(color, 10);
+    --blockquote-border-left-color: convert('var(--hty-' + type + '-color)');
+    --blockquote-bg-color: rgba(color, 0.1);
+  }
+}
+
+for $name, $color in $colors {
+  set-color($name, $color);
+}

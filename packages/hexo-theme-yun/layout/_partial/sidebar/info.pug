@@ -1,0 +1,16 @@
+.site-info(class=is_post() ? (theme.avatar.mickey_mouse ? 'mickey-mouse' : 'fix-top') : '')
+  if theme.avatar && theme.avatar.url
+    a.site-author-avatar(href=url_for('about/'), title=config.author)
+      img(width=96, loading='lazy', src=is_url(theme.avatar.url) ? theme.avatar.url : url_for(theme.cdn.pre + theme.avatar.url), alt=config.author)
+      if theme.avatar.status.enable
+        span.site-author-status(title=theme.avatar.status.message)=theme.avatar.status.emoji
+    .site-author-name
+      a(href=url_for('about/'))
+        | #{config.author}
+    if theme.hasAboutSite
+      a.site-name(href=url_for('about/site.html'))
+        | #{config.title}
+    else
+      span.site-name!=config.title
+    sub.site-subtitle!=config.subtitle
+    .site-description!=config.description
