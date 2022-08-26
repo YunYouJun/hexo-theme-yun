@@ -271,7 +271,7 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
     </td>
     <td>
       <a href="https://blog.miaoer.xyz" target="_blank">
-        <img width="80px" src="https://www.miaoer.xyz/weblogo.png" />
+        <img width="80px" src="https://www.miaoer.xyz/weblogo.jpg" />
         <br />
         <sub title="缘，妙不可言">喵二‘s Blog</sub>
       </a>
