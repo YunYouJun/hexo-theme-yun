@@ -1489,6 +1489,6 @@ vendors:
 
 ## 更多配置
 
-你可以直接查看 [\_config.yml ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/master/_config.yml) 文件及相关注释。
+你可以直接查看 [\_config.yml ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/demo/_config.yml) 文件及相关注释。
 
 或者参考我的博客的自定义配置 [\_config.yun.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/_config.yun.yml)。
