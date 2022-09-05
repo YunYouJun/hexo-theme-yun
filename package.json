@@ -38,17 +38,17 @@
     "release": "zx scripts/release.mjs"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.25.2",
-    "@types/node": "^18.0.6",
+    "@antfu/eslint-config": "^0.26.3",
+    "@types/node": "^18.7.15",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.20.0",
+    "eslint": "^8.23.0",
     "esno": "~0.16.3",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "tsup": "^6.1.3",
-    "typescript": "^4.7.4",
-    "zx": "^7.0.7"
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "zx": "^7.0.8"
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
