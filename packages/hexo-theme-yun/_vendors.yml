@@ -5,7 +5,7 @@ host: https://cdn.jsdelivr.net/npm/
 # local: true
 
 # internal
-yun_markdown_css: star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css
+yun_markdown_css: star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css
 prism_theme_vars: prism-theme-vars/base.css
 
 # cdn for third-party library (alternative include)
