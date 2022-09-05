@@ -89,9 +89,7 @@ function initLeancloudVisitors() {
   }
 
   const api_server
-    = app_id.slice(-9) === '-MdYXbMMI'
-      ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`
-      : server_url
+    = server_url || `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`
 
   if (api_server) {
     fetchData(api_server)
