@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "6.2.0"
+    "version": "6.3.0"
   },
   "license": "CC-BY-NC-SA-4.0",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "crypto-js": "^4.1.1",
-    "hexo": "6.2.0",
+    "hexo": "6.3.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

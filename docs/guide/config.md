@@ -1440,6 +1440,18 @@ custom:
   style: source/_data/style/*
 ```
 
+### 辅助样式类
+
+存在一些常用样式类，如 bilibili 视频样式。
+
+你可以为其内嵌代码 `iframe` 添加 `class="bilibili-video"`。
+
+```html
+<iframe class="bilibili-video" src="//player.bilibili.com/player.html?aid=626900451&bvid=BV17t4y1S7tz&cid=229255224&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+```
+
+> [#349 | Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions/349)
+
 ## 自定义图标
 
 博客中还存在一些固定的图标，譬如返回顶部按钮、卡片中的标签与分类图标、拜访者图标等。
