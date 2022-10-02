@@ -35,7 +35,7 @@
     "prepare": "husky install",
     "prepublishOnly": "npm run build",
     "publish:theme": "zx scripts/publish.mjs",
-    "release": "zx scripts/release.mjs"
+    "release": "bumpp packages/hexo-theme-yun/package.json --commit --push --tag"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
