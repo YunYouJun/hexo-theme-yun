@@ -9,10 +9,10 @@
     "dayjs": "^1.11.5"
   },
   "devDependencies": {
-    "@vueuse/core": "^9.2.0",
+    "@vueuse/core": "^9.3.0",
     "sass": "^1.55.0",
-    "unocss": "^0.45.22",
+    "unocss": "^0.45.26",
     "unplugin-vue-components": "^0.22.7",
-    "vitepress": "1.0.0-alpha.15"
+    "vitepress": "1.0.0-alpha.18"
   }
 }

@@ -3,7 +3,7 @@
 - var copyright = config.copyright || config.author
 
 doctype html
-html(lang=config.language)
+html(lang=config.language, class=theme.mode === 'dark' ? 'dark' : '')
   head
     meta(charset='UTF-8')
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -24,6 +24,7 @@ html(lang=config.language)
     block preconnect
     script.
       (function() {
+        if (CONFIG.mode !== 'auto') return
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         const setting = localStorage.getItem('darken-mode') || 'auto'
         if (setting === 'dark' || (prefersDark && setting !== 'light'))
