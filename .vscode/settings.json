@@ -1,5 +1,7 @@
 {
-  "i18n-ally.localesPaths": ["languages"],
+  "i18n-ally.localesPaths": [
+    "languages"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -10,6 +12,7 @@
     "livere",
     "Twikoo",
     "disqus",
-    "lightgallery"
+    "lightgallery",
+    "valaxy"
   ]
 }

@@ -1,5 +1,25 @@
 # 使用指南
 
+::: warning [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun) 即将进入维护模式，不再添加新功能。
+
+[Valaxy](https://github.com/YunYouJun/valaxy) 与 [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun) 将成为它的继任者。
+
+---
+
+如果您是新手，我更推荐你直接尝试 [Valaxy](https://github.com/YunYouJun/valaxy)。
+
+- 它从更底层上解决了 Hexo 目前存在的一些问题与不足，也会是我之后着重维护更新的项目。
+- 当然它可能还有许多细节问题需要优化，但我觉得它的开发体验绝对值得您一试！
+
+---
+
+如果您已经是 hexo-theme-yun 的使用者：
+
+- Valaxy 提供了 [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun) 主题以供迁移。（您也可以稍作等待，我们会继续修复细节，并优化迁移体验。）
+- 如果您不想要迁移，hexo-theme-yun 会保持项目的维护和 BUG 修复，但不会再添加新功能或做大的变更。
+
+:::
+
 本主题为 Hexo 主题，请确保您已了解 Hexo 的基本使用方式。
 
 你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。

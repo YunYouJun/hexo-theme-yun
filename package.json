@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.8.2",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.24.0",
@@ -48,7 +48,7 @@
     "lint-staged": "^13.0.3",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4",
-    "zx": "^7.0.8"
+    "zx": "^7.1.0"
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
