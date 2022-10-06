@@ -16,9 +16,9 @@
 
 > A light & fast & lovely hexo theme.
 
-#### hexo-theme-yun will be in maintenance mode, more info see #260.
+#### hexo-theme-yun will be in maintenance mode, more info see [#260](https://github.com/YunYouJun/hexo-theme-yun/discussions/260).
 
-I'm developing [valaxy](https://github.com/YunYouJun/valaxy) and [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun) as the successor of hexo-theme-yun. I hope they don't disappoint you.
+I'm developing [valaxy](https://github.com/YunYouJun/valaxy) and [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun) as the successor of hexo-theme-yun, hope they don't disappoint you.
 
 [![Docs](https://github.com/YunYouJun/hexo-theme-yun/workflows/trigger/badge.svg)](https://yun.yunyoujun.cn)
 [![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/YunYouJun/hexo-theme-yun/dev/hexo?filename=demo%2Fpackage.json&logo=hexo)](https://hexo.io)
