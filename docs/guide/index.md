@@ -163,7 +163,7 @@ npm i hexo-theme-yun@latest
 ::: danger
 Hexo 会把 `source` 目录下的文件夹视为**可渲染的页面**，导致文件加载时会被渲染为 `HTML`。
 
-为了避免此问题，你还需要在 `config.yml` 为所有可能出问题的 `js` 文件配置跳过渲染：
+为了避免此问题，你还需要在 `_config.yml` 为所有可能出问题的 `js` 文件配置跳过渲染：
 
 ```yaml
 skip_render:
