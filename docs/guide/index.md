@@ -160,6 +160,19 @@ npm i hexo-theme-yun@latest
 
 > 若 `js` 文件夹不存在，请新建。
 
+::: danger
+Hexo 会把 `source` 目录下的文件夹视为**可渲染的页面**，导致文件加载时会被渲染为 `HTML`。
+
+为了避免此问题，你还需要在 `config.yml` 为所有可能出问题的 `js` 文件配置跳过渲染：
+
+```yaml
+skip_render:
+  - '**/*.js'
+```
+
+参见：[Configuration | Hexo](https://hexo.io/docs/configuration#Directory)
+:::
+
 通过 `createElement` 的方式，`append` 到 `body` 容器中。
 
 ```js
