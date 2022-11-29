@@ -108,6 +108,19 @@ You can create a new `load-aplayer.js` file under the `source/js` folder in the 
 
 > If the `js` folder does not exist, please create a new one.
 
+::: danger
+Hexo may put the folder of `source` directory as **renderable page**, this will cause files be rendered as `HTML`.
+
+To solve this issue, you also need to configure `skip render` for all `js` file in `_config.yml`:
+
+```yaml
+skip_render:
+  - '**/*.js'
+```
+
+See: [Configuration | Hexo](https://hexo.io/docs/configuration#Directory)
+:::
+
 Through the `createElement` method, `append` into the `body` container.
 
 ```js
