@@ -483,7 +483,7 @@ social:
     icon: ri:telegram-fill
     color: '#0088CC'
   - name: Travelling
-    link: https://travellings.link
+    link: https://www.travellings.cn/go.html
     icon: ri:send-plane-2-line
     color: black
 ```
