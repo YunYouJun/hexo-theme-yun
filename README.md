@@ -233,7 +233,7 @@ README 中只会展示前 40 个示例站点，其余站点将会在 [示例站�
       <a href="https://leostudiooo.github.io" target="_blank">
         <img width="80px" src="https://avatars0.githubusercontent.com/u/35419343" />
         <br />
-        <sub title="恰同学少年，风华正茂；书生意气，挥斥方遒。">LeoStudio</sub>
+        <sub title="Stay hungry, Stay foolish.">烫烫烫的记事本</sub>
       </a>
     </td>
   </tr>
