@@ -23,7 +23,7 @@ comment:
 
 关于评论系统我简单进行过一些对比，希望能起到一些参考。
 
-> [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)
+> [第三方评论系统之我见](https://www.yunyoujun.cn/posts/third-party-comment-system/)
 
 ### GitHub Issue
 
