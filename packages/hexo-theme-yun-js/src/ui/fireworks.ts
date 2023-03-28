@@ -10,7 +10,7 @@ interface MinMax {
 
 interface FireworksConfig {
   colors: string[]
-  numberOfParticules: number
+  numberOfParticles: number
   orbitRadius: MinMax
   circleRadius: MinMax
   diffuseRadius: MinMax
@@ -25,7 +25,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
   const defaultColors = ['102, 167, 221', '62, 131, 225', '33, 78, 194']
   const defaultConfig: FireworksConfig = {
     colors: defaultColors,
-    numberOfParticules: 20,
+    numberOfParticles: 20,
     orbitRadius: {
       min: 50,
       max: 100,
@@ -77,7 +77,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
       || (e.touches[0] ? e.touches[0].clientY : e.changedTouches[0].clientY)
   }
 
-  function setParticuleDirection(p) {
+  function setParticleDirection(p) {
     const angle = (window.anime.random(0, 360) * Math.PI) / 180
     const value = window.anime.random(
       config.diffuseRadius.min,
@@ -96,7 +96,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
    * @param {number} y
    * @returns
    */
-  function createParticule(x: number, y: number) {
+  function createParticle(x: number, y: number) {
     const p = {
       x,
       y,
@@ -109,7 +109,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
       endPos: null,
       draw() {},
     }
-    p.endPos = setParticuleDirection(p)
+    p.endPos = setParticleDirection(p)
     p.draw = function () {
       ctx.beginPath()
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true)
@@ -141,21 +141,21 @@ function createFireworks(config: Partial<FireworksConfig>) {
     return p
   }
 
-  function renderParticule(anim) {
+  function renderParticle(anim) {
     for (let i = 0; i < anim.animatables.length; i++)
       anim.animatables[i].target.draw()
   }
 
-  function animateParticules(x, y) {
+  function animateParticles(x, y) {
     const circle = createCircle(x, y)
-    const particules = []
-    for (let i = 0; i < config.numberOfParticules; i++)
-      particules.push(createParticule(x, y))
+    const particles = []
+    for (let i = 0; i < config.numberOfParticles; i++)
+      particles.push(createParticle(x, y))
 
     window.anime
       .timeline()
       .add({
-        targets: particules,
+        targets: particles,
         x(p) {
           return p.endPos.x
         },
@@ -168,7 +168,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
           config.animeDuration.max,
         ),
         easing: 'easeOutExpo',
-        update: renderParticule,
+        update: renderParticle,
       })
       .add(
         {
@@ -182,7 +182,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
           },
           duration: window.anime.random(1200, 1800),
           easing: 'easeOutExpo',
-          update: renderParticule,
+          update: renderParticle,
         },
         0,
       )
@@ -200,7 +200,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
     (e) => {
       render.play()
       updateCoords(e)
-      animateParticules(pointerX, pointerY)
+      animateParticles(pointerX, pointerY)
     },
     false,
   )
