@@ -38,11 +38,11 @@
     "release": "bumpp packages/hexo-theme-yun/package.json --commit --push --tag"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
-    "@types/node": "^18.8.2",
+    "@antfu/eslint-config": "^0.37.0",
+    "@types/node": "^18.15.10",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.24.0",
+    "eslint": "^8.36.0",
     "esno": "~0.16.3",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
