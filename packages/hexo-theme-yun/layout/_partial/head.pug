@@ -81,7 +81,8 @@ if page.photos
   - var page_photos = page.photos
   - page.photos = page_photos.map(photo=>{return photo.src})
 
-!=open_graph()
+if !page.gallery_password
+  !=open_graph()
 
 if page.photos
   - page.photos = page_photos

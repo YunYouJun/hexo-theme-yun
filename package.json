@@ -39,16 +39,16 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
-    "@types/node": "^18.15.10",
-    "bumpp": "^8.2.1",
+    "@types/node": "^20.8.2",
+    "bumpp": "^9.2.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.36.0",
-    "esno": "~0.16.3",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
+    "eslint": "^8.50.0",
+    "esno": "~0.17.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4",
-    "zx": "^7.1.0"
+    "zx": "^7.2.3"
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
