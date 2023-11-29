@@ -1,4 +1,4 @@
-workspace:
+packages:
   - docs
   - demo
   - packages/*
