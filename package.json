@@ -1,23 +1,24 @@
 {
   "name": "@hexo-theme-yun/monorepo",
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@8.15.3",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "MIT",
+  "homepage": "https://yun.yunyoujun.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
+  },
   "keywords": [
     "hexo",
     "theme",
     "yun"
   ],
-  "license": "MIT",
-  "author": "YunYouJun <me@yunyoujun.cn>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
-  },
-  "homepage": "https://yun.yunyoujun.cn",
-  "bugs": {
-    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
-  },
   "engines": {
     "node": ">=14.0.0"
   },
@@ -38,16 +39,16 @@
     "release": "bumpp packages/hexo-theme-yun/package.json --commit --push --tag"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.37.0",
-    "@types/node": "^20.11.19",
+    "@antfu/eslint-config": "^2.6.4",
+    "@types/node": "^20.11.20",
     "bumpp": "^9.3.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "esno": "~0.17.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "tsup": "^6.7.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.3.3",
     "zx": "^7.2.3"
   },
   "lint-staged": {

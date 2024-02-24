@@ -10,7 +10,8 @@ const sass = gulpSass(dartSass)
 
 export function buildScss() {
   return gulp.src([
-    'scss/index.scss', 'scss/css-vars.scss',
+    'scss/index.scss',
+    'scss/css-vars.scss',
   ])
     .pipe(sass())
     .pipe(cleanCSS({ debug: true }, (details) => {
@@ -21,7 +22,6 @@ export function buildScss() {
 
 /**
  * clean dist
- * @returns
  */
 export function clean() {
   return del(['dist'])
@@ -29,7 +29,6 @@ export function clean() {
 
 /**
  * clean and build scss
- * @returns
  */
 export async function build() {
   await clean()

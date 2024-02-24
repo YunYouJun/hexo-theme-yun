@@ -1,4 +1,5 @@
-const { URL } = require('url')
+const { URL } = require('node:url')
+const process = require('node:process')
 
 hexo.extend.helper.register('yun_config', function () {
   const { config, theme, yun_version, __, url_for } = this

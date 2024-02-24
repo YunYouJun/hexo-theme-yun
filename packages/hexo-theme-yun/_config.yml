@@ -5,14 +5,14 @@ mode: auto
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
 colors:
-  primary: "#0078E7"
+  primary: '#0078E7'
   # primary: "#6200ee"
-  bg: "#f5f5f5"
-  selection_bg: "#8e71c1"
-  tag_start_color: "#999999"
-  tag_end_color: "#0078E7"
+  bg: '#f5f5f5'
+  selection_bg: '#8e71c1'
+  tag_start_color: '#999999'
+  tag_end_color: '#0078E7'
   dark:
-    block: "#1b1f2e"
+    block: '#1b1f2e'
     # block: "#17202A"
 
 # Favicon
@@ -163,18 +163,18 @@ wordcloud:
 
 # You can set color for every tag or category.
 tags:
-  Vue: "#4fc08d"
-  Hexo: "#0E83CD"
-  CSS: "#5298d1"
-  Node.js: "#026E00"
-  Git: "#F14E32"
-  React: "#61dafb"
-  Python: "#3776ab"
-  PHP: "#8892BF"
-  VS Code: "#0066B8"
-  JavaScript: "#F4DF4F"
-  TypeScript: "#317AC6"
-  Laravel: "#F4645F"
+  Vue: '#4fc08d'
+  Hexo: '#0E83CD'
+  CSS: '#5298d1'
+  Node.js: '#026E00'
+  Git: '#F14E32'
+  React: '#61dafb'
+  Python: '#3776ab'
+  PHP: '#8892BF'
+  VS Code: '#0066B8'
+  JavaScript: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
 
 categories:
   笔记: dimgray
@@ -185,34 +185,34 @@ types:
     color: blue
     icon: ri:external-link-line
   bilibili:
-    color: "#FF8EB3"
+    color: '#FF8EB3'
     icon: ri:bilibili-line
   douban:
-    color: "#007722"
+    color: '#007722'
     icon: ri:douban-line
   github:
     color: black
     icon: ri:github-line
   netease-cloud-music:
-    color: "#C10D0C"
+    color: '#C10D0C'
     icon: ri:netease-cloud-music-line
   notion:
     color: black
     icon: ri:notion
   twitter:
-    color: "#1da1f2"
+    color: '#1da1f2'
     icon: ri:twitter-line
   wechat:
-    color: "#1AAD19"
+    color: '#1AAD19'
     icon: ri:wechat-2-line
   weibo:
-    color: "#E6162D"
+    color: '#E6162D'
     icon: ri:weibo-line
   yuque:
-    color: "#25b864"
+    color: '#25b864'
     icon: ant-design:yuque-outlined
   zhihu:
-    color: "#0084FF"
+    color: '#0084FF'
     icon: ri:zhihu-line
 
 # post_card
@@ -262,11 +262,11 @@ head:
 
 # cdn for third-party library (always include)
 cdn:
-  pre: ""
+  pre: ''
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: "yun_markdown_css"
-    prism-theme-vars: "prism_theme_vars"
+    yun-markdown-css: yun_markdown_css
+    prism-theme-vars: prism_theme_vars
   js:
     base:
     async:
@@ -296,13 +296,13 @@ font:
     lib:
       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
-    family: "'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace"
+    family: '''Source Code Pro'', Consolas, Monaco, SFMono-Regular, ''Ubuntu Mono'', Menlo, monospace'
 
 # custom your color in fireworks
 fireworks:
@@ -410,7 +410,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#0078E7"
+    color: '#0078E7'
     # url: https://sponsors.yunyoujun.cn
     # title: 云游君的赞助者们
 
@@ -432,7 +432,7 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: '2019-04-12T00:00:00'
 
   # Display support
   # support:
@@ -510,7 +510,7 @@ search:
 
 engine_search:
   enable: false
-  href: "https://www.google.com/search?q=site:"
+  href: 'https://www.google.com/search?q=site:'
   # href: "https://www.baidu.com/s?wd=site:"
   # href: "https://www.bing.com/search?q=site:"
   domain: yunyoujun.cn
@@ -633,7 +633,7 @@ custom:
 slide:
   separator: ---
   separator_vertical: ~~
-  data_separator_notes: "^Note:"
+  data_separator_notes: '^Note:'
   theme: white
   config:
     history: true

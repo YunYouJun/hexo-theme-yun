@@ -23,14 +23,14 @@ export function copyright() {
 /**
  * 是否为主页
  */
-export const isHome = () => {
+export function isHome() {
   return window.location.pathname === window.CONFIG.root
 }
 
 /**
  * 包裹表格，添加 class 以控制 table 样式
  */
-export const wrapTable = () => {
+export function wrapTable() {
   document.querySelectorAll('table').forEach((el) => {
     const container = document.createElement('div')
     container.className = 'table-container'
@@ -60,8 +60,8 @@ export function getScript(url: string, callback: () => void, condition: boolean)
 }
 
 /**
-   * click btn to copy codeblock
-   */
+ * click btn to copy codeblock
+ */
 export function insertCopyCodeBtn() {
   const codeblocks = document.querySelectorAll('pre[class*=\'language-\']')
 
@@ -84,7 +84,7 @@ export function insertCopyCodeBtn() {
       const lines
         = container.querySelector('code[class*=\'language-\']')
         || container.querySelector('.token')
-      const code = lines.innerText
+      const code = lines.textContent
       const ta = document.createElement('textarea')
       ta.style.top = `${window.scrollY}px` // Prevent page scrolling
       ta.style.position = 'absolute'
@@ -143,8 +143,8 @@ export function renderKatex(options: any) {
 }
 
 /**
-   * 注册监听滚动百分比事件
-   */
+ * 注册监听滚动百分比事件
+ */
 export function registerScrollPercent() {
   const backToTop = document.querySelector('#back-to-top')
   const progressCircle = document.querySelector('#progressCircle') as SVGCircleElement

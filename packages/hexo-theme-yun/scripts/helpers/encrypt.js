@@ -2,7 +2,6 @@
  * AES 加密
  * @param {string} content
  * @param {string} password
- * @returns
  */
 function encrypt(content, password) {
   const CryptoJS = require('crypto-js')

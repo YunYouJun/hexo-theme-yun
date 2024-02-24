@@ -1,6 +1,6 @@
 {
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "vitepress build .",
     "dev": "vitepress dev . --host"
@@ -12,8 +12,8 @@
   "devDependencies": {
     "@vueuse/core": "^10.8.0",
     "sass": "^1.71.1",
-    "unocss": "^0.56.5",
-    "unplugin-vue-components": "^0.25.2",
-    "vitepress": "1.0.0-rc.20"
+    "unocss": "^0.58.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vitepress": "1.0.0-rc.44"
   }
 }

@@ -44,7 +44,7 @@ Using the latest API as a priority under the circumstances where most browsers a
 
 ### Speed
 
-Google [PageSpeed ​​Insights](https://developers.google.com/speed/pagespeed/insights/)
+Google [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
 

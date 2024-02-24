@@ -208,7 +208,7 @@ cdn:
 
 - `pre`: 默认为空，你的加载资源前缀。譬如你如果想要使用 `jsdelivr` 加速全站静态资源（~~又白嫖~~），则可以在 `yun.yml` 中这样设置。
 
-> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。  
+> 注意将 `https://cdn.jsdelivr.net/gh/` 后替换为你的 GitHub 用户名和仓库名（也可以添加所在分支，譬如 `@master`）。
 > `@latest` 为使用最新版本（但它仍然会被缓存，**且需要 12 h 才能更新**，如果你需要强制刷新，请参考 [Purge cache](https://github.com/jsdelivr/jsdelivr#purge-cache)）
 > ~~请记住，白嫖是有代价的~~
 
@@ -290,8 +290,8 @@ preconnect:
 - 方式二：自由在 [head](#head-头部资源) 引入字体图标的 css 样式文件，直接传入对应 `class` 名称即可。（往往会引入全部的图标资源，虽然一次性引入很方便，但很多图标其实用不到。）
 
 ::: tip
-你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。  
-如果你只是想额外增添几个图标，你最好在 [head](#head-头部资源) 处引入，而不是直接覆盖。  
+你完全可以前往 [iconfont](https://www.iconfont.cn/) 自定义一套你的图标集，并覆盖 [CDN](#CDN) 所引入的图标资源。
+如果你只是想额外增添几个图标，你最好在 [head](#head-头部资源) 处引入，而不是直接覆盖。
 :::
 
 下面给出了一些基础图标的使用方法。

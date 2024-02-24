@@ -1,5 +1,6 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require('node:fs')
+const path = require('node:path')
+const process = require('node:process')
 const yaml = require('js-yaml')
 const { merge } = require('./utils')
 

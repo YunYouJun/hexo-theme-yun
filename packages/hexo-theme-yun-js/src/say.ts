@@ -7,11 +7,11 @@ export function say(content: string, author?: string, from?: string) {
   const sayContent = document.querySelector('#say-content') as HTMLElement
   const sayAuthor = document.querySelector('#say-author') as HTMLElement
   const sayFrom = document.querySelector('#say-from') as HTMLElement
-  sayContent.innerText = content
+  sayContent.textContent = content
   if (author)
-    sayAuthor.innerText = author
+    sayAuthor.textContent = author
   if (from)
-    sayFrom.innerText = `「${from}」`
+    sayFrom.textContent = `「${from}」`
 }
 
 /**

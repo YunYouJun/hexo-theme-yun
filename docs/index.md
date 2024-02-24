@@ -22,7 +22,7 @@ features:
     details: 尽可能地优化无用代码，采用 CDN，提高访问速度。
   - title: 可爱
     details: 自以为是的可爱，拥有奇奇怪怪的功能。但不用担心会增加你的最终体积。
-    
+
 footer:
   license: MIT Licensed
   since: 2020

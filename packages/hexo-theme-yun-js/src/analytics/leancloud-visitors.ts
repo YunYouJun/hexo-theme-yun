@@ -22,7 +22,7 @@ function initLeancloudVisitors() {
       .then(({ results }) => {
         if (results.length > 0) {
           const counter = results[0]
-          leancloudSelector(url).innerText = counter.time + 1
+          leancloudSelector(url).textContent = counter.time + 1
           Counter('put', `/classes/Counter/${counter.objectId}`, {
             time: { __op: 'Increment', amount: 1 },
           }).catch((error) => {
@@ -33,7 +33,7 @@ function initLeancloudVisitors() {
           Counter('post', '/classes/Counter', { title, url, time: 1 })
             .then(response => response.json())
             .then(() => {
-              leancloudSelector(url).innerText = 1
+              leancloudSelector(url).textContent = '1'
             })
             .catch((error) => {
               console.error('Failed to create', error)
@@ -60,7 +60,7 @@ function initLeancloudVisitors() {
       .then(({ results }) => {
         for (const url of entries) {
           const target = results.find(item => item.url === url)
-          leancloudSelector(url).innerText = target ? target.time : 0
+          leancloudSelector(url).textContent = target ? target.time : 0
         }
       })
       .catch((error) => {

@@ -8,9 +8,9 @@ function lazyloadForDisqus() {
   const isBot
     = (runningOnBrowser && !('onscroll' in window))
     || (typeof navigator !== 'undefined'
-      && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(
-        navigator.userAgent,
-      ))
+    && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(
+      navigator.userAgent,
+    ))
   // 检查当前浏览器是否支持 IntersectionObserver API
   const supportsIntersectionObserver
     = runningOnBrowser && 'IntersectionObserver' in window

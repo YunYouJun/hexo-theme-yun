@@ -51,8 +51,8 @@ medium_zoom: medium-zoom@1.0.6/dist/medium-zoom.min.js
 
 # comment
 waline:
-  css: "@waline/client@v2/dist/waline.css"
-  js: "@waline/client@v2/dist/waline.js"
+  css: '@waline/client@v2/dist/waline.css'
+  js: '@waline/client@v2/dist/waline.js'
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   css: disqusjs@latest/dist/disqusjs.css
@@ -61,8 +61,8 @@ twikoo: twikoo@latest/dist/twikoo.all.min.js
 iconify: https://code.iconify.design/2/2.1.1/iconify.min.js
 busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 unocss:
-  runtime: "@unocss/runtime"
-  core: "@unocss/runtime/core.global.js"
-  uno: "@unocss/runtime/uno.global.js"
-  attributify: "@unocss/runtime/attributify.global.js"
-  mini: "@unocss/runtime/mini.global.js"
+  runtime: '@unocss/runtime'
+  core: '@unocss/runtime/core.global.js'
+  uno: '@unocss/runtime/uno.global.js'
+  attributify: '@unocss/runtime/attributify.global.js'
+  mini: '@unocss/runtime/mini.global.js'

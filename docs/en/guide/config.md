@@ -683,7 +683,7 @@ trianglify:
 Click on the fireworks effect on the page
 
 - `enable`: whether to enable, enable by default
-- `colors`: the included colors, the default is several levels of blue colors (please follow the RGB values ​​below)
+- `colors`: the included colors, the default is several levels of blue colors (please follow the RGB values below)
 
 ```yaml
 fireworks:
@@ -1069,7 +1069,7 @@ PrismJS is a lightweight code highlighting library. Compared with highlight.js, 
 
 We can quickly switch themes through the CDN. This theme also supports setting different code highlight themes for light and dark modes.
 
-> Languages ​​currently supported by Prism: <https://prismjs.com/#supported-languages>
+> Languages currently supported by Prism: <https://prismjs.com/#supported-languages>
 
 Configure in `_config.yml` in the working directory of Hexo (must be upgraded to version 5.0 or higher):
 

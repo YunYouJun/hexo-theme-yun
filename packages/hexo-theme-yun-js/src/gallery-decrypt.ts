@@ -29,7 +29,7 @@ export function decryptAll() {
         img.src = src
         img.alt = caption
         img.title = desc
-        photo.querySelector('figcaption').innerText = caption
+        photo.querySelector('figcaption').textContent = caption
       })
     }
     else {

@@ -8,7 +8,7 @@ const props = withDefaults(
   },
 )
 
-const copyIcon = () => {
+function copyIcon() {
   navigator.clipboard.writeText(`icon-${props.icon}`)
 
   const toast = document.getElementById('toast')

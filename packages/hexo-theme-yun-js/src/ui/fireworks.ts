@@ -94,7 +94,6 @@ function createFireworks(config: Partial<FireworksConfig>) {
    * 在指定位置创建粒子
    * @param {number} x
    * @param {number} y
-   * @returns
    */
   function createParticle(x: number, y: number) {
     const p = {
@@ -189,7 +188,7 @@ function createFireworks(config: Partial<FireworksConfig>) {
   }
 
   const render = window.anime({
-    duration: Infinity,
+    duration: Number.POSITIVE_INFINITY,
     update: () => {
       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height)
     },

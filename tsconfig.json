@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
-    "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
-    "resolveJsonModule": true,
     "paths": {
       "~/*": ["docs/.vitepress/*"]
     },
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": ["docs/.vitepress/**/*"]
 }

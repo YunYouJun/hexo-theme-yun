@@ -51,7 +51,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ""
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -61,21 +61,21 @@ highlight:
   enable: false
   line_number: false
   auto_detect: false
-  tab_replace: ""
+  tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
   enable: true
   preprocess: true
   line_number: false
-  tab_replace: ""
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ""
+  path: ''
   per_page: 7
   order_by: -updated
   pagination_dir: page
@@ -136,7 +136,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: " "
+  content_limit_delim: ' '
   order_by: -updated
   icon: favicon.png
   autodiscovery: true
@@ -202,7 +202,7 @@ css_minifier:
   enable: true
   silent: false
   exclude:
-    - "*.min.css"
+    - '*.min.css'
 # we have esbuild!
 js_minifier:
   enable: false

@@ -2,18 +2,18 @@
   "name": "theme-yun",
   "version": "0.0.1",
   "description": "Theme Yun Common CSS/JS",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "yun"
+  ],
   "main": "index.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "gulp",
     "dev": "sass -w index.scss dist/index.css"
   },
-  "keywords": [
-    "theme",
-    "yun"
-  ],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "consola": "^3.2.3",
     "del": "^6.1.1",

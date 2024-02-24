@@ -13,15 +13,15 @@ reward:
   methods:
     - name: 支付宝
       path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
-      color: "#00A3EE"
+      color: '#00A3EE'
       icon: ri:alipay-line
     - name: QQ 支付
       path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
+      color: '#12B7F5'
       icon: ri:qq-line
     - name: 微信支付
       path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
-      color: "#2DC100"
+      color: '#2DC100'
       icon: ri:wechat-pay-line
 
 comment:
@@ -38,9 +38,9 @@ waline:
   visitor: true
   comment: true
   emoji:
-    - "@waline/emojis@latest/bilibili/"
-    - "@waline/emojis@latest/weibo/"
-    - "@waline/emojis@latest/qq/"
+    - '@waline/emojis@latest/bilibili/'
+    - '@waline/emojis@latest/weibo/'
+    - '@waline/emojis@latest/qq/'
   locale:
     placeholder: 填写邮箱，可以收到回复通知哦～
   requiredMeta: [nick]
@@ -122,22 +122,22 @@ girls:
 tags:
   动画: crimson
   漫画: orange
-  Parcel: "#21374b"
+  Parcel: '#21374b'
   学习: saddlebrown
   MAD: crimson
   教程: royalblue
   笔记: dimgray
-  分享: "#0078e7"
+  分享: '#0078e7'
   随笔: mediumpurple
-  Blender: "#d04d2d"
-  Linux: "#2577b1"
-  中传: "#ccb44b"
-  部落: "#DD306A"
+  Blender: '#d04d2d'
+  Linux: '#2577b1'
+  中传: '#ccb44b'
+  部落: '#DD306A'
   科幻: midnightblue
-  蚂蚁森林: "#54a892"
+  蚂蚁森林: '#54a892'
 
 categories:
-  云游的小视频: "#FB7299"
+  云游的小视频: '#FB7299'
 
 pages:
   - name: 我的小伙伴们
@@ -183,39 +183,39 @@ social:
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=28OEdR&appChannel=share&businessType=9&from=246610&biz=ka
     icon: ri:qq-line
-    color: "#12B7F5"
+    color: '#12B7F5'
   - name: GitHub
     link: https://github.com/YunYouJun
     icon: ri:github-line
-    color: "#6e5494"
+    color: '#6e5494'
   - name: 微博
     link: https://weibo.com/jizhideyunyoujun
     icon: ri:weibo-line
-    color: "#E6162D"
+    color: '#E6162D'
   - name: 豆瓣
     link: https://www.douban.com/people/yunyoujun/
     icon: ri:douban-line
-    color: "#007722"
+    color: '#007722'
   - name: 网易云音乐
     link: https://music.163.com/#/user/home?id=247102977
     icon: ri:netease-cloud-music-line
-    color: "#C20C0C"
+    color: '#C20C0C'
   - name: 知乎
     link: https://www.zhihu.com/people/yunyoujun/
     icon: ri:zhihu-line
-    color: "#0084FF"
+    color: '#0084FF'
   - name: 哔哩哔哩
     link: https://space.bilibili.com/1579790
     icon: ri:bilibili-line
-    color: "#FF8EB3"
+    color: '#FF8EB3'
   - name: 微信公众号
     link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
     icon: ri:wechat-2-line
-    color: "#1AAD19"
+    color: '#1AAD19'
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: ri:twitter-line
-    color: "#1da1f2"
+    color: '#1da1f2'
   # - name: Telegram
   #   link: https://t.me/yunyoujun_group
   #   icon: ri:telegram-line
@@ -224,15 +224,15 @@ social:
     link: https://t.me/elpsycn
     # icon: ri:telegram-fill
     icon: ri:telegram-line
-    color: "#0088CC"
+    color: '#0088CC'
   - name: Discord
     link: https://discord.gg/nd3mPkU5j8
     icon: ri:discord-line
-    color: "#5A6DE2"
+    color: '#5A6DE2'
   - name: E-Mail
     link: mailto:me@yunyoujun.cn
     icon: ri:mail-line
-    color: "#8E71C1"
+    color: '#8E71C1'
   - name: Travelling
     link: https://travellings.link
     icon: ri:train-line
@@ -242,7 +242,7 @@ social:
 
 vendors:
   waline:
-    js: "@waline/client@v2/dist/waline.js"
+    js: '@waline/client@v2/dist/waline.js'
 
 iconify:
   global: true

@@ -2,31 +2,31 @@
   "name": "hexo-theme-yun",
   "version": "1.10.11",
   "description": "☁️ A fast & light & lovely theme for Hexo.",
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "MIT",
+  "homepage": "https://yun.yunyoujun.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
+  },
   "keywords": [
     "hexo",
     "theme",
     "yun"
   ],
-  "license": "MIT",
-  "author": "YunYouJun <me@yunyoujun.cn>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
-  },
-  "homepage": "https://yun.yunyoujun.cn",
-  "bugs": {
-    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "files": [
+    "_config.yml",
+    "_vendors.yml",
     "languages",
     "layout",
     "scripts",
     "source",
-    "src",
-    "_config.yml",
-    "_vendors.yml"
-  ]
+    "src"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }

@@ -178,13 +178,13 @@ keywords: link
 description: Friends of Yunyou
 comments: true
 links:
-  - url: https://yunyoujun.cn
-    avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
-    name: Yunyou Jun
-    blog: Yunyoujun's blog
-    desc: All at sea.
-    color: '#0078e7' # representative color
-    email: # not required
+  - url: https://yunyoujun.cn
+    avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
+    name: Yunyou Jun
+    blog: Yunyoujun's blog
+    desc: All at sea.
+    color: '#0078e7' # representative color
+    email: # not required
 placeholder: I haven't thought about what to say # The default description of YouChain
 tip: Friendchain loading in progress ~ If it fails, please refresh and try again ~
 ---
@@ -280,11 +280,11 @@ layout: girls
 title: kawaii girls
 banner: <span title = "Everyone is my angel!"> ranked in unintentional order </ span>
 girls:
-  - name: name
-    avatar: avatar image link
-    from: the project she's from
-    url: character encyclopedia link
-    reason: the reason for crushing
+  - name: name
+    avatar: avatar image link
+    from: the project she's from
+    url: character encyclopedia link
+    reason: the reason for crushing
 ---
 ```
 

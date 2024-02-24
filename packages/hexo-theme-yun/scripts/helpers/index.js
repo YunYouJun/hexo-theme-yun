@@ -1,7 +1,6 @@
 /**
  * 是否为 url 链接
  * @param {string} path
- * @returns
  */
 function isUrl(path) {
   return /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/.test(
@@ -32,7 +31,6 @@ hexo.extend.helper.register('page_title', function (page) {
 /**
  * 根据文章类型获取对应颜色及图标
  * @param {string} type
- * @returns
  */
 function getPropertyByType(type = 'link') {
   const { theme } = this

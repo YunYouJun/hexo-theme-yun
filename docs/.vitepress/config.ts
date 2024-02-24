@@ -39,13 +39,16 @@ export default defineConfig({
 
     socialLinks: [
       {
-        icon: 'github', link: 'https://github.com/YunYouJun/hexo-theme-yun',
+        icon: 'github',
+        link: 'https://github.com/YunYouJun/hexo-theme-yun',
       },
       {
-        icon: 'twitter', link: 'https://twitter.com/YunYouJun',
+        icon: 'twitter',
+        link: 'https://twitter.com/YunYouJun',
       },
       {
-        icon: 'discord', link: 'https://discord.gg/99bK4CaBhQ',
+        icon: 'discord',
+        link: 'https://discord.gg/99bK4CaBhQ',
       },
     ],
 
