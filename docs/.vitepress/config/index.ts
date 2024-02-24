@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
-import { nav } from './configs/navbar'
-import { sidebar } from './configs/sidebar'
-import { head } from './configs/head'
+import { nav } from './navbar'
+import { sidebar } from './sidebar'
+import { head } from './head'
 
 export default defineConfig({
   head,
@@ -12,17 +12,15 @@ export default defineConfig({
   lastUpdated: true,
 
   locales: {
-    '/en/': {
-      lang: 'en-US',
-      label: 'English',
-      description: 'A powerful & simple & fast theme for Hexo.',
-      selectText: 'English',
-    },
-    '/': {
+    root: {
       lang: 'zh-CN',
       label: '简体中文',
       description: 'A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。',
-      selectText: '简体中文',
+    },
+    en: {
+      lang: 'en-US',
+      label: 'English',
+      description: 'A powerful & simple & fast theme for Hexo.',
     },
   },
 
@@ -59,14 +57,6 @@ export default defineConfig({
       appId: 'N2XEWA4N6V',
       apiKey: '62c0b4aa58760ed3804e4fae0457c202',
       indexName: 'yunyoujun',
-    },
-
-    localeLinks: {
-      text: '',
-      items: [
-        { text: 'English', link: '/en/guide/' },
-        { text: '简体中文', link: '/guide/' },
-      ],
     },
 
     footer: {

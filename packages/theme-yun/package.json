@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "consola": "^3.2.3",
-    "del": "^6.1.1",
+    "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",

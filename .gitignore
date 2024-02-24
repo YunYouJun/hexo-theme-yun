@@ -14,3 +14,5 @@ dist/
 
 .cache
 .temp
+
+docs/.vitepress/cache

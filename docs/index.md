@@ -30,3 +30,16 @@ footer:
     name: YunYouJun
     url: https://www.yunyoujun.cn
 ---
+
+::: warning
+
+### 我正在开发 [valaxy](https://github.com/YunYouJun/valaxy) 与 [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun)，以作为 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun) 的继任者。
+
+- 它几乎完成了所有功能。
+  - 并且具有更好的代码高亮与热更新开发体验。
+  - 此外，它的配置更加简单，拥有类型提示，并完美解决了定制主题的同时同步上游的问题。
+- hexo-theme-yun 仍可继续使用，但不再进行新功能的开发与非缺陷型修复。
+
+:::
+
+> 我个人强烈推荐您转为使用 [VALAXY - 静态博客框架](https://valaxy.site) 搭建博客，它是一个更加**现代化**并专注**用户**开发**体验**的**博客**框架。
