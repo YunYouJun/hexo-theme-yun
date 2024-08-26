@@ -22,7 +22,7 @@
 
 本主题为 Hexo 主题，请确保您已了解 Hexo 的基本使用方式。
 
-你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
+你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/posts/how-to-build-your-site)。
 
 ```bash
 npm install hexo-cli -g

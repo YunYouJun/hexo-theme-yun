@@ -4,7 +4,7 @@ This theme is a custom theme based on [Hexo](https://hexo.io).
 
 Please be familiarized with the relative use of [Hexo](https://hexo.io/en-us/docs/).
 
-Are you a newbie? Not a problem! Here's a tutorial I made just for you[Tutorial on how to build your website from scratch-Yunyoujun's small site](https://www.yunyoujun.cn/share/how-to-build-your-site/)(In Chinese).
+Are you a newbie? Not a problem! Here's a tutorial I made just for you[Tutorial on how to build your website from scratch-Yunyoujun's small site](https://www.yunyoujun.cn/posts/how-to-build-your-site)(In Chinese).
 
 Yeah, you can read hexo docs directly.
 

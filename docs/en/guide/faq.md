@@ -39,7 +39,7 @@ Check if it is the latest version.
 
 If you still have problems, you can push your project code as a Hexo branch to GitHub.
 
-> [Associate with remote warehouse](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
+> [Associate with remote warehouse](https://www.yunyoujun.cn/posts/how-to-build-your-site#%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%BB%BA%E7%AB%8B%E5%85%B3%E8%81%94)
 
 Use the GitHub source file address to ask questions by [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues) or [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions).
 

@@ -40,7 +40,7 @@ root: /
 
 如果仍然存在问题，你可以将你的项目代码作为 `hexo` 分支推送到 GitHub 上。
 
-> [与远程仓库建立关联](https://www.yunyoujun.cn/share/how-to-build-your-site/#与远程仓库建立关联)
+> [与远程仓库建立关联](https://www.yunyoujun.cn/posts/how-to-build-your-site#%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%BB%BA%E7%AB%8B%E5%85%B3%E8%81%94)
 
 主题相关问题请发起 [ISSUE](https://github.com/YunYouJun/hexo-theme-yun/issues) ，其他讨论与展示请使用 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions)。
 

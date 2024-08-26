@@ -35,7 +35,7 @@ If you are a beginner, I recommend you to try [Valaxy - Static Blog Framework](h
 
 This is a Hexo theme. Please make sure you acknowledge the basic usage of Hexo.
 
-You can also refer to the newbie tutorial I wrote [Tutorial on how to build your website from scratch-Yunyoujun's small station](https://www.yunyoujun.cn/share/how-to-build-your-site/).
+You can also refer to the newbie tutorial I wrote [Tutorial on how to build your website from scratch-Yunyoujun's small station](https://www.yunyoujun.cn/posts/how-to-build-your-site).
 
 ```bash
 npm install hexo-cli -g

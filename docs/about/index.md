@@ -4,7 +4,7 @@
 
 请先了解 [Hexo](https://hexo.io/zh-cn/docs/) 的相关使用方法。
 
-你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
+你也可以参考我写的新手教程 [教你如何从零开始搭建一个属于自己的网站 - 云游君的小站](https://www.yunyoujun.cn/posts/how-to-build-your-site)。
 
 如果您喜欢我的主题，请给一颗 [![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)](https://github.com/YunYouJun/hexo-theme-yun) 鼓励我。
 

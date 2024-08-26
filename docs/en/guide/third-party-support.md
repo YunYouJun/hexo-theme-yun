@@ -20,7 +20,7 @@ comment:
 
 Regarding the comment system, I have briefly made some comparisons, hoping to serve as a reference.
 
-> [My View on the Third Party Comment System](https://www.yunyoujun.cn/share/third-party-comment-system/)
+> [My View on the Third Party Comment System](https://www.yunyoujun.cn/posts/third-party-comment-system)
 
 ### GitHub Issue
 
