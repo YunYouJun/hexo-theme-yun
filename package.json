@@ -49,7 +49,7 @@
     "lint-staged": "^15.2.5",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "zx": "^8.1.1"
+    "zx": "^8.8.5"
   },
   "lint-staged": {
     "sites.json": "npm run generate:demo-sites"
